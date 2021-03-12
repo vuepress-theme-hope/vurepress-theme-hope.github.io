@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-03-12T11:18:11.334Z</updated>
+  <updated>2021-03-12T11:36:12.544Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/pwa/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/pwa/"/>
@@ -18,7 +18,7 @@
     <title type="html">Config</title>
     <id>https://vuepress-theme-hope.github.io/pwa/config/</id>
     <link href="https://vuepress-theme-hope.github.io/pwa/config/"/>
-    <updated>2021-03-12T11:15:40.000Z</updated>
+    <updated>2021-03-12T11:35:04.000Z</updated>
     <content type="html"><![CDATA[<h2 id="baselang"> baseLang</h2>
 <ul>
 <li>Type: <code>string</code></li>
@@ -183,33 +183,33 @@
     <title type="html">Guide</title>
     <id>https://vuepress-theme-hope.github.io/pwa/guide/</id>
     <link href="https://vuepress-theme-hope.github.io/pwa/guide/"/>
-    <updated>2021-03-12T11:15:40.000Z</updated>
+    <updated>2021-03-12T11:35:04.000Z</updated>
     <summary type="html"><![CDATA[<p>The plugin brings enhanced PWA support to VuePress [^pwa-intro].</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>The plugin brings enhanced PWA support to VuePress <sup></sup>.</p>
 
 <h2 id="content-caching-and-updating"> Content caching and updating</h2>
-<p>Service Worker <sup></sup> (SW for short) is mainly used to cache and proxy website content.</p>
+<p>Service Worker <sup></sup> (SW for short) is mainly used to cache and proxy site content.</p>
 <p>This plugin will automatically register Service Woker through <code>workbox-build</code>.</p>
-<p>In order to better control what the Service Worker can pre-cache, the plugin provides the following configurations.</p>
+<p>To better control what the Service Worker can pre-cache, the plugin provides the following configurations.</p>
 <p>If you are an advanced user, you can also directly set <code>generateSwConfig</code> to pass options to <code>workbox-build</code>.</p>
 <h3 id="default-cache"> Default cache</h3>
-<p>By default, the plugin will pre-cache all files related to the website: <code>**/*.{html,js,css,svg}</code></p>
+<p>By default, the plugin will pre-cache all files related to the site: <code>**/*.{html,js,css,svg}</code></p>
 <p>At the same time, the plugin will cache font files: <code>**/*.{woff,woff2,eot,ttf,otf}</code>.</p>
 <h3 id="cache-control"> Cache Control</h3>
 <p>Based on the requirement of installable <sup></sup>, the plugin provides related options for cache control.</p>
 <h4 id="picture-cache"> Picture Cache</h4>
 <p>You can cache site pictures by setting the <code>cachePic</code> option to <code>true</code>.</p>
-<p>If your site is not large and the pictures are mostly critical descriptions, and hope to be displayed in offline mode, it is recommended to set this option to <code>true</code>.</p>
+<p>If your site is not large and the pictures are mostly critical descriptions, and hope to be displayed in offline mode, please set this option to <code>true</code>.</p>
 <div><p>Image recognition</p>
 <p>We recognize images by file extension. Any files ending with <code>.png</code>, <code>.jpg</code>, <code>.jpeg</code>, <code>.gif</code>, <code>.bmp</code>, <code>.webp</code> will be regarded as images.</p>
 </div>
 <h4 id="html-cache"> HTML cache</h4>
-<p>When your website is too large, you can set <code>cacheHTML</code> to <code>false</code> to cache only the homepage and 404 error pages.</p>
+<p>When your site is too large, you can set <code>cacheHTML</code> to <code>false</code> to cache only the homepage and 404 error pages.</p>
 <div><p>Why can these be removed?</p>
 <p>Though VuePress generates HTML files through SSR<sup></sup> for all pages, these files are mainly used for SEO<sup></sup> and allow you to directly configure the backend without SPA<sup></sup> Visit any link.</p>
 <p>VuePress is essentially a SPA. This means that you can enter from the homepage to access all pages normally only caching the homepage.</p>
-<p>When your site has a large number of pages or content, and the volume is too large after including HTML files, you can consider setting this option to <code>false</code>, which can reduce the volume by about 40%. The disadvantage is that users can only enter through the homepage and then navigate to the corresponding page in an offline environment. Direct access to a link will prompt a webpage error.</p>
+<p>When your site has a large number of pages or content, and the volume is too large after including HTML files, you can consider setting this option to <code>false</code>, which can reduce the volume by about 40%. The disadvantage is that users can only enter through the homepage and then navigate to the corresponding page in an offline environment. Direct access to a link will prompt a web page error.</p>
 </div>
 <h4 id="size-control"> Size control</h4>
 <p>To prevent large files from being included in the pre-cache list, any files larger than 2MB or pictures larger than 1MB will be deleted.</p>
@@ -220,11 +220,11 @@
 <p>If you are not satisfied with the default popup component, you can write component and replace it by yourself. To do that, You need to register your popup component globally and pass the name of the component to the <code>popupComponent</code> option.</p>
 </div>
 <h2 id="manifest-file-generation"> Manifest file generation</h2>
-<p>In order to ensure the installability of PWA, the website needs to generate a manifest file and declare a valid manifest file address <sup></sup> through <code>link</code>.</p>
+<p>In order to ensure the installability of PWA, the site needs to generate a manifest file and declare a valid manifest file address <sup></sup> through <code>link</code>.</p>
 <p>The plugin will automatically generate the Manifest file <code>manifest.webmanifest</code> for you in the output directory, and will also add the manifest address statement to each HTML <code>&lt;head&gt;</code>.</p>
 <p>If you already have a <code>manifest.webmanifest</code> or <code>manifest.json</code> in <code>.vuepress/public</code>, the plugin will read and merge it into the final manifest.</p>
 <h3 id="automatic-generation"> Automatic generation</h3>
-<p>The plugin will use the information from the VuePress plugin api and set the fallback for fields in manifest as much as possible. So you don't need to set most of the manifest fields.</p>
+<p>The plugin will use the information from the VuePress plugin API and set the fallback for fields in manifest as much as possible. So you don’t need to set most of the manifest fields.</p>
 <p>If the following fields are not set, they will try to fallback to the following preset values ​​in order.</p>
 <table>
 <thead>
@@ -307,7 +307,7 @@
 <ol>
 <li id="fn1"><p><strong>PWA introduction</strong></p>
 <p>PWA, full name Progressive Web app. PWA standard is stipulated by W3C.</p>
-<p>It allows websites to install the website as an App on supported platform through a browser that supports this feature. </p>
+<p>It allows sites to install the site as an App on supported platform through a browser that supports this feature. </p>
 </li>
 <li id="fn2"><p><strong>Service Worker Introduction</strong></p>
 <ol>
@@ -326,14 +326,14 @@
 </ol>
  </li>
 <li id="fn3"><p><strong>Installable</strong></p>
-<p>To let the website be registered as a PWA, the website needs to successfully register a valid service worker by itself, and at the same time add a valid mainfest manifest file and declare it.</p>
-<p>Each platform or browser has requirements for the size of the Service Worker cache. When the file size of the Service Worker cache is too large, the website will be marked as not installable. For Safari, the threshold is 50 MB, a few browsers will set less or more values ​​(30MB, 70MB, 80MB), and Chrome will mark the threshold at 100 MB.</p>
+<p>To let the site be registered as a PWA, the site needs to successfully register a valid service worker by itself, and at the same time add a valid mainfest manifest file and declare it.</p>
+<p>Each platform or browser has requirements for the size of the Service Worker cache. When the file size of the Service Worker cache is too large, the site will be marked as not installable. For Safari, the threshold is 50 MB, a few browsers will set less or more values ​​(30MB, 70MB, 80MB), and Chrome will mark the threshold at 100 MB.</p>
 <p>In addition, the manifest file should contain at least <code>name</code> (or <code>short_name</code>) <code>icons</code> <code>start_url</code></p>
 <p>And starting from Chrome 93, Service Woker must contain effective fetch events to control offline requests.  </p>
 </li>
 <li id="fn4"><p><strong>SSR</strong>: <strong>S</strong>erver <strong>S</strong>ide <strong>R</strong>endering, </p>
 </li>
-<li id="fn5"><p><strong>SEO</strong>: <strong>S</strong>earch <strong>E</strong>ngine <strong>O</strong>ptimization. For details, please refer to <a href="https://mrhope.site/code/website/html/definition/seo/" target="_blank" rel="noopener noreferrer">SEO Introduction</a> </p>
+<li id="fn5"><p><strong>SEO</strong>: <strong>S</strong>earch <strong>E</strong>ngine <strong>O</strong>ptimization. For details, please refer to <a href="https://mrhope.site/code/site/html/definition/seo/" target="_blank" rel="noopener noreferrer">SEO Introduction</a> </p>
 </li>
 <li id="fn6"><p><strong>SPA</strong>: <strong>S</strong>ingle <strong>P</strong>age <strong>A</strong>pplication, mMost of them only have the homepage, and use history mode to handle routing instead of actually navigating between pages. </p>
 </li>
@@ -401,7 +401,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">配置</title>
     <id>https://vuepress-theme-hope.github.io/pwa/zh/config/</id>
     <link href="https://vuepress-theme-hope.github.io/pwa/zh/config/"/>
-    <updated>2021-03-12T11:15:40.000Z</updated>
+    <updated>2021-03-12T11:35:04.000Z</updated>
     <content type="html"><![CDATA[<h2 id="baselang"> baseLang</h2>
 <ul>
 <li>类型: <code>string</code></li>
@@ -569,7 +569,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">指南</title>
     <id>https://vuepress-theme-hope.github.io/pwa/zh/guide/</id>
     <link href="https://vuepress-theme-hope.github.io/pwa/zh/guide/"/>
-    <updated>2021-03-12T11:15:40.000Z</updated>
+    <updated>2021-03-12T11:35:04.000Z</updated>
     <summary type="html"><![CDATA[<p>插件为 VuePress 带来了增强的 PWA 支持[^pwa-intro]。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>插件为 VuePress 带来了增强的 PWA 支持<sup></sup>。</p>

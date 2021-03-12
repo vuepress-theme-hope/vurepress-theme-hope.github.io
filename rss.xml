@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/</link>
     <description>A vuepress theme with tons of features✨</description>
     <language>en-US</language>
-    <pubDate>Fri, 12 Mar 2021 11:18:11 GMT</pubDate>
-    <lastBuildDate>Fri, 12 Mar 2021 11:18:11 GMT</lastBuildDate>
+    <pubDate>Fri, 12 Mar 2021 11:36:12 GMT</pubDate>
+    <lastBuildDate>Fri, 12 Mar 2021 11:36:12 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -1791,7 +1791,7 @@ console<span>.</span><span>log</span><span>(</span><span>foo</span><span>(</span
       <source url="https://vuepress-theme-hope.github.io/rss.xml">Builtin Markdown features</source>
       <category>basic</category>
       <pubDate>Thu, 25 Feb 2021 12:25:39 GMT</pubDate>
-      <content:encoded><![CDATA[<p>Here are some enhance VuePress makes on markdown syntax.</p>
+      <content:encoded><![CDATA[<p>Here are some enhance VuePress makes on Markdown syntax.</p>
 <h2 id="header-anchors"> Header Anchors</h2>
 <p>Headers automatically get anchor links applied.</p>
 <h2 id="links"> Links</h2>
@@ -1984,7 +1984,7 @@ export default {
   <span>}</span>
 <span>}</span>
 </code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div></details>
-<p>In addition to a single line, you can also specify multiple single lines, ranges, or both:</p>
+<p>Beides a single line, you can also specify multiple single lines, ranges, or both:</p>
 <ul>
 <li>Line ranges: for example <code>{5-8}</code>, <code>{3-10}</code>, <code>{10-17}</code></li>
 <li>Multiple single lines: for example <code>{4,7,9}</code></li>
@@ -3824,7 +3824,7 @@ write something here ~
 <p>All articles will be added to the article list by default and rendered under the path <code>/article/</code>.</p>
 <p><img src="./assets/article.png" alt="Article list"></p>
 <p>If you don’t want the list to contain some specific articles, just set the <code>article</code> to <code>false</code> in the frontmatter of the article.</p>
-<p>If you want to top a specific article in the article list, just set <code>sticky</code> to <code>true</code> in the frontmatter of the article.</p>
+<p>To sticky a specific article in the article list, just set <code>sticky</code> to <code>true</code> in the frontmatter of the article.</p>
 <div><p>Order</p>
 <p>For sticky articles, you can set <code>sticky</code> with a number to set their order. Articles with large numbers will be listed first.</p>
 </div>
@@ -3839,7 +3839,7 @@ write something here ~
 </div>
 <h2 id="encryption-and-slideshow"> Encryption and Slideshow</h2>
 <p>The theme provides separate lists for the two special pages: encrypted article page and slide page. You can view them on the <code>/encrypt/</code> and <code>/slide/</code> pages.</p>
-<p>At the same time, in order to help visitors distinguish between these two categories of pages, their categories will be clearly marked with icons in the article list.</p>
+<p>At the same time, to help visitors distinguish between these two categories of pages, their categories will be clearly marked with icons in the article list.</p>
 <p><img src="./assets/icon-type.png" alt="Category Tips"></p>
 ]]></content:encoded>
     </item>
@@ -4480,26 +4480,182 @@ module<span>.</span>exports <span>=</span> <span>{</span>
       <link>https://vuepress-theme-hope.github.io/guide/feature/pwa/</link>
       <guid>https://vuepress-theme-hope.github.io/guide/feature/pwa/</guid>
       <source url="https://vuepress-theme-hope.github.io/rss.xml">PWA</source>
-      <description>&amp;lt;p&amp;gt;The theme will enable progressive web app support by including &amp;lt;a href=&amp;quot;https://vuepress-theme-hope.github.io/pwa/&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;&amp;lt;code&amp;gt;@mr-hope/vuepress-plugin-pwa&amp;lt;/code&amp;gt;&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;
+      <description>&amp;lt;p&amp;gt;The theme will enable progressive web app support&amp;lt;sup&amp;gt;&amp;lt;/sup&amp;gt; by including &amp;lt;a href=&amp;quot;https://vuepress-theme-hope.github.io/pwa/&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;&amp;lt;code&amp;gt;@mr-hope/vuepress-plugin-pwa&amp;lt;/code&amp;gt;&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;
 &amp;lt;p&amp;gt;If you do not need this feature or want to use other pwa plugins, you can set the &amp;lt;code&amp;gt;themeConfig.pwa&amp;lt;/code&amp;gt; to &amp;lt;code&amp;gt;false&amp;lt;/code&amp;gt; to disable the plugin.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;section&amp;gt;
+&amp;lt;ol&amp;gt;
+&amp;lt;li id=&amp;quot;fn1&amp;quot;&amp;gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;PWA introduction&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;PWA, full name Progressive Web app. PWA standard is stipulated by W3C.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;It allows sites to install the site as an App on supported platform through a browser that supports this feature. &amp;lt;/p&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+&amp;lt;/section&amp;gt;
 </description>
       <category>feature</category>
       <pubDate>Thu, 22 Oct 2020 04:23:17 GMT</pubDate>
-      <content:encoded><![CDATA[<p>The theme will enable progressive web app support by including <a href="https://vuepress-theme-hope.github.io/pwa/" target="_blank" rel="noopener noreferrer"><code>@mr-hope/vuepress-plugin-pwa</code></a>.</p>
+      <content:encoded><![CDATA[<p>The theme will enable progressive web app support<sup></sup> by including <a href="https://vuepress-theme-hope.github.io/pwa/" target="_blank" rel="noopener noreferrer"><code>@mr-hope/vuepress-plugin-pwa</code></a>.</p>
 <p>If you do not need this feature or want to use other pwa plugins, you can set the <code>themeConfig.pwa</code> to <code>false</code> to disable the plugin.</p>
 
-<h2 id="content-cache-and-update"> Content Cache and update</h2>
-<p>After the Service worker obtains the content update, a popup will be displayed in the bottom right corner, prompting the user that new content is available and allowing the user to trigger the update.</p>
-<p>The default language of the popup will automatically be set to <code>baseLang</code> configured in <code>themeConfig</code>.</p>
-<h2 id="manifest"> Manifest</h2>
-<p>A manifest.webmanifest will be auto generated in dist folder. If you have a manifest.webmanifest or manifest.json in <code>.vuepress/public</code>, the plugin will read and merge it in the final manifest.</p>
-<p>To let your site be able to register as Web App, you should set icons in <code>themeConfig.pwa.manifest.icons</code>.</p>
-<p>You can also set other options in <code>themeConfig.pwa.manifest</code>.</p>
-<h2 id="cache-size"> Cache Size</h2>
-<p>To better control what your Service Worker can precache, you can set <code>themeConfig.pwa.cachePic</code> and <code>themeConfig.pwa.cacheHTML</code> to decide whether the service worker caches HTML files except the homepage and 404 error pages and site pictures.</p>
-<p>To prevent from including large files in your precache list, any resources larger than 2MB and any pictures larger than 1MB will be dropped. You can change the size limit by setting <code>themeConfig.pwa.maxSize</code> and <code>themeConfig.pwa.maxPicSize</code>.</p>
-<h2 id="more"> More</h2>
-<p>For more detail, see <a href="https://vuepress-theme-hope.github.io/pwa/" target="_blank" rel="noopener noreferrer">pwa plugin documatation</a></p>
+<h2 id="content-caching-and-updating"> Content caching and updating</h2>
+<p>Service Worker <sup></sup> (SW for short) is mainly used to cache and proxy site content.</p>
+<p>This plugin will automatically register Service Woker through <code>workbox-build</code>.</p>
+<p>To better control what the Service Worker can pre-cache, the plugin provides the following configurations.</p>
+<p>If you are an advanced user, you can also directly set <code>themeConfig.pwa.generateSwConfig</code> to pass options to <code>workbox-build</code>.</p>
+<h3 id="default-cache"> Default cache</h3>
+<p>By default, the plugin will pre-cache all files related to the site: <code>**/*.{html,js,css,svg}</code></p>
+<p>At the same time, the plugin will cache font files: <code>**/*.{woff,woff2,eot,ttf,otf}</code>.</p>
+<h3 id="cache-control"> Cache Control</h3>
+<p>Based on the requirement of installable <sup></sup>, the plugin provides related options for cache control.</p>
+<h4 id="picture-cache"> Picture Cache</h4>
+<p>You can cache site pictures by setting the <code>cachePic</code> option to <code>true</code>.</p>
+<p>If your site is not large and the pictures are mostly critical descriptions, and hope to be displayed in offline mode, it is recommended to set this option to <code>true</code>.</p>
+<div><p>Image recognition</p>
+<p>We recognize images by file extension. Any files ending with <code>.png</code>, <code>.jpg</code>, <code>.jpeg</code>, <code>.gif</code>, <code>.bmp</code>, <code>.webp</code> will be regarded as images.</p>
+</div>
+<h4 id="html-cache"> HTML cache</h4>
+<p>When your site is too large, you can set <code>themeConfig.pwa.cacheHTML</code> to <code>false</code> to cache only the homepage and 404 error pages.</p>
+<div><p>Why can these be removed?</p>
+<p>Though VuePress generates HTML files through SSR<sup></sup> for all pages, these files are mainly used for SEO<sup></sup> and allow you to directly configure the backend without SPA<sup></sup> Visit any link.</p>
+<p>VuePress is essentially a SPA. This means that you can enter from the homepage to access all pages normally only caching the homepage.</p>
+<p>When your site has a large number of pages or content, and the volume is too large after including HTML files, you can consider setting this option to <code>false</code>, which can reduce the volume by about 40%. The disadvantage is that users can only enter through the homepage and then navigate to the corresponding page in an offline environment. Direct access to a link will prompt a web page error.</p>
+</div>
+<h4 id="size-control"> Size control</h4>
+<p>To prevent large files from being included in the pre-cache list, any files larger than 2MB or pictures larger than 1MB will be deleted.</p>
+<p>You can customize the maximum file size of the cache (unit: KB) with the <code>themeConfig.pwa.maxSize</code> option, or change the size limit of the picture (unit: KB) with <code>themeConfig.pwa.maxPicSize</code>.</p>
+<h3 id="update-popup"> Update popup</h3>
+<p>The default language of the popup componnet will be automatically set to <code>themeConfig.baseLang</code>, when it is not set, it will fall back to <code>en-US</code>.</p>
+<div><p>Custom popup</p>
+<p>If you are not satisfied with the default popup component, you can write component and replace it by yourself. To do that, You need to register your popup component globally and pass the name of the component to the <code>popupComponent</code> option.</p>
+</div>
+<h2 id="manifest-file-generation"> Manifest file generation</h2>
+<p>In order to ensure the installability of PWA, the site needs to generate a manifest file and declare a valid manifest file address <sup></sup> through <code>link</code>.</p>
+<p>The plugin will automatically generate the Manifest file <code>manifest.webmanifest</code> for you in the output directory, and will also add the manifest address statement to each HTML <code>&lt;head&gt;</code>.</p>
+<p>If you already have a <code>manifest.webmanifest</code> or <code>manifest.json</code> in <code>.vuepress/public</code>, the plugin will read and merge it into the final manifest.</p>
+<h3 id="automatic-generation"> Automatic generation</h3>
+<p>The plugin will use the information from the VuePress plugin API and set the fallback for fields in manifest as much as possible. So you don’t need to set most of the manifest fields.</p>
+<p>If the following fields are not set, they will try to fallback to the following preset values ​​in order.</p>
+<table>
+<thead>
+<tr>
+<th>Options</th>
+<th>Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td><code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></td>
+</tr>
+<tr>
+<td>short_name</td>
+<td><code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></td>
+</tr>
+<tr>
+<td>description</td>
+<td><code>siteConfig.description</code> || <code>themeConfig.description</code> || <code>'A site built with vuepress-theme-hope'</code></td>
+</tr>
+<tr>
+<td>lang</td>
+<td><code>options.baseLang</code> || <code>themeConfig.baseLang</code> ||<code>&quot;en-US&quot;</code></td>
+</tr>
+<tr>
+<td>start_url</td>
+<td><code>context.base</code></td>
+</tr>
+<tr>
+<td>scope</td>
+<td><code>context.base</code></td>
+</tr>
+<tr>
+<td>display</td>
+<td><code>&quot;standalone&quot;</code></td>
+</tr>
+<tr>
+<td>theme_color</td>
+<td><code>&quot;#46bd87&quot;</code></td>
+</tr>
+<tr>
+<td>background_color</td>
+<td><code>'#ffffff'</code></td>
+</tr>
+<tr>
+<td>orientation</td>
+<td><code>'portrait-primary'</code></td>
+</tr>
+<tr>
+<td>prefer_related_applications</td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<p>For complete configuration items, please refer to <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/packages/pwa/src/types/manifest.d.ts" target="_blank" rel="noopener noreferrer">Manifest Type Definition File</a></p>
+<h3 id="manual-configuration"> Manual configuration</h3>
+<p>You can manually specify the contents of the manifest in the <code>themeConfig.pwa.manifest</code> option.</p>
+<div><p>Priority</p>
+<p><code>themeConfig.pwa.manifest</code> option has the highest priority, followed by manifest files that may exist in the <code>public</code> folder.</p>
+</div>
+<p><strong>You should at least set a valid icon through <code>themeConfig.pwa.manifest.icons</code> or other icon related options in the PWA plugin.</strong></p>
+<div><p>Note</p>
+<p>The installability <sup></sup> specification requires at least one valid icon to be declared in the manifest.</p>
+<p>So if you do not configure <code>themeConfig.pwa.manifest.icons</code>, visitors can only enjoy the offline accessibility brought by the Service Worker cache, while cannot install your site as a PWA.</p>
+<p>Besides the plugin does not process anything in the manifest, but outputs them as-is. This means that if you plan to deploy to a subdirectory, you should add <code>base</code> to the corresponding URL in the manifest yourself.</p>
+</div>
+<h2 id="other-options"> Other options</h2>
+<p>The plug-in also provides other PWA-related options, such as Microsoft tile icon and color settings, Apple icon and so on.</p>
+<p>You can set them as needed. For detailed options, please see <a href="https://vuepress-theme-hope.github.io/pwa/config/" target="_blank" rel="noopener noreferrer">Configuration Page</a>).</p>
+<h2 id="further-reading"> Further Reading</h2>
+<p>For more details, please see:</p>
+<ul>
+<li><a href="https://vuepress-theme-hope.github.io/pwa/" target="_blank" rel="noopener noreferrer">PWA plugin docs</a></li>
+<li><a href="https://web.dev/progressive-web-apps/" target="_blank" rel="noopener noreferrer">Google PWA</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps" target="_blank" rel="noopener noreferrer">MDN PWA</a></li>
+<li><a href="https://w3c.github.io/manifest/" target="_blank" rel="noopener noreferrer">W3C Manifest Specification</a></li>
+</ul>
+<hr>
+<section>
+<ol>
+<li id="fn1"><p><strong>PWA introduction</strong></p>
+<p>PWA, full name Progressive Web app. PWA standard is stipulated by W3C.</p>
+<p>It allows sites to install the site as an App on supported platform through a browser that supports this feature. </p>
+</li>
+<li id="fn2"><p><strong>Service Worker Introduction</strong></p>
+<ol>
+<li>
+<p>The Service Worker will get and cache all the files registered in it during the registration process.</p>
+</li>
+<li>
+<p>After the registration complete, the Service Worker is activated, and starts to proxy and control all your requests.</p>
+</li>
+<li>
+<p>Whenever you want to initiate an access request through the browser, the Service Worker will check whether it exists in its own cache list, if it exists, it will directly return the cached result, otherwise it will call its own fetch method to get it. You can use a custom fetch method to fully control the result of the request for resources in the webpage, such as providing a fallback webpage when offline.</p>
+</li>
+<li>
+<p>Every time the user reopens the site, the Service Worker will request to the link when it was registered. If a new version of Service Woker is detected, it will update itself and start caching the list of resources registered in the new Service Worker . After the content update is successfully obtained, the Service Worker will trigger the <code>update</code> event. The user can be notified through this event, for example, a pop-up window will be displayed in the lower right corner, prompting the user that new content is available and allowing the user to trigger an update.</p>
+</li>
+</ol>
+ </li>
+<li id="fn3"><p><strong>Installable</strong></p>
+<p>To let the site be registered as a PWA, the site needs to successfully register a valid service worker by itself, and at the same time add a valid mainfest manifest file and declare it.</p>
+<p>Each platform or browser has requirements for the size of the Service Worker cache. When the file size of the Service Worker cache is too large, the site will be marked as not installable. For Safari, the threshold is 50 MB, a few browsers will set less or more values ​​(30MB, 70MB, 80MB), and Chrome will mark the threshold at 100 MB.</p>
+<p>In addition, the manifest file should contain at least <code>name</code> (or <code>short_name</code>) <code>icons</code> <code>start_url</code></p>
+<p>And starting from Chrome 93, Service Woker must contain effective fetch events to control offline requests.  </p>
+</li>
+<li id="fn4"><p><strong>SSR</strong>: <strong>S</strong>erver <strong>S</strong>ide <strong>R</strong>endering, </p>
+</li>
+<li id="fn5"><p><strong>SEO</strong>: <strong>S</strong>earch <strong>E</strong>ngine <strong>O</strong>ptimization. For details, please refer to <a href="https://mrhope.site/code/site/html/definition/seo/" target="_blank" rel="noopener noreferrer">SEO Introduction</a> </p>
+</li>
+<li id="fn6"><p><strong>SPA</strong>: <strong>S</strong>ingle <strong>P</strong>age <strong>A</strong>pplication, mMost of them only have the homepage, and use history mode to handle routing instead of actually navigating between pages. </p>
+</li>
+<li id="fn7"><p><strong>Manifest File</strong></p>
+<p>The manifest file uses the JSON format and is responsible for declaring various information of the PWA, such as name, description, icon, and shortcut actions.</p>
+<p>In order for your site to be registered as a PWA, you need to meet the basic specifications of the manifest to make the browser consider the site as an installable PWA and allow users to install it.</p>
+<div><p>Info</p>
+<p>For Manifest standards and specifications, please refer to <a href="https://w3c.github.io/manifest/" target="_blank" rel="noopener noreferrer">W3C Manifest</a></p>
+</div>
+ </li>
+</ol>
+</section>
 ]]></content:encoded>
     </item>
     <item>
@@ -4509,7 +4665,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
       <source url="https://vuepress-theme-hope.github.io/rss.xml">Features</source>
       <category>feature</category>
       <pubDate>Thu, 30 Jan 2020 11:25:30 GMT</pubDate>
-      <content:encoded><![CDATA[<p>vuepress-theme-hope introduces many great features. Most of the functions are separated into plugins, which means if you like them, you can use them in other vuepress themes or <code>@vuepress/theme-default</code>.</p>
+      <content:encoded><![CDATA[<p>vuepress-theme-hope introduces many great features. Most of the functions are separated into plugins, which means if you like them, you can use them in other VuePress themes or <code>@vuepress/theme-default</code>.</p>
 <h2 id="catalog"> Catalog</h2>
 <ul>
 <li>
@@ -4769,13 +4925,13 @@ module<span>.</span>exports <span>=</span> <span>{</span>
       <guid>https://vuepress-theme-hope.github.io/guide/feature/typescript/</guid>
       <source url="https://vuepress-theme-hope.github.io/rss.xml">TS support</source>
       <description>&amp;lt;p&amp;gt;Most of the files of vuepress-theme-hope are written using TypeScript, so vuepress-theme-hope can also bring native TypeScript support to your VuePress project, you only need to set &amp;lt;code&amp;gt;themeConfig.typescript&amp;lt;/code&amp;gt; to &amp;lt;code&amp;gt;true&amp;lt;/code&amp;gt; so that support for &amp;lt;code&amp;gt;typescript&amp;lt;/code&amp;gt; can be turned on.&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;This means you can use &amp;lt;code&amp;gt;enhanceAppFiles.ts&amp;lt;/code&amp;gt; and use Typescript in both your vue components and Markdown files.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;This means you can use &amp;lt;code&amp;gt;enhanceAppFiles.ts&amp;lt;/code&amp;gt; and use TypeScript in both your vue components and Markdown files.&amp;lt;/p&amp;gt;
 &amp;lt;p&amp;gt;To pass some custom options to ts-loader, you can also set &amp;lt;code&amp;gt;themeConfig.typescript&amp;lt;/code&amp;gt; with an Object to pass it to ts-loader.&amp;lt;/p&amp;gt;
 </description>
       <category>feature</category>
       <pubDate>Thu, 30 Jan 2020 11:25:30 GMT</pubDate>
       <content:encoded><![CDATA[<p>Most of the files of vuepress-theme-hope are written using TypeScript, so vuepress-theme-hope can also bring native TypeScript support to your VuePress project, you only need to set <code>themeConfig.typescript</code> to <code>true</code> so that support for <code>typescript</code> can be turned on.</p>
-<p>This means you can use <code>enhanceAppFiles.ts</code> and use Typescript in both your vue components and Markdown files.</p>
+<p>This means you can use <code>enhanceAppFiles.ts</code> and use TypeScript in both your vue components and Markdown files.</p>
 <p>To pass some custom options to ts-loader, you can also set <code>themeConfig.typescript</code> with an Object to pass it to ts-loader.</p>
 
 <div><p>Tips</p>
@@ -6218,7 +6374,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <span>}</span><span>;</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br></div></div><div><p>Note</p>
-<p>You need to pay special attention to the order of object key declaration. Generally speaking, you should put the more precise path first, because VuePress will traverse the key names of the sidebar configuration in order to find the matching configuration. Once a key name is successfully matched with the current path, it will display the corresponding sidebar configuration.</p>
+<p>You need to pay special attention to the order of object key declaration. Generally speaking, you should put the more precise path first, because VuePress will traverse the key names of the sidebar configuration to find the matching configuration. Once a key name is successfully matched with the current path, it will display the corresponding sidebar configuration.</p>
 <p>In this case, the fallback sidebar must be defined last for this reason.</p>
 </div>
 <h3 id="auto-sidebar-for-single-pages"> Auto Sidebar for Single Pages</h3>
@@ -10048,7 +10204,7 @@ lang: en-US</span>
 <div><p>Tips</p>
 <p>在 VuePress 中，Frontmatter 是 <strong>可选的</strong>。</p>
 </div>
-<h3 id="其他格式的-front-matter"> 其他格式的 Front Matter</h3>
+<h3 id="其他格式的-frontmatter"> 其他格式的 Frontmatter</h3>
 <p>除了 YAML 之外，VuePress 也支持 JSON 或者 <a href="https://github.com/toml-lang/toml" target="_blank" rel="noopener noreferrer">TOML</a> 格式的 front matter。</p>
 <p>JSON front matter 需要以花括号开头和结尾:</p>
 <div><pre><code>---
@@ -12589,26 +12745,184 @@ module<span>.</span>exports <span>=</span> <span>{</span>
       <link>https://vuepress-theme-hope.github.io/zh/guide/feature/pwa/</link>
       <guid>https://vuepress-theme-hope.github.io/zh/guide/feature/pwa/</guid>
       <source url="https://vuepress-theme-hope.github.io/rss.xml">PWA</source>
-      <description>&amp;lt;p&amp;gt;默认情况下，该主题将通过内置 &amp;lt;a href=&amp;quot;https://vuepress-theme-hope.github.io/pwa/zh/&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;&amp;lt;code&amp;gt;@mr-hope/vuepress-plugin-pwa&amp;lt;/code&amp;gt;&amp;lt;/a&amp;gt; 启用渐进式 Web 应用程序支持。&amp;lt;/p&amp;gt;
+      <description>&amp;lt;p&amp;gt;默认情况下，该主题将通过内置 &amp;lt;a href=&amp;quot;https://vuepress-theme-hope.github.io/pwa/zh/&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;&amp;lt;code&amp;gt;@mr-hope/vuepress-plugin-pwa&amp;lt;/code&amp;gt;&amp;lt;/a&amp;gt; 启用渐进式 Web 应用程序支持&amp;lt;sup&amp;gt;&amp;lt;/sup&amp;gt;。&amp;lt;/p&amp;gt;
 &amp;lt;p&amp;gt;如果你不需要此功能或想使用其他 pwa 插件，则可以将 &amp;lt;code&amp;gt;themeConfig.pwa&amp;lt;/code&amp;gt; 设置为 &amp;lt;code&amp;gt;false&amp;lt;/code&amp;gt; 来禁用该插件。&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;section&amp;gt;
+&amp;lt;ol&amp;gt;
+&amp;lt;li id=&amp;quot;fn1&amp;quot;&amp;gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;PWA 介绍&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;PWA 全称 Progressive Web app，即渐进式网络应用程序，标准由 W3C 规定。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;它允许网站通过支持该特性的浏览器将网站作为 App 安装在对应平台上。 &amp;lt;/p&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+&amp;lt;/section&amp;gt;
 </description>
       <category>feature</category>
       <pubDate>Thu, 22 Oct 2020 04:23:17 GMT</pubDate>
-      <content:encoded><![CDATA[<p>默认情况下，该主题将通过内置 <a href="https://vuepress-theme-hope.github.io/pwa/zh/" target="_blank" rel="noopener noreferrer"><code>@mr-hope/vuepress-plugin-pwa</code></a> 启用渐进式 Web 应用程序支持。</p>
+      <content:encoded><![CDATA[<p>默认情况下，该主题将通过内置 <a href="https://vuepress-theme-hope.github.io/pwa/zh/" target="_blank" rel="noopener noreferrer"><code>@mr-hope/vuepress-plugin-pwa</code></a> 启用渐进式 Web 应用程序支持<sup></sup>。</p>
 <p>如果你不需要此功能或想使用其他 pwa 插件，则可以将 <code>themeConfig.pwa</code> 设置为 <code>false</code> 来禁用该插件。</p>
 
 <h2 id="内容缓存和更新"> 内容缓存和更新</h2>
-<p>Service worker 成功获取内容更新后，将在右下角显示一个弹出窗口，提示用户新内容可用并允许用户触发更新。</p>
-<p>弹出窗口的默认语言将自动设置为 <code>themeConfig.baseLang</code> 。</p>
-<h2 id="manifest"> Manifest</h2>
-<p>插件将自动在输出目录生成 <code>mainfest.json</code>。如果你在 <code>.vuepress/public</code> 中有一个 manifest.webmanifest 或 manifest.json，该插件将读取并合并到最终 manifest 中。</p>
-<p>为了使你的站点能够被注册为 Web App，你应该在 <code>themeConfig.pwa.manifest.icons</code> 中设置图标。</p>
-<p>你也可以在 <code>themeConfig.pwa.manifest</code> 中设置其他选项。</p>
-<h2 id="缓存大小"> 缓存大小</h2>
-<p>为了更好地控制 Service Worker 可以预缓存的内容，可以设置 <code>themeConfig.pwa.cachePic</code> 和 <code>themeConfig.pwa.cacheHTML</code> 来决定 Service Worker 是否缓存除主页和 404 错误页外的 HTML 文件与站点图片。</p>
-<p>为了防止在预缓存列表中包含大文件，任何大于 2MB 的资源与大于 1MB 的图片都将被删除。你可以通过设置 <code>themeConfig.pwa.maxSize</code> 和 <code>themeConfig.pwa.maxPicSize</code> 来更改大小限制。</p>
-<h2 id="更多"> 更多</h2>
-<p>有关更多详细信息，请参见 <a href="https://vuepress-theme-hope.github.io/pwa/zh/" target="_blank" rel="noopener noreferrer">pwa 插件文档</a></p>
+<p>Service Worker <sup></sup> (简称 SW) 主要用于获取并托管网站内容。</p>
+<p>PWA 插件会自动通过 <code>workbox-build</code> 注册 Service Woker。</p>
+<p>为了更好地控制 Service Worker 可以预缓存的内容，插件提供了下列设置。</p>
+<p>如果你是一个高级用户，你也可以直接设置 <code>themeConfig.pwa.generateSwConfig</code> 来将选项传递给 <code>workbox-build</code>。</p>
+<h3 id="默认缓存"> 默认缓存</h3>
+<p>默认情况下插件会预缓存所有与网站相关的文件: <code>**/*.{html,js,css,svg}</code></p>
+<p>同时插件还会缓存字体文件: <code>**/*.{woff,woff2,eot,ttf,otf}</code>。</p>
+<h3 id="缓存控制"> 缓存控制</h3>
+<p>基于可安装性<sup></sup>的要求，插件提供了缓存控制的相关选项。</p>
+<h4 id="图片缓存"> 图片缓存</h4>
+<p>你可以通过设置 <code>themeConfig.pwa.cachePic</code> 选项为 <code>true</code> 来缓存站点图片。</p>
+<p>如果您的站点体积不大，且配图大多为关键性说明，希望可以在离线模式下显示，建议将此项设置为 <code>true</code>。</p>
+<div><p>图片识别</p>
+<p>我们通过文件后缀名识别图片，任何以 <code>.png</code>, <code>.jpg</code>, <code>.jpeg</code> , <code>.gif</code>, <code>.bmp</code>, <code>.webp</code> 结尾的文件都会视为图片。</p>
+</div>
+<h4 id="html-缓存"> HTML 缓存</h4>
+<p>当你网站体积过大时，你可以通过设置 <code>themeConfig.pwa.cacheHTML</code> 为 <code>false</code> 来仅缓存除主页和 404 错误页。</p>
+<div><p>为什么可以移除</p>
+<p>虽然说 VuePress 为所有的页面通过 SSR<sup></sup> 生成了 HTML 文件，但是这些文件主要用于 SEO<sup></sup>，并能够让你在后端不做 SPA<sup></sup> 配置的情况下能够直接访问任何链接。</p>
+<p>VuePress 本质上是一个 SPA。这意味着你只需要缓存主页并从主页进入即可正常访问所有页面。</p>
+<p>当你站点页面数量或内容很多，包含 HTML 文件后体积过大时，你可以考虑将此项设置为 <code>false</code>，这样可以缩减大约 40% 的体积。缺点是用户在离线环境下只能通过主页进入再自行导航到对应页面。直接访问某个链接会出现网页错误的提示。</p>
+</div>
+<h4 id="大小控制"> 大小控制</h4>
+<p>为了防止在预缓存列表中包含大文件，任何大于 2MB 的文件或大于 1MB 的图片都将被删除。</p>
+<p>你可以通过 <code>themeConfig.pwa.maxSize</code> 选项自定义缓存的最大文件大小 (单位 KB)，或通过 <code>themeConfig.pwa.maxPicSize</code> 来更改图片的大小限制 (单位: KB)。</p>
+<h3 id="更新弹窗"> 更新弹窗</h3>
+<p>弹出窗口的默认语言将自动设置为 <code>themeConfig.baseLang</code> 选项的值，当未设置时，回退到 <code>en-US</code>。</p>
+<div><p>自定义弹窗</p>
+<p>如果你对默认的弹窗不满意，你可以自行编写组件更换。你需要全局注册自己的弹窗组件，并将组件的名称传递给 <code>themeConfig.pwa.popupComponent</code> 选项。</p>
+</div>
+<h2 id="清单文件生成"> 清单文件生成</h2>
+<p>为了保证 PWA 的可安装性，网站需要生成清单文件，并通过 <code>link</code> 声明有效的 manifest 清单文件地址<sup></sup>。</p>
+<p>插件会在输出目录自动为你生成 Manifest 文件 <code>manifest.webmanifest</code>，同时还会添加清单地址声明到每一个 HTML 的 <code>&lt;head&gt;</code> 中。</p>
+<p>如果你在 <code>.vuepress/public</code> 中已有一个 <code>manifest.webmanifest</code> 或 <code>manifest.json</code>，该插件将读取它并合并到最终 manifest 中。</p>
+<h3 id="自动生成"> 自动生成</h3>
+<p>插件会尽可能的通过 VuePress 插件接口的信息，为 manifest 的大部分设置项设置 fallback，这意味着即使你无需设置 manifest 的大多数内容。</p>
+<p>如果未设置下列选项，它们会按照顺序依次尝试回退到以下预设值。</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td><code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></td>
+</tr>
+<tr>
+<td>short_name</td>
+<td><code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></td>
+</tr>
+<tr>
+<td>description</td>
+<td><code>siteConfig.description</code> || <code>themeConfig.description</code> || <code>'A site built with vuepress-theme-hope'</code></td>
+</tr>
+<tr>
+<td>lang</td>
+<td><code>options.baseLang</code> || <code>themeConfig.baseLang</code></td>
+</tr>
+<tr>
+<td>start_url</td>
+<td><code>context.base</code></td>
+</tr>
+<tr>
+<td>scope</td>
+<td><code>context.base</code></td>
+</tr>
+<tr>
+<td>display</td>
+<td><code>&quot;standalone&quot;</code></td>
+</tr>
+<tr>
+<td>theme_color</td>
+<td><code>&quot;#46bd87&quot;</code></td>
+</tr>
+<tr>
+<td>background_color</td>
+<td><code>'#ffffff'</code></td>
+</tr>
+<tr>
+<td>orientation</td>
+<td><code>'portrait-primary'</code></td>
+</tr>
+<tr>
+<td>prefer_related_applications</td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<p>完整的配置项详见 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/packages/pwa/src/types/manifest.d.ts" target="_blank" rel="noopener noreferrer">Manifest 类型定义文件</a></p>
+<h3 id="手动配置"> 手动配置</h3>
+<p>你可以在 <code>themeConfig.pwa.manifest</code> 选项中手动指定 manifest 的各项内容。</p>
+<div><p>优先级</p>
+<p><code>themeConfig.pwa.manifest</code> 选项的设置具有最高的优先级，之后是 <code>public</code> 文件夹下可能存在的 manifest 文件。</p>
+</div>
+<p><strong>你至少应该通过 <code>manifest.icons</code> 或 PWA 插件中的其他选项设置一个有效的图标。</strong> 因为这是我们没法默认生成的。</p>
+<div><p>Note</p>
+<p>可安装性<sup></sup>规范要求 manifest 中至少声明一个有效的图标。</p>
+<p>所以如果你不配置 <code>themeConfig.pwa.manifest.icons</code>，访问者只能享受到 Service Worker 缓存带来的离线可访问性，而并不能作为 PWA 进行安装。</p>
+<p>另外插件并不会处理 manifest 中的任何内容，而是原样输出它们。这意味着如果打算你部署到某个子目录，你则应自行添加 <code>base</code> 到 manifest 中的相应 URL。</p>
+</div>
+<h2 id="其他选项"> 其他选项</h2>
+<p>插件还提供了其他 PWA 相关选项，比如微软磁贴图标与颜色设置，苹果图标等。</p>
+<p>你可以酌情根据需要设置它们。详细的选项请见 <a href="https://vuepress-theme-hope.github.io/pwa/zh/config/" target="_blank" rel="noopener noreferrer">PWA 插件配置</a>。</p>
+<h2 id="相关阅读"> 相关阅读</h2>
+<p>更多内容，请详见:</p>
+<ul>
+<li><a href="https://vuepress-theme-hope.github.io/pwa/zh/" target="_blank" rel="noopener noreferrer">PWA 插件文档</a></li>
+<li><a href="https://web.dev/progressive-web-apps/" target="_blank" rel="noopener noreferrer">Google PWA</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps" target="_blank" rel="noopener noreferrer">MDN PWA</a></li>
+<li><a href="https://w3c.github.io/manifest/" target="_blank" rel="noopener noreferrer">W3C Manifest 规范</a></li>
+</ul>
+<hr>
+<section>
+<ol>
+<li id="fn1"><p><strong>PWA 介绍</strong></p>
+<p>PWA 全称 Progressive Web app，即渐进式网络应用程序，标准由 W3C 规定。</p>
+<p>它允许网站通过支持该特性的浏览器将网站作为 App 安装在对应平台上。 </p>
+</li>
+<li id="fn2"><p><strong>Service Worker 简要介绍</strong></p>
+<ol>
+<li>
+<p>Service Worker 会在注册过程中获取注册在其中的所有文件并缓存它们。</p>
+</li>
+<li>
+<p>注册成功后，Service Worker 激活，并开始代理并控制你的全部请求。</p>
+</li>
+<li>
+<p>每当你想要通过浏览器发起访问请求后，Service Worker 将会查看其是否存在与自身缓存列表中，若存在则直接返回缓存好的结果，否则调用自身的 fetch 方法进行获取。你可以通过自定义 fetch 方法，来完全控制网页内资源获取请求的结果，比如在离线时提供一个 fallback 的网页。</p>
+</li>
+<li>
+<p>每次用户重新打开网站时，Service Worker 会向自身注册时的地址发出校验命令，如果检测到新版本的 Service Woker，则会更新自身，并开始缓存注册在新 Service Worker 中的资源列表。成功获取内容更新后，Service Worker 将会触发 <code>update</code> 事件。可以通过此事件提示用户，比如将在右下角显示一个弹出窗口，提示用户新内容可用并允许用户触发更新。</p>
+</li>
+</ol>
+ </li>
+<li id="fn3"><p><strong>可安装性</strong></p>
+<p>想要让网站可以注册为 PWA，网站需要自行成功注册有效的 Service Worker，同时添加合法的 mainfest 清单文件并在网站中声明它。</p>
+<p>各平台或浏览器对 Service Worker 缓存的大小有要求，当 Service Worker 缓存的文件体积过大后，该网站将会被标记为不可安装。对于 Safari 这个阈值是 50 MB，少数浏览器会设置更少或更多的值 (30MB, 70MB, 80MB)，最大的 Chrome 也将阈值标识在 100 MB。</p>
+<p>另外，清单文件应至少包含 <code>name</code>(或 <code>short_name</code>) <code>icons</code> <code>start_url</code>。</p>
+<p>从 Chrome 93 起 Service Woker 必须含有有效的控制离线请求的 fetch 事件  </p>
+</li>
+<li id="fn4"><p><strong>SSR</strong>: <strong>S</strong>erver <strong>S</strong>ide <strong>R</strong>endering，服务端渲染 </p>
+</li>
+<li id="fn5"><p><strong>SEO</strong>: <strong>S</strong>earch <strong>E</strong>ngine <strong>O</strong>ptimization，搜索引擎增强，</p>
+<p>详见 <a href="https://mrhope.site/code/website/html/definition/seo/" target="_blank" rel="noopener noreferrer">SEO 介绍</a> </p>
+</li>
+<li id="fn6"><p><strong>SPA</strong>: <strong>S</strong>ingle <strong>P</strong>age <strong>A</strong>pplication, 单页应用</p>
+<p>大多只有主页，并使用 history mode 处理路由，而不是真的在页面之间导航。 </p>
+</li>
+<li id="fn7"><p><strong>清单文件</strong></p>
+<p>清单文件使用 JSON 格式，负责声明 PWA 各项信息，如名称、描述、图标、快捷动作等。</p>
+<p>为了使你的站点能够被注册为 PWA，你需要满足 manifest 基本的规范，才能使浏览器认为该网站为一个可安装的 PWA 并允许用户安装它。</p>
+<div><p>Info</p>
+<p>Manifest 的标准与规范，请详见 <a href="https://w3c.github.io/manifest/" target="_blank" rel="noopener noreferrer">W3C Manifest</a></p>
+</div>
+ </li>
+</ol>
+</section>
 ]]></content:encoded>
     </item>
     <item>
@@ -15878,6 +16192,43 @@ $$
 ]]></content:encoded>
     </item>
     <item>
+      <title>主页</title>
+      <link>https://vuepress-theme-hope.github.io/zh/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">主页</source>
+      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
+      <content:encoded><![CDATA[<p>你可以直接使用 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope-template" target="_blank" rel="noopener noreferrer">vuepress-theme-hope 模板</a> 来开始你的 VuePress 之旅。</p>
+<h2 id="🛠-安装"> 🛠 安装</h2>
+<CodeGroup>
+<CodeGroupItem title="yarn">
+<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-theme-hope
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="npm">
+<div><pre><code><span>npm</span> i -D vuepress-theme-hope
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+<h2 id="🚀-使用"> 🚀 使用</h2>
+<div><pre><code><span>// .vuepress/config.js</span>
+<span>const</span> <span>{</span> config <span>}</span> <span>=</span> <span>require</span><span>(</span><span>"vuepress-theme-hope"</span><span>)</span><span>;</span>
+
+module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><span>{</span>
+  <span>// your config here</span>
+<span>}</span><span>)</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><div><p>Tips</p>
+<p>引入 <code>config</code> 函数的作用是在你编辑配置的时候，通过 TS 的 Interface 以及 JSDoc，很方便的给你提示。</p>
+<p>同时，<code>config</code> 函数也会为你补全一些直接交付给 VuePress 的默认配置。</p>
+<p>你可以查看 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/docs/theme/src/.vuepress/config.js" target="_blank" rel="noopener noreferrer">本文档配置</a> 作为一个配置参考。</p>
+</div>
+<h2 id="官方-qq-群"> 官方 QQ 群</h2>
+<ul>
+<li><a href="https://jq.qq.com/?_wv=1027&amp;k=rATJyxGK" target="_blank" rel="noopener noreferrer">点击加入</a> (群号: 1003437555)</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
       <title>文章列表</title>
       <link>https://vuepress-theme-hope.github.io/zh/guide/blog/article/</link>
       <guid>https://vuepress-theme-hope.github.io/zh/guide/blog/article/</guid>
@@ -16015,43 +16366,6 @@ $$
 <li>
 <p><a href="./apperance.html"><strong>主题外观配置</strong></a></p>
 </li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>主页</title>
-      <link>https://vuepress-theme-hope.github.io/zh/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">主页</source>
-      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
-      <content:encoded><![CDATA[<p>你可以直接使用 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope-template" target="_blank" rel="noopener noreferrer">vuepress-theme-hope 模板</a> 来开始你的 VuePress 之旅。</p>
-<h2 id="🛠-安装"> 🛠 安装</h2>
-<CodeGroup>
-<CodeGroupItem title="yarn">
-<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-theme-hope
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-<CodeGroupItem title="npm">
-<div><pre><code><span>npm</span> i -D vuepress-theme-hope
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-</CodeGroup>
-<h2 id="🚀-使用"> 🚀 使用</h2>
-<div><pre><code><span>// .vuepress/config.js</span>
-<span>const</span> <span>{</span> config <span>}</span> <span>=</span> <span>require</span><span>(</span><span>"vuepress-theme-hope"</span><span>)</span><span>;</span>
-
-module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><span>{</span>
-  <span>// your config here</span>
-<span>}</span><span>)</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><div><p>Tips</p>
-<p>引入 <code>config</code> 函数的作用是在你编辑配置的时候，通过 TS 的 Interface 以及 JSDoc，很方便的给你提示。</p>
-<p>同时，<code>config</code> 函数也会为你补全一些直接交付给 VuePress 的默认配置。</p>
-<p>你可以查看 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/docs/theme/src/.vuepress/config.js" target="_blank" rel="noopener noreferrer">本文档配置</a> 作为一个配置参考。</p>
-</div>
-<h2 id="官方-qq-群"> 官方 QQ 群</h2>
-<ul>
-<li><a href="https://jq.qq.com/?_wv=1027&amp;k=rATJyxGK" target="_blank" rel="noopener noreferrer">点击加入</a> (群号: 1003437555)</li>
 </ul>
 ]]></content:encoded>
     </item>
