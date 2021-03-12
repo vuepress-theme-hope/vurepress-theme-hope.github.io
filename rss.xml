@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/</link>
     <description>A vuepress theme with tons of features✨</description>
     <language>en-US</language>
-    <pubDate>Fri, 12 Mar 2021 08:14:33 GMT</pubDate>
-    <lastBuildDate>Fri, 12 Mar 2021 08:14:33 GMT</lastBuildDate>
+    <pubDate>Fri, 12 Mar 2021 11:18:11 GMT</pubDate>
+    <lastBuildDate>Fri, 12 Mar 2021 11:18:11 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -15878,43 +15878,6 @@ $$
 ]]></content:encoded>
     </item>
     <item>
-      <title>主页</title>
-      <link>https://vuepress-theme-hope.github.io/zh/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">主页</source>
-      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
-      <content:encoded><![CDATA[<p>你可以直接使用 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope-template" target="_blank" rel="noopener noreferrer">vuepress-theme-hope 模板</a> 来开始你的 VuePress 之旅。</p>
-<h2 id="🛠-安装"> 🛠 安装</h2>
-<CodeGroup>
-<CodeGroupItem title="yarn">
-<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-theme-hope
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-<CodeGroupItem title="npm">
-<div><pre><code><span>npm</span> i -D vuepress-theme-hope
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-</CodeGroup>
-<h2 id="🚀-使用"> 🚀 使用</h2>
-<div><pre><code><span>// .vuepress/config.js</span>
-<span>const</span> <span>{</span> config <span>}</span> <span>=</span> <span>require</span><span>(</span><span>"vuepress-theme-hope"</span><span>)</span><span>;</span>
-
-module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><span>{</span>
-  <span>// your config here</span>
-<span>}</span><span>)</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><div><p>Tips</p>
-<p>引入 <code>config</code> 函数的作用是在你编辑配置的时候，通过 TS 的 Interface 以及 JSDoc，很方便的给你提示。</p>
-<p>同时，<code>config</code> 函数也会为你补全一些直接交付给 VuePress 的默认配置。</p>
-<p>你可以查看 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/docs/theme/src/.vuepress/config.js" target="_blank" rel="noopener noreferrer">本文档配置</a> 作为一个配置参考。</p>
-</div>
-<h2 id="官方-qq-群"> 官方 QQ 群</h2>
-<ul>
-<li><a href="https://jq.qq.com/?_wv=1027&amp;k=rATJyxGK" target="_blank" rel="noopener noreferrer">点击加入</a> (群号: 1003437555)</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
       <title>文章列表</title>
       <link>https://vuepress-theme-hope.github.io/zh/guide/blog/article/</link>
       <guid>https://vuepress-theme-hope.github.io/zh/guide/blog/article/</guid>
@@ -16052,6 +16015,43 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
 <li>
 <p><a href="./apperance.html"><strong>主题外观配置</strong></a></p>
 </li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>主页</title>
+      <link>https://vuepress-theme-hope.github.io/zh/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">主页</source>
+      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
+      <content:encoded><![CDATA[<p>你可以直接使用 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope-template" target="_blank" rel="noopener noreferrer">vuepress-theme-hope 模板</a> 来开始你的 VuePress 之旅。</p>
+<h2 id="🛠-安装"> 🛠 安装</h2>
+<CodeGroup>
+<CodeGroupItem title="yarn">
+<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-theme-hope
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="npm">
+<div><pre><code><span>npm</span> i -D vuepress-theme-hope
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+<h2 id="🚀-使用"> 🚀 使用</h2>
+<div><pre><code><span>// .vuepress/config.js</span>
+<span>const</span> <span>{</span> config <span>}</span> <span>=</span> <span>require</span><span>(</span><span>"vuepress-theme-hope"</span><span>)</span><span>;</span>
+
+module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><span>{</span>
+  <span>// your config here</span>
+<span>}</span><span>)</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><div><p>Tips</p>
+<p>引入 <code>config</code> 函数的作用是在你编辑配置的时候，通过 TS 的 Interface 以及 JSDoc，很方便的给你提示。</p>
+<p>同时，<code>config</code> 函数也会为你补全一些直接交付给 VuePress 的默认配置。</p>
+<p>你可以查看 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/docs/theme/src/.vuepress/config.js" target="_blank" rel="noopener noreferrer">本文档配置</a> 作为一个配置参考。</p>
+</div>
+<h2 id="官方-qq-群"> 官方 QQ 群</h2>
+<ul>
+<li><a href="https://jq.qq.com/?_wv=1027&amp;k=rATJyxGK" target="_blank" rel="noopener noreferrer">点击加入</a> (群号: 1003437555)</li>
 </ul>
 ]]></content:encoded>
     </item>

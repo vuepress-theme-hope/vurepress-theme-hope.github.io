@@ -2544,20 +2544,6 @@
       ]
     },
     {
-      "title": "主页",
-      "url": "https://vuepress-theme-hope.github.io/zh/",
-      "id": "https://vuepress-theme-hope.github.io/zh/",
-      "content_html": "<p>你可以直接使用 <a href=\"https://github.com/vuepress-theme-hope/vuepress-theme-hope-template\" target=\"_blank\" rel=\"noopener noreferrer\">vuepress-theme-hope 模板</a> 来开始你的 VuePress 之旅。</p>\n<h2 id=\"🛠-安装\"> 🛠 安装</h2>\n<CodeGroup>\n<CodeGroupItem title=\"yarn\">\n<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-theme-hope\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n<CodeGroupItem title=\"npm\">\n<div><pre><code><span>npm</span> i -D vuepress-theme-hope\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n</CodeGroup>\n<h2 id=\"🚀-使用\"> 🚀 使用</h2>\n<div><pre><code><span>// .vuepress/config.js</span>\n<span>const</span> <span>{</span> config <span>}</span> <span>=</span> <span>require</span><span>(</span><span>\"vuepress-theme-hope\"</span><span>)</span><span>;</span>\n\nmodule<span>.</span>exports <span>=</span> <span>config</span><span>(</span><span>{</span>\n  <span>// your config here</span>\n<span>}</span><span>)</span><span>;</span>\n</code></pre>\n<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><div><p>Tips</p>\n<p>引入 <code>config</code> 函数的作用是在你编辑配置的时候，通过 TS 的 Interface 以及 JSDoc，很方便的给你提示。</p>\n<p>同时，<code>config</code> 函数也会为你补全一些直接交付给 VuePress 的默认配置。</p>\n<p>你可以查看 <a href=\"https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/docs/theme/src/.vuepress/config.js\" target=\"_blank\" rel=\"noopener noreferrer\">本文档配置</a> 作为一个配置参考。</p>\n</div>\n<h2 id=\"官方-qq-群\"> 官方 QQ 群</h2>\n<ul>\n<li><a href=\"https://jq.qq.com/?_wv=1027&amp;k=rATJyxGK\" target=\"_blank\" rel=\"noopener noreferrer\">点击加入</a> (群号: 1003437555)</li>\n</ul>\n",
-      "date_published": "2020-10-13T05:36:44.000Z",
-      "date_modified": "2021-03-06T14:49:20.000Z",
-      "authors": [
-        {
-          "name": "Mr.Hope"
-        }
-      ],
-      "tags": []
-    },
-    {
       "title": "文章列表",
       "url": "https://vuepress-theme-hope.github.io/zh/guide/blog/article/",
       "id": "https://vuepress-theme-hope.github.io/zh/guide/blog/article/",
@@ -2605,6 +2591,20 @@
       "tags": [
         "config"
       ]
+    },
+    {
+      "title": "主页",
+      "url": "https://vuepress-theme-hope.github.io/zh/",
+      "id": "https://vuepress-theme-hope.github.io/zh/",
+      "content_html": "<p>你可以直接使用 <a href=\"https://github.com/vuepress-theme-hope/vuepress-theme-hope-template\" target=\"_blank\" rel=\"noopener noreferrer\">vuepress-theme-hope 模板</a> 来开始你的 VuePress 之旅。</p>\n<h2 id=\"🛠-安装\"> 🛠 安装</h2>\n<CodeGroup>\n<CodeGroupItem title=\"yarn\">\n<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-theme-hope\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n<CodeGroupItem title=\"npm\">\n<div><pre><code><span>npm</span> i -D vuepress-theme-hope\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n</CodeGroup>\n<h2 id=\"🚀-使用\"> 🚀 使用</h2>\n<div><pre><code><span>// .vuepress/config.js</span>\n<span>const</span> <span>{</span> config <span>}</span> <span>=</span> <span>require</span><span>(</span><span>\"vuepress-theme-hope\"</span><span>)</span><span>;</span>\n\nmodule<span>.</span>exports <span>=</span> <span>config</span><span>(</span><span>{</span>\n  <span>// your config here</span>\n<span>}</span><span>)</span><span>;</span>\n</code></pre>\n<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><div><p>Tips</p>\n<p>引入 <code>config</code> 函数的作用是在你编辑配置的时候，通过 TS 的 Interface 以及 JSDoc，很方便的给你提示。</p>\n<p>同时，<code>config</code> 函数也会为你补全一些直接交付给 VuePress 的默认配置。</p>\n<p>你可以查看 <a href=\"https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/docs/theme/src/.vuepress/config.js\" target=\"_blank\" rel=\"noopener noreferrer\">本文档配置</a> 作为一个配置参考。</p>\n</div>\n<h2 id=\"官方-qq-群\"> 官方 QQ 群</h2>\n<ul>\n<li><a href=\"https://jq.qq.com/?_wv=1027&amp;k=rATJyxGK\" target=\"_blank\" rel=\"noopener noreferrer\">点击加入</a> (群号: 1003437555)</li>\n</ul>\n",
+      "date_published": "2020-10-13T05:36:44.000Z",
+      "date_modified": "2021-03-06T14:49:20.000Z",
+      "authors": [
+        {
+          "name": "Mr.Hope"
+        }
+      ],
+      "tags": []
     }
   ]
 }
