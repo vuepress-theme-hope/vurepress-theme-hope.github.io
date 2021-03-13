@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-03-13T08:28:10.750Z</updated>
+  <updated>2021-03-13T08:59:34.143Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/"/>
@@ -1878,143 +1878,6 @@ console<span>.</span><span>log</span><span>(</span><span>foo</span><span>(</span
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
-    <title type="html">Plugins</title>
-    <id>https://vuepress-theme-hope.github.io/basic/vuepress/plugin/</id>
-    <link href="https://vuepress-theme-hope.github.io/basic/vuepress/plugin/"/>
-    <updated>2021-01-21T06:42:02.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="introduction"> Introduction</h2>
-<p>Plugins generally add global-level functionality to VuePress.</p>
-<p>The architecture of the whole plugin system is as follows:</p>
-<p><img src="./assets/architecture.png" alt="Plugin system architecture"></p>
-<h2 id="using-a-plugin"> Using a plugin</h2>
-<p>You can use plugins by doing some configuration at <code>.vuepress/config.js</code>:</p>
-<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span><span>require</span><span>(</span><span>"./my-plugin.js"</span><span>)</span><span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><h3 id="use-plugins-from-a-dependency"> Use plugins from a dependency</h3>
-<p>A plugin can be published on npm in <code>CommonJS</code> format as <code>vuepress-plugin-xxx</code>. You can use it:</p>
-<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span><span>"vuepress-plugin-xx"</span><span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>If you prefix the plugin with <code>vuepress-plugin-</code>, you can use a shorthand to leave out that prefix:</p>
-<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span><span>"xxx"</span><span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>Same with:</p>
-<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span><span>"vuepress-plugin-xxx"</span><span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>This also works with <a href="https://docs.npmjs.com/misc/scope" target="_blank" rel="noopener noreferrer">Scoped Packages</a>:</p>
-<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span><span>"@org/vuepress-plugin-xxx"</span><span>,</span> <span>"@vuepress/plugin-xxx"</span><span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>Shorthand:</p>
-<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span><span>"@org/xxx"</span><span>,</span> <span>"@vuepress/xxx"</span><span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><p>Note</p>
-<p>The plugin whose name starts with <code>@vuepress/plugin-</code> is an officially maintained plugin.</p>
-</div>
-<h2 id="plugin-options"> Plugin options</h2>
-<p>Config it by <code>pugins</code> in <code>config.js</code>.</p>
-<h3 id="babel-style"> Babel Style</h3>
-<p>Plugins can have options specified by wrapping the name and an options object in an array inside your config:</p>
-<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span>
-    <span>[</span>
-      <span>"vuepress-plugin-xxx"</span><span>,</span>
-      <span>{</span>
-        <span>/* options */</span>
-      <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-  <span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div><p>Since this style is consistent with <a href="https://babeljs.io/docs/en/plugins#plugin-preset-options" target="_blank" rel="noopener noreferrer">babel’s Plugin/Preset Options</a>, we call it <code>Babel Style</code>.</p>
-<h3 id="object-style"> Object Style</h3>
-<p>VuePress also provides a simpler way to use plugins from a dependency:</p>
-<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>{</span>
-    xxx<span>:</span> <span>{</span>
-      <span>/* options */</span>
-    <span>}</span><span>,</span>
-  <span>}</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><div><p>Note</p>
-<p>Prefer <strong>Babel Style</strong> first, because some plugins can have muti instance.</p>
-</div>
-<div><p>Tips</p>
-<p>The plugin can be disabled when <code>false</code> is explicitly passed as option.</p>
-<ul>
-<li>Babel style</li>
-</ul>
-<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span>
-    <span>[</span><span>"xxx"</span><span>,</span> <span>false</span><span>]</span><span>,</span> <span>// disabled.</span>
-  <span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><ul>
-<li>Object style</li>
-</ul>
-<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>{</span>
-    xxx<span>:</span> <span>false</span><span>,</span> <span>// disabled.</span>
-  <span>}</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div></div>
-<h2 id="official-plugins"> Official Plugins</h2>
-<ul>
-<li><a href="https://v1.vuepress.vuejs.org/plugin/official/plugin-active-header-links.html" target="_blank" rel="noopener noreferrer">active-header-links</a>: A plugin of automatically activating sidebar links when page scrolls</li>
-<li><a href="https://v1.vuepress.vuejs.org/plugin/official/plugin-back-to-top.html" target="_blank" rel="noopener noreferrer">back-to-top</a>: Add the Back-to-top button</li>
-<li><a href="https://v1.vuepress.vuejs.org/plugin/official/plugin-google-analytics.html" target="_blank" rel="noopener noreferrer">google-analytics</a>: Add Google analytics</li>
-<li><a href="https://v1.vuepress.vuejs.org/plugin/official/plugin-last-updated.html" target="_blank" rel="noopener noreferrer">last-updated</a>: Update last edit time</li>
-<li><a href="https://v1.vuepress.vuejs.org/plugin/official/plugin-medium-zoom.html" target="_blank" rel="noopener noreferrer">medium-zoom</a>: Picture Zoom</li>
-<li><a href="https://v1.vuepress.vuejs.org/plugin/official/plugin-nprogress.html" target="_blank" rel="noopener noreferrer">nprogress</a>: A progress bar plugin based on nprogress</li>
-<li><a href="https://v1.vuepress.vuejs.org/plugin/official/plugin-pwa.html" target="_blank" rel="noopener noreferrer">PWA</a>: Surport for <strong>Progressive Web App</strong></li>
-<li><a href="https://v1.vuepress.vuejs.org/plugin/official/plugin-register-components.html" target="_blank" rel="noopener noreferrer">register-component</a>: register components</li>
-<li><a href="https://v1.vuepress.vuejs.org/plugin/official/plugin-search.html" target="_blank" rel="noopener noreferrer">search</a>: Headers-based search plugin</li>
-</ul>
-<div><p>Tips</p>
-<p>More configuration, please view<a href="https://v1.vuepress.vuejs.org/plugin/" target="_blank" rel="noopener noreferrer">VuePress Plugins</a></p>
-</div>
-<h2 id="community-plugins"> Community Plugins</h2>
-<ul>
-<li><a href="https://vuepress.github.io/en/plugins/clean-urls.html" target="_blank" rel="noopener noreferrer">clean-urls</a>: Use clean URLs in VuePress</li>
-<li><a href="https://vuepress.github.io/en/plugins/container.html" target="_blank" rel="noopener noreferrer">container</a>: Use Markdown containers in VuePress</li>
-<li><a href="https://vuepress.github.io/en/plugins/copyright.html" target="_blank" rel="noopener noreferrer">copyright</a>: 在 VuePress 中处理复制行为</li>
-<li><a href="https://vuepress.github.io/en/plugins/dehydrate.html" target="_blank" rel="noopener noreferrer">dehydrate</a>: Dehydrate HTML files in VuePress</li>
-<li><a href="https://vuepress.github.io/en/plugins/git-log.html" target="_blank" rel="noopener noreferrer">git-log</a>: Integrate git logs into VuePress</li>
-<li><a href="https://vuepress.github.io/en/plugins/mathjax.html" target="_blank" rel="noopener noreferrer">mathjax</a>: Use TeX syntax in VuePress</li>
-<li><a href="https://vuepress.github.io/en/plugins/migrate.html" target="_blank" rel="noopener noreferrer">migrate</a>: Migrate another site to VuePress</li>
-<li><a href="https://vuepress.github.io/en/plugins/named-chunks.html" target="_blank" rel="noopener noreferrer">named-chunks</a>: Generate named chunks in VuePress</li>
-<li><a href="https://vuepress.github.io/en/plugins/redirect.html" target="_blank" rel="noopener noreferrer">redirect</a>: Handle redirections in VuePress</li>
-<li><a href="https://vuepress.github.io/en/plugins/serve.html" target="_blank" rel="noopener noreferrer">serve</a>: Serve generated files in VuePress</li>
-<li><a href="https://vuepress.github.io/en/plugins/zooming.html" target="_blank" rel="noopener noreferrer">zooming</a>: Make images zoomable in VuePress (with zooming)</li>
-</ul>
-<div><p>Tips</p>
-<p>For more information, please visit <a href="https://vuepress.github.io/en/" target="_blank" rel="noopener noreferrer">VuePress Community</a></p>
-</div>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <category term="basic"/>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-01-07T06:44:41.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
     <title type="html">Builtin Markdown features</title>
     <id>https://vuepress-theme-hope.github.io/basic/vuepress/markdown/</id>
     <link href="https://vuepress-theme-hope.github.io/basic/vuepress/markdown/"/>
@@ -2335,6 +2198,143 @@ export default { // Highlighted
       <name>Mr.Hope</name>
     </contributor>
     <published>2021-02-25T12:25:39.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">Plugins</title>
+    <id>https://vuepress-theme-hope.github.io/basic/vuepress/plugin/</id>
+    <link href="https://vuepress-theme-hope.github.io/basic/vuepress/plugin/"/>
+    <updated>2021-01-21T06:42:02.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="introduction"> Introduction</h2>
+<p>Plugins generally add global-level functionality to VuePress.</p>
+<p>The architecture of the whole plugin system is as follows:</p>
+<p><img src="./assets/architecture.png" alt="Plugin system architecture"></p>
+<h2 id="using-a-plugin"> Using a plugin</h2>
+<p>You can use plugins by doing some configuration at <code>.vuepress/config.js</code>:</p>
+<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span><span>require</span><span>(</span><span>"./my-plugin.js"</span><span>)</span><span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><h3 id="use-plugins-from-a-dependency"> Use plugins from a dependency</h3>
+<p>A plugin can be published on npm in <code>CommonJS</code> format as <code>vuepress-plugin-xxx</code>. You can use it:</p>
+<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span><span>"vuepress-plugin-xx"</span><span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>If you prefix the plugin with <code>vuepress-plugin-</code>, you can use a shorthand to leave out that prefix:</p>
+<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span><span>"xxx"</span><span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>Same with:</p>
+<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span><span>"vuepress-plugin-xxx"</span><span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>This also works with <a href="https://docs.npmjs.com/misc/scope" target="_blank" rel="noopener noreferrer">Scoped Packages</a>:</p>
+<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span><span>"@org/vuepress-plugin-xxx"</span><span>,</span> <span>"@vuepress/plugin-xxx"</span><span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>Shorthand:</p>
+<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span><span>"@org/xxx"</span><span>,</span> <span>"@vuepress/xxx"</span><span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><p>Note</p>
+<p>The plugin whose name starts with <code>@vuepress/plugin-</code> is an officially maintained plugin.</p>
+</div>
+<h2 id="plugin-options"> Plugin options</h2>
+<p>Config it by <code>pugins</code> in <code>config.js</code>.</p>
+<h3 id="babel-style"> Babel Style</h3>
+<p>Plugins can have options specified by wrapping the name and an options object in an array inside your config:</p>
+<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>[</span>
+      <span>"vuepress-plugin-xxx"</span><span>,</span>
+      <span>{</span>
+        <span>/* options */</span>
+      <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div><p>Since this style is consistent with <a href="https://babeljs.io/docs/en/plugins#plugin-preset-options" target="_blank" rel="noopener noreferrer">babel’s Plugin/Preset Options</a>, we call it <code>Babel Style</code>.</p>
+<h3 id="object-style"> Object Style</h3>
+<p>VuePress also provides a simpler way to use plugins from a dependency:</p>
+<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>{</span>
+    xxx<span>:</span> <span>{</span>
+      <span>/* options */</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><div><p>Note</p>
+<p>Prefer <strong>Babel Style</strong> first, because some plugins can have muti instance.</p>
+</div>
+<div><p>Tips</p>
+<p>The plugin can be disabled when <code>false</code> is explicitly passed as option.</p>
+<ul>
+<li>Babel style</li>
+</ul>
+<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>[</span><span>"xxx"</span><span>,</span> <span>false</span><span>]</span><span>,</span> <span>// disabled.</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><ul>
+<li>Object style</li>
+</ul>
+<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>{</span>
+    xxx<span>:</span> <span>false</span><span>,</span> <span>// disabled.</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div></div>
+<h2 id="official-plugins"> Official Plugins</h2>
+<ul>
+<li><a href="https://v1.vuepress.vuejs.org/plugin/official/plugin-active-header-links.html" target="_blank" rel="noopener noreferrer">active-header-links</a>: A plugin of automatically activating sidebar links when page scrolls</li>
+<li><a href="https://v1.vuepress.vuejs.org/plugin/official/plugin-back-to-top.html" target="_blank" rel="noopener noreferrer">back-to-top</a>: Add the Back-to-top button</li>
+<li><a href="https://v1.vuepress.vuejs.org/plugin/official/plugin-google-analytics.html" target="_blank" rel="noopener noreferrer">google-analytics</a>: Add Google analytics</li>
+<li><a href="https://v1.vuepress.vuejs.org/plugin/official/plugin-last-updated.html" target="_blank" rel="noopener noreferrer">last-updated</a>: Update last edit time</li>
+<li><a href="https://v1.vuepress.vuejs.org/plugin/official/plugin-medium-zoom.html" target="_blank" rel="noopener noreferrer">medium-zoom</a>: Picture Zoom</li>
+<li><a href="https://v1.vuepress.vuejs.org/plugin/official/plugin-nprogress.html" target="_blank" rel="noopener noreferrer">nprogress</a>: A progress bar plugin based on nprogress</li>
+<li><a href="https://v1.vuepress.vuejs.org/plugin/official/plugin-pwa.html" target="_blank" rel="noopener noreferrer">PWA</a>: Surport for <strong>Progressive Web App</strong></li>
+<li><a href="https://v1.vuepress.vuejs.org/plugin/official/plugin-register-components.html" target="_blank" rel="noopener noreferrer">register-component</a>: register components</li>
+<li><a href="https://v1.vuepress.vuejs.org/plugin/official/plugin-search.html" target="_blank" rel="noopener noreferrer">search</a>: Headers-based search plugin</li>
+</ul>
+<div><p>Tips</p>
+<p>More configuration, please view<a href="https://v1.vuepress.vuejs.org/plugin/" target="_blank" rel="noopener noreferrer">VuePress Plugins</a></p>
+</div>
+<h2 id="community-plugins"> Community Plugins</h2>
+<ul>
+<li><a href="https://vuepress.github.io/en/plugins/clean-urls.html" target="_blank" rel="noopener noreferrer">clean-urls</a>: Use clean URLs in VuePress</li>
+<li><a href="https://vuepress.github.io/en/plugins/container.html" target="_blank" rel="noopener noreferrer">container</a>: Use Markdown containers in VuePress</li>
+<li><a href="https://vuepress.github.io/en/plugins/copyright.html" target="_blank" rel="noopener noreferrer">copyright</a>: 在 VuePress 中处理复制行为</li>
+<li><a href="https://vuepress.github.io/en/plugins/dehydrate.html" target="_blank" rel="noopener noreferrer">dehydrate</a>: Dehydrate HTML files in VuePress</li>
+<li><a href="https://vuepress.github.io/en/plugins/git-log.html" target="_blank" rel="noopener noreferrer">git-log</a>: Integrate git logs into VuePress</li>
+<li><a href="https://vuepress.github.io/en/plugins/mathjax.html" target="_blank" rel="noopener noreferrer">mathjax</a>: Use TeX syntax in VuePress</li>
+<li><a href="https://vuepress.github.io/en/plugins/migrate.html" target="_blank" rel="noopener noreferrer">migrate</a>: Migrate another site to VuePress</li>
+<li><a href="https://vuepress.github.io/en/plugins/named-chunks.html" target="_blank" rel="noopener noreferrer">named-chunks</a>: Generate named chunks in VuePress</li>
+<li><a href="https://vuepress.github.io/en/plugins/redirect.html" target="_blank" rel="noopener noreferrer">redirect</a>: Handle redirections in VuePress</li>
+<li><a href="https://vuepress.github.io/en/plugins/serve.html" target="_blank" rel="noopener noreferrer">serve</a>: Serve generated files in VuePress</li>
+<li><a href="https://vuepress.github.io/en/plugins/zooming.html" target="_blank" rel="noopener noreferrer">zooming</a>: Make images zoomable in VuePress (with zooming)</li>
+</ul>
+<div><p>Tips</p>
+<p>For more information, please visit <a href="https://vuepress.github.io/en/" target="_blank" rel="noopener noreferrer">VuePress Community</a></p>
+</div>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <category term="basic"/>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-01-07T06:44:41.000Z</published>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
@@ -3481,7 +3481,7 @@ write something here ~
     <title type="html">Theme Plugin Config</title>
     <id>https://vuepress-theme-hope.github.io/config/theme/plugin/</id>
     <link href="https://vuepress-theme-hope.github.io/config/theme/plugin/"/>
-    <updated>2021-03-08T14:44:58.000Z</updated>
+    <updated>2021-03-13T08:58:19.000Z</updated>
     <content type="html"><![CDATA[<p>These are plugin config provided by theme.</p>
 <div><p>Tips</p>
 <p>All the config key name is the camelCase version of plugin name.</p>
@@ -3640,7 +3640,7 @@ write something here ~
 <p>Comment options are omitted here because of the complexity.</p>
 <p>For details, see <a href="https://vuepress-theme-hope.github.io/comment/config/" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-comment documentation</a></p>
 <blockquote>
-<p>You can set it to <code>false</code> to disable the comment plugin</p>
+<p>You can omit this option if you don't want the comment feature</p>
 </blockquote>
 <h2 id="copyright-settings"> Copyright Settings</h2>
 <p>For details see <a href="https://vuepress.github.io/en/plugins/copyright/" target="_blank" rel="noopener noreferrer">vuepress-plugin-copyright documentation</a></p>
@@ -12426,7 +12426,7 @@ export default { // Highlighted
     <title type="html">主题插件配置</title>
     <id>https://vuepress-theme-hope.github.io/zh/config/theme/plugin/</id>
     <link href="https://vuepress-theme-hope.github.io/zh/config/theme/plugin/"/>
-    <updated>2021-03-08T14:44:58.000Z</updated>
+    <updated>2021-03-13T08:58:19.000Z</updated>
     <content type="html"><![CDATA[<p>这些是主题提供的插件配置选项。</p>
 <div><p>Tips</p>
 <p>所有的配置键名均为插件名称的驼峰式 (camelcase) 版本。</p>
@@ -12585,7 +12585,7 @@ export default { // Highlighted
 <p>评论系统</p>
 <p>配置因为复杂度在这里被省略，具体配置请见　<a href="https://vuepress-theme-hope.github.io/comment/zh/config/" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-comment 文档</a></p>
 <blockquote>
-<p>你可以直接设置为 <code>false</code> 来禁用评论插件</p>
+<p>如果你不需要评论功能，忽略此选项即可</p>
 </blockquote>
 <h2 id="copyright"> copyright</h2>
 <p>处理你的 VuePress 站点中的复制操作</p>
@@ -12841,6 +12841,168 @@ export default { // Highlighted
       <name>Mr.Hope</name>
     </contributor>
     <published>2020-10-17T08:18:13.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">主题配置</title>
+    <id>https://vuepress-theme-hope.github.io/zh/config/theme/</id>
+    <link href="https://vuepress-theme-hope.github.io/zh/config/theme/"/>
+    <updated>2021-02-26T05:26:49.000Z</updated>
+    <content type="html"><![CDATA[<div><p>Tips</p>
+<p>你可以查看 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/docs/theme/src/.vuepress/config.js" target="_blank" rel="noopener noreferrer">本文档的配置</a> 作为案例，你也可以直接查看源代码中的 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/packages/theme/types/theme/" target="_blank" rel="noopener noreferrer">types 文件</a></p>
+</div>
+<p><code>.vuepress/config.js</code> 中的 themeConfig 字段(主题字段)新增以下配置:</p>
+<h2 id="基本选项"> 基本选项</h2>
+<div><p>Warning</p>
+<p>这些选项很重要，需要你正确配置。</p>
+</div>
+<h3 id="baselang"> baseLang</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>'en-US'</code></li>
+</ul>
+<p>主目录所对应的语言。</p>
+<p>这个选项会保证主目录页面中主题文字使用正确的语言显示。你可以根据自己的需要将其改为其他语言。</p>
+<div><p>Tips</p>
+<p>目前多语言仅适配了 <strong>简体中文</strong> (zh-CN)、<strong>英文(美国)</strong> (en-US) 与 越南语 (vi-VN)。</p>
+<p>如果你需要其它语言的多语言支持，你可以 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/packages/shared/src/i18n/config.ts" target="_blank" rel="noopener noreferrer">向此文件提交一个 PR</a></p>
+</div>
+<h3 id="author"> author</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>文章显示的默认作者</p>
+<h3 id="nav"> nav <i>Not supported content</i></h3>
+<p>NavBarItem 新增</p>
+<ul>
+<li><code>icon</code> 字段来支持图标显示。</li>
+<li><code>prefix</code> 字段来自动添加分组前缀</li>
+</ul>
+<p>具体配置，请见 <a href="./../../guide/layout/navbar.html">布局 → 导航栏</a></p>
+<h3 id="sidebar"> sidebar <i>Not supported content</i></h3>
+<p>SideBarItem 新增</p>
+<ul>
+<li><code>icon</code> 字段来支持图标显示。</li>
+<li><code>prefix</code> 字段来自动添加分组前缀</li>
+</ul>
+<p>具体配置，请见 <a href="./../../guide/layout/sidebar.html">布局 → 侧边栏</a></p>
+<h3 id="locales"> locales</h3>
+<ul>
+<li>类型: <code>Record&lt;string, HopeLangI18nConfigItem&gt;</code></li>
+</ul>
+<p>主题的多语言配置，主要需要配置各语言的 <code>nav</code> 与 <code>sidebar</code>。</p>
+<h3 id="hostname"> hostname</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 是</li>
+</ul>
+<p>当前网站部署到的域名。</p>
+<h2 id="更多配置"> 更多配置</h2>
+<ul>
+<li>
+<p><a href="./default.html"><strong>默认主题配置</strong></a></p>
+</li>
+<li>
+<p><a href="./feature.html"><strong>主题功能配置</strong></a></p>
+</li>
+<li>
+<p><a href="./plugin.html"><strong>主题插件配置</strong></a></p>
+</li>
+<li>
+<p><a href="./apperance.html"><strong>主题外观配置</strong></a></p>
+</li>
+</ul>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <category term="config"/>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-10-17T08:18:13.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">项目案例</title>
+    <id>https://vuepress-theme-hope.github.io/zh/demo/</id>
+    <link href="https://vuepress-theme-hope.github.io/zh/demo/"/>
+    <updated>2021-02-27T06:18:09.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="mr-hope-的个人博客"> Mr.Hope 的个人博客</h2>
+<ul>
+<li><a href="https://mrhope.site" target="_blank" rel="noopener noreferrer">项目地址</a></li>
+<li><a href="https://github.com/Mister-Hope/Mister-Hope.github.io" target="_blank" rel="noopener noreferrer">项目文件</a></li>
+</ul>
+<h2 id="希望工作室官网"> 希望工作室官网</h2>
+<ul>
+<li><a href="https://hope-studio.innenu.com" target="_blank" rel="noopener noreferrer">项目地址</a></li>
+<li><a href="https://github.com/Hope-Studio/Hope-Studio.github.io" target="_blank" rel="noopener noreferrer">项目文件</a></li>
+</ul>
+<h2 id="vuepress-theme-hope-文档"> vuepress-theme-hope 文档</h2>
+<ul>
+<li><a href="https://vuepress-theme-hope.github.io" target="_blank" rel="noopener noreferrer">项目地址</a></li>
+<li><a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/tree/v1/docs/theme" target="_blank" rel="noopener noreferrer">项目文件</a></li>
+</ul>
+<h2 id="docker-从入门到实践"> Docker 从入门到实践</h2>
+<ul>
+<li><a href="https://vuepress.mirror.docker-practice.com/" target="_blank" rel="noopener noreferrer">项目地址</a></li>
+<li><a href="https://github.com/yeasy/docker_practice" target="_blank" rel="noopener noreferrer">项目文件</a></li>
+</ul>
+<h2 id="更多"> 更多</h2>
+<ul>
+<li>随时随地添加你的博客或文档到此</li>
+</ul>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <category term="demo"/>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-10-13T05:36:44.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">文章列表</title>
+    <id>https://vuepress-theme-hope.github.io/zh/guide/blog/article/</id>
+    <link href="https://vuepress-theme-hope.github.io/zh/guide/blog/article/"/>
+    <updated>2021-03-10T04:43:39.000Z</updated>
+    <summary type="html"><![CDATA[<p>主题在 <code>/article/</code> 路径下为你提供了全部的文章列表。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>主题在 <code>/article/</code> 路径下为你提供了全部的文章列表。</p>
+
+<h2 id="文章"> 文章</h2>
+<p>所有文章都会默认被添加到文章列表中渲染在 <code>/article/</code> 路径下。</p>
+<p><img src="./assets/article.png" alt="文章列表"></p>
+<p>如果你不希望该列表包含一些特定的文章，只需在文章的 frontmatter 中将 <code>article</code> 设置为 <code>false</code>。</p>
+<p>如果你希望在文章列表中置顶特定文章，只需在文章的 frontmatter 中将 <code>sticky</code> 设置为 <code>true</code>。</p>
+<div><p>置顶顺序</p>
+<p>对于置顶文章，你可以将 <code>sticky</code> 设置为 <code>number</code> 来设置它们的顺序。数值大的文章会排列在前面。</p>
+</div>
+<h2 id="收藏文章"> 收藏文章</h2>
+<p>你可以通过在 frontmatter 中设置 <code>star</code> 为 <code>true</code> 收藏一个文章。收藏后，用户就可以在 <code>/star/</code> 页面中查看这些文章。</p>
+<p>同时任何任何收藏的文章都会显示在博客主页侧边栏的文章栏目中。</p>
+<div><p>Info</p>
+<p>我们提供收藏选项的考虑是: 主题使用者可能希望向访客展示一定数量的精品文章，而又不希望置顶文章充斥主页，导致用户不能看到最近更新的文章。</p>
+</div>
+<div><p>收藏顺序</p>
+<p>类似置顶文章，你同样可以将 <code>star</code> 设置为 <code>number</code> 来设置它们的顺序。数值大的文章会排列在前面。</p>
+</div>
+<h2 id="加密与幻灯片"> 加密与幻灯片</h2>
+<p>主题为加密文章页与幻灯片页这两个特殊页面提供了单独的列表，你可以在 <code>/encrypt/</code> 和 <code>/slide/</code> 页面查看它们。</p>
+<p>同时为了帮助访问者区分，这两个类别的页面会在文章列表中用图标明确标明其类别。</p>
+<p><img src="./assets/icon-type.png" alt="类别提示"></p>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <category term="blog"/>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-03-08T03:21:06.000Z</published>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
@@ -15989,168 +16151,6 @@ vuepress-theme-hope v2 仍在制作中，API 可能会有
       <name>Mr.Hope</name>
     </contributor>
     <published>2021-02-25T07:37:56.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">文章列表</title>
-    <id>https://vuepress-theme-hope.github.io/zh/guide/blog/article/</id>
-    <link href="https://vuepress-theme-hope.github.io/zh/guide/blog/article/"/>
-    <updated>2021-03-10T04:43:39.000Z</updated>
-    <summary type="html"><![CDATA[<p>主题在 <code>/article/</code> 路径下为你提供了全部的文章列表。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>主题在 <code>/article/</code> 路径下为你提供了全部的文章列表。</p>
-
-<h2 id="文章"> 文章</h2>
-<p>所有文章都会默认被添加到文章列表中渲染在 <code>/article/</code> 路径下。</p>
-<p><img src="./assets/article.png" alt="文章列表"></p>
-<p>如果你不希望该列表包含一些特定的文章，只需在文章的 frontmatter 中将 <code>article</code> 设置为 <code>false</code>。</p>
-<p>如果你希望在文章列表中置顶特定文章，只需在文章的 frontmatter 中将 <code>sticky</code> 设置为 <code>true</code>。</p>
-<div><p>置顶顺序</p>
-<p>对于置顶文章，你可以将 <code>sticky</code> 设置为 <code>number</code> 来设置它们的顺序。数值大的文章会排列在前面。</p>
-</div>
-<h2 id="收藏文章"> 收藏文章</h2>
-<p>你可以通过在 frontmatter 中设置 <code>star</code> 为 <code>true</code> 收藏一个文章。收藏后，用户就可以在 <code>/star/</code> 页面中查看这些文章。</p>
-<p>同时任何任何收藏的文章都会显示在博客主页侧边栏的文章栏目中。</p>
-<div><p>Info</p>
-<p>我们提供收藏选项的考虑是: 主题使用者可能希望向访客展示一定数量的精品文章，而又不希望置顶文章充斥主页，导致用户不能看到最近更新的文章。</p>
-</div>
-<div><p>收藏顺序</p>
-<p>类似置顶文章，你同样可以将 <code>star</code> 设置为 <code>number</code> 来设置它们的顺序。数值大的文章会排列在前面。</p>
-</div>
-<h2 id="加密与幻灯片"> 加密与幻灯片</h2>
-<p>主题为加密文章页与幻灯片页这两个特殊页面提供了单独的列表，你可以在 <code>/encrypt/</code> 和 <code>/slide/</code> 页面查看它们。</p>
-<p>同时为了帮助访问者区分，这两个类别的页面会在文章列表中用图标明确标明其类别。</p>
-<p><img src="./assets/icon-type.png" alt="类别提示"></p>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <category term="blog"/>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2021-03-08T03:21:06.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">项目案例</title>
-    <id>https://vuepress-theme-hope.github.io/zh/demo/</id>
-    <link href="https://vuepress-theme-hope.github.io/zh/demo/"/>
-    <updated>2021-02-27T06:18:09.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="mr-hope-的个人博客"> Mr.Hope 的个人博客</h2>
-<ul>
-<li><a href="https://mrhope.site" target="_blank" rel="noopener noreferrer">项目地址</a></li>
-<li><a href="https://github.com/Mister-Hope/Mister-Hope.github.io" target="_blank" rel="noopener noreferrer">项目文件</a></li>
-</ul>
-<h2 id="希望工作室官网"> 希望工作室官网</h2>
-<ul>
-<li><a href="https://hope-studio.innenu.com" target="_blank" rel="noopener noreferrer">项目地址</a></li>
-<li><a href="https://github.com/Hope-Studio/Hope-Studio.github.io" target="_blank" rel="noopener noreferrer">项目文件</a></li>
-</ul>
-<h2 id="vuepress-theme-hope-文档"> vuepress-theme-hope 文档</h2>
-<ul>
-<li><a href="https://vuepress-theme-hope.github.io" target="_blank" rel="noopener noreferrer">项目地址</a></li>
-<li><a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/tree/v1/docs/theme" target="_blank" rel="noopener noreferrer">项目文件</a></li>
-</ul>
-<h2 id="docker-从入门到实践"> Docker 从入门到实践</h2>
-<ul>
-<li><a href="https://vuepress.mirror.docker-practice.com/" target="_blank" rel="noopener noreferrer">项目地址</a></li>
-<li><a href="https://github.com/yeasy/docker_practice" target="_blank" rel="noopener noreferrer">项目文件</a></li>
-</ul>
-<h2 id="更多"> 更多</h2>
-<ul>
-<li>随时随地添加你的博客或文档到此</li>
-</ul>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <category term="demo"/>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-10-13T05:36:44.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">主题配置</title>
-    <id>https://vuepress-theme-hope.github.io/zh/config/theme/</id>
-    <link href="https://vuepress-theme-hope.github.io/zh/config/theme/"/>
-    <updated>2021-02-26T05:26:49.000Z</updated>
-    <content type="html"><![CDATA[<div><p>Tips</p>
-<p>你可以查看 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/docs/theme/src/.vuepress/config.js" target="_blank" rel="noopener noreferrer">本文档的配置</a> 作为案例，你也可以直接查看源代码中的 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/packages/theme/types/theme/" target="_blank" rel="noopener noreferrer">types 文件</a></p>
-</div>
-<p><code>.vuepress/config.js</code> 中的 themeConfig 字段(主题字段)新增以下配置:</p>
-<h2 id="基本选项"> 基本选项</h2>
-<div><p>Warning</p>
-<p>这些选项很重要，需要你正确配置。</p>
-</div>
-<h3 id="baselang"> baseLang</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>'en-US'</code></li>
-</ul>
-<p>主目录所对应的语言。</p>
-<p>这个选项会保证主目录页面中主题文字使用正确的语言显示。你可以根据自己的需要将其改为其他语言。</p>
-<div><p>Tips</p>
-<p>目前多语言仅适配了 <strong>简体中文</strong> (zh-CN)、<strong>英文(美国)</strong> (en-US) 与 越南语 (vi-VN)。</p>
-<p>如果你需要其它语言的多语言支持，你可以 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/packages/shared/src/i18n/config.ts" target="_blank" rel="noopener noreferrer">向此文件提交一个 PR</a></p>
-</div>
-<h3 id="author"> author</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>文章显示的默认作者</p>
-<h3 id="nav"> nav <i>Not supported content</i></h3>
-<p>NavBarItem 新增</p>
-<ul>
-<li><code>icon</code> 字段来支持图标显示。</li>
-<li><code>prefix</code> 字段来自动添加分组前缀</li>
-</ul>
-<p>具体配置，请见 <a href="./../../guide/layout/navbar.html">布局 → 导航栏</a></p>
-<h3 id="sidebar"> sidebar <i>Not supported content</i></h3>
-<p>SideBarItem 新增</p>
-<ul>
-<li><code>icon</code> 字段来支持图标显示。</li>
-<li><code>prefix</code> 字段来自动添加分组前缀</li>
-</ul>
-<p>具体配置，请见 <a href="./../../guide/layout/sidebar.html">布局 → 侧边栏</a></p>
-<h3 id="locales"> locales</h3>
-<ul>
-<li>类型: <code>Record&lt;string, HopeLangI18nConfigItem&gt;</code></li>
-</ul>
-<p>主题的多语言配置，主要需要配置各语言的 <code>nav</code> 与 <code>sidebar</code>。</p>
-<h3 id="hostname"> hostname</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 是</li>
-</ul>
-<p>当前网站部署到的域名。</p>
-<h2 id="更多配置"> 更多配置</h2>
-<ul>
-<li>
-<p><a href="./default.html"><strong>默认主题配置</strong></a></p>
-</li>
-<li>
-<p><a href="./feature.html"><strong>主题功能配置</strong></a></p>
-</li>
-<li>
-<p><a href="./plugin.html"><strong>主题插件配置</strong></a></p>
-</li>
-<li>
-<p><a href="./apperance.html"><strong>主题外观配置</strong></a></p>
-</li>
-</ul>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <category term="config"/>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-10-17T08:18:13.000Z</published>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>

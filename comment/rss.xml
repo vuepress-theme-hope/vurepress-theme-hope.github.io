@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/comment/</link>
     <description>Comment Plugin for VuePress</description>
     <language>en-US</language>
-    <pubDate>Sat, 13 Mar 2021 08:28:10 GMT</pubDate>
-    <lastBuildDate>Sat, 13 Mar 2021 08:28:10 GMT</lastBuildDate>
+    <pubDate>Sat, 13 Mar 2021 08:59:34 GMT</pubDate>
+    <lastBuildDate>Sat, 13 Mar 2021 08:59:34 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -780,7 +780,7 @@ Vssue can also work with self-hosted GitLab. Set the <code>baseURL</code> option
       <source url="https://vuepress-theme-hope.github.io/comment/rss.xml">Guide</source>
       <pubDate>Tue, 07 Jan 2020 06:44:41 GMT</pubDate>
       <content:encoded><![CDATA[<h1 id="guide"> Guide</h1>
-<p>This plugin exposes two components at <code>@mr-hope/vuepress-plugin-comment/&lt;component name&gt;.vue</code>. Please include it manually in your theme.</p>
+<p>This plugin exposes two components at <code>@mr-hope/vuepress-plugin-comment/lib/client/&lt;component name&gt;.vue</code>. Please include it manually in your theme.</p>
 <ul>
 <li><code>&lt;Comment /&gt;</code>: Comment component</li>
 <li><code>&lt;PageInfo /&gt;</code>: Page information component</li>
@@ -1845,7 +1845,7 @@ Vssue 同样可以配合自己搭建的 GitLab 使用。只需要将 <code>baseU
       <guid>https://vuepress-theme-hope.github.io/comment/zh/guide/</guid>
       <source url="https://vuepress-theme-hope.github.io/comment/rss.xml">指南</source>
       <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
-      <content:encoded><![CDATA[<p>此插件暴露两个组件，路径为 <code>@mr-hope/vuepress-plugin-comment/&lt;组件名&gt;.vue</code>。请在你的主题中手动引入。</p>
+      <content:encoded><![CDATA[<p>此插件暴露两个组件，路径为 <code>@mr-hope/vuepress-plugin-comment/lib/client/&lt;组件名&gt;.vue</code>。请在你的主题中手动引入。</p>
 <ul>
 <li><code>&lt;Comment /&gt;</code>: 评论组件</li>
 <li><code>&lt;PageInfo /&gt;</code>: 页面信息组件</li>
