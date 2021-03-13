@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/</link>
     <description>A vuepress theme with tons of features✨</description>
     <language>en-US</language>
-    <pubDate>Sat, 13 Mar 2021 12:08:07 GMT</pubDate>
-    <lastBuildDate>Sat, 13 Mar 2021 12:08:07 GMT</lastBuildDate>
+    <pubDate>Sat, 13 Mar 2021 12:12:52 GMT</pubDate>
+    <lastBuildDate>Sat, 13 Mar 2021 12:12:52 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -4082,7 +4082,7 @@ Page content...
       <link>https://vuepress-theme-hope.github.io/guide/eject/</link>
       <guid>https://vuepress-theme-hope.github.io/guide/eject/</guid>
       <source url="https://vuepress-theme-hope.github.io/rss.xml">Theme eject</source>
-      <pubDate>Sat, 13 Mar 2021 12:06:53 GMT</pubDate>
+      <pubDate>Sat, 13 Mar 2021 12:11:43 GMT</pubDate>
       <content:encoded><![CDATA[<p>If none of the built-in options of the theme can meet your customization requirements, or you want to do some development and customization on <code>vuepress-theme-hope</code>, the theme provides you with very convenient eject commands.</p>
 <p>You can easily use the <code>vuepress eject-hope [target-dir]</code> command to eject the entire theme file to the corresponding directory.</p>
 <p>After executing the command to eject the theme to the <code>.vuepress/theme</code> folder, you can modify the local theme to complete your changes to the theme.</p>
@@ -7833,7 +7833,7 @@ $$
 <p><a href="./feature/sitemap.html">Sitemap generation</a></p>
 </li>
 <li>
-<p><a href="./feature/git.html">Infomation from Git</a></p>
+<p><a href="./feature/git.html">Information from Git</a></p>
 </li>
 <li>
 <p><a href="./feature/typescript.html">TypeScript support</a></p>
@@ -11978,7 +11978,7 @@ export default { // Highlighted
       <link>https://vuepress-theme-hope.github.io/zh/guide/eject/</link>
       <guid>https://vuepress-theme-hope.github.io/zh/guide/eject/</guid>
       <source url="https://vuepress-theme-hope.github.io/rss.xml">主题弹出</source>
-      <pubDate>Sat, 13 Mar 2021 12:06:53 GMT</pubDate>
+      <pubDate>Sat, 13 Mar 2021 12:11:43 GMT</pubDate>
       <content:encoded><![CDATA[<p>如果主题内置的功能选项都不能满足你对主题的定制要求，或者你想要对主体做二次开发与定制，主题为你提供了很方便的弹出命令。</p>
 <p>你可以很方便的使用 <code>vuepress eject-hope [target-dir]</code> 命令，来将整个主题文件弹出到对应的目录。</p>
 <p>在执行完命令弹出主题到 <code>.vuepress/theme</code> 文件夹后，你便可以修改本地主题，以完成你对主题的更改。</p>
@@ -13234,57 +13234,6 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
 ]]></content:encoded>
     </item>
     <item>
-      <title>其他界面功能</title>
-      <link>https://vuepress-theme-hope.github.io/zh/guide/interface/others/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/guide/interface/others/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">其他界面功能</source>
-      <category>interface</category>
-      <pubDate>Fri, 26 Feb 2021 12:39:35 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="样式定制"> 样式定制</h2>
-<p>主题允许你在 <code>.vuepress/style</code> 的 <code>palette.styl</code> 设置变量，来定制绝大部分颜色、响应式断点，页面布局尺寸等参数。</p>
-<p>详细的参数详见 <a href="./../../config/stylus.html">Stylus 配置</a></p>
-<h2 id="全屏按钮"> 全屏按钮</h2>
-<p>默认启用，显示在导航栏的主题选项卡中。</p>
-<p>如果你不需要这个功能，你可以在主题配置中将 <code>fullscreen</code> 设置为 <code>false</code>。</p>
-<div><p>Tips</p>
-<p>如果当前浏览器不支持全屏，则全屏按钮会自动隐藏。</p>
-</div>
-<div><div><br><br><br><div>&nbsp;</div><br><br><br></div><pre><code><span>// .vuepress/config.js</span>
-module<span>.</span>exports <span>=</span> <span>{</span>
-  themeConfig<span>:</span> <span>{</span>
-    fullscreen<span>:</span> <span>false</span><span>,</span> <span>// 默认启用，设置 false 将其关闭</span>
-  <span>}</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="返回顶部按钮"> 返回顶部按钮 <i>Not supported content</i></h2>
-<p><code>vuepress-theme-hope</code> 添加了一个返回顶部控件，默认情况下将在下滑 300px 后显示。</p>
-<p>你可以在 <code>themeConfig</code> 将 <code>backToTop</code> 设置为 <code>false</code> 来禁用它，或者是设置为一个数字以更改默认的 300px 触发时机。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>界面</title>
-      <link>https://vuepress-theme-hope.github.io/zh/guide/interface/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/guide/interface/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">界面</source>
-      <category>interface</category>
-      <pubDate>Fri, 26 Feb 2021 08:10:04 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="目录"> 目录</h2>
-<ul>
-<li>
-<p><a href="./dark-mode.html">深色模式</a></p>
-</li>
-<li>
-<p><a href="./theme-color.html">主题色</a></p>
-</li>
-<li>
-<p><a href="./icon.html">图标支持</a></p>
-</li>
-<li>
-<p><a href="./others.html">其他功能</a></p>
-</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
       <title>项目案例</title>
       <link>https://vuepress-theme-hope.github.io/zh/demo/</link>
       <guid>https://vuepress-theme-hope.github.io/zh/demo/</guid>
@@ -13809,6 +13758,57 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <h2 id="namedchunks"> namedChunks</h2>
 <p><code>vuepress-named-chunks</code> 的选项，设置为 <code>false</code> 以禁用此插件。</p>
 <p>默认情况下，所有页面块均以页面标题命名，所有布局块均以其组件名称命名。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>其他界面功能</title>
+      <link>https://vuepress-theme-hope.github.io/zh/guide/interface/others/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/guide/interface/others/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">其他界面功能</source>
+      <category>interface</category>
+      <pubDate>Fri, 26 Feb 2021 12:39:35 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="样式定制"> 样式定制</h2>
+<p>主题允许你在 <code>.vuepress/style</code> 的 <code>palette.styl</code> 设置变量，来定制绝大部分颜色、响应式断点，页面布局尺寸等参数。</p>
+<p>详细的参数详见 <a href="./../../config/stylus.html">Stylus 配置</a></p>
+<h2 id="全屏按钮"> 全屏按钮</h2>
+<p>默认启用，显示在导航栏的主题选项卡中。</p>
+<p>如果你不需要这个功能，你可以在主题配置中将 <code>fullscreen</code> 设置为 <code>false</code>。</p>
+<div><p>Tips</p>
+<p>如果当前浏览器不支持全屏，则全屏按钮会自动隐藏。</p>
+</div>
+<div><div><br><br><br><div>&nbsp;</div><br><br><br></div><pre><code><span>// .vuepress/config.js</span>
+module<span>.</span>exports <span>=</span> <span>{</span>
+  themeConfig<span>:</span> <span>{</span>
+    fullscreen<span>:</span> <span>false</span><span>,</span> <span>// 默认启用，设置 false 将其关闭</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="返回顶部按钮"> 返回顶部按钮 <i>Not supported content</i></h2>
+<p><code>vuepress-theme-hope</code> 添加了一个返回顶部控件，默认情况下将在下滑 300px 后显示。</p>
+<p>你可以在 <code>themeConfig</code> 将 <code>backToTop</code> 设置为 <code>false</code> 来禁用它，或者是设置为一个数字以更改默认的 300px 触发时机。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>界面</title>
+      <link>https://vuepress-theme-hope.github.io/zh/guide/interface/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/guide/interface/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">界面</source>
+      <category>interface</category>
+      <pubDate>Fri, 26 Feb 2021 08:10:04 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="目录"> 目录</h2>
+<ul>
+<li>
+<p><a href="./dark-mode.html">深色模式</a></p>
+</li>
+<li>
+<p><a href="./theme-color.html">主题色</a></p>
+</li>
+<li>
+<p><a href="./icon.html">图标支持</a></p>
+</li>
+<li>
+<p><a href="./others.html">其他功能</a></p>
+</li>
+</ul>
 ]]></content:encoded>
     </item>
     <item>

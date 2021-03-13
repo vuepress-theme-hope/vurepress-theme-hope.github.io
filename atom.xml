@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-03-13T12:08:07.184Z</updated>
+  <updated>2021-03-13T12:12:52.749Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/"/>
@@ -4328,7 +4328,7 @@ Page content...
     <title type="html">Theme eject</title>
     <id>https://vuepress-theme-hope.github.io/guide/eject/</id>
     <link href="https://vuepress-theme-hope.github.io/guide/eject/"/>
-    <updated>2021-03-13T12:06:53.000Z</updated>
+    <updated>2021-03-13T12:11:43.000Z</updated>
     <content type="html"><![CDATA[<p>If none of the built-in options of the theme can meet your customization requirements, or you want to do some development and customization on <code>vuepress-theme-hope</code>, the theme provides you with very convenient eject commands.</p>
 <p>You can easily use the <code>vuepress eject-hope [target-dir]</code> command to eject the entire theme file to the corresponding directory.</p>
 <p>After executing the command to eject the theme to the <code>.vuepress/theme</code> folder, you can modify the local theme to complete your changes to the theme.</p>
@@ -4342,7 +4342,7 @@ Page content...
     <contributor>
       <name>Mr.Hope</name>
     </contributor>
-    <published>2021-03-13T12:06:53.000Z</published>
+    <published>2021-03-13T12:11:43.000Z</published>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
@@ -8263,7 +8263,7 @@ $$
     <title type="html">Guide</title>
     <id>https://vuepress-theme-hope.github.io/guide/</id>
     <link href="https://vuepress-theme-hope.github.io/guide/"/>
-    <updated>2021-03-13T12:06:53.000Z</updated>
+    <updated>2021-03-13T12:11:43.000Z</updated>
     <summary type="html"><![CDATA[<div><p>Tips</p>
 <p>If you met a bug while using, you can open an issue <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues" target="_blank" rel="noopener noreferrer">here</a></p>
 </div>
@@ -8377,7 +8377,7 @@ $$
 <p><a href="./feature/sitemap.html">Sitemap generation</a></p>
 </li>
 <li>
-<p><a href="./feature/git.html">Infomation from Git</a></p>
+<p><a href="./feature/git.html">Information from Git</a></p>
 </li>
 <li>
 <p><a href="./feature/typescript.html">TypeScript support</a></p>
@@ -12759,7 +12759,7 @@ export default { // Highlighted
     <title type="html">主题弹出</title>
     <id>https://vuepress-theme-hope.github.io/zh/guide/eject/</id>
     <link href="https://vuepress-theme-hope.github.io/zh/guide/eject/"/>
-    <updated>2021-03-13T12:06:53.000Z</updated>
+    <updated>2021-03-13T12:11:43.000Z</updated>
     <content type="html"><![CDATA[<p>如果主题内置的功能选项都不能满足你对主题的定制要求，或者你想要对主体做二次开发与定制，主题为你提供了很方便的弹出命令。</p>
 <p>你可以很方便的使用 <code>vuepress eject-hope [target-dir]</code> 命令，来将整个主题文件弹出到对应的目录。</p>
 <p>在执行完命令弹出主题到 <code>.vuepress/theme</code> 文件夹后，你便可以修改本地主题，以完成你对主题的更改。</p>
@@ -12773,7 +12773,7 @@ export default { // Highlighted
     <contributor>
       <name>Mr.Hope</name>
     </contributor>
-    <published>2021-03-13T12:06:53.000Z</published>
+    <published>2021-03-13T12:11:43.000Z</published>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
@@ -14155,71 +14155,6 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
-    <title type="html">其他界面功能</title>
-    <id>https://vuepress-theme-hope.github.io/zh/guide/interface/others/</id>
-    <link href="https://vuepress-theme-hope.github.io/zh/guide/interface/others/"/>
-    <updated>2021-02-28T16:47:07.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="样式定制"> 样式定制</h2>
-<p>主题允许你在 <code>.vuepress/style</code> 的 <code>palette.styl</code> 设置变量，来定制绝大部分颜色、响应式断点，页面布局尺寸等参数。</p>
-<p>详细的参数详见 <a href="./../../config/stylus.html">Stylus 配置</a></p>
-<h2 id="全屏按钮"> 全屏按钮</h2>
-<p>默认启用，显示在导航栏的主题选项卡中。</p>
-<p>如果你不需要这个功能，你可以在主题配置中将 <code>fullscreen</code> 设置为 <code>false</code>。</p>
-<div><p>Tips</p>
-<p>如果当前浏览器不支持全屏，则全屏按钮会自动隐藏。</p>
-</div>
-<div><div><br><br><br><div>&nbsp;</div><br><br><br></div><pre><code><span>// .vuepress/config.js</span>
-module<span>.</span>exports <span>=</span> <span>{</span>
-  themeConfig<span>:</span> <span>{</span>
-    fullscreen<span>:</span> <span>false</span><span>,</span> <span>// 默认启用，设置 false 将其关闭</span>
-  <span>}</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="返回顶部按钮"> 返回顶部按钮 <i>Not supported content</i></h2>
-<p><code>vuepress-theme-hope</code> 添加了一个返回顶部控件，默认情况下将在下滑 300px 后显示。</p>
-<p>你可以在 <code>themeConfig</code> 将 <code>backToTop</code> 设置为 <code>false</code> 来禁用它，或者是设置为一个数字以更改默认的 300px 触发时机。</p>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <category term="interface"/>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2021-02-26T12:39:35.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">界面</title>
-    <id>https://vuepress-theme-hope.github.io/zh/guide/interface/</id>
-    <link href="https://vuepress-theme-hope.github.io/zh/guide/interface/"/>
-    <updated>2021-02-27T06:18:09.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="目录"> 目录</h2>
-<ul>
-<li>
-<p><a href="./dark-mode.html">深色模式</a></p>
-</li>
-<li>
-<p><a href="./theme-color.html">主题色</a></p>
-</li>
-<li>
-<p><a href="./icon.html">图标支持</a></p>
-</li>
-<li>
-<p><a href="./others.html">其他功能</a></p>
-</li>
-</ul>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <category term="interface"/>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2021-02-26T08:10:04.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
     <title type="html">项目案例</title>
     <id>https://vuepress-theme-hope.github.io/zh/demo/</id>
     <link href="https://vuepress-theme-hope.github.io/zh/demo/"/>
@@ -14765,6 +14700,71 @@ module<span>.</span>exports <span>=</span> <span>{</span>
       <name>Mr.Hope</name>
     </contributor>
     <published>2020-10-17T08:18:13.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">其他界面功能</title>
+    <id>https://vuepress-theme-hope.github.io/zh/guide/interface/others/</id>
+    <link href="https://vuepress-theme-hope.github.io/zh/guide/interface/others/"/>
+    <updated>2021-02-28T16:47:07.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="样式定制"> 样式定制</h2>
+<p>主题允许你在 <code>.vuepress/style</code> 的 <code>palette.styl</code> 设置变量，来定制绝大部分颜色、响应式断点，页面布局尺寸等参数。</p>
+<p>详细的参数详见 <a href="./../../config/stylus.html">Stylus 配置</a></p>
+<h2 id="全屏按钮"> 全屏按钮</h2>
+<p>默认启用，显示在导航栏的主题选项卡中。</p>
+<p>如果你不需要这个功能，你可以在主题配置中将 <code>fullscreen</code> 设置为 <code>false</code>。</p>
+<div><p>Tips</p>
+<p>如果当前浏览器不支持全屏，则全屏按钮会自动隐藏。</p>
+</div>
+<div><div><br><br><br><div>&nbsp;</div><br><br><br></div><pre><code><span>// .vuepress/config.js</span>
+module<span>.</span>exports <span>=</span> <span>{</span>
+  themeConfig<span>:</span> <span>{</span>
+    fullscreen<span>:</span> <span>false</span><span>,</span> <span>// 默认启用，设置 false 将其关闭</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="返回顶部按钮"> 返回顶部按钮 <i>Not supported content</i></h2>
+<p><code>vuepress-theme-hope</code> 添加了一个返回顶部控件，默认情况下将在下滑 300px 后显示。</p>
+<p>你可以在 <code>themeConfig</code> 将 <code>backToTop</code> 设置为 <code>false</code> 来禁用它，或者是设置为一个数字以更改默认的 300px 触发时机。</p>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <category term="interface"/>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-02-26T12:39:35.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">界面</title>
+    <id>https://vuepress-theme-hope.github.io/zh/guide/interface/</id>
+    <link href="https://vuepress-theme-hope.github.io/zh/guide/interface/"/>
+    <updated>2021-02-27T06:18:09.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="目录"> 目录</h2>
+<ul>
+<li>
+<p><a href="./dark-mode.html">深色模式</a></p>
+</li>
+<li>
+<p><a href="./theme-color.html">主题色</a></p>
+</li>
+<li>
+<p><a href="./icon.html">图标支持</a></p>
+</li>
+<li>
+<p><a href="./others.html">其他功能</a></p>
+</li>
+</ul>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <category term="interface"/>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-02-26T08:10:04.000Z</published>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
@@ -17295,7 +17295,7 @@ $$
     <title type="html">指南</title>
     <id>https://vuepress-theme-hope.github.io/zh/guide/</id>
     <link href="https://vuepress-theme-hope.github.io/zh/guide/"/>
-    <updated>2021-03-13T12:06:53.000Z</updated>
+    <updated>2021-03-13T12:11:43.000Z</updated>
     <summary type="html"><![CDATA[<div><p>提示</p>
 <p>如果你在使用过程中遇到了 bug，可以 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues" target="_blank" rel="noopener noreferrer">提一个 issue</a> 或者 <a href="https://jq.qq.com/?_wv=1027&amp;k=rATJyxGK" target="_blank" rel="noopener noreferrer">加入 QQ 群</a> (群号: 1003437555) 进行反馈。</p>
 </div>
