@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-03-13T09:26:15.414Z</updated>
+  <updated>2021-03-13T09:30:40.896Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/feed/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/feed/"/>
@@ -450,97 +450,6 @@
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
-    <title type="html">Plugin Config</title>
-    <id>https://vuepress-theme-hope.github.io/feed/config/</id>
-    <link href="https://vuepress-theme-hope.github.io/feed/config/"/>
-    <updated>2021-02-28T17:06:20.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="hostname"> hostname</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Required: Yes</li>
-</ul>
-<p>The domain name of the deployment site.</p>
-<h2 id="baselang"> baseLang</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>'en-US'</code></li>
-</ul>
-<p>The language of the home directory.</p>
-<h2 id="channel"> channel</h2>
-<p><code>channel</code> option is used to config <em>Feed Channels</em>.</p>
-<p>For available options, please see <a href="./channel.html">Config → Channel</a></p>
-<h2 id="filter"> filter</h2>
-<ul>
-<li>Type: <code>(pageA: Page)=&gt; boolean</code></li>
-<li>Default: All feed items</li>
-</ul>
-<p>A custom filter funciton, used to filter feed items.</p>
-<h2 id="sort"> sort</h2>
-<ul>
-<li>Type: <code>(pageA: Page, pageB: page)=&gt; number</code></li>
-</ul>
-<p>A custom sort function, used to sort feed items.</p>
-<p>The final feed items will be the same squence.</p>
-<div><p>Note</p>
-<p>We strongly recommend you to set this option, otherwise the order of items in the feed stream is completely determined by the order of pages output by VuePress.</p>
-<p>You can sort the pages in the site according to your needs.</p>
-</div>
-<h2 id="count"> count</h2>
-<ul>
-<li>Type: <code>number</code></li>
-<li>Default: All feed items count</li>
-</ul>
-<p>Set the maximum number of items in the feed. After setting, after all pages are sorted, the first <code>count</code> items will be intercepted.</p>
-<p>If your site has a lot of articles, you may want to consider setting this option to reduce the feed file size.</p>
-<h2 id="output"> output</h2>
-<p>Feed output configuration</p>
-<h3 id="output-atom-enable"> output.atom.enable</h3>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>true</code></li>
-</ul>
-<p>Whether enable Atom output</p>
-<h3 id="output-atom-path"> output.atom.path</h3>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>atom.xml</code></li>
-</ul>
-<p>Atom Feed output location</p>
-<h3 id="output-json-enable"> output.json.enable</h3>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>true</code></li>
-</ul>
-<p>Whether enable JSON output</p>
-<h3 id="output-json-path"> output.json.path</h3>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>feed.json</code></li>
-</ul>
-<p>JSON Feed output location</p>
-<h3 id="output-rss-enable"> output.rss.enable</h3>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>true</code></li>
-</ul>
-<p>Whether enable RSS output</p>
-<h3 id="output-rss-path"> output.rss.path</h3>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>rss.xml</code></li>
-</ul>
-<p>RSS Feed output location</p>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2021-01-24T05:12:30.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
     <title type="html">Guide</title>
     <id>https://vuepress-theme-hope.github.io/feed/guide/</id>
     <link href="https://vuepress-theme-hope.github.io/feed/guide/"/>
@@ -748,6 +657,97 @@
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
+    <title type="html">Plugin Config</title>
+    <id>https://vuepress-theme-hope.github.io/feed/config/</id>
+    <link href="https://vuepress-theme-hope.github.io/feed/config/"/>
+    <updated>2021-02-28T17:06:20.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="hostname"> hostname</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Required: Yes</li>
+</ul>
+<p>The domain name of the deployment site.</p>
+<h2 id="baselang"> baseLang</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>'en-US'</code></li>
+</ul>
+<p>The language of the home directory.</p>
+<h2 id="channel"> channel</h2>
+<p><code>channel</code> option is used to config <em>Feed Channels</em>.</p>
+<p>For available options, please see <a href="./channel.html">Config → Channel</a></p>
+<h2 id="filter"> filter</h2>
+<ul>
+<li>Type: <code>(pageA: Page)=&gt; boolean</code></li>
+<li>Default: All feed items</li>
+</ul>
+<p>A custom filter funciton, used to filter feed items.</p>
+<h2 id="sort"> sort</h2>
+<ul>
+<li>Type: <code>(pageA: Page, pageB: page)=&gt; number</code></li>
+</ul>
+<p>A custom sort function, used to sort feed items.</p>
+<p>The final feed items will be the same squence.</p>
+<div><p>Note</p>
+<p>We strongly recommend you to set this option, otherwise the order of items in the feed stream is completely determined by the order of pages output by VuePress.</p>
+<p>You can sort the pages in the site according to your needs.</p>
+</div>
+<h2 id="count"> count</h2>
+<ul>
+<li>Type: <code>number</code></li>
+<li>Default: All feed items count</li>
+</ul>
+<p>Set the maximum number of items in the feed. After setting, after all pages are sorted, the first <code>count</code> items will be intercepted.</p>
+<p>If your site has a lot of articles, you may want to consider setting this option to reduce the feed file size.</p>
+<h2 id="output"> output</h2>
+<p>Feed output configuration</p>
+<h3 id="output-atom-enable"> output.atom.enable</h3>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>true</code></li>
+</ul>
+<p>Whether enable Atom output</p>
+<h3 id="output-atom-path"> output.atom.path</h3>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>atom.xml</code></li>
+</ul>
+<p>Atom Feed output location</p>
+<h3 id="output-json-enable"> output.json.enable</h3>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>true</code></li>
+</ul>
+<p>Whether enable JSON output</p>
+<h3 id="output-json-path"> output.json.path</h3>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>feed.json</code></li>
+</ul>
+<p>JSON Feed output location</p>
+<h3 id="output-rss-enable"> output.rss.enable</h3>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>true</code></li>
+</ul>
+<p>Whether enable RSS output</p>
+<h3 id="output-rss-path"> output.rss.path</h3>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>rss.xml</code></li>
+</ul>
+<p>RSS Feed output location</p>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-01-24T05:12:30.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
     <title type="html">Home</title>
     <id>https://vuepress-theme-hope.github.io/feed/</id>
     <link href="https://vuepress-theme-hope.github.io/feed/"/>
@@ -898,6 +898,97 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <div><p>WebSub</p>
 <p>有关信息，详见 <a href="https://w3c.github.io/websub/#subscription-migration" target="_blank" rel="noopener noreferrer">Websub</a>。</p>
 </div>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-01-24T05:12:30.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">插件配置</title>
+    <id>https://vuepress-theme-hope.github.io/feed/zh/config/</id>
+    <link href="https://vuepress-theme-hope.github.io/feed/zh/config/"/>
+    <updated>2021-02-28T17:06:20.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="hostname"> hostname</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 是</li>
+</ul>
+<p>部署网站的域名。</p>
+<h2 id="baselang"> baseLang</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>'en-US'</code></li>
+</ul>
+<p>主目录所对应的语言。</p>
+<h2 id="channel"> channel</h2>
+<p><code>channel</code> 选项用于配置 Feed 频道。</p>
+<p>可用选项详见 <a href="./channel.html">配置 → 频道设置</a></p>
+<h2 id="filter"> filter</h2>
+<ul>
+<li>类型: <code>(pageA: Page)=&gt; boolean</code></li>
+<li>默认值: 全部 feed 项目</li>
+</ul>
+<p>自定义的过滤函数，用于过滤哪些项目在 feed 中显示。</p>
+<h2 id="sort"> sort</h2>
+<ul>
+<li>类型: <code>(pageA: Page, pageB: page)=&gt; number</code></li>
+</ul>
+<p>自定义排序函数，用于对站点中的页面进行排序。</p>
+<p>最终生成的 feed 文件将会按照这个顺序对项目进行显示。</p>
+<div><p>Note</p>
+<p>强烈建议设置这个选项，否则 feed 流中，项目的顺序完全由 vuepress 默认输出的 pages 顺序决定。</p>
+<p>你可以按照自己的需求对站点内的页面进行排序。</p>
+</div>
+<h2 id="count"> count</h2>
+<ul>
+<li>类型: <code>number</code></li>
+<li>默认值: 全部 feed 项目数量</li>
+</ul>
+<p>设置 feed 的最大项目数量。设置后会在所有页面排序好后，截取前 count 个项目。</p>
+<p>如果你的站点文章很多，你可能需要考虑设置这个选项以减少 feed 文件大小。</p>
+<h2 id="output"> output</h2>
+<p>Feed 的输出配置。</p>
+<h3 id="output-atom-enable"> output.atom.enable</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否启用 Atom 输出</p>
+<h3 id="output-atom-path"> output.atom.path</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>atom.xml</code></li>
+</ul>
+<p>Atom Feed 输出文件位置(基于输出文件夹)</p>
+<h3 id="output-json-enable"> output.json.enable</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否启用 json 输出</p>
+<h3 id="output-json-path"> output.json.path</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>feed.json</code></li>
+</ul>
+<p>JSON Feed 输出文件位置(基于输出文件夹)</p>
+<h3 id="output-rss-enable"> output.rss.enable</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否启用 RSS 输出</p>
+<h3 id="output-rss-path"> output.rss.path</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>rss.xml</code></li>
+</ul>
+<p>RSS 输出文件位置(基于输出文件夹)</p>
 ]]></content>
     <author>
       <name>Mr.Hope</name>
@@ -1199,97 +1290,6 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 </ul>
 </li>
 </ul>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2021-01-24T05:12:30.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">插件配置</title>
-    <id>https://vuepress-theme-hope.github.io/feed/zh/config/</id>
-    <link href="https://vuepress-theme-hope.github.io/feed/zh/config/"/>
-    <updated>2021-02-28T17:06:20.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="hostname"> hostname</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 是</li>
-</ul>
-<p>部署网站的域名。</p>
-<h2 id="baselang"> baseLang</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>'en-US'</code></li>
-</ul>
-<p>主目录所对应的语言。</p>
-<h2 id="channel"> channel</h2>
-<p><code>channel</code> 选项用于配置 Feed 频道。</p>
-<p>可用选项详见 <a href="./channel.html">配置 → 频道设置</a></p>
-<h2 id="filter"> filter</h2>
-<ul>
-<li>类型: <code>(pageA: Page)=&gt; boolean</code></li>
-<li>默认值: 全部 feed 项目</li>
-</ul>
-<p>自定义的过滤函数，用于过滤哪些项目在 feed 中显示。</p>
-<h2 id="sort"> sort</h2>
-<ul>
-<li>类型: <code>(pageA: Page, pageB: page)=&gt; number</code></li>
-</ul>
-<p>自定义排序函数，用于对站点中的页面进行排序。</p>
-<p>最终生成的 feed 文件将会按照这个顺序对项目进行显示。</p>
-<div><p>Note</p>
-<p>强烈建议设置这个选项，否则 feed 流中，项目的顺序完全由 vuepress 默认输出的 pages 顺序决定。</p>
-<p>你可以按照自己的需求对站点内的页面进行排序。</p>
-</div>
-<h2 id="count"> count</h2>
-<ul>
-<li>类型: <code>number</code></li>
-<li>默认值: 全部 feed 项目数量</li>
-</ul>
-<p>设置 feed 的最大项目数量。设置后会在所有页面排序好后，截取前 count 个项目。</p>
-<p>如果你的站点文章很多，你可能需要考虑设置这个选项以减少 feed 文件大小。</p>
-<h2 id="output"> output</h2>
-<p>Feed 的输出配置。</p>
-<h3 id="output-atom-enable"> output.atom.enable</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否启用 Atom 输出</p>
-<h3 id="output-atom-path"> output.atom.path</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>atom.xml</code></li>
-</ul>
-<p>Atom Feed 输出文件位置(基于输出文件夹)</p>
-<h3 id="output-json-enable"> output.json.enable</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否启用 json 输出</p>
-<h3 id="output-json-path"> output.json.path</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>feed.json</code></li>
-</ul>
-<p>JSON Feed 输出文件位置(基于输出文件夹)</p>
-<h3 id="output-rss-enable"> output.rss.enable</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否启用 RSS 输出</p>
-<h3 id="output-rss-path"> output.rss.path</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>rss.xml</code></li>
-</ul>
-<p>RSS 输出文件位置(基于输出文件夹)</p>
 ]]></content>
     <author>
       <name>Mr.Hope</name>

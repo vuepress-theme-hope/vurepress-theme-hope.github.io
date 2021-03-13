@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/</link>
     <description>A vuepress theme with tons of features✨</description>
     <language>en-US</language>
-    <pubDate>Sat, 13 Mar 2021 09:26:15 GMT</pubDate>
-    <lastBuildDate>Sat, 13 Mar 2021 09:26:15 GMT</lastBuildDate>
+    <pubDate>Sat, 13 Mar 2021 09:30:41 GMT</pubDate>
+    <lastBuildDate>Sat, 13 Mar 2021 09:30:41 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -3458,7 +3458,7 @@ write something here ~
 <p>Comment options are omitted here because of the complexity.</p>
 <p>For details, see <a href="https://vuepress-theme-hope.github.io/comment/config/" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-comment documentation</a></p>
 <blockquote>
-<p>You can omit this option if you don't want the comment feature</p>
+<p>You can omit this option if you don’t want the comment feature</p>
 </blockquote>
 <h2 id="copyright-settings"> Copyright Settings</h2>
 <p>For details see <a href="https://vuepress.github.io/en/plugins/copyright/" target="_blank" rel="noopener noreferrer">vuepress-plugin-copyright documentation</a></p>
