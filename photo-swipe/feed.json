@@ -39,11 +39,11 @@
       "tags": []
     },
     {
-      "title": "主页",
-      "url": "https://vuepress-theme-hope.github.io/photo-swipe/zh/",
-      "id": "https://vuepress-theme-hope.github.io/photo-swipe/zh/",
-      "content_html": "<p>让页面图像支持预览，缩放，共享，滑动查看和下载。</p>\n<h2 id=\"使用插件\"> 使用插件</h2>\n<h3 id=\"安装\"> 安装</h3>\n<CodeGroup>\n<CodeGroupItem title=\"yarn\">\n<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-photo-swipe\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n<CodeGroupItem title=\"npm\">\n<div><pre><code><span>npm</span> i -D vuepress-plugin-photo-swipe\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n</CodeGroup>\n<h3 id=\"使用\"> 使用</h3>\n<div><pre><code><span>// .vuepress/config.js</span>\nmodule<span>.</span>exports <span>=</span> <span>{</span>\n  plugins<span>:</span> <span>[</span><span>\"photo-swipe\"</span><span>]</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre>\n<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div>",
-      "date_published": "2020-10-13T05:36:44.000Z",
+      "title": "Home",
+      "url": "https://vuepress-theme-hope.github.io/photo-swipe/",
+      "id": "https://vuepress-theme-hope.github.io/photo-swipe/",
+      "content_html": "<p>Let your images support preview, zoom, share, swipe view and download.</p>\n<h2 id=\"how-to-use\"> How to use</h2>\n<h3 id=\"install\"> Install</h3>\n<CodeGroup>\n<CodeGroupItem title=\"yarn\">\n<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-photo-swipe\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n<CodeGroupItem title=\"npm\">\n<div><pre><code><span>npm</span> i -D vuepress-plugin-photo-swipe\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n</CodeGroup>\n<h3 id=\"usage\"> Usage</h3>\n<div><pre><code><span>// .vuepress/config.js</span>\nmodule<span>.</span>exports <span>=</span> <span>{</span>\n  plugins<span>:</span> <span>[</span><span>\"photo-swipe\"</span><span>]</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre>\n<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div>",
+      "date_published": "2020-10-11T08:23:28.000Z",
       "date_modified": "2021-03-06T14:49:20.000Z",
       "authors": [
         {
@@ -67,20 +67,6 @@
       "tags": []
     },
     {
-      "title": "Home",
-      "url": "https://vuepress-theme-hope.github.io/photo-swipe/",
-      "id": "https://vuepress-theme-hope.github.io/photo-swipe/",
-      "content_html": "<p>Let your images support preview, zoom, share, swipe view and download.</p>\n<h2 id=\"how-to-use\"> How to use</h2>\n<h3 id=\"install\"> Install</h3>\n<CodeGroup>\n<CodeGroupItem title=\"yarn\">\n<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-photo-swipe\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n<CodeGroupItem title=\"npm\">\n<div><pre><code><span>npm</span> i -D vuepress-plugin-photo-swipe\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n</CodeGroup>\n<h3 id=\"usage\"> Usage</h3>\n<div><pre><code><span>// .vuepress/config.js</span>\nmodule<span>.</span>exports <span>=</span> <span>{</span>\n  plugins<span>:</span> <span>[</span><span>\"photo-swipe\"</span><span>]</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre>\n<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div>",
-      "date_published": "2020-10-11T08:23:28.000Z",
-      "date_modified": "2021-03-06T14:49:20.000Z",
-      "authors": [
-        {
-          "name": "Mr.Hope"
-        }
-      ],
-      "tags": []
-    },
-    {
       "title": "指南",
       "url": "https://vuepress-theme-hope.github.io/photo-swipe/zh/guide/",
       "id": "https://vuepress-theme-hope.github.io/photo-swipe/zh/guide/",
@@ -89,6 +75,20 @@
       "image": "https://vuepress-theme-hope.github.io/photo-swipe/logo.png",
       "date_published": "2021-02-26T15:56:22.000Z",
       "date_modified": "2021-02-26T15:56:22.000Z",
+      "authors": [
+        {
+          "name": "Mr.Hope"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "title": "主页",
+      "url": "https://vuepress-theme-hope.github.io/photo-swipe/zh/",
+      "id": "https://vuepress-theme-hope.github.io/photo-swipe/zh/",
+      "content_html": "<p>让页面图像支持预览，缩放，共享，滑动查看和下载。</p>\n<h2 id=\"使用插件\"> 使用插件</h2>\n<h3 id=\"安装\"> 安装</h3>\n<CodeGroup>\n<CodeGroupItem title=\"yarn\">\n<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-photo-swipe\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n<CodeGroupItem title=\"npm\">\n<div><pre><code><span>npm</span> i -D vuepress-plugin-photo-swipe\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n</CodeGroup>\n<h3 id=\"使用\"> 使用</h3>\n<div><pre><code><span>// .vuepress/config.js</span>\nmodule<span>.</span>exports <span>=</span> <span>{</span>\n  plugins<span>:</span> <span>[</span><span>\"photo-swipe\"</span><span>]</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre>\n<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div>",
+      "date_published": "2020-10-13T05:36:44.000Z",
+      "date_modified": "2021-03-06T14:49:20.000Z",
       "authors": [
         {
           "name": "Mr.Hope"
