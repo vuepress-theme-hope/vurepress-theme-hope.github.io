@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-03-15T13:26:04.119Z</updated>
+  <updated>2021-03-15T13:46:37.956Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/pwa/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/pwa/"/>
@@ -14,171 +14,6 @@
   <contributor>
     <name>Mr.Hope</name>
   </contributor>
-  <entry>
-    <title type="html">Config</title>
-    <id>https://vuepress-theme-hope.github.io/pwa/config/</id>
-    <link href="https://vuepress-theme-hope.github.io/pwa/config/"/>
-    <updated>2021-03-12T11:35:04.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="baselang"> baseLang</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>'en-US'</code></li>
-</ul>
-<p>The language of the home directory.</p>
-<h2 id="showinstall"> showInstall</h2>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>true</code></li>
-</ul>
-<p>Whether display install button when Service Worker is first registered successfully.</p>
-<h2 id="manifest"> manifest</h2>
-<ul>
-<li>Type: <code>ManifestOption</code></li>
-<li>Required: No</li>
-</ul>
-<p>You can fill with an object which will be parsed to manifest.webmanifest.</p>
-<div><p>Tips</p>
-<p>Some options have their fallback if you donot set them.</p>
-<ul>
-<li>
-<p>name: <code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></p>
-</li>
-<li>
-<p>short_name: <code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></p>
-</li>
-<li>
-<p>description: <code>siteConfig.description</code> || <code>themeConfig.description</code> || <code>'A site built with vuepress-theme-hope'</code></p>
-</li>
-<li>
-<p>lang: <code>options.baseLang</code> || <code>themeConfig.baseLang</code> || <code>&quot;en-US&quot;</code></p>
-</li>
-<li>
-<p>start_url: <code>context.base</code></p>
-</li>
-<li>
-<p>scope: <code>context.base</code></p>
-</li>
-<li>
-<p>display: <code>&quot;standalone&quot;</code></p>
-</li>
-<li>
-<p>theme_color: <code>&quot;#46bd87&quot;</code></p>
-</li>
-<li>
-<p>background_color: <code>'#ffffff'</code></p>
-</li>
-<li>
-<p>orientation: <code>'portrait-primary'</code></p>
-</li>
-<li>
-<p>prefer_related_applications: <code>false</code></p>
-</li>
-</ul>
-</div>
-<div><p>More</p>
-<p>For docs of Manifest, please see <a href="https://w3c.github.io/manifest/" target="_blank" rel="noopener noreferrer">W3C Manifest</a></p>
-</div>
-<h2 id="favicon"> favicon</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Required: No</li>
-</ul>
-<p>Path of favico.ico with absolute path.</p>
-<div><p>Note</p>
-<p>We recommand you to set favicon for your site</p>
-</div>
-<h2 id="themecolor"> themeColor</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>&quot;#46bd87&quot;</code></li>
-</ul>
-<p>Theme Color, default is theme green</p>
-<h2 id="maxsize"> maxSize</h2>
-<ul>
-<li>Type: <code>number</code></li>
-<li>Default: <code>2048</code></li>
-</ul>
-<p>Max size which allows to cache, with KB unit</p>
-<div><p>Note</p>
-<p>This option has the highest priority, and any files exceeding this value will be excluded.</p>
-<p>So if you generate very large HTML or JS files, please consider increasing this value, otherwise your PWA may not work normally in offline mode.</p>
-</div>
-<h2 id="cachehtml"> cacheHTML</h2>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>true</code></li>
-</ul>
-<p>Whether cache HTML files besides home page and 404 page.</p>
-<h2 id="cachepic"> cachePic</h2>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>false</code></li>
-</ul>
-<p>Whether cache pictures</p>
-<h2 id="maxpicsize"> maxPicSize</h2>
-<ul>
-<li>Type: <code>number</code></li>
-<li>Default: <code>1024</code></li>
-</ul>
-<p>Max picture size which allows to cache, with KB unit</p>
-<h2 id="apple"> apple</h2>
-<p>Special settings for Apple</p>
-<blockquote>
-<p>If you don’t want to make detailed settings, you can safely ignore it; if you don’t want your site compatable with safari on apple, please set it to <code>false</code>.</p>
-</blockquote>
-<h3 id="apple-icon"> apple.icon</h3>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Required: No</li>
-</ul>
-<p>Fill in the icon address used by Apple, the recommended size is 152×152</p>
-<h3 id="apple-statusbarcolor"> apple.statusBarColor</h3>
-<ul>
-<li>Type: <code>&quot;black&quot; | &quot;white&quot;</code></li>
-<li>Default: <code>&quot;black&quot;</code></li>
-</ul>
-<p>Apple’s status bar color</p>
-<h3 id="apple-maskicon"> apple.maskIcon</h3>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Required: No</li>
-</ul>
-<p>Safari mask icon</p>
-<h2 id="mstile"> msTile</h2>
-<p>Special settings for Microsoft tiles</p>
-<blockquote>
-<p>If you don’t want to make detailed settings, you can safely ignore it; if you don’t want your site compatable with windows, please set it to <code>false</code>.</p>
-</blockquote>
-<h3 id="mstile-image"> msTile.image</h3>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Required: No</li>
-</ul>
-<p>Tile icon</p>
-<h3 id="mstile-color"> msTile.color</h3>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default value: <code>themeColor</code></li>
-</ul>
-<p>The tile color will automatically fall back to themeColor if you don’t set it.</p>
-<h2 id="popupcomponent"> popupComponent</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>'SWUpdatePopup'</code></li>
-</ul>
-<p>You can fill in the custom pop-up component path.</p>
-<h2 id="generateswconfig"> generateSwConfig</h2>
-<p>Options passed to <code>workbox-build</code>, for details, see <a href="https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-build#.generateSW" target="_blank" rel="noopener noreferrer">Workbox documentation</a></p>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-10-22T04:23:17.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
   <entry>
     <title type="html">Home</title>
     <id>https://vuepress-theme-hope.github.io/pwa/</id>
@@ -205,6 +40,226 @@ module<span>.</span>exports <span>=</span> <span>{</span>
       <span>"@mr-hope/pwa"</span><span>,</span>
       <span>{</span>
         <span>// your options</span>
+      <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div>]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-10-21T16:30:08.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">指南</title>
+    <id>https://vuepress-theme-hope.github.io/pwa/zh/guide/</id>
+    <link href="https://vuepress-theme-hope.github.io/pwa/zh/guide/"/>
+    <updated>2021-03-12T11:35:04.000Z</updated>
+    <summary type="html"><![CDATA[<p>插件为 VuePress 带来了增强的 PWA 支持[^pwa-intro]。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>插件为 VuePress 带来了增强的 PWA 支持<sup></sup>。</p>
+
+<h2 id="内容缓存和更新"> 内容缓存和更新</h2>
+<p>Service Worker <sup></sup> (简称 SW) 主要用于获取并托管网站内容。</p>
+<p>本插件会自动通过 <code>workbox-build</code> 注册 Service Woker。</p>
+<p>为了更好地控制 Service Worker 可以预缓存的内容，插件提供了下列设置。</p>
+<p>如果你是一个高级用户，你也可以直接设置 <code>generateSwConfig</code> 来将选项传递给 <code>workbox-build</code>。</p>
+<h3 id="默认缓存"> 默认缓存</h3>
+<p>默认情况下插件会预缓存所有与网站相关的文件: <code>**/*.{html,js,css,svg}</code></p>
+<p>同时插件还会缓存字体文件: <code>**/*.{woff,woff2,eot,ttf,otf}</code>。</p>
+<h3 id="缓存控制"> 缓存控制</h3>
+<p>基于可安装性<sup></sup>的要求，插件提供了缓存控制的相关选项。</p>
+<h4 id="图片缓存"> 图片缓存</h4>
+<p>你可以通过设置 <code>cachePic</code> 选项为 <code>true</code> 来缓存站点图片。</p>
+<p>如果您的站点体积不大，且配图大多为关键性说明，希望可以在离线模式下显示，建议将此项设置为 <code>true</code>。</p>
+<div><p>图片识别</p>
+<p>我们通过文件后缀名识别图片，任何以 <code>.png</code>, <code>.jpg</code>, <code>.jpeg</code> , <code>.gif</code>, <code>.bmp</code>, <code>.webp</code> 结尾的文件都会视为图片。</p>
+</div>
+<h4 id="html-缓存"> HTML 缓存</h4>
+<p>当你网站体积过大时，你可以通过设置 <code>cacheHTML</code> 为 <code>false</code> 来仅缓存除主页和 404 错误页。</p>
+<div><p>为什么可以移除</p>
+<p>虽然说 VuePress 为所有的页面通过 SSR<sup></sup> 生成了 HTML 文件，但是这些文件主要用于 SEO<sup></sup>，并能够让你在后端不做 SPA<sup></sup> 配置的情况下能够直接访问任何链接。</p>
+<p>VuePress 本质上是一个 SPA。这意味着你只需要缓存主页并从主页进入即可正常访问所有页面。</p>
+<p>当你站点页面数量或内容很多，包含 HTML 文件后体积过大时，你可以考虑将此项设置为 <code>false</code>，这样可以缩减大约 40% 的体积。缺点是用户在离线环境下只能通过主页进入再自行导航到对应页面。直接访问某个链接会出现网页错误的提示。</p>
+</div>
+<h4 id="大小控制"> 大小控制</h4>
+<p>为了防止在预缓存列表中包含大文件，任何大于 2MB 的文件或大于 1MB 的图片都将被删除。</p>
+<p>你可以通过 <code>maxSize</code> 选项自定义缓存的最大文件大小 (单位 KB)，或通过 <code>maxPicSize</code> 来更改图片的大小限制 (单位: KB)。</p>
+<h3 id="更新弹窗"> 更新弹窗</h3>
+<p>弹出窗口的默认语言将自动设置为 <code>baseLang</code> 选项的值，当未设置时，回退到 <code>en-US</code>。</p>
+<div><p>自定义弹窗</p>
+<p>如果你对默认的弹窗不满意，你可以自行编写组件更换。你需要全局注册自己的弹窗组件，并将组件的名称传递给 <code>popupComponent</code> 选项。</p>
+</div>
+<h2 id="清单文件生成"> 清单文件生成</h2>
+<p>为了保证 PWA 的可安装性，网站需要生成清单文件，并通过 <code>link</code> 声明有效的 manifest 清单文件地址<sup></sup>。</p>
+<p>插件会在输出目录自动为你生成 Manifest 文件 <code>manifest.webmanifest</code>，同时还会添加清单地址声明到每一个 HTML 的 <code>&lt;head&gt;</code> 中。</p>
+<p>如果你在 <code>.vuepress/public</code> 中已有一个 <code>manifest.webmanifest</code> 或 <code>manifest.json</code>，该插件将读取它并合并到最终 manifest 中。</p>
+<h3 id="自动生成"> 自动生成</h3>
+<p>插件会尽可能的通过 VuePress 插件接口的信息，为 manifest 的大部分设置项设置 fallback，这意味着即使你无需设置 manifest 的大多数内容。</p>
+<p>如果未设置下列选项，它们会按照顺序依次尝试回退到以下预设值。</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td><code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></td>
+</tr>
+<tr>
+<td>short_name</td>
+<td><code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></td>
+</tr>
+<tr>
+<td>description</td>
+<td><code>siteConfig.description</code> || <code>themeConfig.description</code> || <code>'A site built with vuepress-theme-hope'</code></td>
+</tr>
+<tr>
+<td>lang</td>
+<td><code>options.baseLang</code> || <code>themeConfig.baseLang</code></td>
+</tr>
+<tr>
+<td>start_url</td>
+<td><code>context.base</code></td>
+</tr>
+<tr>
+<td>scope</td>
+<td><code>context.base</code></td>
+</tr>
+<tr>
+<td>display</td>
+<td><code>&quot;standalone&quot;</code></td>
+</tr>
+<tr>
+<td>theme_color</td>
+<td><code>&quot;#46bd87&quot;</code></td>
+</tr>
+<tr>
+<td>background_color</td>
+<td><code>'#ffffff'</code></td>
+</tr>
+<tr>
+<td>orientation</td>
+<td><code>'portrait-primary'</code></td>
+</tr>
+<tr>
+<td>prefer_related_applications</td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<p>完整的配置项详见 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/packages/pwa/src/types/manifest.d.ts" target="_blank" rel="noopener noreferrer">Manifest 类型定义文件</a></p>
+<h3 id="手动配置"> 手动配置</h3>
+<p>你可以在 <code>manifest</code> 选项中手动指定 manifest 的各项内容。</p>
+<div><p>优先级</p>
+<p><code>manifest</code> 选项的设置具有最高的优先级，之后是 <code>public</code> 文件夹下可能存在的 manifest 文件。</p>
+</div>
+<p><strong>你至少应该通过 <code>manifest.icons</code> 或 PWA 插件中的其他选项设置一个有效的图标。</strong> 因为这是我们没法默认生成的。</p>
+<div><p>Note</p>
+<p>可安装性<sup></sup>规范要求 manifest 中至少声明一个有效的图标。</p>
+<p>所以如果你不配置 <code>manifest.icons</code>，访问者只能享受到 Service Worker 缓存带来的离线可访问性，而并不能作为 PWA 进行安装。</p>
+<p>另外插件并不会处理 manifest 中的任何内容，而是原样输出它们。这意味着如果打算你部署到某个子目录，你则应自行添加 <code>base</code> 到 manifest 中的相应 URL。</p>
+</div>
+<h2 id="其他选项"> 其他选项</h2>
+<p>插件还提供了其他 PWA 相关选项，比如微软磁贴图标与颜色设置，苹果图标等。</p>
+<p>你可以酌情根据需要设置它们。详细的选项请见 <a href="./config.html">配置页</a>。</p>
+<h2 id="相关阅读"> 相关阅读</h2>
+<p>更多内容，请详见:</p>
+<ul>
+<li><a href="https://web.dev/progressive-web-apps/" target="_blank" rel="noopener noreferrer">Google PWA</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps" target="_blank" rel="noopener noreferrer">MDN PWA</a></li>
+<li><a href="https://w3c.github.io/manifest/" target="_blank" rel="noopener noreferrer">W3C Manifest 规范</a></li>
+</ul>
+<hr>
+<section>
+<ol>
+<li id="fn1"><p><strong>PWA 介绍</strong></p>
+<p>PWA 全称 Progressive Web app，即渐进式网络应用程序，标准由 W3C 规定。</p>
+<p>它允许网站通过支持该特性的浏览器将网站作为 App 安装在对应平台上。 </p>
+</li>
+<li id="fn2"><p><strong>Service Worker 简要介绍</strong></p>
+<ol>
+<li>
+<p>Service Worker 会在注册过程中获取注册在其中的所有文件并缓存它们。</p>
+</li>
+<li>
+<p>注册成功后，Service Worker 激活，并开始代理并控制你的全部请求。</p>
+</li>
+<li>
+<p>每当你想要通过浏览器发起访问请求后，Service Worker 将会查看其是否存在与自身缓存列表中，若存在则直接返回缓存好的结果，否则调用自身的 fetch 方法进行获取。你可以通过自定义 fetch 方法，来完全控制网页内资源获取请求的结果，比如在离线时提供一个 fallback 的网页。</p>
+</li>
+<li>
+<p>每次用户重新打开网站时，Service Worker 会向自身注册时的地址发出校验命令，如果检测到新版本的 Service Woker，则会更新自身，并开始缓存注册在新 Service Worker 中的资源列表。成功获取内容更新后，Service Worker 将会触发 <code>update</code> 事件。可以通过此事件提示用户，比如将在右下角显示一个弹出窗口，提示用户新内容可用并允许用户触发更新。</p>
+</li>
+</ol>
+ </li>
+<li id="fn3"><p><strong>可安装性</strong></p>
+<p>想要让网站可以注册为 PWA，网站需要自行成功注册有效的 Service Worker，同时添加合法的 mainfest 清单文件并在网站中声明它。</p>
+<p>各平台或浏览器对 Service Worker 缓存的大小有要求，当 Service Worker 缓存的文件体积过大后，该网站将会被标记为不可安装。对于 Safari 这个阈值是 50 MB，少数浏览器会设置更少或更多的值 (30MB, 70MB, 80MB)，最大的 Chrome 也将阈值标识在 100 MB。</p>
+<p>另外，清单文件应至少包含 <code>name</code>(或 <code>short_name</code>) <code>icons</code> <code>start_url</code>。</p>
+<p>从 Chrome 93 起 Service Woker 必须含有有效的控制离线请求的 fetch 事件  </p>
+</li>
+<li id="fn4"><p><strong>SSR</strong>: <strong>S</strong>erver <strong>S</strong>ide <strong>R</strong>endering，服务端渲染 </p>
+</li>
+<li id="fn5"><p><strong>SEO</strong>: <strong>S</strong>earch <strong>E</strong>ngine <strong>O</strong>ptimization，搜索引擎增强，</p>
+<p>详见 <a href="https://mrhope.site/code/website/html/definition/seo/" target="_blank" rel="noopener noreferrer">SEO 介绍</a> </p>
+</li>
+<li id="fn6"><p><strong>SPA</strong>: <strong>S</strong>ingle <strong>P</strong>age <strong>A</strong>pplication, 单页应用</p>
+<p>大多只有主页，并使用 history mode 处理路由，而不是真的在页面之间导航。 </p>
+</li>
+<li id="fn7"><p><strong>清单文件</strong></p>
+<p>清单文件使用 JSON 格式，负责声明 PWA 各项信息，如名称、描述、图标、快捷动作等。</p>
+<p>为了使你的站点能够被注册为 PWA，你需要满足 manifest 基本的规范，才能使浏览器认为该网站为一个可安装的 PWA 并允许用户安装它。</p>
+<div><p>Info</p>
+<p>Manifest 的标准与规范，请详见 <a href="https://w3c.github.io/manifest/" target="_blank" rel="noopener noreferrer">W3C Manifest</a></p>
+</div>
+ </li>
+</ol>
+</section>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-10-22T04:23:17.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">主页</title>
+    <id>https://vuepress-theme-hope.github.io/pwa/zh/</id>
+    <link href="https://vuepress-theme-hope.github.io/pwa/zh/"/>
+    <updated>2021-02-24T15:41:50.000Z</updated>
+    <content type="html"><![CDATA[<p>渐进式网页应用 (Progressive Web App) 支持。</p>
+<h2 id="使用插件"> 使用插件</h2>
+<h3 id="安装"> 安装</h3>
+<CodeGroup>
+<CodeGroupItem title="yarn">
+<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-pwa
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="npm">
+<div><pre><code><span>npm</span> i -D vuepress-plugin-pwa
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+<h3 id="使用"> 使用</h3>
+<div><pre><code><span>// .vuepress/config.js</span>
+module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>[</span>
+      <span>"@mr-hope/pwa"</span><span>,</span>
+      <span>{</span>
+        <span>// 你的选项</span>
       <span>}</span><span>,</span>
     <span>]</span><span>,</span>
   <span>]</span><span>,</span>
@@ -398,174 +453,160 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
-    <title type="html">指南</title>
-    <id>https://vuepress-theme-hope.github.io/pwa/zh/guide/</id>
-    <link href="https://vuepress-theme-hope.github.io/pwa/zh/guide/"/>
+    <title type="html">Config</title>
+    <id>https://vuepress-theme-hope.github.io/pwa/config/</id>
+    <link href="https://vuepress-theme-hope.github.io/pwa/config/"/>
     <updated>2021-03-12T11:35:04.000Z</updated>
-    <summary type="html"><![CDATA[<p>插件为 VuePress 带来了增强的 PWA 支持[^pwa-intro]。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>插件为 VuePress 带来了增强的 PWA 支持<sup></sup>。</p>
-
-<h2 id="内容缓存和更新"> 内容缓存和更新</h2>
-<p>Service Worker <sup></sup> (简称 SW) 主要用于获取并托管网站内容。</p>
-<p>本插件会自动通过 <code>workbox-build</code> 注册 Service Woker。</p>
-<p>为了更好地控制 Service Worker 可以预缓存的内容，插件提供了下列设置。</p>
-<p>如果你是一个高级用户，你也可以直接设置 <code>generateSwConfig</code> 来将选项传递给 <code>workbox-build</code>。</p>
-<h3 id="默认缓存"> 默认缓存</h3>
-<p>默认情况下插件会预缓存所有与网站相关的文件: <code>**/*.{html,js,css,svg}</code></p>
-<p>同时插件还会缓存字体文件: <code>**/*.{woff,woff2,eot,ttf,otf}</code>。</p>
-<h3 id="缓存控制"> 缓存控制</h3>
-<p>基于可安装性<sup></sup>的要求，插件提供了缓存控制的相关选项。</p>
-<h4 id="图片缓存"> 图片缓存</h4>
-<p>你可以通过设置 <code>cachePic</code> 选项为 <code>true</code> 来缓存站点图片。</p>
-<p>如果您的站点体积不大，且配图大多为关键性说明，希望可以在离线模式下显示，建议将此项设置为 <code>true</code>。</p>
-<div><p>图片识别</p>
-<p>我们通过文件后缀名识别图片，任何以 <code>.png</code>, <code>.jpg</code>, <code>.jpeg</code> , <code>.gif</code>, <code>.bmp</code>, <code>.webp</code> 结尾的文件都会视为图片。</p>
-</div>
-<h4 id="html-缓存"> HTML 缓存</h4>
-<p>当你网站体积过大时，你可以通过设置 <code>cacheHTML</code> 为 <code>false</code> 来仅缓存除主页和 404 错误页。</p>
-<div><p>为什么可以移除</p>
-<p>虽然说 VuePress 为所有的页面通过 SSR<sup></sup> 生成了 HTML 文件，但是这些文件主要用于 SEO<sup></sup>，并能够让你在后端不做 SPA<sup></sup> 配置的情况下能够直接访问任何链接。</p>
-<p>VuePress 本质上是一个 SPA。这意味着你只需要缓存主页并从主页进入即可正常访问所有页面。</p>
-<p>当你站点页面数量或内容很多，包含 HTML 文件后体积过大时，你可以考虑将此项设置为 <code>false</code>，这样可以缩减大约 40% 的体积。缺点是用户在离线环境下只能通过主页进入再自行导航到对应页面。直接访问某个链接会出现网页错误的提示。</p>
-</div>
-<h4 id="大小控制"> 大小控制</h4>
-<p>为了防止在预缓存列表中包含大文件，任何大于 2MB 的文件或大于 1MB 的图片都将被删除。</p>
-<p>你可以通过 <code>maxSize</code> 选项自定义缓存的最大文件大小 (单位 KB)，或通过 <code>maxPicSize</code> 来更改图片的大小限制 (单位: KB)。</p>
-<h3 id="更新弹窗"> 更新弹窗</h3>
-<p>弹出窗口的默认语言将自动设置为 <code>baseLang</code> 选项的值，当未设置时，回退到 <code>en-US</code>。</p>
-<div><p>自定义弹窗</p>
-<p>如果你对默认的弹窗不满意，你可以自行编写组件更换。你需要全局注册自己的弹窗组件，并将组件的名称传递给 <code>popupComponent</code> 选项。</p>
-</div>
-<h2 id="清单文件生成"> 清单文件生成</h2>
-<p>为了保证 PWA 的可安装性，网站需要生成清单文件，并通过 <code>link</code> 声明有效的 manifest 清单文件地址<sup></sup>。</p>
-<p>插件会在输出目录自动为你生成 Manifest 文件 <code>manifest.webmanifest</code>，同时还会添加清单地址声明到每一个 HTML 的 <code>&lt;head&gt;</code> 中。</p>
-<p>如果你在 <code>.vuepress/public</code> 中已有一个 <code>manifest.webmanifest</code> 或 <code>manifest.json</code>，该插件将读取它并合并到最终 manifest 中。</p>
-<h3 id="自动生成"> 自动生成</h3>
-<p>插件会尽可能的通过 VuePress 插件接口的信息，为 manifest 的大部分设置项设置 fallback，这意味着即使你无需设置 manifest 的大多数内容。</p>
-<p>如果未设置下列选项，它们会按照顺序依次尝试回退到以下预设值。</p>
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>默认值</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>name</td>
-<td><code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></td>
-</tr>
-<tr>
-<td>short_name</td>
-<td><code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></td>
-</tr>
-<tr>
-<td>description</td>
-<td><code>siteConfig.description</code> || <code>themeConfig.description</code> || <code>'A site built with vuepress-theme-hope'</code></td>
-</tr>
-<tr>
-<td>lang</td>
-<td><code>options.baseLang</code> || <code>themeConfig.baseLang</code></td>
-</tr>
-<tr>
-<td>start_url</td>
-<td><code>context.base</code></td>
-</tr>
-<tr>
-<td>scope</td>
-<td><code>context.base</code></td>
-</tr>
-<tr>
-<td>display</td>
-<td><code>&quot;standalone&quot;</code></td>
-</tr>
-<tr>
-<td>theme_color</td>
-<td><code>&quot;#46bd87&quot;</code></td>
-</tr>
-<tr>
-<td>background_color</td>
-<td><code>'#ffffff'</code></td>
-</tr>
-<tr>
-<td>orientation</td>
-<td><code>'portrait-primary'</code></td>
-</tr>
-<tr>
-<td>prefer_related_applications</td>
-<td><code>false</code></td>
-</tr>
-</tbody>
-</table>
-<p>完整的配置项详见 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/packages/pwa/src/types/manifest.d.ts" target="_blank" rel="noopener noreferrer">Manifest 类型定义文件</a></p>
-<h3 id="手动配置"> 手动配置</h3>
-<p>你可以在 <code>manifest</code> 选项中手动指定 manifest 的各项内容。</p>
-<div><p>优先级</p>
-<p><code>manifest</code> 选项的设置具有最高的优先级，之后是 <code>public</code> 文件夹下可能存在的 manifest 文件。</p>
-</div>
-<p><strong>你至少应该通过 <code>manifest.icons</code> 或 PWA 插件中的其他选项设置一个有效的图标。</strong> 因为这是我们没法默认生成的。</p>
-<div><p>Note</p>
-<p>可安装性<sup></sup>规范要求 manifest 中至少声明一个有效的图标。</p>
-<p>所以如果你不配置 <code>manifest.icons</code>，访问者只能享受到 Service Worker 缓存带来的离线可访问性，而并不能作为 PWA 进行安装。</p>
-<p>另外插件并不会处理 manifest 中的任何内容，而是原样输出它们。这意味着如果打算你部署到某个子目录，你则应自行添加 <code>base</code> 到 manifest 中的相应 URL。</p>
-</div>
-<h2 id="其他选项"> 其他选项</h2>
-<p>插件还提供了其他 PWA 相关选项，比如微软磁贴图标与颜色设置，苹果图标等。</p>
-<p>你可以酌情根据需要设置它们。详细的选项请见 <a href="./config.html">配置页</a>。</p>
-<h2 id="相关阅读"> 相关阅读</h2>
-<p>更多内容，请详见:</p>
+    <content type="html"><![CDATA[<h2 id="baselang"> baseLang</h2>
 <ul>
-<li><a href="https://web.dev/progressive-web-apps/" target="_blank" rel="noopener noreferrer">Google PWA</a></li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps" target="_blank" rel="noopener noreferrer">MDN PWA</a></li>
-<li><a href="https://w3c.github.io/manifest/" target="_blank" rel="noopener noreferrer">W3C Manifest 规范</a></li>
+<li>Type: <code>string</code></li>
+<li>Default: <code>'en-US'</code></li>
 </ul>
-<hr>
-<section>
-<ol>
-<li id="fn1"><p><strong>PWA 介绍</strong></p>
-<p>PWA 全称 Progressive Web app，即渐进式网络应用程序，标准由 W3C 规定。</p>
-<p>它允许网站通过支持该特性的浏览器将网站作为 App 安装在对应平台上。 </p>
-</li>
-<li id="fn2"><p><strong>Service Worker 简要介绍</strong></p>
-<ol>
+<p>The language of the home directory.</p>
+<h2 id="showinstall"> showInstall</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>true</code></li>
+</ul>
+<p>Whether display install button when Service Worker is first registered successfully.</p>
+<h2 id="manifest"> manifest</h2>
+<ul>
+<li>Type: <code>ManifestOption</code></li>
+<li>Required: No</li>
+</ul>
+<p>You can fill with an object which will be parsed to manifest.webmanifest.</p>
+<div><p>Tips</p>
+<p>Some options have their fallback if you donot set them.</p>
+<ul>
 <li>
-<p>Service Worker 会在注册过程中获取注册在其中的所有文件并缓存它们。</p>
+<p>name: <code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></p>
 </li>
 <li>
-<p>注册成功后，Service Worker 激活，并开始代理并控制你的全部请求。</p>
+<p>short_name: <code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></p>
 </li>
 <li>
-<p>每当你想要通过浏览器发起访问请求后，Service Worker 将会查看其是否存在与自身缓存列表中，若存在则直接返回缓存好的结果，否则调用自身的 fetch 方法进行获取。你可以通过自定义 fetch 方法，来完全控制网页内资源获取请求的结果，比如在离线时提供一个 fallback 的网页。</p>
+<p>description: <code>siteConfig.description</code> || <code>themeConfig.description</code> || <code>'A site built with vuepress-theme-hope'</code></p>
 </li>
 <li>
-<p>每次用户重新打开网站时，Service Worker 会向自身注册时的地址发出校验命令，如果检测到新版本的 Service Woker，则会更新自身，并开始缓存注册在新 Service Worker 中的资源列表。成功获取内容更新后，Service Worker 将会触发 <code>update</code> 事件。可以通过此事件提示用户，比如将在右下角显示一个弹出窗口，提示用户新内容可用并允许用户触发更新。</p>
+<p>lang: <code>options.baseLang</code> || <code>themeConfig.baseLang</code> || <code>&quot;en-US&quot;</code></p>
 </li>
-</ol>
- </li>
-<li id="fn3"><p><strong>可安装性</strong></p>
-<p>想要让网站可以注册为 PWA，网站需要自行成功注册有效的 Service Worker，同时添加合法的 mainfest 清单文件并在网站中声明它。</p>
-<p>各平台或浏览器对 Service Worker 缓存的大小有要求，当 Service Worker 缓存的文件体积过大后，该网站将会被标记为不可安装。对于 Safari 这个阈值是 50 MB，少数浏览器会设置更少或更多的值 (30MB, 70MB, 80MB)，最大的 Chrome 也将阈值标识在 100 MB。</p>
-<p>另外，清单文件应至少包含 <code>name</code>(或 <code>short_name</code>) <code>icons</code> <code>start_url</code>。</p>
-<p>从 Chrome 93 起 Service Woker 必须含有有效的控制离线请求的 fetch 事件  </p>
+<li>
+<p>start_url: <code>context.base</code></p>
 </li>
-<li id="fn4"><p><strong>SSR</strong>: <strong>S</strong>erver <strong>S</strong>ide <strong>R</strong>endering，服务端渲染 </p>
+<li>
+<p>scope: <code>context.base</code></p>
 </li>
-<li id="fn5"><p><strong>SEO</strong>: <strong>S</strong>earch <strong>E</strong>ngine <strong>O</strong>ptimization，搜索引擎增强，</p>
-<p>详见 <a href="https://mrhope.site/code/website/html/definition/seo/" target="_blank" rel="noopener noreferrer">SEO 介绍</a> </p>
+<li>
+<p>display: <code>&quot;standalone&quot;</code></p>
 </li>
-<li id="fn6"><p><strong>SPA</strong>: <strong>S</strong>ingle <strong>P</strong>age <strong>A</strong>pplication, 单页应用</p>
-<p>大多只有主页，并使用 history mode 处理路由，而不是真的在页面之间导航。 </p>
+<li>
+<p>theme_color: <code>&quot;#46bd87&quot;</code></p>
 </li>
-<li id="fn7"><p><strong>清单文件</strong></p>
-<p>清单文件使用 JSON 格式，负责声明 PWA 各项信息，如名称、描述、图标、快捷动作等。</p>
-<p>为了使你的站点能够被注册为 PWA，你需要满足 manifest 基本的规范，才能使浏览器认为该网站为一个可安装的 PWA 并允许用户安装它。</p>
-<div><p>Info</p>
-<p>Manifest 的标准与规范，请详见 <a href="https://w3c.github.io/manifest/" target="_blank" rel="noopener noreferrer">W3C Manifest</a></p>
+<li>
+<p>background_color: <code>'#ffffff'</code></p>
+</li>
+<li>
+<p>orientation: <code>'portrait-primary'</code></p>
+</li>
+<li>
+<p>prefer_related_applications: <code>false</code></p>
+</li>
+</ul>
 </div>
- </li>
-</ol>
-</section>
+<div><p>More</p>
+<p>For docs of Manifest, please see <a href="https://w3c.github.io/manifest/" target="_blank" rel="noopener noreferrer">W3C Manifest</a></p>
+</div>
+<h2 id="favicon"> favicon</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Required: No</li>
+</ul>
+<p>Path of favico.ico with absolute path.</p>
+<div><p>Note</p>
+<p>We recommand you to set favicon for your site</p>
+</div>
+<h2 id="themecolor"> themeColor</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>&quot;#46bd87&quot;</code></li>
+</ul>
+<p>Theme Color, default is theme green</p>
+<h2 id="maxsize"> maxSize</h2>
+<ul>
+<li>Type: <code>number</code></li>
+<li>Default: <code>2048</code></li>
+</ul>
+<p>Max size which allows to cache, with KB unit</p>
+<div><p>Note</p>
+<p>This option has the highest priority, and any files exceeding this value will be excluded.</p>
+<p>So if you generate very large HTML or JS files, please consider increasing this value, otherwise your PWA may not work normally in offline mode.</p>
+</div>
+<h2 id="cachehtml"> cacheHTML</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>true</code></li>
+</ul>
+<p>Whether cache HTML files besides home page and 404 page.</p>
+<h2 id="cachepic"> cachePic</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>false</code></li>
+</ul>
+<p>Whether cache pictures</p>
+<h2 id="maxpicsize"> maxPicSize</h2>
+<ul>
+<li>Type: <code>number</code></li>
+<li>Default: <code>1024</code></li>
+</ul>
+<p>Max picture size which allows to cache, with KB unit</p>
+<h2 id="apple"> apple</h2>
+<p>Special settings for Apple</p>
+<blockquote>
+<p>If you don’t want to make detailed settings, you can safely ignore it; if you don’t want your site compatable with safari on apple, please set it to <code>false</code>.</p>
+</blockquote>
+<h3 id="apple-icon"> apple.icon</h3>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Required: No</li>
+</ul>
+<p>Fill in the icon address used by Apple, the recommended size is 152×152</p>
+<h3 id="apple-statusbarcolor"> apple.statusBarColor</h3>
+<ul>
+<li>Type: <code>&quot;black&quot; | &quot;white&quot;</code></li>
+<li>Default: <code>&quot;black&quot;</code></li>
+</ul>
+<p>Apple’s status bar color</p>
+<h3 id="apple-maskicon"> apple.maskIcon</h3>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Required: No</li>
+</ul>
+<p>Safari mask icon</p>
+<h2 id="mstile"> msTile</h2>
+<p>Special settings for Microsoft tiles</p>
+<blockquote>
+<p>If you don’t want to make detailed settings, you can safely ignore it; if you don’t want your site compatable with windows, please set it to <code>false</code>.</p>
+</blockquote>
+<h3 id="mstile-image"> msTile.image</h3>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Required: No</li>
+</ul>
+<p>Tile icon</p>
+<h3 id="mstile-color"> msTile.color</h3>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default value: <code>themeColor</code></li>
+</ul>
+<p>The tile color will automatically fall back to themeColor if you don’t set it.</p>
+<h2 id="popupcomponent"> popupComponent</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>'SWUpdatePopup'</code></li>
+</ul>
+<p>You can fill in the custom pop-up component path.</p>
+<h2 id="generateswconfig"> generateSwConfig</h2>
+<p>Options passed to <code>workbox-build</code>, for details, see <a href="https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-build#.generateSW" target="_blank" rel="noopener noreferrer">Workbox documentation</a></p>
 ]]></content>
     <author>
       <name>Mr.Hope</name>
@@ -742,47 +783,6 @@ module<span>.</span>exports <span>=</span> <span>{</span>
       <name>Mr.Hope</name>
     </contributor>
     <published>2020-10-22T04:23:17.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">主页</title>
-    <id>https://vuepress-theme-hope.github.io/pwa/zh/</id>
-    <link href="https://vuepress-theme-hope.github.io/pwa/zh/"/>
-    <updated>2021-02-24T15:41:50.000Z</updated>
-    <content type="html"><![CDATA[<p>渐进式网页应用 (Progressive Web App) 支持。</p>
-<h2 id="使用插件"> 使用插件</h2>
-<h3 id="安装"> 安装</h3>
-<CodeGroup>
-<CodeGroupItem title="yarn">
-<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-pwa
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-<CodeGroupItem title="npm">
-<div><pre><code><span>npm</span> i -D vuepress-plugin-pwa
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-</CodeGroup>
-<h3 id="使用"> 使用</h3>
-<div><pre><code><span>// .vuepress/config.js</span>
-module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span>
-    <span>[</span>
-      <span>"@mr-hope/pwa"</span><span>,</span>
-      <span>{</span>
-        <span>// 你的选项</span>
-      <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-  <span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div>]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-10-21T16:30:08.000Z</published>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
 </feed>
