@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/</link>
     <description>A vuepress theme with tons of features✨</description>
     <language>en-US</language>
-    <pubDate>Mon, 15 Mar 2021 15:21:18 GMT</pubDate>
-    <lastBuildDate>Mon, 15 Mar 2021 15:21:18 GMT</lastBuildDate>
+    <pubDate>Tue, 16 Mar 2021 06:18:36 GMT</pubDate>
+    <lastBuildDate>Tue, 16 Mar 2021 06:18:36 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -4889,7 +4889,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <h2 id="rdfa-1-1"> RDFa 1.1</h2>
 <p>The theme adds rich media structure support to most of the website structure by following <a href="https://www.w3.org/TR/rdfa-primer/" target="_blank" rel="noopener noreferrer">RDFa 1.1</a>.</p>
 <div><p>Tips</p>
-<p>You can use <a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener noreferrer">Google Rich Media Structure Test Tool</a> to test this site.</p>
+<p>You can use <a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fvuepress-theme-hope.github.io%2Fguide%2Ffeature%2Fseo%2F&amp;user_agent=1" target="_blank" rel="noopener noreferrer">Google Rich Media Structure Test Tool</a> to test this site.</p>
 </div>
 ]]></content:encoded>
     </item>
@@ -4986,7 +4986,8 @@ module<span>.</span>exports <span>=</span> <span>{</span>
       <source url="https://vuepress-theme-hope.github.io/rss.xml">Install / Usage</source>
       <category>Get Started</category>
       <pubDate>Thu, 25 Feb 2021 12:25:39 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="quick-install"> Quick Install</h2>
+      <content:encoded><![CDATA[<h2 id="install"> Install</h2>
+<p>Create a vuepress-theme-hope project in <code>[dir]</code> folder under the current project:</p>
 <CodeGroup>
 <CodeGroupItem title="yarn">
 <div><pre><code><span>yarn</span> create vuepress-theme-hope <span>[</span>dir<span>]</span>
@@ -4994,17 +4995,6 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <div><span>1</span><br></div></div></CodeGroupItem>
 <CodeGroupItem title="npm">
 <div><pre><code>npx create-vuepress-theme-hope <span>[</span>dir<span>]</span>
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-</CodeGroup>
-<h2 id="manual-install"> Manual Install</h2>
-<CodeGroup>
-<CodeGroupItem title="yarn">
-<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-theme-hope
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-<CodeGroupItem title="npm">
-<div><pre><code><span>npm</span> i -D vuepress-theme-hope
 </code></pre>
 <div><span>1</span><br></div></div></CodeGroupItem>
 </CodeGroup>
@@ -7905,7 +7895,7 @@ $$
       <source url="https://vuepress-theme-hope.github.io/rss.xml">Home</source>
       <pubDate>Tue, 07 Jan 2020 06:44:41 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="🛠install"> 🛠Install</h2>
-<h3 id="quick-install"> Quick Install</h3>
+<p>Create a vuepress-theme-hope project in <code>[dir]</code> folder under the current project:</p>
 <CodeGroup>
 <CodeGroupItem title="yarn">
 <div><pre><code><span>yarn</span> create vuepress-theme-hope <span>[</span>dir<span>]</span>
@@ -7913,17 +7903,6 @@ $$
 <div><span>1</span><br></div></div></CodeGroupItem>
 <CodeGroupItem title="npm">
 <div><pre><code>npx create-vuepress-theme-hope <span>[</span>dir<span>]</span>
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-</CodeGroup>
-<h3 id="manual-install"> Manual Install</h3>
-<CodeGroup>
-<CodeGroupItem title="yarn">
-<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-theme-hope
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-<CodeGroupItem title="npm">
-<div><pre><code><span>npm</span> i -D vuepress-theme-hope
 </code></pre>
 <div><span>1</span><br></div></div></CodeGroupItem>
 </CodeGroup>
@@ -12799,7 +12778,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <h2 id="rdfa-1-1"> RDFa 1.1</h2>
 <p>主题通过遵循 <a href="https://www.w3.org/TR/rdfa-primer/" target="_blank" rel="noopener noreferrer">RDFa 1.1</a>，为网站的大部分结构添加了富媒体结构支持。</p>
 <div><p>Tips</p>
-<p>你可以使用 <a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener noreferrer">Google 富媒体结构测试工具</a> 测试本站点。</p>
+<p>你可以使用 <a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fvuepress-theme-hope.github.io%2Fzh%2Fguide%2Ffeature%2Fseo%2F&amp;user_agent=1" target="_blank" rel="noopener noreferrer">Google 富媒体结构测试工具</a> 测试本站点。</p>
 </div>
 ]]></content:encoded>
     </item>
@@ -12903,7 +12882,8 @@ module<span>.</span>exports <span>=</span> <span>{</span>
       <source url="https://vuepress-theme-hope.github.io/rss.xml">安装/使用</source>
       <category>Get Started</category>
       <pubDate>Thu, 25 Feb 2021 12:25:39 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="快速安装"> 快速安装</h2>
+      <content:encoded><![CDATA[<h2 id="安装"> 安装</h2>
+<p>在当前项目的 <code>[dir]</code> 文件夹内创建 vuepress-theme-hope 项目:</p>
 <CodeGroup>
 <CodeGroupItem title="yarn">
 <div><pre><code><span>yarn</span> create vuepress-theme-hope <span>[</span>dir<span>]</span>
@@ -12911,17 +12891,6 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <div><span>1</span><br></div></div></CodeGroupItem>
 <CodeGroupItem title="npm">
 <div><pre><code>npx create-vuepress-theme-hope <span>[</span>dir<span>]</span>
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-</CodeGroup>
-<h2 id="手动安装"> 手动安装</h2>
-<CodeGroup>
-<CodeGroupItem title="yarn">
-<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-theme-hope
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-<CodeGroupItem title="npm">
-<div><pre><code><span>npm</span> i -D vuepress-theme-hope
 </code></pre>
 <div><span>1</span><br></div></div></CodeGroupItem>
 </CodeGroup>
@@ -15249,6 +15218,533 @@ document<span>.</span><span>querySelector</span><span>(</span><span>"h1"</span><
       <enclosure url="https://img.shields.io/npm/v/vuepress-theme-hope.svg?style=flat-square&logo=npm" type="image/"/>
     </item>
     <item>
+      <title>项目案例</title>
+      <link>https://vuepress-theme-hope.github.io/zh/demo/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/demo/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">项目案例</source>
+      <category>demo</category>
+      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="mr-hope-的个人博客"> Mr.Hope 的个人博客</h2>
+<ul>
+<li><a href="https://mrhope.site" target="_blank" rel="noopener noreferrer">项目地址</a></li>
+<li><a href="https://github.com/Mister-Hope/Mister-Hope.github.io" target="_blank" rel="noopener noreferrer">项目文件</a></li>
+</ul>
+<h2 id="希望工作室官网"> 希望工作室官网</h2>
+<ul>
+<li><a href="https://hope-studio.innenu.com" target="_blank" rel="noopener noreferrer">项目地址</a></li>
+<li><a href="https://github.com/Hope-Studio/Hope-Studio.github.io" target="_blank" rel="noopener noreferrer">项目文件</a></li>
+</ul>
+<h2 id="vuepress-theme-hope-文档"> vuepress-theme-hope 文档</h2>
+<ul>
+<li><a href="https://vuepress-theme-hope.github.io" target="_blank" rel="noopener noreferrer">项目地址</a></li>
+<li><a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/tree/v1/docs/theme" target="_blank" rel="noopener noreferrer">项目文件</a></li>
+</ul>
+<h2 id="docker-从入门到实践"> Docker 从入门到实践</h2>
+<ul>
+<li><a href="https://vuepress.mirror.docker-practice.com/" target="_blank" rel="noopener noreferrer">项目地址</a></li>
+<li><a href="https://github.com/yeasy/docker_practice" target="_blank" rel="noopener noreferrer">项目文件</a></li>
+</ul>
+<h2 id="更多"> 更多</h2>
+<ul>
+<li>随时随地添加你的博客或文档到此</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>主题配置</title>
+      <link>https://vuepress-theme-hope.github.io/zh/config/theme/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/config/theme/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">主题配置</source>
+      <category>config</category>
+      <pubDate>Sat, 17 Oct 2020 08:18:13 GMT</pubDate>
+      <content:encoded><![CDATA[<div><p>Tips</p>
+<p>你可以查看 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/docs/theme/src/.vuepress/config.js" target="_blank" rel="noopener noreferrer">本文档的配置</a> 作为案例，你也可以直接查看源代码中的 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/packages/theme/types/theme/" target="_blank" rel="noopener noreferrer">types 文件</a></p>
+</div>
+<p><code>.vuepress/config.js</code> 中的 themeConfig 字段(主题字段)新增以下配置:</p>
+<h2 id="基本选项"> 基本选项</h2>
+<div><p>Warning</p>
+<p>这些选项很重要，需要你正确配置。</p>
+</div>
+<h3 id="baselang"> baseLang</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>'en-US'</code></li>
+</ul>
+<p>主目录所对应的语言。</p>
+<p>这个选项会保证主目录页面中主题文字使用正确的语言显示。你可以根据自己的需要将其改为其他语言。</p>
+<div><p>Tips</p>
+<p>目前多语言仅适配了 <strong>简体中文</strong> (zh-CN)、<strong>英文(美国)</strong> (en-US) 与 越南语 (vi-VN)。</p>
+<p>如果你需要其它语言的多语言支持，你可以 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/packages/shared/src/i18n/config.ts" target="_blank" rel="noopener noreferrer">向此文件提交一个 PR</a></p>
+</div>
+<h3 id="author"> author</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>文章显示的默认作者</p>
+<h3 id="nav"> nav <i>Not supported content</i></h3>
+<p>NavBarItem 新增</p>
+<ul>
+<li><code>icon</code> 字段来支持图标显示。</li>
+<li><code>prefix</code> 字段来自动添加分组前缀</li>
+</ul>
+<p>具体配置，请见 <a href="./../../guide/layout/navbar.html">布局 → 导航栏</a></p>
+<h3 id="sidebar"> sidebar <i>Not supported content</i></h3>
+<p>SideBarItem 新增</p>
+<ul>
+<li><code>icon</code> 字段来支持图标显示。</li>
+<li><code>prefix</code> 字段来自动添加分组前缀</li>
+</ul>
+<p>具体配置，请见 <a href="./../../guide/layout/sidebar.html">布局 → 侧边栏</a></p>
+<h3 id="locales"> locales</h3>
+<ul>
+<li>类型: <code>Record&lt;string, HopeLangI18nConfigItem&gt;</code></li>
+</ul>
+<p>主题的多语言配置，主要需要配置各语言的 <code>nav</code> 与 <code>sidebar</code>。</p>
+<h3 id="hostname"> hostname</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 是</li>
+</ul>
+<p>当前网站部署到的域名。</p>
+<h2 id="更多配置"> 更多配置</h2>
+<ul>
+<li>
+<p><a href="./default.html"><strong>默认主题配置</strong></a></p>
+</li>
+<li>
+<p><a href="./feature.html"><strong>主题功能配置</strong></a></p>
+</li>
+<li>
+<p><a href="./plugin.html"><strong>主题插件配置</strong></a></p>
+</li>
+<li>
+<p><a href="./apperance.html"><strong>主题外观配置</strong></a></p>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>主题插件配置</title>
+      <link>https://vuepress-theme-hope.github.io/zh/config/theme/plugin/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/config/theme/plugin/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">主题插件配置</source>
+      <category>config</category>
+      <pubDate>Sat, 17 Oct 2020 08:18:13 GMT</pubDate>
+      <content:encoded><![CDATA[<p>这些是主题提供的插件配置选项。</p>
+<div><p>Tips</p>
+<p>所有的配置键名均为插件名称的驼峰式 (camelcase) 版本。</p>
+<p>例如: <code>@mr-hope/vuepress-copy-code</code> 的配置键名为 <code>copyCode</code>。</p>
+</div>
+<h2 id="mdenhance"> mdEnhance</h2>
+<p>Markdown 功能增强，详情请见 <a href="https://vuepress-theme-hope.github.io/md-enhance/zh/config/" target="_blank" rel="noopener noreferrer">vuepress-plugin-md-enhance 文档</a></p>
+<h3 id="mdenhance-enableall"> mdEnhance.enableAll</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否启用全部功能</p>
+<div><p>Warning</p>
+<p>请仅将此选项用于体验或测试。随着时间的增长，<code>vupress-plugin-md-enhance</code> 变得越来越强大。它为 Markdown 解析器添加了更多语法，并输出了更多代码。</p>
+<p>启用不需要的功能将增加开发和构建时间。 (<code>markdown-it</code> 必须检查额外的语法)</p>
+<p>同样，幻灯片演示功能将在输出中添加 700KB 大小的代码 (主要是 <code>reveal.js</code>)。</p>
+<p>因此，请使用下面的选项，仅启用你要使用的功能。</p>
+</div>
+<h3 id="mdenhance-linenumbers"> mdEnhance.lineNumbers <i>Not supported content</i></h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否在每个代码块的左侧显示行号</p>
+<h3 id="mdenhance-align"> mdEnhance.align</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否启用自定义对齐支持</p>
+<h3 id="mdenhance-sup"> mdEnhance.sup</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否启用上角标格式支持</p>
+<h3 id="mdenhance-sub"> mdEnhance.sub</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否启用下角标格式支持</p>
+<h3 id="mdenhance-footnote"> mdEnhance.footnote</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否启用脚注格式支持</p>
+<h3 id="mdenhance-mark"> mdEnhance.mark</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否启用标记格式支持</p>
+<h3 id="mdenhance-tex"> mdEnhance.tex</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否启用 TeX 语法支持</p>
+<h3 id="mdenhance-flowchart"> mdEnhance.flowchart</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否启用 流程图 语法支持</p>
+<h3 id="mdenhance-demo"> mdEnhance.demo</h3>
+<ul>
+<li>类型: <code>CodeDemoGlobalOptions | boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否启用代码案例支持。</p>
+<h4 id="mdenhance-demo-jslib"> mdEnhance.demo.jsLib</h4>
+<ul>
+<li>类型: <code>string[]</code></li>
+<li>必填: 否</li>
+</ul>
+<p>CodePen, JsFiddle 需要引入的外部 JS 库。</p>
+<h4 id="mdenhance-demo-csslib"> mdEnhance.demo.cssLib</h4>
+<ul>
+<li>类型: <code>string[]</code></li>
+<li>必填: 否</li>
+</ul>
+<p>CodePen, JsFiddle 需要引入的外部 CSS 库。</p>
+<div><p>Note</p>
+<p>上述两个选项仅仅是给第三方代码演示使用的，你需要自行在 <code>head</code> 中导入这些库。</p>
+</div>
+<h4 id="mdenhance-demo-jsfiddle"> mdEnhance.demo.jsfiddle</h4>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否显示 JSFiddle 按钮，</p>
+<h4 id="mdenhance-demo-codepen"> mdEnhance.demo.codepen</h4>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否显示 CodePen 按钮，</p>
+<h4 id="mdenhance-demo-codepenlayout"> mdEnhance.demo.codepenLayout</h4>
+<ul>
+<li>类型: <code>&quot;top&quot; | &quot;left&quot; | &quot;right&quot;</code></li>
+<li>默认值: <code>&quot;left&quot;</code></li>
+</ul>
+<p>CodePen 编辑器布局</p>
+<h4 id="mdenhance-demo-editors"> mdEnhance.demo.editors</h4>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>&quot;101&quot;</code></li>
+</ul>
+<p>CodePen 编辑器显示情况，第一位代表 HTML ，第二位代表 JS，第三位代表演示页面。</p>
+<h4 id="其他"> 其他</h4>
+<p>以下是第三方代码演示使用的库地址，除非你的环境无法访问 jsdelivr 或访问缓慢，否则无需覆盖默认设置。</p>
+<div><p>Note</p>
+<p>请注意，如果你用到了它们，你仍需要利用 <code>head</code> 手动在你的网站中导入它们。</p>
+<p>React 依赖于 Babel。</p>
+</div>
+<h5 id="mdenhance-demo-vue"> mdEnhance.demo.vue</h5>
+<p>默认值: <code>&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js&quot;</code></p>
+<h5 id="mdenhance-demo-react"> mdEnhance.demo.react</h5>
+<p>默认值: <code>&quot;https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js&quot;</code></p>
+<h5 id="mdenhance-demo-reactdom"> mdEnhance.demo.reactDOM</h5>
+<p>默认值: <code>&quot;https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js&quot;</code></p>
+<h3 id="mdenhance-presentation"> mdEnhance.presentation</h3>
+<ul>
+<li>类型: <code>PresentationOptions | boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否启用 幻灯片 语法支持。</p>
+<p>你可以传入一个对象，这个对象将用于 reveal.js 配置。</p>
+<h4 id="mdenhance-presentation-plugins"> mdEnhance.presentation.plugins</h4>
+<ul>
+<li>类型: <code>string[]</code></li>
+<li>必填: No</li>
+</ul>
+<p>你想启用的 Reveal.js 插件</p>
+<p>可接受的插件有:</p>
+<ul>
+<li><code>&quot;highlight&quot;</code></li>
+<li><code>&quot;math&quot;</code></li>
+<li><code>&quot;search&quot;</code></li>
+<li><code>&quot;notes&quot;</code></li>
+<li><code>&quot;zoom&quot;</code></li>
+</ul>
+<!-- - `"anything"`
+- `"audio"`
+- `"chalkboard"` -->
+<h4 id="mdenhance-presentation-revealconfig"> mdEnhance.presentation.revealConfig</h4>
+<ul>
+<li>类型: <code>Partial&lt;RevealOptions&gt;</code></li>
+<li>必填: No</li>
+</ul>
+<p>你想要传递给 Reveal.js 的配置选项</p>
+<h2 id="comment"> comment</h2>
+<p>评论系统</p>
+<p>配置因为复杂度在这里被省略，具体配置请见　<a href="https://vuepress-theme-hope.github.io/comment/zh/config/" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-comment 文档</a></p>
+<blockquote>
+<p>如果你不需要评论功能，忽略此选项即可</p>
+</blockquote>
+<h2 id="copyright"> copyright</h2>
+<p>处理你的 VuePress 站点中的复制操作</p>
+<p>详细信息，请参见 <a href="https://vuepress.github.io/zh/plugins/copyright/" target="_blank" rel="noopener noreferrer">vuepress-plugin-copyright 文档</a></p>
+<blockquote>
+<p>这是一个 vuepress 社区插件，而不是内置插件。因此，如果你遇到问题，请前往 <a href="https://github.com/vuepress/vuepress-plugin-copyright" target="_blank" rel="noopener noreferrer">它的仓库</a> 寻求帮助。</p>
+</blockquote>
+<div><p>Note</p>
+<p>此插件不是默认启用的！</p>
+<p>你可以设置 <code>themeConfig.copyright: true</code> 或设置 <code>themeConfig.copyright.status</code> 来启用它。</p>
+</div>
+<h3 id="copyright-status"> copyright.status</h3>
+<ul>
+<li>类型: <code>&quot;global&quot; | &quot;local&quot;</code></li>
+<li>默认值: <code>&quot;global&quot;</code></li>
+</ul>
+<p>是否全局启用该功能。</p>
+<h3 id="copyright-minlength"> copyright.minLength</h3>
+<ul>
+<li>类型: <code>number</code></li>
+<li>默认值: <code>100</code></li>
+</ul>
+<p>触发版权信息或禁止复制动作的最少字符数。</p>
+<h3 id="copyright-nocopy"> copyright.noCopy</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否禁止复制</p>
+<h3 id="copyright-noselect"> copyright.noSelect</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否禁止选中文字</p>
+<h2 id="git"> git</h2>
+<h3 id="git-contributor"> git.contributor</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否生成贡献者信息。</p>
+<h3 id="git-timezone"> git.timezone</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>当前时区，使用 CI 部署时很有用</p>
+<blockquote>
+<p>详细的时区列表，详见 <a href="https://www.zeitverschiebung.net/cn/all-time-zones.html" target="_blank" rel="noopener noreferrer">时区列表</a></p>
+</blockquote>
+<h3 id="git-transformer"> git.transformer</h3>
+<ul>
+<li>类型: <code>(timestamp: number, lang: string) =&gt; string</code></li>
+<li>默认值: <code>`${dayjs(timestamp).format('LL')} ${dayjs(timestamp).format('HH:mm')}`</code></li>
+</ul>
+<p><code>@mr-hope/plugin-git</code> 的时间转换函数。</p>
+<p>默认情况下，会使用 dayjs 自动根据当前页面语言进行本地化。</p>
+<p>如: <code>2020年5月8日 16:05</code> <code>May 8, 2020 16:05</code></p>
+<h2 id="pwa"> pwa <i>Not supported content</i></h2>
+<p>渐进式网络应用程序支持</p>
+<blockquote>
+<p>如果你不需要这个功能，请设置为 <code>false</code>。</p>
+<p>有关更多详细信息，请参见 <a href="https://vuepress-theme-hope.github.io/pwa/zh/config/" target="_blank" rel="noopener noreferrer">pwa 插件文档</a></p>
+</blockquote>
+<h3 id="pwa-manifest"> pwa.manifest</h3>
+<ul>
+<li>类型: <code>ManifestOption</code></li>
+<li>必填: 否</li>
+</ul>
+<p>你可以填充一个将被解析为 manifest.webmanifest 的对象。</p>
+<div><p>Tips</p>
+<p>如果你未设置某些选项，则这些选项会回退到插件预设值。</p>
+<ul>
+<li>
+<p>name: <code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></p>
+</li>
+<li>
+<p>short_name: <code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></p>
+</li>
+<li>
+<p>description: <code>siteConfig.description</code> || <code>themeConfig.description</code> || <code>'A site built with vuepress-theme-hope'</code></p>
+</li>
+<li>
+<p>lang: <code>options.baseLang</code> || <code>themeConfig.baseLang</code> || <code>&quot;en-US&quot;</code></p>
+</li>
+<li>
+<p>start_url: <code>context.base</code></p>
+</li>
+<li>
+<p>scope: <code>context.base</code></p>
+</li>
+<li>
+<p>display: <code>&quot;standalone&quot;</code></p>
+</li>
+<li>
+<p>theme_color: <code>&quot;#46bd87&quot;</code></p>
+</li>
+<li>
+<p>background_color: <code>'#ffffff'</code></p>
+</li>
+<li>
+<p>orientation: <code>'portrait-primary'</code></p>
+</li>
+<li>
+<p>prefer_related_applications: <code>false</code></p>
+</li>
+</ul>
+</div>
+<h3 id="pwa-showinstall"> pwa.showInstall</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否显示安装按钮</p>
+<h3 id="pwa-favicon"> pwa.favicon</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>favicon 地址，填入绝对路径。(建议为你的站点生成 favicon)</p>
+<h3 id="pwa-themecolor"> pwa.themeColor</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>&quot;#46bd87&quot;</code></li>
+</ul>
+<p>主题色</p>
+<h3 id="pwa-maxsize"> pwa.maxSize</h3>
+<ul>
+<li>类型: <code>number</code></li>
+<li>默认值: <code>2048</code></li>
+</ul>
+<p>允许缓存的最大大小 (以 KB 为单位)</p>
+<h3 id="pwa-cachehtml"> pwa.cacheHTML</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否缓存主页和 404 错误页之外的 HTML 文件</p>
+<div><p>Tips</p>
+<p>当你站点包含 HTML 文件后体积过大时很有用。</p>
+</div>
+<h3 id="pwa-cachepic"> pwa.cachePic</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否缓存图片</p>
+<blockquote>
+<p>任何以 <code>.png</code>, <code>.jpg</code>, <code>.jpeg</code> , <code>.gif</code>, <code>.bmp</code>, <code>.webp</code> 结尾的文件都会视为图片。</p>
+</blockquote>
+<h3 id="pwa-maxpicsize"> pwa.maxPicSize</h3>
+<ul>
+<li>类型: <code>number</code></li>
+<li>默认值: <code>1024</code></li>
+</ul>
+<p>图片允许缓存的最大大小 (以 KB 为单位)</p>
+<h3 id="pwa-apple"> pwa.apple</h3>
+<p>针对苹果的特殊设置</p>
+<blockquote>
+<p>如果你不想进行精细的设置，可以忽略它；如果你不想兼容 apple，请设置为 <code>false</code>。</p>
+</blockquote>
+<h4 id="pwa-apple-icon"> pwa.apple.icon</h4>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>填入苹果使用的图标地址，推荐 152×152 大小</p>
+<h4 id="pwa-apple-statusbarcolor"> pwa.apple.statusBarColor</h4>
+<ul>
+<li>类型: <code>&quot;black&quot; | &quot;white&quot;</code></li>
+<li>默认: <code>&quot;black&quot;</code></li>
+</ul>
+<p>苹果的状态栏颜色</p>
+<h4 id="pwa-apple-maskicon"> pwa.apple.maskIcon</h4>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>Safari 图标</p>
+<h3 id="pwa-mstile"> pwa.msTile</h3>
+<p>针对微软磁贴的特殊设置</p>
+<blockquote>
+<p>如果你不想进行精细的设置，可以忽略它；如果你不想兼容 windows，请设置为 <code>false</code>。</p>
+</blockquote>
+<h4 id="pwa-mstile-image"> pwa.msTile.image</h4>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>磁贴图标</p>
+<h4 id="pwa-mstile-color"> pwa.msTile.color</h4>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>themeColor</code></li>
+</ul>
+<p>磁贴颜色，缺省会自动回退到主题色。</p>
+<h3 id="pwa-popupcomponent"> pwa.popupComponent</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>'SWUpdatePopup'</code></li>
+</ul>
+<p>可填入自定义的弹窗组件路径。</p>
+<h3 id="pwa-generateswconfig"> pwa.generateSwConfig</h3>
+<p>传递给 <code>workbox-build</code> 的选项，具体详情，请见 <a href="https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-build#.generateSW" target="_blank" rel="noopener noreferrer">Workbox 文档</a></p>
+<div><p>Tips</p>
+<p>我们将为你预缓存所有与网站相关的文件 <code>**/*.{js,css,svg}</code> 和字体文件 <code>**/*.{woff,woff2,eot,ttf,otf}</code>。</p>
+<p>如果将 <code>cachePic</code> 设置为 <code>true</code>，我们还将为你预缓存 <code>**/*.{png,jpg,jpeg,gif,bmp,webp}</code> 文件。</p>
+<p>所有大于 <code>maxSize</code> 的文件与所有大于 <code>maxPicSize</code> 的图片将被忽略。</p>
+</div>
+<h2 id="feed"> feed <i>Not supported content</i></h2>
+<p>Feed 生成，默认情况下无需任何配置。</p>
+<blockquote>
+<p>插件配置请参见 <a href="https://vuepress-theme-hope.github.io/feed/zh/config/" target="_blank" rel="noopener noreferrer">Feed 插件配置</a></p>
+<p>如果你不需要这个功能，请设置为 <code>false</code>。</p>
+</blockquote>
+<h2 id="seo"> seo <i>Not supported content</i></h2>
+<p>搜索引擎增强，默认情况下无需任何配置。</p>
+<blockquote>
+<p>插件配置请参见 <a href="https://vuepress-theme-hope.github.io/seo/zh/#%E6%8F%92%E4%BB%B6%E9%80%89%E9%A1%B9" target="_blank" rel="noopener noreferrer">SEO 插件配置</a></p>
+<p>如果你不需要这个功能，请设置为 <code>false</code>。</p>
+</blockquote>
+<h2 id="sitemap"> sitemap <i>Not supported content</i></h2>
+<p>Sitemap 生成配置，默认情况下无需任何配置。</p>
+<blockquote>
+<p>插件配置请参见 <a href="https://vuepress-theme-hope.github.io/sitemap/zh/#%E6%8F%92%E4%BB%B6%E9%80%89%E9%A1%B9" target="_blank" rel="noopener noreferrer">Sitemap 插件配置</a></p>
+<p>如果你不需要这个功能，请设置为 <code>false</code>。</p>
+</blockquote>
+<h2 id="addthis"> addThis</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>AddThis 的 pubid</p>
+<blockquote>
+<p>详情请见 <a href="https://vuepress-theme-hope.github.io/add-this/zh/" target="_blank" rel="noopener noreferrer">AddThis 插件</a></p>
+</blockquote>
+<h2 id="copycode"> copyCode</h2>
+<p>复制代码插件的选项，设置为 <code>false</code> 以禁用此插件。</p>
+<blockquote>
+<p>默认情况下，不需要任何配置</p>
+<p>有关详细信息，请参见<a href="https://vuepress-theme-hope.github.io/copy-code/zh/" target="_blank" rel="noopener noreferrer">CopyCode 插件配置</a></p>
+</blockquote>
+<h2 id="photoswipe"> photoSwipe</h2>
+<p>照片预览插件的选项，设置为 <code>false</code> 以禁用此插件。</p>
+<blockquote>
+<p>默认情况下，不需要更多配置</p>
+<p>有关详细信息，请参见 <a href="https://vuepress-theme-hope.github.io/photo-swipe/zh/config/" target="_blank" rel="noopener noreferrer">PhotoSwipe 插件配置</a>]</p>
+</blockquote>
+<h2 id="namedchunks"> namedChunks</h2>
+<p><code>vuepress-named-chunks</code> 的选项，设置为 <code>false</code> 以禁用此插件。</p>
+<p>默认情况下，所有页面块均以页面标题命名，所有布局块均以其组件名称命名。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>流程图</title>
       <link>https://vuepress-theme-hope.github.io/zh/guide/markdown/flowchart/</link>
       <guid>https://vuepress-theme-hope.github.io/zh/guide/markdown/flowchart/</guid>
@@ -15863,7 +16359,7 @@ $$
       <source url="https://vuepress-theme-hope.github.io/rss.xml">主页</source>
       <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="🛠-安装"> 🛠 安装</h2>
-<h3 id="快速安装"> 快速安装</h3>
+<p>在当前项目的 <code>[dir]</code> 文件夹内创建 vuepress-theme-hope 项目:</p>
 <CodeGroup>
 <CodeGroupItem title="yarn">
 <div><pre><code><span>yarn</span> create vuepress-theme-hope <span>[</span>dir<span>]</span>
@@ -15871,17 +16367,6 @@ $$
 <div><span>1</span><br></div></div></CodeGroupItem>
 <CodeGroupItem title="npm">
 <div><pre><code>npx create-vuepress-theme-hope <span>[</span>dir<span>]</span>
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-</CodeGroup>
-<h3 id="手动安装"> 手动安装</h3>
-<CodeGroup>
-<CodeGroupItem title="yarn">
-<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-theme-hope
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-<CodeGroupItem title="npm">
-<div><pre><code><span>npm</span> i -D vuepress-theme-hope
 </code></pre>
 <div><span>1</span><br></div></div></CodeGroupItem>
 </CodeGroup>
@@ -15902,533 +16387,6 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
 <ul>
 <li><a href="https://jq.qq.com/?_wv=1027&amp;k=rATJyxGK" target="_blank" rel="noopener noreferrer">点击加入</a> (群号: 1003437555)</li>
 </ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>项目案例</title>
-      <link>https://vuepress-theme-hope.github.io/zh/demo/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/demo/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">项目案例</source>
-      <category>demo</category>
-      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="mr-hope-的个人博客"> Mr.Hope 的个人博客</h2>
-<ul>
-<li><a href="https://mrhope.site" target="_blank" rel="noopener noreferrer">项目地址</a></li>
-<li><a href="https://github.com/Mister-Hope/Mister-Hope.github.io" target="_blank" rel="noopener noreferrer">项目文件</a></li>
-</ul>
-<h2 id="希望工作室官网"> 希望工作室官网</h2>
-<ul>
-<li><a href="https://hope-studio.innenu.com" target="_blank" rel="noopener noreferrer">项目地址</a></li>
-<li><a href="https://github.com/Hope-Studio/Hope-Studio.github.io" target="_blank" rel="noopener noreferrer">项目文件</a></li>
-</ul>
-<h2 id="vuepress-theme-hope-文档"> vuepress-theme-hope 文档</h2>
-<ul>
-<li><a href="https://vuepress-theme-hope.github.io" target="_blank" rel="noopener noreferrer">项目地址</a></li>
-<li><a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/tree/v1/docs/theme" target="_blank" rel="noopener noreferrer">项目文件</a></li>
-</ul>
-<h2 id="docker-从入门到实践"> Docker 从入门到实践</h2>
-<ul>
-<li><a href="https://vuepress.mirror.docker-practice.com/" target="_blank" rel="noopener noreferrer">项目地址</a></li>
-<li><a href="https://github.com/yeasy/docker_practice" target="_blank" rel="noopener noreferrer">项目文件</a></li>
-</ul>
-<h2 id="更多"> 更多</h2>
-<ul>
-<li>随时随地添加你的博客或文档到此</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>主题配置</title>
-      <link>https://vuepress-theme-hope.github.io/zh/config/theme/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/config/theme/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">主题配置</source>
-      <category>config</category>
-      <pubDate>Sat, 17 Oct 2020 08:18:13 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>Tips</p>
-<p>你可以查看 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/docs/theme/src/.vuepress/config.js" target="_blank" rel="noopener noreferrer">本文档的配置</a> 作为案例，你也可以直接查看源代码中的 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/packages/theme/types/theme/" target="_blank" rel="noopener noreferrer">types 文件</a></p>
-</div>
-<p><code>.vuepress/config.js</code> 中的 themeConfig 字段(主题字段)新增以下配置:</p>
-<h2 id="基本选项"> 基本选项</h2>
-<div><p>Warning</p>
-<p>这些选项很重要，需要你正确配置。</p>
-</div>
-<h3 id="baselang"> baseLang</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>'en-US'</code></li>
-</ul>
-<p>主目录所对应的语言。</p>
-<p>这个选项会保证主目录页面中主题文字使用正确的语言显示。你可以根据自己的需要将其改为其他语言。</p>
-<div><p>Tips</p>
-<p>目前多语言仅适配了 <strong>简体中文</strong> (zh-CN)、<strong>英文(美国)</strong> (en-US) 与 越南语 (vi-VN)。</p>
-<p>如果你需要其它语言的多语言支持，你可以 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/packages/shared/src/i18n/config.ts" target="_blank" rel="noopener noreferrer">向此文件提交一个 PR</a></p>
-</div>
-<h3 id="author"> author</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>文章显示的默认作者</p>
-<h3 id="nav"> nav <i>Not supported content</i></h3>
-<p>NavBarItem 新增</p>
-<ul>
-<li><code>icon</code> 字段来支持图标显示。</li>
-<li><code>prefix</code> 字段来自动添加分组前缀</li>
-</ul>
-<p>具体配置，请见 <a href="./../../guide/layout/navbar.html">布局 → 导航栏</a></p>
-<h3 id="sidebar"> sidebar <i>Not supported content</i></h3>
-<p>SideBarItem 新增</p>
-<ul>
-<li><code>icon</code> 字段来支持图标显示。</li>
-<li><code>prefix</code> 字段来自动添加分组前缀</li>
-</ul>
-<p>具体配置，请见 <a href="./../../guide/layout/sidebar.html">布局 → 侧边栏</a></p>
-<h3 id="locales"> locales</h3>
-<ul>
-<li>类型: <code>Record&lt;string, HopeLangI18nConfigItem&gt;</code></li>
-</ul>
-<p>主题的多语言配置，主要需要配置各语言的 <code>nav</code> 与 <code>sidebar</code>。</p>
-<h3 id="hostname"> hostname</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 是</li>
-</ul>
-<p>当前网站部署到的域名。</p>
-<h2 id="更多配置"> 更多配置</h2>
-<ul>
-<li>
-<p><a href="./default.html"><strong>默认主题配置</strong></a></p>
-</li>
-<li>
-<p><a href="./feature.html"><strong>主题功能配置</strong></a></p>
-</li>
-<li>
-<p><a href="./plugin.html"><strong>主题插件配置</strong></a></p>
-</li>
-<li>
-<p><a href="./apperance.html"><strong>主题外观配置</strong></a></p>
-</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>主题插件配置</title>
-      <link>https://vuepress-theme-hope.github.io/zh/config/theme/plugin/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/config/theme/plugin/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">主题插件配置</source>
-      <category>config</category>
-      <pubDate>Sat, 17 Oct 2020 08:18:13 GMT</pubDate>
-      <content:encoded><![CDATA[<p>这些是主题提供的插件配置选项。</p>
-<div><p>Tips</p>
-<p>所有的配置键名均为插件名称的驼峰式 (camelcase) 版本。</p>
-<p>例如: <code>@mr-hope/vuepress-copy-code</code> 的配置键名为 <code>copyCode</code>。</p>
-</div>
-<h2 id="mdenhance"> mdEnhance</h2>
-<p>Markdown 功能增强，详情请见 <a href="https://vuepress-theme-hope.github.io/md-enhance/zh/config/" target="_blank" rel="noopener noreferrer">vuepress-plugin-md-enhance 文档</a></p>
-<h3 id="mdenhance-enableall"> mdEnhance.enableAll</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>是否启用全部功能</p>
-<div><p>Warning</p>
-<p>请仅将此选项用于体验或测试。随着时间的增长，<code>vupress-plugin-md-enhance</code> 变得越来越强大。它为 Markdown 解析器添加了更多语法，并输出了更多代码。</p>
-<p>启用不需要的功能将增加开发和构建时间。 (<code>markdown-it</code> 必须检查额外的语法)</p>
-<p>同样，幻灯片演示功能将在输出中添加 700KB 大小的代码 (主要是 <code>reveal.js</code>)。</p>
-<p>因此，请使用下面的选项，仅启用你要使用的功能。</p>
-</div>
-<h3 id="mdenhance-linenumbers"> mdEnhance.lineNumbers <i>Not supported content</i></h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否在每个代码块的左侧显示行号</p>
-<h3 id="mdenhance-align"> mdEnhance.align</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>是否启用自定义对齐支持</p>
-<h3 id="mdenhance-sup"> mdEnhance.sup</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>是否启用上角标格式支持</p>
-<h3 id="mdenhance-sub"> mdEnhance.sub</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>是否启用下角标格式支持</p>
-<h3 id="mdenhance-footnote"> mdEnhance.footnote</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>是否启用脚注格式支持</p>
-<h3 id="mdenhance-mark"> mdEnhance.mark</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>是否启用标记格式支持</p>
-<h3 id="mdenhance-tex"> mdEnhance.tex</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>是否启用 TeX 语法支持</p>
-<h3 id="mdenhance-flowchart"> mdEnhance.flowchart</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>是否启用 流程图 语法支持</p>
-<h3 id="mdenhance-demo"> mdEnhance.demo</h3>
-<ul>
-<li>类型: <code>CodeDemoGlobalOptions | boolean</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>是否启用代码案例支持。</p>
-<h4 id="mdenhance-demo-jslib"> mdEnhance.demo.jsLib</h4>
-<ul>
-<li>类型: <code>string[]</code></li>
-<li>必填: 否</li>
-</ul>
-<p>CodePen, JsFiddle 需要引入的外部 JS 库。</p>
-<h4 id="mdenhance-demo-csslib"> mdEnhance.demo.cssLib</h4>
-<ul>
-<li>类型: <code>string[]</code></li>
-<li>必填: 否</li>
-</ul>
-<p>CodePen, JsFiddle 需要引入的外部 CSS 库。</p>
-<div><p>Note</p>
-<p>上述两个选项仅仅是给第三方代码演示使用的，你需要自行在 <code>head</code> 中导入这些库。</p>
-</div>
-<h4 id="mdenhance-demo-jsfiddle"> mdEnhance.demo.jsfiddle</h4>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否显示 JSFiddle 按钮，</p>
-<h4 id="mdenhance-demo-codepen"> mdEnhance.demo.codepen</h4>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否显示 CodePen 按钮，</p>
-<h4 id="mdenhance-demo-codepenlayout"> mdEnhance.demo.codepenLayout</h4>
-<ul>
-<li>类型: <code>&quot;top&quot; | &quot;left&quot; | &quot;right&quot;</code></li>
-<li>默认值: <code>&quot;left&quot;</code></li>
-</ul>
-<p>CodePen 编辑器布局</p>
-<h4 id="mdenhance-demo-editors"> mdEnhance.demo.editors</h4>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>&quot;101&quot;</code></li>
-</ul>
-<p>CodePen 编辑器显示情况，第一位代表 HTML ，第二位代表 JS，第三位代表演示页面。</p>
-<h4 id="其他"> 其他</h4>
-<p>以下是第三方代码演示使用的库地址，除非你的环境无法访问 jsdelivr 或访问缓慢，否则无需覆盖默认设置。</p>
-<div><p>Note</p>
-<p>请注意，如果你用到了它们，你仍需要利用 <code>head</code> 手动在你的网站中导入它们。</p>
-<p>React 依赖于 Babel。</p>
-</div>
-<h5 id="mdenhance-demo-vue"> mdEnhance.demo.vue</h5>
-<p>默认值: <code>&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js&quot;</code></p>
-<h5 id="mdenhance-demo-react"> mdEnhance.demo.react</h5>
-<p>默认值: <code>&quot;https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js&quot;</code></p>
-<h5 id="mdenhance-demo-reactdom"> mdEnhance.demo.reactDOM</h5>
-<p>默认值: <code>&quot;https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js&quot;</code></p>
-<h3 id="mdenhance-presentation"> mdEnhance.presentation</h3>
-<ul>
-<li>类型: <code>PresentationOptions | boolean</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>是否启用 幻灯片 语法支持。</p>
-<p>你可以传入一个对象，这个对象将用于 reveal.js 配置。</p>
-<h4 id="mdenhance-presentation-plugins"> mdEnhance.presentation.plugins</h4>
-<ul>
-<li>类型: <code>string[]</code></li>
-<li>必填: No</li>
-</ul>
-<p>你想启用的 Reveal.js 插件</p>
-<p>可接受的插件有:</p>
-<ul>
-<li><code>&quot;highlight&quot;</code></li>
-<li><code>&quot;math&quot;</code></li>
-<li><code>&quot;search&quot;</code></li>
-<li><code>&quot;notes&quot;</code></li>
-<li><code>&quot;zoom&quot;</code></li>
-</ul>
-<!-- - `"anything"`
-- `"audio"`
-- `"chalkboard"` -->
-<h4 id="mdenhance-presentation-revealconfig"> mdEnhance.presentation.revealConfig</h4>
-<ul>
-<li>类型: <code>Partial&lt;RevealOptions&gt;</code></li>
-<li>必填: No</li>
-</ul>
-<p>你想要传递给 Reveal.js 的配置选项</p>
-<h2 id="comment"> comment</h2>
-<p>评论系统</p>
-<p>配置因为复杂度在这里被省略，具体配置请见　<a href="https://vuepress-theme-hope.github.io/comment/zh/config/" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-comment 文档</a></p>
-<blockquote>
-<p>如果你不需要评论功能，忽略此选项即可</p>
-</blockquote>
-<h2 id="copyright"> copyright</h2>
-<p>处理你的 VuePress 站点中的复制操作</p>
-<p>详细信息，请参见 <a href="https://vuepress.github.io/zh/plugins/copyright/" target="_blank" rel="noopener noreferrer">vuepress-plugin-copyright 文档</a></p>
-<blockquote>
-<p>这是一个 vuepress 社区插件，而不是内置插件。因此，如果你遇到问题，请前往 <a href="https://github.com/vuepress/vuepress-plugin-copyright" target="_blank" rel="noopener noreferrer">它的仓库</a> 寻求帮助。</p>
-</blockquote>
-<div><p>Note</p>
-<p>此插件不是默认启用的！</p>
-<p>你可以设置 <code>themeConfig.copyright: true</code> 或设置 <code>themeConfig.copyright.status</code> 来启用它。</p>
-</div>
-<h3 id="copyright-status"> copyright.status</h3>
-<ul>
-<li>类型: <code>&quot;global&quot; | &quot;local&quot;</code></li>
-<li>默认值: <code>&quot;global&quot;</code></li>
-</ul>
-<p>是否全局启用该功能。</p>
-<h3 id="copyright-minlength"> copyright.minLength</h3>
-<ul>
-<li>类型: <code>number</code></li>
-<li>默认值: <code>100</code></li>
-</ul>
-<p>触发版权信息或禁止复制动作的最少字符数。</p>
-<h3 id="copyright-nocopy"> copyright.noCopy</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>是否禁止复制</p>
-<h3 id="copyright-noselect"> copyright.noSelect</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>是否禁止选中文字</p>
-<h2 id="git"> git</h2>
-<h3 id="git-contributor"> git.contributor</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否生成贡献者信息。</p>
-<h3 id="git-timezone"> git.timezone</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>当前时区，使用 CI 部署时很有用</p>
-<blockquote>
-<p>详细的时区列表，详见 <a href="https://www.zeitverschiebung.net/cn/all-time-zones.html" target="_blank" rel="noopener noreferrer">时区列表</a></p>
-</blockquote>
-<h3 id="git-transformer"> git.transformer</h3>
-<ul>
-<li>类型: <code>(timestamp: number, lang: string) =&gt; string</code></li>
-<li>默认值: <code>`${dayjs(timestamp).format('LL')} ${dayjs(timestamp).format('HH:mm')}`</code></li>
-</ul>
-<p><code>@mr-hope/plugin-git</code> 的时间转换函数。</p>
-<p>默认情况下，会使用 dayjs 自动根据当前页面语言进行本地化。</p>
-<p>如: <code>2020年5月8日 16:05</code> <code>May 8, 2020 16:05</code></p>
-<h2 id="pwa"> pwa <i>Not supported content</i></h2>
-<p>渐进式网络应用程序支持</p>
-<blockquote>
-<p>如果你不需要这个功能，请设置为 <code>false</code>。</p>
-<p>有关更多详细信息，请参见 <a href="https://vuepress-theme-hope.github.io/pwa/zh/config/" target="_blank" rel="noopener noreferrer">pwa 插件文档</a></p>
-</blockquote>
-<h3 id="pwa-manifest"> pwa.manifest</h3>
-<ul>
-<li>类型: <code>ManifestOption</code></li>
-<li>必填: 否</li>
-</ul>
-<p>你可以填充一个将被解析为 manifest.webmanifest 的对象。</p>
-<div><p>Tips</p>
-<p>如果你未设置某些选项，则这些选项会回退到插件预设值。</p>
-<ul>
-<li>
-<p>name: <code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></p>
-</li>
-<li>
-<p>short_name: <code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></p>
-</li>
-<li>
-<p>description: <code>siteConfig.description</code> || <code>themeConfig.description</code> || <code>'A site built with vuepress-theme-hope'</code></p>
-</li>
-<li>
-<p>lang: <code>options.baseLang</code> || <code>themeConfig.baseLang</code> || <code>&quot;en-US&quot;</code></p>
-</li>
-<li>
-<p>start_url: <code>context.base</code></p>
-</li>
-<li>
-<p>scope: <code>context.base</code></p>
-</li>
-<li>
-<p>display: <code>&quot;standalone&quot;</code></p>
-</li>
-<li>
-<p>theme_color: <code>&quot;#46bd87&quot;</code></p>
-</li>
-<li>
-<p>background_color: <code>'#ffffff'</code></p>
-</li>
-<li>
-<p>orientation: <code>'portrait-primary'</code></p>
-</li>
-<li>
-<p>prefer_related_applications: <code>false</code></p>
-</li>
-</ul>
-</div>
-<h3 id="pwa-showinstall"> pwa.showInstall</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否显示安装按钮</p>
-<h3 id="pwa-favicon"> pwa.favicon</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>favicon 地址，填入绝对路径。(建议为你的站点生成 favicon)</p>
-<h3 id="pwa-themecolor"> pwa.themeColor</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>&quot;#46bd87&quot;</code></li>
-</ul>
-<p>主题色</p>
-<h3 id="pwa-maxsize"> pwa.maxSize</h3>
-<ul>
-<li>类型: <code>number</code></li>
-<li>默认值: <code>2048</code></li>
-</ul>
-<p>允许缓存的最大大小 (以 KB 为单位)</p>
-<h3 id="pwa-cachehtml"> pwa.cacheHTML</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否缓存主页和 404 错误页之外的 HTML 文件</p>
-<div><p>Tips</p>
-<p>当你站点包含 HTML 文件后体积过大时很有用。</p>
-</div>
-<h3 id="pwa-cachepic"> pwa.cachePic</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>是否缓存图片</p>
-<blockquote>
-<p>任何以 <code>.png</code>, <code>.jpg</code>, <code>.jpeg</code> , <code>.gif</code>, <code>.bmp</code>, <code>.webp</code> 结尾的文件都会视为图片。</p>
-</blockquote>
-<h3 id="pwa-maxpicsize"> pwa.maxPicSize</h3>
-<ul>
-<li>类型: <code>number</code></li>
-<li>默认值: <code>1024</code></li>
-</ul>
-<p>图片允许缓存的最大大小 (以 KB 为单位)</p>
-<h3 id="pwa-apple"> pwa.apple</h3>
-<p>针对苹果的特殊设置</p>
-<blockquote>
-<p>如果你不想进行精细的设置，可以忽略它；如果你不想兼容 apple，请设置为 <code>false</code>。</p>
-</blockquote>
-<h4 id="pwa-apple-icon"> pwa.apple.icon</h4>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>填入苹果使用的图标地址，推荐 152×152 大小</p>
-<h4 id="pwa-apple-statusbarcolor"> pwa.apple.statusBarColor</h4>
-<ul>
-<li>类型: <code>&quot;black&quot; | &quot;white&quot;</code></li>
-<li>默认: <code>&quot;black&quot;</code></li>
-</ul>
-<p>苹果的状态栏颜色</p>
-<h4 id="pwa-apple-maskicon"> pwa.apple.maskIcon</h4>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>Safari 图标</p>
-<h3 id="pwa-mstile"> pwa.msTile</h3>
-<p>针对微软磁贴的特殊设置</p>
-<blockquote>
-<p>如果你不想进行精细的设置，可以忽略它；如果你不想兼容 windows，请设置为 <code>false</code>。</p>
-</blockquote>
-<h4 id="pwa-mstile-image"> pwa.msTile.image</h4>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>磁贴图标</p>
-<h4 id="pwa-mstile-color"> pwa.msTile.color</h4>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>themeColor</code></li>
-</ul>
-<p>磁贴颜色，缺省会自动回退到主题色。</p>
-<h3 id="pwa-popupcomponent"> pwa.popupComponent</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>'SWUpdatePopup'</code></li>
-</ul>
-<p>可填入自定义的弹窗组件路径。</p>
-<h3 id="pwa-generateswconfig"> pwa.generateSwConfig</h3>
-<p>传递给 <code>workbox-build</code> 的选项，具体详情，请见 <a href="https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-build#.generateSW" target="_blank" rel="noopener noreferrer">Workbox 文档</a></p>
-<div><p>Tips</p>
-<p>我们将为你预缓存所有与网站相关的文件 <code>**/*.{js,css,svg}</code> 和字体文件 <code>**/*.{woff,woff2,eot,ttf,otf}</code>。</p>
-<p>如果将 <code>cachePic</code> 设置为 <code>true</code>，我们还将为你预缓存 <code>**/*.{png,jpg,jpeg,gif,bmp,webp}</code> 文件。</p>
-<p>所有大于 <code>maxSize</code> 的文件与所有大于 <code>maxPicSize</code> 的图片将被忽略。</p>
-</div>
-<h2 id="feed"> feed <i>Not supported content</i></h2>
-<p>Feed 生成，默认情况下无需任何配置。</p>
-<blockquote>
-<p>插件配置请参见 <a href="https://vuepress-theme-hope.github.io/feed/zh/config/" target="_blank" rel="noopener noreferrer">Feed 插件配置</a></p>
-<p>如果你不需要这个功能，请设置为 <code>false</code>。</p>
-</blockquote>
-<h2 id="seo"> seo <i>Not supported content</i></h2>
-<p>搜索引擎增强，默认情况下无需任何配置。</p>
-<blockquote>
-<p>插件配置请参见 <a href="https://vuepress-theme-hope.github.io/seo/zh/#%E6%8F%92%E4%BB%B6%E9%80%89%E9%A1%B9" target="_blank" rel="noopener noreferrer">SEO 插件配置</a></p>
-<p>如果你不需要这个功能，请设置为 <code>false</code>。</p>
-</blockquote>
-<h2 id="sitemap"> sitemap <i>Not supported content</i></h2>
-<p>Sitemap 生成配置，默认情况下无需任何配置。</p>
-<blockquote>
-<p>插件配置请参见 <a href="https://vuepress-theme-hope.github.io/sitemap/zh/#%E6%8F%92%E4%BB%B6%E9%80%89%E9%A1%B9" target="_blank" rel="noopener noreferrer">Sitemap 插件配置</a></p>
-<p>如果你不需要这个功能，请设置为 <code>false</code>。</p>
-</blockquote>
-<h2 id="addthis"> addThis</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>AddThis 的 pubid</p>
-<blockquote>
-<p>详情请见 <a href="https://vuepress-theme-hope.github.io/add-this/zh/" target="_blank" rel="noopener noreferrer">AddThis 插件</a></p>
-</blockquote>
-<h2 id="copycode"> copyCode</h2>
-<p>复制代码插件的选项，设置为 <code>false</code> 以禁用此插件。</p>
-<blockquote>
-<p>默认情况下，不需要任何配置</p>
-<p>有关详细信息，请参见<a href="https://vuepress-theme-hope.github.io/copy-code/zh/" target="_blank" rel="noopener noreferrer">CopyCode 插件配置</a></p>
-</blockquote>
-<h2 id="photoswipe"> photoSwipe</h2>
-<p>照片预览插件的选项，设置为 <code>false</code> 以禁用此插件。</p>
-<blockquote>
-<p>默认情况下，不需要更多配置</p>
-<p>有关详细信息，请参见 <a href="https://vuepress-theme-hope.github.io/photo-swipe/zh/config/" target="_blank" rel="noopener noreferrer">PhotoSwipe 插件配置</a>]</p>
-</blockquote>
-<h2 id="namedchunks"> namedChunks</h2>
-<p><code>vuepress-named-chunks</code> 的选项，设置为 <code>false</code> 以禁用此插件。</p>
-<p>默认情况下，所有页面块均以页面标题命名，所有布局块均以其组件名称命名。</p>
 ]]></content:encoded>
     </item>
   </channel>
