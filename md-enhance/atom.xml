@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-03-19T01:59:39.772Z</updated>
+  <updated>2021-03-19T02:00:12.642Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/md-enhance/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/md-enhance/"/>
@@ -2828,6 +2828,257 @@ e=>end: End:>http://www.yahoo.com
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
+    <title type="html">幻灯片支持</title>
+    <id>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/presentation/</id>
+    <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/guide/presentation/"/>
+    <updated>2021-03-10T04:43:39.000Z</updated>
+    <summary type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持幻灯片。</p>
+<p>本插件利用了 <a href="https://revealjs.com/" target="_blank" rel="noopener noreferrer">reveal.js</a> 来支持这一功能。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持幻灯片。</p>
+<p>本插件利用了 <a href="https://revealjs.com/" target="_blank" rel="noopener noreferrer">reveal.js</a> 来支持这一功能。</p>
+
+
+<h2 id="配置"> 配置</h2>
+<div><div><br><br><br><br><br><br><div>&nbsp;</div><br><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>[</span>
+      <span>"md-enhance"</span><span>,</span>
+      <span>{</span>
+        <span>// 启用幻灯片</span>
+        presentation<span>:</span> <span>true</span><span>,</span>
+      <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><p>你也可以传入一个对象以进行更详细的配置。</p>
+<p><code>presentation.plugins</code> 接收一个字符串数组，可以自由配置是否启用一些预设的插件。</p>
+<div><p>Tips</p>
+<p>可接受的插件有:</p>
+<ul>
+<li><code>&quot;highlight&quot;</code></li>
+<li><code>&quot;math&quot;</code></li>
+<li><code>&quot;search&quot;</code></li>
+<li><code>&quot;notes&quot;</code></li>
+<li><code>&quot;zoom&quot;</code></li>
+</ul>
+<!-- - `"anything"`
+- `"audio"`
+- `"chalkboard"` -->
+</div>
+<p>你还可以使用 <code>presentation.revealConfig</code> 来配置全局传递给 Reveal.js 的配置选项。</p>
+<p>Reveal.js 还提供了<a href="https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware" target="_blank" rel="noopener noreferrer">更多的插件</a>。如果你需要某个特定的插件，请在 GitHub 上提出 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues/new?assignees=Mister-Hope&amp;labels=enhancement&amp;template=feature_request.md&amp;title=%5BFeature+Request%5D" target="_blank" rel="noopener noreferrer">Feature Request</a></p>
+<h2 id="语法"> 语法</h2>
+<ul>
+<li>使用 <code>---</code> 分割幻灯片</li>
+<li>使用 <code>--</code> 对幻灯片进行二次分割(垂直显示)</li>
+</ul>
+<div><pre><code>@slidestart [theme]
+
+<span>&lt;!-- slide1 --></span>
+
+<span>---</span>
+
+<span>&lt;!-- slide2 --></span>
+
+<span>---</span>
+
+<span>&lt;!-- slide3 --></span>
+
+@slideend
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><p>目前可用的主题(请使用它们直接替换 <code>[theme]</code>):</p>
+<ul>
+<li><code>auto</code> (默认)</li>
+<li><code>black</code></li>
+<li><code>white</code></li>
+<li><code>league</code></li>
+<li><code>beige</code></li>
+<li><code>sky</code></li>
+<li><code>night</code></li>
+<li><code>serif</code></li>
+<li><code>simple</code></li>
+<li><code>solarized</code></li>
+<li><code>blood</code></li>
+<li><code>moon</code></li>
+</ul>
+<p>主题演示，请详见 <a href="./themes.html">幻灯片主题</a></p>
+<h2 id="演示"> 演示</h2>
+<p>请见 <a href="./demo.html">幻灯片演示</a>。</p>
+<h2 id="选项"> 选项</h2>
+<p>你可以在 Frontmatter 设置 <code>reveal</code> 以设置特定页面的 reveal.js 选项，也可以在插件选项中设置 <code>presentation</code> 以全局设置 reveal.js。</p>
+<p>更多选项，请参见<a href="https://revealjs.com/config/" target="_blank" rel="noopener noreferrer">reveal.js config</a>，更多用法，请参阅 <a href="https://revealjs.com/" target="_blank" rel="noopener noreferrer">reveal.js 文档</a>。</p>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-02-03T11:24:42.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">幻灯片主题</title>
+    <id>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/presentation/themes/</id>
+    <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/guide/presentation/themes/"/>
+    <updated>2021-02-03T11:24:42.000Z</updated>
+    <content type="html"><![CDATA[
+<p>可用的主题:</p>
+<ul>
+<li><code>auto</code> (默认)</li>
+<li><code>black</code></li>
+<li><code>white</code></li>
+<li><code>league</code></li>
+<li><code>beige</code></li>
+<li><code>sky</code></li>
+<li><code>night</code></li>
+<li><code>serif</code></li>
+<li><code>simple</code></li>
+<li><code>solarized</code></li>
+<li><code>blood</code></li>
+<li><code>moon</code></li>
+</ul>
+
+<h2 id="auto"> <code>auto</code></h2>
+<i>Not supported content</i><h2 id="black"> <code>black</code></h2>
+<i>Not supported content</i><h2 id="white"> <code>white</code></h2>
+<i>Not supported content</i><h2 id="league"> <code>league</code></h2>
+<i>Not supported content</i><h2 id="beige"> <code>beige</code></h2>
+<i>Not supported content</i><h2 id="sky"> <code>sky</code></h2>
+<i>Not supported content</i><h2 id="night"> <code>night</code></h2>
+<i>Not supported content</i><h2 id="serif"> <code>serif</code></h2>
+<i>Not supported content</i><h2 id="simple"> <code>simple</code></h2>
+<i>Not supported content</i><h2 id="solarized"> <code>solarized</code></h2>
+<i>Not supported content</i><h2 id="blood"> <code>blood</code></h2>
+<i>Not supported content</i><h2 id="moon"> <code>moon</code></h2>
+<i>Not supported content</i>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-02-03T11:24:42.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">快速上手</title>
+    <id>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/</id>
+    <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/guide/"/>
+    <updated>2021-03-19T01:26:02.000Z</updated>
+    <content type="html"><![CDATA[<p>通过安装并启用此插件，你可以在 Markdown 中使用更多的语法。</p>
+<div><p>Tips</p>
+<p>请不用担心你的网站大小，如果你不启用相关功能，最终代码不会包含这些功能相关的代码。</p>
+<p>同时 VuePress 本身新增了一些 Markdown 语法，如果你对它们不熟悉，可以 <a href="https://v1.vuepress.vuejs.org/zh/guide/markdown.html" target="_blank" rel="noopener noreferrer">查看官方文档</a>。</p>
+</div>
+<h2 id="一键启用"> 一键启用</h2>
+<p>你可以设置 <code>themeconfig.mdEnhance.enableAll</code> 启用 <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">md-enhance</a> 插件的所有功能。</p>
+<div><div><br><br><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  themeConfig<span>:</span> <span>{</span>
+    mdEnhance<span>:</span> <span>{</span>
+      enableAll<span>:</span> <span>true</span><span>,</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><div><p>Warning</p>
+<p>请仅将此选项用于体验或测试。随着时间的增长，<code>vupress-plugin-md-enhance</code> 变得越来越强大。它为 Markdown 解析器添加了更多语法，并输出了更多代码。</p>
+<p>启用不需要的功能将增加开发和构建时间。 (<code>markdown-it</code> 必须检查额外的语法)</p>
+<p>同样，幻灯片演示功能将在输出中添加 700KB 大小的代码 (主要是 <code>reveal.js</code>)。</p>
+<p>因此，请使用下面的选项，仅启用需要的功能。</p>
+</div>
+<h2 id="新增的更多语法"> 新增的更多语法</h2>
+<h3 id="自定义对齐"> 自定义对齐</h3>
+<div>
+<p>我是居中的</p>
+</div>
+<div>
+<p>我在右对齐</p>
+</div>
+<ul>
+<li><a href="./align.html">查看详情</a></li>
+</ul>
+<h3 id="上下角标"> 上下角标</h3>
+<p>19<sup>th</sup> H<sub>2</sub>O</p>
+<ul>
+<li><a href="./sup-sub.html">查看详情</a></li>
+</ul>
+<h3 id="脚注"> 脚注</h3>
+<p>此文字有脚注<sup></sup>.</p>
+<ul>
+<li><a href="./footnote.html">查看详情</a></li>
+</ul>
+<h3 id="标记"> 标记</h3>
+<p>你可以标记 <mark>重要的内容</mark> 。</p>
+<ul>
+<li><a href="./mark.html">查看详情</a></li>
+</ul>
+<h3 id="流程图"> 流程图</h3>
+<i>Not supported content</i><ul>
+<li><a href="./flowchart.html">查看详情</a></li>
+</ul>
+<h3 id="tex-语法"> Tex 语法</h3>
+<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:2.40003em;vertical-align:-0.95003em;"></span><span><span></span><span><span><span><span style="height:1.37144em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.05556em;">∂</span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.590392em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.05556em;">∂</span><span><span><span><span style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span style="top:0em;"><span>(</span></span><span><span></span><span><span><span><span style="height:1.341392em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.03588em;">ω</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.03588em;">y</span><span><span><span><span style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">ω</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="top:0em;"><span>)</span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:3.027669em;vertical-align:-1.277669em;"></span><span><span style="top:0em;"><span>(</span></span><span><span></span><span><span><span><span style="height:1.341392em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.03588em;">ω</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.03588em;">y</span><span><span><span><span style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">ω</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="top:0em;"><span>)</span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span style="top:0em;"><span>{</span></span><span>(</span><span>lo<span style="margin-right:0.01389em;">g</span></span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.03588em;">y</span><span><span>)</span><span><span><span><span style="height:0.7143919999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span><span><span style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>i</span><span>=</span><span>1</span></span></span></span><span style="top:-3.050005em;"><span style="height:3.05em;"></span><span><span>∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span style="height:3.05em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span><span>​</span></span><span><span style="height:1.277669em;"><span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span></span><span><span><span><span style="height:1.5016639999999999em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.750664em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>i</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span>(</span><span>−</span><span>1</span><span><span>)</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>i</span></span></span></span></span></span></span></span><span style="margin-right:0.02778em;">r</span><span style="margin-right:0.16666666666666666em;"></span><span>⋯</span><span style="margin-right:0.16666666666666666em;"></span><span>(</span><span style="margin-right:0.02778em;">r</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span><span>i</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span>1</span><span>)</span><span>(</span><span>lo<span style="margin-right:0.01389em;">g</span></span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.03588em;">y</span><span><span>)</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.02778em;">r</span><span>−</span><span>i</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="top:0em;"><span>}</span></span></span></span></span></span></span></p>
+<ul>
+<li><a href="./tex.html">查看详情</a></li>
+</ul>
+<h3 id="代码演示"> 代码演示</h3>
+
+          <div
+            id="code-demo-e18e4abe"
+           
+  
+ data-title="%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%20Demo"
+
+            data-code="%7B%22html%22%3A%22%3Ch1%3EMr.Hope%3C%2Fh1%3E%5Cn%3Cp%3E%3Cspan%20id%3D%5C%22very%5C%22%3E%E5%8D%81%E5%88%86%3C%2Fspan%3E%20%E5%B8%85%3C%2Fp%3E%5Cn%22%2C%22js%22%3A%22document.querySelector(%5C%22%23very%5C%22).addEventListener(%5C%22click%5C%22%2C%20()%20%3D%3E%20%7B%5Cn%20%20alert(%5C%22%E5%8D%81%E5%88%86%E5%B8%85%5C%22)%3B%5Cn%7D)%3B%5Cn%22%2C%22css%22%3A%22span%20%7B%5Cn%20%20color%3A%20red%3B%5Cn%7D%5Cn%22%7D"
+          >
+              <div>
+                
+              </div>
+              <div>
+                <div>
+<div><pre><code><span><span><span>&lt;</span>h1</span><span>></span></span>Mr.Hope<span><span><span>&lt;/</span>h1</span><span>></span></span>
+<span><span><span>&lt;</span>p</span><span>></span></span><span><span><span>&lt;</span>span</span> <span>id</span><span><span>=</span><span>"</span>very<span>"</span></span><span>></span></span>十分<span><span><span>&lt;/</span>span</span><span>></span></span> 帅<span><span><span>&lt;/</span>p</span><span>></span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><div><pre><code>document<span>.</span><span>querySelector</span><span>(</span><span>"#very"</span><span>)</span><span>.</span><span>addEventListener</span><span>(</span><span>"click"</span><span>,</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
+  <span>alert</span><span>(</span><span>"十分帅"</span><span>)</span><span>;</span>
+<span>}</span><span>)</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span>span</span> <span>{</span>
+  <span>color</span><span>:</span> red<span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>
+            </div>
+          </div>
+          
+        </div>
+<ul>
+<li><a href="./demo.html">查看详情</a></li>
+</ul>
+<h3 id="幻灯片"> 幻灯片</h3>
+<i>Not supported content</i><ul>
+<li><a href="./presentation/">查看详情</a></li>
+</ul>
+<hr>
+<section>
+<ol>
+<li id="fn1"><p>这是脚注内容 </p>
+</li>
+</ol>
+</section>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-10-13T05:36:44.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
     <title type="html">上下角标</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/sup-sub/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/guide/sup-sub/"/>
@@ -3212,257 +3463,6 @@ module<span>.</span>exports <span>=</span> <span>{</span>
       <name>Mr.Hope</name>
     </contributor>
     <published>2020-10-13T05:36:44.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">快速上手</title>
-    <id>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/</id>
-    <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/guide/"/>
-    <updated>2021-03-19T01:26:02.000Z</updated>
-    <content type="html"><![CDATA[<p>通过安装并启用此插件，你可以在 Markdown 中使用更多的语法。</p>
-<div><p>Tips</p>
-<p>请不用担心你的网站大小，如果你不启用相关功能，最终代码不会包含这些功能相关的代码。</p>
-<p>同时 VuePress 本身新增了一些 Markdown 语法，如果你对它们不熟悉，可以 <a href="https://v1.vuepress.vuejs.org/zh/guide/markdown.html" target="_blank" rel="noopener noreferrer">查看官方文档</a>。</p>
-</div>
-<h2 id="一键启用"> 一键启用</h2>
-<p>你可以设置 <code>themeconfig.mdEnhance.enableAll</code> 启用 <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">md-enhance</a> 插件的所有功能。</p>
-<div><div><br><br><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  themeConfig<span>:</span> <span>{</span>
-    mdEnhance<span>:</span> <span>{</span>
-      enableAll<span>:</span> <span>true</span><span>,</span>
-    <span>}</span><span>,</span>
-  <span>}</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><div><p>Warning</p>
-<p>请仅将此选项用于体验或测试。随着时间的增长，<code>vupress-plugin-md-enhance</code> 变得越来越强大。它为 Markdown 解析器添加了更多语法，并输出了更多代码。</p>
-<p>启用不需要的功能将增加开发和构建时间。 (<code>markdown-it</code> 必须检查额外的语法)</p>
-<p>同样，幻灯片演示功能将在输出中添加 700KB 大小的代码 (主要是 <code>reveal.js</code>)。</p>
-<p>因此，请使用下面的选项，仅启用需要的功能。</p>
-</div>
-<h2 id="新增的更多语法"> 新增的更多语法</h2>
-<h3 id="自定义对齐"> 自定义对齐</h3>
-<div>
-<p>我是居中的</p>
-</div>
-<div>
-<p>我在右对齐</p>
-</div>
-<ul>
-<li><a href="./align.html">查看详情</a></li>
-</ul>
-<h3 id="上下角标"> 上下角标</h3>
-<p>19<sup>th</sup> H<sub>2</sub>O</p>
-<ul>
-<li><a href="./sup-sub.html">查看详情</a></li>
-</ul>
-<h3 id="脚注"> 脚注</h3>
-<p>此文字有脚注<sup></sup>.</p>
-<ul>
-<li><a href="./footnote.html">查看详情</a></li>
-</ul>
-<h3 id="标记"> 标记</h3>
-<p>你可以标记 <mark>重要的内容</mark> 。</p>
-<ul>
-<li><a href="./mark.html">查看详情</a></li>
-</ul>
-<h3 id="流程图"> 流程图</h3>
-<i>Not supported content</i><ul>
-<li><a href="./flowchart.html">查看详情</a></li>
-</ul>
-<h3 id="tex-语法"> Tex 语法</h3>
-<p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:2.40003em;vertical-align:-0.95003em;"></span><span><span></span><span><span><span><span style="height:1.37144em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.05556em;">∂</span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.590392em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.05556em;">∂</span><span><span><span><span style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span style="top:0em;"><span>(</span></span><span><span></span><span><span><span><span style="height:1.341392em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.03588em;">ω</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.03588em;">y</span><span><span><span><span style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">ω</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="top:0em;"><span>)</span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:3.027669em;vertical-align:-1.277669em;"></span><span><span style="top:0em;"><span>(</span></span><span><span></span><span><span><span><span style="height:1.341392em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.03588em;">ω</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.03588em;">y</span><span><span><span><span style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">ω</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="top:0em;"><span>)</span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span style="top:0em;"><span>{</span></span><span>(</span><span>lo<span style="margin-right:0.01389em;">g</span></span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.03588em;">y</span><span><span>)</span><span><span><span><span style="height:0.7143919999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span><span><span style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>i</span><span>=</span><span>1</span></span></span></span><span style="top:-3.050005em;"><span style="height:3.05em;"></span><span><span>∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span style="height:3.05em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span><span>​</span></span><span><span style="height:1.277669em;"><span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span></span><span><span><span><span style="height:1.5016639999999999em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.750664em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>i</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span>(</span><span>−</span><span>1</span><span><span>)</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>i</span></span></span></span></span></span></span></span><span style="margin-right:0.02778em;">r</span><span style="margin-right:0.16666666666666666em;"></span><span>⋯</span><span style="margin-right:0.16666666666666666em;"></span><span>(</span><span style="margin-right:0.02778em;">r</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span><span>i</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span>1</span><span>)</span><span>(</span><span>lo<span style="margin-right:0.01389em;">g</span></span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.03588em;">y</span><span><span>)</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.02778em;">r</span><span>−</span><span>i</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="top:0em;"><span>}</span></span></span></span></span></span></span></p>
-<ul>
-<li><a href="./tex.html">查看详情</a></li>
-</ul>
-<h3 id="代码演示"> 代码演示</h3>
-
-          <div
-            id="code-demo-e18e4abe"
-           
-  
- data-title="%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%20Demo"
-
-            data-code="%7B%22html%22%3A%22%3Ch1%3EMr.Hope%3C%2Fh1%3E%5Cn%3Cp%3E%3Cspan%20id%3D%5C%22very%5C%22%3E%E5%8D%81%E5%88%86%3C%2Fspan%3E%20%E5%B8%85%3C%2Fp%3E%5Cn%22%2C%22js%22%3A%22document.querySelector(%5C%22%23very%5C%22).addEventListener(%5C%22click%5C%22%2C%20()%20%3D%3E%20%7B%5Cn%20%20alert(%5C%22%E5%8D%81%E5%88%86%E5%B8%85%5C%22)%3B%5Cn%7D)%3B%5Cn%22%2C%22css%22%3A%22span%20%7B%5Cn%20%20color%3A%20red%3B%5Cn%7D%5Cn%22%7D"
-          >
-              <div>
-                
-              </div>
-              <div>
-                <div>
-<div><pre><code><span><span><span>&lt;</span>h1</span><span>></span></span>Mr.Hope<span><span><span>&lt;/</span>h1</span><span>></span></span>
-<span><span><span>&lt;</span>p</span><span>></span></span><span><span><span>&lt;</span>span</span> <span>id</span><span><span>=</span><span>"</span>very<span>"</span></span><span>></span></span>十分<span><span><span>&lt;/</span>span</span><span>></span></span> 帅<span><span><span>&lt;/</span>p</span><span>></span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><div><pre><code>document<span>.</span><span>querySelector</span><span>(</span><span>"#very"</span><span>)</span><span>.</span><span>addEventListener</span><span>(</span><span>"click"</span><span>,</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
-  <span>alert</span><span>(</span><span>"十分帅"</span><span>)</span><span>;</span>
-<span>}</span><span>)</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span>span</span> <span>{</span>
-  <span>color</span><span>:</span> red<span>;</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>
-            </div>
-          </div>
-          
-        </div>
-<ul>
-<li><a href="./demo.html">查看详情</a></li>
-</ul>
-<h3 id="幻灯片"> 幻灯片</h3>
-<i>Not supported content</i><ul>
-<li><a href="./presentation/">查看详情</a></li>
-</ul>
-<hr>
-<section>
-<ol>
-<li id="fn1"><p>这是脚注内容 </p>
-</li>
-</ol>
-</section>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-10-13T05:36:44.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">幻灯片主题</title>
-    <id>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/presentation/themes/</id>
-    <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/guide/presentation/themes/"/>
-    <updated>2021-02-03T11:24:42.000Z</updated>
-    <content type="html"><![CDATA[
-<p>可用的主题:</p>
-<ul>
-<li><code>auto</code> (默认)</li>
-<li><code>black</code></li>
-<li><code>white</code></li>
-<li><code>league</code></li>
-<li><code>beige</code></li>
-<li><code>sky</code></li>
-<li><code>night</code></li>
-<li><code>serif</code></li>
-<li><code>simple</code></li>
-<li><code>solarized</code></li>
-<li><code>blood</code></li>
-<li><code>moon</code></li>
-</ul>
-
-<h2 id="auto"> <code>auto</code></h2>
-<i>Not supported content</i><h2 id="black"> <code>black</code></h2>
-<i>Not supported content</i><h2 id="white"> <code>white</code></h2>
-<i>Not supported content</i><h2 id="league"> <code>league</code></h2>
-<i>Not supported content</i><h2 id="beige"> <code>beige</code></h2>
-<i>Not supported content</i><h2 id="sky"> <code>sky</code></h2>
-<i>Not supported content</i><h2 id="night"> <code>night</code></h2>
-<i>Not supported content</i><h2 id="serif"> <code>serif</code></h2>
-<i>Not supported content</i><h2 id="simple"> <code>simple</code></h2>
-<i>Not supported content</i><h2 id="solarized"> <code>solarized</code></h2>
-<i>Not supported content</i><h2 id="blood"> <code>blood</code></h2>
-<i>Not supported content</i><h2 id="moon"> <code>moon</code></h2>
-<i>Not supported content</i>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2021-02-03T11:24:42.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">幻灯片支持</title>
-    <id>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/presentation/</id>
-    <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/guide/presentation/"/>
-    <updated>2021-03-10T04:43:39.000Z</updated>
-    <summary type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持幻灯片。</p>
-<p>本插件利用了 <a href="https://revealjs.com/" target="_blank" rel="noopener noreferrer">reveal.js</a> 来支持这一功能。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持幻灯片。</p>
-<p>本插件利用了 <a href="https://revealjs.com/" target="_blank" rel="noopener noreferrer">reveal.js</a> 来支持这一功能。</p>
-
-
-<h2 id="配置"> 配置</h2>
-<div><div><br><br><br><br><br><br><div>&nbsp;</div><br><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span>
-    <span>[</span>
-      <span>"md-enhance"</span><span>,</span>
-      <span>{</span>
-        <span>// 启用幻灯片</span>
-        presentation<span>:</span> <span>true</span><span>,</span>
-      <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-  <span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><p>你也可以传入一个对象以进行更详细的配置。</p>
-<p><code>presentation.plugins</code> 接收一个字符串数组，可以自由配置是否启用一些预设的插件。</p>
-<div><p>Tips</p>
-<p>可接受的插件有:</p>
-<ul>
-<li><code>&quot;highlight&quot;</code></li>
-<li><code>&quot;math&quot;</code></li>
-<li><code>&quot;search&quot;</code></li>
-<li><code>&quot;notes&quot;</code></li>
-<li><code>&quot;zoom&quot;</code></li>
-</ul>
-<!-- - `"anything"`
-- `"audio"`
-- `"chalkboard"` -->
-</div>
-<p>你还可以使用 <code>presentation.revealConfig</code> 来配置全局传递给 Reveal.js 的配置选项。</p>
-<p>Reveal.js 还提供了<a href="https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware" target="_blank" rel="noopener noreferrer">更多的插件</a>。如果你需要某个特定的插件，请在 GitHub 上提出 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues/new?assignees=Mister-Hope&amp;labels=enhancement&amp;template=feature_request.md&amp;title=%5BFeature+Request%5D" target="_blank" rel="noopener noreferrer">Feature Request</a></p>
-<h2 id="语法"> 语法</h2>
-<ul>
-<li>使用 <code>---</code> 分割幻灯片</li>
-<li>使用 <code>--</code> 对幻灯片进行二次分割(垂直显示)</li>
-</ul>
-<div><pre><code>@slidestart [theme]
-
-<span>&lt;!-- slide1 --></span>
-
-<span>---</span>
-
-<span>&lt;!-- slide2 --></span>
-
-<span>---</span>
-
-<span>&lt;!-- slide3 --></span>
-
-@slideend
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><p>目前可用的主题(请使用它们直接替换 <code>[theme]</code>):</p>
-<ul>
-<li><code>auto</code> (默认)</li>
-<li><code>black</code></li>
-<li><code>white</code></li>
-<li><code>league</code></li>
-<li><code>beige</code></li>
-<li><code>sky</code></li>
-<li><code>night</code></li>
-<li><code>serif</code></li>
-<li><code>simple</code></li>
-<li><code>solarized</code></li>
-<li><code>blood</code></li>
-<li><code>moon</code></li>
-</ul>
-<p>主题演示，请详见 <a href="./themes.html">幻灯片主题</a></p>
-<h2 id="演示"> 演示</h2>
-<p>请见 <a href="./demo.html">幻灯片演示</a>。</p>
-<h2 id="选项"> 选项</h2>
-<p>你可以在 Frontmatter 设置 <code>reveal</code> 以设置特定页面的 reveal.js 选项，也可以在插件选项中设置 <code>presentation</code> 以全局设置 reveal.js。</p>
-<p>更多选项，请参见<a href="https://revealjs.com/config/" target="_blank" rel="noopener noreferrer">reveal.js config</a>，更多用法，请参阅 <a href="https://revealjs.com/" target="_blank" rel="noopener noreferrer">reveal.js 文档</a>。</p>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2021-02-03T11:24:42.000Z</published>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
 </feed>
