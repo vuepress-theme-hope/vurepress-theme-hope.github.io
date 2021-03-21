@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-03-21T04:41:37.521Z</updated>
+  <updated>2021-03-21T04:59:06.106Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/md-enhance/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/md-enhance/"/>
@@ -1911,6 +1911,796 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
+    <title type="html">自定义对齐</title>
+    <id>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/align/</id>
+    <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/guide/align/"/>
+    <updated>2021-02-03T11:24:42.000Z</updated>
+    <summary type="html"><![CDATA[<p>通过对 <code>vuepress-plugin-container</code> 进行额外的配置注入，你可以使用</p>
+<div><pre><code>::: center
+要居中的段落
+:::
+<div>
+<p>要居右的段落</p>
+</div>
+<p></code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>来对你的段落对齐进行自定义。</p></p>
+]]></summary>
+    <content type="html"><![CDATA[<p>通过对 <code>vuepress-plugin-container</code> 进行额外的配置注入，你可以使用</p>
+<div><pre><code>::: center
+要居中的段落
+:::
+
+::: right
+要居右的段落
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>来对你的段落对齐进行自定义。</p>
+
+<h2 id="配置"> 配置</h2>
+<div><div><br><br><br><br><br><br><div>&nbsp;</div><br><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>[</span>
+      <span>"md-enhance"</span><span>,</span>
+      <span>{</span>
+        <span>// 启用自定义对齐</span>
+        align<span>:</span> <span>true</span><span>,</span>
+      <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><h2 id="演示"> 演示</h2>
+<div><p>W.I.P</p>
+<p>vuepress-theme-hope v2 仍在制作中，API 可能会有</p>
+<div>
+<p>重大的变动。</p>
+</div>
+<p>如果你在使用过程中遇到了 bug，可以</p>
+<div>
+<p><a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues" target="_blank" rel="noopener noreferrer">提一个 issue</a>。</p>
+</div>
+</div>
+<div><pre><code>:::: danger W.I.P
+vuepress-theme-hope v2 仍在制作中，API 可能会有
+
+::: center
+重大的变动。
+:::
+
+如果你在使用过程中遇到了 bug，可以
+
+::: right
+<span>[<span>提一个 issue</span>](<span>https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues</span>)</span>。
+:::
+
+::::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br></div></div><h2 id="其他自定义容器"> 其他自定义容器</h2>
+<div><p>Info</p>
+<p>信息容器。</p>
+</div>
+<div><p>Tips</p>
+<p>提示容器</p>
+</div>
+<div><p>Note</p>
+<p>警告容器</p>
+</div>
+<div><p>Warning</p>
+<p>危险容器</p>
+</div>
+<details><summary>DETAILS</summary>
+<p>详情容器</p>
+</details>
+<div><p>自定义标题</p>
+<p>信息容器</p>
+</div>
+<div><p>自定义标题</p>
+<p>提示容器</p>
+</div>
+<div><p>自定义标题</p>
+<p>警告容器</p>
+</div>
+<div><p>自定义标题</p>
+<p>危险容器</p>
+</div>
+<details><summary>自定义标题</summary>
+<p>详情容器</p>
+</details>
+<div><pre><code>::: info
+信息容器。
+:::
+
+::: tip
+提示容器
+:::
+
+::: warning
+警告容器
+:::
+
+::: danger
+危险容器
+:::
+
+::: details
+详情容器
+:::
+
+::: info 自定义标题
+信息容器
+:::
+
+::: tip 自定义标题
+提示容器
+:::
+
+::: warning 自定义标题
+警告容器
+:::
+
+::: danger 自定义标题
+危险容器
+:::
+
+::: details 自定义标题
+详情容器
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br></div></div>]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-10-13T05:36:44.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">代码演示</title>
+    <id>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/demo/</id>
+    <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/guide/demo/"/>
+    <updated>2021-02-28T09:14:42.000Z</updated>
+    <summary type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持代码案例。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持代码案例。</p>
+
+<h2 id="配置"> 配置</h2>
+<div><div><br><br><br><br><br><br><div>&nbsp;</div><br><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>[</span>
+      <span>"md-enhance"</span><span>,</span>
+      <span>{</span>
+        <span>// 启用代码演示</span>
+        demo<span>:</span> <span>true</span><span>,</span>
+      <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><h2 id="语法"> 语法</h2>
+<p>请使用以下语法：</p>
+<div><pre><code>::: demo [类型] 可选的标题文字
+
+<span><span>```</span><span>html</span>
+<span><span>&lt;!-- ↑ 使用可用的语言 --></span>
+<span>&lt;!-- 放置你的代码 --></span>
+<span>&lt;!-- 你可以有多个代码块 --></span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>json</span>
+<span>// json block 作为插件配置
+{
+  // 放置你的配置 (optional)
+}</span>
+<span>```</span></span>
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br></div></div><div><p>Tips</p>
+<p>JSON 块是可选的。</p>
+</div>
+<p>该插件支持三种类型：</p>
+<ul>
+<li>normal (默认)</li>
+<li>vue</li>
+<li>react</li>
+</ul>
+<h3 id="normal"> Normal</h3>
+<p>写法:</p>
+<div><pre><code>::: demo 可选的标题文字
+
+<span><span>```</span><span>html</span>
+<span><span>&lt;!-- html code --></span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>js</span>
+<span><span>// js code</span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>css</span>
+<span><span>/* css code */</span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>json</span>
+<span>// 配置 (可选)
+{
+  "jsLib": [
+    ...
+  ],
+  "cssLib":[
+    ...
+  ]
+}</span>
+<span>```</span></span>
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br></div></div><h3 id="vue"> Vue</h3>
+<p>语法:</p>
+<div><pre><code>::: demo [vue] 可选的标题文字
+
+<span><span>```</span><span>vue</span>
+<span>&lt;!-- ↑ 你也可以使用 html -->
+&lt;template>
+  &lt;!-- vue 模板 -->
+&lt;/template>
+&lt;script>
+export default {
+  // vue 组件
+};
+&lt;/script>
+&lt;style>
+/* css 代码 */
+&lt;/style></span>
+<span>```</span></span>
+
+<span><span>```</span><span>json</span>
+<span>// 配置 (可选)</span>
+<span>```</span></span>
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br></div></div><h3 id="react"> React</h3>
+<p>语法:</p>
+<div><pre><code>::: demo [react] 可选的标题文字
+
+<span><span>```</span><span>js</span>
+<span><span>export</span> <span>default</span> <span>class</span> <span>App</span> <span>extends</span> <span>React<span>.</span>Component</span> <span>{</span>
+  <span>// react 组件</span>
+<span>}</span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>css</span>
+<span><span>/* 你的 css 内容 */</span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>json</span>
+<span>// 配置 (可选)</span>
+<span>```</span></span>
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br></div></div><div><p>Note</p>
+<p>该插件未捆绑任何库，因此你必须通过在 <code>.vuepress/config.js</code> 文件中设置 <code>head</code> 来导入它们。</p>
+<div><pre><code><span>// .vuepress/config.js</span>
+module<span>.</span>exports <span>=</span> <span>{</span>
+  head<span>:</span> <span>[</span>
+    <span>// react 需要 React, ReactDOM 和 Babel 库</span>
+    <span>[</span>
+      <span>"script"</span><span>,</span>
+      <span>{</span> src<span>:</span> <span>"https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"</span> <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+    <span>[</span>
+      <span>"script"</span><span>,</span>
+      <span>{</span>
+        src<span>:</span>
+          <span>"https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"</span><span>,</span>
+      <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+    <span>[</span>
+      <span>"script"</span><span>,</span>
+      <span>{</span> src<span>:</span> <span>"https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"</span> <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+    <span>// vue 只需要 vue 库</span>
+    <span>[</span><span>"script"</span><span>,</span> <span>{</span> src<span>:</span> <span>"https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"</span> <span>}</span><span>]</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br></div></div><p>我们还进行了增强: 如果你导入 Babel，则将使用 babel 将脚本解析为 es6，以确保能在浏览器上正常运行。</p>
+</div>
+<h3 id="可用的语言"> 可用的语言</h3>
+<p>你可以在演示块中使用不同语言。</p>
+<p>当你设置其他语言时，由于插件无法解析它们，因此演示将被禁用只显示代码。插件将提供一个 &quot;在 CodePen 中打开&quot; 按钮允许用户直接在 CodePen 打开代码。</p>
+<p>可用的 HTML 语言:</p>
+<ul>
+<li><code>&quot;html&quot;</code> (默认)</li>
+<li><code>&quot;slim&quot;</code></li>
+<li><code>&quot;haml&quot;</code></li>
+<li><code>&quot;markdown&quot;</code></li>
+</ul>
+<blockquote>
+<p>你也可以在代码块中使用 <code>md</code>。</p>
+</blockquote>
+<p>可用的 JS 语言:</p>
+<ul>
+<li><code>&quot;javascript&quot;</code> (default)</li>
+<li><code>&quot;coffeescript&quot;</code></li>
+<li><code>&quot;babel&quot;</code></li>
+<li><code>&quot;livescript&quot;</code></li>
+<li><code>&quot;typescript&quot;</code></li>
+</ul>
+<blockquote>
+<p>你也可以在代码块中使用 <code>js</code>, <code>ts</code>, <code>coffee</code> 和 <code>ls</code>。</p>
+</blockquote>
+<p>可用的 CSS 语言:</p>
+<ul>
+<li><code>&quot;css&quot;</code> (default)</li>
+<li><code>&quot;less&quot;</code></li>
+<li><code>&quot;scss&quot;</code></li>
+<li><code>&quot;sass&quot;</code></li>
+<li><code>&quot;stylus&quot;</code></li>
+</ul>
+<blockquote>
+<p>你也可以在代码块中使用 <code>styl</code>。</p>
+</blockquote>
+<h2 id="演示"> 演示</h2>
+
+          <div
+            id="code-demo-e18e4abe"
+           
+  
+ data-title="%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%20Demo"
+
+            data-code="%7B%22html%22%3A%22%3Ch1%3EMr.Hope%3C%2Fh1%3E%5Cn%3Cp%3E%3Cspan%20id%3D%5C%22very%5C%22%3E%E5%8D%81%E5%88%86%3C%2Fspan%3E%20%E5%B8%85%3C%2Fp%3E%5Cn%22%2C%22js%22%3A%22document.querySelector(%5C%22%23very%5C%22).addEventListener(%5C%22click%5C%22%2C%20()%20%3D%3E%20%7B%5Cn%20%20alert(%5C%22%E5%8D%81%E5%88%86%E5%B8%85%5C%22)%3B%5Cn%7D)%3B%5Cn%22%2C%22css%22%3A%22span%20%7B%5Cn%20%20color%3A%20red%3B%5Cn%7D%5Cn%22%7D"
+          >
+              <div>
+                
+              </div>
+              <div>
+                <div>
+<div><pre><code><span><span><span>&lt;</span>h1</span><span>></span></span>Mr.Hope<span><span><span>&lt;/</span>h1</span><span>></span></span>
+<span><span><span>&lt;</span>p</span><span>></span></span><span><span><span>&lt;</span>span</span> <span>id</span><span><span>=</span><span>"</span>very<span>"</span></span><span>></span></span>十分<span><span><span>&lt;/</span>span</span><span>></span></span> 帅<span><span><span>&lt;/</span>p</span><span>></span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><div><pre><code>document<span>.</span><span>querySelector</span><span>(</span><span>"#very"</span><span>)</span><span>.</span><span>addEventListener</span><span>(</span><span>"click"</span><span>,</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
+  <span>alert</span><span>(</span><span>"十分帅"</span><span>)</span><span>;</span>
+<span>}</span><span>)</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span>span</span> <span>{</span>
+  <span>color</span><span>:</span> red<span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>
+            </div>
+          </div>
+          
+        </div>
+<div><pre><code>::: demo 一个普通 Demo
+
+<span><span>```</span><span>html</span>
+<span><span><span><span>&lt;</span>h1</span><span>></span></span>Mr.Hope<span><span><span>&lt;/</span>h1</span><span>></span></span>
+<span><span><span>&lt;</span>p</span><span>></span></span><span><span><span>&lt;</span>span</span> <span>id</span><span><span>=</span><span>"</span>very<span>"</span></span><span>></span></span>十分<span><span><span>&lt;/</span>span</span><span>></span></span> 帅<span><span><span>&lt;/</span>p</span><span>></span></span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>js</span>
+<span>document<span>.</span><span>querySelector</span><span>(</span><span>"#very"</span><span>)</span><span>.</span><span>addEventListener</span><span>(</span><span>"click"</span><span>,</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
+  <span>alert</span><span>(</span><span>"十分帅"</span><span>)</span><span>;</span>
+<span>}</span><span>)</span><span>;</span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>css</span>
+<span><span>span</span> <span>{</span>
+  <span>color</span><span>:</span> red<span>;</span>
+<span>}</span></span>
+<span>```</span></span>
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br></div></div>
+          <div
+            id="code-demo-3973beae"
+           
+  data-type="react"
+ data-title="%E4%B8%80%E4%B8%AA%20React%20Demo"
+
+            data-code="%7B%22js%22%3A%22export%20default%20class%20App%20extends%20React.Component%20%7B%5Cn%20%20constructor(props)%20%7B%5Cn%20%20%20%20super(props)%3B%5Cn%20%20%20%20this.state%20%3D%20%7B%20message%3A%20%5C%22%E5%8D%81%E5%88%86%E5%B8%85%5C%22%20%7D%3B%5Cn%20%20%7D%5Cn%20%20render()%20%7B%5Cn%20%20%20%20return%20(%5Cn%20%20%20%20%20%20%3Cdiv%20className%3D%5C%22box-react%5C%22%3E%5Cn%20%20%20%20%20%20%20%20Mr.Hope%20%3Cspan%3E%7Bthis.state.message%7D%3C%2Fspan%3E%5Cn%20%20%20%20%20%20%3C%2Fdiv%3E%5Cn%20%20%20%20)%3B%5Cn%20%20%7D%5Cn%7D%5Cn%22%2C%22css%22%3A%22.box-react%20span%20%7B%5Cn%20%20color%3A%20red%3B%5Cn%7D%5Cn%22%7D"
+          >
+              <div>
+                
+              </div>
+              <div>
+                <div>
+<div><pre><code><span>export</span> <span>default</span> <span>class</span> <span>App</span> <span>extends</span> <span>React<span>.</span>Component</span> <span>{</span>
+  <span>constructor</span><span>(</span><span>props</span><span>)</span> <span>{</span>
+    <span>super</span><span>(</span>props<span>)</span><span>;</span>
+    <span>this</span><span>.</span>state <span>=</span> <span>{</span> message<span>:</span> <span>"十分帅"</span> <span>}</span><span>;</span>
+  <span>}</span>
+  <span>render</span><span>(</span><span>)</span> <span>{</span>
+    <span>return</span> <span>(</span>
+      <span>&lt;</span>div className<span>=</span><span>"box-react"</span><span>></span>
+        Mr<span>.</span>Hope <span>&lt;</span>span<span>></span><span>{</span><span>this</span><span>.</span>state<span>.</span>message<span>}</span><span>&lt;</span><span>/</span>span<span>></span>
+      <span>&lt;</span><span>/</span>div<span>></span>
+    <span>)</span><span>;</span>
+  <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><div><pre><code><span>.box-react span</span> <span>{</span>
+  <span>color</span><span>:</span> red<span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>
+            </div>
+          </div>
+          
+        </div>
+<div><pre><code>::: demo [react] 一个 React Demo
+
+<span><span>```</span><span>js</span>
+<span><span>export</span> <span>default</span> <span>class</span> <span>App</span> <span>extends</span> <span>React<span>.</span>Component</span> <span>{</span>
+  <span>constructor</span><span>(</span><span>props</span><span>)</span> <span>{</span>
+    <span>super</span><span>(</span>props<span>)</span><span>;</span>
+    <span>this</span><span>.</span>state <span>=</span> <span>{</span> message<span>:</span> <span>"十分帅"</span> <span>}</span><span>;</span>
+  <span>}</span>
+  <span>render</span><span>(</span><span>)</span> <span>{</span>
+    <span>return</span> <span>(</span>
+      <span>&lt;</span>div className<span>=</span><span>"box-react"</span><span>></span>
+        Mr<span>.</span>Hope <span>&lt;</span>span<span>></span><span>{</span><span>this</span><span>.</span>state<span>.</span>message<span>}</span><span>&lt;</span><span>/</span>span<span>></span>
+      <span>&lt;</span><span>/</span>div<span>></span>
+    <span>)</span><span>;</span>
+  <span>}</span>
+<span>}</span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>css</span>
+<span><span>.box-react span</span> <span>{</span>
+  <span>color</span><span>:</span> red<span>;</span>
+<span>}</span></span>
+<span>```</span></span>
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br></div></div>
+          <div
+            id="code-demo-08f119be"
+           
+  data-type="vue"
+ data-title="%E4%B8%80%E4%B8%AA%20Vue%20Demo"
+
+            data-code="%7B%22vue%22%3A%22%3Ctemplate%3E%5Cn%20%20%3Cdiv%20class%3D%5C%22box-vue%5C%22%3E%5Cn%20%20%20%20Mr.Hope%20%3Cspan%3E%7B%7B%20message%20%7D%7D%3C%2Fspan%3E%5Cn%20%20%3C%2Fdiv%3E%5Cn%3C%2Ftemplate%3E%5Cn%3Cscript%3E%5Cnexport%20default%20%7B%5Cn%20%20data%3A%20()%20%3D%3E%20(%7B%20message%3A%20%5C%22%E5%8D%81%E5%88%86%E5%B8%85%5C%22%20%7D)%2C%5Cn%7D%3B%5Cn%3C%2Fscript%3E%5Cn%3Cstyle%3E%5Cn.box-vue%20span%20%7B%5Cn%20%20color%3A%20red%3B%5Cn%7D%5Cn%3C%2Fstyle%3E%5Cn%22%7D"
+          >
+              <div>
+                
+              </div>
+              <div>
+                <div>
+<div><pre><code><span><span><span>&lt;</span>template</span><span>></span></span>
+  <span><span><span>&lt;</span>div</span> <span>class</span><span><span>=</span><span>"</span>box-vue<span>"</span></span><span>></span></span>
+    Mr.Hope <span><span><span>&lt;</span>span</span><span>></span></span>{{ message }}<span><span><span>&lt;/</span>span</span><span>></span></span>
+  <span><span><span>&lt;/</span>div</span><span>></span></span>
+<span><span><span>&lt;/</span>template</span><span>></span></span>
+<span><span><span>&lt;</span>script</span><span>></span></span><span><span>
+<span>export</span> <span>default</span> <span>{</span>
+  <span>data</span><span>:</span> <span>(</span><span>)</span> <span>=></span> <span>(</span><span>{</span> message<span>:</span> <span>"十分帅"</span> <span>}</span><span>)</span><span>,</span>
+<span>}</span><span>;</span>
+</span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
+<span><span><span>&lt;</span>style</span><span>></span></span><span><span>
+<span>.box-vue span</span> <span>{</span>
+  <span>color</span><span>:</span> red<span>;</span>
+<span>}</span>
+</span></span><span><span><span>&lt;/</span>style</span><span>></span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br></div></div>
+            </div>
+          </div>
+          
+        </div>
+<div><pre><code>::: demo [vue] 一个 Vue Demo
+
+<span><span>```</span><span>vue</span>
+<span>&lt;template>
+  &lt;div>
+    Mr.Hope &lt;span>{{ message }}&lt;/span>
+  &lt;/div>
+&lt;/template>
+&lt;script>
+export default {
+  data: () => ({ message: "十分帅" }),
+};
+&lt;/script>
+&lt;style>
+.box-vue span {
+  color: red;
+}
+&lt;/style></span>
+<span>```</span></span>
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br></div></div>
+          <div
+            id="code-demo-2b9215d0"
+           
+  
+ data-title="%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%20Demo"
+
+            data-code="%7B%22md%22%3A%22%23%20%E6%A0%87%E9%A2%98%5Cn%5Cn%E5%8D%81%E5%88%86%E5%B8%85%5Cn%22%2C%22ts%22%3A%22const%20message%3A%20string%20%3D%20%5C%22Mr.Hope%5C%22%3B%5Cn%5Cndocument.querySelector(%5C%22h1%5C%22).innerHTML%20%3D%20message%3B%5Cn%22%2C%22scss%22%3A%22h1%20%7B%5Cn%20%20font-style%3A%20italic%3B%5Cn%5Cn%20%20%2B%20p%20%7B%5Cn%20%20%20%20color%3A%20red%3B%5Cn%20%20%7D%5Cn%7D%5Cn%22%7D"
+          >
+              <div>
+                
+              </div>
+              <div>
+                <div>
+<div><pre><code><span><span>#</span> 标题</span>
+
+十分帅
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span>const</span> message<span>:</span> <span>string</span> <span>=</span> <span>"Mr.Hope"</span><span>;</span>
+
+document<span>.</span><span>querySelector</span><span>(</span><span>"h1"</span><span>)</span><span>.</span>innerHTML <span>=</span> message<span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span>h1 </span><span>{</span>
+  <span>font-style</span><span>:</span> italic<span>;</span>
+
+  <span>+ p </span><span>{</span>
+    <span>color</span><span>:</span> red<span>;</span>
+  <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div>
+            </div>
+          </div>
+          
+        </div>
+<div><pre><code>::: demo 一个普通 Demo
+
+<span><span>```</span><span>md</span>
+<span><span><span>#</span> 标题</span>
+
+十分帅</span>
+<span>```</span></span>
+
+<span><span>```</span><span>ts</span>
+<span><span>const</span> message<span>:</span> <span>string</span> <span>=</span> <span>"Mr.Hope"</span><span>;</span>
+
+document<span>.</span><span>querySelector</span><span>(</span><span>"h1"</span><span>)</span><span>.</span>innerHTML <span>=</span> message<span>;</span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>scss</span>
+<span><span>h1 </span><span>{</span>
+  <span>font-style</span><span>:</span> italic<span>;</span>
+
+  <span>+ p </span><span>{</span>
+    <span>color</span><span>:</span> red<span>;</span>
+  <span>}</span>
+<span>}</span></span>
+<span>```</span></span>
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br></div></div>]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-11-17T09:58:20.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">流程图</title>
+    <id>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/flowchart/</id>
+    <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/guide/flowchart/"/>
+    <updated>2021-03-19T01:26:02.000Z</updated>
+    <summary type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持流程图。</p>
+<p>本插件利用了 <a href="https://github.com/adrai/flowchart.js" target="_blank" rel="noopener noreferrer">flowchart.js</a> 来支持这一功能。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持流程图。</p>
+<p>本插件利用了 <a href="https://github.com/adrai/flowchart.js" target="_blank" rel="noopener noreferrer">flowchart.js</a> 来支持这一功能。</p>
+
+<h2 id="配置"> 配置</h2>
+<div><div><br><br><br><br><br><br><div>&nbsp;</div><br><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>[</span>
+      <span>"md-enhance"</span><span>,</span>
+      <span>{</span>
+        <span>// 启用流程图</span>
+        flowchart<span>:</span> <span>true</span><span>,</span>
+      <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><h2 id="语法"> 语法</h2>
+<div><pre><code><span><span>```</span><span>flow [preset]</span>
+<span>
+&lt;!-- 放置你的流程图代码 -->
+</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>目前可用的预设:</p>
+<ul>
+<li><code>vue</code> (默认)</li>
+<li><code>ant</code></li>
+</ul>
+<h2 id="演示"> 演示</h2>
+<i>Not supported content</i><div><pre><code><span><span>```</span><span>flow</span>
+<span>st=>start: Start|past:>http://www.google.com[blank]
+e=>end: End|future:>http://www.google.com
+op1=>operation: My Operation|past
+op2=>operation: Stuff|current
+sub1=>subroutine: My Subroutine|invalid
+cond=>condition: Yes
+or No?|approved:>http://www.google.com
+c2=>condition: Good idea|rejected
+io=>inputoutput: catch something...|future
+
+st->op1(right)->cond
+cond(yes, right)->c2
+cond(no)->sub1(left)->op1
+c2(yes)->io->e
+c2(no)->op2->e</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br></div></div><h2 id="流程图介绍"> 流程图介绍</h2>
+<h3 id="节点类型"> 节点类型</h3>
+<p>定义了结点形状</p>
+<h4 id="开始-结束"> 开始 &amp; 结束</h4>
+<p>被用于流程开始的第一个节点。
+默认文字为 <code>Start</code>.</p>
+<ul>
+<li><code>[Variable]-&gt;start: [Text]</code></li>
+</ul>
+<p>被用于流程结束的最后一个节点。
+默认文字为 <code>End</code>.</p>
+<ul>
+<li><code>[Variable]-&gt;end: [Text]</code></li>
+</ul>
+<div><pre><code><span><span>```</span><span>flow</span>
+<span>st=>start: Start
+e=>end: End
+
+st->e</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><i>Not supported content</i><h4 id="操作"> 操作</h4>
+<ul>
+<li><code>[Variable]-&gt;operation: [Text]</code></li>
+</ul>
+<div><pre><code><span><span>```</span><span>flow</span>
+<span>process=>operation: Operation
+e=>end: End
+
+process->e</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><i>Not supported content</i><h4 id="输入输出"> 输入输出</h4>
+<ul>
+<li><code>[Variable]-&gt;inputoutput: [Text]</code></li>
+</ul>
+<div><pre><code><span><span>```</span><span>flow</span>
+<span>process=>inputoutput: Inputoutput
+e=>end: End
+
+process->e</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><i>Not supported content</i><h4 id="子程序"> 子程序</h4>
+<ul>
+<li><code>[Variable]-&gt;subroutine: [Text]</code></li>
+</ul>
+<div><pre><code><span><span>```</span><span>flow</span>
+<span>process=>subroutine: Subroutine
+e=>end: End
+
+process->e</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><i>Not supported content</i><h4 id="条件"> 条件</h4>
+<ul>
+<li>
+<p><code>[Variable]-&gt;condition: [Text]</code></p>
+</li>
+<li>
+<p><code>[Variable]([yesText])-&gt;[Position]</code></p>
+</li>
+<li>
+<p><code>[Variable]([noText])-&gt;[Position]</code></p>
+</li>
+</ul>
+<div><pre><code><span><span>```</span><span>flow</span>
+<span>cond=>condition: Process?
+process=>operation: Process
+e=>end: End
+
+cond(yes)->process->e
+cond(no)->e</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><i>Not supported content</i><h4 id="平行"> 平行</h4>
+<p>定义同时开始的多个程序。</p>
+<ul>
+<li><code>[Variable]-&gt;parallel: [Text]</code></li>
+<li><code>[Variable](path1, direction)-&gt;[Position]</code></li>
+<li><code>[Variable](path1, direction)-&gt;[Position]</code></li>
+</ul>
+<div><pre><code><span><span>```</span><span>flow</span>
+<span>para=>parallel: parallel tasks
+process=>operation: Process
+e=>end: End
+
+para(path1, bottom)->process->e
+para(path2)->e</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><i>Not supported content</i><h3 id="链接"> 链接</h3>
+<p>连接方式在流程图中节点定义后描述，使用 <code>-&gt;</code> 指定一个节点之间的链接，例如 <code>nodeVar1-&gt;nodeVar2-&gt;nodeVar3</code></p>
+<p>流程可以被分开:</p>
+<div><pre><code>nodeVar1->nodeVar2
+nodeVar2->nodeVar3
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p>连接格式定义如下:</p>
+<p><code>&lt;node variable name&gt;[(&lt;specificaion1&gt;[, &lt;specification2])]-&gt;&lt;node variable name&gt;[[(&lt;specificaion1&gt;[, &lt;specification2])]-&gt;&lt;node variable name&gt;]</code></p>
+<p>在 <code>[]</code> 中的项是可选的。</p>
+<h3 id="方向"> 方向</h3>
+<p>以下方向可用，并定义了连接将从节点离开的方向。如果指定符不止一个，则总是最后一个。所有节点都有默认方向，这使其成为可选规范。<code>&lt;direction&gt;</code> 的可选值为:</p>
+<ul>
+<li><code>left</code></li>
+<li><code>right</code></li>
+<li><code>top</code></li>
+<li><code>bottom</code></li>
+</ul>
+<h3 id="节点特定说明符"> 节点特定说明符</h3>
+<p>每个节点变量都有可选的说明符，例如方向，有些变量有特殊的说明符，具体取决于下面定义的节点类型。在 <code>()</code> 中的变量名后添加说明符，并用<code>,</code> 分隔，例如 <code>nodeVar (spec1，spec2)</code>。</p>
+<ul>
+<li>
+<p><strong>start</strong>
+<strong>operation</strong>
+<strong>inputoutput</strong>
+<strong>subroutine</strong></p>
+<p>可选方向</p>
+<p><code>startVar(&lt;direction&gt;)-&gt;nextNode</code></p>
+<p><code>operationVar(&lt;direction&gt;)-&gt;nextNode</code></p>
+<p><code>inputoutputVar(&lt;direction&gt;)-&gt;nextNode</code></p>
+<p><code>subroutineVar(&lt;direction&gt;)-&gt;nextNode</code></p>
+</li>
+<li>
+<p><strong>condition</strong></p>
+<p>必需指定 <code>yes</code> or <code>no</code></p>
+<p>可选方向</p>
+<div><pre><code>conditionalVar(yes, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode1
+conditionalVar(no, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode2
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div></li>
+<li>
+<p><strong>parallel</strong></p>
+<p>Required path specification of <code>path1</code>, <code>path2</code>, or <code>path3</code></p>
+<p>Optional direction</p>
+<div><pre><code>parallelVar(path1, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode1
+parallelVar(path2, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode2
+parallelVar(path3, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode3
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div></li>
+</ul>
+<h3 id="网址"> 网址</h3>
+<p>可以使用 <code>:&gt;</code> 运算符将外部链接添加到节点。</p>
+<p><code>[blank]</code> 指定打开新的页面</p>
+<div><pre><code>st=>start: Start:>http://www.google.com[blank]
+e=>end: End:>http://www.yahoo.com
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><h3 id="建议"> 建议</h3>
+<p>文本中可能不应该使用的符号: <code>=&gt;</code>、<code>-&gt;</code>、 <code>:&gt;</code>、<code>|</code>、<code>@&gt;</code> 和 <code>:$</code></p>
+<p>如果要在流程图中强调特定路径，则可以另外定义它，如下所示:</p>
+<div><pre><code>st@&gt;op1({&quot;stroke&quot;:&quot;Red&quot;})@&gt;cond({&quot;stroke&quot;:&quot;Red&quot;,&quot;stroke-width&quot;:6,&quot;arrow-end&quot;:&quot;classic-wide-long&quot;})@&gt;c2({&quot;stroke&quot;:&quot;Red&quot;})@&gt;op2({&quot;stroke&quot;:&quot;Red&quot;})@&gt;e({&quot;stroke&quot;:&quot;Red&quot;})
+</code></pre>
+<div><span>1</span><br></div></div>]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-10-13T05:36:44.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
     <title type="html">脚注</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/footnote/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/guide/footnote/"/>
@@ -2666,796 +3456,6 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <span>}</span><span>;</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div>]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-10-13T05:36:44.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">流程图</title>
-    <id>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/flowchart/</id>
-    <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/guide/flowchart/"/>
-    <updated>2021-03-19T01:26:02.000Z</updated>
-    <summary type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持流程图。</p>
-<p>本插件利用了 <a href="https://github.com/adrai/flowchart.js" target="_blank" rel="noopener noreferrer">flowchart.js</a> 来支持这一功能。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持流程图。</p>
-<p>本插件利用了 <a href="https://github.com/adrai/flowchart.js" target="_blank" rel="noopener noreferrer">flowchart.js</a> 来支持这一功能。</p>
-
-<h2 id="配置"> 配置</h2>
-<div><div><br><br><br><br><br><br><div>&nbsp;</div><br><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span>
-    <span>[</span>
-      <span>"md-enhance"</span><span>,</span>
-      <span>{</span>
-        <span>// 启用流程图</span>
-        flowchart<span>:</span> <span>true</span><span>,</span>
-      <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-  <span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><h2 id="语法"> 语法</h2>
-<div><pre><code><span><span>```</span><span>flow [preset]</span>
-<span>
-&lt;!-- 放置你的流程图代码 -->
-</span>
-<span>```</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>目前可用的预设:</p>
-<ul>
-<li><code>vue</code> (默认)</li>
-<li><code>ant</code></li>
-</ul>
-<h2 id="演示"> 演示</h2>
-<i>Not supported content</i><div><pre><code><span><span>```</span><span>flow</span>
-<span>st=>start: Start|past:>http://www.google.com[blank]
-e=>end: End|future:>http://www.google.com
-op1=>operation: My Operation|past
-op2=>operation: Stuff|current
-sub1=>subroutine: My Subroutine|invalid
-cond=>condition: Yes
-or No?|approved:>http://www.google.com
-c2=>condition: Good idea|rejected
-io=>inputoutput: catch something...|future
-
-st->op1(right)->cond
-cond(yes, right)->c2
-cond(no)->sub1(left)->op1
-c2(yes)->io->e
-c2(no)->op2->e</span>
-<span>```</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br></div></div><h2 id="流程图介绍"> 流程图介绍</h2>
-<h3 id="节点类型"> 节点类型</h3>
-<p>定义了结点形状</p>
-<h4 id="开始-结束"> 开始 &amp; 结束</h4>
-<p>被用于流程开始的第一个节点。
-默认文字为 <code>Start</code>.</p>
-<ul>
-<li><code>[Variable]-&gt;start: [Text]</code></li>
-</ul>
-<p>被用于流程结束的最后一个节点。
-默认文字为 <code>End</code>.</p>
-<ul>
-<li><code>[Variable]-&gt;end: [Text]</code></li>
-</ul>
-<div><pre><code><span><span>```</span><span>flow</span>
-<span>st=>start: Start
-e=>end: End
-
-st->e</span>
-<span>```</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><i>Not supported content</i><h4 id="操作"> 操作</h4>
-<ul>
-<li><code>[Variable]-&gt;operation: [Text]</code></li>
-</ul>
-<div><pre><code><span><span>```</span><span>flow</span>
-<span>process=>operation: Operation
-e=>end: End
-
-process->e</span>
-<span>```</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><i>Not supported content</i><h4 id="输入输出"> 输入输出</h4>
-<ul>
-<li><code>[Variable]-&gt;inputoutput: [Text]</code></li>
-</ul>
-<div><pre><code><span><span>```</span><span>flow</span>
-<span>process=>inputoutput: Inputoutput
-e=>end: End
-
-process->e</span>
-<span>```</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><i>Not supported content</i><h4 id="子程序"> 子程序</h4>
-<ul>
-<li><code>[Variable]-&gt;subroutine: [Text]</code></li>
-</ul>
-<div><pre><code><span><span>```</span><span>flow</span>
-<span>process=>subroutine: Subroutine
-e=>end: End
-
-process->e</span>
-<span>```</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><i>Not supported content</i><h4 id="条件"> 条件</h4>
-<ul>
-<li>
-<p><code>[Variable]-&gt;condition: [Text]</code></p>
-</li>
-<li>
-<p><code>[Variable]([yesText])-&gt;[Position]</code></p>
-</li>
-<li>
-<p><code>[Variable]([noText])-&gt;[Position]</code></p>
-</li>
-</ul>
-<div><pre><code><span><span>```</span><span>flow</span>
-<span>cond=>condition: Process?
-process=>operation: Process
-e=>end: End
-
-cond(yes)->process->e
-cond(no)->e</span>
-<span>```</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><i>Not supported content</i><h4 id="平行"> 平行</h4>
-<p>定义同时开始的多个程序。</p>
-<ul>
-<li><code>[Variable]-&gt;parallel: [Text]</code></li>
-<li><code>[Variable](path1, direction)-&gt;[Position]</code></li>
-<li><code>[Variable](path1, direction)-&gt;[Position]</code></li>
-</ul>
-<div><pre><code><span><span>```</span><span>flow</span>
-<span>para=>parallel: parallel tasks
-process=>operation: Process
-e=>end: End
-
-para(path1, bottom)->process->e
-para(path2)->e</span>
-<span>```</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><i>Not supported content</i><h3 id="链接"> 链接</h3>
-<p>连接方式在流程图中节点定义后描述，使用 <code>-&gt;</code> 指定一个节点之间的链接，例如 <code>nodeVar1-&gt;nodeVar2-&gt;nodeVar3</code></p>
-<p>流程可以被分开:</p>
-<div><pre><code>nodeVar1->nodeVar2
-nodeVar2->nodeVar3
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p>连接格式定义如下:</p>
-<p><code>&lt;node variable name&gt;[(&lt;specificaion1&gt;[, &lt;specification2])]-&gt;&lt;node variable name&gt;[[(&lt;specificaion1&gt;[, &lt;specification2])]-&gt;&lt;node variable name&gt;]</code></p>
-<p>在 <code>[]</code> 中的项是可选的。</p>
-<h3 id="方向"> 方向</h3>
-<p>以下方向可用，并定义了连接将从节点离开的方向。如果指定符不止一个，则总是最后一个。所有节点都有默认方向，这使其成为可选规范。<code>&lt;direction&gt;</code> 的可选值为:</p>
-<ul>
-<li><code>left</code></li>
-<li><code>right</code></li>
-<li><code>top</code></li>
-<li><code>bottom</code></li>
-</ul>
-<h3 id="节点特定说明符"> 节点特定说明符</h3>
-<p>每个节点变量都有可选的说明符，例如方向，有些变量有特殊的说明符，具体取决于下面定义的节点类型。在 <code>()</code> 中的变量名后添加说明符，并用<code>,</code> 分隔，例如 <code>nodeVar (spec1，spec2)</code>。</p>
-<ul>
-<li>
-<p><strong>start</strong>
-<strong>operation</strong>
-<strong>inputoutput</strong>
-<strong>subroutine</strong></p>
-<p>可选方向</p>
-<p><code>startVar(&lt;direction&gt;)-&gt;nextNode</code></p>
-<p><code>operationVar(&lt;direction&gt;)-&gt;nextNode</code></p>
-<p><code>inputoutputVar(&lt;direction&gt;)-&gt;nextNode</code></p>
-<p><code>subroutineVar(&lt;direction&gt;)-&gt;nextNode</code></p>
-</li>
-<li>
-<p><strong>condition</strong></p>
-<p>必需指定 <code>yes</code> or <code>no</code></p>
-<p>可选方向</p>
-<div><pre><code>conditionalVar(yes, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode1
-conditionalVar(no, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode2
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div></li>
-<li>
-<p><strong>parallel</strong></p>
-<p>Required path specification of <code>path1</code>, <code>path2</code>, or <code>path3</code></p>
-<p>Optional direction</p>
-<div><pre><code>parallelVar(path1, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode1
-parallelVar(path2, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode2
-parallelVar(path3, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode3
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div></li>
-</ul>
-<h3 id="网址"> 网址</h3>
-<p>可以使用 <code>:&gt;</code> 运算符将外部链接添加到节点。</p>
-<p><code>[blank]</code> 指定打开新的页面</p>
-<div><pre><code>st=>start: Start:>http://www.google.com[blank]
-e=>end: End:>http://www.yahoo.com
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><h3 id="建议"> 建议</h3>
-<p>文本中可能不应该使用的符号: <code>=&gt;</code>、<code>-&gt;</code>、 <code>:&gt;</code>、<code>|</code>、<code>@&gt;</code> 和 <code>:$</code></p>
-<p>如果要在流程图中强调特定路径，则可以另外定义它，如下所示:</p>
-<div><pre><code>st@&gt;op1({&quot;stroke&quot;:&quot;Red&quot;})@&gt;cond({&quot;stroke&quot;:&quot;Red&quot;,&quot;stroke-width&quot;:6,&quot;arrow-end&quot;:&quot;classic-wide-long&quot;})@&gt;c2({&quot;stroke&quot;:&quot;Red&quot;})@&gt;op2({&quot;stroke&quot;:&quot;Red&quot;})@&gt;e({&quot;stroke&quot;:&quot;Red&quot;})
-</code></pre>
-<div><span>1</span><br></div></div>]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-10-13T05:36:44.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">代码演示</title>
-    <id>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/demo/</id>
-    <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/guide/demo/"/>
-    <updated>2021-02-28T09:14:42.000Z</updated>
-    <summary type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持代码案例。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持代码案例。</p>
-
-<h2 id="配置"> 配置</h2>
-<div><div><br><br><br><br><br><br><div>&nbsp;</div><br><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span>
-    <span>[</span>
-      <span>"md-enhance"</span><span>,</span>
-      <span>{</span>
-        <span>// 启用代码演示</span>
-        demo<span>:</span> <span>true</span><span>,</span>
-      <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-  <span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><h2 id="语法"> 语法</h2>
-<p>请使用以下语法：</p>
-<div><pre><code>::: demo [类型] 可选的标题文字
-
-<span><span>```</span><span>html</span>
-<span><span>&lt;!-- ↑ 使用可用的语言 --></span>
-<span>&lt;!-- 放置你的代码 --></span>
-<span>&lt;!-- 你可以有多个代码块 --></span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>json</span>
-<span>// json block 作为插件配置
-{
-  // 放置你的配置 (optional)
-}</span>
-<span>```</span></span>
-
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br></div></div><div><p>Tips</p>
-<p>JSON 块是可选的。</p>
-</div>
-<p>该插件支持三种类型：</p>
-<ul>
-<li>normal (默认)</li>
-<li>vue</li>
-<li>react</li>
-</ul>
-<h3 id="normal"> Normal</h3>
-<p>写法:</p>
-<div><pre><code>::: demo 可选的标题文字
-
-<span><span>```</span><span>html</span>
-<span><span>&lt;!-- html code --></span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>js</span>
-<span><span>// js code</span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>css</span>
-<span><span>/* css code */</span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>json</span>
-<span>// 配置 (可选)
-{
-  "jsLib": [
-    ...
-  ],
-  "cssLib":[
-    ...
-  ]
-}</span>
-<span>```</span></span>
-
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br></div></div><h3 id="vue"> Vue</h3>
-<p>语法:</p>
-<div><pre><code>::: demo [vue] 可选的标题文字
-
-<span><span>```</span><span>vue</span>
-<span>&lt;!-- ↑ 你也可以使用 html -->
-&lt;template>
-  &lt;!-- vue 模板 -->
-&lt;/template>
-&lt;script>
-export default {
-  // vue 组件
-};
-&lt;/script>
-&lt;style>
-/* css 代码 */
-&lt;/style></span>
-<span>```</span></span>
-
-<span><span>```</span><span>json</span>
-<span>// 配置 (可选)</span>
-<span>```</span></span>
-
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br></div></div><h3 id="react"> React</h3>
-<p>语法:</p>
-<div><pre><code>::: demo [react] 可选的标题文字
-
-<span><span>```</span><span>js</span>
-<span><span>export</span> <span>default</span> <span>class</span> <span>App</span> <span>extends</span> <span>React<span>.</span>Component</span> <span>{</span>
-  <span>// react 组件</span>
-<span>}</span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>css</span>
-<span><span>/* 你的 css 内容 */</span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>json</span>
-<span>// 配置 (可选)</span>
-<span>```</span></span>
-
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br></div></div><div><p>Note</p>
-<p>该插件未捆绑任何库，因此你必须通过在 <code>.vuepress/config.js</code> 文件中设置 <code>head</code> 来导入它们。</p>
-<div><pre><code><span>// .vuepress/config.js</span>
-module<span>.</span>exports <span>=</span> <span>{</span>
-  head<span>:</span> <span>[</span>
-    <span>// react 需要 React, ReactDOM 和 Babel 库</span>
-    <span>[</span>
-      <span>"script"</span><span>,</span>
-      <span>{</span> src<span>:</span> <span>"https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"</span> <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-    <span>[</span>
-      <span>"script"</span><span>,</span>
-      <span>{</span>
-        src<span>:</span>
-          <span>"https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"</span><span>,</span>
-      <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-    <span>[</span>
-      <span>"script"</span><span>,</span>
-      <span>{</span> src<span>:</span> <span>"https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"</span> <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-    <span>// vue 只需要 vue 库</span>
-    <span>[</span><span>"script"</span><span>,</span> <span>{</span> src<span>:</span> <span>"https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"</span> <span>}</span><span>]</span><span>,</span>
-  <span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br></div></div><p>我们还进行了增强: 如果你导入 Babel，则将使用 babel 将脚本解析为 es6，以确保能在浏览器上正常运行。</p>
-</div>
-<h3 id="可用的语言"> 可用的语言</h3>
-<p>你可以在演示块中使用不同语言。</p>
-<p>当你设置其他语言时，由于插件无法解析它们，因此演示将被禁用只显示代码。插件将提供一个 &quot;在 CodePen 中打开&quot; 按钮允许用户直接在 CodePen 打开代码。</p>
-<p>可用的 HTML 语言:</p>
-<ul>
-<li><code>&quot;html&quot;</code> (默认)</li>
-<li><code>&quot;slim&quot;</code></li>
-<li><code>&quot;haml&quot;</code></li>
-<li><code>&quot;markdown&quot;</code></li>
-</ul>
-<blockquote>
-<p>你也可以在代码块中使用 <code>md</code>。</p>
-</blockquote>
-<p>可用的 JS 语言:</p>
-<ul>
-<li><code>&quot;javascript&quot;</code> (default)</li>
-<li><code>&quot;coffeescript&quot;</code></li>
-<li><code>&quot;babel&quot;</code></li>
-<li><code>&quot;livescript&quot;</code></li>
-<li><code>&quot;typescript&quot;</code></li>
-</ul>
-<blockquote>
-<p>你也可以在代码块中使用 <code>js</code>, <code>ts</code>, <code>coffee</code> 和 <code>ls</code>。</p>
-</blockquote>
-<p>可用的 CSS 语言:</p>
-<ul>
-<li><code>&quot;css&quot;</code> (default)</li>
-<li><code>&quot;less&quot;</code></li>
-<li><code>&quot;scss&quot;</code></li>
-<li><code>&quot;sass&quot;</code></li>
-<li><code>&quot;stylus&quot;</code></li>
-</ul>
-<blockquote>
-<p>你也可以在代码块中使用 <code>styl</code>。</p>
-</blockquote>
-<h2 id="演示"> 演示</h2>
-
-          <div
-            id="code-demo-e18e4abe"
-           
-  
- data-title="%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%20Demo"
-
-            data-code="%7B%22html%22%3A%22%3Ch1%3EMr.Hope%3C%2Fh1%3E%5Cn%3Cp%3E%3Cspan%20id%3D%5C%22very%5C%22%3E%E5%8D%81%E5%88%86%3C%2Fspan%3E%20%E5%B8%85%3C%2Fp%3E%5Cn%22%2C%22js%22%3A%22document.querySelector(%5C%22%23very%5C%22).addEventListener(%5C%22click%5C%22%2C%20()%20%3D%3E%20%7B%5Cn%20%20alert(%5C%22%E5%8D%81%E5%88%86%E5%B8%85%5C%22)%3B%5Cn%7D)%3B%5Cn%22%2C%22css%22%3A%22span%20%7B%5Cn%20%20color%3A%20red%3B%5Cn%7D%5Cn%22%7D"
-          >
-              <div>
-                
-              </div>
-              <div>
-                <div>
-<div><pre><code><span><span><span>&lt;</span>h1</span><span>></span></span>Mr.Hope<span><span><span>&lt;/</span>h1</span><span>></span></span>
-<span><span><span>&lt;</span>p</span><span>></span></span><span><span><span>&lt;</span>span</span> <span>id</span><span><span>=</span><span>"</span>very<span>"</span></span><span>></span></span>十分<span><span><span>&lt;/</span>span</span><span>></span></span> 帅<span><span><span>&lt;/</span>p</span><span>></span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><div><pre><code>document<span>.</span><span>querySelector</span><span>(</span><span>"#very"</span><span>)</span><span>.</span><span>addEventListener</span><span>(</span><span>"click"</span><span>,</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
-  <span>alert</span><span>(</span><span>"十分帅"</span><span>)</span><span>;</span>
-<span>}</span><span>)</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span>span</span> <span>{</span>
-  <span>color</span><span>:</span> red<span>;</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>
-            </div>
-          </div>
-          
-        </div>
-<div><pre><code>::: demo 一个普通 Demo
-
-<span><span>```</span><span>html</span>
-<span><span><span><span>&lt;</span>h1</span><span>></span></span>Mr.Hope<span><span><span>&lt;/</span>h1</span><span>></span></span>
-<span><span><span>&lt;</span>p</span><span>></span></span><span><span><span>&lt;</span>span</span> <span>id</span><span><span>=</span><span>"</span>very<span>"</span></span><span>></span></span>十分<span><span><span>&lt;/</span>span</span><span>></span></span> 帅<span><span><span>&lt;/</span>p</span><span>></span></span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>js</span>
-<span>document<span>.</span><span>querySelector</span><span>(</span><span>"#very"</span><span>)</span><span>.</span><span>addEventListener</span><span>(</span><span>"click"</span><span>,</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
-  <span>alert</span><span>(</span><span>"十分帅"</span><span>)</span><span>;</span>
-<span>}</span><span>)</span><span>;</span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>css</span>
-<span><span>span</span> <span>{</span>
-  <span>color</span><span>:</span> red<span>;</span>
-<span>}</span></span>
-<span>```</span></span>
-
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br></div></div>
-          <div
-            id="code-demo-3973beae"
-           
-  data-type="react"
- data-title="%E4%B8%80%E4%B8%AA%20React%20Demo"
-
-            data-code="%7B%22js%22%3A%22export%20default%20class%20App%20extends%20React.Component%20%7B%5Cn%20%20constructor(props)%20%7B%5Cn%20%20%20%20super(props)%3B%5Cn%20%20%20%20this.state%20%3D%20%7B%20message%3A%20%5C%22%E5%8D%81%E5%88%86%E5%B8%85%5C%22%20%7D%3B%5Cn%20%20%7D%5Cn%20%20render()%20%7B%5Cn%20%20%20%20return%20(%5Cn%20%20%20%20%20%20%3Cdiv%20className%3D%5C%22box-react%5C%22%3E%5Cn%20%20%20%20%20%20%20%20Mr.Hope%20%3Cspan%3E%7Bthis.state.message%7D%3C%2Fspan%3E%5Cn%20%20%20%20%20%20%3C%2Fdiv%3E%5Cn%20%20%20%20)%3B%5Cn%20%20%7D%5Cn%7D%5Cn%22%2C%22css%22%3A%22.box-react%20span%20%7B%5Cn%20%20color%3A%20red%3B%5Cn%7D%5Cn%22%7D"
-          >
-              <div>
-                
-              </div>
-              <div>
-                <div>
-<div><pre><code><span>export</span> <span>default</span> <span>class</span> <span>App</span> <span>extends</span> <span>React<span>.</span>Component</span> <span>{</span>
-  <span>constructor</span><span>(</span><span>props</span><span>)</span> <span>{</span>
-    <span>super</span><span>(</span>props<span>)</span><span>;</span>
-    <span>this</span><span>.</span>state <span>=</span> <span>{</span> message<span>:</span> <span>"十分帅"</span> <span>}</span><span>;</span>
-  <span>}</span>
-  <span>render</span><span>(</span><span>)</span> <span>{</span>
-    <span>return</span> <span>(</span>
-      <span>&lt;</span>div className<span>=</span><span>"box-react"</span><span>></span>
-        Mr<span>.</span>Hope <span>&lt;</span>span<span>></span><span>{</span><span>this</span><span>.</span>state<span>.</span>message<span>}</span><span>&lt;</span><span>/</span>span<span>></span>
-      <span>&lt;</span><span>/</span>div<span>></span>
-    <span>)</span><span>;</span>
-  <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><div><pre><code><span>.box-react span</span> <span>{</span>
-  <span>color</span><span>:</span> red<span>;</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>
-            </div>
-          </div>
-          
-        </div>
-<div><pre><code>::: demo [react] 一个 React Demo
-
-<span><span>```</span><span>js</span>
-<span><span>export</span> <span>default</span> <span>class</span> <span>App</span> <span>extends</span> <span>React<span>.</span>Component</span> <span>{</span>
-  <span>constructor</span><span>(</span><span>props</span><span>)</span> <span>{</span>
-    <span>super</span><span>(</span>props<span>)</span><span>;</span>
-    <span>this</span><span>.</span>state <span>=</span> <span>{</span> message<span>:</span> <span>"十分帅"</span> <span>}</span><span>;</span>
-  <span>}</span>
-  <span>render</span><span>(</span><span>)</span> <span>{</span>
-    <span>return</span> <span>(</span>
-      <span>&lt;</span>div className<span>=</span><span>"box-react"</span><span>></span>
-        Mr<span>.</span>Hope <span>&lt;</span>span<span>></span><span>{</span><span>this</span><span>.</span>state<span>.</span>message<span>}</span><span>&lt;</span><span>/</span>span<span>></span>
-      <span>&lt;</span><span>/</span>div<span>></span>
-    <span>)</span><span>;</span>
-  <span>}</span>
-<span>}</span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>css</span>
-<span><span>.box-react span</span> <span>{</span>
-  <span>color</span><span>:</span> red<span>;</span>
-<span>}</span></span>
-<span>```</span></span>
-
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br></div></div>
-          <div
-            id="code-demo-08f119be"
-           
-  data-type="vue"
- data-title="%E4%B8%80%E4%B8%AA%20Vue%20Demo"
-
-            data-code="%7B%22vue%22%3A%22%3Ctemplate%3E%5Cn%20%20%3Cdiv%20class%3D%5C%22box-vue%5C%22%3E%5Cn%20%20%20%20Mr.Hope%20%3Cspan%3E%7B%7B%20message%20%7D%7D%3C%2Fspan%3E%5Cn%20%20%3C%2Fdiv%3E%5Cn%3C%2Ftemplate%3E%5Cn%3Cscript%3E%5Cnexport%20default%20%7B%5Cn%20%20data%3A%20()%20%3D%3E%20(%7B%20message%3A%20%5C%22%E5%8D%81%E5%88%86%E5%B8%85%5C%22%20%7D)%2C%5Cn%7D%3B%5Cn%3C%2Fscript%3E%5Cn%3Cstyle%3E%5Cn.box-vue%20span%20%7B%5Cn%20%20color%3A%20red%3B%5Cn%7D%5Cn%3C%2Fstyle%3E%5Cn%22%7D"
-          >
-              <div>
-                
-              </div>
-              <div>
-                <div>
-<div><pre><code><span><span><span>&lt;</span>template</span><span>></span></span>
-  <span><span><span>&lt;</span>div</span> <span>class</span><span><span>=</span><span>"</span>box-vue<span>"</span></span><span>></span></span>
-    Mr.Hope <span><span><span>&lt;</span>span</span><span>></span></span>{{ message }}<span><span><span>&lt;/</span>span</span><span>></span></span>
-  <span><span><span>&lt;/</span>div</span><span>></span></span>
-<span><span><span>&lt;/</span>template</span><span>></span></span>
-<span><span><span>&lt;</span>script</span><span>></span></span><span><span>
-<span>export</span> <span>default</span> <span>{</span>
-  <span>data</span><span>:</span> <span>(</span><span>)</span> <span>=></span> <span>(</span><span>{</span> message<span>:</span> <span>"十分帅"</span> <span>}</span><span>)</span><span>,</span>
-<span>}</span><span>;</span>
-</span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
-<span><span><span>&lt;</span>style</span><span>></span></span><span><span>
-<span>.box-vue span</span> <span>{</span>
-  <span>color</span><span>:</span> red<span>;</span>
-<span>}</span>
-</span></span><span><span><span>&lt;/</span>style</span><span>></span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br></div></div>
-            </div>
-          </div>
-          
-        </div>
-<div><pre><code>::: demo [vue] 一个 Vue Demo
-
-<span><span>```</span><span>vue</span>
-<span>&lt;template>
-  &lt;div>
-    Mr.Hope &lt;span>{{ message }}&lt;/span>
-  &lt;/div>
-&lt;/template>
-&lt;script>
-export default {
-  data: () => ({ message: "十分帅" }),
-};
-&lt;/script>
-&lt;style>
-.box-vue span {
-  color: red;
-}
-&lt;/style></span>
-<span>```</span></span>
-
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br></div></div>
-          <div
-            id="code-demo-2b9215d0"
-           
-  
- data-title="%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%20Demo"
-
-            data-code="%7B%22md%22%3A%22%23%20%E6%A0%87%E9%A2%98%5Cn%5Cn%E5%8D%81%E5%88%86%E5%B8%85%5Cn%22%2C%22ts%22%3A%22const%20message%3A%20string%20%3D%20%5C%22Mr.Hope%5C%22%3B%5Cn%5Cndocument.querySelector(%5C%22h1%5C%22).innerHTML%20%3D%20message%3B%5Cn%22%2C%22scss%22%3A%22h1%20%7B%5Cn%20%20font-style%3A%20italic%3B%5Cn%5Cn%20%20%2B%20p%20%7B%5Cn%20%20%20%20color%3A%20red%3B%5Cn%20%20%7D%5Cn%7D%5Cn%22%7D"
-          >
-              <div>
-                
-              </div>
-              <div>
-                <div>
-<div><pre><code><span><span>#</span> 标题</span>
-
-十分帅
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span>const</span> message<span>:</span> <span>string</span> <span>=</span> <span>"Mr.Hope"</span><span>;</span>
-
-document<span>.</span><span>querySelector</span><span>(</span><span>"h1"</span><span>)</span><span>.</span>innerHTML <span>=</span> message<span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span>h1 </span><span>{</span>
-  <span>font-style</span><span>:</span> italic<span>;</span>
-
-  <span>+ p </span><span>{</span>
-    <span>color</span><span>:</span> red<span>;</span>
-  <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div>
-            </div>
-          </div>
-          
-        </div>
-<div><pre><code>::: demo 一个普通 Demo
-
-<span><span>```</span><span>md</span>
-<span><span><span>#</span> 标题</span>
-
-十分帅</span>
-<span>```</span></span>
-
-<span><span>```</span><span>ts</span>
-<span><span>const</span> message<span>:</span> <span>string</span> <span>=</span> <span>"Mr.Hope"</span><span>;</span>
-
-document<span>.</span><span>querySelector</span><span>(</span><span>"h1"</span><span>)</span><span>.</span>innerHTML <span>=</span> message<span>;</span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>scss</span>
-<span><span>h1 </span><span>{</span>
-  <span>font-style</span><span>:</span> italic<span>;</span>
-
-  <span>+ p </span><span>{</span>
-    <span>color</span><span>:</span> red<span>;</span>
-  <span>}</span>
-<span>}</span></span>
-<span>```</span></span>
-
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br></div></div>]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-11-17T09:58:20.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">自定义对齐</title>
-    <id>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/align/</id>
-    <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/guide/align/"/>
-    <updated>2021-02-03T11:24:42.000Z</updated>
-    <summary type="html"><![CDATA[<p>通过对 <code>vuepress-plugin-container</code> 进行额外的配置注入，你可以使用</p>
-<div><pre><code>::: center
-要居中的段落
-:::
-<div>
-<p>要居右的段落</p>
-</div>
-<p></code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>来对你的段落对齐进行自定义。</p></p>
-]]></summary>
-    <content type="html"><![CDATA[<p>通过对 <code>vuepress-plugin-container</code> 进行额外的配置注入，你可以使用</p>
-<div><pre><code>::: center
-要居中的段落
-:::
-
-::: right
-要居右的段落
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>来对你的段落对齐进行自定义。</p>
-
-<h2 id="配置"> 配置</h2>
-<div><div><br><br><br><br><br><br><div>&nbsp;</div><br><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span>
-    <span>[</span>
-      <span>"md-enhance"</span><span>,</span>
-      <span>{</span>
-        <span>// 启用自定义对齐</span>
-        align<span>:</span> <span>true</span><span>,</span>
-      <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-  <span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><h2 id="演示"> 演示</h2>
-<div><p>W.I.P</p>
-<p>vuepress-theme-hope v2 仍在制作中，API 可能会有</p>
-<div>
-<p>重大的变动。</p>
-</div>
-<p>如果你在使用过程中遇到了 bug，可以</p>
-<div>
-<p><a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues" target="_blank" rel="noopener noreferrer">提一个 issue</a>。</p>
-</div>
-</div>
-<div><pre><code>:::: danger W.I.P
-vuepress-theme-hope v2 仍在制作中，API 可能会有
-
-::: center
-重大的变动。
-:::
-
-如果你在使用过程中遇到了 bug，可以
-
-::: right
-<span>[<span>提一个 issue</span>](<span>https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues</span>)</span>。
-:::
-
-::::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br></div></div><h2 id="其他自定义容器"> 其他自定义容器</h2>
-<div><p>Info</p>
-<p>信息容器。</p>
-</div>
-<div><p>Tips</p>
-<p>提示容器</p>
-</div>
-<div><p>Note</p>
-<p>警告容器</p>
-</div>
-<div><p>Warning</p>
-<p>危险容器</p>
-</div>
-<details><summary>DETAILS</summary>
-<p>详情容器</p>
-</details>
-<div><p>自定义标题</p>
-<p>信息容器</p>
-</div>
-<div><p>自定义标题</p>
-<p>提示容器</p>
-</div>
-<div><p>自定义标题</p>
-<p>警告容器</p>
-</div>
-<div><p>自定义标题</p>
-<p>危险容器</p>
-</div>
-<details><summary>自定义标题</summary>
-<p>详情容器</p>
-</details>
-<div><pre><code>::: info
-信息容器。
-:::
-
-::: tip
-提示容器
-:::
-
-::: warning
-警告容器
-:::
-
-::: danger
-危险容器
-:::
-
-::: details
-详情容器
-:::
-
-::: info 自定义标题
-信息容器
-:::
-
-::: tip 自定义标题
-提示容器
-:::
-
-::: warning 自定义标题
-警告容器
-:::
-
-::: danger 自定义标题
-危险容器
-:::
-
-::: details 自定义标题
-详情容器
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br></div></div>]]></content>
     <author>
       <name>Mr.Hope</name>
     </author>
