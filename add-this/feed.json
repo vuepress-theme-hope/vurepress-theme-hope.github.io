@@ -51,12 +51,12 @@
       "tags": []
     },
     {
-      "title": "配置",
-      "url": "https://vuepress-theme-hope.github.io/add-this/zh/config/",
-      "id": "https://vuepress-theme-hope.github.io/add-this/zh/config/",
-      "content_html": "<h2 id=\"pubid\"> pubid</h2>\n<ul>\n<li>类型: <code>string</code></li>\n<li>必填: 是</li>\n</ul>\n<p>Add this 的 pubid</p>\n",
+      "title": "主页",
+      "url": "https://vuepress-theme-hope.github.io/add-this/zh/",
+      "id": "https://vuepress-theme-hope.github.io/add-this/zh/",
+      "content_html": "<h2 id=\"使用插件\"> 使用插件</h2>\n<h3 id=\"安装\"> 安装</h3>\n<CodeGroup>\n<CodeGroupItem title=\"yarn\">\n<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-add-this\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n<CodeGroupItem title=\"npm\">\n<div><pre><code><span>npm</span> i -D vuepress-plugin-add-this\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n</CodeGroup>\n<h3 id=\"使用\"> 使用</h3>\n<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>\n  plugins<span>:</span> <span>[</span><span>[</span><span>\"add-this\"</span><span>,</span> <span>{</span> pubid<span>:</span> <span>\"你的 pubid\"</span> <span>}</span><span>]</span><span>]</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre>\n<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>",
       "date_published": "2020-10-13T05:36:44.000Z",
-      "date_modified": "2020-11-17T09:58:20.000Z",
+      "date_modified": "2021-02-24T15:41:50.000Z",
       "authors": [
         {
           "name": "Mr.Hope"
@@ -79,12 +79,12 @@
       "tags": []
     },
     {
-      "title": "主页",
-      "url": "https://vuepress-theme-hope.github.io/add-this/zh/",
-      "id": "https://vuepress-theme-hope.github.io/add-this/zh/",
-      "content_html": "<h2 id=\"使用插件\"> 使用插件</h2>\n<h3 id=\"安装\"> 安装</h3>\n<CodeGroup>\n<CodeGroupItem title=\"yarn\">\n<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-add-this\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n<CodeGroupItem title=\"npm\">\n<div><pre><code><span>npm</span> i -D vuepress-plugin-add-this\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n</CodeGroup>\n<h3 id=\"使用\"> 使用</h3>\n<div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>\n  plugins<span>:</span> <span>[</span><span>[</span><span>\"add-this\"</span><span>,</span> <span>{</span> pubid<span>:</span> <span>\"你的 pubid\"</span> <span>}</span><span>]</span><span>]</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre>\n<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>",
+      "title": "配置",
+      "url": "https://vuepress-theme-hope.github.io/add-this/zh/config/",
+      "id": "https://vuepress-theme-hope.github.io/add-this/zh/config/",
+      "content_html": "<h2 id=\"pubid\"> pubid</h2>\n<ul>\n<li>类型: <code>string</code></li>\n<li>必填: 是</li>\n</ul>\n<p>Add this 的 pubid</p>\n",
       "date_published": "2020-10-13T05:36:44.000Z",
-      "date_modified": "2021-02-24T15:41:50.000Z",
+      "date_modified": "2020-11-17T09:58:20.000Z",
       "authors": [
         {
           "name": "Mr.Hope"

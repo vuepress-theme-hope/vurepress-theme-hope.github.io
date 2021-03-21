@@ -331,12 +331,12 @@
       "tags": []
     },
     {
-      "title": "Valine",
-      "url": "https://vuepress-theme-hope.github.io/comment/zh/guide/valine/",
-      "id": "https://vuepress-theme-hope.github.io/comment/zh/guide/valine/",
-      "content_html": "<h1 id=\"valine\"> Valine</h1>\n<p>借助 Valine，插件实现了无后端开启阅读量展示与评论功能。</p>\n<h2 id=\"获取-app-id-和-app-key\"> 获取 APP ID 和 APP Key</h2>\n<p>请先 <a href=\"https://leancloud.cn/dashboard/login.html#/signin\" target=\"_blank\" rel=\"noopener noreferrer\">登录</a> 或 <a href=\"https://leancloud.cn/dashboard/login.html#/signup\" target=\"_blank\" rel=\"noopener noreferrer\">注册</a> LeanCloud, 进入控制台后点击左下角创建应用。</p>\n<p>应用创建好以后，进入刚刚创建的应用，选择左下角的 <code>设置 &gt; 应用 Key</code>，然后就能看到你的 <code>APP ID</code> 和 <code>APP Key</code> 了。</p>\n<div><pre><code>options <span>=</span> <span>{</span>\n  type<span>:</span> <span>\"valine\"</span><span>,</span>\n  appId<span>:</span> <span>\"...\"</span><span>,</span> <span>// your appId</span>\n  appKey<span>:</span> <span>\"...\"</span><span>,</span> <span>// your appKey</span>\n<span>}</span><span>;</span>\n</code></pre>\n<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>将对应的 <code>APP ID</code> 和 <code>APP Key</code> 填入， Valine 即配置完成。</p>\n<p>Valine 评论的其他配置将在 <a href=\"./../config/valine.html\">配置</a> 中列出。</p>\n<div><p>Tips</p>\n<p>更多配置与使用，请见 <a href=\"https://valine.js.org\" target=\"_blank\" rel=\"noopener noreferrer\">Valine 官方文档</a>。</p>\n</div>\n",
+      "title": "主页",
+      "url": "https://vuepress-theme-hope.github.io/comment/zh/",
+      "id": "https://vuepress-theme-hope.github.io/comment/zh/",
+      "content_html": "<h2 id=\"安装\"> 安装</h2>\n<CodeGroup>\n<CodeGroupItem title=\"yarn\">\n<div><pre><code><span>yarn</span> <span>add</span> -D @mr-hope/vuepress-plugin-comment\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n<CodeGroupItem title=\"npm\">\n<div><pre><code><span>npm</span> i -D @mr-hope/vuepress-plugin-comment\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n</CodeGroup>\n<h2 id=\"使用\"> 使用</h2>\n<div><pre><code><span>// .vuepress/config.js</span>\nmodule<span>.</span>exports <span>=</span> <span>{</span>\n  plugins<span>:</span> <span>[</span>\n    <span>[</span>\n      <span>\"@mr-hope/comment\"</span><span>,</span>\n      <span>{</span>\n        <span>// 配置选项</span>\n      <span>}</span><span>,</span>\n    <span>]</span><span>,</span>\n  <span>]</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre>\n<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div>",
       "date_published": "2020-10-13T05:36:44.000Z",
-      "date_modified": "2021-01-19T14:31:34.000Z",
+      "date_modified": "2021-02-24T15:41:50.000Z",
       "authors": [
         {
           "name": "Mr.Hope"
@@ -359,12 +359,12 @@
       "tags": []
     },
     {
-      "title": "主页",
-      "url": "https://vuepress-theme-hope.github.io/comment/zh/",
-      "id": "https://vuepress-theme-hope.github.io/comment/zh/",
-      "content_html": "<h2 id=\"安装\"> 安装</h2>\n<CodeGroup>\n<CodeGroupItem title=\"yarn\">\n<div><pre><code><span>yarn</span> <span>add</span> -D @mr-hope/vuepress-plugin-comment\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n<CodeGroupItem title=\"npm\">\n<div><pre><code><span>npm</span> i -D @mr-hope/vuepress-plugin-comment\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n</CodeGroup>\n<h2 id=\"使用\"> 使用</h2>\n<div><pre><code><span>// .vuepress/config.js</span>\nmodule<span>.</span>exports <span>=</span> <span>{</span>\n  plugins<span>:</span> <span>[</span>\n    <span>[</span>\n      <span>\"@mr-hope/comment\"</span><span>,</span>\n      <span>{</span>\n        <span>// 配置选项</span>\n      <span>}</span><span>,</span>\n    <span>]</span><span>,</span>\n  <span>]</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre>\n<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div>",
+      "title": "Valine",
+      "url": "https://vuepress-theme-hope.github.io/comment/zh/guide/valine/",
+      "id": "https://vuepress-theme-hope.github.io/comment/zh/guide/valine/",
+      "content_html": "<h1 id=\"valine\"> Valine</h1>\n<p>借助 Valine，插件实现了无后端开启阅读量展示与评论功能。</p>\n<h2 id=\"获取-app-id-和-app-key\"> 获取 APP ID 和 APP Key</h2>\n<p>请先 <a href=\"https://leancloud.cn/dashboard/login.html#/signin\" target=\"_blank\" rel=\"noopener noreferrer\">登录</a> 或 <a href=\"https://leancloud.cn/dashboard/login.html#/signup\" target=\"_blank\" rel=\"noopener noreferrer\">注册</a> LeanCloud, 进入控制台后点击左下角创建应用。</p>\n<p>应用创建好以后，进入刚刚创建的应用，选择左下角的 <code>设置 &gt; 应用 Key</code>，然后就能看到你的 <code>APP ID</code> 和 <code>APP Key</code> 了。</p>\n<div><pre><code>options <span>=</span> <span>{</span>\n  type<span>:</span> <span>\"valine\"</span><span>,</span>\n  appId<span>:</span> <span>\"...\"</span><span>,</span> <span>// your appId</span>\n  appKey<span>:</span> <span>\"...\"</span><span>,</span> <span>// your appKey</span>\n<span>}</span><span>;</span>\n</code></pre>\n<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>将对应的 <code>APP ID</code> 和 <code>APP Key</code> 填入， Valine 即配置完成。</p>\n<p>Valine 评论的其他配置将在 <a href=\"./../config/valine.html\">配置</a> 中列出。</p>\n<div><p>Tips</p>\n<p>更多配置与使用，请见 <a href=\"https://valine.js.org\" target=\"_blank\" rel=\"noopener noreferrer\">Valine 官方文档</a>。</p>\n</div>\n",
       "date_published": "2020-10-13T05:36:44.000Z",
-      "date_modified": "2021-02-24T15:41:50.000Z",
+      "date_modified": "2021-01-19T14:31:34.000Z",
       "authors": [
         {
           "name": "Mr.Hope"
