@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-03-21T04:19:34.551Z</updated>
+  <updated>2021-03-21T04:25:10.900Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/reading-time/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/reading-time/"/>
@@ -14,62 +14,6 @@
   <contributor>
     <name>Mr.Hope</name>
   </contributor>
-  <entry>
-    <title type="html">Home</title>
-    <id>https://vuepress-theme-hope.github.io/reading-time/</id>
-    <link href="https://vuepress-theme-hope.github.io/reading-time/"/>
-    <updated>2021-02-24T15:41:50.000Z</updated>
-    <content type="html"><![CDATA[<p>This plugin will inject expect reading time and word count statistics into the page object.</p>
-<p>Will automatically inject <code>readingTime</code> into the page object:</p>
-<div><pre><code><span>interface</span> <span>ReadingTime</span> <span>{</span>
-  <span>/** Expect reading minute */</span>
-  minutes<span>:</span> <span>number</span><span>;</span>
-  <span>/** Words count */</span>
-  words<span>:</span> <span>number</span><span>;</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="how-to-use"> How to use</h2>
-<h3 id="install"> Install</h3>
-<CodeGroup>
-<CodeGroupItem title="yarn">
-<div><pre><code><span>yarn</span> <span>add</span> -D @mr-hope/vuepress-plugin-reading-time
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-<CodeGroupItem title="npm">
-<div><pre><code><span>npm</span> i -D @mr-hope/vuepress-plugin-reading-time
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-</CodeGroup>
-<h3 id="usage"> Usage</h3>
-<div><pre><code><span>// .vuepress/config.js</span>
-module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span>
-    <span>[</span>
-      <span>"@mr-hope/reading-time"</span><span>,</span>
-      <span>{</span>
-        <span>// your options</span>
-      <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-  <span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><h2 id="plugin-options"> Plugin options</h2>
-<h3 id="wordperminute"> wordPerminute</h3>
-<ul>
-<li>Type: <code>number</code></li>
-<li>Default: <code>300</code></li>
-</ul>
-<p>Reading speed (words per minute)</p>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-10-13T09:17:32.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
   <entry>
     <title type="html">主页</title>
     <id>https://vuepress-theme-hope.github.io/reading-time/zh/</id>
@@ -116,6 +60,62 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <li>默认值: <code>300</code></li>
 </ul>
 <p>每分钟阅读字数</p>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-10-13T09:17:32.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">Home</title>
+    <id>https://vuepress-theme-hope.github.io/reading-time/</id>
+    <link href="https://vuepress-theme-hope.github.io/reading-time/"/>
+    <updated>2021-02-24T15:41:50.000Z</updated>
+    <content type="html"><![CDATA[<p>This plugin will inject expect reading time and word count statistics into the page object.</p>
+<p>Will automatically inject <code>readingTime</code> into the page object:</p>
+<div><pre><code><span>interface</span> <span>ReadingTime</span> <span>{</span>
+  <span>/** Expect reading minute */</span>
+  minutes<span>:</span> <span>number</span><span>;</span>
+  <span>/** Words count */</span>
+  words<span>:</span> <span>number</span><span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="how-to-use"> How to use</h2>
+<h3 id="install"> Install</h3>
+<CodeGroup>
+<CodeGroupItem title="yarn">
+<div><pre><code><span>yarn</span> <span>add</span> -D @mr-hope/vuepress-plugin-reading-time
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="npm">
+<div><pre><code><span>npm</span> i -D @mr-hope/vuepress-plugin-reading-time
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+<h3 id="usage"> Usage</h3>
+<div><pre><code><span>// .vuepress/config.js</span>
+module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>[</span>
+      <span>"@mr-hope/reading-time"</span><span>,</span>
+      <span>{</span>
+        <span>// your options</span>
+      <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><h2 id="plugin-options"> Plugin options</h2>
+<h3 id="wordperminute"> wordPerminute</h3>
+<ul>
+<li>Type: <code>number</code></li>
+<li>Default: <code>300</code></li>
+</ul>
+<p>Reading speed (words per minute)</p>
 ]]></content>
     <author>
       <name>Mr.Hope</name>
