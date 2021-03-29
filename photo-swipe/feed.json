@@ -53,20 +53,6 @@
       "tags": []
     },
     {
-      "title": "配置",
-      "url": "https://vuepress-theme-hope.github.io/photo-swipe/zh/config/",
-      "id": "https://vuepress-theme-hope.github.io/photo-swipe/zh/config/",
-      "content_html": "<h2 id=\"选项\"> 选项</h2>\n<h3 id=\"container\"> container</h3>\n<ul>\n<li>类型: <code>string</code></li>\n<li>默认值: <code>'.theme-default-content'</code></li>\n</ul>\n<p>选择的范围，只有 container 元素内部的图片才会支持点击缩放。</p>\n<h3 id=\"selector\"> selector</h3>\n<ul>\n<li>类型: <code>string</code></li>\n<li>默认值: <code>'.theme-default-content :not(a) &gt; img'</code></li>\n</ul>\n<p>图片选择器</p>\n<h3 id=\"options\"> options</h3>\n<p>传递给 <a href=\"http://photoswipe.com/\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>photo-swipe</strong></a> 的额外选项</p>\n",
-      "date_published": "2020-10-13T05:36:44.000Z",
-      "date_modified": "2020-11-17T09:58:20.000Z",
-      "authors": [
-        {
-          "name": "Mr.Hope"
-        }
-      ],
-      "tags": []
-    },
-    {
       "title": "指南",
       "url": "https://vuepress-theme-hope.github.io/photo-swipe/zh/guide/",
       "id": "https://vuepress-theme-hope.github.io/photo-swipe/zh/guide/",
@@ -75,6 +61,20 @@
       "image": "https://vuepress-theme-hope.github.io/photo-swipe/logo.png",
       "date_published": "2021-02-26T15:56:22.000Z",
       "date_modified": "2021-02-26T15:56:22.000Z",
+      "authors": [
+        {
+          "name": "Mr.Hope"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "title": "配置",
+      "url": "https://vuepress-theme-hope.github.io/photo-swipe/zh/config/",
+      "id": "https://vuepress-theme-hope.github.io/photo-swipe/zh/config/",
+      "content_html": "<h2 id=\"选项\"> 选项</h2>\n<h3 id=\"container\"> container</h3>\n<ul>\n<li>类型: <code>string</code></li>\n<li>默认值: <code>'.theme-default-content'</code></li>\n</ul>\n<p>选择的范围，只有 container 元素内部的图片才会支持点击缩放。</p>\n<h3 id=\"selector\"> selector</h3>\n<ul>\n<li>类型: <code>string</code></li>\n<li>默认值: <code>'.theme-default-content :not(a) &gt; img'</code></li>\n</ul>\n<p>图片选择器</p>\n<h3 id=\"options\"> options</h3>\n<p>传递给 <a href=\"http://photoswipe.com/\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>photo-swipe</strong></a> 的额外选项</p>\n",
+      "date_published": "2020-10-13T05:36:44.000Z",
+      "date_modified": "2020-11-17T09:58:20.000Z",
       "authors": [
         {
           "name": "Mr.Hope"
