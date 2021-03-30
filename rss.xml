@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/</link>
     <description>A vuepress theme with tons of features✨</description>
     <language>en-US</language>
-    <pubDate>Tue, 30 Mar 2021 11:42:14 GMT</pubDate>
-    <lastBuildDate>Tue, 30 Mar 2021 11:42:14 GMT</lastBuildDate>
+    <pubDate>Tue, 30 Mar 2021 11:53:50 GMT</pubDate>
+    <lastBuildDate>Tue, 30 Mar 2021 11:53:50 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -3150,6 +3150,12 @@ write something here ~
 <li>Default: <code>&quot;mobile&quot;</code></li>
 </ul>
 <p>Whether to hide navbar when scrolling down</p>
+<h2 id="hidesitetitleonmobile"> hideSiteTitleonMobile</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>true</code></li>
+</ul>
+<p>Whether display icon in sidebar</p>
 <h2 id="sidebaricon"> sidebarIcon</h2>
 <ul>
 <li>Type: <code>boolean</code></li>
@@ -16704,6 +16710,12 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
 <li>默认值: <code>&quot;mobile&quot;</code></li>
 </ul>
 <p>是否在向下滚动时自动隐藏导航栏</p>
+<h2 id="hidesitetitleonmobile"> hideSiteTitleonMobile</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否在移动视图下隐藏站点名称</p>
 <h2 id="sidebaricon"> sidebarIcon</h2>
 <ul>
 <li>类型: <code>boolean</code></li>

@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-03-30T11:42:14.750Z</updated>
+  <updated>2021-03-30T11:53:50.783Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/"/>
@@ -3293,7 +3293,7 @@ write something here ~
     <title type="html">Theme Layout Config</title>
     <id>https://vuepress-theme-hope.github.io/config/theme/apperance/</id>
     <link href="https://vuepress-theme-hope.github.io/config/theme/apperance/"/>
-    <updated>2021-02-26T05:26:49.000Z</updated>
+    <updated>2021-03-30T11:50:08.000Z</updated>
     <content type="html"><![CDATA[<p>These are appearance configuration options provided by the theme.</p>
 <h2 id="algoliatype"> algoliaType</h2>
 <ul>
@@ -3325,6 +3325,12 @@ write something here ~
 <li>Default: <code>&quot;mobile&quot;</code></li>
 </ul>
 <p>Whether to hide navbar when scrolling down</p>
+<h2 id="hidesitetitleonmobile"> hideSiteTitleonMobile</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>true</code></li>
+</ul>
+<p>Whether display icon in sidebar</p>
 <h2 id="sidebaricon"> sidebarIcon</h2>
 <ul>
 <li>Type: <code>boolean</code></li>
@@ -17807,7 +17813,7 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
     <title type="html">主题布局配置</title>
     <id>https://vuepress-theme-hope.github.io/zh/config/theme/apperance/</id>
     <link href="https://vuepress-theme-hope.github.io/zh/config/theme/apperance/"/>
-    <updated>2021-02-26T05:26:49.000Z</updated>
+    <updated>2021-03-30T11:50:08.000Z</updated>
     <content type="html"><![CDATA[<p>以下是主题提供的外观配置选项，一般情况下你无需关注他们，它们仅为有相关配置需求的少数用户提供。</p>
 <h2 id="algoliatype"> algoliaType</h2>
 <ul>
@@ -17839,6 +17845,12 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
 <li>默认值: <code>&quot;mobile&quot;</code></li>
 </ul>
 <p>是否在向下滚动时自动隐藏导航栏</p>
+<h2 id="hidesitetitleonmobile"> hideSiteTitleonMobile</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否在移动视图下隐藏站点名称</p>
 <h2 id="sidebaricon"> sidebarIcon</h2>
 <ul>
 <li>类型: <code>boolean</code></li>
