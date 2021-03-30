@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/md-enhance/</link>
     <description>Markdown Enhancement for VuePress</description>
     <language>en-US</language>
-    <pubDate>Tue, 30 Mar 2021 03:36:19 GMT</pubDate>
-    <lastBuildDate>Tue, 30 Mar 2021 03:36:19 GMT</lastBuildDate>
+    <pubDate>Tue, 30 Mar 2021 07:46:18 GMT</pubDate>
+    <lastBuildDate>Tue, 30 Mar 2021 07:46:18 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -310,6 +310,220 @@ A custom details container
 :::
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>Flowchart</title>
+      <link>https://vuepress-theme-hope.github.io/md-enhance/guide/flowchart/</link>
+      <guid>https://vuepress-theme-hope.github.io/md-enhance/guide/flowchart/</guid>
+      <source url="https://vuepress-theme-hope.github.io/md-enhance/rss.xml">Flowchart</source>
+      <description>&amp;lt;p&amp;gt;Let the Markdown file support flow chart in your VuePress site&amp;lt;/p&amp;gt;
+</description>
+      <pubDate>Tue, 07 Jan 2020 06:44:41 GMT</pubDate>
+      <content:encoded><![CDATA[<p>Let the Markdown file support flow chart in your VuePress site</p>
+
+<p>This plugin is using <a href="https://github.com/adrai/flowchart.js" target="_blank" rel="noopener noreferrer">flowchart.js</a> to support this feature.</p>
+<h2 id="configuration"> Configuration</h2>
+<div><div><br><br><br><br><br><br><div>&nbsp;</div><br><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>[</span>
+      <span>"md-enhance"</span><span>,</span>
+      <span>{</span>
+        <span>// Enable flowchart</span>
+        flowchart<span>:</span> <span>true</span><span>,</span>
+      <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><h2 id="syntax"> Syntax</h2>
+<h3 id="markdown-syntax"> Markdown Syntax</h3>
+<div><pre><code><span><span>```</span><span>flow [preset]</span>
+<span>
+&lt;!-- Your flowchart code here. -->
+</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>Available presets for now:</p>
+<ul>
+<li><code>vue</code> (default)</li>
+<li><code>ant</code></li>
+</ul>
+<h2 id="demo"> Demo</h2>
+<i>Not supported content</i><div><pre><code><span><span>```</span><span>flow</span>
+<span>st=>start: Start|past:>http://www.google.com[blank]
+e=>end: End|future:>http://www.google.com
+op1=>operation: My Operation|past
+op2=>operation: Stuff|current
+sub1=>subroutine: My Subroutine|invalid
+cond=>condition: Yes
+or No?|approved:>http://www.google.com
+c2=>condition: Good idea|rejected
+io=>inputoutput: catch something...|future
+
+st->op1(right)->cond
+cond(yes, right)->c2
+cond(no)->sub1(left)->op1
+c2(yes)->io->e
+c2(no)->op2->e</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br></div></div><h2 id="flowchart-intro"> Flowchart Intro</h2>
+<h3 id="node-types"> Node Types</h3>
+<p>Defines the shape that the node will take.</p>
+<h3 id="start-end"> start &amp; end</h3>
+<p>Used as the first node where flows start from.
+Default text is <code>Start</code>.</p>
+<ul>
+<li><code>[Variable]-&gt;start: [Text]</code></li>
+</ul>
+<p>Used as the last node where a flow ends.
+Default text is <code>End</code>.</p>
+<ul>
+<li><code>[Variable]-&gt;end: [Text]</code></li>
+</ul>
+<div><pre><code><span><span>```</span><span>flow</span>
+<span>st=>start: Start
+e=>end: End
+
+st->e</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><i>Not supported content</i><h3 id="operation"> operation</h3>
+<p>Indicates that an operation needs to happen in the flow.</p>
+<ul>
+<li><code>[Variable]-&gt;operation: [Text]</code></li>
+</ul>
+<div><pre><code><span><span>```</span><span>flow</span>
+<span>process=>operation: Operation
+e=>end: End
+
+process->e</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><i>Not supported content</i><h3 id="inputoutput"> inputoutput</h3>
+<p>Indicates that IO happens in a flow.</p>
+<ul>
+<li><code>[Variable]-&gt;inputoutput: [Text]</code></li>
+</ul>
+<div><pre><code><span><span>```</span><span>flow</span>
+<span>process=>inputoutput: Inputoutput
+e=>end: End
+
+process->e</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><i>Not supported content</i><h3 id="subroutine"> subroutine</h3>
+<p>Indicates that a subroutine happens in the flow and that there should be another flowchart that documents this subroutine.</p>
+<ul>
+<li><code>[Variable]-&gt;subroutine: [Text]</code></li>
+</ul>
+<div><pre><code><span><span>```</span><span>flow</span>
+<span>process=>subroutine: Subroutine
+e=>end: End
+
+process->e</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><i>Not supported content</i><h3 id="condition"> condition</h3>
+<p>Allows for a conditional or logical statement to direct the flow into one of two or more paths.</p>
+<ul>
+<li>
+<p><code>[Variable]-&gt;condition: [Text]</code></p>
+</li>
+<li>
+<p><code>[Variable]([yesText])-&gt;[Position]</code></p>
+</li>
+<li>
+<p><code>[Variable]([noText])-&gt;[Position]</code></p>
+</li>
+</ul>
+<div><pre><code><span><span>```</span><span>flow</span>
+<span>cond=>condition: Process?
+process=>operation: Process
+e=>end: End
+
+cond(yes)->process->e
+cond(no)->e</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><i>Not supported content</i><h3 id="parallel"> parallel</h3>
+<p>Allows for multiple flows to happen simultaneously.</p>
+<ul>
+<li><code>[Variable]-&gt;parallel: [Text]</code></li>
+<li><code>[Variable](path1, direction)-&gt;[Position]</code></li>
+<li><code>[Variable](path1, direction)-&gt;[Position]</code></li>
+</ul>
+<div><pre><code><span><span>```</span><span>flow</span>
+<span>para=>parallel: parallel tasks
+process=>operation: Process
+e=>end: End
+
+para(path1, bottom)->process->e
+para(path2)->e</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><i>Not supported content</i><h2 id="connections"> Connections</h2>
+<p>Connections are defined in their own section below the node definitions.</p>
+<p>The <code>-&gt;</code> operator specifies a connection from one node to another like <code>nodeVar1-&gt;nodeVar2-&gt;nodeVar3</code>.</p>
+<p>Not all nodes need to be specified in one string and can be separaged like so</p>
+<div><pre><code>nodeVar1->nodeVar2
+nodeVar2->nodeVar3
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p>Connection syntax is as follows:</p>
+<p><code>&lt;node variable name&gt;[(&lt;specificaion1&gt;[, &lt;specification2])]-&gt;&lt;node variable name&gt;[[(&lt;specificaion1&gt;[, &lt;specification2])]-&gt;&lt;node variable name&gt;]</code></p>
+<p>Items in <code>[]</code> are optional.</p>
+<h3 id="directions"> Directions</h3>
+<p>The following directions are available and define the direction the connection will leave the node from. If there are more than one specifiers, it is always the last. All nodes have a default direction making this an optional specification. <code>&lt;direction&gt;</code> will be used and one of the below list should be used in its place.</p>
+<ul>
+<li><code>left</code></li>
+<li><code>right</code></li>
+<li><code>top</code></li>
+<li><code>bottom</code></li>
+</ul>
+<h3 id="node-specific-specifiers-by-type"> Node Specific Specifiers by Type</h3>
+<p>Each node variables has optional specifiers, like direction, and some have special specifiers depending on the node type that are defined below. Specifiers are added after the variable name in <code>()</code> and separated with <code>,</code> like <code>nodeVar(spec1, spec2)</code>.</p>
+<ul>
+<li>
+<p><strong>start</strong>
+<strong>operation</strong>
+<strong>inputoutput</strong>
+<strong>subroutine</strong></p>
+<p>Optional direction</p>
+<p><code>startVar(&lt;direction&gt;)-&gt;nextNode</code></p>
+<p><code>operationVar(&lt;direction&gt;)-&gt;nextNode</code></p>
+<p><code>inputoutputVar(&lt;direction&gt;)-&gt;nextNode</code></p>
+<p><code>subroutineVar(&lt;direction&gt;)-&gt;nextNode</code></p>
+</li>
+<li>
+<p><strong>condition</strong></p>
+<p>Required logical specification of <code>yes</code> or <code>no</code></p>
+<p>Optional direction</p>
+<div><pre><code>conditionalVar(yes, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode1
+conditionalVar(no, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode2
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div></li>
+<li>
+<p><strong>parallel</strong></p>
+<p>Required path specification of <code>path1</code>, <code>path2</code>, or <code>path3</code></p>
+<p>Optional direction</p>
+<div><pre><code>parallelVar(path1, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode1
+parallelVar(path2, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode2
+parallelVar(path3, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode3
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div></li>
+</ul>
+<h3 id="links"> Links</h3>
+<p>A external link can be added to a node with the <code>:&gt;</code> operator.</p>
+<p>The <code>st</code> node is linked with <code>http://www.google.com</code> and will open a new tab because <code>[blank]</code> is at the end of the URL.</p>
+<p>The <code>e</code> node is linked with <code>http://www.yahoo.com</code> and will cause the page to navigate to that page instead of opening a new tab.</p>
+<div><pre><code>st=>start: Start:>http://www.google.com[blank]
+e=>end: End:>http://www.yahoo.com
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><h2 id="advice"> Advice</h2>
+<p>Symbols that should possibly not be used in the text: <code>=&gt;</code> and <code>-&gt;</code> and <code>:&gt;</code> and <code>|</code> and <code>@&gt;</code> and <code>:$</code></p>
+<p>To emphasize a specific path in your flowchart, you can define it like this:</p>
+<div><pre><code>st@>op1({"stroke":"Red"})@>cond({"stroke":"Red","stroke-width":6,"arrow-end":"classic-wide-long"})@>c2({"stroke":"Red"})@>op2({"stroke":"Red"})@>e({"stroke":"Red"})
+</code></pre>
+<div><span>1</span><br></div></div>]]></content:encoded>
     </item>
     <item>
       <title>Code Demo</title>
@@ -733,220 +947,6 @@ document<span>.</span><span>querySelector</span><span>(</span><span>"h1"</span><
 :::
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>Flowchart</title>
-      <link>https://vuepress-theme-hope.github.io/md-enhance/guide/flowchart/</link>
-      <guid>https://vuepress-theme-hope.github.io/md-enhance/guide/flowchart/</guid>
-      <source url="https://vuepress-theme-hope.github.io/md-enhance/rss.xml">Flowchart</source>
-      <description>&amp;lt;p&amp;gt;Let the Markdown file support flow chart in your VuePress site&amp;lt;/p&amp;gt;
-</description>
-      <pubDate>Tue, 07 Jan 2020 06:44:41 GMT</pubDate>
-      <content:encoded><![CDATA[<p>Let the Markdown file support flow chart in your VuePress site</p>
-
-<p>This plugin is using <a href="https://github.com/adrai/flowchart.js" target="_blank" rel="noopener noreferrer">flowchart.js</a> to support this feature.</p>
-<h2 id="configuration"> Configuration</h2>
-<div><div><br><br><br><br><br><br><div>&nbsp;</div><br><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span>
-    <span>[</span>
-      <span>"md-enhance"</span><span>,</span>
-      <span>{</span>
-        <span>// Enable flowchart</span>
-        flowchart<span>:</span> <span>true</span><span>,</span>
-      <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-  <span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><h2 id="syntax"> Syntax</h2>
-<h3 id="markdown-syntax"> Markdown Syntax</h3>
-<div><pre><code><span><span>```</span><span>flow [preset]</span>
-<span>
-&lt;!-- Your flowchart code here. -->
-</span>
-<span>```</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>Available presets for now:</p>
-<ul>
-<li><code>vue</code> (default)</li>
-<li><code>ant</code></li>
-</ul>
-<h2 id="demo"> Demo</h2>
-<i>Not supported content</i><div><pre><code><span><span>```</span><span>flow</span>
-<span>st=>start: Start|past:>http://www.google.com[blank]
-e=>end: End|future:>http://www.google.com
-op1=>operation: My Operation|past
-op2=>operation: Stuff|current
-sub1=>subroutine: My Subroutine|invalid
-cond=>condition: Yes
-or No?|approved:>http://www.google.com
-c2=>condition: Good idea|rejected
-io=>inputoutput: catch something...|future
-
-st->op1(right)->cond
-cond(yes, right)->c2
-cond(no)->sub1(left)->op1
-c2(yes)->io->e
-c2(no)->op2->e</span>
-<span>```</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br></div></div><h2 id="flowchart-intro"> Flowchart Intro</h2>
-<h3 id="node-types"> Node Types</h3>
-<p>Defines the shape that the node will take.</p>
-<h3 id="start-end"> start &amp; end</h3>
-<p>Used as the first node where flows start from.
-Default text is <code>Start</code>.</p>
-<ul>
-<li><code>[Variable]-&gt;start: [Text]</code></li>
-</ul>
-<p>Used as the last node where a flow ends.
-Default text is <code>End</code>.</p>
-<ul>
-<li><code>[Variable]-&gt;end: [Text]</code></li>
-</ul>
-<div><pre><code><span><span>```</span><span>flow</span>
-<span>st=>start: Start
-e=>end: End
-
-st->e</span>
-<span>```</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><i>Not supported content</i><h3 id="operation"> operation</h3>
-<p>Indicates that an operation needs to happen in the flow.</p>
-<ul>
-<li><code>[Variable]-&gt;operation: [Text]</code></li>
-</ul>
-<div><pre><code><span><span>```</span><span>flow</span>
-<span>process=>operation: Operation
-e=>end: End
-
-process->e</span>
-<span>```</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><i>Not supported content</i><h3 id="inputoutput"> inputoutput</h3>
-<p>Indicates that IO happens in a flow.</p>
-<ul>
-<li><code>[Variable]-&gt;inputoutput: [Text]</code></li>
-</ul>
-<div><pre><code><span><span>```</span><span>flow</span>
-<span>process=>inputoutput: Inputoutput
-e=>end: End
-
-process->e</span>
-<span>```</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><i>Not supported content</i><h3 id="subroutine"> subroutine</h3>
-<p>Indicates that a subroutine happens in the flow and that there should be another flowchart that documents this subroutine.</p>
-<ul>
-<li><code>[Variable]-&gt;subroutine: [Text]</code></li>
-</ul>
-<div><pre><code><span><span>```</span><span>flow</span>
-<span>process=>subroutine: Subroutine
-e=>end: End
-
-process->e</span>
-<span>```</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><i>Not supported content</i><h3 id="condition"> condition</h3>
-<p>Allows for a conditional or logical statement to direct the flow into one of two or more paths.</p>
-<ul>
-<li>
-<p><code>[Variable]-&gt;condition: [Text]</code></p>
-</li>
-<li>
-<p><code>[Variable]([yesText])-&gt;[Position]</code></p>
-</li>
-<li>
-<p><code>[Variable]([noText])-&gt;[Position]</code></p>
-</li>
-</ul>
-<div><pre><code><span><span>```</span><span>flow</span>
-<span>cond=>condition: Process?
-process=>operation: Process
-e=>end: End
-
-cond(yes)->process->e
-cond(no)->e</span>
-<span>```</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><i>Not supported content</i><h3 id="parallel"> parallel</h3>
-<p>Allows for multiple flows to happen simultaneously.</p>
-<ul>
-<li><code>[Variable]-&gt;parallel: [Text]</code></li>
-<li><code>[Variable](path1, direction)-&gt;[Position]</code></li>
-<li><code>[Variable](path1, direction)-&gt;[Position]</code></li>
-</ul>
-<div><pre><code><span><span>```</span><span>flow</span>
-<span>para=>parallel: parallel tasks
-process=>operation: Process
-e=>end: End
-
-para(path1, bottom)->process->e
-para(path2)->e</span>
-<span>```</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><i>Not supported content</i><h2 id="connections"> Connections</h2>
-<p>Connections are defined in their own section below the node definitions.</p>
-<p>The <code>-&gt;</code> operator specifies a connection from one node to another like <code>nodeVar1-&gt;nodeVar2-&gt;nodeVar3</code>.</p>
-<p>Not all nodes need to be specified in one string and can be separaged like so</p>
-<div><pre><code>nodeVar1->nodeVar2
-nodeVar2->nodeVar3
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p>Connection syntax is as follows:</p>
-<p><code>&lt;node variable name&gt;[(&lt;specificaion1&gt;[, &lt;specification2])]-&gt;&lt;node variable name&gt;[[(&lt;specificaion1&gt;[, &lt;specification2])]-&gt;&lt;node variable name&gt;]</code></p>
-<p>Items in <code>[]</code> are optional.</p>
-<h3 id="directions"> Directions</h3>
-<p>The following directions are available and define the direction the connection will leave the node from. If there are more than one specifiers, it is always the last. All nodes have a default direction making this an optional specification. <code>&lt;direction&gt;</code> will be used and one of the below list should be used in its place.</p>
-<ul>
-<li><code>left</code></li>
-<li><code>right</code></li>
-<li><code>top</code></li>
-<li><code>bottom</code></li>
-</ul>
-<h3 id="node-specific-specifiers-by-type"> Node Specific Specifiers by Type</h3>
-<p>Each node variables has optional specifiers, like direction, and some have special specifiers depending on the node type that are defined below. Specifiers are added after the variable name in <code>()</code> and separated with <code>,</code> like <code>nodeVar(spec1, spec2)</code>.</p>
-<ul>
-<li>
-<p><strong>start</strong>
-<strong>operation</strong>
-<strong>inputoutput</strong>
-<strong>subroutine</strong></p>
-<p>Optional direction</p>
-<p><code>startVar(&lt;direction&gt;)-&gt;nextNode</code></p>
-<p><code>operationVar(&lt;direction&gt;)-&gt;nextNode</code></p>
-<p><code>inputoutputVar(&lt;direction&gt;)-&gt;nextNode</code></p>
-<p><code>subroutineVar(&lt;direction&gt;)-&gt;nextNode</code></p>
-</li>
-<li>
-<p><strong>condition</strong></p>
-<p>Required logical specification of <code>yes</code> or <code>no</code></p>
-<p>Optional direction</p>
-<div><pre><code>conditionalVar(yes, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode1
-conditionalVar(no, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode2
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div></li>
-<li>
-<p><strong>parallel</strong></p>
-<p>Required path specification of <code>path1</code>, <code>path2</code>, or <code>path3</code></p>
-<p>Optional direction</p>
-<div><pre><code>parallelVar(path1, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode1
-parallelVar(path2, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode2
-parallelVar(path3, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode3
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div></li>
-</ul>
-<h3 id="links"> Links</h3>
-<p>A external link can be added to a node with the <code>:&gt;</code> operator.</p>
-<p>The <code>st</code> node is linked with <code>http://www.google.com</code> and will open a new tab because <code>[blank]</code> is at the end of the URL.</p>
-<p>The <code>e</code> node is linked with <code>http://www.yahoo.com</code> and will cause the page to navigate to that page instead of opening a new tab.</p>
-<div><pre><code>st=>start: Start:>http://www.google.com[blank]
-e=>end: End:>http://www.yahoo.com
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><h2 id="advice"> Advice</h2>
-<p>Symbols that should possibly not be used in the text: <code>=&gt;</code> and <code>-&gt;</code> and <code>:&gt;</code> and <code>|</code> and <code>@&gt;</code> and <code>:$</code></p>
-<p>To emphasize a specific path in your flowchart, you can define it like this:</p>
-<div><pre><code>st@>op1({"stroke":"Red"})@>cond({"stroke":"Red","stroke-width":6,"arrow-end":"classic-wide-long"})@>c2({"stroke":"Red"})@>op2({"stroke":"Red"})@>e({"stroke":"Red"})
-</code></pre>
-<div><span>1</span><br></div></div>]]></content:encoded>
     </item>
     <item>
       <title>Footnote</title>
