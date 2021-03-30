@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/</link>
     <description>A vuepress theme with tons of features✨</description>
     <language>en-US</language>
-    <pubDate>Mon, 29 Mar 2021 10:33:04 GMT</pubDate>
-    <lastBuildDate>Mon, 29 Mar 2021 10:33:04 GMT</lastBuildDate>
+    <pubDate>Tue, 30 Mar 2021 03:26:16 GMT</pubDate>
+    <lastBuildDate>Tue, 30 Mar 2021 03:26:16 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -12478,244 +12478,6 @@ export default { // Highlighted
 ]]></content:encoded>
     </item>
     <item>
-      <title>评论</title>
-      <link>https://vuepress-theme-hope.github.io/zh/guide/feature/comment/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/guide/feature/comment/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">评论</source>
-      <description>&amp;lt;p&amp;gt;通过内置 &amp;lt;a href=&amp;quot;https://vuepress-theme-hope.github.io/comment/zh/&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;&amp;lt;code&amp;gt;@mr-hope/vuepress-plugin-comment&amp;lt;/code&amp;gt;&amp;lt;/a&amp;gt;，&amp;lt;code&amp;gt;vuepress-theme-hope&amp;lt;/code&amp;gt; 实现了评论功能。&amp;lt;/p&amp;gt;
-</description>
-      <category>feature</category>
-      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
-      <content:encoded><![CDATA[<p>通过内置 <a href="https://vuepress-theme-hope.github.io/comment/zh/" target="_blank" rel="noopener noreferrer"><code>@mr-hope/vuepress-plugin-comment</code></a>，<code>vuepress-theme-hope</code> 实现了评论功能。</p>
-
-<h2 id="启用"> 启用 <i>Not supported content</i></h2>
-<div><div><br><br><br><br><div>&nbsp;</div><br><br><div>&nbsp;</div><div>&nbsp;</div><br><br><br><br></div><pre><code><span>// .vuepress/config.js</span>
-module<span>.</span>exports <span>=</span> <span>{</span>
-  themeConfig<span>:</span> <span>{</span>
-    comment<span>:</span> <span>{</span>
-      type<span>:</span> <span>"valine"</span><span>,</span> <span>// "valine" 或 "vssue"</span>
-
-      <span>// valine 模式下</span>
-      appId<span>:</span> <span>"..."</span><span>,</span> <span>// your appId</span>
-      appKey<span>:</span> <span>"..."</span><span>,</span> <span>// your appKey</span>
-    <span>}</span><span>,</span>
-  <span>}</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br></div></div><p>评论功能默认全局启用，配置项为 <code>comment</code>。</p>
-<div><p>Info</p>
-<p>受篇幅限制，完整的评论插件配置，详见 <a href="https://vuepress-theme-hope.github.io/comment" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-comment 插件文档</a>。</p>
-</div>
-<h2 id="评论服务"> 评论服务</h2>
-<p>有两个评论插件可以选择: Valine 和 Vssue。</p>
-<div><p>Valine 与 Vssue 的比较</p>
-<ul>
-<li>Valine 使用 leancloud，支持页面访问量统计，无需登录账号即可评论</li>
-<li>Vssue 使用代码平台仓库的 issue 面板，需要用户登录或注册相应平台账号。</li>
-</ul>
-<p>如果你的站点面向大众而非程序员，推荐使用 Valine。</p>
-</div>
-<h2 id="valine"> Valine</h2>
-<p>借助 Valine，主题实现了无后端开启阅读量展示与评论功能。</p>
-<h3 id="获取-app-id-和-app-key"> 获取 APP ID 和 APP Key</h3>
-<p>请先 <a href="https://leancloud.cn/dashboard/login.html#/signin" target="_blank" rel="noopener noreferrer">登录</a> 或 <a href="https://leancloud.cn/dashboard/login.html#/signup" target="_blank" rel="noopener noreferrer">注册</a> LeanCloud, 进入控制台后点击左下角创建应用。</p>
-<p>应用创建好以后，进入刚刚创建的应用，选择左下角的 <code>设置 &gt; 应用Key</code>，然后就能看到你的 <code>APP ID</code> 和 <code>APP Key</code> 了。</p>
-<div><pre><code><span>{</span>
-  type<span>:</span> <span>'valine'</span><span>,</span>
-  appId<span>:</span> <span>'...'</span><span>,</span> <span>// your appId</span>
-  appKey<span>:</span> <span>'...'</span> <span>// your appKey</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>将对应的 <code>APP ID</code> 和 <code>APP Key</code> 填入， Valine 即配置完成。</p>
-<p>Valine 评论的其他配置将在 <a href="http://vuepress-theme-hope.github.io/comment/zh/config/valine/" target="_blank" rel="noopener noreferrer">配置</a> 中列出。</p>
-<div><p>Tips</p>
-<p>更多配置与使用，请见 <a href="https://valine.js.org" target="_blank" rel="noopener noreferrer">Valine 官方文档</a>。</p>
-</div>
-<h2 id="vssue"> Vssue</h2>
-<h3 id="选择你要使用的代码托管平台"> 选择你要使用的代码托管平台</h3>
-<p>Vssue 支持通过 GitHub, Gitlab, Bitbucket 或者 Gitee 的 Issue 系统来为你的静态页面提供评论功能，你可以选择其中之一来使用。</p>
-<p>前往 <a href="http://vuepress-theme-hope.github.io/comment/zh/guide/supported-platforms/" target="_blank" rel="noopener noreferrer">支持的代码托管平台 - 创建 OAuth App</a> 查看详细指引。</p>
-<p>完成这一步之后，你将会配置好一个 OAuth App，并得到对应的 <code>client id</code> 和 <code>client secret</code>，它们将会用于 Vssue 的使用。</p>
-<ul>
-<li><code>owner</code>: 对应 repository 的拥有者帐号或者团队</li>
-<li><code>repo</code>: 用来存储评论的 repository</li>
-<li><code>clientId</code>: OAuth App 的 <code>client id</code></li>
-<li><code>clientSecret</code>: OAuth App 的 <code>client secret</code> (只有在使用某些平台时需要)</li>
-</ul>
-<h3 id="使用插件"> 使用插件</h3>
-<div><div><br><br><br><br><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><br><br><br></div><pre><code><span>// .vuepress/config.js</span>
-
-module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>{</span>
-    <span>"@mr-hope/comment"</span><span>:</span> <span>{</span>
-      type<span>:</span> <span>"vssue"</span><span>,</span>
-      <span>// 设置 `platform` 而不是 `api`</span>
-      platform<span>:</span> <span>"github"</span><span>,</span>
-
-      <span>// 其他的 Vssue 配置</span>
-      owner<span>:</span> <span>"OWNER_OF_REPO"</span><span>,</span>
-      repo<span>:</span> <span>"NAME_OF_REPO"</span><span>,</span>
-      clientId<span>:</span> <span>"YOUR_CLIENT_ID"</span><span>,</span>
-      clientSecret<span>:</span> <span>"YOUR_CLIENT_SECRET"</span><span>,</span>
-    <span>}</span><span>,</span>
-  <span>}</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br></div></div><div><p>Tips</p>
-<p>唯一的区别在于，你需要设置 <code>platform</code> 而不是对应的 <code>api</code> 包。</p>
-<p><code>@vssue/vuepress-plugin-vssue</code> 会自动根据你设置的 <code>platform</code> 为你解析对应的 API 包:</p>
-<ul>
-<li>Platform <code>github</code> - API 包 <code>@vssue/api-github-v3</code></li>
-<li>Platform <code>github-v4</code> - API 包 <code>@vssue/api-github-v4</code></li>
-<li>Platform <code>gitlab</code> - API 包 <code>@vssue/api-gitlab-v4</code></li>
-<li>Platform <code>bitbucket</code> - API 包 <code>@vssue/api-bitbucket-v2</code></li>
-<li>Platform <code>gitee</code> - API 包 <code>@vssue/api-gitee-v5</code></li>
-<li>Platform <code>gitea</code> - API 包 <code>@vssue/api-gitea-v1</code></li>
-</ul>
-</div>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>代码复制</title>
-      <link>https://vuepress-theme-hope.github.io/zh/guide/feature/copy-code/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/guide/feature/copy-code/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">代码复制</source>
-      <description>&amp;lt;p&amp;gt;如果你是一个程序员，你可能希望你的用户能够一键复制你在正文中展示的代码。&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;针对这一情况，&amp;lt;code&amp;gt;vuepress-theme-hope&amp;lt;/code&amp;gt; 内置了 &amp;lt;a href=&amp;quot;https://vuepress-theme-hope.github.io/copy-code/zh/&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;@mr-hope/copy-code&amp;lt;/a&amp;gt;，提供了一个复制按钮。&amp;lt;/p&amp;gt;
-</description>
-      <category>feature</category>
-      <pubDate>Fri, 26 Feb 2021 16:07:24 GMT</pubDate>
-      <content:encoded><![CDATA[<p>如果你是一个程序员，你可能希望你的用户能够一键复制你在正文中展示的代码。</p>
-<p>针对这一情况，<code>vuepress-theme-hope</code> 内置了 <a href="https://vuepress-theme-hope.github.io/copy-code/zh/" target="_blank" rel="noopener noreferrer">@mr-hope/copy-code</a>，提供了一个复制按钮。</p>
-
-<h2 id="使用"> 使用</h2>
-<p>启用后，本插件会自动添加复制按钮到每个代码块的右下角。</p>
-<p>默认情况下，按钮仅在桌面模式显示，如果你需要在移动端展示这个按钮，请将 <code>themeConfig.copyCode.showInMobile</code> 设置为 <code>true</code>。</p>
-<p>在用户点击复制按钮后，屏幕上会显示一个复制成功的提示。默认的提示时长为 2000ms，如果你需要更改这个时长，请设置 <code>themeConfig.copyCode.duration</code>(单位 ms)，如果你不需要这个提示，请将 <code>themeConfig.copyCode.duration</code> 设置为 <code>0</code>。</p>
-<h2 id="效果"> 效果</h2>
-<div><pre><code><span>// .vuepress/config.js</span>
-module<span>.</span>exports <span>=</span> <span>{</span>
-  themeConfig<span>:</span> <span>{</span>
-    copyCode<span>:</span> <span>{</span><span>}</span><span>,</span>
-  <span>}</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>版权信息</title>
-      <link>https://vuepress-theme-hope.github.io/zh/guide/feature/copyright/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/guide/feature/copyright/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">版权信息</source>
-      <description>&amp;lt;p&amp;gt;有些时候，你可能不想让你的某些文章被他人复制，或者你想让他人在复制时，自动生成一段版权信息到剪切板中。&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;针对这一情况，&amp;lt;code&amp;gt;vuepress-theme-hope&amp;lt;/code&amp;gt; 引入了 &amp;lt;a href=&amp;quot;https://www.npmjs.com/package/vuepress-plugin-copyright&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;vuepress-plugin-copyright&amp;lt;/a&amp;gt;。&amp;lt;/p&amp;gt;
-</description>
-      <category>feature</category>
-      <pubDate>Fri, 26 Feb 2021 09:38:01 GMT</pubDate>
-      <content:encoded><![CDATA[<p>有些时候，你可能不想让你的某些文章被他人复制，或者你想让他人在复制时，自动生成一段版权信息到剪切板中。</p>
-<p>针对这一情况，<code>vuepress-theme-hope</code> 引入了 <a href="https://www.npmjs.com/package/vuepress-plugin-copyright" target="_blank" rel="noopener noreferrer">vuepress-plugin-copyright</a>。</p>
-
-<h2 id="启用插件"> 启用插件</h2>
-<p>由于相当一部分用户将本主题用于构建文档，而文档站点通常不需要附加版权信息，所以本插件并不是默认启用的。</p>
-<p>启用本插件，你需要将主题配置中的 <code>copyright</code> 设置为 true，或者设置 <code>copyright.status</code> 才能启用它。<code>copyright.status</code> 可选的值为 <code>global</code> 和 <code>local</code>，。默认的值是 <code>global</code> 即全局启用 (也是 <code>themeConfig.copyright: true</code> 的状态)。</p>
-<h2 id="使用"> 使用</h2>
-<p>默认设置下，当用户从你的站点复制超过 100 字的消息时，在这段消息的尾部添加版权声明消息。</p>
-<p>版权声明的作者名称会从你在主题中配置的作者信息或站点名称自动生成。</p>
-<h3 id="触发字符数"> 触发字符数 <i>Not supported content</i></h3>
-<p>你可以通过 <code>copyright.minLength</code> 设置触发禁用复制或者追加版权信息的最小字符数，默认为 <code>100</code>。</p>
-<p>在 themeConfig 和 frontmatter 均可以设置这一属性，前者会自动应用于全局，而后者仅作用于特定页面优先级高于前者。</p>
-<h3 id="禁止复制"> 禁止复制</h3>
-<p>在 frontmatter 中将 <code>copyright.noCopy</code> 设置为 <code>true</code>。</p>
-<div><p>Tips</p>
-<p>该行为收到 <code>minLength</code> 的控制，即字符串没有达到 <code>minLength</code> 的值的时候用户仍然可以进行复制操作。</p>
-</div>
-<h3 id="禁止选中"> 禁止选中</h3>
-<p>在 frontmatter 中设置 <code>copyright.noSelect</code> 为 <code>true</code>。</p>
-<h2 id="演示"> 演示</h2>
-<p>请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。</p>
-<h2 id="文档"> 文档</h2>
-<p>关于插件详细信息，请参见 <a href="https://vuepress.github.io/zh/plugins/copyright/#%E9%85%8D%E7%BD%AE%E9%A1%B9" target="_blank" rel="noopener noreferrer">vuepress-plugin-copyright 文档</a></p>
-<div><p>Note</p>
-<p>这是一个 VuePress 社区插件，而不是内置插件。因此，如果你遇到问题，请前往 <a href="https://github.com/vuepress/vuepress-plugin-copyright" target="_blank" rel="noopener noreferrer">它的仓库</a> 寻求帮助。</p>
-</div>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>加密</title>
-      <link>https://vuepress-theme-hope.github.io/zh/guide/feature/encrypt/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/guide/feature/encrypt/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">加密</source>
-      <description>&amp;lt;p&amp;gt;主题支持对特定文件夹或特定的路径进行加密，也支持进行全局范围的加密。&amp;lt;/p&amp;gt;
-&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;警告&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;注意，受到 VuePress 的限制，在未解密前，文章内容仅仅被隐藏，访问者仍可以从源码中获取文章的内容。&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;所以请不要使用该加密功能用于任何敏感、机密的文章与档案，造成的后果请你自负。&amp;lt;/p&amp;gt;
-&amp;lt;/div&amp;gt;
-</description>
-      <category>feature</category>
-      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
-      <content:encoded><![CDATA[<p>主题支持对特定文件夹或特定的路径进行加密，也支持进行全局范围的加密。</p>
-<div><p>Warning</p>
-<p>注意，受到 VuePress 的限制，在未解密前，文章内容仅仅被隐藏，访问者仍可以从源码中获取文章的内容。</p>
-<p>所以请不要使用该加密功能用于任何敏感、机密的文章与档案，造成的后果请你自负。</p>
-</div>
-
-<h2 id="加密配置"> 加密配置</h2>
-<p>你可以在 <code>themeConfig.encrypt</code> 字段配置加密选项。</p>
-<div><pre><code><span>{</span>
-  <span>// 这会加密整个 guide 目录，并且两个密码都是可用的</span>
-  <span>"/guide/"</span><span>:</span> <span>[</span><span>"1234"</span><span>,</span> <span>"5678"</span><span>]</span><span>,</span>
-  <span>// 这只会加密 config/page.html</span>
-  <span>"/config/page.html"</span><span>:</span> <span>"1234"</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>同时，你可以更加方便地在页面的 frontmatter 中配置密码</p>
-<div><pre><code><span><span>---</span>
-<span><span>password</span><span>:</span> abc1234</span>
-<span>---</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>Feed 支持</title>
-      <link>https://vuepress-theme-hope.github.io/zh/guide/feature/feed/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/guide/feature/feed/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">Feed 支持</source>
-      <description>&amp;lt;p&amp;gt;&amp;lt;code&amp;gt;vuepress-theme-hope&amp;lt;/code&amp;gt; 通过内置 &amp;lt;a href=&amp;quot;https://vuepress-theme-hope.github.io/feed/zh/&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;&amp;lt;code&amp;gt;@mr-hope/vuepress-plugin-feed&amp;lt;/code&amp;gt;&amp;lt;/a&amp;gt; 插件来为你提供 feed 支持。&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;主题会自动为你生成以下三种格式的 feed 文件:&amp;lt;/p&amp;gt;
-&amp;lt;ul&amp;gt;
-&amp;lt;li&amp;gt;Atom 1.0 (默认输出为 atom.xml)&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;JSON 1.1 (默认输出为 feed.json)&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;RSS 2.0 (默认输出为 rss.xml)&amp;lt;/li&amp;gt;
-&amp;lt;/ul&amp;gt;
-&amp;lt;p&amp;gt;考虑到现在 Feed 已经很小众，我们旨在提供最小配置来尽可能自动生成详细的 Feed 文件。如果你不需要这个功能，则可以将 &amp;lt;code&amp;gt;themeConfig.feed&amp;lt;/code&amp;gt; 设置为 &amp;lt;code&amp;gt;false&amp;lt;/code&amp;gt; 来禁用该插件。&amp;lt;/p&amp;gt;
-</description>
-      <category>feature</category>
-      <pubDate>Mon, 25 Jan 2021 05:26:34 GMT</pubDate>
-      <content:encoded><![CDATA[<p><code>vuepress-theme-hope</code> 通过内置 <a href="https://vuepress-theme-hope.github.io/feed/zh/" target="_blank" rel="noopener noreferrer"><code>@mr-hope/vuepress-plugin-feed</code></a> 插件来为你提供 feed 支持。</p>
-<p>主题会自动为你生成以下三种格式的 feed 文件:</p>
-<ul>
-<li>Atom 1.0 (默认输出为 atom.xml)</li>
-<li>JSON 1.1 (默认输出为 feed.json)</li>
-<li>RSS 2.0 (默认输出为 rss.xml)</li>
-</ul>
-<p>考虑到现在 Feed 已经很小众，我们旨在提供最小配置来尽可能自动生成详细的 Feed 文件。如果你不需要这个功能，则可以将 <code>themeConfig.feed</code> 设置为 <code>false</code> 来禁用该插件。</p>
-
-<h2 id="频道设置"> 频道设置</h2>
-<p>你可以通过设置 <code>themeConfig.feed.channel</code> 选项来自自定义 Feed 频道的各项信息。</p>
-<p>我们推荐你进行如下设置:</p>
-<ul>
-<li>将建立 Feed 的日期转换为 ISOString 写入到 <code>channel.pubDate</code> 中</li>
-<li>通过 <code>channel.ttl</code> 中设置内容的更新周期(单位: 分钟)</li>
-</ul>
-<p>详细的选项及其默认值详见 <a href="https://vuepress-theme-hope.github.io/feed/zh/config/channel/" target="_blank" rel="noopener noreferrer">Feed 插件频道设置</a></p>
-<h2 id="项目设置"> 项目设置</h2>
-<p>默认情况下，所有文章均会被添加至 feed 流。你可以通过配置 frontmatter 中的 feed 选项，对特定文章的 feed 项目生成进行控制。</p>
-<p>如果你想在 feed 中移除指定页面，你可以在该页面的 frontmatter 中将 <code>feed.enable</code> 设置为 <code>false</code>。</p>
-<p>当然你也可以通过 <code>frontmatter.feed</code> 直接向 feed 插件传入内容。详细的选项及其默认值详见 <a href="https://vuepress-theme-hope.github.io/feed/zh/config/item/" target="_blank" rel="noopener noreferrer">Feed 插件项目设置</a></p>
-<h2 id="输出配置"> 输出配置</h2>
-<p>你可通过配置选项中的 <code>output</code> 来决定输出哪些格式的 Feed 文件以及它们的位置。</p>
-<p>详细的选项及其默认值详见 <a href="https://vuepress-theme-hope.github.io/feed/zh/config/#output" target="_blank" rel="noopener noreferrer">Feed 插件输出设置</a></p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>主题功能配置</title>
       <link>https://vuepress-theme-hope.github.io/zh/config/theme/feature/</link>
       <guid>https://vuepress-theme-hope.github.io/zh/config/theme/feature/</guid>
@@ -13071,6 +12833,244 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <li>默认值: <code>true</code></li>
 </ul>
 <p>是否显示 ”全屏“ 按钮</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>评论</title>
+      <link>https://vuepress-theme-hope.github.io/zh/guide/feature/comment/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/guide/feature/comment/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">评论</source>
+      <description>&amp;lt;p&amp;gt;通过内置 &amp;lt;a href=&amp;quot;https://vuepress-theme-hope.github.io/comment/zh/&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;&amp;lt;code&amp;gt;@mr-hope/vuepress-plugin-comment&amp;lt;/code&amp;gt;&amp;lt;/a&amp;gt;，&amp;lt;code&amp;gt;vuepress-theme-hope&amp;lt;/code&amp;gt; 实现了评论功能。&amp;lt;/p&amp;gt;
+</description>
+      <category>feature</category>
+      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
+      <content:encoded><![CDATA[<p>通过内置 <a href="https://vuepress-theme-hope.github.io/comment/zh/" target="_blank" rel="noopener noreferrer"><code>@mr-hope/vuepress-plugin-comment</code></a>，<code>vuepress-theme-hope</code> 实现了评论功能。</p>
+
+<h2 id="启用"> 启用 <i>Not supported content</i></h2>
+<div><div><br><br><br><br><div>&nbsp;</div><br><br><div>&nbsp;</div><div>&nbsp;</div><br><br><br><br></div><pre><code><span>// .vuepress/config.js</span>
+module<span>.</span>exports <span>=</span> <span>{</span>
+  themeConfig<span>:</span> <span>{</span>
+    comment<span>:</span> <span>{</span>
+      type<span>:</span> <span>"valine"</span><span>,</span> <span>// "valine" 或 "vssue"</span>
+
+      <span>// valine 模式下</span>
+      appId<span>:</span> <span>"..."</span><span>,</span> <span>// your appId</span>
+      appKey<span>:</span> <span>"..."</span><span>,</span> <span>// your appKey</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br></div></div><p>评论功能默认全局启用，配置项为 <code>comment</code>。</p>
+<div><p>Info</p>
+<p>受篇幅限制，完整的评论插件配置，详见 <a href="https://vuepress-theme-hope.github.io/comment" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-comment 插件文档</a>。</p>
+</div>
+<h2 id="评论服务"> 评论服务</h2>
+<p>有两个评论插件可以选择: Valine 和 Vssue。</p>
+<div><p>Valine 与 Vssue 的比较</p>
+<ul>
+<li>Valine 使用 leancloud，支持页面访问量统计，无需登录账号即可评论</li>
+<li>Vssue 使用代码平台仓库的 issue 面板，需要用户登录或注册相应平台账号。</li>
+</ul>
+<p>如果你的站点面向大众而非程序员，推荐使用 Valine。</p>
+</div>
+<h2 id="valine"> Valine</h2>
+<p>借助 Valine，主题实现了无后端开启阅读量展示与评论功能。</p>
+<h3 id="获取-app-id-和-app-key"> 获取 APP ID 和 APP Key</h3>
+<p>请先 <a href="https://leancloud.cn/dashboard/login.html#/signin" target="_blank" rel="noopener noreferrer">登录</a> 或 <a href="https://leancloud.cn/dashboard/login.html#/signup" target="_blank" rel="noopener noreferrer">注册</a> LeanCloud, 进入控制台后点击左下角创建应用。</p>
+<p>应用创建好以后，进入刚刚创建的应用，选择左下角的 <code>设置 &gt; 应用Key</code>，然后就能看到你的 <code>APP ID</code> 和 <code>APP Key</code> 了。</p>
+<div><pre><code><span>{</span>
+  type<span>:</span> <span>'valine'</span><span>,</span>
+  appId<span>:</span> <span>'...'</span><span>,</span> <span>// your appId</span>
+  appKey<span>:</span> <span>'...'</span> <span>// your appKey</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>将对应的 <code>APP ID</code> 和 <code>APP Key</code> 填入， Valine 即配置完成。</p>
+<p>Valine 评论的其他配置将在 <a href="http://vuepress-theme-hope.github.io/comment/zh/config/valine/" target="_blank" rel="noopener noreferrer">配置</a> 中列出。</p>
+<div><p>Tips</p>
+<p>更多配置与使用，请见 <a href="https://valine.js.org" target="_blank" rel="noopener noreferrer">Valine 官方文档</a>。</p>
+</div>
+<h2 id="vssue"> Vssue</h2>
+<h3 id="选择你要使用的代码托管平台"> 选择你要使用的代码托管平台</h3>
+<p>Vssue 支持通过 GitHub, Gitlab, Bitbucket 或者 Gitee 的 Issue 系统来为你的静态页面提供评论功能，你可以选择其中之一来使用。</p>
+<p>前往 <a href="http://vuepress-theme-hope.github.io/comment/zh/guide/supported-platforms/" target="_blank" rel="noopener noreferrer">支持的代码托管平台 - 创建 OAuth App</a> 查看详细指引。</p>
+<p>完成这一步之后，你将会配置好一个 OAuth App，并得到对应的 <code>client id</code> 和 <code>client secret</code>，它们将会用于 Vssue 的使用。</p>
+<ul>
+<li><code>owner</code>: 对应 repository 的拥有者帐号或者团队</li>
+<li><code>repo</code>: 用来存储评论的 repository</li>
+<li><code>clientId</code>: OAuth App 的 <code>client id</code></li>
+<li><code>clientSecret</code>: OAuth App 的 <code>client secret</code> (只有在使用某些平台时需要)</li>
+</ul>
+<h3 id="使用插件"> 使用插件</h3>
+<div><div><br><br><br><br><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><br><br><br></div><pre><code><span>// .vuepress/config.js</span>
+
+module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>{</span>
+    <span>"@mr-hope/comment"</span><span>:</span> <span>{</span>
+      type<span>:</span> <span>"vssue"</span><span>,</span>
+      <span>// 设置 `platform` 而不是 `api`</span>
+      platform<span>:</span> <span>"github"</span><span>,</span>
+
+      <span>// 其他的 Vssue 配置</span>
+      owner<span>:</span> <span>"OWNER_OF_REPO"</span><span>,</span>
+      repo<span>:</span> <span>"NAME_OF_REPO"</span><span>,</span>
+      clientId<span>:</span> <span>"YOUR_CLIENT_ID"</span><span>,</span>
+      clientSecret<span>:</span> <span>"YOUR_CLIENT_SECRET"</span><span>,</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br></div></div><div><p>Tips</p>
+<p>唯一的区别在于，你需要设置 <code>platform</code> 而不是对应的 <code>api</code> 包。</p>
+<p><code>@vssue/vuepress-plugin-vssue</code> 会自动根据你设置的 <code>platform</code> 为你解析对应的 API 包:</p>
+<ul>
+<li>Platform <code>github</code> - API 包 <code>@vssue/api-github-v3</code></li>
+<li>Platform <code>github-v4</code> - API 包 <code>@vssue/api-github-v4</code></li>
+<li>Platform <code>gitlab</code> - API 包 <code>@vssue/api-gitlab-v4</code></li>
+<li>Platform <code>bitbucket</code> - API 包 <code>@vssue/api-bitbucket-v2</code></li>
+<li>Platform <code>gitee</code> - API 包 <code>@vssue/api-gitee-v5</code></li>
+<li>Platform <code>gitea</code> - API 包 <code>@vssue/api-gitea-v1</code></li>
+</ul>
+</div>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>代码复制</title>
+      <link>https://vuepress-theme-hope.github.io/zh/guide/feature/copy-code/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/guide/feature/copy-code/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">代码复制</source>
+      <description>&amp;lt;p&amp;gt;如果你是一个程序员，你可能希望你的用户能够一键复制你在正文中展示的代码。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;针对这一情况，&amp;lt;code&amp;gt;vuepress-theme-hope&amp;lt;/code&amp;gt; 内置了 &amp;lt;a href=&amp;quot;https://vuepress-theme-hope.github.io/copy-code/zh/&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;@mr-hope/copy-code&amp;lt;/a&amp;gt;，提供了一个复制按钮。&amp;lt;/p&amp;gt;
+</description>
+      <category>feature</category>
+      <pubDate>Fri, 26 Feb 2021 16:07:24 GMT</pubDate>
+      <content:encoded><![CDATA[<p>如果你是一个程序员，你可能希望你的用户能够一键复制你在正文中展示的代码。</p>
+<p>针对这一情况，<code>vuepress-theme-hope</code> 内置了 <a href="https://vuepress-theme-hope.github.io/copy-code/zh/" target="_blank" rel="noopener noreferrer">@mr-hope/copy-code</a>，提供了一个复制按钮。</p>
+
+<h2 id="使用"> 使用</h2>
+<p>启用后，本插件会自动添加复制按钮到每个代码块的右下角。</p>
+<p>默认情况下，按钮仅在桌面模式显示，如果你需要在移动端展示这个按钮，请将 <code>themeConfig.copyCode.showInMobile</code> 设置为 <code>true</code>。</p>
+<p>在用户点击复制按钮后，屏幕上会显示一个复制成功的提示。默认的提示时长为 2000ms，如果你需要更改这个时长，请设置 <code>themeConfig.copyCode.duration</code>(单位 ms)，如果你不需要这个提示，请将 <code>themeConfig.copyCode.duration</code> 设置为 <code>0</code>。</p>
+<h2 id="效果"> 效果</h2>
+<div><pre><code><span>// .vuepress/config.js</span>
+module<span>.</span>exports <span>=</span> <span>{</span>
+  themeConfig<span>:</span> <span>{</span>
+    copyCode<span>:</span> <span>{</span><span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>版权信息</title>
+      <link>https://vuepress-theme-hope.github.io/zh/guide/feature/copyright/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/guide/feature/copyright/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">版权信息</source>
+      <description>&amp;lt;p&amp;gt;有些时候，你可能不想让你的某些文章被他人复制，或者你想让他人在复制时，自动生成一段版权信息到剪切板中。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;针对这一情况，&amp;lt;code&amp;gt;vuepress-theme-hope&amp;lt;/code&amp;gt; 引入了 &amp;lt;a href=&amp;quot;https://www.npmjs.com/package/vuepress-plugin-copyright&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;vuepress-plugin-copyright&amp;lt;/a&amp;gt;。&amp;lt;/p&amp;gt;
+</description>
+      <category>feature</category>
+      <pubDate>Fri, 26 Feb 2021 09:38:01 GMT</pubDate>
+      <content:encoded><![CDATA[<p>有些时候，你可能不想让你的某些文章被他人复制，或者你想让他人在复制时，自动生成一段版权信息到剪切板中。</p>
+<p>针对这一情况，<code>vuepress-theme-hope</code> 引入了 <a href="https://www.npmjs.com/package/vuepress-plugin-copyright" target="_blank" rel="noopener noreferrer">vuepress-plugin-copyright</a>。</p>
+
+<h2 id="启用插件"> 启用插件</h2>
+<p>由于相当一部分用户将本主题用于构建文档，而文档站点通常不需要附加版权信息，所以本插件并不是默认启用的。</p>
+<p>启用本插件，你需要将主题配置中的 <code>copyright</code> 设置为 true，或者设置 <code>copyright.status</code> 才能启用它。<code>copyright.status</code> 可选的值为 <code>global</code> 和 <code>local</code>，。默认的值是 <code>global</code> 即全局启用 (也是 <code>themeConfig.copyright: true</code> 的状态)。</p>
+<h2 id="使用"> 使用</h2>
+<p>默认设置下，当用户从你的站点复制超过 100 字的消息时，在这段消息的尾部添加版权声明消息。</p>
+<p>版权声明的作者名称会从你在主题中配置的作者信息或站点名称自动生成。</p>
+<h3 id="触发字符数"> 触发字符数 <i>Not supported content</i></h3>
+<p>你可以通过 <code>copyright.minLength</code> 设置触发禁用复制或者追加版权信息的最小字符数，默认为 <code>100</code>。</p>
+<p>在 themeConfig 和 frontmatter 均可以设置这一属性，前者会自动应用于全局，而后者仅作用于特定页面优先级高于前者。</p>
+<h3 id="禁止复制"> 禁止复制</h3>
+<p>在 frontmatter 中将 <code>copyright.noCopy</code> 设置为 <code>true</code>。</p>
+<div><p>Tips</p>
+<p>该行为收到 <code>minLength</code> 的控制，即字符串没有达到 <code>minLength</code> 的值的时候用户仍然可以进行复制操作。</p>
+</div>
+<h3 id="禁止选中"> 禁止选中</h3>
+<p>在 frontmatter 中设置 <code>copyright.noSelect</code> 为 <code>true</code>。</p>
+<h2 id="演示"> 演示</h2>
+<p>请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。</p>
+<h2 id="文档"> 文档</h2>
+<p>关于插件详细信息，请参见 <a href="https://vuepress.github.io/zh/plugins/copyright/#%E9%85%8D%E7%BD%AE%E9%A1%B9" target="_blank" rel="noopener noreferrer">vuepress-plugin-copyright 文档</a></p>
+<div><p>Note</p>
+<p>这是一个 VuePress 社区插件，而不是内置插件。因此，如果你遇到问题，请前往 <a href="https://github.com/vuepress/vuepress-plugin-copyright" target="_blank" rel="noopener noreferrer">它的仓库</a> 寻求帮助。</p>
+</div>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>加密</title>
+      <link>https://vuepress-theme-hope.github.io/zh/guide/feature/encrypt/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/guide/feature/encrypt/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">加密</source>
+      <description>&amp;lt;p&amp;gt;主题支持对特定文件夹或特定的路径进行加密，也支持进行全局范围的加密。&amp;lt;/p&amp;gt;
+&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;警告&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;注意，受到 VuePress 的限制，在未解密前，文章内容仅仅被隐藏，访问者仍可以从源码中获取文章的内容。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;所以请不要使用该加密功能用于任何敏感、机密的文章与档案，造成的后果请你自负。&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+</description>
+      <category>feature</category>
+      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
+      <content:encoded><![CDATA[<p>主题支持对特定文件夹或特定的路径进行加密，也支持进行全局范围的加密。</p>
+<div><p>Warning</p>
+<p>注意，受到 VuePress 的限制，在未解密前，文章内容仅仅被隐藏，访问者仍可以从源码中获取文章的内容。</p>
+<p>所以请不要使用该加密功能用于任何敏感、机密的文章与档案，造成的后果请你自负。</p>
+</div>
+
+<h2 id="加密配置"> 加密配置</h2>
+<p>你可以在 <code>themeConfig.encrypt</code> 字段配置加密选项。</p>
+<div><pre><code><span>{</span>
+  <span>// 这会加密整个 guide 目录，并且两个密码都是可用的</span>
+  <span>"/guide/"</span><span>:</span> <span>[</span><span>"1234"</span><span>,</span> <span>"5678"</span><span>]</span><span>,</span>
+  <span>// 这只会加密 config/page.html</span>
+  <span>"/config/page.html"</span><span>:</span> <span>"1234"</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>同时，你可以更加方便地在页面的 frontmatter 中配置密码</p>
+<div><pre><code><span><span>---</span>
+<span><span>password</span><span>:</span> abc1234</span>
+<span>---</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>Feed 支持</title>
+      <link>https://vuepress-theme-hope.github.io/zh/guide/feature/feed/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/guide/feature/feed/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">Feed 支持</source>
+      <description>&amp;lt;p&amp;gt;&amp;lt;code&amp;gt;vuepress-theme-hope&amp;lt;/code&amp;gt; 通过内置 &amp;lt;a href=&amp;quot;https://vuepress-theme-hope.github.io/feed/zh/&amp;quot; target=&amp;quot;_blank&amp;quot; rel=&amp;quot;noopener noreferrer&amp;quot;&amp;gt;&amp;lt;code&amp;gt;@mr-hope/vuepress-plugin-feed&amp;lt;/code&amp;gt;&amp;lt;/a&amp;gt; 插件来为你提供 feed 支持。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;主题会自动为你生成以下三种格式的 feed 文件:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Atom 1.0 (默认输出为 atom.xml)&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;JSON 1.1 (默认输出为 feed.json)&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;RSS 2.0 (默认输出为 rss.xml)&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;考虑到现在 Feed 已经很小众，我们旨在提供最小配置来尽可能自动生成详细的 Feed 文件。如果你不需要这个功能，则可以将 &amp;lt;code&amp;gt;themeConfig.feed&amp;lt;/code&amp;gt; 设置为 &amp;lt;code&amp;gt;false&amp;lt;/code&amp;gt; 来禁用该插件。&amp;lt;/p&amp;gt;
+</description>
+      <category>feature</category>
+      <pubDate>Mon, 25 Jan 2021 05:26:34 GMT</pubDate>
+      <content:encoded><![CDATA[<p><code>vuepress-theme-hope</code> 通过内置 <a href="https://vuepress-theme-hope.github.io/feed/zh/" target="_blank" rel="noopener noreferrer"><code>@mr-hope/vuepress-plugin-feed</code></a> 插件来为你提供 feed 支持。</p>
+<p>主题会自动为你生成以下三种格式的 feed 文件:</p>
+<ul>
+<li>Atom 1.0 (默认输出为 atom.xml)</li>
+<li>JSON 1.1 (默认输出为 feed.json)</li>
+<li>RSS 2.0 (默认输出为 rss.xml)</li>
+</ul>
+<p>考虑到现在 Feed 已经很小众，我们旨在提供最小配置来尽可能自动生成详细的 Feed 文件。如果你不需要这个功能，则可以将 <code>themeConfig.feed</code> 设置为 <code>false</code> 来禁用该插件。</p>
+
+<h2 id="频道设置"> 频道设置</h2>
+<p>你可以通过设置 <code>themeConfig.feed.channel</code> 选项来自自定义 Feed 频道的各项信息。</p>
+<p>我们推荐你进行如下设置:</p>
+<ul>
+<li>将建立 Feed 的日期转换为 ISOString 写入到 <code>channel.pubDate</code> 中</li>
+<li>通过 <code>channel.ttl</code> 中设置内容的更新周期(单位: 分钟)</li>
+</ul>
+<p>详细的选项及其默认值详见 <a href="https://vuepress-theme-hope.github.io/feed/zh/config/channel/" target="_blank" rel="noopener noreferrer">Feed 插件频道设置</a></p>
+<h2 id="项目设置"> 项目设置</h2>
+<p>默认情况下，所有文章均会被添加至 feed 流。你可以通过配置 frontmatter 中的 feed 选项，对特定文章的 feed 项目生成进行控制。</p>
+<p>如果你想在 feed 中移除指定页面，你可以在该页面的 frontmatter 中将 <code>feed.enable</code> 设置为 <code>false</code>。</p>
+<p>当然你也可以通过 <code>frontmatter.feed</code> 直接向 feed 插件传入内容。详细的选项及其默认值详见 <a href="https://vuepress-theme-hope.github.io/feed/zh/config/item/" target="_blank" rel="noopener noreferrer">Feed 插件项目设置</a></p>
+<h2 id="输出配置"> 输出配置</h2>
+<p>你可通过配置选项中的 <code>output</code> 来决定输出哪些格式的 Feed 文件以及它们的位置。</p>
+<p>详细的选项及其默认值详见 <a href="https://vuepress-theme-hope.github.io/feed/zh/config/#output" target="_blank" rel="noopener noreferrer">Feed 插件输出设置</a></p>
 ]]></content:encoded>
     </item>
     <item>
