@@ -2235,22 +2235,6 @@
       ]
     },
     {
-      "title": "其他界面功能",
-      "url": "https://vuepress-theme-hope.github.io/zh/guide/interface/others/",
-      "id": "https://vuepress-theme-hope.github.io/zh/guide/interface/others/",
-      "content_html": "<h2 id=\"样式定制\"> 样式定制</h2>\n<p>主题允许你在 <code>.vuepress/style</code> 的 <code>palette.styl</code> 设置变量，来定制绝大部分颜色、响应式断点，页面布局尺寸等参数。</p>\n<p>详细的参数详见 <a href=\"./../../config/stylus.html\">Stylus 配置</a></p>\n<h2 id=\"全屏按钮\"> 全屏按钮</h2>\n<p>默认启用，显示在导航栏的主题选项卡中。</p>\n<p>如果你不需要这个功能，你可以在主题配置中将 <code>fullscreen</code> 设置为 <code>false</code>。</p>\n<div><p>Tips</p>\n<p>如果当前浏览器不支持全屏，则全屏按钮会自动隐藏。</p>\n</div>\n<div><div><br><br><br><div>&nbsp;</div><br><br><br></div><pre><code><span>// .vuepress/config.js</span>\nmodule<span>.</span>exports <span>=</span> <span>{</span>\n  themeConfig<span>:</span> <span>{</span>\n    fullscreen<span>:</span> <span>false</span><span>,</span> <span>// 默认启用，设置 false 将其关闭</span>\n  <span>}</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id=\"返回顶部按钮\"> 返回顶部按钮 <i>Not supported content</i></h2>\n<p><code>vuepress-theme-hope</code> 添加了一个返回顶部控件，默认情况下将在下滑 300px 后显示。</p>\n<p>你可以在 <code>themeConfig</code> 将 <code>backToTop</code> 设置为 <code>false</code> 来禁用它，或者是设置为一个数字以更改默认的 300px 触发时机。</p>\n",
-      "date_published": "2021-02-26T12:39:35.000Z",
-      "date_modified": "2021-02-28T16:47:07.000Z",
-      "authors": [
-        {
-          "name": "Mr.Hope"
-        }
-      ],
-      "tags": [
-        "interface"
-      ]
-    },
-    {
       "title": "主题功能配置",
       "url": "https://vuepress-theme-hope.github.io/zh/config/theme/feature/",
       "id": "https://vuepress-theme-hope.github.io/zh/config/theme/feature/",
@@ -2296,6 +2280,22 @@
       ],
       "tags": [
         "config"
+      ]
+    },
+    {
+      "title": "其他界面功能",
+      "url": "https://vuepress-theme-hope.github.io/zh/guide/interface/others/",
+      "id": "https://vuepress-theme-hope.github.io/zh/guide/interface/others/",
+      "content_html": "<h2 id=\"样式定制\"> 样式定制</h2>\n<p>主题允许你在 <code>.vuepress/style</code> 的 <code>palette.styl</code> 设置变量，来定制绝大部分颜色、响应式断点，页面布局尺寸等参数。</p>\n<p>详细的参数详见 <a href=\"./../../config/stylus.html\">Stylus 配置</a></p>\n<h2 id=\"全屏按钮\"> 全屏按钮</h2>\n<p>默认启用，显示在导航栏的主题选项卡中。</p>\n<p>如果你不需要这个功能，你可以在主题配置中将 <code>fullscreen</code> 设置为 <code>false</code>。</p>\n<div><p>Tips</p>\n<p>如果当前浏览器不支持全屏，则全屏按钮会自动隐藏。</p>\n</div>\n<div><div><br><br><br><div>&nbsp;</div><br><br><br></div><pre><code><span>// .vuepress/config.js</span>\nmodule<span>.</span>exports <span>=</span> <span>{</span>\n  themeConfig<span>:</span> <span>{</span>\n    fullscreen<span>:</span> <span>false</span><span>,</span> <span>// 默认启用，设置 false 将其关闭</span>\n  <span>}</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id=\"返回顶部按钮\"> 返回顶部按钮 <i>Not supported content</i></h2>\n<p><code>vuepress-theme-hope</code> 添加了一个返回顶部控件，默认情况下将在下滑 300px 后显示。</p>\n<p>你可以在 <code>themeConfig</code> 将 <code>backToTop</code> 设置为 <code>false</code> 来禁用它，或者是设置为一个数字以更改默认的 300px 触发时机。</p>\n",
+      "date_published": "2021-02-26T12:39:35.000Z",
+      "date_modified": "2021-02-28T16:47:07.000Z",
+      "authors": [
+        {
+          "name": "Mr.Hope"
+        }
+      ],
+      "tags": [
+        "interface"
       ]
     },
     {

@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-03-30T11:32:02.070Z</updated>
+  <updated>2021-03-30T11:34:48.875Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/"/>
@@ -14683,40 +14683,6 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
-    <title type="html">其他界面功能</title>
-    <id>https://vuepress-theme-hope.github.io/zh/guide/interface/others/</id>
-    <link href="https://vuepress-theme-hope.github.io/zh/guide/interface/others/"/>
-    <updated>2021-02-28T16:47:07.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="样式定制"> 样式定制</h2>
-<p>主题允许你在 <code>.vuepress/style</code> 的 <code>palette.styl</code> 设置变量，来定制绝大部分颜色、响应式断点，页面布局尺寸等参数。</p>
-<p>详细的参数详见 <a href="./../../config/stylus.html">Stylus 配置</a></p>
-<h2 id="全屏按钮"> 全屏按钮</h2>
-<p>默认启用，显示在导航栏的主题选项卡中。</p>
-<p>如果你不需要这个功能，你可以在主题配置中将 <code>fullscreen</code> 设置为 <code>false</code>。</p>
-<div><p>Tips</p>
-<p>如果当前浏览器不支持全屏，则全屏按钮会自动隐藏。</p>
-</div>
-<div><div><br><br><br><div>&nbsp;</div><br><br><br></div><pre><code><span>// .vuepress/config.js</span>
-module<span>.</span>exports <span>=</span> <span>{</span>
-  themeConfig<span>:</span> <span>{</span>
-    fullscreen<span>:</span> <span>false</span><span>,</span> <span>// 默认启用，设置 false 将其关闭</span>
-  <span>}</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="返回顶部按钮"> 返回顶部按钮 <i>Not supported content</i></h2>
-<p><code>vuepress-theme-hope</code> 添加了一个返回顶部控件，默认情况下将在下滑 300px 后显示。</p>
-<p>你可以在 <code>themeConfig</code> 将 <code>backToTop</code> 设置为 <code>false</code> 来禁用它，或者是设置为一个数字以更改默认的 300px 触发时机。</p>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <category term="interface"/>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2021-02-26T12:39:35.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
     <title type="html">主题功能配置</title>
     <id>https://vuepress-theme-hope.github.io/zh/config/theme/feature/</id>
     <link href="https://vuepress-theme-hope.github.io/zh/config/theme/feature/"/>
@@ -15093,6 +15059,40 @@ module<span>.</span>exports <span>=</span> <span>{</span>
       <name>Mr.Hope</name>
     </contributor>
     <published>2020-10-21T05:51:47.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">其他界面功能</title>
+    <id>https://vuepress-theme-hope.github.io/zh/guide/interface/others/</id>
+    <link href="https://vuepress-theme-hope.github.io/zh/guide/interface/others/"/>
+    <updated>2021-02-28T16:47:07.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="样式定制"> 样式定制</h2>
+<p>主题允许你在 <code>.vuepress/style</code> 的 <code>palette.styl</code> 设置变量，来定制绝大部分颜色、响应式断点，页面布局尺寸等参数。</p>
+<p>详细的参数详见 <a href="./../../config/stylus.html">Stylus 配置</a></p>
+<h2 id="全屏按钮"> 全屏按钮</h2>
+<p>默认启用，显示在导航栏的主题选项卡中。</p>
+<p>如果你不需要这个功能，你可以在主题配置中将 <code>fullscreen</code> 设置为 <code>false</code>。</p>
+<div><p>Tips</p>
+<p>如果当前浏览器不支持全屏，则全屏按钮会自动隐藏。</p>
+</div>
+<div><div><br><br><br><div>&nbsp;</div><br><br><br></div><pre><code><span>// .vuepress/config.js</span>
+module<span>.</span>exports <span>=</span> <span>{</span>
+  themeConfig<span>:</span> <span>{</span>
+    fullscreen<span>:</span> <span>false</span><span>,</span> <span>// 默认启用，设置 false 将其关闭</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="返回顶部按钮"> 返回顶部按钮 <i>Not supported content</i></h2>
+<p><code>vuepress-theme-hope</code> 添加了一个返回顶部控件，默认情况下将在下滑 300px 后显示。</p>
+<p>你可以在 <code>themeConfig</code> 将 <code>backToTop</code> 设置为 <code>false</code> 来禁用它，或者是设置为一个数字以更改默认的 300px 触发时机。</p>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <category term="interface"/>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-02-26T12:39:35.000Z</published>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
