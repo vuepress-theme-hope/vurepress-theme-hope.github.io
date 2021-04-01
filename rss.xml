@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/</link>
     <description>A vuepress theme with tons of features✨</description>
     <language>en-US</language>
-    <pubDate>Tue, 30 Mar 2021 12:25:10 GMT</pubDate>
-    <lastBuildDate>Tue, 30 Mar 2021 12:25:10 GMT</lastBuildDate>
+    <pubDate>Thu, 01 Apr 2021 11:40:34 GMT</pubDate>
+    <lastBuildDate>Thu, 01 Apr 2021 11:40:34 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -1496,7 +1496,7 @@ console<span>&lt;</span>span <span>class</span><span>=</span><span>"token punctu
 </code></pre>
 <div><span>1</span><br></div></div><p>After a while, you can enter <code>localhost:8080/</code> in the browser address bar to access the development server.</p>
 <div><p>Tips</p>
-<p>To start the development server, please enter <code>yarn run docs:serve</code> in the terminal and press Enter.</p>
+<p>To start the development server, please enter <code>yarn run docs:dev</code> in the terminal and press Enter.</p>
 <p>If you need to terminate the development server, please click on the terminal and press <code>Ctrl + C</code> twice.</p>
 </div>
 <h2 id="add-or-modify-pages"> Add or modify pages</h2>
@@ -4843,7 +4843,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 </ol>
  </li>
 <li id="fn3"><p><strong>Installable</strong></p>
-<p>To let the site be registered as a PWA, the site needs to successfully register a valid service worker by itself, and at the same time add a valid mainfest manifest file and declare it.</p>
+<p>To let the site be registered as a PWA, the site needs to successfully register a valid service worker by itself, and at the same time add a valid manifest file and declare it.</p>
 <p>Each platform or browser has requirements for the size of the Service Worker cache. When the file size of the Service Worker cache is too large, the site will be marked as not installable. For Safari, the threshold is 50 MB, a few browsers will set less or more values ​​(30MB, 70MB, 80MB), and Chrome will mark the threshold at 100 MB.</p>
 <p>In addition, the manifest file should contain at least <code>name</code> (or <code>short_name</code>) <code>icons</code> <code>start_url</code></p>
 <p>And starting from Chrome 93, Service Woker must contain effective fetch events to control offline requests.  </p>
@@ -10046,7 +10046,7 @@ A backtick-delimited string in a code span: <span>`` `foo` ``</span>
 </code></pre>
 <div><span>1</span><br></div></div><p>稍等片刻，你就可以在浏览器地址栏输入 <code>localhost:8080/zh/</code> 访问开发服务器了。</p>
 <div><p>Tips</p>
-<p>启动开发服务器，请在终端输入 <code>yarn run docs:serve</code> 并回车。</p>
+<p>启动开发服务器，请在终端输入 <code>yarn run docs:dev</code> 并回车。</p>
 <p>如果你需要终止开发服务器，请点击终端，并连续两次按下 <code>Ctrl + C</code>。</p>
 </div>
 <h2 id="添加或修改页面"> 添加或修改页面</h2>
@@ -11155,7 +11155,7 @@ export default { // Highlighted
 <li>类型: <code>boolean</code></li>
 <li>默认: <code>true</code></li>
 </ul>
-<p>是否将该文章添加至文章列表中。</p>
+<p>是否将该文章添加至时间线中。</p>
 <h3 id="password"> password</h3>
 <ul>
 <li>类型: <code>string</code></li>
@@ -13070,7 +13070,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 </ol>
  </li>
 <li id="fn3"><p><strong>可安装性</strong></p>
-<p>想要让网站可以注册为 PWA，网站需要自行成功注册有效的 Service Worker，同时添加合法的 mainfest 清单文件并在网站中声明它。</p>
+<p>想要让网站可以注册为 PWA，网站需要自行成功注册有效的 Service Worker，同时添加合法的 manifest 清单文件并在网站中声明它。</p>
 <p>各平台或浏览器对 Service Worker 缓存的大小有要求，当 Service Worker 缓存的文件体积过大后，该网站将会被标记为不可安装。对于 Safari 这个阈值是 50 MB，少数浏览器会设置更少或更多的值 (30MB, 70MB, 80MB)，最大的 Chrome 也将阈值标识在 100 MB。</p>
 <p>另外，清单文件应至少包含 <code>name</code>(或 <code>short_name</code>) <code>icons</code> <code>start_url</code>。</p>
 <p>从 Chrome 93 起 Service Woker 必须含有有效的控制离线请求的 fetch 事件  </p>

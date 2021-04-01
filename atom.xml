@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-03-30T12:25:10.835Z</updated>
+  <updated>2021-04-01T11:40:34.835Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/"/>
@@ -1538,7 +1538,7 @@ console<span>&lt;</span>span <span>class</span><span>=</span><span>"token punctu
     <title type="html">Step by Step Tutorial</title>
     <id>https://vuepress-theme-hope.github.io/basic/tutorial/</id>
     <link href="https://vuepress-theme-hope.github.io/basic/tutorial/"/>
-    <updated>2021-03-16T15:57:52.000Z</updated>
+    <updated>2021-04-01T11:38:37.000Z</updated>
     <content type="html"><![CDATA[<p>This tutorial is a step by step tutorial.</p>
 <h2 id="environment"> Environment</h2>
 <p>You need to install the latest Node.js long-term support version and Yarn.</p>
@@ -1573,7 +1573,7 @@ console<span>&lt;</span>span <span>class</span><span>=</span><span>"token punctu
 </code></pre>
 <div><span>1</span><br></div></div><p>After a while, you can enter <code>localhost:8080/</code> in the browser address bar to access the development server.</p>
 <div><p>Tips</p>
-<p>To start the development server, please enter <code>yarn run docs:serve</code> in the terminal and press Enter.</p>
+<p>To start the development server, please enter <code>yarn run docs:dev</code> in the terminal and press Enter.</p>
 <p>If you need to terminate the development server, please click on the terminal and press <code>Ctrl + C</code> twice.</p>
 </div>
 <h2 id="add-or-modify-pages"> Add or modify pages</h2>
@@ -5009,7 +5009,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">PWA</title>
     <id>https://vuepress-theme-hope.github.io/guide/feature/pwa/</id>
     <link href="https://vuepress-theme-hope.github.io/guide/feature/pwa/"/>
-    <updated>2021-03-12T11:35:04.000Z</updated>
+    <updated>2021-04-01T11:38:37.000Z</updated>
     <summary type="html"><![CDATA[<p>The theme will enable progressive web app support<sup></sup> by including <a href="https://vuepress-theme-hope.github.io/pwa/" target="_blank" rel="noopener noreferrer"><code>@mr-hope/vuepress-plugin-pwa</code></a>.</p>
 <p>If you do not need this feature or want to use other pwa plugins, you can set the <code>themeConfig.pwa</code> to <code>false</code> to disable the plugin.</p>
 <hr>
@@ -5164,7 +5164,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 </ol>
  </li>
 <li id="fn3"><p><strong>Installable</strong></p>
-<p>To let the site be registered as a PWA, the site needs to successfully register a valid service worker by itself, and at the same time add a valid mainfest manifest file and declare it.</p>
+<p>To let the site be registered as a PWA, the site needs to successfully register a valid service worker by itself, and at the same time add a valid manifest file and declare it.</p>
 <p>Each platform or browser has requirements for the size of the Service Worker cache. When the file size of the Service Worker cache is too large, the site will be marked as not installable. For Safari, the threshold is 50 MB, a few browsers will set less or more values ​​(30MB, 70MB, 80MB), and Chrome will mark the threshold at 100 MB.</p>
 <p>In addition, the manifest file should contain at least <code>name</code> (or <code>short_name</code>) <code>icons</code> <code>start_url</code></p>
 <p>And starting from Chrome 93, Service Woker must contain effective fetch events to control offline requests.  </p>
@@ -10657,7 +10657,7 @@ A backtick-delimited string in a code span: <span>`` `foo` ``</span>
     <title type="html">小白教程</title>
     <id>https://vuepress-theme-hope.github.io/zh/basic/tutorial/</id>
     <link href="https://vuepress-theme-hope.github.io/zh/basic/tutorial/"/>
-    <updated>2021-03-16T15:57:52.000Z</updated>
+    <updated>2021-04-01T11:38:37.000Z</updated>
     <content type="html"><![CDATA[<p>本教程是一个针对小白手把手教程。</p>
 <h2 id="环境安装"> 环境安装</h2>
 <p>你需要安装最新的 Node.js 长期支持版 和 Yarn。</p>
@@ -10693,7 +10693,7 @@ A backtick-delimited string in a code span: <span>`` `foo` ``</span>
 </code></pre>
 <div><span>1</span><br></div></div><p>稍等片刻，你就可以在浏览器地址栏输入 <code>localhost:8080/zh/</code> 访问开发服务器了。</p>
 <div><p>Tips</p>
-<p>启动开发服务器，请在终端输入 <code>yarn run docs:serve</code> 并回车。</p>
+<p>启动开发服务器，请在终端输入 <code>yarn run docs:dev</code> 并回车。</p>
 <p>如果你需要终止开发服务器，请点击终端，并连续两次按下 <code>Ctrl + C</code>。</p>
 </div>
 <h2 id="添加或修改页面"> 添加或修改页面</h2>
@@ -11777,7 +11777,7 @@ export default { // Highlighted
     <title type="html">页面配置</title>
     <id>https://vuepress-theme-hope.github.io/zh/config/page/</id>
     <link href="https://vuepress-theme-hope.github.io/zh/config/page/"/>
-    <updated>2021-03-30T11:40:51.000Z</updated>
+    <updated>2021-04-01T11:38:37.000Z</updated>
     <content type="html"><![CDATA[<p>页面的 frontmatter 新增如下配置选项:</p>
 <h2 id="页面信息配置"> 页面信息配置</h2>
 <h3 id="icon"> icon</h3>
@@ -11858,7 +11858,7 @@ export default { // Highlighted
 <li>类型: <code>boolean</code></li>
 <li>默认: <code>true</code></li>
 </ul>
-<p>是否将该文章添加至文章列表中。</p>
+<p>是否将该文章添加至时间线中。</p>
 <h3 id="password"> password</h3>
 <ul>
 <li>类型: <code>string</code></li>
@@ -13785,7 +13785,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">PWA</title>
     <id>https://vuepress-theme-hope.github.io/zh/guide/feature/pwa/</id>
     <link href="https://vuepress-theme-hope.github.io/zh/guide/feature/pwa/"/>
-    <updated>2021-03-12T11:35:04.000Z</updated>
+    <updated>2021-04-01T11:38:37.000Z</updated>
     <summary type="html"><![CDATA[<p>默认情况下，该主题将通过内置 <a href="https://vuepress-theme-hope.github.io/pwa/zh/" target="_blank" rel="noopener noreferrer"><code>@mr-hope/vuepress-plugin-pwa</code></a> 启用渐进式 Web 应用程序支持<sup></sup>。</p>
 <p>如果你不需要此功能或想使用其他 pwa 插件，则可以将 <code>themeConfig.pwa</code> 设置为 <code>false</code> 来禁用该插件。</p>
 <hr>
@@ -13940,7 +13940,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 </ol>
  </li>
 <li id="fn3"><p><strong>可安装性</strong></p>
-<p>想要让网站可以注册为 PWA，网站需要自行成功注册有效的 Service Worker，同时添加合法的 mainfest 清单文件并在网站中声明它。</p>
+<p>想要让网站可以注册为 PWA，网站需要自行成功注册有效的 Service Worker，同时添加合法的 manifest 清单文件并在网站中声明它。</p>
 <p>各平台或浏览器对 Service Worker 缓存的大小有要求，当 Service Worker 缓存的文件体积过大后，该网站将会被标记为不可安装。对于 Safari 这个阈值是 50 MB，少数浏览器会设置更少或更多的值 (30MB, 70MB, 80MB)，最大的 Chrome 也将阈值标识在 100 MB。</p>
 <p>另外，清单文件应至少包含 <code>name</code>(或 <code>short_name</code>) <code>icons</code> <code>start_url</code>。</p>
 <p>从 Chrome 93 起 Service Woker 必须含有有效的控制离线请求的 fetch 事件  </p>
