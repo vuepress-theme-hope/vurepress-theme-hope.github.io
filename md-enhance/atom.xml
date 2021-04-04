@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-04-04T07:26:03.381Z</updated>
+  <updated>2021-04-04T07:28:15.085Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/md-enhance/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/md-enhance/"/>
@@ -1239,6 +1239,52 @@ Duplicated footnote reference[^second].
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
+    <title type="html">Superscript and Subscript</title>
+    <id>https://vuepress-theme-hope.github.io/md-enhance/guide/sup-sub/</id>
+    <link href="https://vuepress-theme-hope.github.io/md-enhance/guide/sup-sub/"/>
+    <updated>2021-02-03T11:24:42.000Z</updated>
+    <summary type="html"><![CDATA[<p>Let the Markdown file in your VuePress site support Subscript and Superscript.</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>Let the Markdown file in your VuePress site support Subscript and Superscript.</p>
+
+<h2 id="configuration"> Configuration</h2>
+<div><div><br><br><br><br><br><br><div>&nbsp;</div><br><div>&nbsp;</div><br><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>[</span>
+      <span>"md-enhance"</span><span>,</span>
+      <span>{</span>
+        <span>// Enable Subscript</span>
+        sub<span>:</span> <span>true</span><span>,</span>
+        <span>// Enable  Superscript</span>
+        sup<span>:</span> <span>true</span><span>,</span>
+      <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><h2 id="syntax"> Syntax</h2>
+<ul>
+<li>Use <code>^ ^</code> to mark the superscript.</li>
+<li>Use <code>~ ~</code> to mark the subscript.</li>
+</ul>
+<h2 id="demo"> Demo</h2>
+<ul>
+<li>19<sup>th</sup></li>
+<li>H<sub>2</sub>O</li>
+</ul>
+<div><pre><code><span>-</span> 19^th^
+<span>-</span> H<span><span>~</span><span>2</span><span>~</span></span>O
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div>]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-01-07T06:44:41.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
     <title type="html">Get Started</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/guide/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/guide/"/>
@@ -1345,52 +1391,6 @@ Duplicated footnote reference[^second].
 </ol>
 </section>
 ]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-01-07T06:44:41.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">Superscript and Subscript</title>
-    <id>https://vuepress-theme-hope.github.io/md-enhance/guide/sup-sub/</id>
-    <link href="https://vuepress-theme-hope.github.io/md-enhance/guide/sup-sub/"/>
-    <updated>2021-02-03T11:24:42.000Z</updated>
-    <summary type="html"><![CDATA[<p>Let the Markdown file in your VuePress site support Subscript and Superscript.</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>Let the Markdown file in your VuePress site support Subscript and Superscript.</p>
-
-<h2 id="configuration"> Configuration</h2>
-<div><div><br><br><br><br><br><br><div>&nbsp;</div><br><div>&nbsp;</div><br><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span>
-    <span>[</span>
-      <span>"md-enhance"</span><span>,</span>
-      <span>{</span>
-        <span>// Enable Subscript</span>
-        sub<span>:</span> <span>true</span><span>,</span>
-        <span>// Enable  Superscript</span>
-        sup<span>:</span> <span>true</span><span>,</span>
-      <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-  <span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><h2 id="syntax"> Syntax</h2>
-<ul>
-<li>Use <code>^ ^</code> to mark the superscript.</li>
-<li>Use <code>~ ~</code> to mark the subscript.</li>
-</ul>
-<h2 id="demo"> Demo</h2>
-<ul>
-<li>19<sup>th</sup></li>
-<li>H<sub>2</sub>O</li>
-</ul>
-<div><pre><code><span>-</span> 19^th^
-<span>-</span> H<span><span>~</span><span>2</span><span>~</span></span>O
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div>]]></content>
     <author>
       <name>Mr.Hope</name>
     </author>
