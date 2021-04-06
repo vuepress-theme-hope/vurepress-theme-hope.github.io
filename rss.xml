@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/</link>
     <description>A vuepress theme with tons of features✨</description>
     <language>en-US</language>
-    <pubDate>Tue, 06 Apr 2021 08:29:34 GMT</pubDate>
-    <lastBuildDate>Tue, 06 Apr 2021 08:29:34 GMT</lastBuildDate>
+    <pubDate>Tue, 06 Apr 2021 09:25:02 GMT</pubDate>
+    <lastBuildDate>Tue, 06 Apr 2021 09:25:02 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -12218,256 +12218,6 @@ export default { // Highlighted
 ]]></content:encoded>
     </item>
     <item>
-      <title>文章列表</title>
-      <link>https://vuepress-theme-hope.github.io/zh/guide/blog/article/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/guide/blog/article/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">文章列表</source>
-      <description>&amp;lt;p&amp;gt;主题在 &amp;lt;code&amp;gt;/article/&amp;lt;/code&amp;gt; 路径下为你提供了全部的文章列表。&amp;lt;/p&amp;gt;
-</description>
-      <category>blog</category>
-      <pubDate>Mon, 08 Mar 2021 03:21:06 GMT</pubDate>
-      <content:encoded><![CDATA[<p>主题在 <code>/article/</code> 路径下为你提供了全部的文章列表。</p>
-
-<h2 id="文章"> 文章</h2>
-<p>所有文章都会默认被添加到文章列表中渲染在 <code>/article/</code> 路径下。</p>
-<p><img src="./assets/article.png" alt="文章列表"></p>
-<p>如果你不希望该列表包含一些特定的文章，只需在文章的 frontmatter 中将 <code>article</code> 设置为 <code>false</code>。</p>
-<p>如果你希望在文章列表中置顶特定文章，只需在文章的 frontmatter 中将 <code>sticky</code> 设置为 <code>true</code>。</p>
-<div><p>置顶顺序</p>
-<p>对于置顶文章，你可以将 <code>sticky</code> 设置为 <code>number</code> 来设置它们的顺序。数值大的文章会排列在前面。</p>
-</div>
-<h2 id="收藏文章"> 收藏文章</h2>
-<p>你可以通过在 frontmatter 中设置 <code>star</code> 为 <code>true</code> 收藏一个文章。收藏后，用户就可以在 <code>/star/</code> 页面中查看这些文章。</p>
-<p>同时任何任何收藏的文章都会显示在博客主页侧边栏的文章栏目中。</p>
-<div><p>Info</p>
-<p>我们提供收藏选项的考虑是: 主题使用者可能希望向访客展示一定数量的精品文章，而又不希望置顶文章充斥主页，导致用户不能看到最近更新的文章。</p>
-</div>
-<div><p>收藏顺序</p>
-<p>类似置顶文章，你同样可以将 <code>star</code> 设置为 <code>number</code> 来设置它们的顺序。数值大的文章会排列在前面。</p>
-</div>
-<h2 id="加密与幻灯片"> 加密与幻灯片</h2>
-<p>主题为加密文章页与幻灯片页这两个特殊页面提供了单独的列表，你可以在 <code>/encrypt/</code> 和 <code>/slide/</code> 页面查看它们。</p>
-<p>同时为了帮助访问者区分，这两个类别的页面会在文章列表中用图标明确标明其类别。</p>
-<p><img src="./assets/icon-type.png" alt="类别提示"></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>分类与标签</title>
-      <link>https://vuepress-theme-hope.github.io/zh/guide/blog/category-and-tags/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/guide/blog/category-and-tags/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">分类与标签</source>
-      <description>&amp;lt;p&amp;gt;你可以通过 frontmatter 来为文章配置分类与标签，使它们出现在特定的分类与标签页面中。&amp;lt;/p&amp;gt;
-</description>
-      <category>blog</category>
-      <pubDate>Sat, 06 Mar 2021 15:23:44 GMT</pubDate>
-      <content:encoded><![CDATA[<p>你可以通过 frontmatter 来为文章配置分类与标签，使它们出现在特定的分类与标签页面中。</p>
-
-<h2 id="分类设置"> 分类设置</h2>
-<p>只需要在页面的 frontmatter 中添加 <code>category: &lt;分类名&gt;</code> ，该文章会自动渲染在 <code>/category/&lt;分类名&gt;/</code> 分类页面的列表中。</p>
-<p>比如在某个页面设置:</p>
-<div><pre><code><span><span>---</span>
-<span><span>category</span><span>:</span> HTML</span>
-<span>---</span></span>
-
-页面内容...
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>你就可以在 <code>/category/HTML</code> 页面下找到它。</p>
-<div><p>例子</p>
-<p><img src="./assets/category.png" alt="Category"></p>
-<ul>
-<li><a href="https://mrhope.site/category/JavaScript/" target="_blank" rel="noopener noreferrer">地址</a></li>
-</ul>
-</div>
-<div><p>Note</p>
-<p>请注意，一篇文章只能设置一个分类。(V2 计划支持文章设置多个分类)</p>
-</div>
-<h2 id="标签"> 标签</h2>
-<p>只需要在页面的 frontmatter 中添加 <code>tags</code> 数组，并设置一个或多个文章所属的标签 ，该文章会自动渲染在 <code>/tag/&lt;标签名&gt;/</code> 标签页面的列表中。</p>
-<p>比如在某个页面设置:</p>
-<div><pre><code><span><span>---</span>
-<span><span>tags</span><span>:</span>
-  <span>-</span> HTML
-  <span>-</span> Web</span>
-<span>---</span></span>
-
-页面内容...
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>你就可以在 <code>/tag/HTML</code> 和 <code>/tag/Web</code> 页面下找到它。</p>
-<div><p>例子</p>
-<p><img src="./assets/tag.png" alt="Tag"></p>
-<ul>
-<li><a href="https://mrhope.site/tag/Vuex/" target="_blank" rel="noopener noreferrer">地址</a></li>
-</ul>
-</div>
-<h2 id="查看列表"> 查看列表</h2>
-<p>除了直接访问对应的地址外，分类和标签名称会显示在文章开头的文章信息处，你可以点击它来导航到对应的列表查看相同分类或标签的文章。</p>
-<p><img src="./assets/info.png" alt="文章信息"></p>
-<p>你也可以在博客主页侧边栏中选择分类或标签选项卡选择对应的项目进入列表。</p>
-<p><img src="./assets/sidebar.png" alt="侧边栏选项卡"></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>博客首页</title>
-      <link>https://vuepress-theme-hope.github.io/zh/guide/blog/home/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/guide/blog/home/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">博客首页</source>
-      <description>&amp;lt;p&amp;gt;&amp;lt;code&amp;gt;vuepress-theme-hope&amp;lt;/code&amp;gt; 允许你启用博客风格的首页。&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;你需要在相应的页面的 frontmatter 中，设置 &amp;lt;code&amp;gt;blog: true&amp;lt;/code&amp;gt; 来开启博客风格。&amp;lt;/p&amp;gt;
-</description>
-      <category>blog</category>
-      <pubDate>Fri, 26 Feb 2021 08:10:04 GMT</pubDate>
-      <content:encoded><![CDATA[<p><code>vuepress-theme-hope</code> 允许你启用博客风格的首页。</p>
-<p>你需要在相应的页面的 frontmatter 中，设置 <code>blog: true</code> 来开启博客风格。</p>
-
-<p><img src="./assets/blog.png" alt="首页截图"></p>
-<h2 id="可配置的项目"> 可配置的项目</h2>
-<p>你可以自由配置右上方的博主头像与博主姓名，他们的配置项为 <code>themeConfig.blog.avatar</code> 和 <code>themeConfig.blog.name</code>。如果你没有填写它们，它们会自动回退到站点 Logo (<code>themeConfig.logo</code>) 和 站点名称 (<code>themeConfig.name</code>)。</p>
-<p>主题默认会将头像剪裁成圆形，如果你拥有一个方形的 logo 且不希望它被破坏，请在 <code>themeConfig.blog</code> 中设置 <code>roundAvatar</code> 为 <code>false</code>。</p>
-<p>如果你将 <code>themeConfig.intro</code> 设置为个人介绍页地址，点击右上角的博主头像和博主名称，会自动跳转到博主的个人介绍页。</p>
-<p>你还可以在 <code>themeConfig.blog.links</code> 这个对象中以 <code>社交媒体名: 社交媒体链接</code> 的格式配置你的社交媒体链接。</p>
-<div><p>可用的社交媒体:</p>
-<ul>
-<li><code>'Baidu'</code>: 百度</li>
-<li><code>'Bitbucket'</code>: Bitbucket</li>
-<li><code>'Dingding'</code>: 钉钉</li>
-<li><code>'Discord'</code>: Discord</li>
-<li><code>'Dribbble'</code>: Dribble</li>
-<li><code>'Email'</code>: Email</li>
-<li><code>'Evernote'</code>: 印象笔记</li>
-<li><code>'Facebook'</code>: 脸书</li>
-<li><code>'Flipboard'</code>: 红板报</li>
-<li><code>'Gitee'</code>: Gitee</li>
-<li><code>'Github'</code>: GitHub</li>
-<li><code>'Gitlab'</code>: Gitlab</li>
-<li><code>'Gmail'</code>: 谷歌邮箱(当然你也可以填入你自己的其他邮箱)</li>
-<li><code>'Instagram'</code>: Instagram</li>
-<li><code>'Line'</code>: Line</li>
-<li><code>'Linkedin'</code>: 领英</li>
-<li><code>'Pinterest'</code>: 拼趣</li>
-<li><code>'Pocket'</code>: Pocket</li>
-<li><code>'QQ'</code>: QQ</li>
-<li><code>'Qzone'</code>: QQ 空间</li>
-<li><code>'Reddit'</code>: Reddit</li>
-<li><code>'Rss'</code>: RSS 地址</li>
-<li><code>'Steam'</code>: Steam</li>
-<li><code>'Twitter'</code>: Twitter</li>
-<li><code>'Wechat'</code>: 微信</li>
-<li><code>'Weibo'</code>: 微博</li>
-<li><code>'Whatsapp'</code>: Whatsapp</li>
-<li><code>'Youtube'</code>: YouTube</li>
-<li><code>'Zhihu'</code>: 知乎</li>
-</ul>
-</div>
-<h2 id="frontmatter-可用参数"> Frontmatter 可用参数</h2>
-<h3 id="hero"> hero</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认: <code>true</code></li>
-</ul>
-<p>是否显示主页的图标与描述。主页的图标、描述设置同 <a href="./../layout/home.html">默认主页</a>。</p>
-<h3 id="bgimage"> bgImage</h3>
-<ul>
-<li>类型: <code>string</code></li>
-</ul>
-<p>背景图片的地址，需填写绝对路径。如果不填写，会自动应用一张默认的风景图片。</p>
-<h3 id="bgimagestyle"> bgImageStyle</h3>
-<ul>
-<li>类型: <code>Record&lt;string, string&gt;</code></li>
-</ul>
-<p>背景图片的 CSS 样式。</p>
-<h3 id="heroimagestyle"> heroImageStyle</h3>
-<ul>
-<li>类型: <code>Record&lt;string, string&gt;</code></li>
-</ul>
-<p>首页图标的 CSS 样式</p>
-<h3 id="herofullscreen"> heroFullScreen</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认: <code>false</code></li>
-</ul>
-<p>是否全屏显示 Hero</p>
-<h3 id="项目"> 项目</h3>
-<ul>
-<li>类型: <code>ProjectOption[]</code></li>
-</ul>
-<p><code>ProjectOption</code> 包括以下键值:</p>
-<ul>
-<li><code>type</code>: 类型，可选值为 <code>'link' | 'project' | 'book' | 'article'</code></li>
-<li><code>name</code>: 项目名称，必填</li>
-<li><code>link</code>: 项目链接，必填，填入外部链接或绝对路径。</li>
-<li><code>desc</code>: 项目描述，选填</li>
-<li><code>cover</code>: 项目封面，选填，填入外部链接或绝对路径。</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>博客功能介绍</title>
-      <link>https://vuepress-theme-hope.github.io/zh/guide/blog/intro/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/guide/blog/intro/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">博客功能介绍</source>
-      <description>&amp;lt;p&amp;gt;主题通过引入 &amp;lt;code&amp;gt;@vuepress/plugin-blog&amp;lt;/code&amp;gt; &amp;lt;strong&amp;gt;默认&amp;lt;/strong&amp;gt;启用了一些博客功能。&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;如果你不需要任何的博客功能 (比如一个纯文档站点)，你可以配置 &amp;lt;code&amp;gt;themeConfig.blog&amp;lt;/code&amp;gt; 为 &amp;lt;code&amp;gt;false&amp;lt;/code&amp;gt; 来禁用全部的博客功能。&amp;lt;/p&amp;gt;
-</description>
-      <category>blog</category>
-      <pubDate>Sat, 06 Mar 2021 14:49:20 GMT</pubDate>
-      <content:encoded><![CDATA[<p>主题通过引入 <code>@vuepress/plugin-blog</code> <strong>默认</strong>启用了一些博客功能。</p>
-<p>如果你不需要任何的博客功能 (比如一个纯文档站点)，你可以配置 <code>themeConfig.blog</code> 为 <code>false</code> 来禁用全部的博客功能。</p>
-
-<h2 id="综述"> 综述</h2>
-<p>总体上，通过启用博客功能，主题允许你通过页面的 frontmatter，为页面配置分类、标签、是否是文章、是否出现在时间线中、收藏、置顶等功能。</p>
-<ul>
-<li>
-<p><a href="./article.html">文章列表</a></p>
-</li>
-<li>
-<p><a href="./category-and-tags.html">分类与标签</a></p>
-</li>
-<li>
-<p><a href="./timeline.html">时间线</a></p>
-</li>
-</ul>
-<p>同时主题还为你提供了 <a href="./home.html">博客风格的主页</a>。</p>
-<h2 id="侧边栏"> 侧边栏</h2>
-<p>主题提供了一个博客相关的侧边栏。该侧边栏会在博客相关的页面显示 (在桌面会显示在右侧，在移动视图下收起到侧边栏中)</p>
-<p>你可以通过 <code>themeConfig.blog.sidebarDisplay</code> 控制该侧边栏在非博客相关的页面的显示行为。可选的值有 <code>'mobile' | 'none' | 'always'</code>。默认为 <code>mobile</code>，即当你在移动视图下访问非博客相关的页面时，你也可以在侧边栏看到它。</p>
-<h2 id="分页配置"> 分页配置</h2>
-<p>对于所有页面的文章列表，我们都会在底部显示一个分页组件。你可以通过这个组件快捷的在首页、尾页、前后两页进行跳转。你也可以输入数字跳转到指定页面。</p>
-<p>默认每个分页的文章数为 <code>10</code>，你可以设置 <code>themeConfig.blog.perPage</code> 来覆盖它。</p>
-<h2 id="注意事项"> 注意事项</h2>
-<div><p>Note</p>
-<p>请勿在根目录中添加并放置对应的文件夹(&quot;article&quot;, &quot;slide&quot;, &quot;star&quot;, &quot;encrypt&quot;, &quot;category&quot;, &quot;tag&quot;, &quot;timeline&quot;)，否则可能造成编译时文件被覆盖而造成错误。</p>
-<p>比如你的确需要一个“文章”文件夹的话，请考虑使用 &quot;articles&quot;。</p>
-</div>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>博客</title>
-      <link>https://vuepress-theme-hope.github.io/zh/guide/blog/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/guide/blog/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">博客</source>
-      <category>blog</category>
-      <pubDate>Fri, 26 Feb 2021 08:10:04 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="目录"> 目录</h2>
-<ul>
-<li>
-<p><a href="./intro.html">博客功能介绍</a></p>
-</li>
-<li>
-<p><a href="./article.html">文章列表</a></p>
-</li>
-<li>
-<p><a href="./category-and-tags.html">分类与标签</a></p>
-</li>
-<li>
-<p><a href="./timeline.html">时间线</a></p>
-</li>
-<li>
-<p><a href="./home.html">博客主页</a></p>
-</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
       <title>主题功能配置</title>
       <link>https://vuepress-theme-hope.github.io/zh/config/theme/feature/</link>
       <guid>https://vuepress-theme-hope.github.io/zh/config/theme/feature/</guid>
@@ -12829,6 +12579,256 @@ export default { // Highlighted
 <li>默认值: <code>true</code></li>
 </ul>
 <p>是否显示 ”全屏“ 按钮</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>文章列表</title>
+      <link>https://vuepress-theme-hope.github.io/zh/guide/blog/article/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/guide/blog/article/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">文章列表</source>
+      <description>&amp;lt;p&amp;gt;主题在 &amp;lt;code&amp;gt;/article/&amp;lt;/code&amp;gt; 路径下为你提供了全部的文章列表。&amp;lt;/p&amp;gt;
+</description>
+      <category>blog</category>
+      <pubDate>Mon, 08 Mar 2021 03:21:06 GMT</pubDate>
+      <content:encoded><![CDATA[<p>主题在 <code>/article/</code> 路径下为你提供了全部的文章列表。</p>
+
+<h2 id="文章"> 文章</h2>
+<p>所有文章都会默认被添加到文章列表中渲染在 <code>/article/</code> 路径下。</p>
+<p><img src="./assets/article.png" alt="文章列表"></p>
+<p>如果你不希望该列表包含一些特定的文章，只需在文章的 frontmatter 中将 <code>article</code> 设置为 <code>false</code>。</p>
+<p>如果你希望在文章列表中置顶特定文章，只需在文章的 frontmatter 中将 <code>sticky</code> 设置为 <code>true</code>。</p>
+<div><p>置顶顺序</p>
+<p>对于置顶文章，你可以将 <code>sticky</code> 设置为 <code>number</code> 来设置它们的顺序。数值大的文章会排列在前面。</p>
+</div>
+<h2 id="收藏文章"> 收藏文章</h2>
+<p>你可以通过在 frontmatter 中设置 <code>star</code> 为 <code>true</code> 收藏一个文章。收藏后，用户就可以在 <code>/star/</code> 页面中查看这些文章。</p>
+<p>同时任何任何收藏的文章都会显示在博客主页侧边栏的文章栏目中。</p>
+<div><p>Info</p>
+<p>我们提供收藏选项的考虑是: 主题使用者可能希望向访客展示一定数量的精品文章，而又不希望置顶文章充斥主页，导致用户不能看到最近更新的文章。</p>
+</div>
+<div><p>收藏顺序</p>
+<p>类似置顶文章，你同样可以将 <code>star</code> 设置为 <code>number</code> 来设置它们的顺序。数值大的文章会排列在前面。</p>
+</div>
+<h2 id="加密与幻灯片"> 加密与幻灯片</h2>
+<p>主题为加密文章页与幻灯片页这两个特殊页面提供了单独的列表，你可以在 <code>/encrypt/</code> 和 <code>/slide/</code> 页面查看它们。</p>
+<p>同时为了帮助访问者区分，这两个类别的页面会在文章列表中用图标明确标明其类别。</p>
+<p><img src="./assets/icon-type.png" alt="类别提示"></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>分类与标签</title>
+      <link>https://vuepress-theme-hope.github.io/zh/guide/blog/category-and-tags/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/guide/blog/category-and-tags/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">分类与标签</source>
+      <description>&amp;lt;p&amp;gt;你可以通过 frontmatter 来为文章配置分类与标签，使它们出现在特定的分类与标签页面中。&amp;lt;/p&amp;gt;
+</description>
+      <category>blog</category>
+      <pubDate>Sat, 06 Mar 2021 15:23:44 GMT</pubDate>
+      <content:encoded><![CDATA[<p>你可以通过 frontmatter 来为文章配置分类与标签，使它们出现在特定的分类与标签页面中。</p>
+
+<h2 id="分类设置"> 分类设置</h2>
+<p>只需要在页面的 frontmatter 中添加 <code>category: &lt;分类名&gt;</code> ，该文章会自动渲染在 <code>/category/&lt;分类名&gt;/</code> 分类页面的列表中。</p>
+<p>比如在某个页面设置:</p>
+<div><pre><code><span><span>---</span>
+<span><span>category</span><span>:</span> HTML</span>
+<span>---</span></span>
+
+页面内容...
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>你就可以在 <code>/category/HTML</code> 页面下找到它。</p>
+<div><p>例子</p>
+<p><img src="./assets/category.png" alt="Category"></p>
+<ul>
+<li><a href="https://mrhope.site/category/JavaScript/" target="_blank" rel="noopener noreferrer">地址</a></li>
+</ul>
+</div>
+<div><p>Note</p>
+<p>请注意，一篇文章只能设置一个分类。(V2 计划支持文章设置多个分类)</p>
+</div>
+<h2 id="标签"> 标签</h2>
+<p>只需要在页面的 frontmatter 中添加 <code>tags</code> 数组，并设置一个或多个文章所属的标签 ，该文章会自动渲染在 <code>/tag/&lt;标签名&gt;/</code> 标签页面的列表中。</p>
+<p>比如在某个页面设置:</p>
+<div><pre><code><span><span>---</span>
+<span><span>tags</span><span>:</span>
+  <span>-</span> HTML
+  <span>-</span> Web</span>
+<span>---</span></span>
+
+页面内容...
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>你就可以在 <code>/tag/HTML</code> 和 <code>/tag/Web</code> 页面下找到它。</p>
+<div><p>例子</p>
+<p><img src="./assets/tag.png" alt="Tag"></p>
+<ul>
+<li><a href="https://mrhope.site/tag/Vuex/" target="_blank" rel="noopener noreferrer">地址</a></li>
+</ul>
+</div>
+<h2 id="查看列表"> 查看列表</h2>
+<p>除了直接访问对应的地址外，分类和标签名称会显示在文章开头的文章信息处，你可以点击它来导航到对应的列表查看相同分类或标签的文章。</p>
+<p><img src="./assets/info.png" alt="文章信息"></p>
+<p>你也可以在博客主页侧边栏中选择分类或标签选项卡选择对应的项目进入列表。</p>
+<p><img src="./assets/sidebar.png" alt="侧边栏选项卡"></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>博客首页</title>
+      <link>https://vuepress-theme-hope.github.io/zh/guide/blog/home/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/guide/blog/home/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">博客首页</source>
+      <description>&amp;lt;p&amp;gt;&amp;lt;code&amp;gt;vuepress-theme-hope&amp;lt;/code&amp;gt; 允许你启用博客风格的首页。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;你需要在相应的页面的 frontmatter 中，设置 &amp;lt;code&amp;gt;blog: true&amp;lt;/code&amp;gt; 来开启博客风格。&amp;lt;/p&amp;gt;
+</description>
+      <category>blog</category>
+      <pubDate>Fri, 26 Feb 2021 08:10:04 GMT</pubDate>
+      <content:encoded><![CDATA[<p><code>vuepress-theme-hope</code> 允许你启用博客风格的首页。</p>
+<p>你需要在相应的页面的 frontmatter 中，设置 <code>blog: true</code> 来开启博客风格。</p>
+
+<p><img src="./assets/blog.png" alt="首页截图"></p>
+<h2 id="可配置的项目"> 可配置的项目</h2>
+<p>你可以自由配置右上方的博主头像与博主姓名，他们的配置项为 <code>themeConfig.blog.avatar</code> 和 <code>themeConfig.blog.name</code>。如果你没有填写它们，它们会自动回退到站点 Logo (<code>themeConfig.logo</code>) 和 站点名称 (<code>themeConfig.name</code>)。</p>
+<p>主题默认会将头像剪裁成圆形，如果你拥有一个方形的 logo 且不希望它被破坏，请在 <code>themeConfig.blog</code> 中设置 <code>roundAvatar</code> 为 <code>false</code>。</p>
+<p>如果你将 <code>themeConfig.intro</code> 设置为个人介绍页地址，点击右上角的博主头像和博主名称，会自动跳转到博主的个人介绍页。</p>
+<p>你还可以在 <code>themeConfig.blog.links</code> 这个对象中以 <code>社交媒体名: 社交媒体链接</code> 的格式配置你的社交媒体链接。</p>
+<div><p>可用的社交媒体:</p>
+<ul>
+<li><code>'Baidu'</code>: 百度</li>
+<li><code>'Bitbucket'</code>: Bitbucket</li>
+<li><code>'Dingding'</code>: 钉钉</li>
+<li><code>'Discord'</code>: Discord</li>
+<li><code>'Dribbble'</code>: Dribble</li>
+<li><code>'Email'</code>: Email</li>
+<li><code>'Evernote'</code>: 印象笔记</li>
+<li><code>'Facebook'</code>: 脸书</li>
+<li><code>'Flipboard'</code>: 红板报</li>
+<li><code>'Gitee'</code>: Gitee</li>
+<li><code>'Github'</code>: GitHub</li>
+<li><code>'Gitlab'</code>: Gitlab</li>
+<li><code>'Gmail'</code>: 谷歌邮箱(当然你也可以填入你自己的其他邮箱)</li>
+<li><code>'Instagram'</code>: Instagram</li>
+<li><code>'Line'</code>: Line</li>
+<li><code>'Linkedin'</code>: 领英</li>
+<li><code>'Pinterest'</code>: 拼趣</li>
+<li><code>'Pocket'</code>: Pocket</li>
+<li><code>'QQ'</code>: QQ</li>
+<li><code>'Qzone'</code>: QQ 空间</li>
+<li><code>'Reddit'</code>: Reddit</li>
+<li><code>'Rss'</code>: RSS 地址</li>
+<li><code>'Steam'</code>: Steam</li>
+<li><code>'Twitter'</code>: Twitter</li>
+<li><code>'Wechat'</code>: 微信</li>
+<li><code>'Weibo'</code>: 微博</li>
+<li><code>'Whatsapp'</code>: Whatsapp</li>
+<li><code>'Youtube'</code>: YouTube</li>
+<li><code>'Zhihu'</code>: 知乎</li>
+</ul>
+</div>
+<h2 id="frontmatter-可用参数"> Frontmatter 可用参数</h2>
+<h3 id="hero"> hero</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认: <code>true</code></li>
+</ul>
+<p>是否显示主页的图标与描述。主页的图标、描述设置同 <a href="./../layout/home.html">默认主页</a>。</p>
+<h3 id="bgimage"> bgImage</h3>
+<ul>
+<li>类型: <code>string</code></li>
+</ul>
+<p>背景图片的地址，需填写绝对路径。如果不填写，会自动应用一张默认的风景图片。</p>
+<h3 id="bgimagestyle"> bgImageStyle</h3>
+<ul>
+<li>类型: <code>Record&lt;string, string&gt;</code></li>
+</ul>
+<p>背景图片的 CSS 样式。</p>
+<h3 id="heroimagestyle"> heroImageStyle</h3>
+<ul>
+<li>类型: <code>Record&lt;string, string&gt;</code></li>
+</ul>
+<p>首页图标的 CSS 样式</p>
+<h3 id="herofullscreen"> heroFullScreen</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认: <code>false</code></li>
+</ul>
+<p>是否全屏显示 Hero</p>
+<h3 id="项目"> 项目</h3>
+<ul>
+<li>类型: <code>ProjectOption[]</code></li>
+</ul>
+<p><code>ProjectOption</code> 包括以下键值:</p>
+<ul>
+<li><code>type</code>: 类型，可选值为 <code>'link' | 'project' | 'book' | 'article'</code></li>
+<li><code>name</code>: 项目名称，必填</li>
+<li><code>link</code>: 项目链接，必填，填入外部链接或绝对路径。</li>
+<li><code>desc</code>: 项目描述，选填</li>
+<li><code>cover</code>: 项目封面，选填，填入外部链接或绝对路径。</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>博客功能介绍</title>
+      <link>https://vuepress-theme-hope.github.io/zh/guide/blog/intro/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/guide/blog/intro/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">博客功能介绍</source>
+      <description>&amp;lt;p&amp;gt;主题通过引入 &amp;lt;code&amp;gt;@vuepress/plugin-blog&amp;lt;/code&amp;gt; &amp;lt;strong&amp;gt;默认&amp;lt;/strong&amp;gt;启用了一些博客功能。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;如果你不需要任何的博客功能 (比如一个纯文档站点)，你可以配置 &amp;lt;code&amp;gt;themeConfig.blog&amp;lt;/code&amp;gt; 为 &amp;lt;code&amp;gt;false&amp;lt;/code&amp;gt; 来禁用全部的博客功能。&amp;lt;/p&amp;gt;
+</description>
+      <category>blog</category>
+      <pubDate>Sat, 06 Mar 2021 14:49:20 GMT</pubDate>
+      <content:encoded><![CDATA[<p>主题通过引入 <code>@vuepress/plugin-blog</code> <strong>默认</strong>启用了一些博客功能。</p>
+<p>如果你不需要任何的博客功能 (比如一个纯文档站点)，你可以配置 <code>themeConfig.blog</code> 为 <code>false</code> 来禁用全部的博客功能。</p>
+
+<h2 id="综述"> 综述</h2>
+<p>总体上，通过启用博客功能，主题允许你通过页面的 frontmatter，为页面配置分类、标签、是否是文章、是否出现在时间线中、收藏、置顶等功能。</p>
+<ul>
+<li>
+<p><a href="./article.html">文章列表</a></p>
+</li>
+<li>
+<p><a href="./category-and-tags.html">分类与标签</a></p>
+</li>
+<li>
+<p><a href="./timeline.html">时间线</a></p>
+</li>
+</ul>
+<p>同时主题还为你提供了 <a href="./home.html">博客风格的主页</a>。</p>
+<h2 id="侧边栏"> 侧边栏</h2>
+<p>主题提供了一个博客相关的侧边栏。该侧边栏会在博客相关的页面显示 (在桌面会显示在右侧，在移动视图下收起到侧边栏中)</p>
+<p>你可以通过 <code>themeConfig.blog.sidebarDisplay</code> 控制该侧边栏在非博客相关的页面的显示行为。可选的值有 <code>'mobile' | 'none' | 'always'</code>。默认为 <code>mobile</code>，即当你在移动视图下访问非博客相关的页面时，你也可以在侧边栏看到它。</p>
+<h2 id="分页配置"> 分页配置</h2>
+<p>对于所有页面的文章列表，我们都会在底部显示一个分页组件。你可以通过这个组件快捷的在首页、尾页、前后两页进行跳转。你也可以输入数字跳转到指定页面。</p>
+<p>默认每个分页的文章数为 <code>10</code>，你可以设置 <code>themeConfig.blog.perPage</code> 来覆盖它。</p>
+<h2 id="注意事项"> 注意事项</h2>
+<div><p>Note</p>
+<p>请勿在根目录中添加并放置对应的文件夹(&quot;article&quot;, &quot;slide&quot;, &quot;star&quot;, &quot;encrypt&quot;, &quot;category&quot;, &quot;tag&quot;, &quot;timeline&quot;)，否则可能造成编译时文件被覆盖而造成错误。</p>
+<p>比如你的确需要一个“文章”文件夹的话，请考虑使用 &quot;articles&quot;。</p>
+</div>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>博客</title>
+      <link>https://vuepress-theme-hope.github.io/zh/guide/blog/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/guide/blog/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">博客</source>
+      <category>blog</category>
+      <pubDate>Fri, 26 Feb 2021 08:10:04 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="目录"> 目录</h2>
+<ul>
+<li>
+<p><a href="./intro.html">博客功能介绍</a></p>
+</li>
+<li>
+<p><a href="./article.html">文章列表</a></p>
+</li>
+<li>
+<p><a href="./category-and-tags.html">分类与标签</a></p>
+</li>
+<li>
+<p><a href="./timeline.html">时间线</a></p>
+</li>
+<li>
+<p><a href="./home.html">博客主页</a></p>
+</li>
+</ul>
 ]]></content:encoded>
     </item>
     <item>
