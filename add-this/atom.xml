@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-04-07T05:13:51.741Z</updated>
+  <updated>2021-04-07T05:22:15.949Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/add-this/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/add-this/"/>
@@ -56,6 +56,39 @@
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
+    <title type="html">Home</title>
+    <id>https://vuepress-theme-hope.github.io/add-this/</id>
+    <link href="https://vuepress-theme-hope.github.io/add-this/"/>
+    <updated>2021-02-24T15:41:50.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="how-to-use"> How to use</h2>
+<h3 id="install"> Install</h3>
+<CodeGroup>
+<CodeGroupItem title="yarn">
+<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-add-this
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="npm">
+<div><pre><code><span>npm</span> i -D vuepress-plugin-add-this
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+<h3 id="usage"> Usage</h3>
+<div><pre><code><span>// .vuepress/config.js</span>
+module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span><span>[</span><span>"add-this"</span><span>,</span> <span>{</span> pubid<span>:</span> <span>"your pubid"</span> <span>}</span><span>]</span><span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div>]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-10-11T07:47:20.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
     <title type="html">配置</title>
     <id>https://vuepress-theme-hope.github.io/add-this/zh/config/</id>
     <link href="https://vuepress-theme-hope.github.io/add-this/zh/config/"/>
@@ -97,39 +130,6 @@
       <name>Mr.Hope</name>
     </contributor>
     <published>2020-10-13T05:36:44.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">Home</title>
-    <id>https://vuepress-theme-hope.github.io/add-this/</id>
-    <link href="https://vuepress-theme-hope.github.io/add-this/"/>
-    <updated>2021-02-24T15:41:50.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="how-to-use"> How to use</h2>
-<h3 id="install"> Install</h3>
-<CodeGroup>
-<CodeGroupItem title="yarn">
-<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-add-this
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-<CodeGroupItem title="npm">
-<div><pre><code><span>npm</span> i -D vuepress-plugin-add-this
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-</CodeGroup>
-<h3 id="usage"> Usage</h3>
-<div><pre><code><span>// .vuepress/config.js</span>
-module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span><span>[</span><span>"add-this"</span><span>,</span> <span>{</span> pubid<span>:</span> <span>"your pubid"</span> <span>}</span><span>]</span><span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div>]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-10-11T07:47:20.000Z</published>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>

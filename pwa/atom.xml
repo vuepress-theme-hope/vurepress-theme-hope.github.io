@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-04-07T05:13:51.981Z</updated>
+  <updated>2021-04-07T05:22:16.021Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/pwa/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/pwa/"/>
@@ -18,7 +18,7 @@
     <title type="html">Config</title>
     <id>https://vuepress-theme-hope.github.io/pwa/config/</id>
     <link href="https://vuepress-theme-hope.github.io/pwa/config/"/>
-    <updated>2021-04-07T05:12:23.000Z</updated>
+    <updated>2021-04-07T05:20:59.000Z</updated>
     <content type="html"><![CDATA[<h2 id="showinstall"> showInstall</h2>
 <ul>
 <li>Type: <code>boolean</code></li>
@@ -177,7 +177,7 @@
     <title type="html">Guide</title>
     <id>https://vuepress-theme-hope.github.io/pwa/guide/</id>
     <link href="https://vuepress-theme-hope.github.io/pwa/guide/"/>
-    <updated>2021-04-07T05:12:23.000Z</updated>
+    <updated>2021-04-07T05:20:59.000Z</updated>
     <summary type="html"><![CDATA[<p>The plugin brings enhanced PWA support to VuePress [^pwa-intro].</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>The plugin brings enhanced PWA support to VuePress <sup></sup>.</p>
@@ -395,7 +395,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">配置</title>
     <id>https://vuepress-theme-hope.github.io/pwa/zh/config/</id>
     <link href="https://vuepress-theme-hope.github.io/pwa/zh/config/"/>
-    <updated>2021-04-07T05:12:23.000Z</updated>
+    <updated>2021-04-07T05:20:59.000Z</updated>
     <content type="html"><![CDATA[<h2 id="showinstall"> showInstall</h2>
 <ul>
 <li>类型: <code>boolean</code></li>
@@ -557,7 +557,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">指南</title>
     <id>https://vuepress-theme-hope.github.io/pwa/zh/guide/</id>
     <link href="https://vuepress-theme-hope.github.io/pwa/zh/guide/"/>
-    <updated>2021-04-07T05:12:23.000Z</updated>
+    <updated>2021-04-07T05:20:59.000Z</updated>
     <summary type="html"><![CDATA[<p>插件为 VuePress 带来了增强的 PWA 支持[^pwa-intro]。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>插件为 VuePress 带来了增强的 PWA 支持<sup></sup>。</p>

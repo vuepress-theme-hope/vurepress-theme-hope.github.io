@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-04-07T05:13:51.880Z</updated>
+  <updated>2021-04-07T05:22:16.036Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/md-enhance/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/md-enhance/"/>
@@ -19,7 +19,7 @@
     <title type="html">Config</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/config/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/config/"/>
-    <updated>2021-04-07T05:12:23.000Z</updated>
+    <updated>2021-04-07T05:20:59.000Z</updated>
     <content type="html"><![CDATA[<p>You can pass these options to the plugin:</p>
 <h2 id="enable-all"> Enable all</h2>
 <ul>
@@ -1738,7 +1738,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">配置</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/zh/config/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/config/"/>
-    <updated>2021-04-07T05:12:23.000Z</updated>
+    <updated>2021-04-07T05:20:59.000Z</updated>
     <content type="html"><![CDATA[<p>你可以传递以下选项来启用或禁用一些功能</p>
 <h2 id="enableall"> enableAll</h2>
 <ul>
