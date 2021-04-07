@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-04-06T09:25:02.527Z</updated>
+  <updated>2021-04-07T05:13:51.880Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/md-enhance/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/md-enhance/"/>
@@ -19,14 +19,8 @@
     <title type="html">Config</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/config/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/config/"/>
-    <updated>2021-01-20T10:34:51.000Z</updated>
+    <updated>2021-04-07T05:12:23.000Z</updated>
     <content type="html"><![CDATA[<p>You can pass these options to the plugin:</p>
-<h2 id="baselang"> baseLang</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>'en-US'</code></li>
-</ul>
-<p>The language of the home directory.</p>
 <h2 id="enable-all"> Enable all</h2>
 <ul>
 <li>Type: <code>boolean</code></li>
@@ -1744,14 +1738,8 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">配置</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/zh/config/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/config/"/>
-    <updated>2021-02-28T09:14:42.000Z</updated>
+    <updated>2021-04-07T05:12:23.000Z</updated>
     <content type="html"><![CDATA[<p>你可以传递以下选项来启用或禁用一些功能</p>
-<h2 id="baselang"> baseLang</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>'en-US'</code></li>
-</ul>
-<p>主目录所对应的语言。</p>
 <h2 id="enableall"> enableAll</h2>
 <ul>
 <li>类型: <code>boolean</code></li>

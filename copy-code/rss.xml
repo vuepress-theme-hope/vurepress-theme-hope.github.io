@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/copy-code/</link>
     <description>Quick Code Copy Plugin for vuepress</description>
     <language>en-US</language>
-    <pubDate>Tue, 06 Apr 2021 09:25:02 GMT</pubDate>
-    <lastBuildDate>Tue, 06 Apr 2021 09:25:02 GMT</lastBuildDate>
+    <pubDate>Wed, 07 Apr 2021 05:13:51 GMT</pubDate>
+    <lastBuildDate>Wed, 07 Apr 2021 05:13:51 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -17,13 +17,7 @@
       <guid>https://vuepress-theme-hope.github.io/copy-code/config/</guid>
       <source url="https://vuepress-theme-hope.github.io/copy-code/rss.xml">API Config</source>
       <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="baselang"> baseLang</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>'en-US'</code></li>
-</ul>
-<p>The language of the home directory.</p>
-<h3 id="selector"> selector</h3>
+      <content:encoded><![CDATA[<h3 id="selector"> selector</h3>
 <ul>
 <li>Type: <code>string | string[]</code></li>
 <li>Default: <code>'.theme-default-content div[class*=&quot;language-&quot;] pre'</code></li>
@@ -108,12 +102,6 @@ module<span>.</span>exports <span>=</span> <span>{</span>
       <source url="https://vuepress-theme-hope.github.io/copy-code/rss.xml">配置</source>
       <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
       <content:encoded><![CDATA[<h2 id="插件配置"> 插件配置</h2>
-<h3 id="baselang"> baseLang</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>'en-US'</code></li>
-</ul>
-<p>主目录所对应的语言。</p>
 <h3 id="selector"> selector</h3>
 <ul>
 <li>类型: <code>string | string[]</code></li>

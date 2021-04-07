@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-04-06T09:25:02.257Z</updated>
+  <updated>2021-04-07T05:13:51.773Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/comment/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/comment/"/>
@@ -18,14 +18,8 @@
     <title type="html">API Config</title>
     <id>https://vuepress-theme-hope.github.io/comment/config/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/config/"/>
-    <updated>2021-02-28T12:56:03.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="baselang"> baseLang</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>'en-US'</code></li>
-</ul>
-<p>The language of the home directory.</p>
-<h2 id="type"> type</h2>
+    <updated>2021-04-07T05:12:23.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="type"> type</h2>
 <ul>
 <li>Type: <code>'valine' | 'vssue' | 'disable'</code></li>
 <li>Required: true</li>
@@ -1165,14 +1159,8 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">配置</title>
     <id>https://vuepress-theme-hope.github.io/comment/zh/config/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/zh/config/"/>
-    <updated>2021-02-28T12:56:03.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="baselang"> baseLang</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>'en-US'</code></li>
-</ul>
-<p>主目录所对应的语言。</p>
-<h2 id="type"> type</h2>
+    <updated>2021-04-07T05:12:23.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="type"> type</h2>
 <ul>
 <li>类型: <code>'valine' | 'vssue' | 'disable'</code></li>
 <li>必填: 是</li>

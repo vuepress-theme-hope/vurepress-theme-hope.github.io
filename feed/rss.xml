@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/feed/</link>
     <description>Feed Plugin for vuepress</description>
     <language>en-US</language>
-    <pubDate>Tue, 06 Apr 2021 09:25:02 GMT</pubDate>
-    <lastBuildDate>Tue, 06 Apr 2021 09:25:02 GMT</lastBuildDate>
+    <pubDate>Wed, 07 Apr 2021 05:13:51 GMT</pubDate>
+    <lastBuildDate>Wed, 07 Apr 2021 05:13:51 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -44,8 +44,8 @@
 <li>
 <p>Default:</p>
 <ul>
-<li><code>options.baseLang</code></li>
-<li>If the above is not provided, fall back to <code>themeConfig.baseLang</code></li>
+<li><code>siteConfig.locales['/'].lang</code></li>
+<li>If the above is not provided, fall back to <code>themeConfig.locales['/'].lang</code></li>
 <li>If the above is not provided, fall back to <code>'en-US'</code></li>
 </ul>
 </li>
@@ -444,12 +444,6 @@
 <li>Required: Yes</li>
 </ul>
 <p>The domain name of the deployment site.</p>
-<h2 id="baselang"> baseLang</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>'en-US'</code></li>
-</ul>
-<p>The language of the home directory.</p>
 <h2 id="channel"> channel</h2>
 <p><code>channel</code> option is used to config <em>Feed Channels</em>.</p>
 <p>For available options, please see <a href="./channel.html">Config → Channel</a></p>
@@ -533,7 +527,7 @@
 &amp;lt;p&amp;gt;Please use RSS by default.&amp;lt;/p&amp;gt;
 &amp;lt;/div&amp;gt;
 &amp;lt;p&amp;gt;Considering that rare people stick to feed now, this plugin provides a minimal configuration to adjust the automatic generation of detailed feed files. Also it allows you to freely define the output content of the feed.&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;To generate the link address correctly, you need to provide &amp;lt;code&amp;gt;baseLang&amp;lt;/code&amp;gt; (root directory language) and &amp;lt;code&amp;gt;hostname&amp;lt;/code&amp;gt; (deployment domain name) in the plugin options or themeConfig. All other options are optional.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;To generate the link address correctly, you need to provide &amp;lt;code&amp;gt;hostname&amp;lt;/code&amp;gt; (deployment domain name) in the plugin options or themeConfig. All other options are optional.&amp;lt;/p&amp;gt;
 &amp;lt;h2 id=&amp;quot;channel-settings&amp;quot;&amp;gt; Channel Settings&amp;lt;/h2&amp;gt;
 &amp;lt;p&amp;gt;You can customize information of feed channel by setting the &amp;lt;code&amp;gt;channel&amp;lt;/code&amp;gt; option.&amp;lt;/p&amp;gt;
 &amp;lt;p&amp;gt;We recommend you to set the following options:&amp;lt;/p&amp;gt;
@@ -595,7 +589,7 @@
 <p>Please use RSS by default.</p>
 </div>
 <p>Considering that rare people stick to feed now, this plugin provides a minimal configuration to adjust the automatic generation of detailed feed files. Also it allows you to freely define the output content of the feed.</p>
-<p>To generate the link address correctly, you need to provide <code>baseLang</code> (root directory language) and <code>hostname</code> (deployment domain name) in the plugin options or themeConfig. All other options are optional.</p>
+<p>To generate the link address correctly, you need to provide <code>hostname</code> (deployment domain name) in the plugin options or themeConfig. All other options are optional.</p>
 <h2 id="channel-settings"> Channel Settings</h2>
 <p>You can customize information of feed channel by setting the <code>channel</code> option.</p>
 <p>We recommend you to set the following options:</p>
@@ -779,8 +773,8 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <li>类型: <code>string</code></li>
 <li>默认值:
 <ul>
-<li><code>options.baseLang</code></li>
-<li>如果上述未提供，回退到 <code>themeConfig.baseLang</code></li>
+<li><code>siteConfig.lcoales['/'].locales</code></li>
+<li>如果上述未提供，回退到 <code>themeConfig.lcoales['/'].locales</code></li>
 <li>如果上述未提供，回退到 <code>'en-US'</code></li>
 </ul>
 </li>
@@ -1169,12 +1163,6 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <li>必填: 是</li>
 </ul>
 <p>部署网站的域名。</p>
-<h2 id="baselang"> baseLang</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>'en-US'</code></li>
-</ul>
-<p>主目录所对应的语言。</p>
 <h2 id="channel"> channel</h2>
 <p><code>channel</code> 选项用于配置 Feed 频道。</p>
 <p>可用选项详见 <a href="./channel.html">配置 → 频道设置</a></p>
@@ -1258,7 +1246,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 &amp;lt;p&amp;gt;如果可以，请尽可能使用 RSS。&amp;lt;/p&amp;gt;
 &amp;lt;/div&amp;gt;
 &amp;lt;p&amp;gt;考虑到现在 Feed 已经很小众，本插件旨在提供最小配置来尽可能自动生成详细的 Feed 文件。当然本插件也预留了充足的设置项，以让你自由定义 Feed 的输出内容。&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;为了正确生成链接地址，你需要在插件选项或者 themeConfig 中提供 &amp;lt;code&amp;gt;baseLang&amp;lt;/code&amp;gt; (根目录语言) 和 &amp;lt;code&amp;gt;hostname&amp;lt;/code&amp;gt; (部署域名)。其他选项均是选填的。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;为了正确生成链接地址，你需要在插件选项或者 themeConfig 中提供 &amp;lt;code&amp;gt;hostname&amp;lt;/code&amp;gt; (部署域名)。其他选项均是选填的。&amp;lt;/p&amp;gt;
 &amp;lt;h2 id=&amp;quot;频道设置&amp;quot;&amp;gt; 频道设置&amp;lt;/h2&amp;gt;
 &amp;lt;p&amp;gt;你可以通过设置 &amp;lt;code&amp;gt;channel&amp;lt;/code&amp;gt; 选项来自自定义 Feed 频道的各项信息。&amp;lt;/p&amp;gt;
 &amp;lt;p&amp;gt;我们推荐进行如下设置:&amp;lt;/p&amp;gt;
@@ -1324,7 +1312,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <p>如果可以，请尽可能使用 RSS。</p>
 </div>
 <p>考虑到现在 Feed 已经很小众，本插件旨在提供最小配置来尽可能自动生成详细的 Feed 文件。当然本插件也预留了充足的设置项，以让你自由定义 Feed 的输出内容。</p>
-<p>为了正确生成链接地址，你需要在插件选项或者 themeConfig 中提供 <code>baseLang</code> (根目录语言) 和 <code>hostname</code> (部署域名)。其他选项均是选填的。</p>
+<p>为了正确生成链接地址，你需要在插件选项或者 themeConfig 中提供 <code>hostname</code> (部署域名)。其他选项均是选填的。</p>
 <h2 id="频道设置"> 频道设置</h2>
 <p>你可以通过设置 <code>channel</code> 选项来自自定义 Feed 频道的各项信息。</p>
 <p>我们推荐进行如下设置:</p>

@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/add-this/</link>
     <description>Share Plugin provided by AddThis</description>
     <language>en-US</language>
-    <pubDate>Tue, 06 Apr 2021 09:25:02 GMT</pubDate>
-    <lastBuildDate>Tue, 06 Apr 2021 09:25:02 GMT</lastBuildDate>
+    <pubDate>Wed, 07 Apr 2021 05:13:51 GMT</pubDate>
+    <lastBuildDate>Wed, 07 Apr 2021 05:13:51 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -39,32 +39,6 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>Home</title>
-      <link>https://vuepress-theme-hope.github.io/add-this/</link>
-      <guid>https://vuepress-theme-hope.github.io/add-this/</guid>
-      <source url="https://vuepress-theme-hope.github.io/add-this/rss.xml">Home</source>
-      <pubDate>Sun, 11 Oct 2020 07:47:20 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="how-to-use"> How to use</h2>
-<h3 id="install"> Install</h3>
-<CodeGroup>
-<CodeGroupItem title="yarn">
-<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-add-this
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-<CodeGroupItem title="npm">
-<div><pre><code><span>npm</span> i -D vuepress-plugin-add-this
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-</CodeGroup>
-<h3 id="usage"> Usage</h3>
-<div><pre><code><span>// .vuepress/config.js</span>
-module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span><span>[</span><span>"add-this"</span><span>,</span> <span>{</span> pubid<span>:</span> <span>"your pubid"</span> <span>}</span><span>]</span><span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
       <title>配置</title>
       <link>https://vuepress-theme-hope.github.io/add-this/zh/config/</link>
       <guid>https://vuepress-theme-hope.github.io/add-this/zh/config/</guid>
@@ -93,6 +67,32 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <p>进入 <a href="https://www.addthis.com/dashboard#gallery/" target="_blank" rel="noopener noreferrer">工具页面</a> 添加你所需要的工具，并进行合理的配置。</p>
 <p>在配置完成后，请进入 <a href="https://www.addthis.com/dashboard#get-the-code/" target="_blank" rel="noopener noreferrer">获取代码页面</a>，即可代码中获得你的 pubid。</p>
 ]]></content:encoded>
+    </item>
+    <item>
+      <title>Home</title>
+      <link>https://vuepress-theme-hope.github.io/add-this/</link>
+      <guid>https://vuepress-theme-hope.github.io/add-this/</guid>
+      <source url="https://vuepress-theme-hope.github.io/add-this/rss.xml">Home</source>
+      <pubDate>Sun, 11 Oct 2020 07:47:20 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="how-to-use"> How to use</h2>
+<h3 id="install"> Install</h3>
+<CodeGroup>
+<CodeGroupItem title="yarn">
+<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-add-this
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="npm">
+<div><pre><code><span>npm</span> i -D vuepress-plugin-add-this
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+<h3 id="usage"> Usage</h3>
+<div><pre><code><span>// .vuepress/config.js</span>
+module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span><span>[</span><span>"add-this"</span><span>,</span> <span>{</span> pubid<span>:</span> <span>"your pubid"</span> <span>}</span><span>]</span><span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div>]]></content:encoded>
     </item>
     <item>
       <title>主页</title>

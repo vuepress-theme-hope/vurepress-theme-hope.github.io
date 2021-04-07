@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-04-06T09:25:02.175Z</updated>
+  <updated>2021-04-07T05:13:51.875Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/copy-code/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/copy-code/"/>
@@ -18,14 +18,8 @@
     <title type="html">API Config</title>
     <id>https://vuepress-theme-hope.github.io/copy-code/config/</id>
     <link href="https://vuepress-theme-hope.github.io/copy-code/config/"/>
-    <updated>2021-02-26T13:05:09.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="baselang"> baseLang</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>'en-US'</code></li>
-</ul>
-<p>The language of the home directory.</p>
-<h3 id="selector"> selector</h3>
+    <updated>2021-04-07T05:12:23.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="selector"> selector</h3>
 <ul>
 <li>Type: <code>string | string[]</code></li>
 <li>Default: <code>'.theme-default-content div[class*=&quot;language-&quot;] pre'</code></li>
@@ -129,14 +123,8 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">配置</title>
     <id>https://vuepress-theme-hope.github.io/copy-code/zh/config/</id>
     <link href="https://vuepress-theme-hope.github.io/copy-code/zh/config/"/>
-    <updated>2021-02-26T13:05:09.000Z</updated>
+    <updated>2021-04-07T05:12:23.000Z</updated>
     <content type="html"><![CDATA[<h2 id="插件配置"> 插件配置</h2>
-<h3 id="baselang"> baseLang</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>'en-US'</code></li>
-</ul>
-<p>主目录所对应的语言。</p>
 <h3 id="selector"> selector</h3>
 <ul>
 <li>类型: <code>string | string[]</code></li>

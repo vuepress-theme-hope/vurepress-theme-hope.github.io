@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/md-enhance/</link>
     <description>Markdown Enhancement for VuePress</description>
     <language>en-US</language>
-    <pubDate>Tue, 06 Apr 2021 09:25:02 GMT</pubDate>
-    <lastBuildDate>Tue, 06 Apr 2021 09:25:02 GMT</lastBuildDate>
+    <pubDate>Wed, 07 Apr 2021 05:13:51 GMT</pubDate>
+    <lastBuildDate>Wed, 07 Apr 2021 05:13:51 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -19,12 +19,6 @@
       <source url="https://vuepress-theme-hope.github.io/md-enhance/rss.xml">Config</source>
       <pubDate>Thu, 07 May 2020 18:16:42 GMT</pubDate>
       <content:encoded><![CDATA[<p>You can pass these options to the plugin:</p>
-<h2 id="baselang"> baseLang</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>'en-US'</code></li>
-</ul>
-<p>The language of the home directory.</p>
 <h2 id="enable-all"> Enable all</h2>
 <ul>
 <li>Type: <code>boolean</code></li>
@@ -1654,12 +1648,6 @@ module<span>.</span>exports <span>=</span> <span>{</span>
       <source url="https://vuepress-theme-hope.github.io/md-enhance/rss.xml">配置</source>
       <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
       <content:encoded><![CDATA[<p>你可以传递以下选项来启用或禁用一些功能</p>
-<h2 id="baselang"> baseLang</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>'en-US'</code></li>
-</ul>
-<p>主目录所对应的语言。</p>
 <h2 id="enableall"> enableAll</h2>
 <ul>
 <li>类型: <code>boolean</code></li>

@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/pwa/</link>
     <description>A powerful PWA plugin for vuepress</description>
     <language>en-US</language>
-    <pubDate>Tue, 06 Apr 2021 09:25:02 GMT</pubDate>
-    <lastBuildDate>Tue, 06 Apr 2021 09:25:02 GMT</lastBuildDate>
+    <pubDate>Wed, 07 Apr 2021 05:13:51 GMT</pubDate>
+    <lastBuildDate>Wed, 07 Apr 2021 05:13:51 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -17,13 +17,7 @@
       <guid>https://vuepress-theme-hope.github.io/pwa/config/</guid>
       <source url="https://vuepress-theme-hope.github.io/pwa/rss.xml">Config</source>
       <pubDate>Thu, 22 Oct 2020 04:23:17 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="baselang"> baseLang</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>'en-US'</code></li>
-</ul>
-<p>The language of the home directory.</p>
-<h2 id="showinstall"> showInstall</h2>
+      <content:encoded><![CDATA[<h2 id="showinstall"> showInstall</h2>
 <ul>
 <li>Type: <code>boolean</code></li>
 <li>Default: <code>true</code></li>
@@ -48,7 +42,7 @@
 <p>description: <code>siteConfig.description</code> || <code>themeConfig.description</code> || <code>'A site built with vuepress-theme-hope'</code></p>
 </li>
 <li>
-<p>lang: <code>options.baseLang</code> || <code>themeConfig.baseLang</code> || <code>&quot;en-US&quot;</code></p>
+<p>lang: <code>siteConfig.locales['/'].lang</code> || <code>themeConfig.locales['/'].lang</code> || <code>&quot;en-US&quot;</code></p>
 </li>
 <li>
 <p>start_url: <code>context.base</code></p>
@@ -206,7 +200,7 @@
 <p>To prevent large files from being included in the pre-cache list, any files larger than 2MB or pictures larger than 1MB will be deleted.</p>
 <p>You can customize the maximum file size of the cache (unit: KB) with the <code>maxSize</code> option, or change the size limit of the picture (unit: KB) with <code>maxPicSize</code>.</p>
 <h3 id="update-popup"> Update popup</h3>
-<p>The default language of the popup componnet will be automatically set to <code>baseLang</code>, when it is not set, it will fall back to <code>en-US</code>.</p>
+<p>We provide an update popup when new content is succesfully downloaded.</p>
 <div><p>Custom popup</p>
 <p>If you are not satisfied with the default popup component, you can write component and replace it by yourself. To do that, You need to register your popup component globally and pass the name of the component to the <code>popupComponent</code> option.</p>
 </div>
@@ -239,7 +233,7 @@
 </tr>
 <tr>
 <td>lang</td>
-<td><code>options.baseLang</code> || <code>themeConfig.baseLang</code> ||<code>&quot;en-US&quot;</code></td>
+<td><code>siteConfig.locales['/'].lang</code> || <code>themeConfig.locales['/'].lang</code> || <code>&quot;en-US&quot;</code></td>
 </tr>
 <tr>
 <td>start_url</td>
@@ -379,13 +373,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
       <guid>https://vuepress-theme-hope.github.io/pwa/zh/config/</guid>
       <source url="https://vuepress-theme-hope.github.io/pwa/rss.xml">配置</source>
       <pubDate>Thu, 22 Oct 2020 04:23:17 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="baselang"> baseLang</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>'en-US'</code></li>
-</ul>
-<p>主目录所对应的语言。</p>
-<h2 id="showinstall"> showInstall</h2>
+      <content:encoded><![CDATA[<h2 id="showinstall"> showInstall</h2>
 <ul>
 <li>类型: <code>boolean</code></li>
 <li>默认值: <code>true</code></li>
@@ -410,7 +398,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <p>description: <code>siteConfig.description</code> || <code>themeConfig.description</code> || <code>'A site built with vuepress-theme-hope'</code></p>
 </li>
 <li>
-<p>lang: <code>options.baseLang</code> || <code>themeConfig.baseLang</code> || <code>&quot;en-US&quot;</code></p>
+<p>lang: <code>siteConfig.locales['/'].lang</code> || <code>themeConfig.locales['/'].lang</code> || <code>&quot;en-US&quot;</code></p>
 </li>
 <li>
 <p>start_url: <code>context.base</code></p>
@@ -571,7 +559,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <p>为了防止在预缓存列表中包含大文件，任何大于 2MB 的文件或大于 1MB 的图片都将被删除。</p>
 <p>你可以通过 <code>maxSize</code> 选项自定义缓存的最大文件大小 (单位 KB)，或通过 <code>maxPicSize</code> 来更改图片的大小限制 (单位: KB)。</p>
 <h3 id="更新弹窗"> 更新弹窗</h3>
-<p>弹出窗口的默认语言将自动设置为 <code>baseLang</code> 选项的值，当未设置时，回退到 <code>en-US</code>。</p>
+<p>成功下载新内容后，我们将提供更新弹出窗口。</p>
 <div><p>自定义弹窗</p>
 <p>如果你对默认的弹窗不满意，你可以自行编写组件更换。你需要全局注册自己的弹窗组件，并将组件的名称传递给 <code>popupComponent</code> 选项。</p>
 </div>
@@ -604,7 +592,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 </tr>
 <tr>
 <td>lang</td>
-<td><code>options.baseLang</code> || <code>themeConfig.baseLang</code></td>
+<td><code>siteConfig.locales['/'].lang</code> || <code>themeConfig.locales['/'].lang</code> || <code>&quot;en-US&quot;</code></td>
 </tr>
 <tr>
 <td>start_url</td>
