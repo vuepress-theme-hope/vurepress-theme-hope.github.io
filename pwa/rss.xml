@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/pwa/</link>
     <description>A powerful PWA plugin for vuepress</description>
     <language>en-US</language>
-    <pubDate>Wed, 07 Apr 2021 05:45:43 GMT</pubDate>
-    <lastBuildDate>Wed, 07 Apr 2021 05:45:43 GMT</lastBuildDate>
+    <pubDate>Wed, 07 Apr 2021 05:49:02 GMT</pubDate>
+    <lastBuildDate>Wed, 07 Apr 2021 05:49:02 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -200,12 +200,12 @@
 <p>To prevent large files from being included in the pre-cache list, any files larger than 2MB or pictures larger than 1MB will be deleted.</p>
 <p>You can customize the maximum file size of the cache (unit: KB) with the <code>maxSize</code> option, or change the size limit of the picture (unit: KB) with <code>maxPicSize</code>.</p>
 <h3 id="update-popup"> Update popup</h3>
-<p>We provide an update popup when new content is succesfully downloaded.</p>
+<p>We provide an update popup when new content is successfully downloaded.</p>
 <div><p>Custom popup</p>
 <p>If you are not satisfied with the default popup component, you can write component and replace it by yourself. To do that, You need to register your popup component globally and pass the name of the component to the <code>popupComponent</code> option.</p>
 </div>
 <h2 id="manifest-file-generation"> Manifest file generation</h2>
-<p>In order to ensure the installability of PWA, the site needs to generate a manifest file and declare a valid manifest file address <sup></sup> through <code>link</code>.</p>
+<p>To ensure the installability of PWA, the site needs to generate a manifest file and declare a valid manifest file address <sup></sup> through <code>link</code>.</p>
 <p>The plugin will automatically generate the Manifest file <code>manifest.webmanifest</code> for you in the output directory, and will also add the manifest address statement to each HTML <code>&lt;head&gt;</code>.</p>
 <p>If you already have a <code>manifest.webmanifest</code> or <code>manifest.json</code> in <code>.vuepress/public</code>, the plugin will read and merge it into the final manifest.</p>
 <h3 id="automatic-generation"> Automatic generation</h3>
