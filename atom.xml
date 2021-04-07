@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-04-07T08:35:29.623Z</updated>
+  <updated>2021-04-07T08:39:22.512Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/"/>
@@ -14976,6 +14976,127 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
+    <title type="html">界面</title>
+    <id>https://vuepress-theme-hope.github.io/zh/guide/interface/</id>
+    <link href="https://vuepress-theme-hope.github.io/zh/guide/interface/"/>
+    <updated>2021-02-27T06:18:09.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="目录"> 目录</h2>
+<ul>
+<li>
+<p><a href="./dark-mode.html">深色模式</a></p>
+</li>
+<li>
+<p><a href="./theme-color.html">主题色</a></p>
+</li>
+<li>
+<p><a href="./icon.html">图标支持</a></p>
+</li>
+<li>
+<p><a href="./others.html">其他功能</a></p>
+</li>
+</ul>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <category term="interface"/>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-02-26T08:10:04.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">主题色</title>
+    <id>https://vuepress-theme-hope.github.io/zh/guide/interface/theme-color/</id>
+    <link href="https://vuepress-theme-hope.github.io/zh/guide/interface/theme-color/"/>
+    <updated>2021-03-16T15:57:52.000Z</updated>
+    <summary type="html"><![CDATA[<p>这是一个开箱即用的功能，除了你的主题色之外，还提供 “红、蓝、绿、橙、紫” 五种颜色主题。你也可以定制自己的主题色选择列表。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>这是一个开箱即用的功能，除了你的主题色之外，还提供 “红、蓝、绿、橙、紫” 五种颜色主题。你也可以定制自己的主题色选择列表。</p>
+
+<h2 id="禁用功能"> 禁用功能</h2>
+<p>你可以将 <code>themeConfig</code> 的 <code>themeColor</code> 设置为 <code>false</code> 来禁用它。</p>
+<h2 id="主题色"> 主题色</h2>
+<p>主题色的第一个颜色是默认的主题色，你需要在 <code>.vuepress/styles/palette.styl</code> 中通过 <code>$accentColor</code> 设置它。</p>
+<h2 id="自定义颜色"> 自定义颜色</h2>
+<p>你需要按照 <code>{ 颜色名1: 颜色值, 颜色名2: 颜色值, ... }</code> 的格式来配置 <code>themeConfig.themeColor</code>:</p>
+<details><summary>例子</summary>
+<div><div><br><br><br><br><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><br><br></div><pre><code><span>// .vuepress/config.js</span>
+module<span>.</span>exports <span>=</span> <span>{</span>
+  themeConfig<span>:</span> <span>{</span>
+    themeColor<span>:</span> <span>{</span>
+      blue<span>:</span> <span>"#2196f3"</span><span>,</span>
+      red<span>:</span> <span>"#f26d6d"</span><span>,</span>
+      green<span>:</span> <span>"#3eaf7c"</span><span>,</span>
+      orange<span>:</span> <span>"#fb9b5f"</span><span>,</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div></details>
+<p>同时为了使 Stylus 编译器正常工作，你还需要将颜色变量赋值给 <code>$colorPicker</code> 写入 <code>.vuepress/styles</code> 下的 <code>palette.styl</code> 中:</p>
+<details><summary>例子</summary>
+<div><pre><code><span>// .vuepress/styles/palette.styl</span>
+<span><span>$colorPicker</span> <span>=</span> <span>{</span>
+  <span>red</span><span>:</span> <span>#f26d6d</span><span>,</span>
+  <span>blue</span><span>:</span> <span>#2196f3</span><span>,</span>
+  <span>green</span><span>:</span> <span>#3eaf7c</span><span>,</span>
+  <span>orange</span><span>:</span> <span>#fb9b5f</span>
+<span>}</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div></details>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <category term="interface"/>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-02-26T12:39:35.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">路径导航</title>
+    <id>https://vuepress-theme-hope.github.io/zh/guide/layout/breadcrumb/</id>
+    <link href="https://vuepress-theme-hope.github.io/zh/guide/layout/breadcrumb/"/>
+    <updated>2021-03-10T04:43:39.000Z</updated>
+    <summary type="html"><![CDATA[<p>vuepress-theme-hope 添加了开箱即用的路径导航支持，你可以通过 <code>breadcrumb</code> 字段控制它 <i>Not supported content</i> [^applypartically]，默认的值为 <code>true</code>。</p>
+<p>无需任何额外配置，一个和主题色相符合的路径导航会显示在页面内容最上方，帮助阅读者理解文档结构。</p>
+<p>你也可以通过 <code>breadcrumbIcon</code> 字段 <i>Not supported content</i> 控制路径导航的图标显示，默认值为 <code>true</code>。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>vuepress-theme-hope 添加了开箱即用的路径导航支持，你可以通过 <code>breadcrumb</code> 字段控制它 <i>Not supported content</i> <sup></sup>，默认的值为 <code>true</code>。</p>
+<p>无需任何额外配置，一个和主题色相符合的路径导航会显示在页面内容最上方，帮助阅读者理解文档结构。</p>
+<p>你也可以通过 <code>breadcrumbIcon</code> 字段 <i>Not supported content</i> 控制路径导航的图标显示，默认值为 <code>true</code>。</p>
+
+<div><p>注意事项</p>
+<p>为了保证路径导航更好的提示，建议在每一个路径下创建 readme.md 文件。否则，路径导航将因对应层级文件夹没有主页，无法生成标题与链接而忽略那一层级。</p>
+</div>
+<hr>
+<section>
+<ol>
+<li id="fn1"><p><strong>支持页面配置</strong> <i>Not supported content</i></p>
+<p><strong>支持页面配置</strong> 指主题允许页面的配置覆盖全局的配置。这意味着你可以在全局启用的情况下，在特定页面将其禁用，或在全局禁用的情况下在特定页面启用。</p>
+<details><summary>例子</summary>
+<p>以路径导航为例:</p>
+<p>该功能默认全局启用，即 <code>themeConfig.breadcrumb</code> 默认为 <code>true</code>，同时你可以在特定页面的 Front Matter 中设置 <code>breadcrumb: false</code> 来局部禁用它。</p>
+<p>当然你也可以将 <code>themeConfig.breadcrumb</code> 选项设置为 <code>false</code> 来全局禁用它，之在特定页面的 Front Matter 中设置 <code>breadcrumb: true</code> 来局部启用它。</p>
+</details>
+ </li>
+</ol>
+</section>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <category term="layout"/>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-02-27T06:18:09.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
     <title type="html">主题布局配置</title>
     <id>https://vuepress-theme-hope.github.io/zh/config/theme/apperance/</id>
     <link href="https://vuepress-theme-hope.github.io/zh/config/theme/apperance/"/>
@@ -15202,127 +15323,6 @@ module<span>.</span>exports <span>=</span> <span>{</span>
       <name>Mr.Hope</name>
     </contributor>
     <published>2020-10-13T05:36:44.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">界面</title>
-    <id>https://vuepress-theme-hope.github.io/zh/guide/interface/</id>
-    <link href="https://vuepress-theme-hope.github.io/zh/guide/interface/"/>
-    <updated>2021-02-27T06:18:09.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="目录"> 目录</h2>
-<ul>
-<li>
-<p><a href="./dark-mode.html">深色模式</a></p>
-</li>
-<li>
-<p><a href="./theme-color.html">主题色</a></p>
-</li>
-<li>
-<p><a href="./icon.html">图标支持</a></p>
-</li>
-<li>
-<p><a href="./others.html">其他功能</a></p>
-</li>
-</ul>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <category term="interface"/>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2021-02-26T08:10:04.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">主题色</title>
-    <id>https://vuepress-theme-hope.github.io/zh/guide/interface/theme-color/</id>
-    <link href="https://vuepress-theme-hope.github.io/zh/guide/interface/theme-color/"/>
-    <updated>2021-03-16T15:57:52.000Z</updated>
-    <summary type="html"><![CDATA[<p>这是一个开箱即用的功能，除了你的主题色之外，还提供 “红、蓝、绿、橙、紫” 五种颜色主题。你也可以定制自己的主题色选择列表。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>这是一个开箱即用的功能，除了你的主题色之外，还提供 “红、蓝、绿、橙、紫” 五种颜色主题。你也可以定制自己的主题色选择列表。</p>
-
-<h2 id="禁用功能"> 禁用功能</h2>
-<p>你可以将 <code>themeConfig</code> 的 <code>themeColor</code> 设置为 <code>false</code> 来禁用它。</p>
-<h2 id="主题色"> 主题色</h2>
-<p>主题色的第一个颜色是默认的主题色，你需要在 <code>.vuepress/styles/palette.styl</code> 中通过 <code>$accentColor</code> 设置它。</p>
-<h2 id="自定义颜色"> 自定义颜色</h2>
-<p>你需要按照 <code>{ 颜色名1: 颜色值, 颜色名2: 颜色值, ... }</code> 的格式来配置 <code>themeConfig.themeColor</code>:</p>
-<details><summary>例子</summary>
-<div><div><br><br><br><br><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><br><br></div><pre><code><span>// .vuepress/config.js</span>
-module<span>.</span>exports <span>=</span> <span>{</span>
-  themeConfig<span>:</span> <span>{</span>
-    themeColor<span>:</span> <span>{</span>
-      blue<span>:</span> <span>"#2196f3"</span><span>,</span>
-      red<span>:</span> <span>"#f26d6d"</span><span>,</span>
-      green<span>:</span> <span>"#3eaf7c"</span><span>,</span>
-      orange<span>:</span> <span>"#fb9b5f"</span><span>,</span>
-    <span>}</span><span>,</span>
-  <span>}</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div></details>
-<p>同时为了使 Stylus 编译器正常工作，你还需要将颜色变量赋值给 <code>$colorPicker</code> 写入 <code>.vuepress/styles</code> 下的 <code>palette.styl</code> 中:</p>
-<details><summary>例子</summary>
-<div><pre><code><span>// .vuepress/styles/palette.styl</span>
-<span><span>$colorPicker</span> <span>=</span> <span>{</span>
-  <span>red</span><span>:</span> <span>#f26d6d</span><span>,</span>
-  <span>blue</span><span>:</span> <span>#2196f3</span><span>,</span>
-  <span>green</span><span>:</span> <span>#3eaf7c</span><span>,</span>
-  <span>orange</span><span>:</span> <span>#fb9b5f</span>
-<span>}</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div></details>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <category term="interface"/>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2021-02-26T12:39:35.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">路径导航</title>
-    <id>https://vuepress-theme-hope.github.io/zh/guide/layout/breadcrumb/</id>
-    <link href="https://vuepress-theme-hope.github.io/zh/guide/layout/breadcrumb/"/>
-    <updated>2021-03-10T04:43:39.000Z</updated>
-    <summary type="html"><![CDATA[<p>vuepress-theme-hope 添加了开箱即用的路径导航支持，你可以通过 <code>breadcrumb</code> 字段控制它 <i>Not supported content</i> [^applypartically]，默认的值为 <code>true</code>。</p>
-<p>无需任何额外配置，一个和主题色相符合的路径导航会显示在页面内容最上方，帮助阅读者理解文档结构。</p>
-<p>你也可以通过 <code>breadcrumbIcon</code> 字段 <i>Not supported content</i> 控制路径导航的图标显示，默认值为 <code>true</code>。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>vuepress-theme-hope 添加了开箱即用的路径导航支持，你可以通过 <code>breadcrumb</code> 字段控制它 <i>Not supported content</i> <sup></sup>，默认的值为 <code>true</code>。</p>
-<p>无需任何额外配置，一个和主题色相符合的路径导航会显示在页面内容最上方，帮助阅读者理解文档结构。</p>
-<p>你也可以通过 <code>breadcrumbIcon</code> 字段 <i>Not supported content</i> 控制路径导航的图标显示，默认值为 <code>true</code>。</p>
-
-<div><p>注意事项</p>
-<p>为了保证路径导航更好的提示，建议在每一个路径下创建 readme.md 文件。否则，路径导航将因对应层级文件夹没有主页，无法生成标题与链接而忽略那一层级。</p>
-</div>
-<hr>
-<section>
-<ol>
-<li id="fn1"><p><strong>支持页面配置</strong> <i>Not supported content</i></p>
-<p><strong>支持页面配置</strong> 指主题允许页面的配置覆盖全局的配置。这意味着你可以在全局启用的情况下，在特定页面将其禁用，或在全局禁用的情况下在特定页面启用。</p>
-<details><summary>例子</summary>
-<p>以路径导航为例:</p>
-<p>该功能默认全局启用，即 <code>themeConfig.breadcrumb</code> 默认为 <code>true</code>，同时你可以在特定页面的 Front Matter 中设置 <code>breadcrumb: false</code> 来局部禁用它。</p>
-<p>当然你也可以将 <code>themeConfig.breadcrumb</code> 选项设置为 <code>false</code> 来全局禁用它，之在特定页面的 Front Matter 中设置 <code>breadcrumb: true</code> 来局部启用它。</p>
-</details>
- </li>
-</ol>
-</section>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <category term="layout"/>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2021-02-27T06:18:09.000Z</published>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
