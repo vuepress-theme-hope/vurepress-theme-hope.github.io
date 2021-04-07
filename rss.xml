@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/</link>
     <description>A vuepress theme with tons of features✨</description>
     <language>en-US</language>
-    <pubDate>Wed, 07 Apr 2021 05:22:16 GMT</pubDate>
-    <lastBuildDate>Wed, 07 Apr 2021 05:22:16 GMT</lastBuildDate>
+    <pubDate>Wed, 07 Apr 2021 05:45:43 GMT</pubDate>
+    <lastBuildDate>Wed, 07 Apr 2021 05:45:43 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -7536,13 +7536,15 @@ document<span>&lt;</span>span <span>class</span><span>=</span><span>"token punct
 <span>}</span><span>;</span>
 </code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><h2 id="syntax"> Syntax</h2>
 <h3 id="markdown-syntax"> Markdown Syntax</h3>
-<div><pre><code><span><span>```</span><span>flow [preset]</span>
+<div><pre><code><span>&lt;!-- ↓ :preset is optional --></span>
+
+<span><span>```</span><span>flow:preset</span>
 <span>
 &lt;!-- Your flowchart code here. -->
 </span>
 <span>```</span></span>
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>Available presets:</p>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>Available presets:</p>
 <ul>
 <li><code>vue</code> (default)</li>
 <li><code>ant</code></li>
@@ -12185,6 +12187,94 @@ export default { // Highlighted
 ]]></content:encoded>
     </item>
     <item>
+      <title>主题布局配置</title>
+      <link>https://vuepress-theme-hope.github.io/zh/config/theme/apperance/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/config/theme/apperance/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">主题布局配置</source>
+      <category>config</category>
+      <pubDate>Wed, 21 Oct 2020 05:51:47 GMT</pubDate>
+      <content:encoded><![CDATA[<p>以下是主题提供的外观配置选项，一般情况下你无需关注他们，它们仅为有相关配置需求的少数用户提供。</p>
+<h2 id="algoliatype"> algoliaType</h2>
+<ul>
+<li>类型: <code>&quot;dropdown&quot; | &quot;full&quot;</code></li>
+<li>默认值: <code>&quot;dropdown&quot;</code></li>
+</ul>
+<p>Algolia 搜索框类型</p>
+<h2 id="iconprefix"> iconPrefix</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>'icon-'</code></li>
+</ul>
+<p>设置 iconfont 的图标前缀</p>
+<h2 id="anchordisplay"> anchorDisplay</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否在桌面模式显示锚点标题</p>
+<h2 id="wordperminute"> wordPerminute</h2>
+<ul>
+<li>类型: <code>number</code></li>
+<li>默认值: <code>300</code></li>
+</ul>
+<p>每分钟的阅读字数</p>
+<h2 id="navautohide"> navAutoHide</h2>
+<ul>
+<li>类型: <code>&quot;always&quot; | &quot;mobile&quot; | &quot;none&quot;</code></li>
+<li>默认值: <code>&quot;mobile&quot;</code></li>
+</ul>
+<p>是否在向下滚动时自动隐藏导航栏</p>
+<h2 id="hidesitetitleonmobile"> hideSiteTitleonMobile</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否在移动视图下隐藏站点名称</p>
+<h2 id="sidebaricon"> sidebarIcon</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否在侧边栏显示图标</p>
+<h2 id="breadcrumb"> breadcrumb</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否全局启用路径导航</p>
+<h2 id="breadcrumbicon"> breadcrumbIcon</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否在路径导航显示图标</p>
+<h2 id="smoothscroll"> smoothScroll <i>Not supported content</i></h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否启用平滑滚动功能</p>
+<h2 id="backtotop"> backToTop</h2>
+<ul>
+<li>类型: <code>boolean | number</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>返回顶部按钮的配置。默认的触发距离为 300px，填入数字时可改变这一触发距离。填入 <code>false</code> 会禁用返回顶部按钮。</p>
+<h2 id="repodisplay"> repoDisplay</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否在导航栏显示仓库链接</p>
+<h2 id="fullscreen"> fullscreen</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否显示 ”全屏“ 按钮</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>项目案例</title>
       <link>https://vuepress-theme-hope.github.io/zh/demo/</link>
       <guid>https://vuepress-theme-hope.github.io/zh/demo/</guid>
@@ -12307,6 +12397,46 @@ export default { // Highlighted
 ]]></content:encoded>
     </item>
     <item>
+      <title>博客功能介绍</title>
+      <link>https://vuepress-theme-hope.github.io/zh/guide/blog/intro/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/guide/blog/intro/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">博客功能介绍</source>
+      <description>&amp;lt;p&amp;gt;主题通过引入 &amp;lt;code&amp;gt;@vuepress/plugin-blog&amp;lt;/code&amp;gt; &amp;lt;strong&amp;gt;默认&amp;lt;/strong&amp;gt;启用了一些博客功能。&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;如果你不需要任何的博客功能 (比如一个纯文档站点)，你可以配置 &amp;lt;code&amp;gt;themeConfig.blog&amp;lt;/code&amp;gt; 为 &amp;lt;code&amp;gt;false&amp;lt;/code&amp;gt; 来禁用全部的博客功能。&amp;lt;/p&amp;gt;
+</description>
+      <category>blog</category>
+      <pubDate>Sat, 06 Mar 2021 14:49:20 GMT</pubDate>
+      <content:encoded><![CDATA[<p>主题通过引入 <code>@vuepress/plugin-blog</code> <strong>默认</strong>启用了一些博客功能。</p>
+<p>如果你不需要任何的博客功能 (比如一个纯文档站点)，你可以配置 <code>themeConfig.blog</code> 为 <code>false</code> 来禁用全部的博客功能。</p>
+
+<h2 id="综述"> 综述</h2>
+<p>总体上，通过启用博客功能，主题允许你通过页面的 frontmatter，为页面配置分类、标签、是否是文章、是否出现在时间线中、收藏、置顶等功能。</p>
+<ul>
+<li>
+<p><a href="./article.html">文章列表</a></p>
+</li>
+<li>
+<p><a href="./category-and-tags.html">分类与标签</a></p>
+</li>
+<li>
+<p><a href="./timeline.html">时间线</a></p>
+</li>
+</ul>
+<p>同时主题还为你提供了 <a href="./home.html">博客风格的主页</a>。</p>
+<h2 id="侧边栏"> 侧边栏</h2>
+<p>主题提供了一个博客相关的侧边栏。该侧边栏会在博客相关的页面显示 (在桌面会显示在右侧，在移动视图下收起到侧边栏中)</p>
+<p>你可以通过 <code>themeConfig.blog.sidebarDisplay</code> 控制该侧边栏在非博客相关的页面的显示行为。可选的值有 <code>'mobile' | 'none' | 'always'</code>。默认为 <code>mobile</code>，即当你在移动视图下访问非博客相关的页面时，你也可以在侧边栏看到它。</p>
+<h2 id="分页配置"> 分页配置</h2>
+<p>对于所有页面的文章列表，我们都会在底部显示一个分页组件。你可以通过这个组件快捷的在首页、尾页、前后两页进行跳转。你也可以输入数字跳转到指定页面。</p>
+<p>默认每个分页的文章数为 <code>10</code>，你可以设置 <code>themeConfig.blog.perPage</code> 来覆盖它。</p>
+<h2 id="注意事项"> 注意事项</h2>
+<div><p>Note</p>
+<p>请勿在根目录中添加并放置对应的文件夹(&quot;article&quot;, &quot;slide&quot;, &quot;star&quot;, &quot;encrypt&quot;, &quot;category&quot;, &quot;tag&quot;, &quot;timeline&quot;)，否则可能造成编译时文件被覆盖而造成错误。</p>
+<p>比如你的确需要一个“文章”文件夹的话，请考虑使用 &quot;articles&quot;。</p>
+</div>
+]]></content:encoded>
+    </item>
+    <item>
       <title>博客首页</title>
       <link>https://vuepress-theme-hope.github.io/zh/guide/blog/home/</link>
       <guid>https://vuepress-theme-hope.github.io/zh/guide/blog/home/</guid>
@@ -12398,46 +12528,6 @@ export default { // Highlighted
 <li><code>desc</code>: 项目描述，选填</li>
 <li><code>cover</code>: 项目封面，选填，填入外部链接或绝对路径。</li>
 </ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>博客功能介绍</title>
-      <link>https://vuepress-theme-hope.github.io/zh/guide/blog/intro/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/guide/blog/intro/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">博客功能介绍</source>
-      <description>&amp;lt;p&amp;gt;主题通过引入 &amp;lt;code&amp;gt;@vuepress/plugin-blog&amp;lt;/code&amp;gt; &amp;lt;strong&amp;gt;默认&amp;lt;/strong&amp;gt;启用了一些博客功能。&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;如果你不需要任何的博客功能 (比如一个纯文档站点)，你可以配置 &amp;lt;code&amp;gt;themeConfig.blog&amp;lt;/code&amp;gt; 为 &amp;lt;code&amp;gt;false&amp;lt;/code&amp;gt; 来禁用全部的博客功能。&amp;lt;/p&amp;gt;
-</description>
-      <category>blog</category>
-      <pubDate>Sat, 06 Mar 2021 14:49:20 GMT</pubDate>
-      <content:encoded><![CDATA[<p>主题通过引入 <code>@vuepress/plugin-blog</code> <strong>默认</strong>启用了一些博客功能。</p>
-<p>如果你不需要任何的博客功能 (比如一个纯文档站点)，你可以配置 <code>themeConfig.blog</code> 为 <code>false</code> 来禁用全部的博客功能。</p>
-
-<h2 id="综述"> 综述</h2>
-<p>总体上，通过启用博客功能，主题允许你通过页面的 frontmatter，为页面配置分类、标签、是否是文章、是否出现在时间线中、收藏、置顶等功能。</p>
-<ul>
-<li>
-<p><a href="./article.html">文章列表</a></p>
-</li>
-<li>
-<p><a href="./category-and-tags.html">分类与标签</a></p>
-</li>
-<li>
-<p><a href="./timeline.html">时间线</a></p>
-</li>
-</ul>
-<p>同时主题还为你提供了 <a href="./home.html">博客风格的主页</a>。</p>
-<h2 id="侧边栏"> 侧边栏</h2>
-<p>主题提供了一个博客相关的侧边栏。该侧边栏会在博客相关的页面显示 (在桌面会显示在右侧，在移动视图下收起到侧边栏中)</p>
-<p>你可以通过 <code>themeConfig.blog.sidebarDisplay</code> 控制该侧边栏在非博客相关的页面的显示行为。可选的值有 <code>'mobile' | 'none' | 'always'</code>。默认为 <code>mobile</code>，即当你在移动视图下访问非博客相关的页面时，你也可以在侧边栏看到它。</p>
-<h2 id="分页配置"> 分页配置</h2>
-<p>对于所有页面的文章列表，我们都会在底部显示一个分页组件。你可以通过这个组件快捷的在首页、尾页、前后两页进行跳转。你也可以输入数字跳转到指定页面。</p>
-<p>默认每个分页的文章数为 <code>10</code>，你可以设置 <code>themeConfig.blog.perPage</code> 来覆盖它。</p>
-<h2 id="注意事项"> 注意事项</h2>
-<div><p>Note</p>
-<p>请勿在根目录中添加并放置对应的文件夹(&quot;article&quot;, &quot;slide&quot;, &quot;star&quot;, &quot;encrypt&quot;, &quot;category&quot;, &quot;tag&quot;, &quot;timeline&quot;)，否则可能造成编译时文件被覆盖而造成错误。</p>
-<p>比如你的确需要一个“文章”文件夹的话，请考虑使用 &quot;articles&quot;。</p>
-</div>
 ]]></content:encoded>
     </item>
     <item>
@@ -13447,69 +13537,6 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
 ]]></content:encoded>
     </item>
     <item>
-      <title>主题介绍</title>
-      <link>https://vuepress-theme-hope.github.io/zh/guide/get-started/intro/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/guide/get-started/intro/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">主题介绍</source>
-      <category>Get Started</category>
-      <pubDate>Thu, 25 Feb 2021 12:25:39 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="🎈-主题的初衷与设计目标"> 🎈 主题的初衷与设计目标</h2>
-<h3 id="初衷"> 初衷</h3>
-<p>制作本主题的初衷是发现 VuePress 只是一个单纯的静态文档生成器。举个例子，它并不会注入 meta 标签做 SEO 优化，也不会生成 Sitemap 帮助搜索引擎索引文档内容。</p>
-<p>由于尤雨溪转向 Vite 驱动的 VitePress，VuePress 的社区生态也越来越差，一些开发者占用了最直观的插件名称，如 <code>copy-code</code> <code>feed</code> <code>seo</code> <code>sitemap</code> 等，却提供很弱的功能，并不再提供任何更新。</p>
-<p>虽然 VuePress 在一定程度上扩展了 Markdown 语法，它仍然缺失一些常用的功能，比如文本对齐、标记、流程图、公式、演示等。同时默认主题提供的一些功能，也比较弱或者缺失，如图片预览，暗黑模式等。</p>
-<p>在这种情况下，<code>vuepress-theme-hope</code> 就设计诞生。由于开发者 Mr.Hope 本人就读物理专业，对设计方面并不擅长，所以本主题在 UI 上很大程度保持默认主题的简约风格，不做过多的改动，而在致力于<strong>各种细节与功能上为 VuePress 提供全方位的增强</strong>。</p>
-<h3 id="设计目标"> 设计目标</h3>
-<ul>
-<li>
-<p>方向: 主题的所有功能都是为了增强文档<strong>内容丰富性</strong>与<strong>可传播性</strong>。</p>
-</li>
-<li>
-<p>功能的强大与独立: 本主题会对功能提供全面的细节，并将它们解构成独立插件，以便用户在其他主题中引入并使用他们。</p>
-</li>
-<li>
-<p>零配置或低置: 本主题的所有功能都尽可能设计成在零配置或低配置下即可工作，以便尽可能降低你的迁移或学习成本，直接享受到它们的便利。</p>
-</li>
-</ul>
-<h2 id="✨-为什么说它-powerful"> ✨ 为什么说它 powerful</h2>
-<h3 id="markdown"> Markdown</h3>
-<p>主题为 Markdown 提供了大量的扩展语法支持，让你在正文插入更多的内容。</p>
-<ul>
-<li>
-<p>如果你是一名文学爱好者想放置一些随笔，主题提供了 <a href="./../markdown/align.html">自定义对齐</a> 与 <a href="./../markdown/footnote.html">脚注</a>。</p>
-</li>
-<li>
-<p>如果你希望存放一些知识笔记，主题提供了 <a href="./../markdown/mark.html">标记</a> 与 <a href="./../markdown/tex.html">公式</a> 支持。</p>
-</li>
-<li>
-<p>如果你是一名程序员需要大量展示代码与 demo，本主题为代码块提供了浅色与深色两种主题，代码组 <code>&lt;CodeGroup /&gt;</code> 与 <a href="./../feature/copy-code.html">&quot;一键复制&quot; 按钮</a>。同时我们还提供 <a href="./../markdown/demo.html">代码演示</a> 功能，方便你展示自己的 Vue、React 组件或者其他 demo。</p>
-</li>
-<li>
-<p>如果你需要提供产品文档与展示，主题提供了 <a href="./../markdown/presentation.html">幻灯片</a> 与 <a href="./../markdown/flowchart.html">流程图</a> 功能。</p>
-</li>
-</ul>
-<p>总之，任何人都可以享受 Markdown 增强语法带来的便利。</p>
-<h3 id="搜索引擎增强"> 搜索引擎增强</h3>
-<p>主题提供 <a href="./../feature/seo.html">SEO 增强</a>，自动向网页注入 meta 标签增强搜索引擎索引。</p>
-<p>主题也提供 <a href="./../feature/sitemap.html">Sitemap 生成</a> 提供自动的 Sitemap 生成。</p>
-<h3 id="页面-ui"> 页面 UI</h3>
-<ul>
-<li>
-<p>主页: 多个动作按钮支持，UI 优化。</p>
-</li>
-<li>
-<p>页面: <a href="./../interface/icon.html"><strong>页面图标</strong></a>、<a href="./../feature/page-info.html"><strong>文章信息</strong></a>、<strong>标题目录</strong>、图片预览功能。</p>
-</li>
-<li>
-<p>站点结构: 简化了 <a href="./../layout/navbar.html">导航栏</a> 与 <a href="./../layout/sidebar.html">侧边栏</a> 配置，添加了图标与路径前缀支持。同时主题添加了<a href="./../layout/page.html#路径导航"><strong>路径导航</strong></a> 与页脚支持。</p>
-</li>
-</ul>
-<h3 id="博客"> 博客</h3>
-<p>主题提供了 <a href="./../blog/category-and-tags.html">分类、标签</a>、<a href="./../blog/timeline.html">时间线</a>、<a href="./../blog/article.html">文章精选</a> 等功能，并提供了全新的 <a href="./../blog/home.html"><strong>博客主页</strong></a>。</p>
-<p>同时主题还提供了 <a href="./../feature/comment.html"><strong>评论</strong></a>、<a href="./../feature/feed.html"><strong>Feed</strong></a> 等博客常用内容。</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Markdown</title>
       <link>https://vuepress-theme-hope.github.io/zh/guide/get-started/markdown/</link>
       <guid>https://vuepress-theme-hope.github.io/zh/guide/get-started/markdown/</guid>
@@ -13608,6 +13635,69 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
 </li>
 </ol>
 </section>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>主题介绍</title>
+      <link>https://vuepress-theme-hope.github.io/zh/guide/get-started/intro/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/guide/get-started/intro/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">主题介绍</source>
+      <category>Get Started</category>
+      <pubDate>Thu, 25 Feb 2021 12:25:39 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="🎈-主题的初衷与设计目标"> 🎈 主题的初衷与设计目标</h2>
+<h3 id="初衷"> 初衷</h3>
+<p>制作本主题的初衷是发现 VuePress 只是一个单纯的静态文档生成器。举个例子，它并不会注入 meta 标签做 SEO 优化，也不会生成 Sitemap 帮助搜索引擎索引文档内容。</p>
+<p>由于尤雨溪转向 Vite 驱动的 VitePress，VuePress 的社区生态也越来越差，一些开发者占用了最直观的插件名称，如 <code>copy-code</code> <code>feed</code> <code>seo</code> <code>sitemap</code> 等，却提供很弱的功能，并不再提供任何更新。</p>
+<p>虽然 VuePress 在一定程度上扩展了 Markdown 语法，它仍然缺失一些常用的功能，比如文本对齐、标记、流程图、公式、演示等。同时默认主题提供的一些功能，也比较弱或者缺失，如图片预览，暗黑模式等。</p>
+<p>在这种情况下，<code>vuepress-theme-hope</code> 就设计诞生。由于开发者 Mr.Hope 本人就读物理专业，对设计方面并不擅长，所以本主题在 UI 上很大程度保持默认主题的简约风格，不做过多的改动，而在致力于<strong>各种细节与功能上为 VuePress 提供全方位的增强</strong>。</p>
+<h3 id="设计目标"> 设计目标</h3>
+<ul>
+<li>
+<p>方向: 主题的所有功能都是为了增强文档<strong>内容丰富性</strong>与<strong>可传播性</strong>。</p>
+</li>
+<li>
+<p>功能的强大与独立: 本主题会对功能提供全面的细节，并将它们解构成独立插件，以便用户在其他主题中引入并使用他们。</p>
+</li>
+<li>
+<p>零配置或低置: 本主题的所有功能都尽可能设计成在零配置或低配置下即可工作，以便尽可能降低你的迁移或学习成本，直接享受到它们的便利。</p>
+</li>
+</ul>
+<h2 id="✨-为什么说它-powerful"> ✨ 为什么说它 powerful</h2>
+<h3 id="markdown"> Markdown</h3>
+<p>主题为 Markdown 提供了大量的扩展语法支持，让你在正文插入更多的内容。</p>
+<ul>
+<li>
+<p>如果你是一名文学爱好者想放置一些随笔，主题提供了 <a href="./../markdown/align.html">自定义对齐</a> 与 <a href="./../markdown/footnote.html">脚注</a>。</p>
+</li>
+<li>
+<p>如果你希望存放一些知识笔记，主题提供了 <a href="./../markdown/mark.html">标记</a> 与 <a href="./../markdown/tex.html">公式</a> 支持。</p>
+</li>
+<li>
+<p>如果你是一名程序员需要大量展示代码与 demo，本主题为代码块提供了浅色与深色两种主题，代码组 <code>&lt;CodeGroup /&gt;</code> 与 <a href="./../feature/copy-code.html">&quot;一键复制&quot; 按钮</a>。同时我们还提供 <a href="./../markdown/demo.html">代码演示</a> 功能，方便你展示自己的 Vue、React 组件或者其他 demo。</p>
+</li>
+<li>
+<p>如果你需要提供产品文档与展示，主题提供了 <a href="./../markdown/presentation.html">幻灯片</a> 与 <a href="./../markdown/flowchart.html">流程图</a> 功能。</p>
+</li>
+</ul>
+<p>总之，任何人都可以享受 Markdown 增强语法带来的便利。</p>
+<h3 id="搜索引擎增强"> 搜索引擎增强</h3>
+<p>主题提供 <a href="./../feature/seo.html">SEO 增强</a>，自动向网页注入 meta 标签增强搜索引擎索引。</p>
+<p>主题也提供 <a href="./../feature/sitemap.html">Sitemap 生成</a> 提供自动的 Sitemap 生成。</p>
+<h3 id="页面-ui"> 页面 UI</h3>
+<ul>
+<li>
+<p>主页: 多个动作按钮支持，UI 优化。</p>
+</li>
+<li>
+<p>页面: <a href="./../interface/icon.html"><strong>页面图标</strong></a>、<a href="./../feature/page-info.html"><strong>文章信息</strong></a>、<strong>标题目录</strong>、图片预览功能。</p>
+</li>
+<li>
+<p>站点结构: 简化了 <a href="./../layout/navbar.html">导航栏</a> 与 <a href="./../layout/sidebar.html">侧边栏</a> 配置，添加了图标与路径前缀支持。同时主题添加了<a href="./../layout/page.html#路径导航"><strong>路径导航</strong></a> 与页脚支持。</p>
+</li>
+</ul>
+<h3 id="博客"> 博客</h3>
+<p>主题提供了 <a href="./../blog/category-and-tags.html">分类、标签</a>、<a href="./../blog/timeline.html">时间线</a>、<a href="./../blog/article.html">文章精选</a> 等功能，并提供了全新的 <a href="./../blog/home.html"><strong>博客主页</strong></a>。</p>
+<p>同时主题还提供了 <a href="./../feature/comment.html"><strong>评论</strong></a>、<a href="./../feature/feed.html"><strong>Feed</strong></a> 等博客常用内容。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -13946,6 +14036,282 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br></div></div></li>
 </ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>主题功能配置</title>
+      <link>https://vuepress-theme-hope.github.io/zh/config/theme/feature/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/config/theme/feature/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">主题功能配置</source>
+      <category>config</category>
+      <pubDate>Sat, 17 Oct 2020 08:18:13 GMT</pubDate>
+      <content:encoded><![CDATA[<p>这些是主题功能的配置项。</p>
+<h2 id="主题色与深色模式"> 主题色与深色模式 <i>Not supported content</i></h2>
+<p>主题色和深色模式设置选项配置。</p>
+<h3 id="darkmode"> darkmode</h3>
+<ul>
+<li>类型: <code>'auto-switch' | 'switch' | 'auto' | 'disable'</code></li>
+<li>默认值: <code>'auto-switch'</code></li>
+</ul>
+<p>深色模式支持选项:</p>
+<ul>
+<li><code>'auto-switch'</code>: &quot;关闭 | 自动 | 打开&quot; 的三段式开关</li>
+<li><code>'switch'</code>: &quot;关闭 | 打开&quot; 的切换式开关</li>
+<li><code>'auto'</code>: 自动根据用户设备主题或当前时间决定是否应用深色模式</li>
+<li><code>'disable'</code>: 禁用深色模式</li>
+</ul>
+<blockquote>
+<p>如果你不需要这项功能，请设置 <code>darkmode: &quot;disable&quot;</code> 将其禁用。</p>
+</blockquote>
+<h3 id="themecolor"> themeColor</h3>
+<p>主题色选项配置。</p>
+<blockquote>
+<p>如果你不需要这项功能，请设置 <code>themeColor: false</code> 将其禁用。</p>
+</blockquote>
+<ul>
+<li>
+<p>类型: <code>Record&lt;string, string&gt;</code></p>
+</li>
+<li>
+<p>默认值:</p>
+<div><pre><code><span>{</span>
+  blue<span>:</span> <span>'#2196f3'</span><span>,</span>
+  red<span>:</span> <span>'#f26d6d'</span><span>,</span>
+  green<span>:</span> <span>'#3eaf7c'</span><span>,</span>
+  orange<span>:</span> <span>'#fb9b5f'</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div></li>
+</ul>
+<h2 id="博客配置"> 博客配置 <i>Not supported content</i></h2>
+<p>博客配置。</p>
+<blockquote>
+<p>如果你不需要博客相关功能，为了加快构建速度，请设置 <code>blog: false</code>。</p>
+</blockquote>
+<h3 id="blog-blogger"> blog.blogger</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>博主姓名，默认为 <code>themeConfig.author</code></p>
+<h3 id="blog-avatar"> blog.avatar</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>博主头像，默认为 <code>themeConfig.logo</code></p>
+<h3 id="blog-roundavatar"> blog.roundAvatar</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否剪裁头像为圆形形状</p>
+<h3 id="blog-sidebardisplay"> blog.sidebarDisplay</h3>
+<ul>
+<li>类型: <code>'mobile' | 'none' | 'always'</code></li>
+<li>默认值: <code>'none'</code></li>
+</ul>
+<p>是否在侧边栏展示博主信息</p>
+<ul>
+<li><code>mobile</code>: 在移动视图中显示在侧边栏中</li>
+<li><code>'always'</code>: 总是展示在侧边栏中</li>
+<li><code>'none'</code>: 永远不在侧边栏展示</li>
+</ul>
+<h3 id="blog-intro"> blog.intro</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>博主的个人介绍地址。</p>
+<p>填写后将允许点击“博主信息”中的头像或姓名进入个人介绍页。</p>
+<h3 id="blog-timeline"> blog.timeline</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>'昨日不在'</code></li>
+</ul>
+<p>时间轴的顶部文字。</p>
+<h3 id="blog-perpage"> blog.perPage</h3>
+<ul>
+<li>类型: <code>number</code></li>
+<li>默认: <code>10</code></li>
+</ul>
+<p>每页的文章数量</p>
+<h2 id="pageinfo"> pageInfo</h2>
+<ul>
+<li>类型: <code>string[] | false</code></li>
+<li>默认值: <code>['author', 'visitor', 'time', 'category', 'tag', 'reading-time']</code></li>
+</ul>
+<p>文章信息，可以填入数组，数组的顺序是各条目显示的顺序。填入 <code>false</code> 使其被禁用。</p>
+<p>可以填入的条目如下:</p>
+<ul>
+<li><code>'author'</code>: 作者</li>
+<li><code>'time'</code>: 写作日期</li>
+<li><code>'category'</code>: 分类</li>
+<li><code>'tag'</code>: 标签</li>
+<li><code>'reading-time'</code>: 预计阅读时间</li>
+<li><code>'word'</code>: 字数</li>
+<li><code>'visitor'</code>: 访问量</li>
+</ul>
+<h2 id="页脚设置"> 页脚设置</h2>
+<h3 id="footer-content"> footer.content</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>页脚的默认内容，可输入 HTMLString。</p>
+<h3 id="footer-copyright"> footer.copyright</h3>
+<ul>
+<li>类型: <code>string | boolean</code></li>
+<li>默认值: <code>'Copyright © &lt;作者&gt;'</code></li>
+</ul>
+<p>默认的版权信息，设置为 <code>false</code> 来默认禁用它。</p>
+<h3 id="footer-display"> footer.display</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否默认显示页脚</p>
+<h2 id="加密设置"> 加密设置</h2>
+<p>加密设置选项。</p>
+<h3 id="encrypt-status"> encrypt.status</h3>
+<ul>
+<li>类型: <code>&quot;global&quot; | &quot;local&quot;</code></li>
+<li>默认值: <code>&quot;local&quot;</code></li>
+</ul>
+<p>是否全局加密</p>
+<h3 id="encrypt-global"> encrypt.global</h3>
+<ul>
+<li>类型: <code>string | string[]</code></li>
+<li>必填: 否</li>
+</ul>
+<p>最高权限密码，可以以数组的形式设置多个</p>
+<h3 id="encrypt-config"> encrypt.config</h3>
+<ul>
+<li>类型: <code>Record&lt;string, string | string[]&gt;</code></li>
+<li>必填: 否</li>
+</ul>
+<p>加密配置，为一个对象，键名为匹配的路径，键值为对应的密码，接受字符串或字符串数组。</p>
+<details><summary>例子</summary>
+<div><pre><code><span>{</span>
+  <span>// 这会加密整个 guide 目录，并且两个密码都是可用的</span>
+  <span>"/guide/"</span><span>:</span> <span>[</span><span>"1234"</span><span>,</span> <span>"5678"</span><span>]</span><span>,</span>
+  <span>// 这只会加密 config/page.html</span>
+  <span>"/config/page.html"</span><span>:</span> <span>"1234"</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div></details>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>默认主题配置</title>
+      <link>https://vuepress-theme-hope.github.io/zh/config/theme/default/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/config/theme/default/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">默认主题配置</source>
+      <category>config</category>
+      <pubDate>Sat, 17 Oct 2020 08:18:13 GMT</pubDate>
+      <content:encoded><![CDATA[<p>以下这些配置沿用了 <code>@vuepress/theme-default</code> 的配置项，你无需进行改动:</p>
+<div><p>Note</p>
+<p>通过注入，vuepress-theme-hope 改变了默认主题一些配置的默认值。</p>
+<p>虽然一般情况下，它们影响不大，但是还是需要着重提示这可能造成与默认文档预期不符的结果。</p>
+<p>文档下方仔细的列出了所有配置项的改变。</p>
+</div>
+<h2 id="logo"> logo <i>Not supported content</i></h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>导航栏的 logo 图片，需填入绝对路径并放入 <code>.vuepress/public</code> 文件夹。</p>
+<p>如果你希望在深色模式下显示另一个 logo，请配置 <code>themeConfig.darkLogo</code> 选项。</p>
+<h2 id="sidebardepth"> sidebarDepth</h2>
+<ul>
+<li>类型: <code>number</code></li>
+<li>默认值: <code>2</code></li>
+</ul>
+<p>侧边栏嵌套的标题深度</p>
+<h2 id="displayallheaders"> displayAllHeaders</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否显示所有页面的标题链接</p>
+<h2 id="activeheaderlinks"> activeHeaderLinks</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否自动更新嵌套的标题链接和 URL 中的 Hash 值</p>
+<h2 id="search"> search</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否启用默认的搜索框</p>
+<h2 id="searchplaceholder"> searchPlaceholder</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>搜索框的占位符文字</p>
+<h2 id="searchmaxsuggestions"> searchMaxSuggestions</h2>
+<ul>
+<li>类型: <code>number</code></li>
+<li>默认值: <code>10</code></li>
+</ul>
+<p>默认搜索框显示的搜索结果数量</p>
+<h2 id="algolia"> algolia</h2>
+<ul>
+<li>类型: <code>AlgoliaOption</code></li>
+<li>必填: 否</li>
+</ul>
+<p>Algolia 搜索配置，你需要至少提供 <code>apiKey</code> 和 <code>indexName</code>。具体详见 <a href="https://github.com/algolia/docsearch#docsearch-options" target="_blank" rel="noopener noreferrer">Doc Search 文档</a>。你也可以为每个语言配置 algolia。</p>
+<h2 id="nextlinks"> nextLinks</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>所有页面的 下一篇 链接</p>
+<h2 id="prevlinks"> prevLinks</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>所有页面的 上一篇 链接</p>
+<h2 id="repo"> repo</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>项目仓库地址</p>
+<h2 id="repolabel"> repoLabel</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>仓库标签文字，会自动解析 <code>repo</code> 选项，尝试推导出 <code>'GitHub'</code> <code>'GitLab'</code> <code>'Bitbucket'</code>，如果未能识别，显示为 <code>'Source'</code>。</p>
+<h2 id="docsrepo"> docsRepo</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>文档所属仓库，默认同 <code>repo</code>。</p>
+<h2 id="docsdir"> docsDir</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>文档所属文件夹，默认为仓库根目录。</p>
+<h2 id="docsbranch"> docsBranch</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>'master'</code></li>
+</ul>
+<p>文档所属分支</p>
+<h2 id="editlinks"> editLinks <i>Not supported content</i></h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>显示编辑本页链接</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -15781,13 +16147,15 @@ document<span>&lt;</span>span <span>class</span><span>=</span><span>"token punct
   <span>}</span><span>,</span>
 <span>}</span><span>;</span>
 </code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><h2 id="语法"> 语法</h2>
-<div><pre><code><span><span>```</span><span>flow [preset]</span>
+<div><pre><code><span>&lt;!-- ↓ :preset 是可选的 --></span>
+
+<span><span>```</span><span>flow:preset</span>
 <span>
 &lt;!-- 放置你的流程图代码 -->
 </span>
 <span>```</span></span>
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>目前可用的预设:</p>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>目前可用的预设:</p>
 <ul>
 <li><code>vue</code> (默认)</li>
 <li><code>ant</code></li>
@@ -16394,370 +16762,6 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
 <ul>
 <li><a href="https://jq.qq.com/?_wv=1027&amp;k=rATJyxGK" target="_blank" rel="noopener noreferrer">点击加入</a> (群号: 1003437555)</li>
 </ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>主题功能配置</title>
-      <link>https://vuepress-theme-hope.github.io/zh/config/theme/feature/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/config/theme/feature/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">主题功能配置</source>
-      <category>config</category>
-      <pubDate>Sat, 17 Oct 2020 08:18:13 GMT</pubDate>
-      <content:encoded><![CDATA[<p>这些是主题功能的配置项。</p>
-<h2 id="主题色与深色模式"> 主题色与深色模式 <i>Not supported content</i></h2>
-<p>主题色和深色模式设置选项配置。</p>
-<h3 id="darkmode"> darkmode</h3>
-<ul>
-<li>类型: <code>'auto-switch' | 'switch' | 'auto' | 'disable'</code></li>
-<li>默认值: <code>'auto-switch'</code></li>
-</ul>
-<p>深色模式支持选项:</p>
-<ul>
-<li><code>'auto-switch'</code>: &quot;关闭 | 自动 | 打开&quot; 的三段式开关</li>
-<li><code>'switch'</code>: &quot;关闭 | 打开&quot; 的切换式开关</li>
-<li><code>'auto'</code>: 自动根据用户设备主题或当前时间决定是否应用深色模式</li>
-<li><code>'disable'</code>: 禁用深色模式</li>
-</ul>
-<blockquote>
-<p>如果你不需要这项功能，请设置 <code>darkmode: &quot;disable&quot;</code> 将其禁用。</p>
-</blockquote>
-<h3 id="themecolor"> themeColor</h3>
-<p>主题色选项配置。</p>
-<blockquote>
-<p>如果你不需要这项功能，请设置 <code>themeColor: false</code> 将其禁用。</p>
-</blockquote>
-<ul>
-<li>
-<p>类型: <code>Record&lt;string, string&gt;</code></p>
-</li>
-<li>
-<p>默认值:</p>
-<div><pre><code><span>{</span>
-  blue<span>:</span> <span>'#2196f3'</span><span>,</span>
-  red<span>:</span> <span>'#f26d6d'</span><span>,</span>
-  green<span>:</span> <span>'#3eaf7c'</span><span>,</span>
-  orange<span>:</span> <span>'#fb9b5f'</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div></li>
-</ul>
-<h2 id="博客配置"> 博客配置 <i>Not supported content</i></h2>
-<p>博客配置。</p>
-<blockquote>
-<p>如果你不需要博客相关功能，为了加快构建速度，请设置 <code>blog: false</code>。</p>
-</blockquote>
-<h3 id="blog-blogger"> blog.blogger</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>博主姓名，默认为 <code>themeConfig.author</code></p>
-<h3 id="blog-avatar"> blog.avatar</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>博主头像，默认为 <code>themeConfig.logo</code></p>
-<h3 id="blog-roundavatar"> blog.roundAvatar</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否剪裁头像为圆形形状</p>
-<h3 id="blog-sidebardisplay"> blog.sidebarDisplay</h3>
-<ul>
-<li>类型: <code>'mobile' | 'none' | 'always'</code></li>
-<li>默认值: <code>'none'</code></li>
-</ul>
-<p>是否在侧边栏展示博主信息</p>
-<ul>
-<li><code>mobile</code>: 在移动视图中显示在侧边栏中</li>
-<li><code>'always'</code>: 总是展示在侧边栏中</li>
-<li><code>'none'</code>: 永远不在侧边栏展示</li>
-</ul>
-<h3 id="blog-intro"> blog.intro</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>博主的个人介绍地址。</p>
-<p>填写后将允许点击“博主信息”中的头像或姓名进入个人介绍页。</p>
-<h3 id="blog-timeline"> blog.timeline</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>'昨日不在'</code></li>
-</ul>
-<p>时间轴的顶部文字。</p>
-<h3 id="blog-perpage"> blog.perPage</h3>
-<ul>
-<li>类型: <code>number</code></li>
-<li>默认: <code>10</code></li>
-</ul>
-<p>每页的文章数量</p>
-<h2 id="pageinfo"> pageInfo</h2>
-<ul>
-<li>类型: <code>string[] | false</code></li>
-<li>默认值: <code>['author', 'visitor', 'time', 'category', 'tag', 'reading-time']</code></li>
-</ul>
-<p>文章信息，可以填入数组，数组的顺序是各条目显示的顺序。填入 <code>false</code> 使其被禁用。</p>
-<p>可以填入的条目如下:</p>
-<ul>
-<li><code>'author'</code>: 作者</li>
-<li><code>'time'</code>: 写作日期</li>
-<li><code>'category'</code>: 分类</li>
-<li><code>'tag'</code>: 标签</li>
-<li><code>'reading-time'</code>: 预计阅读时间</li>
-<li><code>'word'</code>: 字数</li>
-<li><code>'visitor'</code>: 访问量</li>
-</ul>
-<h2 id="页脚设置"> 页脚设置</h2>
-<h3 id="footer-content"> footer.content</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>页脚的默认内容，可输入 HTMLString。</p>
-<h3 id="footer-copyright"> footer.copyright</h3>
-<ul>
-<li>类型: <code>string | boolean</code></li>
-<li>默认值: <code>'Copyright © &lt;作者&gt;'</code></li>
-</ul>
-<p>默认的版权信息，设置为 <code>false</code> 来默认禁用它。</p>
-<h3 id="footer-display"> footer.display</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>是否默认显示页脚</p>
-<h2 id="加密设置"> 加密设置</h2>
-<p>加密设置选项。</p>
-<h3 id="encrypt-status"> encrypt.status</h3>
-<ul>
-<li>类型: <code>&quot;global&quot; | &quot;local&quot;</code></li>
-<li>默认值: <code>&quot;local&quot;</code></li>
-</ul>
-<p>是否全局加密</p>
-<h3 id="encrypt-global"> encrypt.global</h3>
-<ul>
-<li>类型: <code>string | string[]</code></li>
-<li>必填: 否</li>
-</ul>
-<p>最高权限密码，可以以数组的形式设置多个</p>
-<h3 id="encrypt-config"> encrypt.config</h3>
-<ul>
-<li>类型: <code>Record&lt;string, string | string[]&gt;</code></li>
-<li>必填: 否</li>
-</ul>
-<p>加密配置，为一个对象，键名为匹配的路径，键值为对应的密码，接受字符串或字符串数组。</p>
-<details><summary>例子</summary>
-<div><pre><code><span>{</span>
-  <span>// 这会加密整个 guide 目录，并且两个密码都是可用的</span>
-  <span>"/guide/"</span><span>:</span> <span>[</span><span>"1234"</span><span>,</span> <span>"5678"</span><span>]</span><span>,</span>
-  <span>// 这只会加密 config/page.html</span>
-  <span>"/config/page.html"</span><span>:</span> <span>"1234"</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div></details>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>默认主题配置</title>
-      <link>https://vuepress-theme-hope.github.io/zh/config/theme/default/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/config/theme/default/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">默认主题配置</source>
-      <category>config</category>
-      <pubDate>Sat, 17 Oct 2020 08:18:13 GMT</pubDate>
-      <content:encoded><![CDATA[<p>以下这些配置沿用了 <code>@vuepress/theme-default</code> 的配置项，你无需进行改动:</p>
-<div><p>Note</p>
-<p>通过注入，vuepress-theme-hope 改变了默认主题一些配置的默认值。</p>
-<p>虽然一般情况下，它们影响不大，但是还是需要着重提示这可能造成与默认文档预期不符的结果。</p>
-<p>文档下方仔细的列出了所有配置项的改变。</p>
-</div>
-<h2 id="logo"> logo <i>Not supported content</i></h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>导航栏的 logo 图片，需填入绝对路径并放入 <code>.vuepress/public</code> 文件夹。</p>
-<p>如果你希望在深色模式下显示另一个 logo，请配置 <code>themeConfig.darkLogo</code> 选项。</p>
-<h2 id="sidebardepth"> sidebarDepth</h2>
-<ul>
-<li>类型: <code>number</code></li>
-<li>默认值: <code>2</code></li>
-</ul>
-<p>侧边栏嵌套的标题深度</p>
-<h2 id="displayallheaders"> displayAllHeaders</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>是否显示所有页面的标题链接</p>
-<h2 id="activeheaderlinks"> activeHeaderLinks</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否自动更新嵌套的标题链接和 URL 中的 Hash 值</p>
-<h2 id="search"> search</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否启用默认的搜索框</p>
-<h2 id="searchplaceholder"> searchPlaceholder</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>搜索框的占位符文字</p>
-<h2 id="searchmaxsuggestions"> searchMaxSuggestions</h2>
-<ul>
-<li>类型: <code>number</code></li>
-<li>默认值: <code>10</code></li>
-</ul>
-<p>默认搜索框显示的搜索结果数量</p>
-<h2 id="algolia"> algolia</h2>
-<ul>
-<li>类型: <code>AlgoliaOption</code></li>
-<li>必填: 否</li>
-</ul>
-<p>Algolia 搜索配置，你需要至少提供 <code>apiKey</code> 和 <code>indexName</code>。具体详见 <a href="https://github.com/algolia/docsearch#docsearch-options" target="_blank" rel="noopener noreferrer">Doc Search 文档</a>。你也可以为每个语言配置 algolia。</p>
-<h2 id="nextlinks"> nextLinks</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>所有页面的 下一篇 链接</p>
-<h2 id="prevlinks"> prevLinks</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>所有页面的 上一篇 链接</p>
-<h2 id="repo"> repo</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>项目仓库地址</p>
-<h2 id="repolabel"> repoLabel</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>仓库标签文字，会自动解析 <code>repo</code> 选项，尝试推导出 <code>'GitHub'</code> <code>'GitLab'</code> <code>'Bitbucket'</code>，如果未能识别，显示为 <code>'Source'</code>。</p>
-<h2 id="docsrepo"> docsRepo</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>文档所属仓库，默认同 <code>repo</code>。</p>
-<h2 id="docsdir"> docsDir</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>文档所属文件夹，默认为仓库根目录。</p>
-<h2 id="docsbranch"> docsBranch</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>'master'</code></li>
-</ul>
-<p>文档所属分支</p>
-<h2 id="editlinks"> editLinks <i>Not supported content</i></h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>显示编辑本页链接</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>主题布局配置</title>
-      <link>https://vuepress-theme-hope.github.io/zh/config/theme/apperance/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/config/theme/apperance/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">主题布局配置</source>
-      <category>config</category>
-      <pubDate>Wed, 21 Oct 2020 05:51:47 GMT</pubDate>
-      <content:encoded><![CDATA[<p>以下是主题提供的外观配置选项，一般情况下你无需关注他们，它们仅为有相关配置需求的少数用户提供。</p>
-<h2 id="algoliatype"> algoliaType</h2>
-<ul>
-<li>类型: <code>&quot;dropdown&quot; | &quot;full&quot;</code></li>
-<li>默认值: <code>&quot;dropdown&quot;</code></li>
-</ul>
-<p>Algolia 搜索框类型</p>
-<h2 id="iconprefix"> iconPrefix</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>'icon-'</code></li>
-</ul>
-<p>设置 iconfont 的图标前缀</p>
-<h2 id="anchordisplay"> anchorDisplay</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否在桌面模式显示锚点标题</p>
-<h2 id="wordperminute"> wordPerminute</h2>
-<ul>
-<li>类型: <code>number</code></li>
-<li>默认值: <code>300</code></li>
-</ul>
-<p>每分钟的阅读字数</p>
-<h2 id="navautohide"> navAutoHide</h2>
-<ul>
-<li>类型: <code>&quot;always&quot; | &quot;mobile&quot; | &quot;none&quot;</code></li>
-<li>默认值: <code>&quot;mobile&quot;</code></li>
-</ul>
-<p>是否在向下滚动时自动隐藏导航栏</p>
-<h2 id="hidesitetitleonmobile"> hideSiteTitleonMobile</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否在移动视图下隐藏站点名称</p>
-<h2 id="sidebaricon"> sidebarIcon</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否在侧边栏显示图标</p>
-<h2 id="breadcrumb"> breadcrumb</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否全局启用路径导航</p>
-<h2 id="breadcrumbicon"> breadcrumbIcon</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否在路径导航显示图标</p>
-<h2 id="smoothscroll"> smoothScroll <i>Not supported content</i></h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否启用平滑滚动功能</p>
-<h2 id="backtotop"> backToTop</h2>
-<ul>
-<li>类型: <code>boolean | number</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>返回顶部按钮的配置。默认的触发距离为 300px，填入数字时可改变这一触发距离。填入 <code>false</code> 会禁用返回顶部按钮。</p>
-<h2 id="repodisplay"> repoDisplay</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否在导航栏显示仓库链接</p>
-<h2 id="fullscreen"> fullscreen</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否显示 ”全屏“ 按钮</p>
 ]]></content:encoded>
     </item>
   </channel>

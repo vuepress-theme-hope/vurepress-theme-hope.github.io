@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/md-enhance/</link>
     <description>Markdown Enhancement for VuePress</description>
     <language>en-US</language>
-    <pubDate>Wed, 07 Apr 2021 05:22:16 GMT</pubDate>
-    <lastBuildDate>Wed, 07 Apr 2021 05:22:16 GMT</lastBuildDate>
+    <pubDate>Wed, 07 Apr 2021 05:45:43 GMT</pubDate>
+    <lastBuildDate>Wed, 07 Apr 2021 05:45:43 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -753,13 +753,15 @@ document<span>.</span><span>querySelector</span><span>(</span><span>"h1"</span><
 <span>}</span><span>;</span>
 </code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><h2 id="syntax"> Syntax</h2>
 <h3 id="markdown-syntax"> Markdown Syntax</h3>
-<div><pre><code><span><span>```</span><span>flow [preset]</span>
+<div><pre><code><span>&lt;!-- ↓ :preset is optional --></span>
+
+<span><span>```</span><span>flow:preset</span>
 <span>
 &lt;!-- Your flowchart code here. -->
 </span>
 <span>```</span></span>
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>Available presets for now:</p>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>Available presets for now:</p>
 <ul>
 <li><code>vue</code> (default)</li>
 <li><code>ant</code></li>
@@ -2384,13 +2386,15 @@ document<span>.</span><span>querySelector</span><span>(</span><span>"h1"</span><
   <span>]</span><span>,</span>
 <span>}</span><span>;</span>
 </code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><h2 id="语法"> 语法</h2>
-<div><pre><code><span><span>```</span><span>flow [preset]</span>
+<div><pre><code><span>&lt;!-- ↓ :preset 是可选的 --></span>
+
+<span><span>```</span><span>flow:preset</span>
 <span>
 &lt;!-- 放置你的流程图代码 -->
 </span>
 <span>```</span></span>
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>目前可用的预设:</p>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>目前可用的预设:</p>
 <ul>
 <li><code>vue</code> (默认)</li>
 <li><code>ant</code></li>
