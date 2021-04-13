@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/</link>
     <description>A vuepress theme with tons of features✨</description>
     <language>en-US</language>
-    <pubDate>Tue, 13 Apr 2021 12:33:12 GMT</pubDate>
-    <lastBuildDate>Tue, 13 Apr 2021 12:33:12 GMT</lastBuildDate>
+    <pubDate>Tue, 13 Apr 2021 12:41:22 GMT</pubDate>
+    <lastBuildDate>Tue, 13 Apr 2021 12:41:22 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -3330,7 +3330,7 @@ write something here ~
 <h2 id="docsbranch"> docsBranch</h2>
 <ul>
 <li>Type: <code>string</code></li>
-<li>Default: <code>'master'</code></li>
+<li>Default: <code>'main'</code></li>
 </ul>
 <p>Document branch</p>
 <h2 id="editlinks"> editLinks <i>Not supported content</i></h2>
@@ -6133,8 +6133,8 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     docsRepo<span>:</span> <span>"vuejs/vuepress"</span><span>,</span>
     <span>// if your docs are not at the root of the repo:</span>
     docsDir<span>:</span> <span>"docs"</span><span>,</span>
-    <span>// if your docs are in a specific branch (defaults to 'master'):</span>
-    docsBranch<span>:</span> <span>"master"</span><span>,</span>
+    <span>// if your docs are in a specific branch (defaults to 'main'):</span>
+    docsBranch<span>:</span> <span>"main"</span><span>,</span>
     <span>// defaults to false, set to true to enable</span>
     editLinks<span>:</span> <span>true</span><span>,</span>
     <span>// default value is true. Allows to hide next page links on all pages</span>
@@ -11749,7 +11749,7 @@ export default { // Highlighted
 <h2 id="docsbranch"> docsBranch</h2>
 <ul>
 <li>类型: <code>string</code></li>
-<li>默认值: <code>'master'</code></li>
+<li>默认值: <code>'main'</code></li>
 </ul>
 <p>文档所属分支</p>
 <h2 id="editlinks"> editLinks <i>Not supported content</i></h2>
@@ -14571,8 +14571,8 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     docsRepo<span>:</span> <span>"vuejs/vuepress"</span><span>,</span>
     <span>// 假如文档不是放在仓库的根目录下:</span>
     docsDir<span>:</span> <span>"docs"</span><span>,</span>
-    <span>// 假如文档放在一个特定的分支下:</span>
-    docsBranch<span>:</span> <span>"master"</span><span>,</span>
+    <span>// 假如文档放在一个特定的分支下，默认为 'main':</span>
+    docsBranch<span>:</span> <span>"main"</span><span>,</span>
     <span>// 默认是 false, 设置为 true 来启用</span>
     editLinks<span>:</span> <span>true</span><span>,</span>
     <span>// 默认为 "Edit this page"</span>

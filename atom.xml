@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-04-13T12:33:12.704Z</updated>
+  <updated>2021-04-13T12:41:22.944Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/"/>
@@ -3425,7 +3425,7 @@ write something here ~
     <title type="html">Default Theme Config</title>
     <id>https://vuepress-theme-hope.github.io/config/theme/default/</id>
     <link href="https://vuepress-theme-hope.github.io/config/theme/default/"/>
-    <updated>2021-02-26T05:26:49.000Z</updated>
+    <updated>2021-04-13T12:33:41.000Z</updated>
     <content type="html"><![CDATA[<p>The following configurations follow the configuration items in <code>@vuepress/theme-default</code>:</p>
 <div><p>Note</p>
 <p>By injecting, vuepress-theme-hope changes the default values of some configurations of the default theme.</p>
@@ -3519,7 +3519,7 @@ write something here ~
 <h2 id="docsbranch"> docsBranch</h2>
 <ul>
 <li>Type: <code>string</code></li>
-<li>Default: <code>'master'</code></li>
+<li>Default: <code>'main'</code></li>
 </ul>
 <p>Document branch</p>
 <h2 id="editlinks"> editLinks <i>Not supported content</i></h2>
@@ -6333,7 +6333,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">NavBar</title>
     <id>https://vuepress-theme-hope.github.io/guide/layout/navbar/</id>
     <link href="https://vuepress-theme-hope.github.io/guide/layout/navbar/"/>
-    <updated>2021-04-07T08:02:54.000Z</updated>
+    <updated>2021-04-13T12:33:41.000Z</updated>
     <summary type="html"><![CDATA[<p>The Navbar may contain your site title, , , <a href="https://v1.vuepress.vuejs.org/guide/i18n.html" target="_blank" rel="noopener noreferrer">Languages</a> and , they all depend on your configuration.</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>The Navbar may contain your site title, , , <a href="https://v1.vuepress.vuejs.org/guide/i18n.html" target="_blank" rel="noopener noreferrer">Languages</a> and , they all depend on your configuration.</p>
@@ -6580,8 +6580,8 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     docsRepo<span>:</span> <span>"vuejs/vuepress"</span><span>,</span>
     <span>// if your docs are not at the root of the repo:</span>
     docsDir<span>:</span> <span>"docs"</span><span>,</span>
-    <span>// if your docs are in a specific branch (defaults to 'master'):</span>
-    docsBranch<span>:</span> <span>"master"</span><span>,</span>
+    <span>// if your docs are in a specific branch (defaults to 'main'):</span>
+    docsBranch<span>:</span> <span>"main"</span><span>,</span>
     <span>// defaults to false, set to true to enable</span>
     editLinks<span>:</span> <span>true</span><span>,</span>
     <span>// default value is true. Allows to hide next page links on all pages</span>
@@ -12399,7 +12399,7 @@ export default { // Highlighted
     <title type="html">默认主题配置</title>
     <id>https://vuepress-theme-hope.github.io/zh/config/theme/default/</id>
     <link href="https://vuepress-theme-hope.github.io/zh/config/theme/default/"/>
-    <updated>2021-02-26T05:26:49.000Z</updated>
+    <updated>2021-04-13T12:33:41.000Z</updated>
     <content type="html"><![CDATA[<p>以下这些配置沿用了 <code>@vuepress/theme-default</code> 的配置项，你无需进行改动:</p>
 <div><p>Note</p>
 <p>通过注入，vuepress-theme-hope 改变了默认主题一些配置的默认值。</p>
@@ -12494,7 +12494,7 @@ export default { // Highlighted
 <h2 id="docsbranch"> docsBranch</h2>
 <ul>
 <li>类型: <code>string</code></li>
-<li>默认值: <code>'master'</code></li>
+<li>默认值: <code>'main'</code></li>
 </ul>
 <p>文档所属分支</p>
 <h2 id="editlinks"> editLinks <i>Not supported content</i></h2>
@@ -15327,7 +15327,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">导航栏</title>
     <id>https://vuepress-theme-hope.github.io/zh/guide/layout/navbar/</id>
     <link href="https://vuepress-theme-hope.github.io/zh/guide/layout/navbar/"/>
-    <updated>2021-04-07T08:02:54.000Z</updated>
+    <updated>2021-04-13T12:33:41.000Z</updated>
     <summary type="html"><![CDATA[<p>导航栏可能包含你的站点名称、、 、<a href="https://v1.vuepress.vuejs.org/zh/guide/i18n.html" target="_blank" rel="noopener noreferrer">多语言切换</a>、，它们均取决于你的配置。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>导航栏可能包含你的站点名称、、 、<a href="https://v1.vuepress.vuejs.org/zh/guide/i18n.html" target="_blank" rel="noopener noreferrer">多语言切换</a>、，它们均取决于你的配置。</p>
@@ -15574,8 +15574,8 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     docsRepo<span>:</span> <span>"vuejs/vuepress"</span><span>,</span>
     <span>// 假如文档不是放在仓库的根目录下:</span>
     docsDir<span>:</span> <span>"docs"</span><span>,</span>
-    <span>// 假如文档放在一个特定的分支下:</span>
-    docsBranch<span>:</span> <span>"master"</span><span>,</span>
+    <span>// 假如文档放在一个特定的分支下，默认为 'main':</span>
+    docsBranch<span>:</span> <span>"main"</span><span>,</span>
     <span>// 默认是 false, 设置为 true 来启用</span>
     editLinks<span>:</span> <span>true</span><span>,</span>
     <span>// 默认为 "Edit this page"</span>
