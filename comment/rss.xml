@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/comment/</link>
     <description>Comment Plugin for VuePress</description>
     <language>en-US</language>
-    <pubDate>Sun, 25 Apr 2021 07:23:43 GMT</pubDate>
-    <lastBuildDate>Sun, 25 Apr 2021 07:23:43 GMT</lastBuildDate>
+    <pubDate>Sun, 25 Apr 2021 07:31:35 GMT</pubDate>
+    <lastBuildDate>Sun, 25 Apr 2021 07:31:35 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -1246,6 +1246,322 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 ]]></content:encoded>
     </item>
     <item>
+      <title>Vssue 配置</title>
+      <link>https://vuepress-theme-hope.github.io/comment/zh/config/vssue/</link>
+      <guid>https://vuepress-theme-hope.github.io/comment/zh/config/vssue/</guid>
+      <source url="https://vuepress-theme-hope.github.io/comment/rss.xml">Vssue 配置</source>
+      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="vssue-配置"> Vssue 配置</h1>
+<h2 id="platform"> platform</h2>
+<p><code>@vssue/vuepress-plugin-vssue</code> 会自动根据你设置的 <code>platform</code> 为你解析对应的 API 包:</p>
+<ul>
+<li>Platform <code>github</code> - API 包 <code>@vssue/api-github-v3</code></li>
+<li>Platform <code>github-v4</code> - API 包 <code>@vssue/api-github-v4</code></li>
+<li>Platform <code>gitlab</code> - API 包 <code>@vssue/api-gitlab-v4</code></li>
+<li>Platform <code>bitbucket</code> - API 包 <code>@vssue/api-bitbucket-v2</code></li>
+<li>Platform <code>gitee</code> - API 包 <code>@vssue/api-gitee-v5</code></li>
+<li>Platform <code>gitea</code> - API 包 <code>@vssue/api-gitea-v1</code></li>
+</ul>
+<h2 id="owner"> owner</h2>
+<ul>
+<li>
+<p><strong>类型</strong>: <code>string</code></p>
+</li>
+<li>
+<p><strong>详细</strong>:</p>
+<p>用来存储 Issue 和评论的仓库的拥有者的名称。可能是一个用户，也可能是一个组织 (<strong>GitHub Organization</strong> / <strong>Gitlab Group</strong> / <strong>Bitbucket Team</strong>)</p>
+<p>Vssue 将通过 <code>owner</code> 和 <code>repo</code> 在平台上定位这个仓库。</p>
+</li>
+<li>
+<p><strong>参考</strong>: </p>
+</li>
+</ul>
+<h2 id="repo"> repo</h2>
+<ul>
+<li>
+<p><strong>类型</strong>: <code>string</code></p>
+</li>
+<li>
+<p><strong>详细</strong>:</p>
+<p>用来存储 Issue 和评论的仓库的名称。</p>
+<p>Vssue 将通过 <code>owner</code> 和 <code>repo</code> 在平台上定位这个仓库。</p>
+</li>
+<li>
+<p><strong>参考</strong>: </p>
+</li>
+</ul>
+<div><p>Tips</p>
+<p>仓库 URL 的常见模式是 <code>`${baseURL}/${owner}/${repo}`</code>:</p>
+<ul>
+<li>GitHub: <code>https://github.com/${owner}/${repo}</code></li>
+<li>Gitlab: <code>https://gitlab.com/${owner}/${repo}</code></li>
+<li>Bitbucket: <code>https://bitbucket.org/${owner}/${repo}</code></li>
+<li>Gitee: <code>https://gitee.com/${owner}/${repo}</code></li>
+</ul>
+</div>
+<h2 id="clientid"> clientId</h2>
+<ul>
+<li>
+<p><strong>类型</strong>: <code>string</code></p>
+</li>
+<li>
+<p><strong>详细</strong>:</p>
+<p>在 <a href="https://tools.ietf.org/html/rfc6749#section-2.3.1" target="_blank" rel="noopener noreferrer">OAuth2 spec</a> 中介绍的 <code>client_id</code>。</p>
+<p>它是由平台分配的 client 标识符。你在创建 OAuth App 之后就可以得到它。</p>
+<p>Vssue 将使用 <code>clientId</code> 来获取用户的 access token。</p>
+</li>
+<li>
+<p><strong>参考</strong>:</p>
+<ul>
+<li><a href="./../guide/supported-platforms.html">创建 OAuth App</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="clientsecret"> clientSecret</h2>
+<ul>
+<li>
+<p><strong>类型</strong>: <code>string</code></p>
+</li>
+<li>
+<p><strong>默认值</strong>: <code>undefined</code></p>
+</li>
+<li>
+<p><strong>详细</strong>:</p>
+<p>在 <a href="https://tools.ietf.org/html/rfc6749#section-2.3.1" target="_blank" rel="noopener noreferrer">OAuth2 spec</a> 中介绍的 <code>client_secret</code>。</p>
+<p>它是由平台生成的 client 密钥。你在创建 OAuth App 之后就可以得到它。</p>
+<p>在和某些平台一起使用时， Vssue 将使用 <code>clientId</code> 和 <code>clientSecret</code> 来获取用户的 access token。</p>
+<div><p>Tips</p>
+<p>一些平台 (如 Bitbucket 和 GitLab) 支持 <a href="https://tools.ietf.org/html/rfc6749#section-4.2" target="_blank" rel="noopener noreferrer">Implicit Grant</a>，所以在使用这些平台时不需要 <code>clientSecret</code>。</p>
+<p>然而，有一些平台 (如 GitHub 和 Gitee) 不支持它，所以在使用这些平台时 <code>clientSecret</code> 是必须的。</p>
+</div>
+</li>
+<li>
+<p><strong>参考</strong>:</p>
+<ul>
+<li></li>
+<li></li>
+<li><a href="./../guide/supported-platforms.html">创建 OAuth App</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="baseurl"> baseURL</h2>
+<ul>
+<li>
+<p><strong>类型</strong>: <code>string</code></p>
+</li>
+<li>
+<p><strong>默认值</strong>: <code>undefined</code> (根据不同平台变化)</p>
+</li>
+<li>
+<p><strong>详细</strong>:</p>
+<p>平台的 base URL。</p>
+<p>对于我们支持的平台，默认值为:</p>
+<ul>
+<li>GitHub 是 <code>'https://github.com'</code></li>
+<li>Gitlab 是 <code>'https://gitlab.com'</code></li>
+<li>Bitbucket 是<code>'https://bitbucket.org'</code></li>
+<li>Gitee 是<code>'https://gitee.com'</code></li>
+</ul>
+<div><p>注意</p>
+<p>只有在你要使用 <strong>自行搭建的</strong> 平台时才需要设置这个选项。 (比如 <strong>GitLab Community / Enterprise Edition</strong> 或 <strong>GitHub Enterprise Server</strong>)</p>
+</div>
+</li>
+<li>
+<p><strong>参考</strong>:</p>
+<ul>
+<li><a href="./../guide/github.html">GitHub OAuth App</a></li>
+<li><a href="./../guide/gitlab.html">GitLab Application</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="state"> state</h2>
+<ul>
+<li>
+<p><strong>类型</strong>: <code>string</code></p>
+</li>
+<li>
+<p><strong>默认值</strong>: <code>'Vssue'</code></p>
+</li>
+<li>
+<p><strong>详细</strong>:</p>
+<p>在 <a href="https://tools.ietf.org/html/rfc6749#section-4.1.1" target="_blank" rel="noopener noreferrer">OAuth2 spec</a> 中介绍的 <code>state</code>。</p>
+<p>Vssue 将会在重定向到平台认证界面时发送它，并在平台认证返回后检查它是否正确。</p>
+<p>它是被设计用来避免 <a href="https://tools.ietf.org/html/rfc6749#section-10.12" target="_blank" rel="noopener noreferrer">CSRF</a> 的，但是由于我们所有东西都在静态页面上，所以它没有太大作用。忽略这个选项，或者随便设置成什么值都行。</p>
+</li>
+</ul>
+<h2 id="labels"> labels</h2>
+<ul>
+<li>
+<p><strong>类型</strong>: <code>string[]</code></p>
+</li>
+<li>
+<p><strong>默认值</strong>: <code>['Vssue']</code></p>
+</li>
+<li>
+<p><strong>详细</strong>:</p>
+<p>用来设置 Vssue 使用的 Issue 的 labels (标签) 。</p>
+<p>Vssue 只会请求拥有对应标签的 Issue，忽略其他的 Issue。Vssue 通过 <code>title</code> 和 <code>labels</code> 来确定用来存储评论的对应 Issue。传入多个字符串可以设置多个标签，只有同时满足这些标签的 Issue 才会被 Vssue 请求。</p>
+<div><p>Tips</p>
+<p>Bitbucket 目前不支持 Issue 标签功能，所以如果你使用 Bitbucket 的话，这个配置将会被忽略。</p>
+<p>GitHub 支持在标签名称中加入 emoji，如 <code>[':heart:Vssue', ':mailbox:Comments']</code>。</p>
+</div>
+</li>
+<li>
+<p><strong>参考</strong>: </p>
+</li>
+</ul>
+<h2 id="prefix"> prefix</h2>
+<ul>
+<li>
+<p><strong>类型</strong>: <code>string</code></p>
+</li>
+<li>
+<p><strong>默认值</strong>: <code>'[Vssue]'</code></p>
+</li>
+<li>
+<p><strong>详细</strong>:</p>
+<p>Issue 标题的前缀。用于生成存储评论的对应 Issue 的实际标题。</p>
+<p>举例来说，如果 <code>prefix</code> 是 <code>'[Vssue]'</code>，<code>title</code> 是 <code>'Vssue Demo'</code>，那么 Issue 的实际标题就是 <code>'[Vssue]Vssue Demo'</code>。</p>
+<p>如果 <code>title</code> 的类型是 <code>Function</code>，这个配置将会被忽略。</p>
+</li>
+<li>
+<p><strong>参考</strong>: </p>
+</li>
+</ul>
+<h2 id="admins"> admins</h2>
+<ul>
+<li>
+<p><strong>类型</strong>: <code>string[]</code></p>
+</li>
+<li>
+<p><strong>默认值</strong>: <code>[]</code></p>
+</li>
+<li>
+<p><strong>详细</strong>:</p>
+<p>拥有 admin 权限的用户数组。<code>owner</code> 始终视为拥有 admin 权限。</p>
+<p>拥有 admin 权限的用户可以删除所有用户的评论，而其他用户只能删除自己的评论。</p>
+<p>只有 <code>admins</code> 才能在存储评论的 Issue 不存在时自动创建它。</p>
+<div><p>Tips</p>
+<p>在 <code>owner</code> 是一个组织而不是用户时，可以将你的用户名添加进 <code>admins</code> 来自动创建对应 Issue。</p>
+</div>
+</li>
+<li>
+<p><strong>参考</strong>: </p>
+</li>
+</ul>
+<h2 id="perpage"> perPage</h2>
+<ul>
+<li>
+<p><strong>类型</strong>: <code>number</code></p>
+</li>
+<li>
+<p><strong>默认值</strong>: <code>10</code></p>
+</li>
+<li>
+<p><strong>详细</strong>:</p>
+<p>默认每页显示的评论数。</p>
+</li>
+</ul>
+<h2 id="locale"> locale</h2>
+<ul>
+<li>
+<p><strong>类型</strong>: <code>string</code></p>
+</li>
+<li>
+<p><strong>默认值</strong>: <code>undefined</code></p>
+</li>
+<li>
+<p><strong>详细</strong>:</p>
+<p>使用的语言。</p>
+<p>不设置该选项时，Vssue 会使用 <code>window.navigator.languages</code> 中的语言，如果其中没有 Vssue 支持的语言则会默认使用 <code>'en'</code>。</p>
+<div><p>Tips</p>
+<p>Vssue 使用 <a href="https://kazupon.github.io/vue-i18n/" target="_blank" rel="noopener noreferrer">vue-i18n</a> 实现国际化，但是并不会影响你的 Vue 应用的其他部分。
+如果你在项目中已经使用了 vue-i18n，也不会对 Vssue 造成影响。</p>
+<p>语言包在 <a href="https://github.com/meteorlxy/vssue/tree/master/packages/vssue/src/i18n/langs" target="_blank" rel="noopener noreferrer">src/i18n/langs</a> 目录下。目前我们支持:</p>
+<ul>
+<li><code>'en'</code> (<code>'en-US'</code>)</li>
+<li><code>'zh'</code> (<code>'zh-CN'</code>)</li>
+<li><code>'pt'</code> (<code>'pt-BR'</code>)</li>
+<li><code>'ja'</code> (<code>'ja-JP'</code>)</li>
+</ul>
+<p>欢迎贡献代码帮助 Vssue 支持更多语言。</p>
+</div>
+</li>
+</ul>
+<h2 id="proxy"> proxy</h2>
+<ul>
+<li>
+<p><strong>类型</strong>: <code>string | ((url: string) =&gt; string)</code></p>
+</li>
+<li>
+<p><strong>默认值</strong>: <code>url =&gt; `https://cors-anywhere.herokuapp.com/${url}`</code></p>
+</li>
+<li>
+<p><strong>详细</strong>:</p>
+<p>某些平台 (如 GitHub 和 Gitee) 不支持 Implicit Grant，所以我们必须通过请求平台的 API 来获取 Access Token。</p>
+<p>然而，平台的 Access Token API 不支持 CORS (详见 <a href="https://github.com/isaacs/github/issues/330" target="_blank" rel="noopener noreferrer">GitHub 的相关 Issue</a>) 。由于 Vssue 是一个纯前端插件，我们必须要通过代理来请求 Access Token。</p>
+<p>默认情况下，我们使用一个开源的 CORS 代理服务 <a href="https://github.com/Rob--W/cors-anywhere" target="_blank" rel="noopener noreferrer">cors-anywhere</a>。</p>
+<p>如果你希望使用自己的代理，就需要设置这个选项。</p>
+<p>如果你使用的平台不需要设置 <code>clientSecret</code>，那么该选项会被忽略。</p>
+</li>
+<li>
+<p><strong>示例</strong>:</p>
+<div><pre><code><span>proxy</span><span>:</span> <span>(</span><span>url</span><span>)</span> <span>=></span> <span><span>`</span><span>https://your.cors.porxy?target=</span><span><span>${</span>url<span>}</span></span><span>`</span></span><span>;</span>
+</code></pre>
+<div><span>1</span><br></div></div></li>
+<li>
+<p><strong>参考</strong>:</p>
+<ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<h2 id="issuecontent"> issueContent</h2>
+<ul>
+<li>
+<p><strong>类型</strong>: <code>((param: { options: Vssue.Options, url: string }) =&gt; string | Promise&lt;string&gt;)</code></p>
+</li>
+<li>
+<p><strong>默认值</strong>: <code>({ url }) =&gt; url</code></p>
+</li>
+<li>
+<p><strong>详细</strong>:</p>
+<p>Vssue 自动创建 Issue 时使用的内容。</p>
+<p>Vssue 将使用该函数的返回值作为 Issue 的内容。</p>
+<p>参数包含两个属性:</p>
+<ul>
+<li><code>options</code> 是 Vssue 的 options。</li>
+<li><code>url</code> 是当前页面的 URL ，是 Vssue 生成 Issue 时默认使用的内容。</li>
+</ul>
+</li>
+<li>
+<p><strong>示例</strong>:</p>
+<div><pre><code><span>issueContent</span><span>:</span> <span>(</span><span><span>{</span> url <span>}</span></span><span>)</span> <span>=></span>
+  <span><span>`</span><span>这个 Issue 由 Vssue 自动创建，用来存储该页面的评论: </span><span><span>${</span>url<span>}</span></span><span>`</span></span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><div><p>Tips</p>
+<p><code>issueContent</code> 只用来在对应 Issue 不存在时新建 Issue。</p>
+<p>如果对应的 Issue 已经存在，Vssue 不会更新 Issue 的内容。</p>
+</div>
+</li>
+</ul>
+<h2 id="autocreateissue"> autoCreateIssue</h2>
+<ul>
+<li>
+<p><strong>类型</strong>: <code>boolean</code></p>
+</li>
+<li>
+<p><strong>默认值</strong>: <code>false</code></p>
+</li>
+<li>
+<p><strong>详细</strong>:</p>
+<p>如果 <code>autoCreateIssue</code> 设置为 <code>true</code>，在对应的 Issue 不存在时，Vssue 会自动尝试为你创建 Issue。注意，若你当前没有登录，则 Vssue 会自动跳转到平台的认证页面。</p>
+<p>如果 <code>autoCreateIssue</code> 设置为 <code>false</code>，你必须手动创建 Issue。</p>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
       <title>BitBucket OAuth Consumer</title>
       <link>https://vuepress-theme-hope.github.io/comment/zh/guide/bitbucket/</link>
       <guid>https://vuepress-theme-hope.github.io/comment/zh/guide/bitbucket/</guid>
@@ -1803,322 +2119,6 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <span>}</span><span>;</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>Vssue 配置</title>
-      <link>https://vuepress-theme-hope.github.io/comment/zh/config/vssue/</link>
-      <guid>https://vuepress-theme-hope.github.io/comment/zh/config/vssue/</guid>
-      <source url="https://vuepress-theme-hope.github.io/comment/rss.xml">Vssue 配置</source>
-      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="vssue-配置"> Vssue 配置</h1>
-<h2 id="platform"> platform</h2>
-<p><code>@vssue/vuepress-plugin-vssue</code> 会自动根据你设置的 <code>platform</code> 为你解析对应的 API 包:</p>
-<ul>
-<li>Platform <code>github</code> - API 包 <code>@vssue/api-github-v3</code></li>
-<li>Platform <code>github-v4</code> - API 包 <code>@vssue/api-github-v4</code></li>
-<li>Platform <code>gitlab</code> - API 包 <code>@vssue/api-gitlab-v4</code></li>
-<li>Platform <code>bitbucket</code> - API 包 <code>@vssue/api-bitbucket-v2</code></li>
-<li>Platform <code>gitee</code> - API 包 <code>@vssue/api-gitee-v5</code></li>
-<li>Platform <code>gitea</code> - API 包 <code>@vssue/api-gitea-v1</code></li>
-</ul>
-<h2 id="owner"> owner</h2>
-<ul>
-<li>
-<p><strong>类型</strong>: <code>string</code></p>
-</li>
-<li>
-<p><strong>详细</strong>:</p>
-<p>用来存储 Issue 和评论的仓库的拥有者的名称。可能是一个用户，也可能是一个组织 (<strong>GitHub Organization</strong> / <strong>Gitlab Group</strong> / <strong>Bitbucket Team</strong>)</p>
-<p>Vssue 将通过 <code>owner</code> 和 <code>repo</code> 在平台上定位这个仓库。</p>
-</li>
-<li>
-<p><strong>参考</strong>: </p>
-</li>
-</ul>
-<h2 id="repo"> repo</h2>
-<ul>
-<li>
-<p><strong>类型</strong>: <code>string</code></p>
-</li>
-<li>
-<p><strong>详细</strong>:</p>
-<p>用来存储 Issue 和评论的仓库的名称。</p>
-<p>Vssue 将通过 <code>owner</code> 和 <code>repo</code> 在平台上定位这个仓库。</p>
-</li>
-<li>
-<p><strong>参考</strong>: </p>
-</li>
-</ul>
-<div><p>Tips</p>
-<p>仓库 URL 的常见模式是 <code>`${baseURL}/${owner}/${repo}`</code>:</p>
-<ul>
-<li>GitHub: <code>https://github.com/${owner}/${repo}</code></li>
-<li>Gitlab: <code>https://gitlab.com/${owner}/${repo}</code></li>
-<li>Bitbucket: <code>https://bitbucket.org/${owner}/${repo}</code></li>
-<li>Gitee: <code>https://gitee.com/${owner}/${repo}</code></li>
-</ul>
-</div>
-<h2 id="clientid"> clientId</h2>
-<ul>
-<li>
-<p><strong>类型</strong>: <code>string</code></p>
-</li>
-<li>
-<p><strong>详细</strong>:</p>
-<p>在 <a href="https://tools.ietf.org/html/rfc6749#section-2.3.1" target="_blank" rel="noopener noreferrer">OAuth2 spec</a> 中介绍的 <code>client_id</code>。</p>
-<p>它是由平台分配的 client 标识符。你在创建 OAuth App 之后就可以得到它。</p>
-<p>Vssue 将使用 <code>clientId</code> 来获取用户的 access token。</p>
-</li>
-<li>
-<p><strong>参考</strong>:</p>
-<ul>
-<li><a href="./../guide/supported-platforms.html">创建 OAuth App</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="clientsecret"> clientSecret</h2>
-<ul>
-<li>
-<p><strong>类型</strong>: <code>string</code></p>
-</li>
-<li>
-<p><strong>默认值</strong>: <code>undefined</code></p>
-</li>
-<li>
-<p><strong>详细</strong>:</p>
-<p>在 <a href="https://tools.ietf.org/html/rfc6749#section-2.3.1" target="_blank" rel="noopener noreferrer">OAuth2 spec</a> 中介绍的 <code>client_secret</code>。</p>
-<p>它是由平台生成的 client 密钥。你在创建 OAuth App 之后就可以得到它。</p>
-<p>在和某些平台一起使用时， Vssue 将使用 <code>clientId</code> 和 <code>clientSecret</code> 来获取用户的 access token。</p>
-<div><p>Tips</p>
-<p>一些平台 (如 Bitbucket 和 GitLab) 支持 <a href="https://tools.ietf.org/html/rfc6749#section-4.2" target="_blank" rel="noopener noreferrer">Implicit Grant</a>，所以在使用这些平台时不需要 <code>clientSecret</code>。</p>
-<p>然而，有一些平台 (如 GitHub 和 Gitee) 不支持它，所以在使用这些平台时 <code>clientSecret</code> 是必须的。</p>
-</div>
-</li>
-<li>
-<p><strong>参考</strong>:</p>
-<ul>
-<li></li>
-<li></li>
-<li><a href="./../guide/supported-platforms.html">创建 OAuth App</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="baseurl"> baseURL</h2>
-<ul>
-<li>
-<p><strong>类型</strong>: <code>string</code></p>
-</li>
-<li>
-<p><strong>默认值</strong>: <code>undefined</code> (根据不同平台变化)</p>
-</li>
-<li>
-<p><strong>详细</strong>:</p>
-<p>平台的 base URL。</p>
-<p>对于我们支持的平台，默认值为:</p>
-<ul>
-<li>GitHub 是 <code>'https://github.com'</code></li>
-<li>Gitlab 是 <code>'https://gitlab.com'</code></li>
-<li>Bitbucket 是<code>'https://bitbucket.org'</code></li>
-<li>Gitee 是<code>'https://gitee.com'</code></li>
-</ul>
-<div><p>注意</p>
-<p>只有在你要使用 <strong>自行搭建的</strong> 平台时才需要设置这个选项。 (比如 <strong>GitLab Community / Enterprise Edition</strong> 或 <strong>GitHub Enterprise Server</strong>)</p>
-</div>
-</li>
-<li>
-<p><strong>参考</strong>:</p>
-<ul>
-<li><a href="./../guide/github.html">GitHub OAuth App</a></li>
-<li><a href="./../guide/gitlab.html">GitLab Application</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="state"> state</h2>
-<ul>
-<li>
-<p><strong>类型</strong>: <code>string</code></p>
-</li>
-<li>
-<p><strong>默认值</strong>: <code>'Vssue'</code></p>
-</li>
-<li>
-<p><strong>详细</strong>:</p>
-<p>在 <a href="https://tools.ietf.org/html/rfc6749#section-4.1.1" target="_blank" rel="noopener noreferrer">OAuth2 spec</a> 中介绍的 <code>state</code>。</p>
-<p>Vssue 将会在重定向到平台认证界面时发送它，并在平台认证返回后检查它是否正确。</p>
-<p>它是被设计用来避免 <a href="https://tools.ietf.org/html/rfc6749#section-10.12" target="_blank" rel="noopener noreferrer">CSRF</a> 的，但是由于我们所有东西都在静态页面上，所以它没有太大作用。忽略这个选项，或者随便设置成什么值都行。</p>
-</li>
-</ul>
-<h2 id="labels"> labels</h2>
-<ul>
-<li>
-<p><strong>类型</strong>: <code>string[]</code></p>
-</li>
-<li>
-<p><strong>默认值</strong>: <code>['Vssue']</code></p>
-</li>
-<li>
-<p><strong>详细</strong>:</p>
-<p>用来设置 Vssue 使用的 Issue 的 labels (标签) 。</p>
-<p>Vssue 只会请求拥有对应标签的 Issue，忽略其他的 Issue。Vssue 通过 <code>title</code> 和 <code>labels</code> 来确定用来存储评论的对应 Issue。传入多个字符串可以设置多个标签，只有同时满足这些标签的 Issue 才会被 Vssue 请求。</p>
-<div><p>Tips</p>
-<p>Bitbucket 目前不支持 Issue 标签功能，所以如果你使用 Bitbucket 的话，这个配置将会被忽略。</p>
-<p>GitHub 支持在标签名称中加入 emoji，如 <code>[':heart:Vssue', ':mailbox:Comments']</code>。</p>
-</div>
-</li>
-<li>
-<p><strong>参考</strong>: </p>
-</li>
-</ul>
-<h2 id="prefix"> prefix</h2>
-<ul>
-<li>
-<p><strong>类型</strong>: <code>string</code></p>
-</li>
-<li>
-<p><strong>默认值</strong>: <code>'[Vssue]'</code></p>
-</li>
-<li>
-<p><strong>详细</strong>:</p>
-<p>Issue 标题的前缀。用于生成存储评论的对应 Issue 的实际标题。</p>
-<p>举例来说，如果 <code>prefix</code> 是 <code>'[Vssue]'</code>，<code>title</code> 是 <code>'Vssue Demo'</code>，那么 Issue 的实际标题就是 <code>'[Vssue]Vssue Demo'</code>。</p>
-<p>如果 <code>title</code> 的类型是 <code>Function</code>，这个配置将会被忽略。</p>
-</li>
-<li>
-<p><strong>参考</strong>: </p>
-</li>
-</ul>
-<h2 id="admins"> admins</h2>
-<ul>
-<li>
-<p><strong>类型</strong>: <code>string[]</code></p>
-</li>
-<li>
-<p><strong>默认值</strong>: <code>[]</code></p>
-</li>
-<li>
-<p><strong>详细</strong>:</p>
-<p>拥有 admin 权限的用户数组。<code>owner</code> 始终视为拥有 admin 权限。</p>
-<p>拥有 admin 权限的用户可以删除所有用户的评论，而其他用户只能删除自己的评论。</p>
-<p>只有 <code>admins</code> 才能在存储评论的 Issue 不存在时自动创建它。</p>
-<div><p>Tips</p>
-<p>在 <code>owner</code> 是一个组织而不是用户时，可以将你的用户名添加进 <code>admins</code> 来自动创建对应 Issue。</p>
-</div>
-</li>
-<li>
-<p><strong>参考</strong>: </p>
-</li>
-</ul>
-<h2 id="perpage"> perPage</h2>
-<ul>
-<li>
-<p><strong>类型</strong>: <code>number</code></p>
-</li>
-<li>
-<p><strong>默认值</strong>: <code>10</code></p>
-</li>
-<li>
-<p><strong>详细</strong>:</p>
-<p>默认每页显示的评论数。</p>
-</li>
-</ul>
-<h2 id="locale"> locale</h2>
-<ul>
-<li>
-<p><strong>类型</strong>: <code>string</code></p>
-</li>
-<li>
-<p><strong>默认值</strong>: <code>undefined</code></p>
-</li>
-<li>
-<p><strong>详细</strong>:</p>
-<p>使用的语言。</p>
-<p>不设置该选项时，Vssue 会使用 <code>window.navigator.languages</code> 中的语言，如果其中没有 Vssue 支持的语言则会默认使用 <code>'en'</code>。</p>
-<div><p>Tips</p>
-<p>Vssue 使用 <a href="https://kazupon.github.io/vue-i18n/" target="_blank" rel="noopener noreferrer">vue-i18n</a> 实现国际化，但是并不会影响你的 Vue 应用的其他部分。
-如果你在项目中已经使用了 vue-i18n，也不会对 Vssue 造成影响。</p>
-<p>语言包在 <a href="https://github.com/meteorlxy/vssue/tree/master/packages/vssue/src/i18n/langs" target="_blank" rel="noopener noreferrer">src/i18n/langs</a> 目录下。目前我们支持:</p>
-<ul>
-<li><code>'en'</code> (<code>'en-US'</code>)</li>
-<li><code>'zh'</code> (<code>'zh-CN'</code>)</li>
-<li><code>'pt'</code> (<code>'pt-BR'</code>)</li>
-<li><code>'ja'</code> (<code>'ja-JP'</code>)</li>
-</ul>
-<p>欢迎贡献代码帮助 Vssue 支持更多语言。</p>
-</div>
-</li>
-</ul>
-<h2 id="proxy"> proxy</h2>
-<ul>
-<li>
-<p><strong>类型</strong>: <code>string | ((url: string) =&gt; string)</code></p>
-</li>
-<li>
-<p><strong>默认值</strong>: <code>url =&gt; `https://cors-anywhere.herokuapp.com/${url}`</code></p>
-</li>
-<li>
-<p><strong>详细</strong>:</p>
-<p>某些平台 (如 GitHub 和 Gitee) 不支持 Implicit Grant，所以我们必须通过请求平台的 API 来获取 Access Token。</p>
-<p>然而，平台的 Access Token API 不支持 CORS (详见 <a href="https://github.com/isaacs/github/issues/330" target="_blank" rel="noopener noreferrer">GitHub 的相关 Issue</a>) 。由于 Vssue 是一个纯前端插件，我们必须要通过代理来请求 Access Token。</p>
-<p>默认情况下，我们使用一个开源的 CORS 代理服务 <a href="https://github.com/Rob--W/cors-anywhere" target="_blank" rel="noopener noreferrer">cors-anywhere</a>。</p>
-<p>如果你希望使用自己的代理，就需要设置这个选项。</p>
-<p>如果你使用的平台不需要设置 <code>clientSecret</code>，那么该选项会被忽略。</p>
-</li>
-<li>
-<p><strong>示例</strong>:</p>
-<div><pre><code><span>proxy</span><span>:</span> <span>(</span><span>url</span><span>)</span> <span>=></span> <span><span>`</span><span>https://your.cors.porxy?target=</span><span><span>${</span>url<span>}</span></span><span>`</span></span><span>;</span>
-</code></pre>
-<div><span>1</span><br></div></div></li>
-<li>
-<p><strong>参考</strong>:</p>
-<ul>
-<li></li>
-</ul>
-</li>
-</ul>
-<h2 id="issuecontent"> issueContent</h2>
-<ul>
-<li>
-<p><strong>类型</strong>: <code>((param: { options: Vssue.Options, url: string }) =&gt; string | Promise&lt;string&gt;)</code></p>
-</li>
-<li>
-<p><strong>默认值</strong>: <code>({ url }) =&gt; url</code></p>
-</li>
-<li>
-<p><strong>详细</strong>:</p>
-<p>Vssue 自动创建 Issue 时使用的内容。</p>
-<p>Vssue 将使用该函数的返回值作为 Issue 的内容。</p>
-<p>参数包含两个属性:</p>
-<ul>
-<li><code>options</code> 是 Vssue 的 options。</li>
-<li><code>url</code> 是当前页面的 URL ，是 Vssue 生成 Issue 时默认使用的内容。</li>
-</ul>
-</li>
-<li>
-<p><strong>示例</strong>:</p>
-<div><pre><code><span>issueContent</span><span>:</span> <span>(</span><span><span>{</span> url <span>}</span></span><span>)</span> <span>=></span>
-  <span><span>`</span><span>这个 Issue 由 Vssue 自动创建，用来存储该页面的评论: </span><span><span>${</span>url<span>}</span></span><span>`</span></span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><div><p>Tips</p>
-<p><code>issueContent</code> 只用来在对应 Issue 不存在时新建 Issue。</p>
-<p>如果对应的 Issue 已经存在，Vssue 不会更新 Issue 的内容。</p>
-</div>
-</li>
-</ul>
-<h2 id="autocreateissue"> autoCreateIssue</h2>
-<ul>
-<li>
-<p><strong>类型</strong>: <code>boolean</code></p>
-</li>
-<li>
-<p><strong>默认值</strong>: <code>false</code></p>
-</li>
-<li>
-<p><strong>详细</strong>:</p>
-<p>如果 <code>autoCreateIssue</code> 设置为 <code>true</code>，在对应的 Issue 不存在时，Vssue 会自动尝试为你创建 Issue。注意，若你当前没有登录，则 Vssue 会自动跳转到平台的认证页面。</p>
-<p>如果 <code>autoCreateIssue</code> 设置为 <code>false</code>，你必须手动创建 Issue。</p>
-</li>
-</ul>
-]]></content:encoded>
     </item>
   </channel>
 </rss>
