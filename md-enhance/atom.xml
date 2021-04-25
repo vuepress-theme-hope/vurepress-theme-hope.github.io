@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-04-25T07:14:56.298Z</updated>
+  <updated>2021-04-25T07:18:32.272Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/md-enhance/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/md-enhance/"/>
@@ -1470,7 +1470,7 @@ Square : +getMessages() List~string~</span>
     <title type="html">Get Started</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/guide/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/guide/"/>
-    <updated>2021-04-24T15:12:04.000Z</updated>
+    <updated>2021-04-25T07:17:09.000Z</updated>
     <content type="html"><![CDATA[<p>By installing and enableing this plugin, you can use more syntax in your Markdown files.</p>
 <div><p>Tips</p>
 <p>Don’t worry about the size of your site. If you don’t enable related features, the final code won’t include code for these features.</p>
@@ -1518,12 +1518,24 @@ Square : +getMessages() List~string~</span>
 <ul>
 <li><a href="./mark.html">View Detail</a></li>
 </ul>
+<h3 id="tasklist"> Tasklist</h3>
+<ul>
+<li>
+<p><input checked="" disabled="" type="checkbox"> Plan A</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> Plan B</p>
+</li>
+<li>
+<p><a href="./tasklist.html">View Detail</a></p>
+</li>
+</ul>
 <h3 id="flowchart"> Flowchart</h3>
 <i>Not supported content</i><ul>
 <li><a href="./flowchart.html">View Detail</a></li>
 </ul>
 <h3 id="mermaid"> Mermaid</h3>
-<Mermaid id="mermaid64a570aa" data-code="flowchart%20TB%0A%20%20%20%20c1--%3Ea2%0A%20%20%20%20subgraph%20one%0A%20%20%20%20a1--%3Ea2%0A%20%20%20%20end%0A%20%20%20%20subgraph%20two%0A%20%20%20%20b1--%3Eb2%0A%20%20%20%20end%0A%20%20%20%20subgraph%20three%0A%20%20%20%20c1--%3Ec2%0A%20%20%20%20end%0A%20%20%20%20one%20--%3E%20two%0A%20%20%20%20three%20--%3E%20two%0A%20%20%20%20two%20--%3E%20c2%0A"></Mermaid><ul>
+<Mermaid id="mermaid64a5702e" data-code="flowchart%20TB%0A%20%20%20%20c1--%3Ea2%0A%20%20%20%20subgraph%20one%0A%20%20%20%20a1--%3Ea2%0A%20%20%20%20end%0A%20%20%20%20subgraph%20two%0A%20%20%20%20b1--%3Eb2%0A%20%20%20%20end%0A%20%20%20%20subgraph%20three%0A%20%20%20%20c1--%3Ec2%0A%20%20%20%20end%0A%20%20%20%20one%20--%3E%20two%0A%20%20%20%20three%20--%3E%20two%0A%20%20%20%20two%20--%3E%20c2%0A"></Mermaid><ul>
 <li><a href="./mermaid.html">View Detail</a></li>
 </ul>
 <h3 id="tex"> Tex</h3>
@@ -3472,7 +3484,7 @@ Square : +getMessages() List~string~</span>
     <title type="html">快速上手</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/guide/"/>
-    <updated>2021-04-24T15:12:04.000Z</updated>
+    <updated>2021-04-25T07:17:09.000Z</updated>
     <content type="html"><![CDATA[<p>通过安装并启用此插件，你可以在 Markdown 中使用更多的语法。</p>
 <div><p>Tips</p>
 <p>请不用担心你的网站大小，如果你不启用相关功能，最终代码不会包含这些功能相关的代码。</p>
@@ -3519,12 +3531,24 @@ Square : +getMessages() List~string~</span>
 <ul>
 <li><a href="./mark.html">查看详情</a></li>
 </ul>
+<h3 id="任务列表"> 任务列表</h3>
+<ul>
+<li>
+<p><input checked="" disabled="" type="checkbox"> 计划 1</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 计划 2</p>
+</li>
+<li>
+<p><a href="./tasklist.html">查看详情</a></p>
+</li>
+</ul>
 <h3 id="流程图"> 流程图</h3>
 <i>Not supported content</i><ul>
 <li><a href="./flowchart.html">查看详情</a></li>
 </ul>
-<h3 id="mermaid"> Mermaid</h3>
-<Mermaid id="mermaid64a570da" data-code="flowchart%20TB%0A%20%20%20%20c1--%3Ea2%0A%20%20%20%20subgraph%20one%0A%20%20%20%20a1--%3Ea2%0A%20%20%20%20end%0A%20%20%20%20subgraph%20two%0A%20%20%20%20b1--%3Eb2%0A%20%20%20%20end%0A%20%20%20%20subgraph%20three%0A%20%20%20%20c1--%3Ec2%0A%20%20%20%20end%0A%20%20%20%20one%20--%3E%20two%0A%20%20%20%20three%20--%3E%20two%0A%20%20%20%20two%20--%3E%20c2%0A"></Mermaid><ul>
+<h3 id="mermaid-图表"> Mermaid 图表</h3>
+<Mermaid id="mermaid64a5705e" data-code="flowchart%20TB%0A%20%20%20%20c1--%3Ea2%0A%20%20%20%20subgraph%20one%0A%20%20%20%20a1--%3Ea2%0A%20%20%20%20end%0A%20%20%20%20subgraph%20two%0A%20%20%20%20b1--%3Eb2%0A%20%20%20%20end%0A%20%20%20%20subgraph%20three%0A%20%20%20%20c1--%3Ec2%0A%20%20%20%20end%0A%20%20%20%20one%20--%3E%20two%0A%20%20%20%20three%20--%3E%20two%0A%20%20%20%20two%20--%3E%20c2%0A"></Mermaid><ul>
 <li><a href="./mermaid.html">查看详情</a></li>
 </ul>
 <h3 id="tex-语法"> Tex 语法</h3>

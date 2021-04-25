@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-04-25T07:14:56.453Z</updated>
+  <updated>2021-04-25T07:18:32.968Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/"/>
@@ -5635,7 +5635,7 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
     <title type="html">Theme intro</title>
     <id>https://vuepress-theme-hope.github.io/guide/get-started/intro/</id>
     <link href="https://vuepress-theme-hope.github.io/guide/get-started/intro/"/>
-    <updated>2021-03-09T15:26:49.000Z</updated>
+    <updated>2021-04-25T07:17:09.000Z</updated>
     <content type="html"><![CDATA[<h2 id="🎈-the-original-intention-and-design-goals-of-this-theme"> 🎈 The original intention and design goals of this theme</h2>
 <h3 id="original-intention"> Original intention</h3>
 <p>The original intention of making this theme was to find that VuePress is just a pure static document generator. For example, it will not inject meta tags for SEO optimization, nor will it generate a Sitemap to help search engines index the content of the document.</p>
@@ -5662,13 +5662,13 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
 <p>If you are a literature lover and want to place some essays, the theme provides <a href="./../markdown/align.html">Custom Alignment</a> and <a href="./../markdown/footnote.html">footnote</a>.</p>
 </li>
 <li>
-<p>To store some knowledge notes, the theme provides <a href="./../markdown/mark.html">Mark</a> and <a href="./../markdown/tex.html">Tex</a> support.</p>
+<p>To store some knowledge notes, the theme provides <a href="./../markdown/mark.html">Mark</a>, <a href="./../markdown/tasklist.html">Task list</a> and <a href="./../markdown/tex.html">Tex</a> support.</p>
 </li>
 <li>
 <p>If you are a programmer and need to show a lot of codes and demos, this theme provides light and dark themes for code blocks, code group component <code>&lt;CodeGroup /&gt;</code> and the <a href="./../feature/copy-code.html">&quot;one-click copy&quot; button</a>. At the same time, we also provide the <a href="./../markdown/demo.html">Code Demo</a> function, which is convenient for you to show your own Vue, React components or other demos.</p>
 </li>
 <li>
-<p>If you are providing product documentation and presentation, the theme provides <a href="./../markdown/presentation.html">slide</a> and <a href="./../markdown/flowchart.html">flowchart</a> functions.</p>
+<p>If you are providing product documentation and presentation, the theme provides <a href="./../markdown/presentation.html">slide</a>, <a href="./../markdown/flowchart.html">flowchart</a>, <a href="./../markdown/mermaid.html">mermaid diagram</a> functions.</p>
 </li>
 </ul>
 <p>In short, anyone can enjoy the convenience of Markdown’s enhanced syntax.</p>
@@ -5705,7 +5705,7 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
     <title type="html">Markdown</title>
     <id>https://vuepress-theme-hope.github.io/guide/get-started/markdown/</id>
     <link href="https://vuepress-theme-hope.github.io/guide/get-started/markdown/"/>
-    <updated>2021-03-19T01:26:02.000Z</updated>
+    <updated>2021-04-25T07:17:09.000Z</updated>
     <summary type="html"><![CDATA[<p>Every document page in VuePress is rendered by Markdown.</p>
 <p>You need to build your document or blog page by creating and writing Markdown in the corresponding path.</p>
 ]]></summary>
@@ -5746,9 +5746,25 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
 <ul>
 <li><a href="./../markdown/mark.html">View Detail</a></li>
 </ul>
+<h3 id="tasklist"> Tasklist</h3>
+<ul>
+<li>
+<p><input checked="" disabled="" type="checkbox"> Plan A</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> Plan B</p>
+</li>
+<li>
+<p><a href="./../markdown/tasklist.html">View Detail</a></p>
+</li>
+</ul>
 <h3 id="flowchart"> Flowchart</h3>
 <i>Not supported content</i><ul>
 <li><a href="./../markdown/flowchart.html">View Detail</a></li>
+</ul>
+<h2 id="mermaid"> Mermaid</h2>
+<Mermaid id="mermaid64a57068" data-code="graph%20TD%3B%0A%20%20%20%20A--%3EB%3B%0A%20%20%20%20A--%3EC%3B%0A%20%20%20%20B--%3ED%3B%0A%20%20%20%20C--%3ED%3B%0A"></Mermaid><ul>
+<li><a href="./../markdown/mermaid.html">View Detail</a></li>
 </ul>
 <h3 id="tex"> Tex</h3>
 <p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:2.40003em;vertical-align:-0.95003em;"></span><span><span></span><span><span><span><span style="height:1.37144em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.05556em;">∂</span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.590392em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.05556em;">∂</span><span><span><span><span style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span style="top:0em;"><span>(</span></span><span><span></span><span><span><span><span style="height:1.341392em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.03588em;">ω</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.03588em;">y</span><span><span><span><span style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">ω</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="top:0em;"><span>)</span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:3.027669em;vertical-align:-1.277669em;"></span><span><span style="top:0em;"><span>(</span></span><span><span></span><span><span><span><span style="height:1.341392em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.03588em;">ω</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.03588em;">y</span><span><span><span><span style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">ω</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="top:0em;"><span>)</span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span style="top:0em;"><span>{</span></span><span>(</span><span>lo<span style="margin-right:0.01389em;">g</span></span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.03588em;">y</span><span><span>)</span><span><span><span><span style="height:0.7143919999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span><span><span style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>i</span><span>=</span><span>1</span></span></span></span><span style="top:-3.050005em;"><span style="height:3.05em;"></span><span><span>∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span style="height:3.05em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span><span>​</span></span><span><span style="height:1.277669em;"><span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span></span><span><span><span><span style="height:1.5016639999999999em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.750664em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>i</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span>(</span><span>−</span><span>1</span><span><span>)</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>i</span></span></span></span></span></span></span></span><span style="margin-right:0.02778em;">r</span><span style="margin-right:0.16666666666666666em;"></span><span>⋯</span><span style="margin-right:0.16666666666666666em;"></span><span>(</span><span style="margin-right:0.02778em;">r</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span><span>i</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span>1</span><span>)</span><span>(</span><span>lo<span style="margin-right:0.01389em;">g</span></span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.03588em;">y</span><span><span>)</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.02778em;">r</span><span>−</span><span>i</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="top:0em;"><span>}</span></span></span></span></span></span></span></p>
@@ -8284,6 +8300,224 @@ c2(no)->op2->e</span>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
+    <title type="html">Mermaid</title>
+    <id>https://vuepress-theme-hope.github.io/guide/markdown/mermaid/</id>
+    <link href="https://vuepress-theme-hope.github.io/guide/markdown/mermaid/"/>
+    <updated>2021-04-25T07:17:09.000Z</updated>
+    <summary type="html"><![CDATA[<p>Let the Markdown file support <a href="https://mermaid-js.github.io/mermaid/#/" target="_blank" rel="noopener noreferrer">mermaid</a> in your VuePress site.</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>Let the Markdown file support <a href="https://mermaid-js.github.io/mermaid/#/" target="_blank" rel="noopener noreferrer">mermaid</a> in your VuePress site.</p>
+
+<h2 id="configuration"> Configuration</h2>
+<div><div><br><br><br><div>&nbsp;</div><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  themeConfig<span>:</span> <span>{</span>
+    mdEnhance<span>:</span> <span>{</span>
+      mermaid<span>:</span> <span>true</span><span>,</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><h2 id="syntax"> Syntax</h2>
+<div><pre><code><span><span>```</span><span>mermaid</span>
+<span>
+&lt;!-- Your mermaid code here. -->
+</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h2 id="usage"> Usage</h2>
+<p>Please see <a href="https://mermaid-js.github.io/mermaid/#/" target="_blank" rel="noopener noreferrer">mermaid</a>.</p>
+<h2 id="demo"> Demo</h2>
+<h3 id="flowchart"> Flowchart</h3>
+<Mermaid id="mermaid382ee168" data-code="flowchart%20TB%0A%20%20%20%20c1--%3Ea2%0A%20%20%20%20subgraph%20one%0A%20%20%20%20a1--%3Ea2%0A%20%20%20%20end%0A%20%20%20%20subgraph%20two%0A%20%20%20%20b1--%3Eb2%0A%20%20%20%20end%0A%20%20%20%20subgraph%20three%0A%20%20%20%20c1--%3Ec2%0A%20%20%20%20end%0A%20%20%20%20one%20--%3E%20two%0A%20%20%20%20three%20--%3E%20two%0A%20%20%20%20two%20--%3E%20c2%0A"></Mermaid><details><summary>Code</summary>
+<div><pre><code><span><span>```</span><span>mermaid</span>
+<span>flowchart TB
+    c1-->a2
+    subgraph one
+    a1-->a2
+    end
+    subgraph two
+    b1-->b2
+    end
+    subgraph three
+    c1-->c2
+    end
+    one --> two
+    three --> two
+    two --> c2</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br></div></div></details>
+<h3 id="sequence-diagram"> Sequence Diagram</h3>
+<Mermaid id="mermaid382ee184" data-code="sequenceDiagram%0A%20%20%20%20Alice%20-%3E%3E%20Bob%3A%20Hello%20Bob%2C%20how%20are%20you%3F%0A%20%20%20%20Bob--%3E%3EJohn%3A%20How%20about%20you%20John%3F%0A%20%20%20%20Bob--x%20Alice%3A%20I%20am%20good%20thanks!%0A%20%20%20%20Bob-x%20John%3A%20I%20am%20good%20thanks!%0A%20%20%20%20Note%20right%20of%20John%3A%20Bob%20thinks%20a%20long%3Cbr%2F%3Elong%20time%2C%20so%20long%3Cbr%2F%3Ethat%20the%20text%20does%3Cbr%2F%3Enot%20fit%20on%20a%20row.%0A%0A%20%20%20%20Bob--%3EAlice%3A%20Checking%20with%20John...%0A%20%20%20%20Alice-%3EJohn%3A%20Yes...%20John%2C%20how%20are%20you%3F%0A"></Mermaid><details><summary>Code</summary>
+<div><pre><code><span><span>```</span><span>mermaid</span>
+<span>sequenceDiagram
+    Alice ->> Bob: Hello Bob, how are you?
+    Bob-->>John: How about you John?
+    Bob--x Alice: I am good thanks!
+    Bob-x John: I am good thanks!
+    Note right of John: Bob thinks a long&lt;br/>long time, so long&lt;br/>that the text does&lt;br/>not fit on a row.
+
+    Bob-->Alice: Checking with John...
+    Alice->John: Yes... John, how are you?</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div></details>
+<h3 id="class-diagram"> Class Diagram</h3>
+<Mermaid id="mermaid382ee18b" data-code="classDiagram%0Aclass%20Square~Shape~%7B%0A%20%20%20%20int%20id%0A%20%20%20%20List~int~%20position%0A%20%20%20%20setPoints(List~int~%20points)%0A%20%20%20%20getPoints()%20List~int~%0A%7D%0A%0ASquare%20%3A%20-List~string~%20messages%0ASquare%20%3A%20%2BsetMessages(List~string~%20messages)%0ASquare%20%3A%20%2BgetMessages()%20List~string~%0A"></Mermaid><details><summary>Code</summary>
+<div><pre><code><span><span>```</span><span>mermaid</span>
+<span>classDiagram
+class Square~Shape~{
+    int id
+    List~int~ position
+    setPoints(List~int~ points)
+    getPoints() List~int~
+}
+
+Square : -List~string~ messages
+Square : +setMessages(List~string~ messages)
+Square : +getMessages() List~string~</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div></details>
+<h3 id="state-diagram"> State Diagram</h3>
+<Mermaid id="mermaid382ee1a7" data-code="stateDiagram-v2%0A%20%20%20%20%5B*%5D%20--%3E%20Active%0A%0A%20%20%20%20state%20Active%20%7B%0A%20%20%20%20%20%20%20%20%5B*%5D%20--%3E%20NumLockOff%0A%20%20%20%20%20%20%20%20NumLockOff%20--%3E%20NumLockOn%20%3A%20EvNumLockPressed%0A%20%20%20%20%20%20%20%20NumLockOn%20--%3E%20NumLockOff%20%3A%20EvNumLockPressed%0A%20%20%20%20%20%20%20%20--%0A%20%20%20%20%20%20%20%20%5B*%5D%20--%3E%20CapsLockOff%0A%20%20%20%20%20%20%20%20CapsLockOff%20--%3E%20CapsLockOn%20%3A%20EvCapsLockPressed%0A%20%20%20%20%20%20%20%20CapsLockOn%20--%3E%20CapsLockOff%20%3A%20EvCapsLockPressed%0A%20%20%20%20%20%20%20%20--%0A%20%20%20%20%20%20%20%20%5B*%5D%20--%3E%20ScrollLockOff%0A%20%20%20%20%20%20%20%20ScrollLockOff%20--%3E%20ScrollLockOn%20%3A%20EvScrollLockPressed%0A%20%20%20%20%20%20%20%20ScrollLockOn%20--%3E%20ScrollLockOff%20%3A%20EvScrollLockPressed%0A%20%20%20%20%7D%0A"></Mermaid><details><summary>Code</summary>
+<div><pre><code><span><span>```</span><span>mermaid</span>
+<span>stateDiagram-v2
+    [*] --> Active
+
+    state Active {
+        [*] --> NumLockOff
+        NumLockOff --> NumLockOn : EvNumLockPressed
+        NumLockOn --> NumLockOff : EvNumLockPressed
+        --
+        [*] --> CapsLockOff
+        CapsLockOff --> CapsLockOn : EvCapsLockPressed
+        CapsLockOn --> CapsLockOff : EvCapsLockPressed
+        --
+        [*] --> ScrollLockOff
+        ScrollLockOff --> ScrollLockOn : EvScrollLockPressed
+        ScrollLockOn --> ScrollLockOff : EvScrollLockPressed
+    }</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br></div></div></details>
+<h3 id="entity-relationship-diagrams"> Entity Relationship Diagrams</h3>
+<Mermaid id="mermaid382ee1c3" data-code="erDiagram%0A%20%20%20%20CAR%20%7C%7C--o%7B%20NAMED-DRIVER%20%3A%20allows%0A%20%20%20%20CAR%20%7B%0A%20%20%20%20%20%20%20%20string%20registrationNumber%0A%20%20%20%20%20%20%20%20string%20make%0A%20%20%20%20%20%20%20%20string%20model%0A%20%20%20%20%7D%0A%20%20%20%20PERSON%20%7C%7C--o%7B%20NAMED-DRIVER%20%3A%20is%0A%20%20%20%20PERSON%20%7B%0A%20%20%20%20%20%20%20%20string%20firstName%0A%20%20%20%20%20%20%20%20string%20lastName%0A%20%20%20%20%20%20%20%20int%20age%0A%20%20%20%20%7D%0A"></Mermaid><details><summary>Code</summary>
+<div><pre><code><span><span>```</span><span>mermaid</span>
+<span>erDiagram
+    CAR ||--o{ NAMED-DRIVER : allows
+    CAR {
+        string registrationNumber
+        string make
+        string model
+    }
+    PERSON ||--o{ NAMED-DRIVER : is
+    PERSON {
+        string firstName
+        string lastName
+        int age
+    }</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br></div></div></details>
+<h3 id="user-journey-diagram"> User Journey Diagram</h3>
+<Mermaid id="mermaid382ee1ca" data-code="journey%0A%20%20%20%20title%20My%20working%20day%0A%20%20%20%20section%20Go%20to%20work%0A%20%20%20%20%20%20Make%20tea%3A%205%3A%20Me%0A%20%20%20%20%20%20Go%20upstairs%3A%203%3A%20Me%0A%20%20%20%20%20%20Do%20work%3A%201%3A%20Me%2C%20Cat%0A%20%20%20%20section%20Go%20home%0A%20%20%20%20%20%20Go%20downstairs%3A%205%3A%20Me%0A%20%20%20%20%20%20Sit%20down%3A%205%3A%20Me%0A"></Mermaid><details><summary>Code</summary>
+<div><pre><code><span><span>```</span><span>mermaid</span>
+<span>journey
+    title My working day
+    section Go to work
+      Make tea: 5: Me
+      Go upstairs: 3: Me
+      Do work: 1: Me, Cat
+    section Go home
+      Go downstairs: 5: Me
+      Sit down: 5: Me</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div></details>
+<h3 id="gantt-diagrams"> Gantt diagrams</h3>
+<Mermaid id="mermaid382ee1e6" data-code="gantt%0A%20%20%20%20dateFormat%20%20YYYY-MM-DD%0A%20%20%20%20title%20%20%20%20%20%20%20Adding%20GANTT%20diagram%20functionality%20to%20mermaid%0A%20%20%20%20excludes%20%20%20%20weekends%0A%20%20%20%20%25%25%20(%60excludes%60%20accepts%20specific%20dates%20in%20YYYY-MM-DD%20format%2C%20days%20of%20the%20week%20(%22sunday%22)%20or%20%22weekends%22%2C%20but%20not%20the%20word%20%22weekdays%22.)%0A%0A%20%20%20%20section%20A%20section%0A%20%20%20%20Completed%20task%20%20%20%20%20%20%20%20%20%20%20%20%3Adone%2C%20%20%20%20des1%2C%202014-01-06%2C2014-01-08%0A%20%20%20%20Active%20task%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Aactive%2C%20%20des2%2C%202014-01-09%2C%203d%0A%20%20%20%20Future%20task%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3A%20%20%20%20%20%20%20%20%20des3%2C%20after%20des2%2C%205d%0A%20%20%20%20Future%20task2%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3A%20%20%20%20%20%20%20%20%20des4%2C%20after%20des3%2C%205d%0A%0A%20%20%20%20section%20Critical%20tasks%0A%20%20%20%20Completed%20task%20in%20the%20critical%20line%20%3Acrit%2C%20done%2C%202014-01-06%2C24h%0A%20%20%20%20Implement%20parser%20and%20jison%20%20%20%20%20%20%20%20%20%20%3Acrit%2C%20done%2C%20after%20des1%2C%202d%0A%20%20%20%20Create%20tests%20for%20parser%20%20%20%20%20%20%20%20%20%20%20%20%20%3Acrit%2C%20active%2C%203d%0A%20%20%20%20Future%20task%20in%20critical%20line%20%20%20%20%20%20%20%20%3Acrit%2C%205d%0A%20%20%20%20Create%20tests%20for%20renderer%20%20%20%20%20%20%20%20%20%20%20%3A2d%0A%20%20%20%20Add%20to%20mermaid%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3A1d%0A%0A%20%20%20%20section%20Documentation%0A%20%20%20%20Describe%20gantt%20syntax%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Aactive%2C%20a1%2C%20after%20des1%2C%203d%0A%20%20%20%20Add%20gantt%20diagram%20to%20demo%20page%20%20%20%20%20%20%3Aafter%20a1%20%20%2C%2020h%0A%20%20%20%20Add%20another%20diagram%20to%20demo%20page%20%20%20%20%3Adoc1%2C%20after%20a1%20%20%2C%2048h%0A%0A%20%20%20%20section%20Last%20section%0A%20%20%20%20Describe%20gantt%20syntax%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Aafter%20doc1%2C%203d%0A%20%20%20%20Add%20gantt%20diagram%20to%20demo%20page%20%20%20%20%20%20%3A20h%0A%20%20%20%20Add%20another%20diagram%20to%20demo%20page%20%20%20%20%3A48h%0A"></Mermaid><details><summary>Code</summary>
+<div><pre><code><span><span>```</span><span>mermaid</span>
+<span>gantt
+    dateFormat  YYYY-MM-DD
+    title       Adding GANTT diagram functionality to mermaid
+    excludes    weekends
+    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
+
+    section A section
+    Completed task            :done,    des1, 2014-01-06,2014-01-08
+    Active task               :active,  des2, 2014-01-09, 3d
+    Future task               :         des3, after des2, 5d
+    Future task2              :         des4, after des3, 5d
+
+    section Critical tasks
+    Completed task in the critical line :crit, done, 2014-01-06,24h
+    Implement parser and jison          :crit, done, after des1, 2d
+    Create tests for parser             :crit, active, 3d
+    Future task in critical line        :crit, 5d
+    Create tests for renderer           :2d
+    Add to mermaid                      :1d
+
+    section Documentation
+    Describe gantt syntax               :active, a1, after des1, 3d
+    Add gantt diagram to demo page      :after a1  , 20h
+    Add another diagram to demo page    :doc1, after a1  , 48h
+
+    section Last section
+    Describe gantt syntax               :after doc1, 3d
+    Add gantt diagram to demo page      :20h
+    Add another diagram to demo page    :48h</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br></div></div></details>
+<h3 id="pie-chart-diagrams"> Pie chart diagrams</h3>
+<Mermaid id="mermaid382ee202" data-code="pie%20title%20What%20Voldemort%20doesn't%20have%3F%0A%20%20%20%20%22FRIENDS%22%20%3A%202%0A%20%20%20%20%22FAMILY%22%20%3A%203%0A%20%20%20%20%22NOSE%22%20%3A%2045%0A"></Mermaid><details><summary>Code</summary>
+<div><pre><code><span><span>```</span><span>mermaid</span>
+<span>pie title What Voldemort doesn't have?
+    "FRIENDS" : 2
+    "FAMILY" : 3
+    "NOSE" : 45</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div></details>
+<h3 id="a-complex-example"> A complex example</h3>
+<Mermaid id="mermaid382ee21e" data-code="graph%20TB%0A%20%20%20%20sq%5BSquare%20shape%5D%20--%3E%20ci((Circle%20shape))%0A%0A%20%20%20%20subgraph%20A%0A%20%20%20%20%20%20%20%20od%3EOdd%20shape%5D--%20Two%20line%3Cbr%2F%3Eedge%20comment%20--%3E%20ro%0A%20%20%20%20%20%20%20%20di%7BDiamond%20with%20%3Cbr%2F%3E%20line%20break%7D%20-.-%3E%20ro(Rounded%3Cbr%3Esquare%3Cbr%3Eshape)%0A%20%20%20%20%20%20%20%20di%3D%3D%3Ero2(Rounded%20square%20shape)%0A%20%20%20%20end%0A%0A%20%20%20%20%25%25%20Notice%20that%20no%20text%20in%20shape%20are%20added%20here%20instead%20that%20is%20appended%20further%20down%0A%20%20%20%20e%20--%3E%20od3%3EReally%20long%20text%20with%20linebreak%3Cbr%3Ein%20an%20Odd%20shape%5D%0A%0A%20%20%20%20%25%25%20Comments%20after%20double%20percent%20signs%0A%20%20%20%20e((Inner%20%2F%20circle%3Cbr%3Eand%20some%20odd%20%3Cbr%3Especial%20characters))%20--%3E%20f(%2C.%3F!%2B-*%D8%B2)%0A%0A%20%20%20%20cyr%5BCyrillic%5D--%3Ecyr2((Circle%20shape%20%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D0%BE))%3B%0A%0A%20%20%20%20%20classDef%20green%20fill%3A%239f6%2Cstroke%3A%23333%2Cstroke-width%3A2px%3B%0A%20%20%20%20%20classDef%20orange%20fill%3A%23f96%2Cstroke%3A%23333%2Cstroke-width%3A4px%3B%0A%20%20%20%20%20class%20sq%2Ce%20green%0A%20%20%20%20%20class%20di%20orange%0A"></Mermaid><details><summary>Code</summary>
+<div><pre><code><span><span>```</span><span>mermaid</span>
+<span>graph TB
+    sq[Square shape] --> ci((Circle shape))
+
+    subgraph A
+        od>Odd shape]-- Two line&lt;br/>edge comment --> ro
+        di{Diamond with &lt;br/> line break} -.-> ro(Rounded&lt;br>square&lt;br>shape)
+        di==>ro2(Rounded square shape)
+    end
+
+    %% Notice that no text in shape are added here instead that is appended further down
+    e --> od3>Really long text with linebreak&lt;br>in an Odd shape]
+
+    %% Comments after double percent signs
+    e((Inner / circle&lt;br>and some odd &lt;br>special characters)) --> f(,.?!+-*ز)
+
+    cyr[Cyrillic]-->cyr2((Circle shape Начало));
+
+     classDef green fill:#9f6,stroke:#333,stroke-width:2px;
+     classDef orange fill:#f96,stroke:#333,stroke-width:4px;
+     class sq,e green
+     class di orange</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br></div></div></details>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <category term="markdown"/>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-04-25T07:17:09.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
     <title type="html">Presentation</title>
     <id>https://vuepress-theme-hope.github.io/guide/markdown/presentation/</id>
     <link href="https://vuepress-theme-hope.github.io/guide/markdown/presentation/"/>
@@ -8389,7 +8623,7 @@ $$
     <title type="html">Markdown Enhance</title>
     <id>https://vuepress-theme-hope.github.io/guide/markdown/</id>
     <link href="https://vuepress-theme-hope.github.io/guide/markdown/"/>
-    <updated>2021-02-27T06:18:09.000Z</updated>
+    <updated>2021-04-25T07:17:09.000Z</updated>
     <summary type="html"><![CDATA[<p>Besides Markdown syntaxes VuePress itself adds, <code>vuepress-theme-hope</code> enables more syntax in Markdown via <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">vuepress-plugin-md-enhance</a> plugin.</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>Besides Markdown syntaxes VuePress itself adds, <code>vuepress-theme-hope</code> enables more syntax in Markdown via <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">vuepress-plugin-md-enhance</a> plugin.</p>
@@ -8418,7 +8652,13 @@ $$
 <p><a href="./mark.html">Mark</a></p>
 </li>
 <li>
+<p><a href="./tasklist.html">Task list</a></p>
+</li>
+<li>
 <p><a href="./flowchart.html">Flowchart</a></p>
+</li>
+<li>
+<p><a href="./mermaid.html">Mermaid Diagram</a></p>
 </li>
 <li>
 <p><a href="./tex.html">Tex</a></p>
@@ -8487,6 +8727,47 @@ $$
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
+    <title type="html">Task list</title>
+    <id>https://vuepress-theme-hope.github.io/guide/markdown/tasklist/</id>
+    <link href="https://vuepress-theme-hope.github.io/guide/markdown/tasklist/"/>
+    <updated>2021-04-25T07:17:09.000Z</updated>
+    <summary type="html"><![CDATA[<p>Let the Markdown file in your VuePress site support task list.</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>Let the Markdown file in your VuePress site support task list.</p>
+
+<h2 id="configuration"> Configuration</h2>
+<div><div><br><br><br><div>&nbsp;</div><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  themeConfig<span>:</span> <span>{</span>
+    mdEnhance<span>:</span> <span>{</span>
+      tasklist<span>:</span> <span>true</span><span>,</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><h2 id="syntax"> Syntax</h2>
+<ul>
+<li>Use <code>- [ ] some text</code> to render a unchecked task item.</li>
+<li>Use <code>- [x] some text</code> to render a checked task item. (Capital <code>X</code> is also supported)</li>
+</ul>
+<h2 id="demo"> Demo</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Plan A</li>
+<li><input checked="" disabled="" type="checkbox"> Plan B</li>
+</ul>
+<div><pre><code><span>-</span> [ ] Plan A
+<span>-</span> [x] Plan B
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div>]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <category term="markdown"/>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-04-25T07:17:09.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
     <title type="html">Tex</title>
     <id>https://vuepress-theme-hope.github.io/guide/markdown/tex/</id>
     <link href="https://vuepress-theme-hope.github.io/guide/markdown/tex/"/>
@@ -8536,7 +8817,7 @@ $$
     <title type="html">Guide</title>
     <id>https://vuepress-theme-hope.github.io/guide/</id>
     <link href="https://vuepress-theme-hope.github.io/guide/"/>
-    <updated>2021-03-13T12:11:43.000Z</updated>
+    <updated>2021-04-25T07:17:09.000Z</updated>
     <summary type="html"><![CDATA[<div><p>Tips</p>
 <p>If you met a bug while using, you can open an issue <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues" target="_blank" rel="noopener noreferrer">here</a></p>
 </div>
@@ -8556,8 +8837,10 @@ $$
 <li><a href="./markdown/components.html#codegroup-codegroupitem">CodeGroup <code>&lt;CodeGroup /&gt;</code></a></li>
 <li><a href="./markdown/tex.html">Tex Support</a></li>
 <li><a href="./markdown/align.html">Custom alignment</a></li>
-<li><a href="./markdown/flowchart.html">Flow chart</a></li>
+<li><a href="./markdown/flowchart.html">FlowChart</a></li>
+<li><a href="./markdown/mermaid.html">Mermaid Diagram</a></li>
 <li><a href="./markdown/mark.html">Mark</a></li>
+<li><a href="./markdown/tasklist.html">Task list</a></li>
 <li><a href="./markdown/sup-sub.html">Subsript and Supercript</a></li>
 <li><a href="./markdown/demo.html">Code demo</a></li>
 <li><a href="./markdown/presentation.html">Presentation</a></li>
@@ -8732,7 +9015,7 @@ $$
     <title type="html">Home</title>
     <id>https://vuepress-theme-hope.github.io/</id>
     <link href="https://vuepress-theme-hope.github.io/"/>
-    <updated>2021-04-07T08:02:54.000Z</updated>
+    <updated>2021-04-25T07:17:09.000Z</updated>
     <content type="html"><![CDATA[<h2 id="🛠install"> 🛠Install</h2>
 <p>Create a vuepress-theme-hope project in <code>[dir]</code> folder under the current project:</p>
 <CodeGroup>
@@ -12309,36 +12592,83 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
-    <title type="html">vuepress-plugin-copyright</title>
-    <id>https://vuepress-theme-hope.github.io/zh/config/plugin/copyright/</id>
-    <link href="https://vuepress-theme-hope.github.io/zh/config/plugin/copyright/"/>
-    <updated>2021-01-29T05:27:27.000Z</updated>
-    <summary type="html"><![CDATA[<p>处理你的 VuePress 站点中的复制操作</p>
+    <title type="html">Stylus 配置</title>
+    <id>https://vuepress-theme-hope.github.io/zh/config/stylus/</id>
+    <link href="https://vuepress-theme-hope.github.io/zh/config/stylus/"/>
+    <updated>2021-01-21T06:42:02.000Z</updated>
+    <summary type="html"><![CDATA[<p>你可以通过在 <code>.vuepress/styles</code> 中的 palette.styl 写入变量值来更改主题的样式。</p>
 ]]></summary>
-    <content type="html"><![CDATA[<p>处理你的 VuePress 站点中的复制操作</p>
+    <content type="html"><![CDATA[<p>你可以通过在 <code>.vuepress/styles</code> 中的 palette.styl 写入变量值来更改主题的样式。</p>
 
-<h2 id="默认配置说明"> 默认配置说明</h2>
-<p>当用户从你的站点复制超过 100 字的消息时，在这段消息的尾部添加声明消息。</p>
-<p>作者名称会从你在主题中配置的作者信息或站点名称自动生成。</p>
-<p>默认配置如下:</p>
-<div><div><br><br><br><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span>
-    <span>/** 复制操作处理 */</span>
-    <span>[</span>
-      <span>"copyright"</span><span>,</span>
-      <span>{</span>
-        authorName<span>:</span> options<span>.</span>author<span>,</span>
-        minLength<span>:</span> <span>100</span><span>,</span>
-        clipboardComponent<span>:</span> path<span>.</span><span>resolve</span><span>(</span>__dirname<span>,</span> <span>"components/Clipboard.vue"</span><span>)</span><span>,</span>
-      <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-  <span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><h2 id="配置项"> 配置项</h2>
-<p>详见 <a href="https://vuepress.github.io/zh/plugins/copyright/#%E9%85%8D%E7%BD%AE%E9%A1%B9" target="_blank" rel="noopener noreferrer">官方文档</a></p>
-<h2 id="演示"> 演示</h2>
-<p>请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。</p>
-]]></content>
+<h2 id="响应式布局断点"> 响应式布局断点</h2>
+<div><pre><code><span>/* responsive breakpoints */</span>
+<span><span>$MQWide</span> <span>?=</span> <span>1440</span><span>px</span> <span>// wide screen</span></span>
+<span><span>$MQNormal</span> <span>?=</span> <span>1280</span><span>px</span> <span>// desktop</span></span>
+<span><span>$MQNarrow</span> <span>?=</span> <span>959</span><span>px</span> <span>// narrow desktop / iPad</span></span>
+<span><span>$MQMobile</span> <span>?=</span> <span>719</span><span>px</span> <span>// wide mobile</span></span>
+<span><span>$MQMobileNarrow</span> <span>?=</span> <span>419</span><span>px</span> <span>// narrow mobile</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="布局"> 布局</h2>
+<div><pre><code><span>// layout</span>
+<span><span>$navbarHeight</span> <span>?=</span> <span>3.6</span><span>rem</span></span>
+<span><span>$navbarMobileHeight</span> <span>?=</span> <span>3.2</span><span>rem</span></span>
+<span><span>$navbarHorizontalPadding</span> <span>?=</span> <span>1.5</span><span>rem</span></span>
+<span><span>$navbarMobileHorizontalPadding</span> <span>?=</span> <span>1</span><span>rem</span></span>
+<span><span>$navbarVerticalPadding</span> <span>?=</span> <span>0.7</span><span>rem</span></span>
+<span><span>$navbarMobileVerticalPadding</span> <span>?=</span> <span>0.4</span><span>rem</span></span>
+<span><span>$sidebarWidth</span> <span>?=</span> <span>18</span><span>rem</span></span>
+<span><span>$mobileSidebarWidth</span> <span>?=</span> $sidebarWidth</span>
+<span><span>$contentWidth</span> <span>?=</span> <span>740</span><span>px</span></span>
+<span><span>$homePageWidth</span> <span>?=</span> <span>960</span><span>px</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><h2 id="颜色"> 颜色</h2>
+<div><pre><code><span>/* basic color */</span>
+<span><span>$accentColor</span> <span>?=</span> <span>#3eaf7c</span></span>
+<span><span>$textColor</span> <span>?=</span> <span>#2c3e50</span></span>
+<span><span>$darkTextColor</span> <span>?=</span> <span>#9e9e9e</span></span>
+<span><span>$bgColor</span> <span>?=</span> <span>#fff</span></span>
+<span><span>$darkBgColor</span> <span>?=</span> <span>#1e1e1e</span></span>
+<span><span>$bgColorLight</span> <span>?=</span> <span>#f8f8f8</span></span>
+<span><span>$darkBgColorLight</span> <span>?=</span> <span>#272727</span></span>
+<span><span>$bgColorBlur</span> <span>?=</span> <span><span>rgba</span><span>(</span><span>255</span><span>,</span> <span>255</span><span>,</span> <span>255</span><span>,</span> <span>0.9</span><span>)</span></span></span>
+<span><span>$darkBgColorBlur</span> <span>?=</span> <span><span>rgba</span><span>(</span><span>30</span><span>,</span> <span>30</span><span>,</span> <span>30</span><span>,</span> <span>0.9</span><span>)</span></span></span>
+<span><span>$borderColor</span> <span>?=</span> <span>#eaecef</span></span>
+<span><span>$darkBorderColor</span> <span>?=</span> <span>#302d28</span></span>
+<span><span>$codeBgColor</span> <span>?=</span> <span>#ecf4fa</span></span>
+<span><span>$darkCodeBgColor</span> <span>?=</span> <span>#282c34</span></span>
+<span><span>$arrowBgColor</span> <span>?=</span> <span>#ccc</span></span>
+<span><span>$darkArrowBgColor</span> <span>?=</span> <span>#333</span></span>
+
+<span>/* additional color provided by theme */</span>
+<span><span>$boxShadowColor</span> <span>?=</span> <span>#f0f1f2</span></span>
+<span><span>$darkBoxShadowColor</span> <span>?=</span> <span>#0f0e0d</span></span>
+<span><span>$cardShadowColor</span> <span>?=</span> <span><span>rgba</span><span>(</span><span>0</span><span>,</span> <span>0</span><span>,</span> <span>0</span><span>,</span> <span>0.15</span><span>)</span></span></span>
+<span><span>$darkCardShadowColor</span> <span>?=</span> <span><span>rgba</span><span>(</span><span>0</span><span>,</span> <span>0</span><span>,</span> <span>0</span><span>,</span> <span>0.3</span><span>)</span></span></span>
+
+<span>/* badge color */</span>
+<span><span>$badgeTipColor</span> <span>?=</span> <span>#42b983</span></span>
+<span><span>$badgeWarningColor</span> <span>?=</span> <span><span>darken</span><span>(</span><span>#ffe564</span><span>,</span> <span>35</span><span>%</span><span>)</span></span></span>
+<span><span>$badgeErrorColor</span> <span>?=</span> <span>#DA5961</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br></div></div><h2 id="markdown"> Markdown</h2>
+<div><pre><code><span>/* content class */</span>
+<span><span>$contentClass</span> <span>?=</span> <span>'.theme-default-content'</span></span>
+
+<span>/* code block */</span>
+<span><span>$lineNumbersWrapperWidth</span> <span>?=</span> <span>2.5</span><span>rem</span></span>
+<span><span>$codeLang</span> <span>?=</span> js ts html md vue css sass scss less stylus go java c sh yaml py docker dockerfile makefile</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="主题色"> 主题色</h2>
+<p>使用 <code>$colorPicker</code> 进行主题选择器配置，需要与主题配置中的选择器配置相同。</p>
+<p>案例:</p>
+<div><pre><code><span><span>$colorPicker</span> <span>=</span> <span>{</span>
+  <span>red</span><span>:</span> <span>#f26d6d</span><span>,</span>
+  <span>blue</span><span>:</span> <span>#2196f3</span><span>,</span>
+  <span>green</span><span>:</span> <span>#3eaf7c</span><span>,</span>
+  <span>orange</span><span>:</span> <span>#fb9b5f</span>
+<span>}</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div>]]></content>
     <author>
       <name>Mr.Hope</name>
     </author>
@@ -12350,86 +12680,89 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
-    <title type="html">插件说明</title>
-    <id>https://vuepress-theme-hope.github.io/zh/config/plugin/</id>
-    <link href="https://vuepress-theme-hope.github.io/zh/config/plugin/"/>
-    <updated>2021-03-08T14:44:58.000Z</updated>
-    <summary type="html"><![CDATA[<p><code>vuepress-theme-hope</code> 自带了很多 VuePress 插件。一些插件会自动启用，如果你不需要，可以在 themeConfig 中将其禁用；一些插件也只有你进行配置才会启用。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p><code>vuepress-theme-hope</code> 自带了很多 VuePress 插件。一些插件会自动启用，如果你不需要，可以在 themeConfig 中将其禁用；一些插件也只有你进行配置才会启用。</p>
-
-<h2 id="内建插件"> 内建插件</h2>
+    <title type="html">主题布局配置</title>
+    <id>https://vuepress-theme-hope.github.io/zh/config/theme/apperance/</id>
+    <link href="https://vuepress-theme-hope.github.io/zh/config/theme/apperance/"/>
+    <updated>2021-03-30T11:50:08.000Z</updated>
+    <content type="html"><![CDATA[<p>以下是主题提供的外观配置选项，一般情况下你无需关注他们，它们仅为有相关配置需求的少数用户提供。</p>
+<h2 id="algoliatype"> algoliaType</h2>
 <ul>
-<li>
-<p><a href="https://vuepress-theme-hope.github.io/comment/zh/" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-comment</a>: 评论与文章信息功能</p>
-</li>
-<li>
-<p><a href="./../../guide/feature/component.html">@mr-hope/vuepress-plugin-component</a>: 提供一些开箱即用的插件</p>
-</li>
-<li>
-<p><a href="https://vuepress-theme-hope.github.io/copy-code/zh/" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-copy-code</a>: 提供一键复制代码块功能。</p>
-</li>
-<li>
-<p><a href="https://vuepress-theme-hope.github.io/feed/zh/" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-feed</a>: 提供 Feed 生成</p>
-</li>
-<li>
-<p><a href="https://vuepress-theme-hope.github.io/git/zh/" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-git</a>: 基于 Git 的页面信息插件</p>
-</li>
-<li>
-<p><a href="https://vuepress-theme-hope.github.io/pwa/zh/" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-pwa</a>: PWA 支持</p>
-</li>
-<li>
-<p><a href="https://vuepress-theme-hope.github.io/reading-time/zh/" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-reading-time</a>: 阅读时间与字数统计</p>
-</li>
-<li>
-<p><a href="https://vuepress-theme-hope.github.io/seo/zh/" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-seo</a>: SEO 增强插件</p>
-</li>
-<li>
-<p><a href="https://vuepress-theme-hope.github.io/sitemap/zh/" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-sitemap</a>: 为你的站点生成 sitemap</p>
-</li>
-<li>
-<p><a href="https://vuepress-theme-hope.github.io/add-this/zh/" target="_blank" rel="noopener noreferrer">vuepress-plugin-add-this</a>: 让网站支持社交分享与关注</p>
-</li>
-<li>
-<p><a href="https://vuepress-theme-hope.github.io/md-enhance/zh/" target="_blank" rel="noopener noreferrer">vuepress-plugin-md-enhance</a>: 提供更多 Markdown 语法</p>
-</li>
-<li>
-<p><a href="https://vuepress-theme-hope.github.io/photo-swipe/zh/" target="_blank" rel="noopener noreferrer">vuepress-plugin-photo-swipe</a>: 使网站的图片支持缩放与滑动浏览</p>
-</li>
+<li>类型: <code>&quot;dropdown&quot; | &quot;full&quot;</code></li>
+<li>默认值: <code>&quot;dropdown&quot;</code></li>
 </ul>
-<h2 id="外部插件"> 外部插件</h2>
+<p>Algolia 搜索框类型</p>
+<h2 id="iconprefix"> iconPrefix</h2>
 <ul>
-<li>
-<p><a href="./container.html">vuepress-plugin-container</a>: 自定义容器</p>
-</li>
-<li>
-<p><a href="./copyright.html">vuepress-plugin-copyright</a>: 在网站内容被复制的时候提供额外的版权信息</p>
-</li>
-<li>
-<p><a href="./../../guide/feature/typescript.html">vuepress-plugin-typescript</a>: 提供 TypeScript 支持</p>
-</li>
-<li>
-<p>vuepress-plugin-smooth-scroll: 平滑滚动</p>
-</li>
-<li>
-<p>@vuepress/plugin-search: 搜索插件</p>
-</li>
-<li>
-<p>@vuepress/plugin-nprogress: 进度条</p>
-</li>
-<li>
-<p>@vuepress/plugin-active-header-links: 自动激活侧边栏标题</p>
-</li>
-<li>
-<p>@vuepress/plugin-blog: 博客支持</p>
-</li>
-<li>
-<p>@vuepress/plugin-search: 搜索插件，<strong>将最大搜索建议增加至 10</strong></p>
-</li>
-<li>
-<p>vuepress-plugin-smooth-scroll: 平滑滚动。</p>
-</li>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>'icon-'</code></li>
 </ul>
+<p>设置 iconfont 的图标前缀</p>
+<h2 id="anchordisplay"> anchorDisplay</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否在桌面模式显示锚点标题</p>
+<h2 id="wordperminute"> wordPerminute</h2>
+<ul>
+<li>类型: <code>number</code></li>
+<li>默认值: <code>300</code></li>
+</ul>
+<p>每分钟的阅读字数</p>
+<h2 id="navautohide"> navAutoHide</h2>
+<ul>
+<li>类型: <code>&quot;always&quot; | &quot;mobile&quot; | &quot;none&quot;</code></li>
+<li>默认值: <code>&quot;mobile&quot;</code></li>
+</ul>
+<p>是否在向下滚动时自动隐藏导航栏</p>
+<h2 id="hidesitetitleonmobile"> hideSiteTitleonMobile</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否在移动视图下隐藏站点名称</p>
+<h2 id="sidebaricon"> sidebarIcon</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否在侧边栏显示图标</p>
+<h2 id="breadcrumb"> breadcrumb</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否全局启用路径导航</p>
+<h2 id="breadcrumbicon"> breadcrumbIcon</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否在路径导航显示图标</p>
+<h2 id="smoothscroll"> smoothScroll <i>Not supported content</i></h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否启用平滑滚动功能</p>
+<h2 id="backtotop"> backToTop</h2>
+<ul>
+<li>类型: <code>boolean | number</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>返回顶部按钮的配置。默认的触发距离为 300px，填入数字时可改变这一触发距离。填入 <code>false</code> 会禁用返回顶部按钮。</p>
+<h2 id="repodisplay"> repoDisplay</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否在导航栏显示仓库链接</p>
+<h2 id="fullscreen"> fullscreen</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否显示 ”全屏“ 按钮</p>
 ]]></content>
     <author>
       <name>Mr.Hope</name>
@@ -12438,7 +12771,7 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
     <contributor>
       <name>Mr.Hope</name>
     </contributor>
-    <published>2020-10-13T05:36:44.000Z</published>
+    <published>2020-10-21T05:51:47.000Z</published>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
@@ -14653,7 +14986,7 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
     <title type="html">主题介绍</title>
     <id>https://vuepress-theme-hope.github.io/zh/guide/get-started/intro/</id>
     <link href="https://vuepress-theme-hope.github.io/zh/guide/get-started/intro/"/>
-    <updated>2021-03-09T15:26:49.000Z</updated>
+    <updated>2021-04-25T07:17:09.000Z</updated>
     <content type="html"><![CDATA[<h2 id="🎈-主题的初衷与设计目标"> 🎈 主题的初衷与设计目标</h2>
 <h3 id="初衷"> 初衷</h3>
 <p>制作本主题的初衷是发现 VuePress 只是一个单纯的静态文档生成器。举个例子，它并不会注入 meta 标签做 SEO 优化，也不会生成 Sitemap 帮助搜索引擎索引文档内容。</p>
@@ -14680,13 +15013,13 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
 <p>如果你是一名文学爱好者想放置一些随笔，主题提供了 <a href="./../markdown/align.html">自定义对齐</a> 与 <a href="./../markdown/footnote.html">脚注</a>。</p>
 </li>
 <li>
-<p>如果你希望存放一些知识笔记，主题提供了 <a href="./../markdown/mark.html">标记</a> 与 <a href="./../markdown/tex.html">公式</a> 支持。</p>
+<p>如果你希望存放一些知识笔记，主题提供了 <a href="./../markdown/mark.html">标记</a>、<a href="./../markdown/tasklist.html">任务列表</a> 与 <a href="./../markdown/tex.html">公式</a> 支持。</p>
 </li>
 <li>
 <p>如果你是一名程序员需要大量展示代码与 demo，本主题为代码块提供了浅色与深色两种主题，代码组 <code>&lt;CodeGroup /&gt;</code> 与 <a href="./../feature/copy-code.html">&quot;一键复制&quot; 按钮</a>。同时我们还提供 <a href="./../markdown/demo.html">代码演示</a> 功能，方便你展示自己的 Vue、React 组件或者其他 demo。</p>
 </li>
 <li>
-<p>如果你需要提供产品文档与展示，主题提供了 <a href="./../markdown/presentation.html">幻灯片</a> 与 <a href="./../markdown/flowchart.html">流程图</a> 功能。</p>
+<p>如果你需要提供产品文档与展示，主题提供了 <a href="./../markdown/presentation.html">幻灯片</a>、<a href="./../markdown/flowchart.html">流程图</a> 与 <a href="./../markdown/mermaid.html">Mermaid 图表</a> 功能。</p>
 </li>
 </ul>
 <p>总之，任何人都可以享受 Markdown 增强语法带来的便利。</p>
@@ -14723,7 +15056,7 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
     <title type="html">Markdown</title>
     <id>https://vuepress-theme-hope.github.io/zh/guide/get-started/markdown/</id>
     <link href="https://vuepress-theme-hope.github.io/zh/guide/get-started/markdown/"/>
-    <updated>2021-03-19T01:26:02.000Z</updated>
+    <updated>2021-04-25T07:17:09.000Z</updated>
     <summary type="html"><![CDATA[<p>VuePress 的每个文档页面都是由 Markdown 渲染而成。所以你需要通过在相应路径创建编写 Markdown 建立你的文档或博客页面。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>VuePress 的每个文档页面都是由 Markdown 渲染而成。所以你需要通过在相应路径创建编写 Markdown 建立你的文档或博客页面。</p>
@@ -14762,9 +15095,25 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
 <ul>
 <li><a href="./../markdown/mark.html">查看详情</a></li>
 </ul>
+<h3 id="任务列表"> 任务列表</h3>
+<ul>
+<li>
+<p><input checked="" disabled="" type="checkbox"> 计划 1</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> 计划 2</p>
+</li>
+<li>
+<p><a href="./../markdown/tasklist.html">查看详情</a></p>
+</li>
+</ul>
 <h3 id="流程图"> 流程图</h3>
 <i>Not supported content</i><ul>
 <li><a href="./../markdown/flowchart.html">查看详情</a></li>
+</ul>
+<h2 id="mermaid"> Mermaid</h2>
+<Mermaid id="mermaid64a5706e" data-code="graph%20TD%3B%0A%20%20%20%20A--%3EB%3B%0A%20%20%20%20A--%3EC%3B%0A%20%20%20%20B--%3ED%3B%0A%20%20%20%20C--%3ED%3B%0A"></Mermaid><ul>
+<li><a href="./../markdown/mermaid.html">查看详情</a></li>
 </ul>
 <h3 id="tex-语法"> Tex 语法</h3>
 <p class='katex-block'><span><span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:2.40003em;vertical-align:-0.95003em;"></span><span><span></span><span><span><span><span style="height:1.37144em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.05556em;">∂</span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.590392em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.05556em;">∂</span><span><span><span><span style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span style="top:0em;"><span>(</span></span><span><span></span><span><span><span><span style="height:1.341392em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.03588em;">ω</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.03588em;">y</span><span><span><span><span style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">ω</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="top:0em;"><span>)</span></span></span><span style="margin-right:0.2777777777777778em;"></span><span>=</span><span style="margin-right:0.2777777777777778em;"></span></span><span><span style="height:3.027669em;vertical-align:-1.277669em;"></span><span><span style="top:0em;"><span>(</span></span><span><span></span><span><span><span><span style="height:1.341392em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.03588em;">ω</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.03588em;">y</span><span><span><span><span style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">ω</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="top:0em;"><span>)</span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span style="top:0em;"><span>{</span></span><span>(</span><span>lo<span style="margin-right:0.01389em;">g</span></span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.03588em;">y</span><span><span>)</span><span><span><span><span style="height:0.7143919999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span></span></span></span></span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span><span><span><span style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>i</span><span>=</span><span>1</span></span></span></span><span style="top:-3.050005em;"><span style="height:3.05em;"></span><span><span>∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span style="height:3.05em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span><span>​</span></span><span><span style="height:1.277669em;"><span></span></span></span></span></span><span style="margin-right:0.16666666666666666em;"></span><span><span></span><span><span><span><span style="height:1.5016639999999999em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.750664em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>i</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span>(</span><span>−</span><span>1</span><span><span>)</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>i</span></span></span></span></span></span></span></span><span style="margin-right:0.02778em;">r</span><span style="margin-right:0.16666666666666666em;"></span><span>⋯</span><span style="margin-right:0.16666666666666666em;"></span><span>(</span><span style="margin-right:0.02778em;">r</span><span style="margin-right:0.2222222222222222em;"></span><span>−</span><span style="margin-right:0.2222222222222222em;"></span><span>i</span><span style="margin-right:0.2222222222222222em;"></span><span>+</span><span style="margin-right:0.2222222222222222em;"></span><span>1</span><span>)</span><span>(</span><span>lo<span style="margin-right:0.01389em;">g</span></span><span style="margin-right:0.16666666666666666em;"></span><span style="margin-right:0.03588em;">y</span><span><span>)</span><span><span><span><span style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.02778em;">r</span><span>−</span><span>i</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="top:0em;"><span>}</span></span></span></span></span></span></span></p>
@@ -15044,6 +15393,185 @@ module<span>.</span>exports <span>=</span> <span>{</span>
       <name>Mr.Hope</name>
     </contributor>
     <published>2021-02-26T08:10:04.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">配置</title>
+    <id>https://vuepress-theme-hope.github.io/zh/config/</id>
+    <link href="https://vuepress-theme-hope.github.io/zh/config/"/>
+    <updated>2021-02-26T13:39:01.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="主题配置"> 主题配置</h2>
+<ul>
+<li>
+<p><a href="./theme/">主题重要配置</a></p>
+</li>
+<li>
+<p><a href="./theme/default.html">默认主题配置</a></p>
+</li>
+<li>
+<p><a href="./theme/feature.html">主题功能配置</a></p>
+</li>
+<li>
+<p><a href="./theme/plugin.html">主题插件配置</a></p>
+</li>
+<li>
+<p><a href="./theme/apperance.html">主题外观配置</a></p>
+</li>
+</ul>
+<h2 id="页面配置"> 页面配置</h2>
+<ul>
+<li><a href="./page.html">Frontmatter 配置</a></li>
+</ul>
+<h2 id="样式配置"> 样式配置</h2>
+<ul>
+<li><a href="./stylus.html">样式配置</a></li>
+</ul>
+<h2 id="插件配置"> 插件配置</h2>
+<ul>
+<li><a href="./plugin/">插件配置</a></li>
+</ul>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <category term="config"/>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-10-13T05:36:44.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">插件说明</title>
+    <id>https://vuepress-theme-hope.github.io/zh/config/plugin/</id>
+    <link href="https://vuepress-theme-hope.github.io/zh/config/plugin/"/>
+    <updated>2021-03-08T14:44:58.000Z</updated>
+    <summary type="html"><![CDATA[<p><code>vuepress-theme-hope</code> 自带了很多 VuePress 插件。一些插件会自动启用，如果你不需要，可以在 themeConfig 中将其禁用；一些插件也只有你进行配置才会启用。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p><code>vuepress-theme-hope</code> 自带了很多 VuePress 插件。一些插件会自动启用，如果你不需要，可以在 themeConfig 中将其禁用；一些插件也只有你进行配置才会启用。</p>
+
+<h2 id="内建插件"> 内建插件</h2>
+<ul>
+<li>
+<p><a href="https://vuepress-theme-hope.github.io/comment/zh/" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-comment</a>: 评论与文章信息功能</p>
+</li>
+<li>
+<p><a href="./../../guide/feature/component.html">@mr-hope/vuepress-plugin-component</a>: 提供一些开箱即用的插件</p>
+</li>
+<li>
+<p><a href="https://vuepress-theme-hope.github.io/copy-code/zh/" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-copy-code</a>: 提供一键复制代码块功能。</p>
+</li>
+<li>
+<p><a href="https://vuepress-theme-hope.github.io/feed/zh/" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-feed</a>: 提供 Feed 生成</p>
+</li>
+<li>
+<p><a href="https://vuepress-theme-hope.github.io/git/zh/" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-git</a>: 基于 Git 的页面信息插件</p>
+</li>
+<li>
+<p><a href="https://vuepress-theme-hope.github.io/pwa/zh/" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-pwa</a>: PWA 支持</p>
+</li>
+<li>
+<p><a href="https://vuepress-theme-hope.github.io/reading-time/zh/" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-reading-time</a>: 阅读时间与字数统计</p>
+</li>
+<li>
+<p><a href="https://vuepress-theme-hope.github.io/seo/zh/" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-seo</a>: SEO 增强插件</p>
+</li>
+<li>
+<p><a href="https://vuepress-theme-hope.github.io/sitemap/zh/" target="_blank" rel="noopener noreferrer">@mr-hope/vuepress-plugin-sitemap</a>: 为你的站点生成 sitemap</p>
+</li>
+<li>
+<p><a href="https://vuepress-theme-hope.github.io/add-this/zh/" target="_blank" rel="noopener noreferrer">vuepress-plugin-add-this</a>: 让网站支持社交分享与关注</p>
+</li>
+<li>
+<p><a href="https://vuepress-theme-hope.github.io/md-enhance/zh/" target="_blank" rel="noopener noreferrer">vuepress-plugin-md-enhance</a>: 提供更多 Markdown 语法</p>
+</li>
+<li>
+<p><a href="https://vuepress-theme-hope.github.io/photo-swipe/zh/" target="_blank" rel="noopener noreferrer">vuepress-plugin-photo-swipe</a>: 使网站的图片支持缩放与滑动浏览</p>
+</li>
+</ul>
+<h2 id="外部插件"> 外部插件</h2>
+<ul>
+<li>
+<p><a href="./container.html">vuepress-plugin-container</a>: 自定义容器</p>
+</li>
+<li>
+<p><a href="./copyright.html">vuepress-plugin-copyright</a>: 在网站内容被复制的时候提供额外的版权信息</p>
+</li>
+<li>
+<p><a href="./../../guide/feature/typescript.html">vuepress-plugin-typescript</a>: 提供 TypeScript 支持</p>
+</li>
+<li>
+<p>vuepress-plugin-smooth-scroll: 平滑滚动</p>
+</li>
+<li>
+<p>@vuepress/plugin-search: 搜索插件</p>
+</li>
+<li>
+<p>@vuepress/plugin-nprogress: 进度条</p>
+</li>
+<li>
+<p>@vuepress/plugin-active-header-links: 自动激活侧边栏标题</p>
+</li>
+<li>
+<p>@vuepress/plugin-blog: 博客支持</p>
+</li>
+<li>
+<p>@vuepress/plugin-search: 搜索插件，<strong>将最大搜索建议增加至 10</strong></p>
+</li>
+<li>
+<p>vuepress-plugin-smooth-scroll: 平滑滚动。</p>
+</li>
+</ul>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <category term="config"/>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-10-13T05:36:44.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">vuepress-plugin-copyright</title>
+    <id>https://vuepress-theme-hope.github.io/zh/config/plugin/copyright/</id>
+    <link href="https://vuepress-theme-hope.github.io/zh/config/plugin/copyright/"/>
+    <updated>2021-01-29T05:27:27.000Z</updated>
+    <summary type="html"><![CDATA[<p>处理你的 VuePress 站点中的复制操作</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>处理你的 VuePress 站点中的复制操作</p>
+
+<h2 id="默认配置说明"> 默认配置说明</h2>
+<p>当用户从你的站点复制超过 100 字的消息时，在这段消息的尾部添加声明消息。</p>
+<p>作者名称会从你在主题中配置的作者信息或站点名称自动生成。</p>
+<p>默认配置如下:</p>
+<div><div><br><br><br><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>/** 复制操作处理 */</span>
+    <span>[</span>
+      <span>"copyright"</span><span>,</span>
+      <span>{</span>
+        authorName<span>:</span> options<span>.</span>author<span>,</span>
+        minLength<span>:</span> <span>100</span><span>,</span>
+        clipboardComponent<span>:</span> path<span>.</span><span>resolve</span><span>(</span>__dirname<span>,</span> <span>"components/Clipboard.vue"</span><span>)</span><span>,</span>
+      <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><h2 id="配置项"> 配置项</h2>
+<p>详见 <a href="https://vuepress.github.io/zh/plugins/copyright/#%E9%85%8D%E7%BD%AE%E9%A1%B9" target="_blank" rel="noopener noreferrer">官方文档</a></p>
+<h2 id="演示"> 演示</h2>
+<p>请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。</p>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <category term="config"/>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-10-13T05:36:44.000Z</published>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
@@ -17187,6 +17715,51 @@ c2(no)->op2->e</span>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
+    <title type="html">启用 Markdown 增强</title>
+    <id>https://vuepress-theme-hope.github.io/zh/guide/markdown/intro/</id>
+    <link href="https://vuepress-theme-hope.github.io/zh/guide/markdown/intro/"/>
+    <updated>2021-03-27T08:43:08.000Z</updated>
+    <summary type="html"><![CDATA[<p>除了 VuePress 本身新增了一些 Markdown 语法外，<code>vuepress-theme-hope</code> 通过 <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">vuepress-plugin-md-enhance</a>，在 Markdown 中启用了更多的语法与新功能。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>除了 VuePress 本身新增了一些 Markdown 语法外，<code>vuepress-theme-hope</code> 通过 <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">vuepress-plugin-md-enhance</a>，在 Markdown 中启用了更多的语法与新功能。</p>
+
+<h2 id="内置增强"> 内置增强</h2>
+<p>VuePress 自带的 GitHub 风格的表格，Emoji、TOC、代码行号、特定行高亮等都是开箱即用的。</p>
+<p>详细语法详见 <a href="./../../basic/vuepress/markdown.html">内置 Markdown 扩展</a>。</p>
+<h2 id="启用-markdown-增强"> 启用 Markdown 增强</h2>
+<p><code>.vuepress/config.js</code> 中的 <code>themeconfig.mdEnhance</code> 会直接传递给插件作为插件选项。所以你也可以直接阅读 <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">vuepress-plugin-md-enhance 文档</a> 查看用法。</p>
+<div><p>Tips</p>
+<p>请不用担心你的网站大小，如果你不启用相关功能，最终代码不会包含这些功能相关的代码。</p>
+</div>
+<h3 id="一键启用"> 一键启用</h3>
+<p>你可以设置 <code>themeconfig.mdEnhance.enableAll</code> 启用 <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">md-enhance</a> 插件的所有功能。</p>
+<div><div><br><br><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  themeConfig<span>:</span> <span>{</span>
+    mdEnhance<span>:</span> <span>{</span>
+      enableAll<span>:</span> <span>true</span><span>,</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><div><p>Warning</p>
+<p>请仅将此选项用于体验或测试。随着时间的增长，<code>vuepress-plugin-md-enhance</code> 变得越来越强大。它为 Markdown 解析器添加了更多语法，并输出了更多代码。</p>
+<p>启用不需要的功能将增加开发和构建时间。 (<code>markdown-it</code> 必须检查额外的语法)</p>
+<p>同样，幻灯片演示功能将在输出中添加 700KB 大小的代码 (主要是 <code>reveal.js</code>)。</p>
+<p>因此，请仅启用需要的功能。</p>
+</div>
+<h3 id="启用特定的语法"> 启用特定的语法</h3>
+<p>特定语法的配置项可以在对应的说明页或者 <a href="./../../config/theme/plugin.html#mdEnhance">主题插件配置</a> 中找到。</p>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <category term="markdown"/>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-02-26T08:10:04.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
     <title type="html">脚注</title>
     <id>https://vuepress-theme-hope.github.io/zh/guide/markdown/footnote/</id>
     <link href="https://vuepress-theme-hope.github.io/zh/guide/markdown/footnote/"/>
@@ -17259,51 +17832,6 @@ c2(no)->op2->e</span>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
-    <title type="html">启用 Markdown 增强</title>
-    <id>https://vuepress-theme-hope.github.io/zh/guide/markdown/intro/</id>
-    <link href="https://vuepress-theme-hope.github.io/zh/guide/markdown/intro/"/>
-    <updated>2021-03-27T08:43:08.000Z</updated>
-    <summary type="html"><![CDATA[<p>除了 VuePress 本身新增了一些 Markdown 语法外，<code>vuepress-theme-hope</code> 通过 <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">vuepress-plugin-md-enhance</a>，在 Markdown 中启用了更多的语法与新功能。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>除了 VuePress 本身新增了一些 Markdown 语法外，<code>vuepress-theme-hope</code> 通过 <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">vuepress-plugin-md-enhance</a>，在 Markdown 中启用了更多的语法与新功能。</p>
-
-<h2 id="内置增强"> 内置增强</h2>
-<p>VuePress 自带的 GitHub 风格的表格，Emoji、TOC、代码行号、特定行高亮等都是开箱即用的。</p>
-<p>详细语法详见 <a href="./../../basic/vuepress/markdown.html">内置 Markdown 扩展</a>。</p>
-<h2 id="启用-markdown-增强"> 启用 Markdown 增强</h2>
-<p><code>.vuepress/config.js</code> 中的 <code>themeconfig.mdEnhance</code> 会直接传递给插件作为插件选项。所以你也可以直接阅读 <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">vuepress-plugin-md-enhance 文档</a> 查看用法。</p>
-<div><p>Tips</p>
-<p>请不用担心你的网站大小，如果你不启用相关功能，最终代码不会包含这些功能相关的代码。</p>
-</div>
-<h3 id="一键启用"> 一键启用</h3>
-<p>你可以设置 <code>themeconfig.mdEnhance.enableAll</code> 启用 <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">md-enhance</a> 插件的所有功能。</p>
-<div><div><br><br><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  themeConfig<span>:</span> <span>{</span>
-    mdEnhance<span>:</span> <span>{</span>
-      enableAll<span>:</span> <span>true</span><span>,</span>
-    <span>}</span><span>,</span>
-  <span>}</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><div><p>Warning</p>
-<p>请仅将此选项用于体验或测试。随着时间的增长，<code>vuepress-plugin-md-enhance</code> 变得越来越强大。它为 Markdown 解析器添加了更多语法，并输出了更多代码。</p>
-<p>启用不需要的功能将增加开发和构建时间。 (<code>markdown-it</code> 必须检查额外的语法)</p>
-<p>同样，幻灯片演示功能将在输出中添加 700KB 大小的代码 (主要是 <code>reveal.js</code>)。</p>
-<p>因此，请仅启用需要的功能。</p>
-</div>
-<h3 id="启用特定的语法"> 启用特定的语法</h3>
-<p>特定语法的配置项可以在对应的说明页或者 <a href="./../../config/theme/plugin.html#mdEnhance">主题插件配置</a> 中找到。</p>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <category term="markdown"/>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2021-02-26T08:10:04.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
     <title type="html">标记</title>
     <id>https://vuepress-theme-hope.github.io/zh/guide/markdown/mark/</id>
     <link href="https://vuepress-theme-hope.github.io/zh/guide/markdown/mark/"/>
@@ -17335,6 +17863,224 @@ c2(no)->op2->e</span>
       <name>Mr.Hope</name>
     </contributor>
     <published>2021-02-25T07:37:56.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">Mermaid</title>
+    <id>https://vuepress-theme-hope.github.io/zh/guide/markdown/mermaid/</id>
+    <link href="https://vuepress-theme-hope.github.io/zh/guide/markdown/mermaid/"/>
+    <updated>2021-04-25T07:17:09.000Z</updated>
+    <summary type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持 <a href="https://mermaid-js.github.io/mermaid/#/" target="_blank" rel="noopener noreferrer">mermaid</a>。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持 <a href="https://mermaid-js.github.io/mermaid/#/" target="_blank" rel="noopener noreferrer">mermaid</a>。</p>
+
+<h2 id="配置"> 配置</h2>
+<div><div><br><br><br><div>&nbsp;</div><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  themeConfig<span>:</span> <span>{</span>
+    mdEnhance<span>:</span> <span>{</span>
+      mermaid<span>:</span> <span>true</span><span>,</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><h2 id="语法"> 语法</h2>
+<div><pre><code><span><span>```</span><span>mermaid</span>
+<span>
+&lt;!-- 在此处放置 mermaid 代码 -->
+</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h2 id="使用"> 使用</h2>
+<p>详见 <a href="https://mermaid-js.github.io/mermaid/#/" target="_blank" rel="noopener noreferrer">mermaid 官方文档</a>。</p>
+<h2 id="案例"> 案例</h2>
+<h3 id="流程图"> 流程图</h3>
+<Mermaid id="mermaid382ee168" data-code="flowchart%20TB%0A%20%20%20%20c1--%3Ea2%0A%20%20%20%20subgraph%20one%0A%20%20%20%20a1--%3Ea2%0A%20%20%20%20end%0A%20%20%20%20subgraph%20two%0A%20%20%20%20b1--%3Eb2%0A%20%20%20%20end%0A%20%20%20%20subgraph%20three%0A%20%20%20%20c1--%3Ec2%0A%20%20%20%20end%0A%20%20%20%20one%20--%3E%20two%0A%20%20%20%20three%20--%3E%20two%0A%20%20%20%20two%20--%3E%20c2%0A"></Mermaid><details><summary>Code</summary>
+<div><pre><code><span><span>```</span><span>mermaid</span>
+<span>flowchart TB
+    c1-->a2
+    subgraph one
+    a1-->a2
+    end
+    subgraph two
+    b1-->b2
+    end
+    subgraph three
+    c1-->c2
+    end
+    one --> two
+    three --> two
+    two --> c2</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br></div></div></details>
+<h3 id="循序图"> 循序图</h3>
+<Mermaid id="mermaid382ee184" data-code="sequenceDiagram%0A%20%20%20%20Alice%20-%3E%3E%20Bob%3A%20Hello%20Bob%2C%20how%20are%20you%3F%0A%20%20%20%20Bob--%3E%3EJohn%3A%20How%20about%20you%20John%3F%0A%20%20%20%20Bob--x%20Alice%3A%20I%20am%20good%20thanks!%0A%20%20%20%20Bob-x%20John%3A%20I%20am%20good%20thanks!%0A%20%20%20%20Note%20right%20of%20John%3A%20Bob%20thinks%20a%20long%3Cbr%2F%3Elong%20time%2C%20so%20long%3Cbr%2F%3Ethat%20the%20text%20does%3Cbr%2F%3Enot%20fit%20on%20a%20row.%0A%0A%20%20%20%20Bob--%3EAlice%3A%20Checking%20with%20John...%0A%20%20%20%20Alice-%3EJohn%3A%20Yes...%20John%2C%20how%20are%20you%3F%0A"></Mermaid><details><summary>Code</summary>
+<div><pre><code><span><span>```</span><span>mermaid</span>
+<span>sequenceDiagram
+    Alice ->> Bob: Hello Bob, how are you?
+    Bob-->>John: How about you John?
+    Bob--x Alice: I am good thanks!
+    Bob-x John: I am good thanks!
+    Note right of John: Bob thinks a long&lt;br/>long time, so long&lt;br/>that the text does&lt;br/>not fit on a row.
+
+    Bob-->Alice: Checking with John...
+    Alice->John: Yes... John, how are you?</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div></details>
+<h3 id="类图"> 类图</h3>
+<Mermaid id="mermaid382ee18b" data-code="classDiagram%0Aclass%20Square~Shape~%7B%0A%20%20%20%20int%20id%0A%20%20%20%20List~int~%20position%0A%20%20%20%20setPoints(List~int~%20points)%0A%20%20%20%20getPoints()%20List~int~%0A%7D%0A%0ASquare%20%3A%20-List~string~%20messages%0ASquare%20%3A%20%2BsetMessages(List~string~%20messages)%0ASquare%20%3A%20%2BgetMessages()%20List~string~%0A"></Mermaid><details><summary>Code</summary>
+<div><pre><code><span><span>```</span><span>mermaid</span>
+<span>classDiagram
+class Square~Shape~{
+    int id
+    List~int~ position
+    setPoints(List~int~ points)
+    getPoints() List~int~
+}
+
+Square : -List~string~ messages
+Square : +setMessages(List~string~ messages)
+Square : +getMessages() List~string~</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div></details>
+<h3 id="状态图"> 状态图</h3>
+<Mermaid id="mermaid382ee1a7" data-code="stateDiagram-v2%0A%20%20%20%20%5B*%5D%20--%3E%20Active%0A%0A%20%20%20%20state%20Active%20%7B%0A%20%20%20%20%20%20%20%20%5B*%5D%20--%3E%20NumLockOff%0A%20%20%20%20%20%20%20%20NumLockOff%20--%3E%20NumLockOn%20%3A%20EvNumLockPressed%0A%20%20%20%20%20%20%20%20NumLockOn%20--%3E%20NumLockOff%20%3A%20EvNumLockPressed%0A%20%20%20%20%20%20%20%20--%0A%20%20%20%20%20%20%20%20%5B*%5D%20--%3E%20CapsLockOff%0A%20%20%20%20%20%20%20%20CapsLockOff%20--%3E%20CapsLockOn%20%3A%20EvCapsLockPressed%0A%20%20%20%20%20%20%20%20CapsLockOn%20--%3E%20CapsLockOff%20%3A%20EvCapsLockPressed%0A%20%20%20%20%20%20%20%20--%0A%20%20%20%20%20%20%20%20%5B*%5D%20--%3E%20ScrollLockOff%0A%20%20%20%20%20%20%20%20ScrollLockOff%20--%3E%20ScrollLockOn%20%3A%20EvScrollLockPressed%0A%20%20%20%20%20%20%20%20ScrollLockOn%20--%3E%20ScrollLockOff%20%3A%20EvScrollLockPressed%0A%20%20%20%20%7D%0A"></Mermaid><details><summary>Code</summary>
+<div><pre><code><span><span>```</span><span>mermaid</span>
+<span>stateDiagram-v2
+    [*] --> Active
+
+    state Active {
+        [*] --> NumLockOff
+        NumLockOff --> NumLockOn : EvNumLockPressed
+        NumLockOn --> NumLockOff : EvNumLockPressed
+        --
+        [*] --> CapsLockOff
+        CapsLockOff --> CapsLockOn : EvCapsLockPressed
+        CapsLockOn --> CapsLockOff : EvCapsLockPressed
+        --
+        [*] --> ScrollLockOff
+        ScrollLockOff --> ScrollLockOn : EvScrollLockPressed
+        ScrollLockOn --> ScrollLockOff : EvScrollLockPressed
+    }</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br></div></div></details>
+<h3 id="关系图"> 关系图</h3>
+<Mermaid id="mermaid382ee1c3" data-code="erDiagram%0A%20%20%20%20CAR%20%7C%7C--o%7B%20NAMED-DRIVER%20%3A%20allows%0A%20%20%20%20CAR%20%7B%0A%20%20%20%20%20%20%20%20string%20registrationNumber%0A%20%20%20%20%20%20%20%20string%20make%0A%20%20%20%20%20%20%20%20string%20model%0A%20%20%20%20%7D%0A%20%20%20%20PERSON%20%7C%7C--o%7B%20NAMED-DRIVER%20%3A%20is%0A%20%20%20%20PERSON%20%7B%0A%20%20%20%20%20%20%20%20string%20firstName%0A%20%20%20%20%20%20%20%20string%20lastName%0A%20%20%20%20%20%20%20%20int%20age%0A%20%20%20%20%7D%0A"></Mermaid><details><summary>Code</summary>
+<div><pre><code><span><span>```</span><span>mermaid</span>
+<span>erDiagram
+    CAR ||--o{ NAMED-DRIVER : allows
+    CAR {
+        string registrationNumber
+        string make
+        string model
+    }
+    PERSON ||--o{ NAMED-DRIVER : is
+    PERSON {
+        string firstName
+        string lastName
+        int age
+    }</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br></div></div></details>
+<h3 id="用户日记图"> 用户日记图</h3>
+<Mermaid id="mermaid382ee1ca" data-code="journey%0A%20%20%20%20title%20My%20working%20day%0A%20%20%20%20section%20Go%20to%20work%0A%20%20%20%20%20%20Make%20tea%3A%205%3A%20Me%0A%20%20%20%20%20%20Go%20upstairs%3A%203%3A%20Me%0A%20%20%20%20%20%20Do%20work%3A%201%3A%20Me%2C%20Cat%0A%20%20%20%20section%20Go%20home%0A%20%20%20%20%20%20Go%20downstairs%3A%205%3A%20Me%0A%20%20%20%20%20%20Sit%20down%3A%205%3A%20Me%0A"></Mermaid><details><summary>Code</summary>
+<div><pre><code><span><span>```</span><span>mermaid</span>
+<span>journey
+    title My working day
+    section Go to work
+      Make tea: 5: Me
+      Go upstairs: 3: Me
+      Do work: 1: Me, Cat
+    section Go home
+      Go downstairs: 5: Me
+      Sit down: 5: Me</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div></details>
+<h3 id="甘特图"> 甘特图</h3>
+<Mermaid id="mermaid382ee1e6" data-code="gantt%0A%20%20%20%20dateFormat%20%20YYYY-MM-DD%0A%20%20%20%20title%20%20%20%20%20%20%20Adding%20GANTT%20diagram%20functionality%20to%20mermaid%0A%20%20%20%20excludes%20%20%20%20weekends%0A%20%20%20%20%25%25%20(%60excludes%60%20accepts%20specific%20dates%20in%20YYYY-MM-DD%20format%2C%20days%20of%20the%20week%20(%22sunday%22)%20or%20%22weekends%22%2C%20but%20not%20the%20word%20%22weekdays%22.)%0A%0A%20%20%20%20section%20A%20section%0A%20%20%20%20Completed%20task%20%20%20%20%20%20%20%20%20%20%20%20%3Adone%2C%20%20%20%20des1%2C%202014-01-06%2C2014-01-08%0A%20%20%20%20Active%20task%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Aactive%2C%20%20des2%2C%202014-01-09%2C%203d%0A%20%20%20%20Future%20task%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3A%20%20%20%20%20%20%20%20%20des3%2C%20after%20des2%2C%205d%0A%20%20%20%20Future%20task2%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3A%20%20%20%20%20%20%20%20%20des4%2C%20after%20des3%2C%205d%0A%0A%20%20%20%20section%20Critical%20tasks%0A%20%20%20%20Completed%20task%20in%20the%20critical%20line%20%3Acrit%2C%20done%2C%202014-01-06%2C24h%0A%20%20%20%20Implement%20parser%20and%20jison%20%20%20%20%20%20%20%20%20%20%3Acrit%2C%20done%2C%20after%20des1%2C%202d%0A%20%20%20%20Create%20tests%20for%20parser%20%20%20%20%20%20%20%20%20%20%20%20%20%3Acrit%2C%20active%2C%203d%0A%20%20%20%20Future%20task%20in%20critical%20line%20%20%20%20%20%20%20%20%3Acrit%2C%205d%0A%20%20%20%20Create%20tests%20for%20renderer%20%20%20%20%20%20%20%20%20%20%20%3A2d%0A%20%20%20%20Add%20to%20mermaid%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3A1d%0A%0A%20%20%20%20section%20Documentation%0A%20%20%20%20Describe%20gantt%20syntax%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Aactive%2C%20a1%2C%20after%20des1%2C%203d%0A%20%20%20%20Add%20gantt%20diagram%20to%20demo%20page%20%20%20%20%20%20%3Aafter%20a1%20%20%2C%2020h%0A%20%20%20%20Add%20another%20diagram%20to%20demo%20page%20%20%20%20%3Adoc1%2C%20after%20a1%20%20%2C%2048h%0A%0A%20%20%20%20section%20Last%20section%0A%20%20%20%20Describe%20gantt%20syntax%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Aafter%20doc1%2C%203d%0A%20%20%20%20Add%20gantt%20diagram%20to%20demo%20page%20%20%20%20%20%20%3A20h%0A%20%20%20%20Add%20another%20diagram%20to%20demo%20page%20%20%20%20%3A48h%0A"></Mermaid><details><summary>Code</summary>
+<div><pre><code><span><span>```</span><span>mermaid</span>
+<span>gantt
+    dateFormat  YYYY-MM-DD
+    title       Adding GANTT diagram functionality to mermaid
+    excludes    weekends
+    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
+
+    section A section
+    Completed task            :done,    des1, 2014-01-06,2014-01-08
+    Active task               :active,  des2, 2014-01-09, 3d
+    Future task               :         des3, after des2, 5d
+    Future task2              :         des4, after des3, 5d
+
+    section Critical tasks
+    Completed task in the critical line :crit, done, 2014-01-06,24h
+    Implement parser and jison          :crit, done, after des1, 2d
+    Create tests for parser             :crit, active, 3d
+    Future task in critical line        :crit, 5d
+    Create tests for renderer           :2d
+    Add to mermaid                      :1d
+
+    section Documentation
+    Describe gantt syntax               :active, a1, after des1, 3d
+    Add gantt diagram to demo page      :after a1  , 20h
+    Add another diagram to demo page    :doc1, after a1  , 48h
+
+    section Last section
+    Describe gantt syntax               :after doc1, 3d
+    Add gantt diagram to demo page      :20h
+    Add another diagram to demo page    :48h</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br></div></div></details>
+<h3 id="饼图"> 饼图</h3>
+<Mermaid id="mermaid382ee202" data-code="pie%20title%20What%20Voldemort%20doesn't%20have%3F%0A%20%20%20%20%22FRIENDS%22%20%3A%202%0A%20%20%20%20%22FAMILY%22%20%3A%203%0A%20%20%20%20%22NOSE%22%20%3A%2045%0A"></Mermaid><details><summary>Code</summary>
+<div><pre><code><span><span>```</span><span>mermaid</span>
+<span>pie title What Voldemort doesn't have?
+    "FRIENDS" : 2
+    "FAMILY" : 3
+    "NOSE" : 45</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div></details>
+<h3 id="一个复杂的案例"> 一个复杂的案例</h3>
+<Mermaid id="mermaid382ee21e" data-code="graph%20TB%0A%20%20%20%20sq%5BSquare%20shape%5D%20--%3E%20ci((Circle%20shape))%0A%0A%20%20%20%20subgraph%20A%0A%20%20%20%20%20%20%20%20od%3EOdd%20shape%5D--%20Two%20line%3Cbr%2F%3Eedge%20comment%20--%3E%20ro%0A%20%20%20%20%20%20%20%20di%7BDiamond%20with%20%3Cbr%2F%3E%20line%20break%7D%20-.-%3E%20ro(Rounded%3Cbr%3Esquare%3Cbr%3Eshape)%0A%20%20%20%20%20%20%20%20di%3D%3D%3Ero2(Rounded%20square%20shape)%0A%20%20%20%20end%0A%0A%20%20%20%20%25%25%20Notice%20that%20no%20text%20in%20shape%20are%20added%20here%20instead%20that%20is%20appended%20further%20down%0A%20%20%20%20e%20--%3E%20od3%3EReally%20long%20text%20with%20linebreak%3Cbr%3Ein%20an%20Odd%20shape%5D%0A%0A%20%20%20%20%25%25%20Comments%20after%20double%20percent%20signs%0A%20%20%20%20e((Inner%20%2F%20circle%3Cbr%3Eand%20some%20odd%20%3Cbr%3Especial%20characters))%20--%3E%20f(%2C.%3F!%2B-*%D8%B2)%0A%0A%20%20%20%20cyr%5BCyrillic%5D--%3Ecyr2((Circle%20shape%20%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D0%BE))%3B%0A%0A%20%20%20%20%20classDef%20green%20fill%3A%239f6%2Cstroke%3A%23333%2Cstroke-width%3A2px%3B%0A%20%20%20%20%20classDef%20orange%20fill%3A%23f96%2Cstroke%3A%23333%2Cstroke-width%3A4px%3B%0A%20%20%20%20%20class%20sq%2Ce%20green%0A%20%20%20%20%20class%20di%20orange%0A"></Mermaid><details><summary>Code</summary>
+<div><pre><code><span><span>```</span><span>mermaid</span>
+<span>graph TB
+    sq[Square shape] --> ci((Circle shape))
+
+    subgraph A
+        od>Odd shape]-- Two line&lt;br/>edge comment --> ro
+        di{Diamond with &lt;br/> line break} -.-> ro(Rounded&lt;br>square&lt;br>shape)
+        di==>ro2(Rounded square shape)
+    end
+
+    %% Notice that no text in shape are added here instead that is appended further down
+    e --> od3>Really long text with linebreak&lt;br>in an Odd shape]
+
+    %% Comments after double percent signs
+    e((Inner / circle&lt;br>and some odd &lt;br>special characters)) --> f(,.?!+-*ز)
+
+    cyr[Cyrillic]-->cyr2((Circle shape Начало));
+
+     classDef green fill:#9f6,stroke:#333,stroke-width:2px;
+     classDef orange fill:#f96,stroke:#333,stroke-width:4px;
+     class sq,e green
+     class di orange</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br></div></div></details>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <category term="markdown"/>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-04-25T07:17:09.000Z</published>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
@@ -17443,7 +18189,7 @@ $$
     <title type="html">Markdown 增强</title>
     <id>https://vuepress-theme-hope.github.io/zh/guide/markdown/</id>
     <link href="https://vuepress-theme-hope.github.io/zh/guide/markdown/"/>
-    <updated>2021-02-27T06:18:09.000Z</updated>
+    <updated>2021-04-25T07:17:09.000Z</updated>
     <summary type="html"><![CDATA[<p>除了 VuePress 本身新增了一些 Markdown 语法外，<code>vuepress-theme-hope</code> 通过 <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">vuepress-plugin-md-enhance</a>，在 Markdown 中启用了更多的语法与新功能。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>除了 VuePress 本身新增了一些 Markdown 语法外，<code>vuepress-theme-hope</code> 通过 <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">vuepress-plugin-md-enhance</a>，在 Markdown 中启用了更多的语法与新功能。</p>
@@ -17472,7 +18218,13 @@ $$
 <p><a href="./mark.html">标记</a></p>
 </li>
 <li>
+<p><a href="./tasklist.html">任务列表</a></p>
+</li>
+<li>
 <p><a href="./flowchart.html">流程图</a></p>
+</li>
+<li>
+<p><a href="./mermaid.html">Mermaid 图标</a></p>
 </li>
 <li>
 <p><a href="./tex.html">Tex 语法</a></p>
@@ -17544,6 +18296,47 @@ $$
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
+    <title type="html">任务列表</title>
+    <id>https://vuepress-theme-hope.github.io/zh/guide/markdown/tasklist/</id>
+    <link href="https://vuepress-theme-hope.github.io/zh/guide/markdown/tasklist/"/>
+    <updated>2021-04-25T07:17:09.000Z</updated>
+    <summary type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持任务列表。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持任务列表。</p>
+
+<h2 id="configuration"> Configuration</h2>
+<div><div><br><br><br><div>&nbsp;</div><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  themeConfig<span>:</span> <span>{</span>
+    mdEnhance<span>:</span> <span>{</span>
+      tasklist<span>:</span> <span>true</span><span>,</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><h2 id="语法"> 语法</h2>
+<ul>
+<li>使用 <code>- [ ] 一些文字</code> 渲染一个未勾选的任务项</li>
+<li>使用 <code>- [x] 一些文字</code> 渲染一个勾选了的任务项 (我们也支持大写的 <code>X</code>)</li>
+</ul>
+<h2 id="案例"> 案例</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Plan A</li>
+<li><input checked="" disabled="" type="checkbox"> Plan B</li>
+</ul>
+<div><pre><code><span>-</span> [ ] Plan A
+<span>-</span> [x] Plan B
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div>]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <category term="markdown"/>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-04-25T07:17:09.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
     <title type="html">Tex</title>
     <id>https://vuepress-theme-hope.github.io/zh/guide/markdown/tex/</id>
     <link href="https://vuepress-theme-hope.github.io/zh/guide/markdown/tex/"/>
@@ -17590,239 +18383,10 @@ $$
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
-    <title type="html">主题布局配置</title>
-    <id>https://vuepress-theme-hope.github.io/zh/config/theme/apperance/</id>
-    <link href="https://vuepress-theme-hope.github.io/zh/config/theme/apperance/"/>
-    <updated>2021-03-30T11:50:08.000Z</updated>
-    <content type="html"><![CDATA[<p>以下是主题提供的外观配置选项，一般情况下你无需关注他们，它们仅为有相关配置需求的少数用户提供。</p>
-<h2 id="algoliatype"> algoliaType</h2>
-<ul>
-<li>类型: <code>&quot;dropdown&quot; | &quot;full&quot;</code></li>
-<li>默认值: <code>&quot;dropdown&quot;</code></li>
-</ul>
-<p>Algolia 搜索框类型</p>
-<h2 id="iconprefix"> iconPrefix</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>'icon-'</code></li>
-</ul>
-<p>设置 iconfont 的图标前缀</p>
-<h2 id="anchordisplay"> anchorDisplay</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否在桌面模式显示锚点标题</p>
-<h2 id="wordperminute"> wordPerminute</h2>
-<ul>
-<li>类型: <code>number</code></li>
-<li>默认值: <code>300</code></li>
-</ul>
-<p>每分钟的阅读字数</p>
-<h2 id="navautohide"> navAutoHide</h2>
-<ul>
-<li>类型: <code>&quot;always&quot; | &quot;mobile&quot; | &quot;none&quot;</code></li>
-<li>默认值: <code>&quot;mobile&quot;</code></li>
-</ul>
-<p>是否在向下滚动时自动隐藏导航栏</p>
-<h2 id="hidesitetitleonmobile"> hideSiteTitleonMobile</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否在移动视图下隐藏站点名称</p>
-<h2 id="sidebaricon"> sidebarIcon</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否在侧边栏显示图标</p>
-<h2 id="breadcrumb"> breadcrumb</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否全局启用路径导航</p>
-<h2 id="breadcrumbicon"> breadcrumbIcon</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否在路径导航显示图标</p>
-<h2 id="smoothscroll"> smoothScroll <i>Not supported content</i></h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否启用平滑滚动功能</p>
-<h2 id="backtotop"> backToTop</h2>
-<ul>
-<li>类型: <code>boolean | number</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>返回顶部按钮的配置。默认的触发距离为 300px，填入数字时可改变这一触发距离。填入 <code>false</code> 会禁用返回顶部按钮。</p>
-<h2 id="repodisplay"> repoDisplay</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否在导航栏显示仓库链接</p>
-<h2 id="fullscreen"> fullscreen</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否显示 ”全屏“ 按钮</p>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <category term="config"/>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-10-21T05:51:47.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">Stylus 配置</title>
-    <id>https://vuepress-theme-hope.github.io/zh/config/stylus/</id>
-    <link href="https://vuepress-theme-hope.github.io/zh/config/stylus/"/>
-    <updated>2021-01-21T06:42:02.000Z</updated>
-    <summary type="html"><![CDATA[<p>你可以通过在 <code>.vuepress/styles</code> 中的 palette.styl 写入变量值来更改主题的样式。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>你可以通过在 <code>.vuepress/styles</code> 中的 palette.styl 写入变量值来更改主题的样式。</p>
-
-<h2 id="响应式布局断点"> 响应式布局断点</h2>
-<div><pre><code><span>/* responsive breakpoints */</span>
-<span><span>$MQWide</span> <span>?=</span> <span>1440</span><span>px</span> <span>// wide screen</span></span>
-<span><span>$MQNormal</span> <span>?=</span> <span>1280</span><span>px</span> <span>// desktop</span></span>
-<span><span>$MQNarrow</span> <span>?=</span> <span>959</span><span>px</span> <span>// narrow desktop / iPad</span></span>
-<span><span>$MQMobile</span> <span>?=</span> <span>719</span><span>px</span> <span>// wide mobile</span></span>
-<span><span>$MQMobileNarrow</span> <span>?=</span> <span>419</span><span>px</span> <span>// narrow mobile</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="布局"> 布局</h2>
-<div><pre><code><span>// layout</span>
-<span><span>$navbarHeight</span> <span>?=</span> <span>3.6</span><span>rem</span></span>
-<span><span>$navbarMobileHeight</span> <span>?=</span> <span>3.2</span><span>rem</span></span>
-<span><span>$navbarHorizontalPadding</span> <span>?=</span> <span>1.5</span><span>rem</span></span>
-<span><span>$navbarMobileHorizontalPadding</span> <span>?=</span> <span>1</span><span>rem</span></span>
-<span><span>$navbarVerticalPadding</span> <span>?=</span> <span>0.7</span><span>rem</span></span>
-<span><span>$navbarMobileVerticalPadding</span> <span>?=</span> <span>0.4</span><span>rem</span></span>
-<span><span>$sidebarWidth</span> <span>?=</span> <span>18</span><span>rem</span></span>
-<span><span>$mobileSidebarWidth</span> <span>?=</span> $sidebarWidth</span>
-<span><span>$contentWidth</span> <span>?=</span> <span>740</span><span>px</span></span>
-<span><span>$homePageWidth</span> <span>?=</span> <span>960</span><span>px</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><h2 id="颜色"> 颜色</h2>
-<div><pre><code><span>/* basic color */</span>
-<span><span>$accentColor</span> <span>?=</span> <span>#3eaf7c</span></span>
-<span><span>$textColor</span> <span>?=</span> <span>#2c3e50</span></span>
-<span><span>$darkTextColor</span> <span>?=</span> <span>#9e9e9e</span></span>
-<span><span>$bgColor</span> <span>?=</span> <span>#fff</span></span>
-<span><span>$darkBgColor</span> <span>?=</span> <span>#1e1e1e</span></span>
-<span><span>$bgColorLight</span> <span>?=</span> <span>#f8f8f8</span></span>
-<span><span>$darkBgColorLight</span> <span>?=</span> <span>#272727</span></span>
-<span><span>$bgColorBlur</span> <span>?=</span> <span><span>rgba</span><span>(</span><span>255</span><span>,</span> <span>255</span><span>,</span> <span>255</span><span>,</span> <span>0.9</span><span>)</span></span></span>
-<span><span>$darkBgColorBlur</span> <span>?=</span> <span><span>rgba</span><span>(</span><span>30</span><span>,</span> <span>30</span><span>,</span> <span>30</span><span>,</span> <span>0.9</span><span>)</span></span></span>
-<span><span>$borderColor</span> <span>?=</span> <span>#eaecef</span></span>
-<span><span>$darkBorderColor</span> <span>?=</span> <span>#302d28</span></span>
-<span><span>$codeBgColor</span> <span>?=</span> <span>#ecf4fa</span></span>
-<span><span>$darkCodeBgColor</span> <span>?=</span> <span>#282c34</span></span>
-<span><span>$arrowBgColor</span> <span>?=</span> <span>#ccc</span></span>
-<span><span>$darkArrowBgColor</span> <span>?=</span> <span>#333</span></span>
-
-<span>/* additional color provided by theme */</span>
-<span><span>$boxShadowColor</span> <span>?=</span> <span>#f0f1f2</span></span>
-<span><span>$darkBoxShadowColor</span> <span>?=</span> <span>#0f0e0d</span></span>
-<span><span>$cardShadowColor</span> <span>?=</span> <span><span>rgba</span><span>(</span><span>0</span><span>,</span> <span>0</span><span>,</span> <span>0</span><span>,</span> <span>0.15</span><span>)</span></span></span>
-<span><span>$darkCardShadowColor</span> <span>?=</span> <span><span>rgba</span><span>(</span><span>0</span><span>,</span> <span>0</span><span>,</span> <span>0</span><span>,</span> <span>0.3</span><span>)</span></span></span>
-
-<span>/* badge color */</span>
-<span><span>$badgeTipColor</span> <span>?=</span> <span>#42b983</span></span>
-<span><span>$badgeWarningColor</span> <span>?=</span> <span><span>darken</span><span>(</span><span>#ffe564</span><span>,</span> <span>35</span><span>%</span><span>)</span></span></span>
-<span><span>$badgeErrorColor</span> <span>?=</span> <span>#DA5961</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br></div></div><h2 id="markdown"> Markdown</h2>
-<div><pre><code><span>/* content class */</span>
-<span><span>$contentClass</span> <span>?=</span> <span>'.theme-default-content'</span></span>
-
-<span>/* code block */</span>
-<span><span>$lineNumbersWrapperWidth</span> <span>?=</span> <span>2.5</span><span>rem</span></span>
-<span><span>$codeLang</span> <span>?=</span> js ts html md vue css sass scss less stylus go java c sh yaml py docker dockerfile makefile</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="主题色"> 主题色</h2>
-<p>使用 <code>$colorPicker</code> 进行主题选择器配置，需要与主题配置中的选择器配置相同。</p>
-<p>案例:</p>
-<div><pre><code><span><span>$colorPicker</span> <span>=</span> <span>{</span>
-  <span>red</span><span>:</span> <span>#f26d6d</span><span>,</span>
-  <span>blue</span><span>:</span> <span>#2196f3</span><span>,</span>
-  <span>green</span><span>:</span> <span>#3eaf7c</span><span>,</span>
-  <span>orange</span><span>:</span> <span>#fb9b5f</span>
-<span>}</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div>]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <category term="config"/>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-10-13T05:36:44.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">配置</title>
-    <id>https://vuepress-theme-hope.github.io/zh/config/</id>
-    <link href="https://vuepress-theme-hope.github.io/zh/config/"/>
-    <updated>2021-02-26T13:39:01.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="主题配置"> 主题配置</h2>
-<ul>
-<li>
-<p><a href="./theme/">主题重要配置</a></p>
-</li>
-<li>
-<p><a href="./theme/default.html">默认主题配置</a></p>
-</li>
-<li>
-<p><a href="./theme/feature.html">主题功能配置</a></p>
-</li>
-<li>
-<p><a href="./theme/plugin.html">主题插件配置</a></p>
-</li>
-<li>
-<p><a href="./theme/apperance.html">主题外观配置</a></p>
-</li>
-</ul>
-<h2 id="页面配置"> 页面配置</h2>
-<ul>
-<li><a href="./page.html">Frontmatter 配置</a></li>
-</ul>
-<h2 id="样式配置"> 样式配置</h2>
-<ul>
-<li><a href="./stylus.html">样式配置</a></li>
-</ul>
-<h2 id="插件配置"> 插件配置</h2>
-<ul>
-<li><a href="./plugin/">插件配置</a></li>
-</ul>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <category term="config"/>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-10-13T05:36:44.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
     <title type="html">指南</title>
     <id>https://vuepress-theme-hope.github.io/zh/guide/</id>
     <link href="https://vuepress-theme-hope.github.io/zh/guide/"/>
-    <updated>2021-03-13T12:11:43.000Z</updated>
+    <updated>2021-04-25T07:17:09.000Z</updated>
     <summary type="html"><![CDATA[<div><p>提示</p>
 <p>如果你在使用过程中遇到了 bug，可以 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues" target="_blank" rel="noopener noreferrer">提一个 issue</a> 或者 <a href="https://jq.qq.com/?_wv=1027&amp;k=rATJyxGK" target="_blank" rel="noopener noreferrer">加入 QQ 群</a> (群号: 1003437555) 进行反馈。</p>
 </div>
@@ -17843,7 +18407,9 @@ $$
 <li><a href="./markdown/tex.html">Tex 支持</a></li>
 <li><a href="./markdown/align.html">自定义对齐</a></li>
 <li><a href="./markdown/flowchart.html">流程图</a></li>
+<li><a href="./markdown/mermaid.html">Mermaid 图表</a></li>
 <li><a href="./markdown/mark.html">标记</a></li>
+<li><a href="./markdown/tasklist.html">任务列表</a></li>
 <li><a href="./markdown/sup-sub.html">上下角标</a></li>
 <li><a href="./markdown/demo.html">代码演示</a></li>
 <li><a href="./markdown/presentation.html">幻灯片</a></li>
@@ -18020,7 +18586,7 @@ $$
     <title type="html">主页</title>
     <id>https://vuepress-theme-hope.github.io/zh/</id>
     <link href="https://vuepress-theme-hope.github.io/zh/"/>
-    <updated>2021-04-07T08:02:54.000Z</updated>
+    <updated>2021-04-25T07:17:09.000Z</updated>
     <content type="html"><![CDATA[<h2 id="🛠-安装"> 🛠 安装</h2>
 <p>在当前项目的 <code>[dir]</code> 文件夹内创建 vuepress-theme-hope 项目:</p>
 <CodeGroup>
