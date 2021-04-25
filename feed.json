@@ -2331,56 +2331,6 @@
       ]
     },
     {
-      "title": "配置",
-      "url": "https://vuepress-theme-hope.github.io/zh/config/",
-      "id": "https://vuepress-theme-hope.github.io/zh/config/",
-      "content_html": "<h2 id=\"主题配置\"> 主题配置</h2>\n<ul>\n<li>\n<p><a href=\"./theme/\">主题重要配置</a></p>\n</li>\n<li>\n<p><a href=\"./theme/default.html\">默认主题配置</a></p>\n</li>\n<li>\n<p><a href=\"./theme/feature.html\">主题功能配置</a></p>\n</li>\n<li>\n<p><a href=\"./theme/plugin.html\">主题插件配置</a></p>\n</li>\n<li>\n<p><a href=\"./theme/apperance.html\">主题外观配置</a></p>\n</li>\n</ul>\n<h2 id=\"页面配置\"> 页面配置</h2>\n<ul>\n<li><a href=\"./page.html\">Frontmatter 配置</a></li>\n</ul>\n<h2 id=\"样式配置\"> 样式配置</h2>\n<ul>\n<li><a href=\"./stylus.html\">样式配置</a></li>\n</ul>\n<h2 id=\"插件配置\"> 插件配置</h2>\n<ul>\n<li><a href=\"./plugin/\">插件配置</a></li>\n</ul>\n",
-      "date_published": "2020-10-13T05:36:44.000Z",
-      "date_modified": "2021-02-26T13:39:01.000Z",
-      "authors": [
-        {
-          "name": "Mr.Hope"
-        }
-      ],
-      "tags": [
-        "config"
-      ]
-    },
-    {
-      "title": "插件说明",
-      "url": "https://vuepress-theme-hope.github.io/zh/config/plugin/",
-      "id": "https://vuepress-theme-hope.github.io/zh/config/plugin/",
-      "summary": "<p><code>vuepress-theme-hope</code> 自带了很多 VuePress 插件。一些插件会自动启用，如果你不需要，可以在 themeConfig 中将其禁用；一些插件也只有你进行配置才会启用。</p>\n",
-      "content_html": "<p><code>vuepress-theme-hope</code> 自带了很多 VuePress 插件。一些插件会自动启用，如果你不需要，可以在 themeConfig 中将其禁用；一些插件也只有你进行配置才会启用。</p>\n\n<h2 id=\"内建插件\"> 内建插件</h2>\n<ul>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/comment/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">@mr-hope/vuepress-plugin-comment</a>: 评论与文章信息功能</p>\n</li>\n<li>\n<p><a href=\"./../../guide/feature/component.html\">@mr-hope/vuepress-plugin-component</a>: 提供一些开箱即用的插件</p>\n</li>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/copy-code/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">@mr-hope/vuepress-plugin-copy-code</a>: 提供一键复制代码块功能。</p>\n</li>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/feed/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">@mr-hope/vuepress-plugin-feed</a>: 提供 Feed 生成</p>\n</li>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/git/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">@mr-hope/vuepress-plugin-git</a>: 基于 Git 的页面信息插件</p>\n</li>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/pwa/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">@mr-hope/vuepress-plugin-pwa</a>: PWA 支持</p>\n</li>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/reading-time/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">@mr-hope/vuepress-plugin-reading-time</a>: 阅读时间与字数统计</p>\n</li>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/seo/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">@mr-hope/vuepress-plugin-seo</a>: SEO 增强插件</p>\n</li>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/sitemap/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">@mr-hope/vuepress-plugin-sitemap</a>: 为你的站点生成 sitemap</p>\n</li>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/add-this/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">vuepress-plugin-add-this</a>: 让网站支持社交分享与关注</p>\n</li>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/md-enhance/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">vuepress-plugin-md-enhance</a>: 提供更多 Markdown 语法</p>\n</li>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/photo-swipe/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">vuepress-plugin-photo-swipe</a>: 使网站的图片支持缩放与滑动浏览</p>\n</li>\n</ul>\n<h2 id=\"外部插件\"> 外部插件</h2>\n<ul>\n<li>\n<p><a href=\"./container.html\">vuepress-plugin-container</a>: 自定义容器</p>\n</li>\n<li>\n<p><a href=\"./copyright.html\">vuepress-plugin-copyright</a>: 在网站内容被复制的时候提供额外的版权信息</p>\n</li>\n<li>\n<p><a href=\"./../../guide/feature/typescript.html\">vuepress-plugin-typescript</a>: 提供 TypeScript 支持</p>\n</li>\n<li>\n<p>vuepress-plugin-smooth-scroll: 平滑滚动</p>\n</li>\n<li>\n<p>@vuepress/plugin-search: 搜索插件</p>\n</li>\n<li>\n<p>@vuepress/plugin-nprogress: 进度条</p>\n</li>\n<li>\n<p>@vuepress/plugin-active-header-links: 自动激活侧边栏标题</p>\n</li>\n<li>\n<p>@vuepress/plugin-blog: 博客支持</p>\n</li>\n<li>\n<p>@vuepress/plugin-search: 搜索插件，<strong>将最大搜索建议增加至 10</strong></p>\n</li>\n<li>\n<p>vuepress-plugin-smooth-scroll: 平滑滚动。</p>\n</li>\n</ul>\n",
-      "date_published": "2020-10-13T05:36:44.000Z",
-      "date_modified": "2021-03-08T14:44:58.000Z",
-      "authors": [
-        {
-          "name": "Mr.Hope"
-        }
-      ],
-      "tags": [
-        "config"
-      ]
-    },
-    {
-      "title": "vuepress-plugin-copyright",
-      "url": "https://vuepress-theme-hope.github.io/zh/config/plugin/copyright/",
-      "id": "https://vuepress-theme-hope.github.io/zh/config/plugin/copyright/",
-      "summary": "<p>处理你的 VuePress 站点中的复制操作</p>\n",
-      "content_html": "<p>处理你的 VuePress 站点中的复制操作</p>\n\n<h2 id=\"默认配置说明\"> 默认配置说明</h2>\n<p>当用户从你的站点复制超过 100 字的消息时，在这段消息的尾部添加声明消息。</p>\n<p>作者名称会从你在主题中配置的作者信息或站点名称自动生成。</p>\n<p>默认配置如下:</p>\n<div><div><br><br><br><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>\n  plugins<span>:</span> <span>[</span>\n    <span>/** 复制操作处理 */</span>\n    <span>[</span>\n      <span>\"copyright\"</span><span>,</span>\n      <span>{</span>\n        authorName<span>:</span> options<span>.</span>author<span>,</span>\n        minLength<span>:</span> <span>100</span><span>,</span>\n        clipboardComponent<span>:</span> path<span>.</span><span>resolve</span><span>(</span>__dirname<span>,</span> <span>\"components/Clipboard.vue\"</span><span>)</span><span>,</span>\n      <span>}</span><span>,</span>\n    <span>]</span><span>,</span>\n  <span>]</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><h2 id=\"配置项\"> 配置项</h2>\n<p>详见 <a href=\"https://vuepress.github.io/zh/plugins/copyright/#%E9%85%8D%E7%BD%AE%E9%A1%B9\" target=\"_blank\" rel=\"noopener noreferrer\">官方文档</a></p>\n<h2 id=\"演示\"> 演示</h2>\n<p>请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。</p>\n",
-      "date_published": "2020-10-13T05:36:44.000Z",
-      "date_modified": "2021-01-29T05:27:27.000Z",
-      "authors": [
-        {
-          "name": "Mr.Hope"
-        }
-      ],
-      "tags": [
-        "config"
-      ]
-    },
-    {
       "title": "主题色",
       "url": "https://vuepress-theme-hope.github.io/zh/guide/interface/theme-color/",
       "id": "https://vuepress-theme-hope.github.io/zh/guide/interface/theme-color/",
@@ -2615,13 +2565,13 @@
       ]
     },
     {
-      "title": "启用 Markdown 增强",
-      "url": "https://vuepress-theme-hope.github.io/zh/guide/markdown/intro/",
-      "id": "https://vuepress-theme-hope.github.io/zh/guide/markdown/intro/",
-      "summary": "<p>除了 VuePress 本身新增了一些 Markdown 语法外，<code>vuepress-theme-hope</code> 通过 <a href=\"https://vuepress-theme-hope.github.io/md-enhance\" target=\"_blank\" rel=\"noopener noreferrer\">vuepress-plugin-md-enhance</a>，在 Markdown 中启用了更多的语法与新功能。</p>\n",
-      "content_html": "<p>除了 VuePress 本身新增了一些 Markdown 语法外，<code>vuepress-theme-hope</code> 通过 <a href=\"https://vuepress-theme-hope.github.io/md-enhance\" target=\"_blank\" rel=\"noopener noreferrer\">vuepress-plugin-md-enhance</a>，在 Markdown 中启用了更多的语法与新功能。</p>\n\n<h2 id=\"内置增强\"> 内置增强</h2>\n<p>VuePress 自带的 GitHub 风格的表格，Emoji、TOC、代码行号、特定行高亮等都是开箱即用的。</p>\n<p>详细语法详见 <a href=\"./../../basic/vuepress/markdown.html\">内置 Markdown 扩展</a>。</p>\n<h2 id=\"启用-markdown-增强\"> 启用 Markdown 增强</h2>\n<p><code>.vuepress/config.js</code> 中的 <code>themeconfig.mdEnhance</code> 会直接传递给插件作为插件选项。所以你也可以直接阅读 <a href=\"https://vuepress-theme-hope.github.io/md-enhance\" target=\"_blank\" rel=\"noopener noreferrer\">vuepress-plugin-md-enhance 文档</a> 查看用法。</p>\n<div><p>Tips</p>\n<p>请不用担心你的网站大小，如果你不启用相关功能，最终代码不会包含这些功能相关的代码。</p>\n</div>\n<h3 id=\"一键启用\"> 一键启用</h3>\n<p>你可以设置 <code>themeconfig.mdEnhance.enableAll</code> 启用 <a href=\"https://vuepress-theme-hope.github.io/md-enhance\" target=\"_blank\" rel=\"noopener noreferrer\">md-enhance</a> 插件的所有功能。</p>\n<div><div><br><br><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>\n  themeConfig<span>:</span> <span>{</span>\n    mdEnhance<span>:</span> <span>{</span>\n      enableAll<span>:</span> <span>true</span><span>,</span>\n    <span>}</span><span>,</span>\n  <span>}</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><div><p>Warning</p>\n<p>请仅将此选项用于体验或测试。随着时间的增长，<code>vuepress-plugin-md-enhance</code> 变得越来越强大。它为 Markdown 解析器添加了更多语法，并输出了更多代码。</p>\n<p>启用不需要的功能将增加开发和构建时间。 (<code>markdown-it</code> 必须检查额外的语法)</p>\n<p>同样，幻灯片演示功能将在输出中添加 700KB 大小的代码 (主要是 <code>reveal.js</code>)。</p>\n<p>因此，请仅启用需要的功能。</p>\n</div>\n<h3 id=\"启用特定的语法\"> 启用特定的语法</h3>\n<p>特定语法的配置项可以在对应的说明页或者 <a href=\"./../../config/theme/plugin.html#mdEnhance\">主题插件配置</a> 中找到。</p>\n",
-      "date_published": "2021-02-26T08:10:04.000Z",
-      "date_modified": "2021-03-27T08:43:08.000Z",
+      "title": "脚注",
+      "url": "https://vuepress-theme-hope.github.io/zh/guide/markdown/footnote/",
+      "id": "https://vuepress-theme-hope.github.io/zh/guide/markdown/footnote/",
+      "summary": "<p>让你的 VuePress 站点中的 Markdown 文件支持脚注。</p>\n",
+      "content_html": "<p>让你的 VuePress 站点中的 Markdown 文件支持脚注。</p>\n\n<h2 id=\"配置\"> 配置</h2>\n<p>默认启用，你也可以在主题配置禁用它:</p>\n<div><div><br><br><br><div>&nbsp;</div><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>\n  themeConfig<span>:</span> <span>{</span>\n    mdEnhance<span>:</span> <span>{</span>\n      footnote<span>:</span> <span>true</span><span>,</span>\n    <span>}</span><span>,</span>\n  <span>}</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><h2 id=\"语法\"> 语法</h2>\n<ul>\n<li>\n<p>在 Markdown 中使用 <code>[^锚点文字]</code> 来定义脚注。</p>\n</li>\n<li>\n<p>在之后的任何位置使用 <code>[^锚点文字]: ...</code> 来描述脚注内容。</p>\n</li>\n<li>\n<p>如果脚注包含多个段落，其后的段落应当保持双层缩进。</p>\n</li>\n</ul>\n<h2 id=\"案例\"> 案例</h2>\n<p>脚注 1 链接<sup></sup>.</p>\n<p>脚注 2 链接<sup></sup>.</p>\n<p>行内的脚注<sup></sup> 定义.</p>\n<p>重复的页脚引用<sup></sup>.</p>\n<div><pre><code>脚注 1 链接[^first].\n\n脚注 2 链接[^second].\n\n行内的脚注^[Text of inline footnote] 定义.\n\n重复的页脚引用[^second].\n\n<span><span>[</span><span>^first</span><span>]</span><span>:</span> 脚注</span> <span><span>**</span><span>可以包含特殊标记</span><span>**</span></span>\n\n<span>    也可以由多个段落组成</span>\n\n<span><span>[</span><span>^second</span><span>]</span><span>:</span> 脚注文字。</span>\n</code></pre>\n<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><hr>\n<section>\n<ol>\n<li id=\"footnote1\"><p>脚注 <strong>可以包含特殊标记</strong></p>\n<p>也可以由多个段落组成 </p>\n</li>\n<li id=\"footnote2\"><p>脚注文字。  </p>\n</li>\n<li id=\"footnote3\"><p>Text of inline footnote </p>\n</li>\n</ol>\n</section>\n",
+      "date_published": "2021-02-25T07:37:56.000Z",
+      "date_modified": "2021-02-27T06:18:09.000Z",
       "authors": [
         {
           "name": "Mr.Hope"
@@ -2632,13 +2582,13 @@
       ]
     },
     {
-      "title": "脚注",
-      "url": "https://vuepress-theme-hope.github.io/zh/guide/markdown/footnote/",
-      "id": "https://vuepress-theme-hope.github.io/zh/guide/markdown/footnote/",
-      "summary": "<p>让你的 VuePress 站点中的 Markdown 文件支持脚注。</p>\n",
-      "content_html": "<p>让你的 VuePress 站点中的 Markdown 文件支持脚注。</p>\n\n<h2 id=\"配置\"> 配置</h2>\n<p>默认启用，你也可以在主题配置禁用它:</p>\n<div><div><br><br><br><div>&nbsp;</div><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>\n  themeConfig<span>:</span> <span>{</span>\n    mdEnhance<span>:</span> <span>{</span>\n      footnote<span>:</span> <span>true</span><span>,</span>\n    <span>}</span><span>,</span>\n  <span>}</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><h2 id=\"语法\"> 语法</h2>\n<ul>\n<li>\n<p>在 Markdown 中使用 <code>[^锚点文字]</code> 来定义脚注。</p>\n</li>\n<li>\n<p>在之后的任何位置使用 <code>[^锚点文字]: ...</code> 来描述脚注内容。</p>\n</li>\n<li>\n<p>如果脚注包含多个段落，其后的段落应当保持双层缩进。</p>\n</li>\n</ul>\n<h2 id=\"案例\"> 案例</h2>\n<p>脚注 1 链接<sup></sup>.</p>\n<p>脚注 2 链接<sup></sup>.</p>\n<p>行内的脚注<sup></sup> 定义.</p>\n<p>重复的页脚引用<sup></sup>.</p>\n<div><pre><code>脚注 1 链接[^first].\n\n脚注 2 链接[^second].\n\n行内的脚注^[Text of inline footnote] 定义.\n\n重复的页脚引用[^second].\n\n<span><span>[</span><span>^first</span><span>]</span><span>:</span> 脚注</span> <span><span>**</span><span>可以包含特殊标记</span><span>**</span></span>\n\n<span>    也可以由多个段落组成</span>\n\n<span><span>[</span><span>^second</span><span>]</span><span>:</span> 脚注文字。</span>\n</code></pre>\n<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><hr>\n<section>\n<ol>\n<li id=\"footnote1\"><p>脚注 <strong>可以包含特殊标记</strong></p>\n<p>也可以由多个段落组成 </p>\n</li>\n<li id=\"footnote2\"><p>脚注文字。  </p>\n</li>\n<li id=\"footnote3\"><p>Text of inline footnote </p>\n</li>\n</ol>\n</section>\n",
-      "date_published": "2021-02-25T07:37:56.000Z",
-      "date_modified": "2021-02-27T06:18:09.000Z",
+      "title": "启用 Markdown 增强",
+      "url": "https://vuepress-theme-hope.github.io/zh/guide/markdown/intro/",
+      "id": "https://vuepress-theme-hope.github.io/zh/guide/markdown/intro/",
+      "summary": "<p>除了 VuePress 本身新增了一些 Markdown 语法外，<code>vuepress-theme-hope</code> 通过 <a href=\"https://vuepress-theme-hope.github.io/md-enhance\" target=\"_blank\" rel=\"noopener noreferrer\">vuepress-plugin-md-enhance</a>，在 Markdown 中启用了更多的语法与新功能。</p>\n",
+      "content_html": "<p>除了 VuePress 本身新增了一些 Markdown 语法外，<code>vuepress-theme-hope</code> 通过 <a href=\"https://vuepress-theme-hope.github.io/md-enhance\" target=\"_blank\" rel=\"noopener noreferrer\">vuepress-plugin-md-enhance</a>，在 Markdown 中启用了更多的语法与新功能。</p>\n\n<h2 id=\"内置增强\"> 内置增强</h2>\n<p>VuePress 自带的 GitHub 风格的表格，Emoji、TOC、代码行号、特定行高亮等都是开箱即用的。</p>\n<p>详细语法详见 <a href=\"./../../basic/vuepress/markdown.html\">内置 Markdown 扩展</a>。</p>\n<h2 id=\"启用-markdown-增强\"> 启用 Markdown 增强</h2>\n<p><code>.vuepress/config.js</code> 中的 <code>themeconfig.mdEnhance</code> 会直接传递给插件作为插件选项。所以你也可以直接阅读 <a href=\"https://vuepress-theme-hope.github.io/md-enhance\" target=\"_blank\" rel=\"noopener noreferrer\">vuepress-plugin-md-enhance 文档</a> 查看用法。</p>\n<div><p>Tips</p>\n<p>请不用担心你的网站大小，如果你不启用相关功能，最终代码不会包含这些功能相关的代码。</p>\n</div>\n<h3 id=\"一键启用\"> 一键启用</h3>\n<p>你可以设置 <code>themeconfig.mdEnhance.enableAll</code> 启用 <a href=\"https://vuepress-theme-hope.github.io/md-enhance\" target=\"_blank\" rel=\"noopener noreferrer\">md-enhance</a> 插件的所有功能。</p>\n<div><div><br><br><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>\n  themeConfig<span>:</span> <span>{</span>\n    mdEnhance<span>:</span> <span>{</span>\n      enableAll<span>:</span> <span>true</span><span>,</span>\n    <span>}</span><span>,</span>\n  <span>}</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><div><p>Warning</p>\n<p>请仅将此选项用于体验或测试。随着时间的增长，<code>vuepress-plugin-md-enhance</code> 变得越来越强大。它为 Markdown 解析器添加了更多语法，并输出了更多代码。</p>\n<p>启用不需要的功能将增加开发和构建时间。 (<code>markdown-it</code> 必须检查额外的语法)</p>\n<p>同样，幻灯片演示功能将在输出中添加 700KB 大小的代码 (主要是 <code>reveal.js</code>)。</p>\n<p>因此，请仅启用需要的功能。</p>\n</div>\n<h3 id=\"启用特定的语法\"> 启用特定的语法</h3>\n<p>特定语法的配置项可以在对应的说明页或者 <a href=\"./../../config/theme/plugin.html#mdEnhance\">主题插件配置</a> 中找到。</p>\n",
+      "date_published": "2021-02-26T08:10:04.000Z",
+      "date_modified": "2021-03-27T08:43:08.000Z",
       "authors": [
         {
           "name": "Mr.Hope"
@@ -2797,6 +2747,56 @@
         }
       ],
       "tags": []
+    },
+    {
+      "title": "配置",
+      "url": "https://vuepress-theme-hope.github.io/zh/config/",
+      "id": "https://vuepress-theme-hope.github.io/zh/config/",
+      "content_html": "<h2 id=\"主题配置\"> 主题配置</h2>\n<ul>\n<li>\n<p><a href=\"./theme/\">主题重要配置</a></p>\n</li>\n<li>\n<p><a href=\"./theme/default.html\">默认主题配置</a></p>\n</li>\n<li>\n<p><a href=\"./theme/feature.html\">主题功能配置</a></p>\n</li>\n<li>\n<p><a href=\"./theme/plugin.html\">主题插件配置</a></p>\n</li>\n<li>\n<p><a href=\"./theme/apperance.html\">主题外观配置</a></p>\n</li>\n</ul>\n<h2 id=\"页面配置\"> 页面配置</h2>\n<ul>\n<li><a href=\"./page.html\">Frontmatter 配置</a></li>\n</ul>\n<h2 id=\"样式配置\"> 样式配置</h2>\n<ul>\n<li><a href=\"./stylus.html\">样式配置</a></li>\n</ul>\n<h2 id=\"插件配置\"> 插件配置</h2>\n<ul>\n<li><a href=\"./plugin/\">插件配置</a></li>\n</ul>\n",
+      "date_published": "2020-10-13T05:36:44.000Z",
+      "date_modified": "2021-02-26T13:39:01.000Z",
+      "authors": [
+        {
+          "name": "Mr.Hope"
+        }
+      ],
+      "tags": [
+        "config"
+      ]
+    },
+    {
+      "title": "插件说明",
+      "url": "https://vuepress-theme-hope.github.io/zh/config/plugin/",
+      "id": "https://vuepress-theme-hope.github.io/zh/config/plugin/",
+      "summary": "<p><code>vuepress-theme-hope</code> 自带了很多 VuePress 插件。一些插件会自动启用，如果你不需要，可以在 themeConfig 中将其禁用；一些插件也只有你进行配置才会启用。</p>\n",
+      "content_html": "<p><code>vuepress-theme-hope</code> 自带了很多 VuePress 插件。一些插件会自动启用，如果你不需要，可以在 themeConfig 中将其禁用；一些插件也只有你进行配置才会启用。</p>\n\n<h2 id=\"内建插件\"> 内建插件</h2>\n<ul>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/comment/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">@mr-hope/vuepress-plugin-comment</a>: 评论与文章信息功能</p>\n</li>\n<li>\n<p><a href=\"./../../guide/feature/component.html\">@mr-hope/vuepress-plugin-component</a>: 提供一些开箱即用的插件</p>\n</li>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/copy-code/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">@mr-hope/vuepress-plugin-copy-code</a>: 提供一键复制代码块功能。</p>\n</li>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/feed/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">@mr-hope/vuepress-plugin-feed</a>: 提供 Feed 生成</p>\n</li>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/git/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">@mr-hope/vuepress-plugin-git</a>: 基于 Git 的页面信息插件</p>\n</li>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/pwa/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">@mr-hope/vuepress-plugin-pwa</a>: PWA 支持</p>\n</li>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/reading-time/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">@mr-hope/vuepress-plugin-reading-time</a>: 阅读时间与字数统计</p>\n</li>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/seo/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">@mr-hope/vuepress-plugin-seo</a>: SEO 增强插件</p>\n</li>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/sitemap/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">@mr-hope/vuepress-plugin-sitemap</a>: 为你的站点生成 sitemap</p>\n</li>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/add-this/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">vuepress-plugin-add-this</a>: 让网站支持社交分享与关注</p>\n</li>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/md-enhance/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">vuepress-plugin-md-enhance</a>: 提供更多 Markdown 语法</p>\n</li>\n<li>\n<p><a href=\"https://vuepress-theme-hope.github.io/photo-swipe/zh/\" target=\"_blank\" rel=\"noopener noreferrer\">vuepress-plugin-photo-swipe</a>: 使网站的图片支持缩放与滑动浏览</p>\n</li>\n</ul>\n<h2 id=\"外部插件\"> 外部插件</h2>\n<ul>\n<li>\n<p><a href=\"./container.html\">vuepress-plugin-container</a>: 自定义容器</p>\n</li>\n<li>\n<p><a href=\"./copyright.html\">vuepress-plugin-copyright</a>: 在网站内容被复制的时候提供额外的版权信息</p>\n</li>\n<li>\n<p><a href=\"./../../guide/feature/typescript.html\">vuepress-plugin-typescript</a>: 提供 TypeScript 支持</p>\n</li>\n<li>\n<p>vuepress-plugin-smooth-scroll: 平滑滚动</p>\n</li>\n<li>\n<p>@vuepress/plugin-search: 搜索插件</p>\n</li>\n<li>\n<p>@vuepress/plugin-nprogress: 进度条</p>\n</li>\n<li>\n<p>@vuepress/plugin-active-header-links: 自动激活侧边栏标题</p>\n</li>\n<li>\n<p>@vuepress/plugin-blog: 博客支持</p>\n</li>\n<li>\n<p>@vuepress/plugin-search: 搜索插件，<strong>将最大搜索建议增加至 10</strong></p>\n</li>\n<li>\n<p>vuepress-plugin-smooth-scroll: 平滑滚动。</p>\n</li>\n</ul>\n",
+      "date_published": "2020-10-13T05:36:44.000Z",
+      "date_modified": "2021-03-08T14:44:58.000Z",
+      "authors": [
+        {
+          "name": "Mr.Hope"
+        }
+      ],
+      "tags": [
+        "config"
+      ]
+    },
+    {
+      "title": "vuepress-plugin-copyright",
+      "url": "https://vuepress-theme-hope.github.io/zh/config/plugin/copyright/",
+      "id": "https://vuepress-theme-hope.github.io/zh/config/plugin/copyright/",
+      "summary": "<p>处理你的 VuePress 站点中的复制操作</p>\n",
+      "content_html": "<p>处理你的 VuePress 站点中的复制操作</p>\n\n<h2 id=\"默认配置说明\"> 默认配置说明</h2>\n<p>当用户从你的站点复制超过 100 字的消息时，在这段消息的尾部添加声明消息。</p>\n<p>作者名称会从你在主题中配置的作者信息或站点名称自动生成。</p>\n<p>默认配置如下:</p>\n<div><div><br><br><br><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>\n  plugins<span>:</span> <span>[</span>\n    <span>/** 复制操作处理 */</span>\n    <span>[</span>\n      <span>\"copyright\"</span><span>,</span>\n      <span>{</span>\n        authorName<span>:</span> options<span>.</span>author<span>,</span>\n        minLength<span>:</span> <span>100</span><span>,</span>\n        clipboardComponent<span>:</span> path<span>.</span><span>resolve</span><span>(</span>__dirname<span>,</span> <span>\"components/Clipboard.vue\"</span><span>)</span><span>,</span>\n      <span>}</span><span>,</span>\n    <span>]</span><span>,</span>\n  <span>]</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><h2 id=\"配置项\"> 配置项</h2>\n<p>详见 <a href=\"https://vuepress.github.io/zh/plugins/copyright/#%E9%85%8D%E7%BD%AE%E9%A1%B9\" target=\"_blank\" rel=\"noopener noreferrer\">官方文档</a></p>\n<h2 id=\"演示\"> 演示</h2>\n<p>请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。</p>\n",
+      "date_published": "2020-10-13T05:36:44.000Z",
+      "date_modified": "2021-01-29T05:27:27.000Z",
+      "authors": [
+        {
+          "name": "Mr.Hope"
+        }
+      ],
+      "tags": [
+        "config"
+      ]
     }
   ]
 }
