@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/pwa/</link>
     <description>A powerful PWA plugin for vuepress</description>
     <language>en-US</language>
-    <pubDate>Sat, 24 Apr 2021 15:44:24 GMT</pubDate>
-    <lastBuildDate>Sat, 24 Apr 2021 15:44:24 GMT</lastBuildDate>
+    <pubDate>Sun, 25 Apr 2021 07:14:56 GMT</pubDate>
+    <lastBuildDate>Sun, 25 Apr 2021 07:14:56 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -290,11 +290,11 @@
 <hr>
 <section>
 <ol>
-<li id="fn1"><p><strong>PWA introduction</strong></p>
+<li id="footnote1"><p><strong>PWA introduction</strong></p>
 <p>PWA, full name Progressive Web app. PWA standard is stipulated by W3C.</p>
 <p>It allows sites to install the site as an App on supported platform through a browser that supports this feature. </p>
 </li>
-<li id="fn2"><p><strong>Service Worker Introduction</strong></p>
+<li id="footnote2"><p><strong>Service Worker Introduction</strong></p>
 <ol>
 <li>
 <p>The Service Worker will get and cache all the files registered in it during the registration process.</p>
@@ -310,19 +310,19 @@
 </li>
 </ol>
  </li>
-<li id="fn3"><p><strong>Installable</strong></p>
+<li id="footnote3"><p><strong>Installable</strong></p>
 <p>To let the site be registered as a PWA, the site needs to successfully register a valid service worker by itself, and at the same time add a valid manifest file and declare it.</p>
 <p>Each platform or browser has requirements for the size of the Service Worker cache. When the file size of the Service Worker cache is too large, the site will be marked as not installable. For Safari, the threshold is 50 MB, a few browsers will set less or more values ​​(30MB, 70MB, 80MB), and Chrome will mark the threshold at 100 MB.</p>
 <p>In addition, the manifest file should contain at least <code>name</code> (or <code>short_name</code>) <code>icons</code> <code>start_url</code></p>
 <p>And starting from Chrome 93, Service Woker must contain effective fetch events to control offline requests.  </p>
 </li>
-<li id="fn4"><p><strong>SSR</strong>: <strong>S</strong>erver <strong>S</strong>ide <strong>R</strong>endering, </p>
+<li id="footnote4"><p><strong>SSR</strong>: <strong>S</strong>erver <strong>S</strong>ide <strong>R</strong>endering, </p>
 </li>
-<li id="fn5"><p><strong>SEO</strong>: <strong>S</strong>earch <strong>E</strong>ngine <strong>O</strong>ptimization. For details, please refer to <a href="https://mrhope.site/code/site/html/definition/seo/" target="_blank" rel="noopener noreferrer">SEO Introduction</a> </p>
+<li id="footnote5"><p><strong>SEO</strong>: <strong>S</strong>earch <strong>E</strong>ngine <strong>O</strong>ptimization. For details, please refer to <a href="https://mrhope.site/code/site/html/definition/seo/" target="_blank" rel="noopener noreferrer">SEO Introduction</a> </p>
 </li>
-<li id="fn6"><p><strong>SPA</strong>: <strong>S</strong>ingle <strong>P</strong>age <strong>A</strong>pplication, mMost of them only have the homepage, and use history mode to handle routing instead of actually navigating between pages. </p>
+<li id="footnote6"><p><strong>SPA</strong>: <strong>S</strong>ingle <strong>P</strong>age <strong>A</strong>pplication, mMost of them only have the homepage, and use history mode to handle routing instead of actually navigating between pages. </p>
 </li>
-<li id="fn7"><p><strong>Manifest File</strong></p>
+<li id="footnote7"><p><strong>Manifest File</strong></p>
 <p>The manifest file uses the JSON format and is responsible for declaring various information of the PWA, such as name, description, icon, and shortcut actions.</p>
 <p>In order for your site to be registered as a PWA, you need to meet the basic specifications of the manifest to make the browser consider the site as an installable PWA and allow users to install it.</p>
 <div><p>Info</p>
@@ -649,11 +649,11 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <hr>
 <section>
 <ol>
-<li id="fn1"><p><strong>PWA 介绍</strong></p>
+<li id="footnote1"><p><strong>PWA 介绍</strong></p>
 <p>PWA 全称 Progressive Web app，即渐进式网络应用程序，标准由 W3C 规定。</p>
 <p>它允许网站通过支持该特性的浏览器将网站作为 App 安装在对应平台上。 </p>
 </li>
-<li id="fn2"><p><strong>Service Worker 简要介绍</strong></p>
+<li id="footnote2"><p><strong>Service Worker 简要介绍</strong></p>
 <ol>
 <li>
 <p>Service Worker 会在注册过程中获取注册在其中的所有文件并缓存它们。</p>
@@ -669,21 +669,21 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 </li>
 </ol>
  </li>
-<li id="fn3"><p><strong>可安装性</strong></p>
+<li id="footnote3"><p><strong>可安装性</strong></p>
 <p>想要让网站可以注册为 PWA，网站需要自行成功注册有效的 Service Worker，同时添加合法的 manifest 清单文件并在网站中声明它。</p>
 <p>各平台或浏览器对 Service Worker 缓存的大小有要求，当 Service Worker 缓存的文件体积过大后，该网站将会被标记为不可安装。对于 Safari 这个阈值是 50 MB，少数浏览器会设置更少或更多的值 (30MB, 70MB, 80MB)，最大的 Chrome 也将阈值标识在 100 MB。</p>
 <p>另外，清单文件应至少包含 <code>name</code>(或 <code>short_name</code>) <code>icons</code> <code>start_url</code>。</p>
 <p>从 Chrome 93 起 Service Woker 必须含有有效的控制离线请求的 fetch 事件  </p>
 </li>
-<li id="fn4"><p><strong>SSR</strong>: <strong>S</strong>erver <strong>S</strong>ide <strong>R</strong>endering，服务端渲染 </p>
+<li id="footnote4"><p><strong>SSR</strong>: <strong>S</strong>erver <strong>S</strong>ide <strong>R</strong>endering，服务端渲染 </p>
 </li>
-<li id="fn5"><p><strong>SEO</strong>: <strong>S</strong>earch <strong>E</strong>ngine <strong>O</strong>ptimization，搜索引擎增强，</p>
+<li id="footnote5"><p><strong>SEO</strong>: <strong>S</strong>earch <strong>E</strong>ngine <strong>O</strong>ptimization，搜索引擎增强，</p>
 <p>详见 <a href="https://mrhope.site/code/website/html/definition/seo/" target="_blank" rel="noopener noreferrer">SEO 介绍</a> </p>
 </li>
-<li id="fn6"><p><strong>SPA</strong>: <strong>S</strong>ingle <strong>P</strong>age <strong>A</strong>pplication, 单页应用</p>
+<li id="footnote6"><p><strong>SPA</strong>: <strong>S</strong>ingle <strong>P</strong>age <strong>A</strong>pplication, 单页应用</p>
 <p>大多只有主页，并使用 history mode 处理路由，而不是真的在页面之间导航。 </p>
 </li>
-<li id="fn7"><p><strong>清单文件</strong></p>
+<li id="footnote7"><p><strong>清单文件</strong></p>
 <p>清单文件使用 JSON 格式，负责声明 PWA 各项信息，如名称、描述、图标、快捷动作等。</p>
 <p>为了使你的站点能够被注册为 PWA，你需要满足 manifest 基本的规范，才能使浏览器认为该网站为一个可安装的 PWA 并允许用户安装它。</p>
 <div><p>Info</p>

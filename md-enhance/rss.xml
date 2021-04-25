@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/md-enhance/</link>
     <description>Markdown Enhancement for VuePress</description>
     <language>en-US</language>
-    <pubDate>Sat, 24 Apr 2021 15:44:24 GMT</pubDate>
-    <lastBuildDate>Sat, 24 Apr 2021 15:44:24 GMT</lastBuildDate>
+    <pubDate>Sun, 25 Apr 2021 07:14:56 GMT</pubDate>
+    <lastBuildDate>Sun, 25 Apr 2021 07:14:56 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -68,6 +68,12 @@
 <li>Default: <code>false</code></li>
 </ul>
 <p>Whether to enable mark support.</p>
+<h2 id="tasklist"> tasklist</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>false</code></li>
+</ul>
+<p>Whether to enable tasklist format support.</p>
 <h2 id="mermaid"> mermaid</h2>
 <ul>
 <li>Type: <code>boolean</code></li>
@@ -1006,12 +1012,12 @@ Duplicated footnote reference[^second].
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><hr>
 <section>
 <ol>
-<li id="fn1"><p>Footnote <strong>can have markup</strong></p>
+<li id="footnote1"><p>Footnote <strong>can have markup</strong></p>
 <p>and multiple paragraphs. </p>
 </li>
-<li id="fn2"><p>Footnote text.  </p>
+<li id="footnote2"><p>Footnote text.  </p>
 </li>
-<li id="fn3"><p>Text of inline footnote </p>
+<li id="footnote3"><p>Text of inline footnote </p>
 </li>
 </ol>
 </section>
@@ -1495,7 +1501,7 @@ Square : +getMessages() List~string~</span>
 <hr>
 <section>
 <ol>
-<li id="fn1"><p>This is footnote content </p>
+<li id="footnote1"><p>This is footnote content </p>
 </li>
 </ol>
 </section>
@@ -1537,6 +1543,43 @@ Square : +getMessages() List~string~</span>
 </ul>
 <div><pre><code><span>-</span> 19^th^
 <span>-</span> H<span><span>~</span><span>2</span><span>~</span></span>O
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>Task list</title>
+      <link>https://vuepress-theme-hope.github.io/md-enhance/guide/tasklist/</link>
+      <guid>https://vuepress-theme-hope.github.io/md-enhance/guide/tasklist/</guid>
+      <source url="https://vuepress-theme-hope.github.io/md-enhance/rss.xml">Task list</source>
+      <description>&amp;lt;p&amp;gt;Let the Markdown file in your VuePress site support task list.&amp;lt;/p&amp;gt;
+</description>
+      <pubDate>Sun, 25 Apr 2021 06:54:27 GMT</pubDate>
+      <content:encoded><![CDATA[<p>Let the Markdown file in your VuePress site support task list.</p>
+
+<h2 id="configuration"> Configuration</h2>
+<div><div><br><br><br><br><br><br><div>&nbsp;</div><br><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>[</span>
+      <span>"md-enhance"</span><span>,</span>
+      <span>{</span>
+        <span>// Enable Task List</span>
+        tasklist<span>:</span> <span>true</span><span>,</span>
+      <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><h2 id="syntax"> Syntax</h2>
+<ul>
+<li>Use <code>- [ ] some text</code> to render a unchecked task item.</li>
+<li>Use <code>- [x] some text</code> to render a checked task item. (Capital <code>X</code> is also supported)</li>
+</ul>
+<h2 id="demo"> Demo</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Plan A</li>
+<li><input checked="" disabled="" type="checkbox"> Plan B</li>
+</ul>
+<div><pre><code><span>-</span> [ ] Plan A
+<span>-</span> [x] Plan B
 </code></pre>
 <div><span>1</span><br><span>2</span><br></div></div>]]></content:encoded>
     </item>
@@ -1922,6 +1965,12 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <li>默认值: <code>false</code></li>
 </ul>
 <p>是否启用标记格式支持。</p>
+<h2 id="tasklist"> tasklist</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否启用任务列表格式支持。</p>
 <h2 id="mermaid"> mermaid</h2>
 <ul>
 <li>类型: <code>boolean</code></li>
@@ -2856,12 +2905,12 @@ e=>end: End:>http://www.yahoo.com
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><hr>
 <section>
 <ol>
-<li id="fn1"><p>脚注 <strong>可以包含特殊标记</strong></p>
+<li id="footnote1"><p>脚注 <strong>可以包含特殊标记</strong></p>
 <p>也可以由多个段落组成 </p>
 </li>
-<li id="fn2"><p>脚注文字。  </p>
+<li id="footnote2"><p>脚注文字。  </p>
 </li>
-<li id="fn3"><p>Text of inline footnote </p>
+<li id="footnote3"><p>Text of inline footnote </p>
 </li>
 </ol>
 </section>
@@ -3349,7 +3398,7 @@ Square : +getMessages() List~string~</span>
 <hr>
 <section>
 <ol>
-<li id="fn1"><p>这是脚注内容 </p>
+<li id="footnote1"><p>这是脚注内容 </p>
 </li>
 </ol>
 </section>
@@ -3391,6 +3440,43 @@ Square : +getMessages() List~string~</span>
 </ul>
 <div><pre><code><span>-</span> 19^th^
 <span>-</span> H<span><span>~</span><span>2</span><span>~</span></span>O
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>任务列表</title>
+      <link>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/tasklist/</link>
+      <guid>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/tasklist/</guid>
+      <source url="https://vuepress-theme-hope.github.io/md-enhance/rss.xml">任务列表</source>
+      <description>&amp;lt;p&amp;gt;让你的 VuePress 站点中的 Markdown 文件支持任务列表。&amp;lt;/p&amp;gt;
+</description>
+      <pubDate>Sun, 25 Apr 2021 06:54:27 GMT</pubDate>
+      <content:encoded><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持任务列表。</p>
+
+<h2 id="configuration"> Configuration</h2>
+<div><div><br><br><br><br><br><br><div>&nbsp;</div><br><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>[</span>
+      <span>"md-enhance"</span><span>,</span>
+      <span>{</span>
+        <span>// 启用任务列表</span>
+        tasklist<span>:</span> <span>true</span><span>,</span>
+      <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><h2 id="语法"> 语法</h2>
+<ul>
+<li>使用 <code>- [ ] 一些文字</code> 渲染一个未勾选的任务项</li>
+<li>使用 <code>- [x] 一些文字</code> 渲染一个勾选了的任务项 (我们也支持大写的 <code>X</code>)</li>
+</ul>
+<h2 id="案例"> 案例</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Plan A</li>
+<li><input checked="" disabled="" type="checkbox"> Plan B</li>
+</ul>
+<div><pre><code><span>-</span> [ ] Plan A
+<span>-</span> [x] Plan B
 </code></pre>
 <div><span>1</span><br><span>2</span><br></div></div>]]></content:encoded>
     </item>
