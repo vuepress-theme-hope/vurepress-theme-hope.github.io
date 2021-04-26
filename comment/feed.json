@@ -163,20 +163,6 @@
       "tags": []
     },
     {
-      "title": "Home",
-      "url": "https://vuepress-theme-hope.github.io/comment/",
-      "id": "https://vuepress-theme-hope.github.io/comment/",
-      "content_html": "<h2 id=\"install\"> Install</h2>\n<CodeGroup>\n<CodeGroupItem title=\"yarn\">\n<div><pre><code><span>yarn</span> <span>add</span> -D @mr-hope/vuepress-plugin-comment\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n<CodeGroupItem title=\"npm\">\n<div><pre><code><span>npm</span> i -D @mr-hope/vuepress-plugin-comment\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n</CodeGroup>\n<h3 id=\"usage\"> Usage</h3>\n<div><pre><code><span>// .vuepress/config.js</span>\nmodule<span>.</span>exports <span>=</span> <span>{</span>\n  plugins<span>:</span> <span>[</span>\n    <span>[</span>\n      <span>\"@mr-hope/comment\"</span><span>,</span>\n      <span>{</span>\n        <span>// your options</span>\n      <span>}</span><span>,</span>\n    <span>]</span><span>,</span>\n  <span>]</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre>\n<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div>",
-      "date_published": "2020-01-07T06:44:41.000Z",
-      "date_modified": "2021-02-24T15:41:50.000Z",
-      "authors": [
-        {
-          "name": "Mr.Hope"
-        }
-      ],
-      "tags": []
-    },
-    {
       "title": "Using Vssue",
       "url": "https://vuepress-theme-hope.github.io/comment/guide/vssue/",
       "id": "https://vuepress-theme-hope.github.io/comment/guide/vssue/",
@@ -191,12 +177,12 @@
       "tags": []
     },
     {
-      "title": "valine 配置",
-      "url": "https://vuepress-theme-hope.github.io/comment/zh/config/valine/",
-      "id": "https://vuepress-theme-hope.github.io/comment/zh/config/valine/",
-      "content_html": "<h1 id=\"valine-配置\"> valine 配置</h1>\n<h2 id=\"appid\"> appId</h2>\n<ul>\n<li>类型: <code>string</code></li>\n<li>必填: 是</li>\n</ul>\n<p>填入 LeanCloud 中应用的 APP ID</p>\n<h2 id=\"appkey\"> appKey</h2>\n<ul>\n<li>类型: <code>string</code></li>\n<li>必填: 是</li>\n</ul>\n<p>填入 LeanCloud 中应用的 APP Key</p>\n<h2 id=\"comment\"> comment</h2>\n<ul>\n<li>类型: <code>boolean</code></li>\n<li>默认值: <code>true</code></li>\n</ul>\n<p>留言功能</p>\n<h2 id=\"visitor\"> visitor</h2>\n<ul>\n<li>类型: <code>boolean</code></li>\n<li>默认值: <code>true</code></li>\n</ul>\n<p>文章访问量统计功能</p>\n<h2 id=\"pagesize\"> pageSize</h2>\n<ul>\n<li>类型: <code>number</code></li>\n<li>默认值: <code>10</code></li>\n</ul>\n<p>评论列表分页，每页条数</p>\n<h2 id=\"recordip\"> recordIP</h2>\n<ul>\n<li>类型: <code>boolean</code></li>\n<li>默认值: <code>false</code></li>\n</ul>\n<p>是否记录评论者 IP</p>\n<h2 id=\"更多-valine-配置项\"> 更多 Valine 配置项</h2>\n<ul>\n<li>\n<p><strong>placeholder</strong></p>\n<ul>\n<li>类型: <code>string</code></li>\n<li>默认值: <code>'请留言'</code></li>\n</ul>\n<p>评论框的 placeholder</p>\n</li>\n<li>\n<p><strong>meta</strong></p>\n<ul>\n<li>类型: <code>string[]</code></li>\n<li>默认值: <code>['nick','mail','link']</code></li>\n</ul>\n</li>\n</ul>\n<p>评论者相关属性</p>\n<ul>\n<li>\n<p><strong>requiredFields</strong></p>\n<ul>\n<li>类型: <code>string[]</code></li>\n<li>默认值: <code>['nick']</code></li>\n</ul>\n</li>\n</ul>\n<p>设置必填项</p>\n<ul>\n<li>\n<p><strong>enableQQ</strong></p>\n<ul>\n<li>类型: <code>boolean</code></li>\n<li>默认值: <code>true</code></li>\n</ul>\n</li>\n</ul>\n<p>是否启用昵称框自动获取 QQ 昵称和 QQ 头像</p>\n<ul>\n<li>\n<p><strong>avatar</strong></p>\n<ul>\n<li>类型: <code>string</code></li>\n<li>默认值: <code>'retro'</code></li>\n</ul>\n<p>Gravatar 头像展示方式。</p>\n<div><p>可选值</p>\n<ul>\n<li>''(空字符串): Gravatar 官方图形</li>\n<li><code>mp</code>: 神秘人(一个灰白头像)</li>\n<li><code>identicon</code>: 抽象几何图形</li>\n<li><code>monsterid</code>: 小怪物</li>\n<li><code>wavatar</code></li>\n<li><code>retro</code></li>\n<li><code>robohash</code></li>\n<li><code>hide</code></li>\n</ul>\n<p>具体相关说明详见 <a href=\"https://valine.js.org/avatar.html\" target=\"_blank\" rel=\"noopener noreferrer\">Valine 头像配置</a></p>\n<p>你可以引导用户到 <a href=\"http://cn.gravatar.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Gravatar</a> 去设置自己的头像。</p>\n</div>\n</li>\n<li>\n<p><strong>emojiCDN</strong></p>\n<ul>\n<li>类型: <code>string</code></li>\n<li>必填: 否</li>\n</ul>\n<p>设置表情包 CDN，请参考 <a href=\"https://valine.js.org/emoji.html\" target=\"_blank\" rel=\"noopener noreferrer\">Valine 自定义表情包</a></p>\n</li>\n<li>\n<p><strong>emojiMaps</strong></p>\n<ul>\n<li>类型: <code>Object</code></li>\n<li>默认值: <code>null</code></li>\n</ul>\n<p>设置表情包映射，请参考 <a href=\"https://valine.js.org/emoji.html\" target=\"_blank\" rel=\"noopener noreferrer\">Valine 自定义表情包</a></p>\n</li>\n</ul>\n",
-      "date_published": "2020-10-13T05:36:44.000Z",
-      "date_modified": "2021-04-25T07:22:33.000Z",
+      "title": "Home",
+      "url": "https://vuepress-theme-hope.github.io/comment/",
+      "id": "https://vuepress-theme-hope.github.io/comment/",
+      "content_html": "<h2 id=\"install\"> Install</h2>\n<CodeGroup>\n<CodeGroupItem title=\"yarn\">\n<div><pre><code><span>yarn</span> <span>add</span> -D @mr-hope/vuepress-plugin-comment\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n<CodeGroupItem title=\"npm\">\n<div><pre><code><span>npm</span> i -D @mr-hope/vuepress-plugin-comment\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n</CodeGroup>\n<h3 id=\"usage\"> Usage</h3>\n<div><pre><code><span>// .vuepress/config.js</span>\nmodule<span>.</span>exports <span>=</span> <span>{</span>\n  plugins<span>:</span> <span>[</span>\n    <span>[</span>\n      <span>\"@mr-hope/comment\"</span><span>,</span>\n      <span>{</span>\n        <span>// your options</span>\n      <span>}</span><span>,</span>\n    <span>]</span><span>,</span>\n  <span>]</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre>\n<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div>",
+      "date_published": "2020-01-07T06:44:41.000Z",
+      "date_modified": "2021-02-24T15:41:50.000Z",
       "authors": [
         {
           "name": "Mr.Hope"
@@ -211,6 +197,20 @@
       "content_html": "<h2 id=\"type\"> type</h2>\n<ul>\n<li>类型: <code>'valine' | 'vssue' | 'disable'</code></li>\n<li>必填: 是</li>\n</ul>\n<p>使用 Valine 还是 Vssue。设置为 <code>'disabled'</code> 会禁用评论功能，仅提供页面信息功能。</p>\n<h2 id=\"author\"> author</h2>\n<ul>\n<li>类型: <code>string</code></li>\n<li>必填: 否</li>\n</ul>\n<p>文章的默认作者</p>\n<h2 id=\"pageinfo\"> pageInfo</h2>\n<ul>\n<li>类型: <code>string[] | false</code></li>\n<li>默认值: <code>['author', 'visitor', 'time', 'category', 'tag', 'reading-time']</code></li>\n</ul>\n<p>文章信息，可以填入数组，数组的顺序是各条目显示的顺序。填入 <code>false</code> 使其被禁用。</p>\n<p>可以填入的条目如下:</p>\n<ul>\n<li><code>'author'</code>: 作者</li>\n<li><code>'time'</code>: 写作日期</li>\n<li><code>'category'</code>: 分类</li>\n<li><code>'tag'</code>: 标签</li>\n<li><code>'reading-time'</code>: 预计阅读时间</li>\n<li><code>'word'</code>: 字数</li>\n<li><code>'visitor'</code>: 访问量</li>\n</ul>\n<h2 id=\"comment\"> comment</h2>\n<ul>\n<li>类型: <code>boolean</code></li>\n<li>默认: <code>true</code></li>\n</ul>\n<p>是否默认启用评论功能。</p>\n<h2 id=\"wordperminute\"> wordPerminute</h2>\n<ul>\n<li>类型: <code>number</code></li>\n<li>默认: <code>300</code></li>\n</ul>\n<p>每分钟阅读的字数。</p>\n<h2 id=\"valine-配置\"> Valine 配置</h2>\n<ul>\n<li><a href=\"./valine.html\">点击查看</a></li>\n</ul>\n<h2 id=\"vssue-配置\"> Vssue 配置</h2>\n<ul>\n<li><a href=\"./vssue.html\">点击查看</a></li>\n</ul>\n<h2 id=\"页面配置\"> 页面配置</h2>\n<ul>\n<li><a href=\"./frontmatter.html\">点击查看</a></li>\n</ul>\n",
       "date_published": "2020-10-13T05:36:44.000Z",
       "date_modified": "2021-04-07T05:20:59.000Z",
+      "authors": [
+        {
+          "name": "Mr.Hope"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "title": "valine 配置",
+      "url": "https://vuepress-theme-hope.github.io/comment/zh/config/valine/",
+      "id": "https://vuepress-theme-hope.github.io/comment/zh/config/valine/",
+      "content_html": "<h1 id=\"valine-配置\"> valine 配置</h1>\n<h2 id=\"appid\"> appId</h2>\n<ul>\n<li>类型: <code>string</code></li>\n<li>必填: 是</li>\n</ul>\n<p>填入 LeanCloud 中应用的 APP ID</p>\n<h2 id=\"appkey\"> appKey</h2>\n<ul>\n<li>类型: <code>string</code></li>\n<li>必填: 是</li>\n</ul>\n<p>填入 LeanCloud 中应用的 APP Key</p>\n<h2 id=\"comment\"> comment</h2>\n<ul>\n<li>类型: <code>boolean</code></li>\n<li>默认值: <code>true</code></li>\n</ul>\n<p>留言功能</p>\n<h2 id=\"visitor\"> visitor</h2>\n<ul>\n<li>类型: <code>boolean</code></li>\n<li>默认值: <code>true</code></li>\n</ul>\n<p>文章访问量统计功能</p>\n<h2 id=\"pagesize\"> pageSize</h2>\n<ul>\n<li>类型: <code>number</code></li>\n<li>默认值: <code>10</code></li>\n</ul>\n<p>评论列表分页，每页条数</p>\n<h2 id=\"recordip\"> recordIP</h2>\n<ul>\n<li>类型: <code>boolean</code></li>\n<li>默认值: <code>false</code></li>\n</ul>\n<p>是否记录评论者 IP</p>\n<h2 id=\"更多-valine-配置项\"> 更多 Valine 配置项</h2>\n<ul>\n<li>\n<p><strong>placeholder</strong></p>\n<ul>\n<li>类型: <code>string</code></li>\n<li>默认值: <code>'请留言'</code></li>\n</ul>\n<p>评论框的 placeholder</p>\n</li>\n<li>\n<p><strong>meta</strong></p>\n<ul>\n<li>类型: <code>string[]</code></li>\n<li>默认值: <code>['nick','mail','link']</code></li>\n</ul>\n</li>\n</ul>\n<p>评论者相关属性</p>\n<ul>\n<li>\n<p><strong>requiredFields</strong></p>\n<ul>\n<li>类型: <code>string[]</code></li>\n<li>默认值: <code>['nick']</code></li>\n</ul>\n</li>\n</ul>\n<p>设置必填项</p>\n<ul>\n<li>\n<p><strong>enableQQ</strong></p>\n<ul>\n<li>类型: <code>boolean</code></li>\n<li>默认值: <code>true</code></li>\n</ul>\n</li>\n</ul>\n<p>是否启用昵称框自动获取 QQ 昵称和 QQ 头像</p>\n<ul>\n<li>\n<p><strong>avatar</strong></p>\n<ul>\n<li>类型: <code>string</code></li>\n<li>默认值: <code>'retro'</code></li>\n</ul>\n<p>Gravatar 头像展示方式。</p>\n<div><p>可选值</p>\n<ul>\n<li>''(空字符串): Gravatar 官方图形</li>\n<li><code>mp</code>: 神秘人(一个灰白头像)</li>\n<li><code>identicon</code>: 抽象几何图形</li>\n<li><code>monsterid</code>: 小怪物</li>\n<li><code>wavatar</code></li>\n<li><code>retro</code></li>\n<li><code>robohash</code></li>\n<li><code>hide</code></li>\n</ul>\n<p>具体相关说明详见 <a href=\"https://valine.js.org/avatar.html\" target=\"_blank\" rel=\"noopener noreferrer\">Valine 头像配置</a></p>\n<p>你可以引导用户到 <a href=\"http://cn.gravatar.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Gravatar</a> 去设置自己的头像。</p>\n</div>\n</li>\n<li>\n<p><strong>emojiCDN</strong></p>\n<ul>\n<li>类型: <code>string</code></li>\n<li>必填: 否</li>\n</ul>\n<p>设置表情包 CDN，请参考 <a href=\"https://valine.js.org/emoji.html\" target=\"_blank\" rel=\"noopener noreferrer\">Valine 自定义表情包</a></p>\n</li>\n<li>\n<p><strong>emojiMaps</strong></p>\n<ul>\n<li>类型: <code>Object</code></li>\n<li>默认值: <code>null</code></li>\n</ul>\n<p>设置表情包映射，请参考 <a href=\"https://valine.js.org/emoji.html\" target=\"_blank\" rel=\"noopener noreferrer\">Valine 自定义表情包</a></p>\n</li>\n</ul>\n",
+      "date_published": "2020-10-13T05:36:44.000Z",
+      "date_modified": "2021-04-25T07:22:33.000Z",
       "authors": [
         {
           "name": "Mr.Hope"

@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/md-enhance/</link>
     <description>Markdown Enhancement for VuePress</description>
     <language>en-US</language>
-    <pubDate>Mon, 26 Apr 2021 08:33:29 GMT</pubDate>
-    <lastBuildDate>Mon, 26 Apr 2021 08:33:29 GMT</lastBuildDate>
+    <pubDate>Mon, 26 Apr 2021 08:44:19 GMT</pubDate>
+    <lastBuildDate>Mon, 26 Apr 2021 08:44:19 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -1395,19 +1395,7 @@ Square : +getMessages() List~string~</span>
 </ul>
 
 <h2 id="auto"> <code>auto</code></h2>
-<i>Not supported content</i><h2 id="black"> <code>black</code></h2>
-<i>Not supported content</i><h2 id="white"> <code>white</code></h2>
-<i>Not supported content</i><h2 id="league"> <code>league</code></h2>
-<i>Not supported content</i><h2 id="beige"> <code>beige</code></h2>
-<i>Not supported content</i><h2 id="sky"> <code>sky</code></h2>
-<i>Not supported content</i><h2 id="night"> <code>night</code></h2>
-<i>Not supported content</i><h2 id="serif"> <code>serif</code></h2>
-<i>Not supported content</i><h2 id="simple"> <code>simple</code></h2>
-<i>Not supported content</i><h2 id="solarized"> <code>solarized</code></h2>
-<i>Not supported content</i><h2 id="blood"> <code>blood</code></h2>
-<i>Not supported content</i><h2 id="moon"> <code>moon</code></h2>
-<i>Not supported content</i>
-]]></content:encoded>
+<i>Not supported content</i>]]></content:encoded>
     </item>
     <item>
       <title>Get Started</title>
@@ -1522,10 +1510,7 @@ Square : +getMessages() List~string~</span>
 <li><a href="./demo.html">View Detail</a></li>
 </ul>
 <h3 id="presentation"> Presentation</h3>
-<i>Not supported content</i><ul>
-<li><a href="./presentation/">View Detail</a></li>
-</ul>
-<hr>
+<i>Not supported content</i><hr>
 <section>
 <ol>
 <li id="footnote1"><p>This is footnote content </p>
@@ -3320,19 +3305,7 @@ Square : +getMessages() List~string~</span>
 </ul>
 
 <h2 id="auto"> <code>auto</code></h2>
-<i>Not supported content</i><h2 id="black"> <code>black</code></h2>
-<i>Not supported content</i><h2 id="white"> <code>white</code></h2>
-<i>Not supported content</i><h2 id="league"> <code>league</code></h2>
-<i>Not supported content</i><h2 id="beige"> <code>beige</code></h2>
-<i>Not supported content</i><h2 id="sky"> <code>sky</code></h2>
-<i>Not supported content</i><h2 id="night"> <code>night</code></h2>
-<i>Not supported content</i><h2 id="serif"> <code>serif</code></h2>
-<i>Not supported content</i><h2 id="simple"> <code>simple</code></h2>
-<i>Not supported content</i><h2 id="solarized"> <code>solarized</code></h2>
-<i>Not supported content</i><h2 id="blood"> <code>blood</code></h2>
-<i>Not supported content</i><h2 id="moon"> <code>moon</code></h2>
-<i>Not supported content</i>
-]]></content:encoded>
+<i>Not supported content</i>]]></content:encoded>
     </item>
     <item>
       <title>快速上手</title>
@@ -3446,10 +3419,7 @@ Square : +getMessages() List~string~</span>
 <li><a href="./demo.html">查看详情</a></li>
 </ul>
 <h3 id="幻灯片"> 幻灯片</h3>
-<i>Not supported content</i><ul>
-<li><a href="./presentation/">查看详情</a></li>
-</ul>
-<hr>
+<i>Not supported content</i><hr>
 <section>
 <ol>
 <li id="footnote1"><p>这是脚注内容 </p>
