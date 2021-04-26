@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/md-enhance/</link>
     <description>Markdown Enhancement for VuePress</description>
     <language>en-US</language>
-    <pubDate>Mon, 26 Apr 2021 06:07:53 GMT</pubDate>
-    <lastBuildDate>Mon, 26 Apr 2021 06:07:53 GMT</lastBuildDate>
+    <pubDate>Mon, 26 Apr 2021 06:59:07 GMT</pubDate>
+    <lastBuildDate>Mon, 26 Apr 2021 06:59:07 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -82,10 +82,10 @@
 <p>Whether to enable <a href="https://mermaid-js.github.io/mermaid/#/" target="_blank" rel="noopener noreferrer">Mermaid</a> support.</p>
 <h2 id="tex"> tex</h2>
 <ul>
-<li>Type: <code>boolean</code></li>
+<li>Type: <code>KatexOptions | boolean</code></li>
 <li>Default: <code>false</code></li>
 </ul>
-<p>Whether to enable <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.89883em;vertical-align:-0.2155em;"></span><span><span>T</span><span style="margin-right:-0.1667em;"></span><span><span><span style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span style="height:3em;"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style="height:0.2155em;"><span></span></span></span></span><span style="margin-right:-0.125em;"></span><span>X</span></span></span></span></span> syntax support.</p>
+<p>Whether to enable <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.89883em;vertical-align:-0.2155em;"></span><span><span>T</span><span style="margin-right:-0.1667em;"></span><span><span><span style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span style="height:3em;"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style="height:0.2155em;"><span></span></span></span></span><span style="margin-right:-0.125em;"></span><span>X</span></span></span></span></span> syntax support. You can pass an object to config <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.89883em;vertical-align:-0.2155em;"></span><span><span>K</span><span style="margin-right:-0.17em;"></span><span><span><span style="height:0.68333em;"><span style="top:-2.904999em;"><span style="height:2.7em;"></span><span><span>A</span></span></span></span></span></span><span style="margin-right:-0.15em;"></span><span><span>T</span><span style="margin-right:-0.1667em;"></span><span><span><span style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span style="height:3em;"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style="height:0.2155em;"><span></span></span></span></span><span style="margin-right:-0.125em;"></span><span>X</span></span></span></span></span></span>.</p>
 <h2 id="flowchart"> flowchart</h2>
 <ul>
 <li>Type: <code>boolean</code></li>
@@ -1991,10 +1991,10 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <p>是否启用 <a href="https://mermaid-js.github.io/mermaid/#/" target="_blank" rel="noopener noreferrer">Mermaid</a> 支持。</p>
 <h2 id="tex"> tex</h2>
 <ul>
-<li>类型: <code>boolean</code></li>
+<li>类型: <code>KatexOptions | boolean</code></li>
 <li>默认值: <code>false</code></li>
 </ul>
-<p>是否启用 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.89883em;vertical-align:-0.2155em;"></span><span><span>T</span><span style="margin-right:-0.1667em;"></span><span><span><span style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span style="height:3em;"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style="height:0.2155em;"><span></span></span></span></span><span style="margin-right:-0.125em;"></span><span>X</span></span></span></span></span> 语法支持。</p>
+<p>是否启用 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.89883em;vertical-align:-0.2155em;"></span><span><span>T</span><span style="margin-right:-0.1667em;"></span><span><span><span style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span style="height:3em;"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style="height:0.2155em;"><span></span></span></span></span><span style="margin-right:-0.125em;"></span><span>X</span></span></span></span></span> 语法支持。你可以传入一个对象作为 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.89883em;vertical-align:-0.2155em;"></span><span><span>K</span><span style="margin-right:-0.17em;"></span><span><span><span style="height:0.68333em;"><span style="top:-2.904999em;"><span style="height:2.7em;"></span><span><span>A</span></span></span></span></span></span><span style="margin-right:-0.15em;"></span><span><span>T</span><span style="margin-right:-0.1667em;"></span><span><span><span style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span style="height:3em;"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style="height:0.2155em;"><span></span></span></span></span><span style="margin-right:-0.125em;"></span><span>X</span></span></span></span></span></span> 的配置选项。</p>
 <h2 id="flowchart"> flowchart</h2>
 <ul>
 <li>类型: <code>boolean</code></li>
