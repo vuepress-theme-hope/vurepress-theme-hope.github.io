@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/md-enhance/</link>
     <description>Markdown Enhancement for VuePress</description>
     <language>en-US</language>
-    <pubDate>Mon, 26 Apr 2021 06:59:07 GMT</pubDate>
-    <lastBuildDate>Mon, 26 Apr 2021 06:59:07 GMT</lastBuildDate>
+    <pubDate>Mon, 26 Apr 2021 08:19:04 GMT</pubDate>
+    <lastBuildDate>Mon, 26 Apr 2021 08:19:04 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -32,18 +32,18 @@
 <p>Also, presentation feature will add a 700KB size chunk (mostly is <code>reveal.js</code>) to your output.</p>
 <p>Please use the options below and enable ONLY the feature you want to use.</p>
 </div>
-<h2 id="align"> align</h2>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>false</code></li>
-</ul>
-<p>Whether to enable custom align.</p>
 <h2 id="linenumbers"> lineNumbers</h2>
 <ul>
 <li>Type: <code>boolean</code></li>
 <li>Default: <code>true</code></li>
 </ul>
 <p>Whether to display the line number to the left of each code block.</p>
+<h2 id="align"> align</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>false</code></li>
+</ul>
+<p>Whether to enable custom align.</p>
 <h2 id="sup"> sup</h2>
 <ul>
 <li>Type: <code>boolean</code></li>
@@ -70,22 +70,37 @@
 <p>Whether to enable mark support.</p>
 <h2 id="tasklist"> tasklist</h2>
 <ul>
-<li>Type: <code>boolean</code></li>
+<li>Type: <code>TaskListOptions | boolean</code></li>
 <li>Default: <code>false</code></li>
 </ul>
-<p>Whether to enable tasklist format support.</p>
+<p>Whether to enable tasklist format support. You can pass an object to config task list.</p>
+<div><pre><code><span>interface</span> <span>TaskListOptions</span> <span>{</span>
+  <span>/**
+   * Whether use `&lt;label>` to wrap text
+   *
+   * @default true
+   */</span>
+  label<span>?</span><span>:</span> <span>boolean</span><span>;</span>
+  <span>/**
+   * Whether place `&lt;label>` after `&lt;input>` or wrap `&lt;input>`
+   *
+   * @default true
+   */</span>
+  labelAfter<span>?</span><span>:</span> <span>boolean</span><span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br></div></div><h2 id="tex"> tex</h2>
+<ul>
+<li>Type: <code>KatexOptions | boolean</code></li>
+<li>Default: <code>false</code></li>
+</ul>
+<p>Whether to enable <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.89883em;vertical-align:-0.2155em;"></span><span><span>T</span><span style="margin-right:-0.1667em;"></span><span><span><span style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span style="height:3em;"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style="height:0.2155em;"><span></span></span></span></span><span style="margin-right:-0.125em;"></span><span>X</span></span></span></span></span> syntax support. You can pass an object to config <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.89883em;vertical-align:-0.2155em;"></span><span><span>K</span><span style="margin-right:-0.17em;"></span><span><span><span style="height:0.68333em;"><span style="top:-2.904999em;"><span style="height:2.7em;"></span><span><span>A</span></span></span></span></span></span><span style="margin-right:-0.15em;"></span><span><span>T</span><span style="margin-right:-0.1667em;"></span><span><span><span style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span style="height:3em;"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style="height:0.2155em;"><span></span></span></span></span><span style="margin-right:-0.125em;"></span><span>X</span></span></span></span></span></span>.</p>
 <h2 id="mermaid"> mermaid</h2>
 <ul>
 <li>Type: <code>boolean</code></li>
 <li>Default: <code>false</code></li>
 </ul>
 <p>Whether to enable <a href="https://mermaid-js.github.io/mermaid/#/" target="_blank" rel="noopener noreferrer">Mermaid</a> support.</p>
-<h2 id="tex"> tex</h2>
-<ul>
-<li>Type: <code>KatexOptions | boolean</code></li>
-<li>Default: <code>false</code></li>
-</ul>
-<p>Whether to enable <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.89883em;vertical-align:-0.2155em;"></span><span><span>T</span><span style="margin-right:-0.1667em;"></span><span><span><span style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span style="height:3em;"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style="height:0.2155em;"><span></span></span></span></span><span style="margin-right:-0.125em;"></span><span>X</span></span></span></span></span> syntax support. You can pass an object to config <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.89883em;vertical-align:-0.2155em;"></span><span><span>K</span><span style="margin-right:-0.17em;"></span><span><span><span style="height:0.68333em;"><span style="top:-2.904999em;"><span style="height:2.7em;"></span><span><span>A</span></span></span></span></span></span><span style="margin-right:-0.15em;"></span><span><span>T</span><span style="margin-right:-0.1667em;"></span><span><span><span style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span style="height:3em;"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style="height:0.2155em;"><span></span></span></span></span><span style="margin-right:-0.125em;"></span><span>X</span></span></span></span></span></span>.</p>
 <h2 id="flowchart"> flowchart</h2>
 <ul>
 <li>Type: <code>boolean</code></li>
@@ -1450,10 +1465,10 @@ Square : +getMessages() List~string~</span>
 <h3 id="tasklist"> Tasklist</h3>
 <ul>
 <li>
-<p><input checked="" disabled="" type="checkbox"> Plan A</p>
+<p><input type="checkbox" checked="checked" disabled="disabled" id="task-item-0"><label for="task-item-0"> Plan A</label></p>
 </li>
 <li>
-<p><input disabled="" type="checkbox"> Plan B</p>
+<p><input type="checkbox"  disabled="disabled" id="task-item-1"><label for="task-item-1"> Plan B</label></p>
 </li>
 <li>
 <p><a href="./tasklist.html">View Detail</a></p>
@@ -1587,8 +1602,8 @@ Square : +getMessages() List~string~</span>
 </ul>
 <h2 id="demo"> Demo</h2>
 <ul>
-<li><input disabled="" type="checkbox"> Plan A</li>
-<li><input checked="" disabled="" type="checkbox"> Plan B</li>
+<li><input type="checkbox"  disabled="disabled" id="task-item-0"><label for="task-item-0"> Plan A</label></li>
+<li><input type="checkbox" checked="checked" disabled="disabled" id="task-item-1"><label for="task-item-1"> Plan B</label></li>
 </ul>
 <div><pre><code><span>-</span> [ ] Plan A
 <span>-</span> [x] Plan B
@@ -1941,18 +1956,18 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <p>同样，幻灯片演示功能将在输出中添加 700KB 大小的代码 (主要是 <code>reveal.js</code>)。</p>
 <p>因此，请使用下面的选项，仅启用需要的功能。</p>
 </div>
-<h2 id="align"> align</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>是否启用自定义对齐格式支持。</p>
 <h2 id="linenumbers"> lineNumbers</h2>
 <ul>
 <li>类型: <code>boolean</code></li>
 <li>默认值: <code>true</code></li>
 </ul>
 <p>是否在每个代码块的左侧显示行号。</p>
+<h2 id="align"> align</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否启用自定义对齐格式支持。</p>
 <h2 id="sup"> sup</h2>
 <ul>
 <li>类型: <code>boolean</code></li>
@@ -1979,22 +1994,37 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <p>是否启用标记格式支持。</p>
 <h2 id="tasklist"> tasklist</h2>
 <ul>
-<li>类型: <code>boolean</code></li>
+<li>类型: <code>TaskListOptions | boolean</code></li>
 <li>默认值: <code>false</code></li>
 </ul>
-<p>是否启用任务列表格式支持。</p>
+<p>是否启用任务列表格式支持。你可以传入一个对象作为任务列表的配置选项。</p>
+<div><pre><code><span>interface</span> <span>TaskListOptions</span> <span>{</span>
+  <span>/**
+   * 是否使用 `&lt;label>` 来包裹文字
+   *
+   * @default true
+   */</span>
+  label<span>?</span><span>:</span> <span>boolean</span><span>;</span>
+  <span>/**
+   * 是否将 `&lt;label>` 放置在 `&lt;input>` 后还是包裹住 `&lt;input>`
+   *
+   * @default true
+   */</span>
+  labelAfter<span>?</span><span>:</span> <span>boolean</span><span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br></div></div><h2 id="tex"> tex</h2>
+<ul>
+<li>类型: <code>KatexOptions | boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否启用 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.89883em;vertical-align:-0.2155em;"></span><span><span>T</span><span style="margin-right:-0.1667em;"></span><span><span><span style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span style="height:3em;"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style="height:0.2155em;"><span></span></span></span></span><span style="margin-right:-0.125em;"></span><span>X</span></span></span></span></span> 语法支持。你可以传入一个对象作为 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.89883em;vertical-align:-0.2155em;"></span><span><span>K</span><span style="margin-right:-0.17em;"></span><span><span><span style="height:0.68333em;"><span style="top:-2.904999em;"><span style="height:2.7em;"></span><span><span>A</span></span></span></span></span></span><span style="margin-right:-0.15em;"></span><span><span>T</span><span style="margin-right:-0.1667em;"></span><span><span><span style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span style="height:3em;"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style="height:0.2155em;"><span></span></span></span></span><span style="margin-right:-0.125em;"></span><span>X</span></span></span></span></span></span> 的配置选项。</p>
 <h2 id="mermaid"> mermaid</h2>
 <ul>
 <li>类型: <code>boolean</code></li>
 <li>默认值: <code>false</code></li>
 </ul>
 <p>是否启用 <a href="https://mermaid-js.github.io/mermaid/#/" target="_blank" rel="noopener noreferrer">Mermaid</a> 支持。</p>
-<h2 id="tex"> tex</h2>
-<ul>
-<li>类型: <code>KatexOptions | boolean</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>是否启用 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.89883em;vertical-align:-0.2155em;"></span><span><span>T</span><span style="margin-right:-0.1667em;"></span><span><span><span style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span style="height:3em;"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style="height:0.2155em;"><span></span></span></span></span><span style="margin-right:-0.125em;"></span><span>X</span></span></span></span></span> 语法支持。你可以传入一个对象作为 <span><span><i>Not supported content</i></span><span aria-hidden="true"><span><span style="height:0.89883em;vertical-align:-0.2155em;"></span><span><span>K</span><span style="margin-right:-0.17em;"></span><span><span><span style="height:0.68333em;"><span style="top:-2.904999em;"><span style="height:2.7em;"></span><span><span>A</span></span></span></span></span></span><span style="margin-right:-0.15em;"></span><span><span>T</span><span style="margin-right:-0.1667em;"></span><span><span><span style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span style="height:3em;"></span><span><span>E</span></span></span></span><span>​</span></span><span><span style="height:0.2155em;"><span></span></span></span></span><span style="margin-right:-0.125em;"></span><span>X</span></span></span></span></span></span> 的配置选项。</p>
 <h2 id="flowchart"> flowchart</h2>
 <ul>
 <li>类型: <code>boolean</code></li>
@@ -3359,10 +3389,10 @@ Square : +getMessages() List~string~</span>
 <h3 id="任务列表"> 任务列表</h3>
 <ul>
 <li>
-<p><input checked="" disabled="" type="checkbox"> 计划 1</p>
+<p><input type="checkbox" checked="checked" disabled="disabled" id="task-item-0"><label for="task-item-0"> 计划 1</label></p>
 </li>
 <li>
-<p><input disabled="" type="checkbox"> 计划 2</p>
+<p><input type="checkbox"  disabled="disabled" id="task-item-1"><label for="task-item-1"> 计划 2</label></p>
 </li>
 <li>
 <p><a href="./tasklist.html">查看详情</a></p>
@@ -3496,8 +3526,8 @@ Square : +getMessages() List~string~</span>
 </ul>
 <h2 id="案例"> 案例</h2>
 <ul>
-<li><input disabled="" type="checkbox"> Plan A</li>
-<li><input checked="" disabled="" type="checkbox"> Plan B</li>
+<li><input type="checkbox"  disabled="disabled" id="task-item-0"><label for="task-item-0"> Plan A</label></li>
+<li><input type="checkbox" checked="checked" disabled="disabled" id="task-item-1"><label for="task-item-1"> Plan B</label></li>
 </ul>
 <div><pre><code><span>-</span> [ ] Plan A
 <span>-</span> [x] Plan B
