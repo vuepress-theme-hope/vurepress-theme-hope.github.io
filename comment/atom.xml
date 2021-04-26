@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-04-26T08:44:19.080Z</updated>
+  <updated>2021-04-26T09:11:51.020Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/comment/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/comment/"/>
@@ -636,6 +636,59 @@ And if you already have vue-i18n in your project, it will not affect Vssue.</p>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
+    <title type="html">GitLab Application</title>
+    <id>https://vuepress-theme-hope.github.io/comment/guide/gitlab/</id>
+    <link href="https://vuepress-theme-hope.github.io/comment/guide/gitlab/"/>
+    <updated>2021-01-29T07:25:40.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="gitlab-application"> GitLab Application</h1>
+<blockquote>
+<p>See <a href="https://docs.gitlab.com/ce/integration/oauth_provider.html#adding-an-application-through-the-profile" target="_blank" rel="noopener noreferrer">Gitlab official docs</a> for reference.
+Vssue can also work with self-hosted GitLab. Set the <code>baseURL</code> options to your Gitlab URL. See <a href="./../options/#baseurl">Options Reference - baseURL</a></p>
+</blockquote>
+<h2 id="create-a-new-application"> Create a new Application</h2>
+<ul>
+<li>Go to <a href="https://gitlab.com/profile/applications" target="_blank" rel="noopener noreferrer">Settings - Applications</a></li>
+</ul>
+<p><img src="./assets/oauth-app-gitlab-01.png" alt="Set up OAuth App - Gitlab 01">
+<img src="./assets/oauth-app-gitlab-02.png" alt="Set up OAuth App - Gitlab 02"></p>
+<ul>
+<li>Set the <code>Redirect URI</code> to your site URL (Here we take <code>localhost:8080</code> for example)</li>
+<li>Select <code>api</code> scope</li>
+</ul>
+<p><img src="./assets/oauth-app-gitlab-03.png" alt="Set up OAuth App - Gitlab 03"></p>
+<h2 id="get-the-client-id"> Get the Client ID</h2>
+<p>Then you’ve created a new Application, and here is your <strong>Application ID</strong> (<code>Client ID</code>).</p>
+<p><img src="./assets/oauth-app-gitlab-04.png" alt="Set up OAuth App - Gitlab 04"></p>
+<h2 id="config-and-start-your-vssue"> Config and start your Vssue</h2>
+<p>Copy the <code>Client ID</code>, and set <code>owner</code> and <code>repo</code>.</p>
+<blockquote>
+<p>The URL pattern of gitlab repo is <code>https://gitlab.com/${owner}/${repo}</code></p>
+</blockquote>
+<p>Here we take <code>https://gitlab.com/meteorlxy/vssue-demo</code> for example, and set the <code>title</code> of issue to <code>Vssue Demo</code>.</p>
+<p>Then run <code>anywhere -h localhost 8080</code> to serve the <code>index.html</code> on <code>localhost:8080</code>.</p>
+<p><img src="./assets/oauth-app-gitlab-05.png" alt="Set up OAuth App - Gitlab 05"></p>
+<h2 id="try-out-vssue-locally"> Try out Vssue locally</h2>
+<p>Vssue has already run here. Click <code>Login</code> to login with Gitlab account.</p>
+<p><img src="./assets/oauth-app-gitlab-06.png" alt="Set up OAuth App - Gitlab 06"></p>
+<p>Redirect to GitLab Authorization page. Click <code>Authorize</code> to login.</p>
+<p><img src="./assets/oauth-app-gitlab-07.png" alt="Set up OAuth App - Gitlab 07"></p>
+<p>Leave a comment on this page ~</p>
+<p><img src="./assets/oauth-app-gitlab-08.png" alt="Set up OAuth App - Gitlab 08">
+<img src="./assets/oauth-app-gitlab-09.png" alt="Set up OAuth App - Gitlab 09"></p>
+<div><p>Tips</p>
+<p>You can go to the repository <a href="https://gitlab.com/meteorlxy/vssue-demo" target="_blank" rel="noopener noreferrer">meteorlxy/vssue-demo</a> to get the demo code. Check the <a href="https://gitlab.com/meteorlxy/vssue-demo/issues/1" target="_blank" rel="noopener noreferrer">#1 issue</a> of that repository to see what happened.</p>
+</div>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-01-07T06:44:41.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
     <title type="html">GitHub OAuth App</title>
     <id>https://vuepress-theme-hope.github.io/comment/guide/github/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/guide/github/"/>
@@ -679,59 +732,6 @@ And if you already have vue-i18n in your project, it will not affect Vssue.</p>
 <p><img src="./assets/oauth-app-github-10.png" alt="Set up OAuth App - GitHub 10"></p>
 <div><p>Tips</p>
 <p>You can go to the repository <a href="https://github.com/meteorlxy/vssue-demo" target="_blank" rel="noopener noreferrer">meteorlxy/vssue-demo</a> to get the demo code. Check the <a href="https://github.com/meteorlxy/vssue-demo/issues/1" target="_blank" rel="noopener noreferrer">#1 issue</a> of that repository to see what happened.</p>
-</div>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-01-07T06:44:41.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">GitLab Application</title>
-    <id>https://vuepress-theme-hope.github.io/comment/guide/gitlab/</id>
-    <link href="https://vuepress-theme-hope.github.io/comment/guide/gitlab/"/>
-    <updated>2021-01-29T07:25:40.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="gitlab-application"> GitLab Application</h1>
-<blockquote>
-<p>See <a href="https://docs.gitlab.com/ce/integration/oauth_provider.html#adding-an-application-through-the-profile" target="_blank" rel="noopener noreferrer">Gitlab official docs</a> for reference.
-Vssue can also work with self-hosted GitLab. Set the <code>baseURL</code> options to your Gitlab URL. See <a href="./../options/#baseurl">Options Reference - baseURL</a></p>
-</blockquote>
-<h2 id="create-a-new-application"> Create a new Application</h2>
-<ul>
-<li>Go to <a href="https://gitlab.com/profile/applications" target="_blank" rel="noopener noreferrer">Settings - Applications</a></li>
-</ul>
-<p><img src="./assets/oauth-app-gitlab-01.png" alt="Set up OAuth App - Gitlab 01">
-<img src="./assets/oauth-app-gitlab-02.png" alt="Set up OAuth App - Gitlab 02"></p>
-<ul>
-<li>Set the <code>Redirect URI</code> to your site URL (Here we take <code>localhost:8080</code> for example)</li>
-<li>Select <code>api</code> scope</li>
-</ul>
-<p><img src="./assets/oauth-app-gitlab-03.png" alt="Set up OAuth App - Gitlab 03"></p>
-<h2 id="get-the-client-id"> Get the Client ID</h2>
-<p>Then you’ve created a new Application, and here is your <strong>Application ID</strong> (<code>Client ID</code>).</p>
-<p><img src="./assets/oauth-app-gitlab-04.png" alt="Set up OAuth App - Gitlab 04"></p>
-<h2 id="config-and-start-your-vssue"> Config and start your Vssue</h2>
-<p>Copy the <code>Client ID</code>, and set <code>owner</code> and <code>repo</code>.</p>
-<blockquote>
-<p>The URL pattern of gitlab repo is <code>https://gitlab.com/${owner}/${repo}</code></p>
-</blockquote>
-<p>Here we take <code>https://gitlab.com/meteorlxy/vssue-demo</code> for example, and set the <code>title</code> of issue to <code>Vssue Demo</code>.</p>
-<p>Then run <code>anywhere -h localhost 8080</code> to serve the <code>index.html</code> on <code>localhost:8080</code>.</p>
-<p><img src="./assets/oauth-app-gitlab-05.png" alt="Set up OAuth App - Gitlab 05"></p>
-<h2 id="try-out-vssue-locally"> Try out Vssue locally</h2>
-<p>Vssue has already run here. Click <code>Login</code> to login with Gitlab account.</p>
-<p><img src="./assets/oauth-app-gitlab-06.png" alt="Set up OAuth App - Gitlab 06"></p>
-<p>Redirect to GitLab Authorization page. Click <code>Authorize</code> to login.</p>
-<p><img src="./assets/oauth-app-gitlab-07.png" alt="Set up OAuth App - Gitlab 07"></p>
-<p>Leave a comment on this page ~</p>
-<p><img src="./assets/oauth-app-gitlab-08.png" alt="Set up OAuth App - Gitlab 08">
-<img src="./assets/oauth-app-gitlab-09.png" alt="Set up OAuth App - Gitlab 09"></p>
-<div><p>Tips</p>
-<p>You can go to the repository <a href="https://gitlab.com/meteorlxy/vssue-demo" target="_blank" rel="noopener noreferrer">meteorlxy/vssue-demo</a> to get the demo code. Check the <a href="https://gitlab.com/meteorlxy/vssue-demo/issues/1" target="_blank" rel="noopener noreferrer">#1 issue</a> of that repository to see what happened.</p>
 </div>
 ]]></content>
     <author>
@@ -1677,62 +1677,6 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
-    <title type="html">BitBucket OAuth Consumer</title>
-    <id>https://vuepress-theme-hope.github.io/comment/zh/guide/bitbucket/</id>
-    <link href="https://vuepress-theme-hope.github.io/comment/zh/guide/bitbucket/"/>
-    <updated>2021-01-29T07:25:40.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="bitbucket-oauth-consumer"> BitBucket OAuth Consumer</h1>
-<h2 id="创建一个新的-oauth-consumer"> 创建一个新的 OAuth Consumer</h2>
-<ul>
-<li>前往 <strong>Bitbucket settings - OAuth</strong></li>
-<li>点击 <strong>Add consumer</strong></li>
-</ul>
-<p><img src="./assets/oauth-app-bitbucket-01.png" alt="配置 OAuth App - Bitbucket 01">
-<img src="./assets/oauth-app-bitbucket-02.png" alt="配置 OAuth App - Bitbucket 02">
-<img src="./assets/oauth-app-bitbucket-03.png" alt="配置 OAuth App - Bitbucket 03"></p>
-<ul>
-<li>将 <code>Callback URL</code> 设置为你的网站 URL (这里我们用 <code>localhost:8080</code> 作为示例)</li>
-<li>取消选择 <code>This is a private consumer</code></li>
-<li>勾选 <code>Account - Read</code> 和 <code>Issues - Write</code> 权限</li>
-</ul>
-<p><img src="./assets/oauth-app-bitbucket-04.png" alt="配置 OAuth App - Bitbucket 04">
-<img src="./assets/oauth-app-bitbucket-05.png" alt="配置 OAuth App - Bitbucket 05"></p>
-<h2 id="获取-client-id"> 获取 Client ID</h2>
-<p>现在你已经创建了一个新的 OAuth Consumer，并得到了相应的 <strong>Key</strong> (<code>Client ID</code>).</p>
-<p><img src="./assets/oauth-app-bitbucket-06.png" alt="配置 OAuth App - Bitbucket 06"></p>
-<h2 id="配置并启动你的-vssue"> 配置并启动你的 Vssue</h2>
-<p>复制 <code>Client ID</code>，并设置 <code>owner</code> 和 <code>repo</code>。</p>
-<blockquote>
-<p>Bitbucket repository 的 URL 模式为 <code>https://bitbucket.org/${owner}/${repo}</code></p>
-</blockquote>
-<p>这里我们以 <code>https://bitbucket.org/meteorlxy/vssue-demo</code> 为例，并把 issue 的 <code>title</code> 设置为 <code>Vssue Demo</code>。</p>
-<p>然后运行 <code>anywhere -h localhost 8080</code>，在 <code>localhost:8080</code> 监听一个 http server 并返回 <code>index.html</code>。</p>
-<p><img src="./assets/oauth-app-bitbucket-07.png" alt="配置 OAuth App - Bitbucket 07"></p>
-<h2 id="在本地尝试-vssue"> 在本地尝试 Vssue</h2>
-<p>Vssue 已经成功运行。点击 <code>Login</code> 使用 Bitbucket 帐号登录。</p>
-<p><img src="./assets/oauth-app-bitbucket-08.png" alt="配置 OAuth App - Bitbucket 08"></p>
-<p>重定向到 Bitbucket 授权页面。点击 <code>Grant access</code> 来登录。</p>
-<p><img src="./assets/oauth-app-bitbucket-09.png" alt="配置 OAuth App - Bitbucket 09">
-<img src="./assets/oauth-app-bitbucket-10.png" alt="配置 OAuth App - Bitbucket 10"></p>
-<p>如果出现加载评论失败，你需要确认你的仓库是否开启了 <strong>Issue Tracker</strong> 功能。</p>
-<p><img src="./assets/oauth-app-bitbucket-11.png" alt="配置 OAuth App - Bitbucket 11"></p>
-<p>在当前页面写下评论吧 ~</p>
-<p><img src="./assets/oauth-app-bitbucket-12.png" alt="配置 OAuth App - Bitbucket 12">
-<img src="./assets/oauth-app-bitbucket-13.png" alt="配置 OAuth App - Bitbucket 13"></p>
-<div><p>Tips</p>
-<p>你可以前往 <a href="https://bitbucket.org/meteorlxy/vssue-demo" target="_blank" rel="noopener noreferrer">meteorlxy/vssue-demo</a> 来获取 demo 代码。前往该仓库的 <a href="https://bitbucket.org/meteorlxy/vssue-demo/issues/1" target="_blank" rel="noopener noreferrer">#1 issue</a> 看看发生了什么。</p>
-</div>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-10-13T05:36:44.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
     <title type="html">Gitee 第三方应用</title>
     <id>https://vuepress-theme-hope.github.io/comment/zh/guide/gitee/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/zh/guide/gitee/"/>
@@ -1830,6 +1774,62 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <p><img src="./assets/oauth-app-github-10.png" alt="配置 OAuth App - GitHub 10"></p>
 <div><p>Tips</p>
 <p>你可以前往 <a href="https://github.com/meteorlxy/vssue-demo" target="_blank" rel="noopener noreferrer">meteorlxy/vssue-demo</a> 来获取 demo 代码。前往该仓库的 <a href="https://github.com/meteorlxy/vssue-demo/issues/1" target="_blank" rel="noopener noreferrer">#1 issue</a> 看看发生了什么。</p>
+</div>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-10-13T05:36:44.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">BitBucket OAuth Consumer</title>
+    <id>https://vuepress-theme-hope.github.io/comment/zh/guide/bitbucket/</id>
+    <link href="https://vuepress-theme-hope.github.io/comment/zh/guide/bitbucket/"/>
+    <updated>2021-01-29T07:25:40.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="bitbucket-oauth-consumer"> BitBucket OAuth Consumer</h1>
+<h2 id="创建一个新的-oauth-consumer"> 创建一个新的 OAuth Consumer</h2>
+<ul>
+<li>前往 <strong>Bitbucket settings - OAuth</strong></li>
+<li>点击 <strong>Add consumer</strong></li>
+</ul>
+<p><img src="./assets/oauth-app-bitbucket-01.png" alt="配置 OAuth App - Bitbucket 01">
+<img src="./assets/oauth-app-bitbucket-02.png" alt="配置 OAuth App - Bitbucket 02">
+<img src="./assets/oauth-app-bitbucket-03.png" alt="配置 OAuth App - Bitbucket 03"></p>
+<ul>
+<li>将 <code>Callback URL</code> 设置为你的网站 URL (这里我们用 <code>localhost:8080</code> 作为示例)</li>
+<li>取消选择 <code>This is a private consumer</code></li>
+<li>勾选 <code>Account - Read</code> 和 <code>Issues - Write</code> 权限</li>
+</ul>
+<p><img src="./assets/oauth-app-bitbucket-04.png" alt="配置 OAuth App - Bitbucket 04">
+<img src="./assets/oauth-app-bitbucket-05.png" alt="配置 OAuth App - Bitbucket 05"></p>
+<h2 id="获取-client-id"> 获取 Client ID</h2>
+<p>现在你已经创建了一个新的 OAuth Consumer，并得到了相应的 <strong>Key</strong> (<code>Client ID</code>).</p>
+<p><img src="./assets/oauth-app-bitbucket-06.png" alt="配置 OAuth App - Bitbucket 06"></p>
+<h2 id="配置并启动你的-vssue"> 配置并启动你的 Vssue</h2>
+<p>复制 <code>Client ID</code>，并设置 <code>owner</code> 和 <code>repo</code>。</p>
+<blockquote>
+<p>Bitbucket repository 的 URL 模式为 <code>https://bitbucket.org/${owner}/${repo}</code></p>
+</blockquote>
+<p>这里我们以 <code>https://bitbucket.org/meteorlxy/vssue-demo</code> 为例，并把 issue 的 <code>title</code> 设置为 <code>Vssue Demo</code>。</p>
+<p>然后运行 <code>anywhere -h localhost 8080</code>，在 <code>localhost:8080</code> 监听一个 http server 并返回 <code>index.html</code>。</p>
+<p><img src="./assets/oauth-app-bitbucket-07.png" alt="配置 OAuth App - Bitbucket 07"></p>
+<h2 id="在本地尝试-vssue"> 在本地尝试 Vssue</h2>
+<p>Vssue 已经成功运行。点击 <code>Login</code> 使用 Bitbucket 帐号登录。</p>
+<p><img src="./assets/oauth-app-bitbucket-08.png" alt="配置 OAuth App - Bitbucket 08"></p>
+<p>重定向到 Bitbucket 授权页面。点击 <code>Grant access</code> 来登录。</p>
+<p><img src="./assets/oauth-app-bitbucket-09.png" alt="配置 OAuth App - Bitbucket 09">
+<img src="./assets/oauth-app-bitbucket-10.png" alt="配置 OAuth App - Bitbucket 10"></p>
+<p>如果出现加载评论失败，你需要确认你的仓库是否开启了 <strong>Issue Tracker</strong> 功能。</p>
+<p><img src="./assets/oauth-app-bitbucket-11.png" alt="配置 OAuth App - Bitbucket 11"></p>
+<p>在当前页面写下评论吧 ~</p>
+<p><img src="./assets/oauth-app-bitbucket-12.png" alt="配置 OAuth App - Bitbucket 12">
+<img src="./assets/oauth-app-bitbucket-13.png" alt="配置 OAuth App - Bitbucket 13"></p>
+<div><p>Tips</p>
+<p>你可以前往 <a href="https://bitbucket.org/meteorlxy/vssue-demo" target="_blank" rel="noopener noreferrer">meteorlxy/vssue-demo</a> 来获取 demo 代码。前往该仓库的 <a href="https://bitbucket.org/meteorlxy/vssue-demo/issues/1" target="_blank" rel="noopener noreferrer">#1 issue</a> 看看发生了什么。</p>
 </div>
 ]]></content>
     <author>
