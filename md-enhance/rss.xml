@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/md-enhance/</link>
     <description>Markdown Enhancement for VuePress</description>
     <language>en-US</language>
-    <pubDate>Tue, 27 Apr 2021 12:48:37 GMT</pubDate>
-    <lastBuildDate>Tue, 27 Apr 2021 12:48:37 GMT</lastBuildDate>
+    <pubDate>Tue, 27 Apr 2021 13:20:25 GMT</pubDate>
+    <lastBuildDate>Tue, 27 Apr 2021 13:20:25 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -487,7 +487,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 </div>
 <h3 id="available-languages"> Available languages</h3>
 <p>You can use different language in your demo block.</p>
-<p>When you set another language, since the plugin is not able to resolve them, demo display will be disabled, and only codes can be seen. And the plugin will provide you a button to open it in CodePen.</p>
+<p>When you set another language, since the plugin is not able to resolve them, demo display will be disabled. The plugin will show the code and provide you a button to open it in CodePen.</p>
 <p>Available HTML languages:</p>
 <ul>
 <li><code>&quot;html&quot;</code> (default)</li>
@@ -1930,7 +1930,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <p>启用全部功能。</p>
 <div><p>Warning</p>
 <p>请仅将此选项用于体验或测试。</p>
-<p>随着时间的增长，<code>vupress-plugin-md-enhance</code> 变得越来越强大。它为 markdown 解析器添加了更多语法，并输出了更多代码。</p>
+<p>随着时间的增长，<code>vupress-plugin-md-enhance</code> 变得越来越强大。它为 Markdown 解析器添加了更多语法，并输出了更多代码。</p>
 <p>启用不需要的功能将增加开发和构建时间。 (<code>markdown-it</code> 必须检查额外的语法)</p>
 <p>同样，幻灯片演示功能将在输出中添加 700KB 大小的代码 (主要是 <code>reveal.js</code>)。</p>
 <p>因此，请使用下面的选项，仅启用需要的功能。</p>

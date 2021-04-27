@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-04-27T12:48:37.644Z</updated>
+  <updated>2021-04-27T13:20:25.059Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/md-enhance/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/md-enhance/"/>
@@ -353,7 +353,7 @@ A custom details container
     <title type="html">Code Demo</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/guide/demo/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/guide/demo/"/>
-    <updated>2021-02-03T11:24:42.000Z</updated>
+    <updated>2021-04-27T13:16:50.000Z</updated>
     <summary type="html"><![CDATA[<p>Let you insert code demos in your Markdown file.</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>Let you insert code demos in your Markdown file.</p>
@@ -503,7 +503,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 </div>
 <h3 id="available-languages"> Available languages</h3>
 <p>You can use different language in your demo block.</p>
-<p>When you set another language, since the plugin is not able to resolve them, demo display will be disabled, and only codes can be seen. And the plugin will provide you a button to open it in CodePen.</p>
+<p>When you set another language, since the plugin is not able to resolve them, demo display will be disabled. The plugin will show the code and provide you a button to open it in CodePen.</p>
 <p>Available HTML languages:</p>
 <ul>
 <li><code>&quot;html&quot;</code> (default)</li>
@@ -1987,7 +1987,7 @@ $$
     <title type="html">Home</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/"/>
-    <updated>2021-04-25T06:54:27.000Z</updated>
+    <updated>2021-04-27T13:16:50.000Z</updated>
     <content type="html"><![CDATA[<h3 id="install"> Install</h3>
 <CodeGroup>
 <CodeGroupItem title="yarn">
@@ -2026,7 +2026,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">配置</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/zh/config/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/config/"/>
-    <updated>2021-04-26T07:53:59.000Z</updated>
+    <updated>2021-04-27T13:16:50.000Z</updated>
     <content type="html"><![CDATA[<p>你可以传递以下选项来启用或禁用一些功能</p>
 <h2 id="enableall"> enableAll</h2>
 <ul>
@@ -2036,7 +2036,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <p>启用全部功能。</p>
 <div><p>Warning</p>
 <p>请仅将此选项用于体验或测试。</p>
-<p>随着时间的增长，<code>vupress-plugin-md-enhance</code> 变得越来越强大。它为 markdown 解析器添加了更多语法，并输出了更多代码。</p>
+<p>随着时间的增长，<code>vupress-plugin-md-enhance</code> 变得越来越强大。它为 Markdown 解析器添加了更多语法，并输出了更多代码。</p>
 <p>启用不需要的功能将增加开发和构建时间。 (<code>markdown-it</code> 必须检查额外的语法)</p>
 <p>同样，幻灯片演示功能将在输出中添加 700KB 大小的代码 (主要是 <code>reveal.js</code>)。</p>
 <p>因此，请使用下面的选项，仅启用需要的功能。</p>

@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-04-27T12:48:37.536Z</updated>
+  <updated>2021-04-27T13:20:24.986Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/comment/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/comment/"/>
@@ -207,7 +207,7 @@
     <title type="html">Vssue Options</title>
     <id>https://vuepress-theme-hope.github.io/comment/config/vssue/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/config/vssue/"/>
-    <updated>2021-01-20T10:14:58.000Z</updated>
+    <updated>2021-04-27T13:16:50.000Z</updated>
     <content type="html"><![CDATA[<h1 id="vssue-options"> Vssue Options</h1>
 <h2 id="platform"> platform</h2>
 <p><code>@vssue/vuepress-plugin-vssue</code> will auto resolve the corresponding API package according to the value of <code>platform</code>:</p>
@@ -415,7 +415,7 @@
 </li>
 <li>
 <p><strong>Details</strong>:</p>
-<p>The default value of how many comments to show per page.</p>
+<p>The default value of comments to show per page.</p>
 </li>
 </ul>
 <h2 id="locale"> locale</h2>

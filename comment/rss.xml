@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/comment/</link>
     <description>Comment Plugin for VuePress</description>
     <language>en-US</language>
-    <pubDate>Tue, 27 Apr 2021 12:48:37 GMT</pubDate>
-    <lastBuildDate>Tue, 27 Apr 2021 12:48:37 GMT</lastBuildDate>
+    <pubDate>Tue, 27 Apr 2021 13:20:24 GMT</pubDate>
+    <lastBuildDate>Tue, 27 Apr 2021 13:20:24 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -399,7 +399,7 @@
 </li>
 <li>
 <p><strong>Details</strong>:</p>
-<p>The default value of how many comments to show per page.</p>
+<p>The default value of comments to show per page.</p>
 </li>
 </ul>
 <h2 id="locale"> locale</h2>
