@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/</link>
     <description>A vuepress theme with tons of features✨</description>
     <language>en-US</language>
-    <pubDate>Tue, 27 Apr 2021 13:28:16 GMT</pubDate>
-    <lastBuildDate>Tue, 27 Apr 2021 13:28:16 GMT</lastBuildDate>
+    <pubDate>Tue, 27 Apr 2021 13:38:12 GMT</pubDate>
+    <lastBuildDate>Tue, 27 Apr 2021 13:38:12 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -2543,8 +2543,47 @@ export default { // Highlighted
       <pubDate>Tue, 27 Apr 2021 10:34:42 GMT</pubDate>
       <content:encoded><![CDATA[<p>This file contain all notable changes of <code>vuepress-theme-hope</code> and its plugins.</p>
 
-<h2 id="v1-15-1"> v1.15.1</h2>
+<h2 id="v1-15-2"> v1.15.2</h2>
 <h3 id="features"> Features</h3>
+<ul>
+<li>
+<p><strong>md-enhance:</strong> add more code blocks for mermaid</p>
+<p>You can now use these code blocks in Markdown:</p>
+<div><pre><code><span><span>```</span><span>sequence</span>
+<span>sequence diagram here</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span><span>```</span><span>class</span>
+<span>class diagram here</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span><span>```</span><span>state</span>
+<span>state diagram here</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span><span>```</span><span>er</span>
+<span>er diagram here</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span><span>```</span><span>gantt</span>
+<span>gantt diagram here</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span><span>```</span><span>pie</span>
+<span>pie diagram here</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span><span>```</span><span>journey</span>
+<span>user journey here</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div></li>
+<li>
+<p><strong>theme:</strong> add <code>anchorDisplay</code> option in frontmatter</p>
+</li>
+</ul>
+<h2 id="v1-15-1"> v1.15.1</h2>
+<h3 id="features-2"> Features</h3>
 <h4 id="new-syntax-for-flowchart"> New syntax for flowchart</h4>
 <div><pre><code><span><span>```</span><span>flowchart</span>
 <span>your flowchart...</span>
@@ -2575,7 +2614,7 @@ export default { // Highlighted
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br></div></div><h4 id="tex"> Tex</h4>
 <p><code>tex</code> in plugin <code>md-enhance</code> is now configurable (as <code>KatexOptions</code>)</p>
 <h2 id="v1-15-0"> v1.15.0</h2>
-<h3 id="features-2"> Features</h3>
+<h3 id="features-3"> Features</h3>
 <h4 id="mermaid"> Mermaid <i>Not supported content</i></h4>
 <p>We now support mermaid in plugin <code>md-enhance</code> with <code>mermaid</code> option.</p>
 <p>You should use</p>
@@ -2589,13 +2628,13 @@ export default { // Highlighted
 <p>You should use <code>- [ ] text</code> or <code>- [x] text</code>
 in your Markdown to generatetask lists.</p>
 <h2 id="v1-14-4"> v1.14.4</h2>
-<h3 id="features-3"> Features</h3>
+<h3 id="features-4"> Features</h3>
 <p>Now large modules will not only be splited in to chunks, they will be outputed only when they are used.</p>
 <p>This will help make better control of bundle size.</p>
 <h3 id="breaking-changes"> Breaking Changes <i>Not supported content</i></h3>
 <p><code>docsBranch</code> in themeConfig is changed from <code>'master'</code> to <code>'main'</code>.</p>
 <h2 id="v1-14-1"> v1.14.1</h2>
-<h3 id="features-4"> Features</h3>
+<h3 id="features-5"> Features</h3>
 <h4 id="new-helpers"> New helpers <i>Not supported content</i></h4>
 <p>We add <code>themeConfig</code>, <code>navbarConfig</code> and <code>sidebarConfig</code> helper in <code>vuepress-theme-hope</code> to provide better validate and autocomplete in config file.</p>
 <h2 id="v1-14-0"> v1.14.0</h2>
@@ -2614,14 +2653,14 @@ in your Markdown to generatetask lists.</p>
 <p>All the <code>baseLang</code> is removed.</p>
 <p>You should specifc root folder language in <code>locales[&quot;/&quot;]</code> using <code>lang</code> key.</p>
 <h2 id="v1-13-4"> v1.13.4</h2>
-<h3 id="features-5"> Features</h3>
+<h3 id="features-6"> Features</h3>
 <ul>
 <li>New <code>heroFullScreen</code> option for blog homepage</li>
 <li>New <code>hideSiteTitleonMobile</code> for navbar</li>
 <li>New &quot;Email&quot; Icon for media icons</li>
 </ul>
 <h2 id="v1-13-3"> v1.13.3</h2>
-<h3 id="features-6"> Features</h3>
+<h3 id="features-7"> Features</h3>
 <p>Add german language support.</p>
 <h2 id="v1-13-0"> v1.13.0</h2>
 <h3 id="breaking-changes-3"> Breaking Changes <i>Not supported content</i></h3>
@@ -2637,14 +2676,14 @@ your flowchart...
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>This change is made to support <a href="https://typora.io/" target="_blank" rel="noopener noreferrer">Typora</a>.</p>
 <h2 id="v1-12-3"> v1.12.3</h2>
-<h3 id="features-7"> Features <i>Not supported content</i></h3>
+<h3 id="features-8"> Features <i>Not supported content</i></h3>
 <p>Add <code>create-vuepress-theme-hope</code> package.</p>
 <p>You can use <code>yarn create vuepress-theme-hope [dir]</code> or <code>npm init vuepress-theme-hope [dir]</code> to create theme template easily.</p>
 <h2 id="v1-12-1"> v1.12.1</h2>
 <h3 id="breaking-changes-4"> Breaking Changes <i>Not supported content</i></h3>
 <p>We change the structure of the theme, so if you are extending this theme, you may need to update your code.</p>
 <h2 id="v1-12-0"> v1.12.0</h2>
-<h3 id="features-8"> Features <i>Not supported content</i></h3>
+<h3 id="features-9"> Features <i>Not supported content</i></h3>
 <p>We remove <code>last-update</code> plugin and add a <code>git</code> plugin (<code>@mr-hope/vuepress-plugin-git</code>). 🎉</p>
 <p><a href="https://vuepress-theme-hope.github.io/git/" target="_blank" rel="noopener noreferrer">Here is the docs</a></p>
 <h2 id="v1-11-1"> v1.11.1</h2>
@@ -2653,7 +2692,7 @@ your flowchart...
 <li><strong>comment</strong>: All the info name in <code>pageInfo</code> is changed from PascalCase to kebab-case. And <code>ReadTime</code> is changed to <code>reading-time</code>.</li>
 </ul>
 <h2 id="v1-11-0"> v1.11.0</h2>
-<h3 id="features-9"> Features</h3>
+<h3 id="features-10"> Features</h3>
 <ul>
 <li><strong>theme</strong>: <code>/star/</code> page is added in blog mode. All the star articles will be listed on this page.</li>
 </ul>
@@ -2662,7 +2701,7 @@ your flowchart...
 <li><strong>components</strong>: Rename <code>&lt;MyBadge&gt;</code> to <code>&lt;Badge&gt;</code> to align <code>@vuepress/theme-default</code>.</li>
 </ul>
 <h2 id="v1-10-0"> v1.10.0</h2>
-<h3 id="features-10"> Features <i>Not supported content</i></h3>
+<h3 id="features-11"> Features <i>Not supported content</i></h3>
 <ul>
 <li>
 <p><strong>components</strong>: <code>&lt;CodeGroup&gt;</code> and <code>&lt;CodeGroupItem&gt;</code> is added.</p>
@@ -2673,12 +2712,12 @@ your flowchart...
 </ul>
 <p>A star page will both appear in article sidebar.</p>
 <h2 id="v1-9-1"> v1.9.1</h2>
-<h3 id="features-11"> Features <i>Not supported content</i></h3>
+<h3 id="features-12"> Features <i>Not supported content</i></h3>
 <ul>
 <li><strong>theme</strong>: <code>blog.roundAvatar</code> is added in themeConfig. (Default: <code>true</code>)</li>
 </ul>
 <h2 id="v1-9-0"> v1.9.0</h2>
-<h3 id="features-12"> Features <i>Not supported content</i></h3>
+<h3 id="features-13"> Features <i>Not supported content</i></h3>
 <p>We add a <a href="https://vuepress-theme-hope.github.io/feed/" target="_blank" rel="noopener noreferrer"><strong>new Feed plugin</strong></a>. 🎉</p>
 <h3 id="breaking-changes-7"> Breaking Changes <i>Not supported content</i></h3>
 <ul>
@@ -2690,17 +2729,17 @@ your flowchart...
 <li><strong>md-enhance</strong>: remove <code>horizontal</code> config for code-demo</li>
 </ul>
 <h2 id="v1-8-0"> v1.8.0</h2>
-<h3 id="features-13"> Features <i>Not supported content</i></h3>
+<h3 id="features-14"> Features <i>Not supported content</i></h3>
 <ul>
 <li><strong>theme</strong>: new <code>namedChunks</code> options in themeConfig</li>
 </ul>
 <h2 id="v1-6-0"> v1.6.0</h2>
-<h3 id="features-14"> Features <i>Not supported content</i></h3>
+<h3 id="features-15"> Features <i>Not supported content</i></h3>
 <ul>
 <li><strong>md-enhance</strong>: <a href="https://vuepress-theme-hope.github.io/guide/markdown/demo/" target="_blank" rel="noopener noreferrer">new Code Demo feature</a> 🎉</li>
 </ul>
 <h2 id="v1-5-4"> v1.5.4</h2>
-<h3 id="features-15"> Features <i>Not supported content</i></h3>
+<h3 id="features-16"> Features <i>Not supported content</i></h3>
 <ul>
 <li>
 <p><strong>md-enhance</strong>: add justify align container</p>
@@ -2713,7 +2752,7 @@ content
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div></li>
 </ul>
 <h2 id="v1-5-0"> v1.5.0</h2>
-<h3 id="features-16"> Features <i>Not supported content</i></h3>
+<h3 id="features-17"> Features <i>Not supported content</i></h3>
 <ul>
 <li>
 <p><strong>last-update</strong>: add <code>timezone</code> option</p>
@@ -2731,12 +2770,12 @@ content
 </li>
 </ul>
 <h2 id="v1-4-7"> v1.4.7</h2>
-<h3 id="features-17"> Features <i>Not supported content</i></h3>
+<h3 id="features-18"> Features <i>Not supported content</i></h3>
 <ul>
 <li><strong>pwa</strong>: add install modal</li>
 </ul>
 <h2 id="v1-4-5"> v1.4.5</h2>
-<h3 id="features-18"> Features <i>Not supported content</i></h3>
+<h3 id="features-19"> Features <i>Not supported content</i></h3>
 <ul>
 <li><strong>pwa</strong>: add <code>maxPicSize</code> option</li>
 <li><strong>seo</strong>: auto generated robots.txt</li>
@@ -2754,17 +2793,17 @@ content
 </li>
 </ul>
 <h2 id="v1-4-1"> v1.4.1</h2>
-<h3 id="features-19"> Features <i>Not supported content</i></h3>
+<h3 id="features-20"> Features <i>Not supported content</i></h3>
 <ul>
 <li><strong>pwa</strong>: add <code>cacheHTML</code> option</li>
 </ul>
 <h2 id="v1-3-0"> v1.3.0</h2>
-<h3 id="features-20"> Features <i>Not supported content</i></h3>
+<h3 id="features-21"> Features <i>Not supported content</i></h3>
 <ul>
 <li><strong>md-enhance</strong>: add presentaion support using reveal.js 🎉</li>
 </ul>
 <h2 id="v1-2-0"> v1.2.0</h2>
-<h3 id="features-21"> Features <i>Not supported content</i></h3>
+<h3 id="features-22"> Features <i>Not supported content</i></h3>
 <p>Add Vietnamese support.</p>
 <h2 id="v1-1-0"> v1.1.0</h2>
 <h3 id="breaking-changes-11"> Breaking Changes <i>Not supported content</i></h3>
@@ -2783,7 +2822,7 @@ content
 </li>
 </ul>
 <h2 id="v1-0-1"> v1.0.1</h2>
-<h3 id="features-22"> Features <i>Not supported content</i></h3>
+<h3 id="features-23"> Features <i>Not supported content</i></h3>
 <ul>
 <li><strong>theme</strong>: add Gitee for MediaLink</li>
 </ul>
@@ -11731,8 +11770,47 @@ export default { // Highlighted
       <pubDate>Tue, 27 Apr 2021 10:34:42 GMT</pubDate>
       <content:encoded><![CDATA[<p>该文件包含 <code>vuepress-theme-hope</code> 及其插件的所有显着更改。</p>
 
-<h2 id="v1-15-1"> v1.15.1</h2>
+<h2 id="v1-15-2"> v1.15.2</h2>
 <h3 id="新功能"> 新功能</h3>
+<ul>
+<li>
+<p><strong>md-enhance:</strong> 为 mermaid 添加更多代码块</p>
+<p>你现在可以在 Markdown 中使用如下代码块:</p>
+<div><pre><code><span><span>```</span><span>sequence</span>
+<span>顺序图表配置</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span><span>```</span><span>class</span>
+<span>类图表配置</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span><span>```</span><span>state</span>
+<span>状态图表配置</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span><span>```</span><span>er</span>
+<span>入口关系图表配置</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span><span>```</span><span>gantt</span>
+<span>甘特图表配置</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span><span>```</span><span>pie</span>
+<span>饼图表配置</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span><span>```</span><span>journey</span>
+<span>用户日志配置</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div></li>
+<li>
+<p><strong>theme:</strong> 页面 frontmatter 新增 <code>anchorDisplay</code> 选项</p>
+</li>
+</ul>
+<h2 id="v1-15-1"> v1.15.1</h2>
+<h3 id="新功能-2"> 新功能</h3>
 <h4 id="流程图的新语法"> 流程图的新语法</h4>
 <p>你可以除 <code>flow</code> 外使用</p>
 <div><pre><code><span><span>```</span><span>flowchart</span>
@@ -11760,7 +11838,7 @@ export default { // Highlighted
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br></div></div><h4 id="tex"> Tex</h4>
 <p>插件 <code>md-enhance</code> 中的 <code>tex</code> 现在是可配置的。 (作为<code>KatexOptions</code>)</p>
 <h2 id="v1-15-0"> v1.15.0</h2>
-<h3 id="新功能-2"> 新功能</h3>
+<h3 id="新功能-3"> 新功能</h3>
 <h4 id="mermaid"> Mermaid <i>Not supported content</i></h4>
 <p>我们通过 <code>mermaid</code> 选项在 <code>md-enhance</code> 插件中支持 mermaid。</p>
 <p>你可以使用:</p>
@@ -11773,13 +11851,13 @@ export default { // Highlighted
 <p>我们通过 <code>tasklist</code> 选项在 <code>md-enhance</code> 插件中支持任务列表。</p>
 <p>您你可以在 Markdown 中使用 <code>- [ ] 文字</code> 或 <code>- [x] 文字</code> 来生成任务列表。</p>
 <h2 id="v1-14-4"> v1.14.4</h2>
-<h3 id="新功能-3"> 新功能</h3>
+<h3 id="新功能-4"> 新功能</h3>
 <p>现在，体积较大的模块不仅会拆分为 chunks，而且只有在它们被使用时才输出到构建内容中。</p>
 <p>这将有助于更好地控制打包体积。</p>
 <h3 id="破坏变更"> 破坏变更 <i>Not supported content</i></h3>
 <p>主题配置中的 <code>docsBranch</code> 从 <code>'master'</code> 更改为<code>'main'</code>。</p>
 <h2 id="v1-14-1"> v1.14.1</h2>
-<h3 id="新功能-4"> 新功能</h3>
+<h3 id="新功能-5"> 新功能</h3>
 <h4 id="新辅助函数"> 新辅助函数 <i>Not supported content</i></h4>
 <p>我们在 <code>vuepress-theme-hope</code> 中添加了 <code>themeConfig</code>、<code>navbarConfig</code> 和 <code>sidebarConfig</code> 辅助函数，以在配置文件中提供更好的验证和自动补全功能。</p>
 <h2 id="v1-14-0"> v1.14.0</h2>
@@ -11798,14 +11876,14 @@ export default { // Highlighted
 <p>所有的 <code>baseLang</code> 选项均被移除。</p>
 <p>您应该使用 <code>lang</code> 键在 <code>locales[&quot;/&quot;]</code> 中指定根目录语言。</p>
 <h2 id="v1-13-4"> v1.13.4</h2>
-<h3 id="新功能-5"> 新功能</h3>
+<h3 id="新功能-6"> 新功能</h3>
 <ul>
 <li>博客首页新增 <code>heroFullScreen</code>选项</li>
 <li>导航栏新增 <code>hideSiteTitleonMobile</code> 选项</li>
 <li>媒体图标新增 “电子邮件” 图标</li>
 </ul>
 <h2 id="v1-13-3"> v1.13.3</h2>
-<h3 id="新功能-6"> 新功能</h3>
+<h3 id="新功能-7"> 新功能</h3>
 <p>添加德语支持。</p>
 <h2 id="v1-13-0"> v1.13.0</h2>
 <h3 id="破坏变更-3"> 破坏变更 <i>Not supported content</i></h3>
@@ -11821,14 +11899,14 @@ export default { // Highlighted
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>进行此更改是为了支持 <a href="https://typora.io/" target="_blank" rel="noopener noreferrer">Typora</a>。</p>
 <h2 id="v1-12-3"> v1.12.3</h2>
-<h3 id="新功能-7"> 新功能 <i>Not supported content</i></h3>
+<h3 id="新功能-8"> 新功能 <i>Not supported content</i></h3>
 <p>新增 <code>create-vuepress-theme-hope</code> 包。</p>
 <p>您可以使用 <code>yarn create vuepress-theme-hope [dir]</code> 或 <code>npm init vuepress-theme-hope [dir]</code> 轻松创建主题模板。</p>
 <h2 id="v1-12-1"> v1.12.1</h2>
 <h3 id="破坏变更-4"> 破坏变更 <i>Not supported content</i></h3>
 <p>我们更改了主题的结构，因此，如果你正在扩展此主题，则可能需要更新代码。</p>
 <h2 id="v1-12-0"> v1.12.0</h2>
-<h3 id="新功能-8"> 新功能 <i>Not supported content</i></h3>
+<h3 id="新功能-9"> 新功能 <i>Not supported content</i></h3>
 <p>我们移除了 <code>last-update</code> 插件并添加了 <code>git</code> 插件(<code>@mr-hope/vuepress-plugin-git</code>)。 🎉</p>
 <p><a href="https://vuepress-theme-hope.github.io/git/zh/" target="_blank" rel="noopener noreferrer">文档见此</a></p>
 <h2 id="v1-11-1"> v1.11.1</h2>
@@ -11837,7 +11915,7 @@ export default { // Highlighted
 <li><strong>comment</strong>: <code>pageInfo</code> 中的所有信息名称都从 PascalCase 更改为 kebab-case。且 <code>ReadTime</code> 变更为 <code>reading-time</code>。</li>
 </ul>
 <h2 id="v1-11-0"> v1.11.0</h2>
-<h3 id="新功能-9"> 新功能</h3>
+<h3 id="新功能-10"> 新功能</h3>
 <ul>
 <li><strong>theme</strong>: 博客模式新增 <code>/star/</code> 页面。所有收藏文章均在此页面上列出。</li>
 </ul>
@@ -11846,7 +11924,7 @@ export default { // Highlighted
 <li><strong>components</strong>: <code>&lt;MyBadge&gt;</code> 重命名为 <code>&lt;Badge&gt;</code>，以对齐 VuePress 默认主题。</li>
 </ul>
 <h2 id="v1-10-0"> v1.10.0</h2>
-<h3 id="新功能-10"> 新功能 <i>Not supported content</i></h3>
+<h3 id="新功能-11"> 新功能 <i>Not supported content</i></h3>
 <ul>
 <li>
 <p><strong>components</strong>: 添加了 <code>&lt;CodeGroup&gt;</code> 和 <code>&lt;CodeGroupItem&gt;</code> 组件。</p>
@@ -11857,12 +11935,12 @@ export default { // Highlighted
 </ul>
 <p>星标页面都将出现在文章侧边栏中。</p>
 <h2 id="v1-9-1"> v1.9.1</h2>
-<h3 id="新功能-11"> 新功能 <i>Not supported content</i></h3>
+<h3 id="新功能-12"> 新功能 <i>Not supported content</i></h3>
 <ul>
 <li><strong>theme</strong>: 主题配置新增 <code>blog.roundAvatar</code> (默认值: <code>true</code>)</li>
 </ul>
 <h2 id="v1-9-0"> v1.9.0</h2>
-<h3 id="新功能-12"> 新功能 <i>Not supported content</i></h3>
+<h3 id="新功能-13"> 新功能 <i>Not supported content</i></h3>
 <p>我们添加了全新的 <a href="https://vuepress-theme-hope.github.io/feed//zh/" target="_blank" rel="noopener noreferrer"><strong>Feed 插件</strong></a>。🎉</p>
 <h3 id="破坏变更-7"> 破坏变更 <i>Not supported content</i></h3>
 <ul>
@@ -11874,17 +11952,17 @@ export default { // Highlighted
 <li><strong>md-enhance</strong>: 删除代码演示的 <code>horizontal</code> 选项</li>
 </ul>
 <h2 id="v1-8-0"> v1.8.0</h2>
-<h3 id="新功能-13"> 新功能 <i>Not supported content</i></h3>
+<h3 id="新功能-14"> 新功能 <i>Not supported content</i></h3>
 <ul>
 <li><strong>theme</strong>: 主题配置新增 <code>namedChunks</code> 选项</li>
 </ul>
 <h2 id="v1-6-0"> v1.6.0</h2>
-<h3 id="新功能-14"> 新功能 <i>Not supported content</i></h3>
+<h3 id="新功能-15"> 新功能 <i>Not supported content</i></h3>
 <ul>
 <li><strong>md-enhance</strong>: <a href="https://vuepress-theme-hope.github.io/zh/guide/markdown/demo/" target="_blank" rel="noopener noreferrer">新的代码演示功能</a> 🎉</li>
 </ul>
 <h2 id="v1-5-4"> v1.5.4</h2>
-<h3 id="新功能-15"> 新功能 <i>Not supported content</i></h3>
+<h3 id="新功能-16"> 新功能 <i>Not supported content</i></h3>
 <ul>
 <li>
 <p><strong>md-enhance</strong>: 添加两端对齐容器</p>
@@ -11897,7 +11975,7 @@ export default { // Highlighted
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div></li>
 </ul>
 <h2 id="v1-5-0"> v1.5.0</h2>
-<h3 id="新功能-16"> 新功能 <i>Not supported content</i></h3>
+<h3 id="新功能-17"> 新功能 <i>Not supported content</i></h3>
 <ul>
 <li>
 <p><strong>last-update</strong>: 添加 <code>timezone</code> 选项</p>
@@ -11915,12 +11993,12 @@ export default { // Highlighted
 </li>
 </ul>
 <h2 id="v1-4-7"> v1.4.7</h2>
-<h3 id="新功能-17"> 新功能 <i>Not supported content</i></h3>
+<h3 id="新功能-18"> 新功能 <i>Not supported content</i></h3>
 <ul>
 <li><strong>pwa</strong>: 添加安装弹窗</li>
 </ul>
 <h2 id="v1-4-5"> v1.4.5</h2>
-<h3 id="新功能-18"> 新功能 <i>Not supported content</i></h3>
+<h3 id="新功能-19"> 新功能 <i>Not supported content</i></h3>
 <ul>
 <li><strong>pwa</strong>: 添加 <code>maxPicSize</code> 选项</li>
 <li><strong>seo</strong>: 自动生成 robots.txt</li>
@@ -11938,17 +12016,17 @@ export default { // Highlighted
 </li>
 </ul>
 <h2 id="v1-4-1"> v1.4.1</h2>
-<h3 id="新功能-19"> 新功能 <i>Not supported content</i></h3>
+<h3 id="新功能-20"> 新功能 <i>Not supported content</i></h3>
 <ul>
 <li><strong>pwa</strong>: 新增 <code>cacheHTML</code> 选项</li>
 </ul>
 <h2 id="v1-3-0"> v1.3.0</h2>
-<h3 id="新功能-20"> 新功能 <i>Not supported content</i></h3>
+<h3 id="新功能-21"> 新功能 <i>Not supported content</i></h3>
 <ul>
 <li><strong>md-enhance</strong>: 通过 Reveal.js 添加幻灯片支持 🎉</li>
 </ul>
 <h2 id="v1-2-0"> v1.2.0</h2>
-<h3 id="新功能-21"> 新功能 <i>Not supported content</i></h3>
+<h3 id="新功能-22"> 新功能 <i>Not supported content</i></h3>
 <p>添加越南语支持。</p>
 <h2 id="v1-1-0"> v1.1.0</h2>
 <h3 id="破坏变更-11"> 破坏变更 <i>Not supported content</i></h3>
@@ -11967,7 +12045,7 @@ export default { // Highlighted
 </li>
 </ul>
 <h2 id="v1-0-1"> v1.0.1</h2>
-<h3 id="新功能-22"> 新功能 <i>Not supported content</i></h3>
+<h3 id="新功能-23"> 新功能 <i>Not supported content</i></h3>
 <ul>
 <li><strong>theme</strong>: 为媒体链接添加码云图标</li>
 </ul>
@@ -15396,426 +15474,6 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 ]]></content:encoded>
     </item>
     <item>
-      <title>vuepress-plugin-copyright</title>
-      <link>https://vuepress-theme-hope.github.io/zh/config/plugin/copyright/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/config/plugin/copyright/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">vuepress-plugin-copyright</source>
-      <description>&amp;lt;p&amp;gt;处理你的 VuePress 站点中的复制操作&amp;lt;/p&amp;gt;
-</description>
-      <category>config</category>
-      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
-      <content:encoded><![CDATA[<p>处理你的 VuePress 站点中的复制操作</p>
-
-<h2 id="默认配置说明"> 默认配置说明</h2>
-<p>当用户从你的站点复制超过 100 字的消息时，在这段消息的尾部添加声明消息。</p>
-<p>作者名称会从你在主题中配置的作者信息或站点名称自动生成。</p>
-<p>默认配置如下:</p>
-<div><div><br><br><br><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span>
-    <span>/** 复制操作处理 */</span>
-    <span>[</span>
-      <span>"copyright"</span><span>,</span>
-      <span>{</span>
-        authorName<span>:</span> options<span>.</span>author<span>,</span>
-        minLength<span>:</span> <span>100</span><span>,</span>
-        clipboardComponent<span>:</span> path<span>.</span><span>resolve</span><span>(</span>__dirname<span>,</span> <span>"components/Clipboard.vue"</span><span>)</span><span>,</span>
-      <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-  <span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><h2 id="配置项"> 配置项</h2>
-<p>详见 <a href="https://vuepress.github.io/zh/plugins/copyright/#%E9%85%8D%E7%BD%AE%E9%A1%B9" target="_blank" rel="noopener noreferrer">官方文档</a></p>
-<h2 id="演示"> 演示</h2>
-<p>请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>vuepress-plugin-container</title>
-      <link>https://vuepress-theme-hope.github.io/zh/config/plugin/container/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/config/plugin/container/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">vuepress-plugin-container</source>
-      <description>&amp;lt;p&amp;gt;Markdown 自定义容器。&amp;lt;/p&amp;gt;
-</description>
-      <category>config</category>
-      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
-      <content:encoded><![CDATA[<p>Markdown 自定义容器。</p>
-
-<h2 id="配置项"> 配置项</h2>
-<h3 id="type"> type</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 是</li>
-</ul>
-<p>容器的类型。举个例子，如果 <code>type</code> 被设置为 <code>foo</code>，则仅有下面的语法会被解析为 Markdown 容器:</p>
-<div><pre><code>::: foo bar
-
-随便写点啥 ~
-
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h3 id="defaulttitle"> defaultTitle</h3>
-<ul>
-<li>类型: <code>string | Record&lt;string, string&gt;</code></li>
-<li>默认值: <code>type</code> 的大写形式</li>
-</ul>
-<p>容器的默认标题。如果没有提供标题，则会使用 <code>defaultTitle</code> 作为容器的标题。</p>
-<p>提供一个对象作为多语言配置，则默认标题将会基于当前 <code>locale</code> 选取。</p>
-<h3 id="before"> before</h3>
-<ul>
-<li>类型: <code>string | ((info: string) =&gt; string)</code></li>
-<li>默认值: <code>undefined</code></li>
-</ul>
-<p>要插入在容器前的 HTML。</p>
-<p>如果设置为一个函数，将传入当前的 <code>info</code> 作为第一个参数。 (在上面的例子中，<code>info</code> 的值为 <code>bar</code>。)</p>
-<p>如果设置了 <code>before</code> 的值， <code>defaultTitle</code> 将会被忽略。</p>
-<h3 id="after"> after</h3>
-<ul>
-<li>类型: <code>string | ((info: string) =&gt; string)</code></li>
-<li>默认值: <code>undefined</code></li>
-</ul>
-<p>要插入在容器后的 HTML。</p>
-<p>如果设置为一个函数，将传入当前的 <code>info</code> 作为第一个参数。 (在上面的例子中，<code>info</code> 的值为 <code>bar</code>。)</p>
-<h3 id="validate"> validate</h3>
-<ul>
-<li>类型: <code>((params: string) =&gt; boolean)</code></li>
-<li>默认值: <code>undefined</code></li>
-</ul>
-<p>一个用于判定容器是否结束的函数。当认定容器范围结束时应返回一个 <code>true</code>。</p>
-<blockquote>
-<p>参考 <a href="https://github.com/markdown-it/markdown-it-container#api" target="_blank" rel="noopener noreferrer">markdown-it-container API</a></p>
-</blockquote>
-<h3 id="render"> render</h3>
-<ul>
-<li>类型: <code>Function</code></li>
-<li>默认值: <code>undefined</code></li>
-</ul>
-<p>容器开头和结束 token 的渲染函数。如果设置了这个值， <code>before</code>, <code>after</code> 和 <code>defaultTitle</code> 都将被忽略。</p>
-<blockquote>
-<p>参考 <a href="https://github.com/markdown-it/markdown-it-container#api" target="_blank" rel="noopener noreferrer">markdown-it-container API</a></p>
-</blockquote>
-<h3 id="marker"> marker</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>':'</code></li>
-</ul>
-<p>用于分隔符的字符。</p>
-<blockquote>
-<p>参考 <a href="https://github.com/markdown-it/markdown-it-container#api" target="_blank" rel="noopener noreferrer">markdown-it-container API</a></p>
-</blockquote>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>页面配置</title>
-      <link>https://vuepress-theme-hope.github.io/zh/config/page/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/config/page/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">页面配置</source>
-      <category>config</category>
-      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
-      <content:encoded><![CDATA[<p>页面的 frontmatter 新增如下配置选项:</p>
-<h2 id="页面信息配置"> 页面信息配置</h2>
-<h3 id="icon"> icon</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>设置当前页面图标的 FontClass (建议填写)</p>
-<h3 id="title"> title</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>设置当前页面内容标题，默认为 Markdown 文件中的第一个 h1 标签内容。</p>
-<h3 id="description"> description</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>设置当前页面内容描述。</p>
-<h3 id="author"> author</h3>
-<ul>
-<li>类型: <code>string | boolean</code></li>
-<li>必填: 否</li>
-</ul>
-<p>显示当前页面的作者，如果不填，则会回退到默认作者。</p>
-<div><p>Tips</p>
-<p>当全局默认作者启用时，可以设置 <code>false</code> 取消作者显示</p>
-</div>
-<h3 id="original"> original</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认: <code>false</code></li>
-</ul>
-<p>当前文章是否为原创。</p>
-<h3 id="time"> time</h3>
-<ul>
-<li>类型: <code>timeString | string</code></li>
-<li>必填: 否</li>
-<li>格式: <code>YYYY-MM-DD</code> 或 <code>YYYY/MM/DD hh:mm:ss</code></li>
-</ul>
-<p>设置当前页面的写作时间。</p>
-<div><p>Note</p>
-<p>尽管本主题及 Mister-Hope 的其他插件会正确解析你输入的时间，如 <code>YYYY/MM/DD hh:mm</code> <code>YYYY-MM-DD hh:mm</code> <code>YYYY/MM/DD</code> 等，但是其他插件可能不能正确的读取他们。使用非标准格式的值可能会导致其他插件报错，</p>
-</div>
-<h3 id="category"> category</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>设置当前页面的分类</p>
-<h3 id="tags"> tags</h3>
-<ul>
-<li>类型: <code>string | string[]</code></li>
-<li>必填: 否</li>
-</ul>
-<p>设置当前页面的标签</p>
-<h3 id="sticky"> sticky</h3>
-<ul>
-<li>类型: <code>boolean | number</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>设置当前文章是否在列表中置顶。当填入数字时，数字越大，排名越靠前。</p>
-<h3 id="star"> star</h3>
-<ul>
-<li>类型: <code>boolean | number</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>设置当前文章是否收藏在博客主题的文章列表中。当填入数字时，数字越大，排名越靠前。</p>
-<h3 id="article"> article</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认: <code>true</code></li>
-</ul>
-<p>是否将该文章添加至文章列表中。</p>
-<h3 id="timeline"> timeline</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认: <code>true</code></li>
-</ul>
-<p>是否将该文章添加至时间线中。</p>
-<h3 id="password"> password</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>设置当前文章的密码。</p>
-<div><p>Note</p>
-<p>请注意，由于密码会进行二次混淆加密，请确保密码是字符串格式。<code>'1234'</code> 和 <code>1234</code> 混淆后产生的结果是不同的。</p>
-</div>
-<h3 id="image"> image</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>设置当前页面的预览图(分享图)，请填入绝对路径。</p>
-<h3 id="copyright-minlength"> copyright.minLength</h3>
-<ul>
-<li>类型: <code>number</code></li>
-<li>默认值: <code>100</code></li>
-</ul>
-<p>触发版权信息或禁止复制动作的最少字符数。</p>
-<h3 id="copyright-nocopy"> copyright.noCopy</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>是否禁止复制</p>
-<h3 id="copyright-noselect"> copyright.noSelect</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>是否禁止选中文字</p>
-<h2 id="页面显示配置"> 页面显示配置</h2>
-<h3 id="pageinfo"> pageInfo</h3>
-<ul>
-<li>类型: <code>PageInfo[] | false</code></li>
-<li>默认值: 全局中配置的值 (全局默认为 <code>['author', 'visitor', 'time', 'category', 'tag', 'reading-time']</code>)</li>
-</ul>
-<p><code>PageInfo</code> 可选的值和对应内容如下:</p>
-<table>
-<thead>
-<tr>
-<th>条目</th>
-<th>对应内容</th>
-<th>页面 frontmatter 值</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>'author'</code></td>
-<td>作者</td>
-<td>author</td>
-</tr>
-<tr>
-<td><code>'time'</code></td>
-<td>写作日期</td>
-<td>time</td>
-</tr>
-<tr>
-<td><code>'category'</code></td>
-<td>分类</td>
-<td>category</td>
-</tr>
-<tr>
-<td><code>'tag'</code></td>
-<td>标签</td>
-<td>tags</td>
-</tr>
-<tr>
-<td><code>'reading-time'</code></td>
-<td>预计阅读时间</td>
-<td>N/A(自动生成)</td>
-</tr>
-<tr>
-<td><code>'word'</code></td>
-<td>字数</td>
-<td>N/A(自动生成)</td>
-</tr>
-<tr>
-<td><code>'visitor'</code></td>
-<td>访问量</td>
-<td>visitor(仅 Valine 可用)</td>
-</tr>
-</tbody>
-</table>
-<p>设置当前页面的文章信息内容</p>
-<h3 id="visitor"> visitor</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: 全局中配置的值 (配置全局的 <code>comment</code> 为 <code>'valine'</code> 后默认为 <code>true</code>)</li>
-</ul>
-<p>当前页面是否显示浏览量</p>
-<div><p>Tips</p>
-<p>显示浏览量功能需要你正确配置了 Valine 类型的评论配置。</p>
-</div>
-<h3 id="breadcrumb"> breadcrumb</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: 全局中配置的值 (全局默认为 <code>true</code>)</li>
-</ul>
-<p>当前页面是否开启路径导航</p>
-<h3 id="breadcrumbicon"> breadcrumbIcon</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: 全局中配置的值 (全局默认为 <code>true</code>)</li>
-</ul>
-<p>当前页面是否开启路径导航图标</p>
-<h3 id="navbar"> navbar</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-</ul>
-<p>页面的导航栏配置，填入 <code>false</code> 会禁用导航栏</p>
-<h3 id="sidebar"> sidebar</h3>
-<ul>
-<li>类型: <code>false | 'auto'</code></li>
-</ul>
-<p>页面的侧边栏配置选项。支持 <code>false</code> 或 <code>auto</code>。</p>
-<h3 id="sidebardepth"> sidebarDepth</h3>
-<ul>
-<li>类型: <code>number</code></li>
-<li>默认值: <code>2</code></li>
-</ul>
-<p>该页面的侧边栏渲染深度</p>
-<h3 id="comment"> comment</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: 全局中配置的值 (配置全局的 <code>comment</code> 后默认为 <code>true</code>)</li>
-</ul>
-<p>当前页面是否开启评论功能</p>
-<h3 id="editlink"> editLink</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: 全局中配置的值</li>
-</ul>
-<p>是否显示编辑链接</p>
-<h3 id="prev"> prev</h3>
-<ul>
-<li>类型: <code>string | false</code></li>
-</ul>
-<p>上一篇文章链接</p>
-<h3 id="next"> next</h3>
-<ul>
-<li>类型: <code>string | false</code></li>
-</ul>
-<p>下一篇文章链接</p>
-<h3 id="footer"> footer</h3>
-<ul>
-<li>类型: <code>boolean | string | HTMLString</code></li>
-</ul>
-<p>设置当前页面的页脚内容，如果你想要禁用页脚，请设置为 <code>false</code>，如果你想要移除默认的页脚内容，请设置为 <code>''</code>，如果你想使用默认页脚，请设置为 <code>true</code>。</p>
-<p>更多详情请看 <a href="./../guide/layout/page.html#页脚支持">页面 → 页脚支持</a></p>
-<h3 id="copyrighttext"> copyrightText</h3>
-<ul>
-<li>类型: <code>string | false</code></li>
-<li>默认值: 全局中配置的值</li>
-</ul>
-<p>设置当前页面的版权信息，更多详情请看 <a href="./../guide/layout/page.html#页脚支持">页面 → 页脚支持</a></p>
-<h3 id="medialink"> mediaLink</h3>
-<ul>
-<li>类型: <code>MediaType[] | false</code></li>
-<li>默认值: 主题中 <code>themeConfig.blog.links</code> 的值</li>
-</ul>
-<p>设置当前页面的页脚社交链接。</p>
-<div><p>可用的社交媒体:</p>
-<p><code>MediaType</code> 的可选值如下:</p>
-<ul>
-<li><code>'Baidu'</code>: 百度</li>
-<li><code>'Bitbucket'</code>: Bitbucket</li>
-<li><code>'Dingding'</code>: 钉钉</li>
-<li><code>'Discord'</code>: Discord</li>
-<li><code>'Dribbble'</code>: Dribble</li>
-<li><code>'Email'</code>: Email</li>
-<li><code>'Evernote'</code>: 印象笔记</li>
-<li><code>'Facebook'</code>: 脸书</li>
-<li><code>'Flipboard'</code>: 红板报</li>
-<li><code>'Gitee'</code>: Gitee</li>
-<li><code>'Github'</code>: GitHub</li>
-<li><code>'Gitlab'</code>: Gitlab</li>
-<li><code>'Gmail'</code>: 谷歌邮箱(当然你也可以填入你自己的其他邮箱)</li>
-<li><code>'Instagram'</code>: Instagram</li>
-<li><code>'Line'</code>: Line</li>
-<li><code>'Linkedin'</code>: 领英</li>
-<li><code>'Pinterest'</code>: 拼趣</li>
-<li><code>'Pocket'</code>: Pocket</li>
-<li><code>'QQ'</code>: QQ</li>
-<li><code>'Qzone'</code>: QQ 空间</li>
-<li><code>'Reddit'</code>: Reddit</li>
-<li><code>'Rss'</code>: RSS 地址</li>
-<li><code>'Steam'</code>: Steam</li>
-<li><code>'Twitter'</code>: Twitter</li>
-<li><code>'Wechat'</code>: 微信</li>
-<li><code>'Weibo'</code>: 微博</li>
-<li><code>'Whatsapp'</code>: Whatsapp</li>
-<li><code>'Youtube'</code>: YouTube</li>
-<li><code>'Zhihu'</code>: 知乎</li>
-</ul>
-</div>
-<h3 id="search"> search</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: 全局中配置的值 (全局默认为 <code>true</code>)</li>
-</ul>
-<p>当前页面是否显示搜索框。</p>
-<h3 id="backtotop"> backToTop</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: 全局中配置的值 (全局默认为 <code>true</code>)</li>
-</ul>
-<p>设置当前页面是否显示返回顶部按钮</p>
-<h3 id="anchordisplay"> anchorDisplay</h3>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: 全局中配置的值 (全局默认为 <code>true</code>)</li>
-</ul>
-<p>设置当前页面是否在桌面模式下在右侧显示标题列比奥</p>
-<h2 id="layout"> layout</h2>
-<ul>
-<li>类型: <code>string</code></li>
-</ul>
-<p>页面的自定义布局名称</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>页面</title>
       <link>https://vuepress-theme-hope.github.io/zh/guide/layout/page/</link>
       <guid>https://vuepress-theme-hope.github.io/zh/guide/layout/page/</guid>
@@ -16540,6 +16198,426 @@ vuepress-theme-hope v2 仍在制作中，API 可能会有
 :::
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>vuepress-plugin-copyright</title>
+      <link>https://vuepress-theme-hope.github.io/zh/config/plugin/copyright/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/config/plugin/copyright/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">vuepress-plugin-copyright</source>
+      <description>&amp;lt;p&amp;gt;处理你的 VuePress 站点中的复制操作&amp;lt;/p&amp;gt;
+</description>
+      <category>config</category>
+      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
+      <content:encoded><![CDATA[<p>处理你的 VuePress 站点中的复制操作</p>
+
+<h2 id="默认配置说明"> 默认配置说明</h2>
+<p>当用户从你的站点复制超过 100 字的消息时，在这段消息的尾部添加声明消息。</p>
+<p>作者名称会从你在主题中配置的作者信息或站点名称自动生成。</p>
+<p>默认配置如下:</p>
+<div><div><br><br><br><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>/** 复制操作处理 */</span>
+    <span>[</span>
+      <span>"copyright"</span><span>,</span>
+      <span>{</span>
+        authorName<span>:</span> options<span>.</span>author<span>,</span>
+        minLength<span>:</span> <span>100</span><span>,</span>
+        clipboardComponent<span>:</span> path<span>.</span><span>resolve</span><span>(</span>__dirname<span>,</span> <span>"components/Clipboard.vue"</span><span>)</span><span>,</span>
+      <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><h2 id="配置项"> 配置项</h2>
+<p>详见 <a href="https://vuepress.github.io/zh/plugins/copyright/#%E9%85%8D%E7%BD%AE%E9%A1%B9" target="_blank" rel="noopener noreferrer">官方文档</a></p>
+<h2 id="演示"> 演示</h2>
+<p>请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>vuepress-plugin-container</title>
+      <link>https://vuepress-theme-hope.github.io/zh/config/plugin/container/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/config/plugin/container/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">vuepress-plugin-container</source>
+      <description>&amp;lt;p&amp;gt;Markdown 自定义容器。&amp;lt;/p&amp;gt;
+</description>
+      <category>config</category>
+      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
+      <content:encoded><![CDATA[<p>Markdown 自定义容器。</p>
+
+<h2 id="配置项"> 配置项</h2>
+<h3 id="type"> type</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 是</li>
+</ul>
+<p>容器的类型。举个例子，如果 <code>type</code> 被设置为 <code>foo</code>，则仅有下面的语法会被解析为 Markdown 容器:</p>
+<div><pre><code>::: foo bar
+
+随便写点啥 ~
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h3 id="defaulttitle"> defaultTitle</h3>
+<ul>
+<li>类型: <code>string | Record&lt;string, string&gt;</code></li>
+<li>默认值: <code>type</code> 的大写形式</li>
+</ul>
+<p>容器的默认标题。如果没有提供标题，则会使用 <code>defaultTitle</code> 作为容器的标题。</p>
+<p>提供一个对象作为多语言配置，则默认标题将会基于当前 <code>locale</code> 选取。</p>
+<h3 id="before"> before</h3>
+<ul>
+<li>类型: <code>string | ((info: string) =&gt; string)</code></li>
+<li>默认值: <code>undefined</code></li>
+</ul>
+<p>要插入在容器前的 HTML。</p>
+<p>如果设置为一个函数，将传入当前的 <code>info</code> 作为第一个参数。 (在上面的例子中，<code>info</code> 的值为 <code>bar</code>。)</p>
+<p>如果设置了 <code>before</code> 的值， <code>defaultTitle</code> 将会被忽略。</p>
+<h3 id="after"> after</h3>
+<ul>
+<li>类型: <code>string | ((info: string) =&gt; string)</code></li>
+<li>默认值: <code>undefined</code></li>
+</ul>
+<p>要插入在容器后的 HTML。</p>
+<p>如果设置为一个函数，将传入当前的 <code>info</code> 作为第一个参数。 (在上面的例子中，<code>info</code> 的值为 <code>bar</code>。)</p>
+<h3 id="validate"> validate</h3>
+<ul>
+<li>类型: <code>((params: string) =&gt; boolean)</code></li>
+<li>默认值: <code>undefined</code></li>
+</ul>
+<p>一个用于判定容器是否结束的函数。当认定容器范围结束时应返回一个 <code>true</code>。</p>
+<blockquote>
+<p>参考 <a href="https://github.com/markdown-it/markdown-it-container#api" target="_blank" rel="noopener noreferrer">markdown-it-container API</a></p>
+</blockquote>
+<h3 id="render"> render</h3>
+<ul>
+<li>类型: <code>Function</code></li>
+<li>默认值: <code>undefined</code></li>
+</ul>
+<p>容器开头和结束 token 的渲染函数。如果设置了这个值， <code>before</code>, <code>after</code> 和 <code>defaultTitle</code> 都将被忽略。</p>
+<blockquote>
+<p>参考 <a href="https://github.com/markdown-it/markdown-it-container#api" target="_blank" rel="noopener noreferrer">markdown-it-container API</a></p>
+</blockquote>
+<h3 id="marker"> marker</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>':'</code></li>
+</ul>
+<p>用于分隔符的字符。</p>
+<blockquote>
+<p>参考 <a href="https://github.com/markdown-it/markdown-it-container#api" target="_blank" rel="noopener noreferrer">markdown-it-container API</a></p>
+</blockquote>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>页面配置</title>
+      <link>https://vuepress-theme-hope.github.io/zh/config/page/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/config/page/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">页面配置</source>
+      <category>config</category>
+      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
+      <content:encoded><![CDATA[<p>页面的 frontmatter 新增如下配置选项:</p>
+<h2 id="页面信息配置"> 页面信息配置</h2>
+<h3 id="icon"> icon</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>设置当前页面图标的 FontClass (建议填写)</p>
+<h3 id="title"> title</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>设置当前页面内容标题，默认为 Markdown 文件中的第一个 h1 标签内容。</p>
+<h3 id="description"> description</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>设置当前页面内容描述。</p>
+<h3 id="author"> author</h3>
+<ul>
+<li>类型: <code>string | boolean</code></li>
+<li>必填: 否</li>
+</ul>
+<p>显示当前页面的作者，如果不填，则会回退到默认作者。</p>
+<div><p>Tips</p>
+<p>当全局默认作者启用时，可以设置 <code>false</code> 取消作者显示</p>
+</div>
+<h3 id="original"> original</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认: <code>false</code></li>
+</ul>
+<p>当前文章是否为原创。</p>
+<h3 id="time"> time</h3>
+<ul>
+<li>类型: <code>timeString | string</code></li>
+<li>必填: 否</li>
+<li>格式: <code>YYYY-MM-DD</code> 或 <code>YYYY/MM/DD hh:mm:ss</code></li>
+</ul>
+<p>设置当前页面的写作时间。</p>
+<div><p>Note</p>
+<p>尽管本主题及 Mister-Hope 的其他插件会正确解析你输入的时间，如 <code>YYYY/MM/DD hh:mm</code> <code>YYYY-MM-DD hh:mm</code> <code>YYYY/MM/DD</code> 等，但是其他插件可能不能正确的读取他们。使用非标准格式的值可能会导致其他插件报错，</p>
+</div>
+<h3 id="category"> category</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>设置当前页面的分类</p>
+<h3 id="tags"> tags</h3>
+<ul>
+<li>类型: <code>string | string[]</code></li>
+<li>必填: 否</li>
+</ul>
+<p>设置当前页面的标签</p>
+<h3 id="sticky"> sticky</h3>
+<ul>
+<li>类型: <code>boolean | number</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>设置当前文章是否在列表中置顶。当填入数字时，数字越大，排名越靠前。</p>
+<h3 id="star"> star</h3>
+<ul>
+<li>类型: <code>boolean | number</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>设置当前文章是否收藏在博客主题的文章列表中。当填入数字时，数字越大，排名越靠前。</p>
+<h3 id="article"> article</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认: <code>true</code></li>
+</ul>
+<p>是否将该文章添加至文章列表中。</p>
+<h3 id="timeline"> timeline</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认: <code>true</code></li>
+</ul>
+<p>是否将该文章添加至时间线中。</p>
+<h3 id="password"> password</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>设置当前文章的密码。</p>
+<div><p>Note</p>
+<p>请注意，由于密码会进行二次混淆加密，请确保密码是字符串格式。<code>'1234'</code> 和 <code>1234</code> 混淆后产生的结果是不同的。</p>
+</div>
+<h3 id="image"> image</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>设置当前页面的预览图(分享图)，请填入绝对路径。</p>
+<h3 id="copyright-minlength"> copyright.minLength</h3>
+<ul>
+<li>类型: <code>number</code></li>
+<li>默认值: <code>100</code></li>
+</ul>
+<p>触发版权信息或禁止复制动作的最少字符数。</p>
+<h3 id="copyright-nocopy"> copyright.noCopy</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否禁止复制</p>
+<h3 id="copyright-noselect"> copyright.noSelect</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否禁止选中文字</p>
+<h2 id="页面显示配置"> 页面显示配置</h2>
+<h3 id="pageinfo"> pageInfo</h3>
+<ul>
+<li>类型: <code>PageInfo[] | false</code></li>
+<li>默认值: 全局中配置的值 (全局默认为 <code>['author', 'visitor', 'time', 'category', 'tag', 'reading-time']</code>)</li>
+</ul>
+<p><code>PageInfo</code> 可选的值和对应内容如下:</p>
+<table>
+<thead>
+<tr>
+<th>条目</th>
+<th>对应内容</th>
+<th>页面 frontmatter 值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>'author'</code></td>
+<td>作者</td>
+<td>author</td>
+</tr>
+<tr>
+<td><code>'time'</code></td>
+<td>写作日期</td>
+<td>time</td>
+</tr>
+<tr>
+<td><code>'category'</code></td>
+<td>分类</td>
+<td>category</td>
+</tr>
+<tr>
+<td><code>'tag'</code></td>
+<td>标签</td>
+<td>tags</td>
+</tr>
+<tr>
+<td><code>'reading-time'</code></td>
+<td>预计阅读时间</td>
+<td>N/A(自动生成)</td>
+</tr>
+<tr>
+<td><code>'word'</code></td>
+<td>字数</td>
+<td>N/A(自动生成)</td>
+</tr>
+<tr>
+<td><code>'visitor'</code></td>
+<td>访问量</td>
+<td>visitor(仅 Valine 可用)</td>
+</tr>
+</tbody>
+</table>
+<p>设置当前页面的文章信息内容</p>
+<h3 id="visitor"> visitor</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: 全局中配置的值 (配置全局的 <code>comment</code> 为 <code>'valine'</code> 后默认为 <code>true</code>)</li>
+</ul>
+<p>当前页面是否显示浏览量</p>
+<div><p>Tips</p>
+<p>显示浏览量功能需要你正确配置了 Valine 类型的评论配置。</p>
+</div>
+<h3 id="breadcrumb"> breadcrumb</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: 全局中配置的值 (全局默认为 <code>true</code>)</li>
+</ul>
+<p>当前页面是否开启路径导航</p>
+<h3 id="breadcrumbicon"> breadcrumbIcon</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: 全局中配置的值 (全局默认为 <code>true</code>)</li>
+</ul>
+<p>当前页面是否开启路径导航图标</p>
+<h3 id="navbar"> navbar</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+</ul>
+<p>页面的导航栏配置，填入 <code>false</code> 会禁用导航栏</p>
+<h3 id="sidebar"> sidebar</h3>
+<ul>
+<li>类型: <code>false | 'auto'</code></li>
+</ul>
+<p>页面的侧边栏配置选项。支持 <code>false</code> 或 <code>auto</code>。</p>
+<h3 id="sidebardepth"> sidebarDepth</h3>
+<ul>
+<li>类型: <code>number</code></li>
+<li>默认值: <code>2</code></li>
+</ul>
+<p>该页面的侧边栏渲染深度</p>
+<h3 id="comment"> comment</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: 全局中配置的值 (配置全局的 <code>comment</code> 后默认为 <code>true</code>)</li>
+</ul>
+<p>当前页面是否开启评论功能</p>
+<h3 id="editlink"> editLink</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: 全局中配置的值</li>
+</ul>
+<p>是否显示编辑链接</p>
+<h3 id="prev"> prev</h3>
+<ul>
+<li>类型: <code>string | false</code></li>
+</ul>
+<p>上一篇文章链接</p>
+<h3 id="next"> next</h3>
+<ul>
+<li>类型: <code>string | false</code></li>
+</ul>
+<p>下一篇文章链接</p>
+<h3 id="footer"> footer</h3>
+<ul>
+<li>类型: <code>boolean | string | HTMLString</code></li>
+</ul>
+<p>设置当前页面的页脚内容，如果你想要禁用页脚，请设置为 <code>false</code>，如果你想要移除默认的页脚内容，请设置为 <code>''</code>，如果你想使用默认页脚，请设置为 <code>true</code>。</p>
+<p>更多详情请看 <a href="./../guide/layout/page.html#页脚支持">页面 → 页脚支持</a></p>
+<h3 id="copyrighttext"> copyrightText</h3>
+<ul>
+<li>类型: <code>string | false</code></li>
+<li>默认值: 全局中配置的值</li>
+</ul>
+<p>设置当前页面的版权信息，更多详情请看 <a href="./../guide/layout/page.html#页脚支持">页面 → 页脚支持</a></p>
+<h3 id="medialink"> mediaLink</h3>
+<ul>
+<li>类型: <code>MediaType[] | false</code></li>
+<li>默认值: 主题中 <code>themeConfig.blog.links</code> 的值</li>
+</ul>
+<p>设置当前页面的页脚社交链接。</p>
+<div><p>可用的社交媒体:</p>
+<p><code>MediaType</code> 的可选值如下:</p>
+<ul>
+<li><code>'Baidu'</code>: 百度</li>
+<li><code>'Bitbucket'</code>: Bitbucket</li>
+<li><code>'Dingding'</code>: 钉钉</li>
+<li><code>'Discord'</code>: Discord</li>
+<li><code>'Dribbble'</code>: Dribble</li>
+<li><code>'Email'</code>: Email</li>
+<li><code>'Evernote'</code>: 印象笔记</li>
+<li><code>'Facebook'</code>: 脸书</li>
+<li><code>'Flipboard'</code>: 红板报</li>
+<li><code>'Gitee'</code>: Gitee</li>
+<li><code>'Github'</code>: GitHub</li>
+<li><code>'Gitlab'</code>: Gitlab</li>
+<li><code>'Gmail'</code>: 谷歌邮箱(当然你也可以填入你自己的其他邮箱)</li>
+<li><code>'Instagram'</code>: Instagram</li>
+<li><code>'Line'</code>: Line</li>
+<li><code>'Linkedin'</code>: 领英</li>
+<li><code>'Pinterest'</code>: 拼趣</li>
+<li><code>'Pocket'</code>: Pocket</li>
+<li><code>'QQ'</code>: QQ</li>
+<li><code>'Qzone'</code>: QQ 空间</li>
+<li><code>'Reddit'</code>: Reddit</li>
+<li><code>'Rss'</code>: RSS 地址</li>
+<li><code>'Steam'</code>: Steam</li>
+<li><code>'Twitter'</code>: Twitter</li>
+<li><code>'Wechat'</code>: 微信</li>
+<li><code>'Weibo'</code>: 微博</li>
+<li><code>'Whatsapp'</code>: Whatsapp</li>
+<li><code>'Youtube'</code>: YouTube</li>
+<li><code>'Zhihu'</code>: 知乎</li>
+</ul>
+</div>
+<h3 id="search"> search</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: 全局中配置的值 (全局默认为 <code>true</code>)</li>
+</ul>
+<p>当前页面是否显示搜索框。</p>
+<h3 id="backtotop"> backToTop</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: 全局中配置的值 (全局默认为 <code>true</code>)</li>
+</ul>
+<p>设置当前页面是否显示返回顶部按钮</p>
+<h3 id="anchordisplay"> anchorDisplay</h3>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: 全局中配置的值 (全局默认为 <code>true</code>)</li>
+</ul>
+<p>设置当前页面是否在桌面模式下在右侧显示标题列比奥</p>
+<h2 id="layout"> layout</h2>
+<ul>
+<li>类型: <code>string</code></li>
+</ul>
+<p>页面的自定义布局名称</p>
+]]></content:encoded>
     </item>
     <item>
       <title>组件</title>

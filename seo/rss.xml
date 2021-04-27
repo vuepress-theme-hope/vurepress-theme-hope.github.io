@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/seo/</link>
     <description>Using &lt;meta&gt; tags to Enhance Your site SEO</description>
     <language>en-US</language>
-    <pubDate>Tue, 27 Apr 2021 13:28:16 GMT</pubDate>
-    <lastBuildDate>Tue, 27 Apr 2021 13:28:16 GMT</lastBuildDate>
+    <pubDate>Tue, 27 Apr 2021 13:38:12 GMT</pubDate>
+    <lastBuildDate>Tue, 27 Apr 2021 13:38:12 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -226,39 +226,6 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>Home</title>
-      <link>https://vuepress-theme-hope.github.io/seo/</link>
-      <guid>https://vuepress-theme-hope.github.io/seo/</guid>
-      <source url="https://vuepress-theme-hope.github.io/seo/rss.xml">Home</source>
-      <pubDate>Tue, 13 Oct 2020 09:17:32 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="how-to-use"> How to use</h2>
-<h3 id="install"> Install</h3>
-<CodeGroup>
-<CodeGroupItem title="yarn">
-<div><pre><code><span>yarn</span> <span>add</span> -D @mr-hope/vuepress-plugin-seo
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-<CodeGroupItem title="npm">
-<div><pre><code><span>npm</span> i -D @mr-hope/vuepress-plugin-seo
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-</CodeGroup>
-<h3 id="usage"> Usage</h3>
-<div><pre><code><span>// .vuepress/config.js</span>
-module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span>
-    <span>[</span>
-      <span>"@mr-hope/seo"</span><span>,</span>
-      <span>{</span>
-        <span>// your options</span>
-      <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-  <span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
       <title>选项</title>
       <link>https://vuepress-theme-hope.github.io/seo/zh/config/</link>
       <guid>https://vuepress-theme-hope.github.io/seo/zh/config/</guid>
@@ -318,6 +285,39 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 </li>
 </ul>
 ]]></content:encoded>
+    </item>
+    <item>
+      <title>Home</title>
+      <link>https://vuepress-theme-hope.github.io/seo/</link>
+      <guid>https://vuepress-theme-hope.github.io/seo/</guid>
+      <source url="https://vuepress-theme-hope.github.io/seo/rss.xml">Home</source>
+      <pubDate>Tue, 13 Oct 2020 09:17:32 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="how-to-use"> How to use</h2>
+<h3 id="install"> Install</h3>
+<CodeGroup>
+<CodeGroupItem title="yarn">
+<div><pre><code><span>yarn</span> <span>add</span> -D @mr-hope/vuepress-plugin-seo
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="npm">
+<div><pre><code><span>npm</span> i -D @mr-hope/vuepress-plugin-seo
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+<h3 id="usage"> Usage</h3>
+<div><pre><code><span>// .vuepress/config.js</span>
+module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>[</span>
+      <span>"@mr-hope/seo"</span><span>,</span>
+      <span>{</span>
+        <span>// your options</span>
+      <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div>]]></content:encoded>
     </item>
     <item>
       <title>指南</title>
