@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-04-27T14:23:56.939Z</updated>
+  <updated>2021-04-28T04:23:31.052Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/md-enhance/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/md-enhance/"/>
@@ -1453,7 +1453,19 @@ Add another diagram to demo page    :48h</span>
 </ul>
 
 <h2 id="auto"> <code>auto</code></h2>
-<i>Not supported content</i>]]></content>
+<i>Not supported content</i><h2 id="black"> <code>black</code></h2>
+<i>Not supported content</i><h2 id="white"> <code>white</code></h2>
+<i>Not supported content</i><h2 id="league"> <code>league</code></h2>
+<i>Not supported content</i><h2 id="beige"> <code>beige</code></h2>
+<i>Not supported content</i><h2 id="sky"> <code>sky</code></h2>
+<i>Not supported content</i><h2 id="night"> <code>night</code></h2>
+<i>Not supported content</i><h2 id="serif"> <code>serif</code></h2>
+<i>Not supported content</i><h2 id="simple"> <code>simple</code></h2>
+<i>Not supported content</i><h2 id="solarized"> <code>solarized</code></h2>
+<i>Not supported content</i><h2 id="blood"> <code>blood</code></h2>
+<i>Not supported content</i><h2 id="moon"> <code>moon</code></h2>
+<i>Not supported content</i>
+]]></content>
     <author>
       <name>Mr.Hope</name>
     </author>
@@ -1575,7 +1587,10 @@ Add another diagram to demo page    :48h</span>
 <li><a href="./demo.html">View Detail</a></li>
 </ul>
 <h3 id="presentation"> Presentation</h3>
-<i>Not supported content</i><hr>
+<i>Not supported content</i><ul>
+<li><a href="./presentation/">View Detail</a></li>
+</ul>
+<hr>
 <section>
 <ol>
 <li id="footnote1"><p>This is footnote content </p>
@@ -3461,7 +3476,19 @@ Add another diagram to demo page    :48h</span>
 </ul>
 
 <h2 id="auto"> <code>auto</code></h2>
-<i>Not supported content</i>]]></content>
+<i>Not supported content</i><h2 id="black"> <code>black</code></h2>
+<i>Not supported content</i><h2 id="white"> <code>white</code></h2>
+<i>Not supported content</i><h2 id="league"> <code>league</code></h2>
+<i>Not supported content</i><h2 id="beige"> <code>beige</code></h2>
+<i>Not supported content</i><h2 id="sky"> <code>sky</code></h2>
+<i>Not supported content</i><h2 id="night"> <code>night</code></h2>
+<i>Not supported content</i><h2 id="serif"> <code>serif</code></h2>
+<i>Not supported content</i><h2 id="simple"> <code>simple</code></h2>
+<i>Not supported content</i><h2 id="solarized"> <code>solarized</code></h2>
+<i>Not supported content</i><h2 id="blood"> <code>blood</code></h2>
+<i>Not supported content</i><h2 id="moon"> <code>moon</code></h2>
+<i>Not supported content</i>
+]]></content>
     <author>
       <name>Mr.Hope</name>
     </author>
@@ -3582,7 +3609,10 @@ Add another diagram to demo page    :48h</span>
 <li><a href="./demo.html">查看详情</a></li>
 </ul>
 <h3 id="幻灯片"> 幻灯片</h3>
-<i>Not supported content</i><hr>
+<i>Not supported content</i><ul>
+<li><a href="./presentation/">查看详情</a></li>
+</ul>
+<hr>
 <section>
 <ol>
 <li id="footnote1"><p>这是脚注内容 </p>
