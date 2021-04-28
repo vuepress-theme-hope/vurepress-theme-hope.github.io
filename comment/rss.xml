@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/comment/</link>
     <description>Comment Plugin for VuePress</description>
     <language>en-US</language>
-    <pubDate>Wed, 28 Apr 2021 04:31:02 GMT</pubDate>
-    <lastBuildDate>Wed, 28 Apr 2021 04:31:02 GMT</lastBuildDate>
+    <pubDate>Wed, 28 Apr 2021 04:34:25 GMT</pubDate>
+    <lastBuildDate>Wed, 28 Apr 2021 04:34:25 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -125,7 +125,7 @@
 <p><strong>meta</strong></p>
 <ul>
 <li>Type: <code>string[]</code></li>
-<li>Default: <code>['nick','mail','link']</code></li>
+<li>Default: <code>['nick','mail']</code></li>
 </ul>
 <p>Commenter’s info</p>
 </li>
@@ -1178,7 +1178,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <p><strong>meta</strong></p>
 <ul>
 <li>类型: <code>string[]</code></li>
-<li>默认值: <code>['nick','mail','link']</code></li>
+<li>默认值: <code>['nick','mail']</code></li>
 </ul>
 </li>
 </ul>
