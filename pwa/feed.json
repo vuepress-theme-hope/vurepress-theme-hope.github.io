@@ -38,6 +38,20 @@
       "tags": []
     },
     {
+      "title": "Home",
+      "url": "https://vuepress-theme-hope.github.io/pwa/",
+      "id": "https://vuepress-theme-hope.github.io/pwa/",
+      "content_html": "<p>This plugin will turn on Progressive Web App Support.</p>\n<h2 id=\"how-to-use\"> How to use</h2>\n<h3 id=\"install\"> Install</h3>\n<CodeGroup>\n<CodeGroupItem title=\"yarn\">\n<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-pwa\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n<CodeGroupItem title=\"npm\">\n<div><pre><code><span>npm</span> i -D vuepress-plugin-pwa\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n</CodeGroup>\n<h3 id=\"usage\"> Usage</h3>\n<div><pre><code><span>// .vuepress/config.js</span>\nmodule<span>.</span>exports <span>=</span> <span>{</span>\n  plugins<span>:</span> <span>[</span>\n    <span>[</span>\n      <span>\"@mr-hope/pwa\"</span><span>,</span>\n      <span>{</span>\n        <span>// your options</span>\n      <span>}</span><span>,</span>\n    <span>]</span><span>,</span>\n  <span>]</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre>\n<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div>",
+      "date_published": "2020-10-21T16:30:08.000Z",
+      "date_modified": "2021-02-24T15:41:50.000Z",
+      "authors": [
+        {
+          "name": "Mr.Hope"
+        }
+      ],
+      "tags": []
+    },
+    {
       "title": "配置",
       "url": "https://vuepress-theme-hope.github.io/pwa/zh/config/",
       "id": "https://vuepress-theme-hope.github.io/pwa/zh/config/",
@@ -71,20 +85,6 @@
       "url": "https://vuepress-theme-hope.github.io/pwa/zh/",
       "id": "https://vuepress-theme-hope.github.io/pwa/zh/",
       "content_html": "<p>渐进式网页应用 (Progressive Web App) 支持。</p>\n<h2 id=\"使用插件\"> 使用插件</h2>\n<h3 id=\"安装\"> 安装</h3>\n<CodeGroup>\n<CodeGroupItem title=\"yarn\">\n<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-pwa\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n<CodeGroupItem title=\"npm\">\n<div><pre><code><span>npm</span> i -D vuepress-plugin-pwa\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n</CodeGroup>\n<h3 id=\"使用\"> 使用</h3>\n<div><pre><code><span>// .vuepress/config.js</span>\nmodule<span>.</span>exports <span>=</span> <span>{</span>\n  plugins<span>:</span> <span>[</span>\n    <span>[</span>\n      <span>\"@mr-hope/pwa\"</span><span>,</span>\n      <span>{</span>\n        <span>// 你的选项</span>\n      <span>}</span><span>,</span>\n    <span>]</span><span>,</span>\n  <span>]</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre>\n<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div>",
-      "date_published": "2020-10-21T16:30:08.000Z",
-      "date_modified": "2021-02-24T15:41:50.000Z",
-      "authors": [
-        {
-          "name": "Mr.Hope"
-        }
-      ],
-      "tags": []
-    },
-    {
-      "title": "Home",
-      "url": "https://vuepress-theme-hope.github.io/pwa/",
-      "id": "https://vuepress-theme-hope.github.io/pwa/",
-      "content_html": "<p>This plugin will turn on Progressive Web App Support.</p>\n<h2 id=\"how-to-use\"> How to use</h2>\n<h3 id=\"install\"> Install</h3>\n<CodeGroup>\n<CodeGroupItem title=\"yarn\">\n<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-pwa\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n<CodeGroupItem title=\"npm\">\n<div><pre><code><span>npm</span> i -D vuepress-plugin-pwa\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n</CodeGroup>\n<h3 id=\"usage\"> Usage</h3>\n<div><pre><code><span>// .vuepress/config.js</span>\nmodule<span>.</span>exports <span>=</span> <span>{</span>\n  plugins<span>:</span> <span>[</span>\n    <span>[</span>\n      <span>\"@mr-hope/pwa\"</span><span>,</span>\n      <span>{</span>\n        <span>// your options</span>\n      <span>}</span><span>,</span>\n    <span>]</span><span>,</span>\n  <span>]</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre>\n<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div>",
       "date_published": "2020-10-21T16:30:08.000Z",
       "date_modified": "2021-02-24T15:41:50.000Z",
       "authors": [
