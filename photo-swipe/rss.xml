@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/photo-swipe/</link>
     <description>Photo swipe Plugin for VuePress</description>
     <language>en-US</language>
-    <pubDate>Sat, 08 May 2021 03:11:36 GMT</pubDate>
-    <lastBuildDate>Sat, 08 May 2021 03:11:36 GMT</lastBuildDate>
+    <pubDate>Sat, 08 May 2021 04:56:34 GMT</pubDate>
+    <lastBuildDate>Sat, 08 May 2021 04:56:34 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -61,9 +61,9 @@
 </ul>
 </div>
 <h2 id="demo"> Demo</h2>
-<p><img src="/logo.png" alt="Logo1">
-<img src="/logo.png" alt="Logo2">
-<img src="/logo.png" alt="Logo3"></p>
+<p><img src="/logo.png" alt="Logo1" />
+<img src="/logo.png" alt="Logo2" />
+<img src="/logo.png" alt="Logo3" /></p>
 ]]></content:encoded>
       <enclosure url="https://vuepress-theme-hope.github.io/photo-swipe/logo.png" type="image/png"/>
     </item>
@@ -144,9 +144,9 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 </ul>
 </div>
 <h2 id="演示"> 演示</h2>
-<p><img src="/logo.png" alt="Logo1">
-<img src="/logo.png" alt="Logo2">
-<img src="/logo.png" alt="Logo3"></p>
+<p><img src="/logo.png" alt="Logo1" />
+<img src="/logo.png" alt="Logo2" />
+<img src="/logo.png" alt="Logo3" /></p>
 ]]></content:encoded>
       <enclosure url="https://vuepress-theme-hope.github.io/photo-swipe/logo.png" type="image/png"/>
     </item>

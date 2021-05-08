@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-05-08T03:11:36.502Z</updated>
+  <updated>2021-05-08T04:56:34.660Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/md-enhance/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/md-enhance/"/>
@@ -19,7 +19,7 @@
     <title type="html">Config</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/config/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/config/"/>
-    <updated>2021-04-26T07:53:59.000Z</updated>
+    <updated>2021-05-08T04:53:42.000Z</updated>
     <content type="html"><![CDATA[<p>You can pass these options to the plugin:</p>
 <h2 id="enable-all"> Enable all</h2>
 <ul>
@@ -40,6 +40,12 @@
 <li>Default: <code>true</code></li>
 </ul>
 <p>Whether to display the line number to the left of each code block.</p>
+<h2 id="imagefix"> imageFix</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>true</code></li>
+</ul>
+<p>Whether to fix image links containing special characters</p>
 <h2 id="align"> align</h2>
 <ul>
 <li>Type: <code>boolean</code></li>
@@ -2041,7 +2047,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">配置</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/zh/config/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/config/"/>
-    <updated>2021-04-27T13:16:50.000Z</updated>
+    <updated>2021-05-08T04:53:42.000Z</updated>
     <content type="html"><![CDATA[<p>你可以传递以下选项来启用或禁用一些功能</p>
 <h2 id="enableall"> enableAll</h2>
 <ul>
@@ -2062,6 +2068,12 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <li>默认值: <code>true</code></li>
 </ul>
 <p>是否在每个代码块的左侧显示行号。</p>
+<h2 id="imagefix"> imageFix</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否修复包含特殊字符的图片的引用</p>
 <h2 id="align"> align</h2>
 <ul>
 <li>类型: <code>boolean</code></li>

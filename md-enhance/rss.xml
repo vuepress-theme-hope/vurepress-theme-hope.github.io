@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/md-enhance/</link>
     <description>Markdown Enhancement for VuePress</description>
     <language>en-US</language>
-    <pubDate>Sat, 08 May 2021 03:11:36 GMT</pubDate>
-    <lastBuildDate>Sat, 08 May 2021 03:11:36 GMT</lastBuildDate>
+    <pubDate>Sat, 08 May 2021 04:56:34 GMT</pubDate>
+    <lastBuildDate>Sat, 08 May 2021 04:56:34 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -38,6 +38,12 @@
 <li>Default: <code>true</code></li>
 </ul>
 <p>Whether to display the line number to the left of each code block.</p>
+<h2 id="imagefix"> imageFix</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>true</code></li>
+</ul>
+<p>Whether to fix image links containing special characters</p>
 <h2 id="align"> align</h2>
 <ul>
 <li>Type: <code>boolean</code></li>
@@ -1956,6 +1962,12 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <li>默认值: <code>true</code></li>
 </ul>
 <p>是否在每个代码块的左侧显示行号。</p>
+<h2 id="imagefix"> imageFix</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否修复包含特殊字符的图片的引用</p>
 <h2 id="align"> align</h2>
 <ul>
 <li>类型: <code>boolean</code></li>
