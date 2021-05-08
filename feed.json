@@ -1984,9 +1984,9 @@
       "title": "时间线",
       "url": "https://vuepress-theme-hope.github.io/zh/guide/blog/timeline/",
       "id": "https://vuepress-theme-hope.github.io/zh/guide/blog/timeline/",
-      "content_html": "<p>你可以通过 <code>/timeline/</code> 访问时间页面，在页面中，你可以按照时间倒序查看所有的文章列表。</p>\n<p><img src=\"./assets/timeline.png\" alt=\"时间线列表哦\"></p>\n<h2 id=\"排除文章\"> 排除文章</h2>\n<p>默认情况下所有注明了写作日期的文章都会显示时间线中。如果你不希望某篇文章被包含，只需在文章的 frontmatter 中将 <code>timeline</code> 设置为 <code>false</code>。</p>\n<h2 id=\"配置时间线顶部文字\"> 配置时间线顶部文字</h2>\n<p>我们允许你定制时间线的顶部文字，你可以通过 <code>themeConfig.blog.timeline</code> 配置它。</p>\n<h2 id=\"侧边栏\"> 侧边栏</h2>\n<p>我们在博客相关页面的侧边栏添加了时间线选项卡，供用户快速预览时间线。</p>\n<p><img src=\"./assets/timeline-tab.png\" alt=\"时间线选项卡\"></p>\n",
+      "content_html": "<p>你可以通过 <code>/timeline/</code> 访问时间页面，在页面中，你可以按照时间倒序查看所有的文章列表。</p>\n<p><img src=\"./assets/timeline.png\" alt=\"时间线列表\"></p>\n<h2 id=\"排除文章\"> 排除文章</h2>\n<p>默认情况下所有注明了写作日期的文章都会显示时间线中。如果你不希望某篇文章被包含，只需在文章的 frontmatter 中将 <code>timeline</code> 设置为 <code>false</code>。</p>\n<h2 id=\"配置时间线顶部文字\"> 配置时间线顶部文字</h2>\n<p>我们允许你定制时间线的顶部文字，你可以通过 <code>themeConfig.blog.timeline</code> 配置它。</p>\n<h2 id=\"侧边栏\"> 侧边栏</h2>\n<p>我们在博客相关页面的侧边栏添加了时间线选项卡，供用户快速预览时间线。</p>\n<p><img src=\"./assets/timeline-tab.png\" alt=\"时间线选项卡\"></p>\n",
       "date_published": "2021-03-08T03:21:06.000Z",
-      "date_modified": "2021-03-10T04:43:39.000Z",
+      "date_modified": "2021-05-08T03:09:45.000Z",
       "authors": [
         {
           "name": "Mr.Hope"

@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/</link>
     <description>A vuepress theme with tons of features✨</description>
     <language>en-US</language>
-    <pubDate>Fri, 30 Apr 2021 16:27:53 GMT</pubDate>
-    <lastBuildDate>Fri, 30 Apr 2021 16:27:53 GMT</lastBuildDate>
+    <pubDate>Sat, 08 May 2021 03:11:36 GMT</pubDate>
+    <lastBuildDate>Sat, 08 May 2021 03:11:36 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -13522,7 +13522,7 @@ module<span>.</span>exports <span>=</span> <span>themeConfig</span><span>(</span
       <category>blog</category>
       <pubDate>Mon, 08 Mar 2021 03:21:06 GMT</pubDate>
       <content:encoded><![CDATA[<p>你可以通过 <code>/timeline/</code> 访问时间页面，在页面中，你可以按照时间倒序查看所有的文章列表。</p>
-<p><img src="./assets/timeline.png" alt="时间线列表哦"></p>
+<p><img src="./assets/timeline.png" alt="时间线列表"></p>
 <h2 id="排除文章"> 排除文章</h2>
 <p>默认情况下所有注明了写作日期的文章都会显示时间线中。如果你不希望某篇文章被包含，只需在文章的 frontmatter 中将 <code>timeline</code> 设置为 <code>false</code>。</p>
 <h2 id="配置时间线顶部文字"> 配置时间线顶部文字</h2>
