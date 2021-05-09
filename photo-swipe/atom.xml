@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-05-08T06:59:58.442Z</updated>
+  <updated>2021-05-09T14:12:22.600Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/photo-swipe/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/photo-swipe/"/>
@@ -118,36 +118,6 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
-    <title type="html">配置</title>
-    <id>https://vuepress-theme-hope.github.io/photo-swipe/zh/config/</id>
-    <link href="https://vuepress-theme-hope.github.io/photo-swipe/zh/config/"/>
-    <updated>2020-11-17T09:58:20.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="选项"> 选项</h2>
-<h3 id="container"> container</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>'.theme-default-content'</code></li>
-</ul>
-<p>选择的范围，只有 container 元素内部的图片才会支持点击缩放。</p>
-<h3 id="selector"> selector</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>'.theme-default-content :not(a) &gt; img'</code></li>
-</ul>
-<p>图片选择器</p>
-<h3 id="options"> options</h3>
-<p>传递给 <a href="http://photoswipe.com/" target="_blank" rel="noopener noreferrer"><strong>photo-swipe</strong></a> 的额外选项</p>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-10-13T05:36:44.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
     <title type="html">指南</title>
     <id>https://vuepress-theme-hope.github.io/photo-swipe/zh/guide/</id>
     <link href="https://vuepress-theme-hope.github.io/photo-swipe/zh/guide/"/>
@@ -211,6 +181,36 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <span>}</span><span>;</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div>]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-10-13T05:36:44.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">配置</title>
+    <id>https://vuepress-theme-hope.github.io/photo-swipe/zh/config/</id>
+    <link href="https://vuepress-theme-hope.github.io/photo-swipe/zh/config/"/>
+    <updated>2020-11-17T09:58:20.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="选项"> 选项</h2>
+<h3 id="container"> container</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>'.theme-default-content'</code></li>
+</ul>
+<p>选择的范围，只有 container 元素内部的图片才会支持点击缩放。</p>
+<h3 id="selector"> selector</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>'.theme-default-content :not(a) &gt; img'</code></li>
+</ul>
+<p>图片选择器</p>
+<h3 id="options"> options</h3>
+<p>传递给 <a href="http://photoswipe.com/" target="_blank" rel="noopener noreferrer"><strong>photo-swipe</strong></a> 的额外选项</p>
+]]></content>
     <author>
       <name>Mr.Hope</name>
     </author>

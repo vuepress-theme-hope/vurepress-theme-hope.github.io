@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/md-enhance/</link>
     <description>Markdown Enhancement for VuePress</description>
     <language>en-US</language>
-    <pubDate>Sat, 08 May 2021 06:59:58 GMT</pubDate>
-    <lastBuildDate>Sat, 08 May 2021 06:59:58 GMT</lastBuildDate>
+    <pubDate>Sun, 09 May 2021 14:12:22 GMT</pubDate>
+    <lastBuildDate>Sun, 09 May 2021 14:12:22 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -1293,44 +1293,6 @@ Add another diagram to demo page    :48h</span>
       <enclosure url="https://vuepress-theme-hope.github.io/md-enhance/logo.svg" type="image/svg+xml"/>
     </item>
     <item>
-      <title>Themes</title>
-      <link>https://vuepress-theme-hope.github.io/md-enhance/guide/presentation/themes/</link>
-      <guid>https://vuepress-theme-hope.github.io/md-enhance/guide/presentation/themes/</guid>
-      <source url="https://vuepress-theme-hope.github.io/md-enhance/rss.xml">Themes</source>
-      <pubDate>Wed, 03 Feb 2021 11:24:42 GMT</pubDate>
-      <content:encoded><![CDATA[
-<p>Theme available:</p>
-<ul>
-<li><code>auto</code> (Default)</li>
-<li><code>black</code></li>
-<li><code>white</code></li>
-<li><code>league</code></li>
-<li><code>beige</code></li>
-<li><code>sky</code></li>
-<li><code>night</code></li>
-<li><code>serif</code></li>
-<li><code>simple</code></li>
-<li><code>solarized</code></li>
-<li><code>blood</code></li>
-<li><code>moon</code></li>
-</ul>
-
-<h2 id="auto"> <code>auto</code></h2>
-<i>Not supported content</i><h2 id="black"> <code>black</code></h2>
-<i>Not supported content</i><h2 id="white"> <code>white</code></h2>
-<i>Not supported content</i><h2 id="league"> <code>league</code></h2>
-<i>Not supported content</i><h2 id="beige"> <code>beige</code></h2>
-<i>Not supported content</i><h2 id="sky"> <code>sky</code></h2>
-<i>Not supported content</i><h2 id="night"> <code>night</code></h2>
-<i>Not supported content</i><h2 id="serif"> <code>serif</code></h2>
-<i>Not supported content</i><h2 id="simple"> <code>simple</code></h2>
-<i>Not supported content</i><h2 id="solarized"> <code>solarized</code></h2>
-<i>Not supported content</i><h2 id="blood"> <code>blood</code></h2>
-<i>Not supported content</i><h2 id="moon"> <code>moon</code></h2>
-<i>Not supported content</i>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Presentation</title>
       <link>https://vuepress-theme-hope.github.io/md-enhance/guide/presentation/</link>
       <guid>https://vuepress-theme-hope.github.io/md-enhance/guide/presentation/</guid>
@@ -1407,6 +1369,44 @@ Add another diagram to demo page    :48h</span>
 <h2 id="options"> Options</h2>
 <p>You can set <code>reveal</code> to pass options to reveal.js per page in frontmatter, you can also set <code>presentation</code> in plugin options to set reveal.js globally.</p>
 <p>For more options, see <a href="https://revealjs.com/config/" target="_blank" rel="noopener noreferrer">reveal.js config</a>. For more usage, see <a href="https://revealjs.com/" target="_blank" rel="noopener noreferrer">reveal.js documatation</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Themes</title>
+      <link>https://vuepress-theme-hope.github.io/md-enhance/guide/presentation/themes/</link>
+      <guid>https://vuepress-theme-hope.github.io/md-enhance/guide/presentation/themes/</guid>
+      <source url="https://vuepress-theme-hope.github.io/md-enhance/rss.xml">Themes</source>
+      <pubDate>Wed, 03 Feb 2021 11:24:42 GMT</pubDate>
+      <content:encoded><![CDATA[
+<p>Theme available:</p>
+<ul>
+<li><code>auto</code> (Default)</li>
+<li><code>black</code></li>
+<li><code>white</code></li>
+<li><code>league</code></li>
+<li><code>beige</code></li>
+<li><code>sky</code></li>
+<li><code>night</code></li>
+<li><code>serif</code></li>
+<li><code>simple</code></li>
+<li><code>solarized</code></li>
+<li><code>blood</code></li>
+<li><code>moon</code></li>
+</ul>
+
+<h2 id="auto"> <code>auto</code></h2>
+<i>Not supported content</i><h2 id="black"> <code>black</code></h2>
+<i>Not supported content</i><h2 id="white"> <code>white</code></h2>
+<i>Not supported content</i><h2 id="league"> <code>league</code></h2>
+<i>Not supported content</i><h2 id="beige"> <code>beige</code></h2>
+<i>Not supported content</i><h2 id="sky"> <code>sky</code></h2>
+<i>Not supported content</i><h2 id="night"> <code>night</code></h2>
+<i>Not supported content</i><h2 id="serif"> <code>serif</code></h2>
+<i>Not supported content</i><h2 id="simple"> <code>simple</code></h2>
+<i>Not supported content</i><h2 id="solarized"> <code>solarized</code></h2>
+<i>Not supported content</i><h2 id="blood"> <code>blood</code></h2>
+<i>Not supported content</i><h2 id="moon"> <code>moon</code></h2>
+<i>Not supported content</i>
 ]]></content:encoded>
     </item>
     <item>
