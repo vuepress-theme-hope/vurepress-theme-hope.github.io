@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-05-09T14:44:24.407Z</updated>
+  <updated>2021-05-16T15:17:27.017Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/comment/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/comment/"/>
@@ -18,7 +18,7 @@
     <title type="html">API Config</title>
     <id>https://vuepress-theme-hope.github.io/comment/config/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/config/"/>
-    <updated>2021-04-07T05:20:59.000Z</updated>
+    <updated>2021-05-16T15:14:54.000Z</updated>
     <content type="html"><![CDATA[<h2 id="type"> type</h2>
 <ul>
 <li>Type: <code>'valine' | 'vssue' | 'disable'</code></li>
@@ -60,13 +60,17 @@
 <li>Default: <code>300</code></li>
 </ul>
 <p>Reading words per minute.</p>
-<h2 id="valine-config"> Valine config</h2>
+<h2 id="waline-config"> Waline config</h2>
 <ul>
-<li><a href="./valine.html">See here</a></li>
+<li><a href="./waline.html">See here</a></li>
 </ul>
 <h2 id="vssue-config"> Vssue config</h2>
 <ul>
 <li><a href="./vssue.html">See here</a></li>
+</ul>
+<h2 id="valine-config"> Valine config</h2>
+<ul>
+<li><a href="./valine.html">See here</a></li>
 </ul>
 ]]></content>
     <author>
@@ -82,9 +86,8 @@
     <title type="html">Valine Config</title>
     <id>https://vuepress-theme-hope.github.io/comment/config/valine/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/config/valine/"/>
-    <updated>2021-04-28T04:30:20.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="valine-config"> Valine Config</h1>
-<h2 id="appid"> appId</h2>
+    <updated>2021-05-16T15:14:54.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="appid"> appId</h2>
 <ul>
 <li>Type: <code>string</code></li>
 <li>Required: true</li>
@@ -204,12 +207,11 @@
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
-    <title type="html">Vssue Options</title>
+    <title type="html">Vssue Config</title>
     <id>https://vuepress-theme-hope.github.io/comment/config/vssue/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/config/vssue/"/>
-    <updated>2021-04-27T13:16:50.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="vssue-options"> Vssue Options</h1>
-<h2 id="platform"> platform</h2>
+    <updated>2021-05-16T15:14:54.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="platform"> platform</h2>
 <p><code>@vssue/vuepress-plugin-vssue</code> will auto resolve the corresponding API package according to the value of <code>platform</code>:</p>
 <ul>
 <li>Platform <code>github</code> - API package <code>@vssue/api-github-v3</code></li>
@@ -526,6 +528,205 @@ And if you already have vue-i18n in your project, it will not affect Vssue.</p>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
+    <title type="html">Waline Config</title>
+    <id>https://vuepress-theme-hope.github.io/comment/config/waline/</id>
+    <link href="https://vuepress-theme-hope.github.io/comment/config/waline/"/>
+    <updated>2021-05-16T15:14:54.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="el"> el</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Required: Yes</li>
+</ul>
+<p>The DOM element to be mounted on initialization. It must be a valid <strong>CSS selector string</strong>.</p>
+<h2 id="serverurl"> serverURL</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Required: Yes</li>
+</ul>
+<p>Waline server address url</p>
+<h2 id="placeholder"> placeholder</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>Just go go...</code></li>
+<li>Required: No</li>
+</ul>
+<p>Comment box placeholder</p>
+<h2 id="wordlimit"> wordLimit</h2>
+<ul>
+<li>Type: <code>number | [number, number]</code></li>
+<li>Default: <code>0</code></li>
+<li>Required: <code>false</code></li>
+</ul>
+<p>Comment word s limit. When a single number is filled in, it 's the maximum number of comment words. No limit when set to <code>0</code>.</p>
+<h2 id="path"> path</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>window.location.pathname</code></li>
+<li>Required: No</li>
+</ul>
+<p>Article path id. Used to distinguish different <em>article pages</em> to ensure loading the correct comment list under the <em>article page</em>.</p>
+<p>Optional value:</p>
+<ul>
+<li><code>window.location.pathname</code> (default, recommended)</li>
+<li><code>window.location.href</code></li>
+<li>customize</li>
+</ul>
+<blockquote>
+<p>I. Please ensure the uniqueness of each <em>article page</em> path, otherwise the same comment list may be loaded under different <em>article pages</em>.</p>
+<p>II. If the value is <code>window.location.href</code>, it may appear that adding <em>different parameters</em> to enter the page, and it will be judged as a new page.</p>
+</blockquote>
+<h2 id="avatar"> avatar</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>'mp'</code></li>
+<li>Required: No</li>
+</ul>
+<p><a href="http://gravatar.com/" target="_blank" rel="noopener noreferrer">Gravatar</a> type.</p>
+<p>Optional value:</p>
+<ul>
+<li><code>''</code> (Empty string)</li>
+<li><code>'mp'</code></li>
+<li><code>'identicon'</code></li>
+<li><code>'monsterid'</code></li>
+<li><code>'wavatar'</code></li>
+<li><code>'retro'</code></li>
+<li><code>'robohash'</code></li>
+<li><code>'hide'</code></li>
+</ul>
+<p>See the <a href="./avatar.html">Avatar setting</a> for more details.</p>
+<h2 id="meta"> meta</h2>
+<ul>
+<li>Type: <code>string[]</code></li>
+<li>Default: <code>['nick','mail','link']</code></li>
+<li>Required: No</li>
+</ul>
+<p>Reviewer attributes. Optional values: <code>'nick'</code>, <code>'mail'</code>, <code>'link'</code></p>
+<h2 id="pagesize"> pageSize</h2>
+<ul>
+<li>Type: <code>number</code></li>
+<li>Default: <code>10</code></li>
+<li>Required: No</li>
+</ul>
+<p>number of comments per page.</p>
+<h2 id="lang"> lang</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>'zh-CN'</code></li>
+<li>Required: No</li>
+</ul>
+<p>Display language.</p>
+<p>Optional value:</p>
+<ul>
+<li><code>'zh'</code></li>
+<li><code>'zh-CN'</code></li>
+<li><code>'zh-TW'</code></li>
+<li><code>'en'</code></li>
+<li><code>'en-US'</code></li>
+<li><code>'jp'</code></li>
+<li><code>'jp-JP'</code></li>
+</ul>
+<p>If you need a custom language, please refer to <a href="./i18n.html">i18n</a>.</p>
+<h2 id="visitor"> visitor</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>false</code></li>
+<li>Required: No</li>
+</ul>
+<p>Article reading statistics.</p>
+<h2 id="dark"> dark</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Required: No</li>
+</ul>
+<p>Darkmode support</p>
+<ul>
+<li>Set it to <code>'auto'</code> will display darkmode due to device settings.</li>
+<li>Filling in a CSS selector will enable darkmode only when the selector match waline ancestor nodes.</li>
+</ul>
+<div><p>Examples</p>
+<ul>
+<li>
+<p><strong>Docusaurus</strong>: It will enable darkmode by setting <code>data-theme=&quot;dark&quot;</code> on the <code>&lt;html&gt;</code> tag itself. So you need to set <code>'html[data-theme=&quot;dark&quot;]'</code> as <code>dark</code> option.</p>
+</li>
+<li>
+<p><strong>hexo-theme-fluid</strong>: It will enable darkmode by setting <code>data-user-color-scheme=&quot;dark&quot;</code> on the <code>&lt;html&gt;</code> tag itself. So you need to set <code>'html[data-user-color-scheme=&quot;dark&quot;]'</code> as <code>dark</code> option.</p>
+</li>
+<li>
+<p><strong>vuepress-theme-hope</strong>: It will enable darkmode by setting <code>theme-dark</code> class on the <code>&lt;body&gt;</code> tag itself. So you need to set <code>'body.theme-dark'</code> as <code>dark</code> option.</p>
+</li>
+</ul>
+</div>
+<p>For details of custom style and darkmode, please see <a href="./style.html">Custom Style</a>.</p>
+<h2 id="highlight"> highlight</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>true</code></li>
+<li>Required: No</li>
+</ul>
+<p><strong>Code highlighting</strong>, it’s enabled by default, please close it selectively.</p>
+<h2 id="avatarcdn"> avatarCDN</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>https://sdn.geekzu.org/avatar/</code></li>
+<li>Required: No</li>
+</ul>
+<p>Gravatar CDN baseURL.</p>
+<h2 id="avatarforce"> avatarForce</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>false</code></li>
+<li>Required: No</li>
+</ul>
+<p>Whether <strong>force</strong> pulling the latest avatar each time.</p>
+<h2 id="emojicdn"> emojiCDN</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>https://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/</code></li>
+<li>Required: No</li>
+</ul>
+<p>Set <strong>Emoji Pack CDN</strong>, refer to <a href="./emoji.html">Custom Emoji</a>.</p>
+<h2 id="emojimaps"> emojiMaps</h2>
+<ul>
+<li>Type: <code>Object</code></li>
+<li>Default: <code>null</code></li>
+<li>Required: No</li>
+</ul>
+<p>Set `Emoji Packet Mapping’, refer to <a href="./emoji.html">Custom Emoji</a>.</p>
+<h2 id="requiredfields"> requiredFields</h2>
+<ul>
+<li>Type: <code>string[]</code></li>
+<li>Default: <code>['nick']</code></li>
+<li>Required: No</li>
+</ul>
+<p>Set required fields, default anonymous, optional values:</p>
+<ul>
+<li><code>[]</code></li>
+<li><code>['nick']</code></li>
+<li><code>['nick','mail']</code></li>
+</ul>
+<h2 id="uploadimage"> uploadImage</h2>
+<ul>
+<li>Type: <code>Function</code></li>
+<li>Required: No</li>
+</ul>
+<p>Custom image upload callback to manage picture by yourself. We will pass a picture file object when execute it.</p>
+<h2 id="anonymous"> anonymous</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Required: No</li>
+</ul>
+<p>Whether to allow login comments. Both supported by default, set to <code>true</code> means only support anonymous comments, <code>false</code> means only support login comments.</p>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-05-16T15:14:54.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
     <title type="html">BitBucket OAuth Consumer</title>
     <id>https://vuepress-theme-hope.github.io/comment/guide/bitbucket/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/guide/bitbucket/"/>
@@ -830,7 +1031,7 @@ Vssue can also work with self-hosted GitLab. Set the <code>baseURL</code> option
     <title type="html">Guide</title>
     <id>https://vuepress-theme-hope.github.io/comment/guide/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/guide/"/>
-    <updated>2021-03-13T08:58:19.000Z</updated>
+    <updated>2021-05-16T15:14:54.000Z</updated>
     <content type="html"><![CDATA[<h1 id="guide"> Guide</h1>
 <p>This plugin exposes two components at <code>@mr-hope/vuepress-plugin-comment/lib/client/&lt;component name&gt;.vue</code>. Please include it manually in your theme.</p>
 <ul>
@@ -846,18 +1047,21 @@ Vssue can also work with self-hosted GitLab. Set the <code>baseURL</code> option
 <p>It is recommended to insert the comment component (<code>&lt;Comment /&gt;</code>) after the <code>&lt;PageNav /&gt;</code> component.</p>
 <p><code>&lt;Comment /&gt;</code> components are enabled globally by default. You can disable it by setting <code>comment: false</code> in frontmatter on a specific page.</p>
 <p>To keep it globally disabled, please set <code>comment</code> to <code>false</code> in the plugin options. This way you can set <code>comment: true</code> in the frontmatter of a particular page to enable it locally.</p>
-<p>You can choose from 2 comment service provider: Valine and Vssue.</p>
-<div><p>Comparison between Valine and Vssue</p>
+<p>You can choose from 3 comment service provider: Waline, Vssue and Valine.</p>
+<div><p>Comparison between services</p>
 <ul>
-<li>Valine uses leancloud to support pageview statistics, and you can comment without logging in to any account</li>
+<li>Waline uses a backend server to support comment and pageview statistics, and you can comment without logging in to any account. It needs extra configuration on backend, and you can deploy on vercel for free.</li>
 <li>Vssue uses the issue panel of the code platform repo and requires the user to login or register the corresponding platform account.</li>
+<li>Valine uses leancloud to support pageview statistics, and you can comment without logging in to any account</li>
 </ul>
-<p>If your site is for the general public rather than programmers, Valine is recommended.</p>
+<p>If your site is for the general public rather than programmers, Waline is recommended.</p>
 </div>
-<h3 id="valine"> Valine</h3>
-<p>See <a href="./valine.html">Valine Config Guide</a></p>
+<h3 id="waline"> Waline</h3>
+<p>See <a href="./waline.html">Waline Config Guide</a></p>
 <h3 id="vssue"> Vssue</h3>
 <p>See <a href="./vssue.html">Vssue Config Guide</a></p>
+<h3 id="valine"> Valine</h3>
+<p>See <a href="./valine.html">Valine Config Guide</a></p>
 ]]></content>
     <author>
       <name>Mr.Hope</name>
@@ -1117,6 +1321,76 @@ $vssue-direction
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
+    <title type="html">Waline</title>
+    <id>https://vuepress-theme-hope.github.io/comment/guide/waline/</id>
+    <link href="https://vuepress-theme-hope.github.io/comment/guide/waline/"/>
+    <updated>2021-05-16T15:14:54.000Z</updated>
+    <summary type="html"><![CDATA[<p>If you want to use Waline in your site, please follow this guide.</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>If you want to use Waline in your site, please follow this guide.</p>
+
+<h2 id="get-app-id-and-app-key"> Get APP ID and APP Key</h2>
+<p>First you need <a href="https://console.leancloud.app/login.html#/signin" target="_blank" rel="noopener noreferrer">sign in</a> or <a href="https://console.leancloud.app/login.html#/signup" target="_blank" rel="noopener noreferrer">sign up</a> LeanCloud. Then go to <a href="https://console.leancloud.app/applist.html#/apps" target="_blank" rel="noopener noreferrer">Console</a> click button <a href="https://console.leancloud.app/applist.html#/newapp" target="_blank" rel="noopener noreferrer">Create app</a> to create a new app:</p>
+<p><img src="https://i.loli.net/2019/06/21/5d0c995c86fac81746.jpg" alt="Create App" /></p>
+<p>After app created, we need click into it. Select <code>Settings</code> &gt; <code>App Keys</code> at the left bottom side, then you can see <code>APP ID</code>, <code>APP Key</code> and <code>Master Key</code> for your app!</p>
+<p><img src="https://i.loli.net/2019/06/21/5d0c997a60baa24436.jpg" alt="ID and Key" /></p>
+<h2 id="deploy-to-vercel"> Deploy to Vercel</h2>
+<p><a href="https://vercel.com/import/project?template=https://github.com/lizheming/waline/tree/master/example" target="_blank" rel="noopener noreferrer"><img src="https://vercel.com/button" alt="Vercel" /></a></p>
+<p>Click the blue button, and it will redirect to vercel to deploy with waline template. You need login if you have not, we recommends you sign in with GitHub. You can input your Vercel project name after you login.</p>
+<p><img src="https://p2.ssl.qhimg.com/t018cd2a91a8896a555.png" alt="Create project" /></p>
+<p>Click <code>Continue</code> go to the next step，and input your new github repo name。The repo will be created and initiallized automatically base on waline example template by Vercel.</p>
+<p><img src="https://p4.ssl.qhimg.com/t01bb30e74f85ddf5b3.png" alt="Select repo" /></p>
+<p>OK, repo has been initialized. It's ready to deploy to Vercel! We must set <code>LEAN_ID</code>, <code>LEAN_KEY</code> and <code>LEAN_MASTER_KEY</code> the three environment variables in the &quot;Environment Variables&quot; column. The variables' value are what you get on the previous step in LeanCloud. <code>APP ID</code> is the value of <code>LEAN_ID</code>, and <code>APP Key</code> to <code>LEAN_KEY</code>, <code>Master Key</code> to <code>LEAN_MASTER_KEY</code>.</p>
+<p><img src="https://p5.ssl.qhimg.com/t019aec05e3e5fea5cc.png" alt="Set environment variables" /></p>
+<p>Click <code>Deploy</code> button to deploy. It will show you deploy successfully after a minitues time. It'll go to deployed site when you click <code>Visit</code> button. Please remember the site's url, we will use it to set <code>serverURL</code> configuration in the next step.</p>
+<p><img src="https://p0.ssl.qhimg.com/t0142b58c2e8f886b28.png" alt="Deploy" /></p>
+<h2 id="html-references"> HTML References</h2>
+<p>Let us set the <code>serverURL</code> value to the site url previous step got in the configuration object.</p>
+<div><pre><code><span><span><span>&lt;</span>head</span><span>></span></span>
+  ..
+  <span><span><span>&lt;</span>script</span> <span>src</span><span><span>=</span><span>"</span>//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js<span>"</span></span><span>></span></span><span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
+  ...
+<span><span><span>&lt;/</span>head</span><span>></span></span>
+<span><span><span>&lt;</span>body</span><span>></span></span>
+  ...
+  <span><span><span>&lt;</span>div</span> <span>id</span><span><span>=</span><span>"</span>waline<span>"</span></span><span>></span></span><span><span><span>&lt;/</span>div</span><span>></span></span>
+  <span><span><span>&lt;</span>script</span><span>></span></span><span><span>
+    <span>new</span> <span>Waline</span><span>(</span><span>{</span>
+      el<span>:</span> <span>"#waline"</span><span>,</span>
+      path<span>:</span> location<span>.</span>pathname<span>,</span>
+      serverURL<span>:</span> <span>"https://your-domain.vercel.app"</span><span>,</span>
+    <span>}</span><span>)</span><span>;</span>
+  </span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
+<span><span><span>&lt;/</span>body</span><span>></span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br></div></div><h2 id="npm"> NPM</h2>
+<p>You can alose use <a href="https://www.npmjs.com/package/@waline/client" target="_blank" rel="noopener noreferrer">npm</a> to install Waline instead of CDN link. Install in the CLI like this:</p>
+<div><pre><code><span># Install waline</span>
+<span>npm</span> <span>install</span> @waline/client --save-dev
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><div><pre><code><span>// Use import</span>
+<span>import</span> Waline <span>from</span> <span>"@waline/client"</span><span>;</span>
+<span>// or Use require</span>
+<span>const</span> Waline <span>=</span> <span>require</span><span>(</span><span>"@waline/client"</span><span>)</span><span>;</span>
+
+<span>new</span> <span>Waline</span><span>(</span><span>{</span>
+  el<span>:</span> <span>"#waline"</span><span>,</span>
+  <span>// other config</span>
+<span>}</span><span>)</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><h2 id="comment-managment"> Comment Managment</h2>
+<p>Waline has a simple admin control panel, we can mange comment data in it. We can register in your site url <code>&lt;serverURL&gt;/ui/register</code> after we deployed successfully. The first register one is administrator. You can see comment management UI after login. Collection it for the next use!</p>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-05-16T15:14:54.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
     <title type="html">Home</title>
     <id>https://vuepress-theme-hope.github.io/comment/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/"/>
@@ -1159,7 +1433,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">配置</title>
     <id>https://vuepress-theme-hope.github.io/comment/zh/config/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/zh/config/"/>
-    <updated>2021-04-07T05:20:59.000Z</updated>
+    <updated>2021-05-16T15:14:54.000Z</updated>
     <content type="html"><![CDATA[<h2 id="type"> type</h2>
 <ul>
 <li>类型: <code>'valine' | 'vssue' | 'disable'</code></li>
@@ -1200,13 +1474,17 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <li>默认: <code>300</code></li>
 </ul>
 <p>每分钟阅读的字数。</p>
-<h2 id="valine-配置"> Valine 配置</h2>
+<h2 id="waline-配置"> Waline 配置</h2>
 <ul>
-<li><a href="./valine.html">点击查看</a></li>
+<li><a href="./waline.html">点击查看</a></li>
 </ul>
 <h2 id="vssue-配置"> Vssue 配置</h2>
 <ul>
 <li><a href="./vssue.html">点击查看</a></li>
+</ul>
+<h2 id="valine-配置"> Valine 配置</h2>
+<ul>
+<li><a href="./valine.html">点击查看</a></li>
 </ul>
 <h2 id="页面配置"> 页面配置</h2>
 <ul>
@@ -1223,12 +1501,11 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
-    <title type="html">valine 配置</title>
+    <title type="html">Valine 配置</title>
     <id>https://vuepress-theme-hope.github.io/comment/zh/config/valine/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/zh/config/valine/"/>
-    <updated>2021-04-28T04:30:20.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="valine-配置"> valine 配置</h1>
-<h2 id="appid"> appId</h2>
+    <updated>2021-05-16T15:14:54.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="appid"> appId</h2>
 <ul>
 <li>类型: <code>string</code></li>
 <li>必填: 是</li>
@@ -1357,9 +1634,8 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">Vssue 配置</title>
     <id>https://vuepress-theme-hope.github.io/comment/zh/config/vssue/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/zh/config/vssue/"/>
-    <updated>2021-01-20T10:14:58.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="vssue-配置"> Vssue 配置</h1>
-<h2 id="platform"> platform</h2>
+    <updated>2021-05-16T15:14:54.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="platform"> platform</h2>
 <p><code>@vssue/vuepress-plugin-vssue</code> 会自动根据你设置的 <code>platform</code> 为你解析对应的 API 包:</p>
 <ul>
 <li>Platform <code>github</code> - API 包 <code>@vssue/api-github-v3</code></li>
@@ -1677,6 +1953,208 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
+    <title type="html">Waline 配置</title>
+    <id>https://vuepress-theme-hope.github.io/comment/zh/config/waline/</id>
+    <link href="https://vuepress-theme-hope.github.io/comment/zh/config/waline/"/>
+    <updated>2021-05-16T15:14:54.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="el"> el</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 是</li>
+</ul>
+<p>Waline 的初始化挂载器。必须是一个有效的 <strong>CSS 选择器</strong>。</p>
+<h2 id="serverurl"> serverURL</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 是</li>
+</ul>
+<p>Waline 的服务端地址。</p>
+<h2 id="placeholder"> placeholder</h2>
+<ul>
+<li>类型:<code>string</code></li>
+<li>默认值: <code>'撰写评论...'</code></li>
+<li>必填: 否</li>
+</ul>
+<p>评论框 <strong>占位提示符</strong>。</p>
+<h2 id="wordlimit"> wordLimit</h2>
+<ul>
+<li>类型: <code>number | [number, number]</code></li>
+<li>默认值: <code>0</code></li>
+<li>必要性: <code>false</code></li>
+</ul>
+<p>评论字数限制。填入单个数字时为最大字数限制。设置为 <code>0</code> 时无限制。</p>
+<h2 id="path"> path</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>window.location.pathname</code></li>
+<li>必填: 否</li>
+</ul>
+<p>当前 <em>文章页</em> 路径，用于区分不同的 <em>文章页</em>，以保证正确读取该 <em>文章页</em> 下的评论列表。</p>
+<p>可选值:</p>
+<ul>
+<li><code>window.location.pathname</code> (默认值，推荐)</li>
+<li><code>window.location.href</code></li>
+<li>自定义</li>
+</ul>
+<blockquote>
+<p>I. 请保证每个 <em>文章页</em> 路径的唯一性，否则可能会出现不同 <em>文章页</em> 下加载相同评论列表的情况。</p>
+<p>II. 如果值为 <code>window.location.href</code>，可能会出现随便加 <em>不同参数</em> 进入该页面，而被判断成新页面的情况。</p>
+</blockquote>
+<h2 id="avatar"> avatar</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>mp</code></li>
+<li>必填: 否</li>
+</ul>
+<p><a href="http://cn.gravatar.com/" target="_blank" rel="noopener noreferrer">Gravatar</a> 头像展示方式。</p>
+<p>可选值:</p>
+<ul>
+<li><code>''</code></li>
+<li><code>'mp'</code></li>
+<li><code>'identicon'</code></li>
+<li><code>'monsterid'</code></li>
+<li><code>'wavatar'</code></li>
+<li><code>'retro'</code></li>
+<li><code>'robohash'</code></li>
+<li><code>'hide'</code></li>
+</ul>
+<p>更多信息，请查看 <a href="./avatar.html">头像配置</a>。</p>
+<h2 id="meta"> meta</h2>
+<ul>
+<li>类型: <code>string[]</code></li>
+<li>默认值: <code>['nick', 'mail', 'link']</code></li>
+<li>必填: 否</li>
+</ul>
+<p>评论者相关属性。可选值: <code>'nick'</code>, <code>'mail'</code>, <code>'link'</code></p>
+<h2 id="pagesize"> pageSize</h2>
+<ul>
+<li>类型: <code>number</code></li>
+<li>默认值: <code>10</code></li>
+<li>必填: 否</li>
+</ul>
+<p>评论列表分页，每页条数。</p>
+<h2 id="lang"> lang</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>'zh-CN'</code></li>
+<li>必填: 否</li>
+</ul>
+<p>多语言支持。</p>
+<p>可选值:</p>
+<ul>
+<li><code>'zh'</code></li>
+<li><code>'zh-CN'</code></li>
+<li><code>'zh-TW'</code></li>
+<li><code>'en'</code></li>
+<li><code>'en-US'</code></li>
+<li><code>'jp'</code></li>
+<li><code>'jp-JP'</code></li>
+</ul>
+<p>如需 <em>自定义语言</em>，请参考 <a href="./i18n.html">i18n</a>。</p>
+<h2 id="visitor"> visitor</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+<li>必填: 否</li>
+</ul>
+<p>文章访问量统计。</p>
+<h2 id="dark"> dark</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>暗黑模式适配。</p>
+<ul>
+<li>设置 <code>'auto'</code> 会根据设备暗黑模式自适应。</li>
+<li>填入 CSS 选择器会在对应选择器生效时启用夜间模式。</li>
+</ul>
+<div><p>针对不同主题的例子</p>
+<ul>
+<li>
+<p><strong>Docusaurus</strong>: 它会在 <code>&lt;html&gt;</code> 上通过设置 <code>data-theme=&quot;dark&quot;</code> 开启暗黑模式，那么你需要将 <code>dark</code> 选项设置为 <code>'html[data-theme=&quot;dark&quot;]'</code>。</p>
+</li>
+<li>
+<p><strong>hexo-theme-fluid</strong>: 它会在 <code>&lt;html&gt;</code> 上通过设置 <code>data-user-color-scheme=&quot;dark&quot;</code> 开启暗黑模式。那么你需要将 <code>dark</code> 选项设置为 <code>'html[data-user-color-scheme=&quot;dark&quot;]'</code>。</p>
+</li>
+<li>
+<p><strong>vuepress-theme-hope</strong>: 它会在 <code>&lt;body&gt;</code> 上添加<code>theme-dark</code> class 来开启暗黑模式。那么你需要将 <code>dark</code> 选项设置为 <code>body.theme-dark</code>。</p>
+</li>
+</ul>
+</div>
+<p>自定义样式与暗黑模式详见 <a href="./style.html">自定义样式</a>。</p>
+<h2 id="highlight"> highlight</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+<li>必填: 否</li>
+</ul>
+<p><strong>代码高亮</strong>，默认开启，若不需要，请手动关闭</p>
+<h2 id="avatarcdn"> avatarCDN</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>https://sdn.geekzu.org/avatar/</code></li>
+<li>必填: 否</li>
+</ul>
+<p>设置 Gravatar 头像 CDN 地址。</p>
+<h2 id="avatarforce"> avatarForce</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+<li>必填: 否</li>
+</ul>
+<p>每次访问是否<strong>强制</strong>拉取最新的<em>评论列表头像</em></p>
+<blockquote>
+<p>不推荐设置为 <code>true</code>，目前的<em>评论列表头像</em>会自动带上 <code>Waline</code> 的版本号</p>
+</blockquote>
+<h2 id="emojicdn"> emojiCDN</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>https://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/</code></li>
+<li>必填: 否</li>
+</ul>
+<p>设置<strong>表情包 CDN</strong>，参考<a href="./emoji.html">自定义表情</a></p>
+<h2 id="emojimaps"> emojiMaps</h2>
+<ul>
+<li>类型: <code>Object</code></li>
+<li>默认值: <code>微博表情包</code></li>
+<li>必填: 否</li>
+</ul>
+<p>设置<strong>表情包映射</strong>，参考<a href="./emoji.html">自定义表情</a></p>
+<h2 id="requiredfields"> requiredFields</h2>
+<ul>
+<li>类型: <code>string[]</code></li>
+<li>默认值: <code>[]</code></li>
+<li>必填: 否</li>
+</ul>
+<p>设置<strong>必填项</strong>，默认匿名，可选值:</p>
+<ul>
+<li><code>[]</code></li>
+<li><code>['nick']</code></li>
+<li><code>['nick', 'mail']</code></li>
+</ul>
+<h2 id="uploadimage"> uploadImage</h2>
+<ul>
+<li>类型: <code>Function</code></li>
+<li>必填: 否</li>
+</ul>
+<p>自定义图片上传方法，方便更好的存储图片。方法执行时会将图片对象传入。</p>
+<h2 id="anonymous"> anonymous</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>必填: 否</li>
+</ul>
+<p>是否允许登录评论。默认情况是两者都支持，设置为 <code>true</code> 表示仅支持匿名评论，<code>false</code> 表示仅支持登录评论。</p>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-05-16T15:14:54.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
     <title type="html">BitBucket OAuth Consumer</title>
     <id>https://vuepress-theme-hope.github.io/comment/zh/guide/bitbucket/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/zh/guide/bitbucket/"/>
@@ -1981,7 +2459,7 @@ Vssue 同样可以配合自己搭建的 GitLab 使用。只需要将 <code>baseU
     <title type="html">指南</title>
     <id>https://vuepress-theme-hope.github.io/comment/zh/guide/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/zh/guide/"/>
-    <updated>2021-03-13T08:58:19.000Z</updated>
+    <updated>2021-05-16T15:14:54.000Z</updated>
     <content type="html"><![CDATA[<p>此插件暴露两个组件，路径为 <code>@mr-hope/vuepress-plugin-comment/lib/client/&lt;组件名&gt;.vue</code>。请在你的主题中手动引入。</p>
 <ul>
 <li><code>&lt;Comment /&gt;</code>: 评论组件</li>
@@ -1996,18 +2474,21 @@ Vssue 同样可以配合自己搭建的 GitLab 使用。只需要将 <code>baseU
 <p>推荐将评论组件 (<code>&lt;Comment /&gt;</code>) 插入在 <code>&lt;PageNav /&gt;</code> 组件后。</p>
 <p><code>&lt;Comment /&gt;</code> 组件默认全局启用。你可以在特定页面的 frontmatter 中设置 <code>comment: false</code> 来局部禁用它。</p>
 <p>如果你需要保持全局禁用，请在插件选项中设置 <code>comment</code> 为 <code>false</code>。这样你可以在特定页面的 frontmatter 中设置 <code>comment: true</code> 来局部启用它。</p>
-<p>有两个评论插件可以选择: Valine 和 Vssue。</p>
-<div><p>Valine 与 Vssue 的比较</p>
+<p>有三个评论插件可以选择: Waline、Vssue 和 Valine。</p>
+<div><p>评论服务的比较</p>
 <ul>
-<li>Valine 使用 leancloud，支持页面访问量统计，无需登录账号即可评论</li>
+<li>Waline 需要后端服务器以及额外的配置，支持页面访问量统计，无需登录账号即可评论。可以使用 Vercel。</li>
 <li>Vssue 使用代码平台仓库的 issue 面板，需要用户登录或注册相应平台账号。</li>
+<li>Valine 使用 leancloud，支持页面访问量统计，无需登录账号即可评论</li>
 </ul>
-<p>如果你的站点面向大众而非程序员，推荐使用 Valine。</p>
+<p>如果你的站点面向大众而非程序员，推荐使用 Waline。</p>
 </div>
-<h3 id="valine"> Valine</h3>
-<p><a href="./valine.html">详见 Valine 指南</a></p>
+<h3 id="waline"> Waline</h3>
+<p><a href="./waline.html">详见 Waline 指南</a></p>
 <h3 id="vssue"> Vssue</h3>
 <p><a href="./vssue.html">详见 Vssue 指南</a></p>
+<h3 id="valine"> Valine</h3>
+<p><a href="./valine.html">详见 Valine 指南</a></p>
 ]]></content>
     <author>
       <name>Mr.Hope</name>
@@ -2264,6 +2745,88 @@ $vssue-direction
       <name>Mr.Hope</name>
     </contributor>
     <published>2020-10-13T05:36:44.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">Waline</title>
+    <id>https://vuepress-theme-hope.github.io/comment/zh/guide/waline/</id>
+    <link href="https://vuepress-theme-hope.github.io/comment/zh/guide/waline/"/>
+    <updated>2021-05-16T15:14:54.000Z</updated>
+    <summary type="html"><![CDATA[<p>如果你想在某个网页或者文章页中使用 Waline，请参照以下步骤配置。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>如果你想在某个网页或者文章页中使用 Waline，请参照以下步骤配置。</p>
+
+<h2 id="获取-app-id-和-app-key"> 获取 APP ID 和 APP Key</h2>
+<p>请先<a href="https://console.leancloud.app/login.html#/signin" target="_blank" rel="noopener noreferrer">登录</a>或<a href="https://console.leancloud.app/login.html#/signup" target="_blank" rel="noopener noreferrer">注册</a> <code>LeanCloud 国际版</code>, 进入<a href="https://console.leancloud.app/applist.html#/apps" target="_blank" rel="noopener noreferrer">控制台</a>后点击左下角<a href="https://console.leancloud.app/applist.html#/newapp" target="_blank" rel="noopener noreferrer">创建应用</a>:</p>
+<p><img src="https://i.loli.net/2019/06/21/5d0c995c86fac81746.jpg" alt="创建应用" /></p>
+<p>应用创建好以后，进入刚刚创建的应用，选择左下角的<code>设置</code>&gt;<code>应用Key</code>，然后就能看到你的<code>APP ID</code>,<code>APP Key</code>和<code>Master Key</code>了:</p>
+<p><img src="https://i.loli.net/2019/06/21/5d0c995c86fac81746.jpg" alt="ID 和 Key" /></p>
+<div><p>Tips</p>
+<p>这里推荐使用 Leancloud 国际版。如果你确实想用 Leancloud 国内版的话（国际版是 <a href="https://leancloud.app" target="_blank" rel="noopener noreferrer">leancloud.app</a>，非国际版是 <a href="https://leancloud.cn" target="_blank" rel="noopener noreferrer">leancloud.cn</a>），除了 <code>APP_ID</code>, <code>APP_Key</code> 和 <code>Master Key</code> 之外，还需要对应用进行域名绑定。</p>
+<p>进入应用后选择 <code>设置</code> &gt; <code>域名绑定</code> &gt; API 访问域名 <code>绑定新域名</code> &gt; 输入需要绑定的已备案域名点击 <code>确定</code>。之后按照页面上的提示去 DNS 上做正确的 CNAME 解析即可。</p>
+<p><img src="https://i.loli.net/2020/11/09/xfsX4JKt9zhuaiB.png" alt="域名设置" /></p>
+</div>
+<h2 id="vercel-部署"> Vercel 部署</h2>
+<p><a href="https://vercel.com/import/project?template=https://github.com/lizheming/waline/tree/master/example" target="_blank" rel="noopener noreferrer"><img src="https://vercel.com/button" alt="Vercel" /></a></p>
+<p>点击上方按钮，跳转至 Vercel 进行快速部署。未登录的话需要登录，这里选 GitHub 登录即可。登录后会让你输入 Vercel 项目名称。</p>
+<p><img src="https://p2.ssl.qhimg.com/t018cd2a91a8896a555.png" alt="创建项目" /></p>
+<p>输入名称后点击 <code>Continue</code> 进入下一步，输入 GitHub 仓库名称。Vercel 会基于 waline 模板帮助你新建并初始化该仓库。</p>
+<p><img src="https://p4.ssl.qhimg.com/t01bb30e74f85ddf5b3.png" alt="选择从仓库" /></p>
+<p>仓库初始化完毕后开始准备部署到 Vercel。这里需要在 Environment Variables 初配置 <code>LEAN_ID</code>, <code>LEAN_KEY</code> 和 <code>LEAN_MASTER_KEY</code> 三个环境变量。它们的值分别对应上一步在 LeanCloud 中获得的 <code>APP ID</code>, <code>APP KEY</code>, <code>Master Key</code>。如果你是 LeanCloud 国内版用户的话，还需要输入 <code>LEAN_SERVER</code> 环境变量，对应的是你在上一步上绑定的已备案域名。</p>
+<p><img src="https://p5.ssl.qhimg.com/t019aec05e3e5fea5cc.png" alt="设置域名" /></p>
+<p>点击 <code>Deploy</code> 就会开始进行部署了。稍等片刻，就会看到满屏的烟花庆祝你部署成功了。点击 <code>Visit</code> 会跳转到部署好的网站地址上，该地址即为之后需要填入的 <code>serverURL</code> 地址。</p>
+<p><img src="https://p0.ssl.qhimg.com/t0142b58c2e8f886b28.png" alt="部署成功" /></p>
+<h2 id="html-片段"> HTML 片段</h2>
+<p>修改初始化对象中的 <code>serverURL</code> 的值为上面刚刚获取到的二级域名即可(其他可以默认)。</p>
+<div><pre><code><span><span><span>&lt;</span>head</span><span>></span></span>
+  ..
+  <span><span><span>&lt;</span>script</span> <span>src</span><span><span>=</span><span>"</span>//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js<span>"</span></span><span>></span></span><span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
+  ...
+<span><span><span>&lt;/</span>head</span><span>></span></span>
+<span><span><span>&lt;</span>body</span><span>></span></span>
+  ...
+  <span><span><span>&lt;</span>div</span> <span>id</span><span><span>=</span><span>"</span>waline<span>"</span></span><span>></span></span><span><span><span>&lt;/</span>div</span><span>></span></span>
+  <span><span><span>&lt;</span>script</span><span>></span></span><span><span>
+    <span>new</span> <span>Waline</span><span>(</span><span>{</span>
+      el<span>:</span> <span>"#waline"</span><span>,</span>
+      path<span>:</span> location<span>.</span>pathname<span>,</span>
+      serverURL<span>:</span> <span>"https://your-domain.vercel.app"</span><span>,</span>
+    <span>}</span><span>)</span><span>;</span>
+  </span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
+<span><span><span>&lt;/</span>body</span><span>></span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br></div></div><h2 id="配置"> 配置</h2>
+<p>修改初始化对象中的 <code>serverURL</code> 的值为上面刚刚获取到的二级域名即可(其他可以默认)。</p>
+<div><pre><code><span>new</span> <span>Waline</span><span>(</span><span>{</span>
+  el<span>:</span> <span>"#waline"</span><span>,</span>
+  path<span>:</span> location<span>.</span>pathname<span>,</span>
+<span>}</span><span>)</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><h2 id="npm"> NPM</h2>
+<p>Waline 已发布到<a href="https://www.npmjs.com/package/@waline/client" target="_blank" rel="noopener noreferrer">npm</a>，可以直接用命令安装:</p>
+<div><pre><code><span># Install waline</span>
+<span>npm</span> <span>install</span> @waline/client --save-dev
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><div><pre><code><span>// Use import</span>
+<span>import</span> Waline <span>from</span> <span>"@waline/client"</span><span>;</span>
+<span>// or Use require</span>
+<span>const</span> Waline <span>=</span> <span>require</span><span>(</span><span>"@waline/client"</span><span>)</span><span>;</span>
+
+<span>new</span> <span>Waline</span><span>(</span><span>{</span>
+  el<span>:</span> <span>"#waline"</span><span>,</span>
+  <span>// other config</span>
+<span>}</span><span>)</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><h2 id="评论数据管理"> 评论数据管理</h2>
+<p>Waline 还带有简单的后台，可以实现对评论的管理。部署完成后访问 <code>&lt;serverURL&gt;/ui/register</code> 进行注册，第一个注册的你会被设定成管理员。登录成功后就可以看到评论管理的界面了，大家可以收藏该地址方便后续使用。</p>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-05-16T15:14:54.000Z</published>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
