@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/comment/</link>
     <description>Comment Plugin for VuePress</description>
     <language>en-US</language>
-    <pubDate>Sun, 16 May 2021 15:35:31 GMT</pubDate>
-    <lastBuildDate>Sun, 16 May 2021 15:35:31 GMT</lastBuildDate>
+    <pubDate>Mon, 17 May 2021 07:09:43 GMT</pubDate>
+    <lastBuildDate>Mon, 17 May 2021 07:09:43 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -1237,22 +1237,22 @@ $vssue-direction
       <content:encoded><![CDATA[<p>If you want to use Waline in your site, please follow this guide.</p>
 
 <h2 id="get-app-id-and-app-key"> Get APP ID and APP Key</h2>
-<p>First you need <a href="https://console.leancloud.app/login.html#/signin" target="_blank" rel="noopener noreferrer">sign in</a> or <a href="https://console.leancloud.app/login.html#/signup" target="_blank" rel="noopener noreferrer">sign up</a> LeanCloud. Then go to <a href="https://console.leancloud.app/applist.html#/apps" target="_blank" rel="noopener noreferrer">Console</a> click button <a href="https://console.leancloud.app/applist.html#/newapp" target="_blank" rel="noopener noreferrer">Create app</a> to create a new app:</p>
+<p>First you need <a href="https://console.leancloud.app/login.html#/signin" target="_blank" rel="noopener noreferrer">sign in</a> or <a href="https://console.leancloud.app/login.html#/signup" target="_blank" rel="noopener noreferrer">sign up</a> LeanCloud. Then go to <a href="https://console.leancloud.app/applist.html#/apps" target="_blank" rel="noopener noreferrer">Console</a> and click <a href="https://console.leancloud.app/applist.html#/newapp" target="_blank" rel="noopener noreferrer">Create app</a> button to create a new app:</p>
 <p><img src="https://i.loli.net/2019/06/21/5d0c995c86fac81746.jpg" alt="Create App" /></p>
-<p>After app created, we need click into it. Select <code>Settings</code> &gt; <code>App Keys</code> at the left bottom side, then you can see <code>APP ID</code>, <code>APP Key</code> and <code>Master Key</code> for your app!</p>
+<p>After app is created, we need click into it. Select <code>Settings</code> &gt; <code>App Keys</code> at the left bottom side, then you can see <code>APP ID</code>, <code>APP Key</code> and <code>Master Key</code> of your app!</p>
 <p><img src="https://i.loli.net/2019/06/21/5d0c997a60baa24436.jpg" alt="ID and Key" /></p>
 <h2 id="deploy-to-vercel"> Deploy to Vercel</h2>
 <p><a href="https://vercel.com/import/project?template=https://github.com/lizheming/waline/tree/master/example" target="_blank" rel="noopener noreferrer"><img src="https://vercel.com/button" alt="Vercel" /></a></p>
-<p>Click the blue button, and it will redirect to vercel to deploy with waline template. You need login if you have not, we recommends you sign in with GitHub. You can input your Vercel project name after you login.</p>
+<p>Click the blue button above, it will redirect you to vercel to deploy with waline template. We recommend you to sign in with GitHub if you don't have a vercel account. Input your Vercel project name after login.</p>
 <p><img src="https://p2.ssl.qhimg.com/t018cd2a91a8896a555.png" alt="Create project" /></p>
-<p>Click <code>Continue</code> go to the next step，and input your new github repo name。The repo will be created and initiallized automatically base on waline example template by Vercel.</p>
+<p>Click <code>Continue</code> to the next step then input your new GitHub repo name. The repo will be created and initiallized automatically base on waline example template by Vercel.</p>
 <p><img src="https://p4.ssl.qhimg.com/t01bb30e74f85ddf5b3.png" alt="Select repo" /></p>
-<p>OK, repo has been initialized. It’s ready to deploy to Vercel! We must set <code>LEAN_ID</code>, <code>LEAN_KEY</code> and <code>LEAN_MASTER_KEY</code> the three environment variables in the &quot;Environment Variables&quot; column. The variables’ value are what you get on the previous step in LeanCloud. <code>APP ID</code> is the value of <code>LEAN_ID</code>, and <code>APP Key</code> to <code>LEAN_KEY</code>, <code>Master Key</code> to <code>LEAN_MASTER_KEY</code>.</p>
+<p>Now the repo is initialized. It's ready to deploy to Vercel! Setting <code>LEAN_ID</code>, <code>LEAN_KEY</code> and <code>LEAN_MASTER_KEY</code> environment variables in the &quot;Environment Variables&quot; column is required. The variables' value are what you get on the previous step in LeanCloud. <code>APP ID</code> is the value of <code>LEAN_ID</code>, and <code>APP Key</code> to <code>LEAN_KEY</code>, <code>Master Key</code> to <code>LEAN_MASTER_KEY</code>.</p>
 <p><img src="https://p5.ssl.qhimg.com/t019aec05e3e5fea5cc.png" alt="Set environment variables" /></p>
-<p>Click <code>Deploy</code> button to deploy. It will show you deploy successfully after a minitues time. It’ll go to deployed site when you click <code>Visit</code> button. Please remember the site’s url, we will use it to set <code>serverURL</code> configuration in the next step.</p>
+<p>Finally click <code>Deploy</code> button, and vercel will tell you the deployment finishes successfully after one or two minutes. Now you can click <code>Visit</code> button to visit the site. Please memorize the site's url, we will use it in next step.</p>
 <p><img src="https://p0.ssl.qhimg.com/t0142b58c2e8f886b28.png" alt="Deploy" /></p>
 <h2 id="html-references"> HTML References</h2>
-<p>Let us set the <code>serverURL</code> value to the site url previous step got in the configuration object.</p>
+<p>Set <code>serverURL</code> option with the site url in options.</p>
 <div><pre><code><span><span><span>&lt;</span>head</span><span>></span></span>
   ..
   <span><span><span>&lt;</span>script</span> <span>src</span><span><span>=</span><span>"</span>//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js<span>"</span></span><span>></span></span><span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
@@ -1264,29 +1264,36 @@ $vssue-direction
   <span><span><span>&lt;</span>script</span><span>></span></span><span><span>
     <span>new</span> <span>Waline</span><span>(</span><span>{</span>
       el<span>:</span> <span>"#waline"</span><span>,</span>
-      path<span>:</span> location<span>.</span>pathname<span>,</span>
       serverURL<span>:</span> <span>"https://your-domain.vercel.app"</span><span>,</span>
     <span>}</span><span>)</span><span>;</span>
   </span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
 <span><span><span>&lt;/</span>body</span><span>></span></span>
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br></div></div><h2 id="npm"> NPM</h2>
-<p>You can alose use <a href="https://www.npmjs.com/package/@waline/client" target="_blank" rel="noopener noreferrer">npm</a> to install Waline instead of CDN link. Install in the CLI like this:</p>
-<div><pre><code><span># Install waline</span>
-<span>npm</span> <span>install</span> @waline/client --save-dev
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br></div></div><h2 id="npm"> NPM</h2>
+<p>You can use <a href="https://www.npmjs.com/package/@waline/client" target="_blank" rel="noopener noreferrer">npm</a> to install Waline instead of CDN link. Install in CLI like this:</p>
+<CodeGroup>
+<CodeGroupItem title="yarn">
+<div><pre><code><span>yarn</span> <span>add</span> -D @waline/client
 </code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><div><pre><code><span>// Use import</span>
-<span>import</span> Waline <span>from</span> <span>"@waline/client"</span><span>;</span>
+<div><span>1</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="npm">
+<div><pre><code><span>npm</span> i -D @waline/client
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+<div><pre><code><span>// Use import</span>
+<span>import</span> Waline <span>from</span> <span>'@waline/client'</span><span>;</span>
 <span>// or Use require</span>
-<span>const</span> Waline <span>=</span> <span>require</span><span>(</span><span>"@waline/client"</span><span>)</span><span>;</span>
+<span>const</span> Waline <span>=</span> <span>require</span><span>(</span><span>'@waline/client'</span><span>)</span><span>;</span>
 
 <span>new</span> <span>Waline</span><span>(</span><span>{</span>
-  el<span>:</span> <span>"#waline"</span><span>,</span>
+  el<span>:</span> <span>'#waline'</span><span>,</span>
   <span>// other config</span>
+  <span>...</span>
 <span>}</span><span>)</span><span>;</span>
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><h2 id="comment-management"> Comment Management</h2>
-<p>Waline has a simple admin control panel, we can mange comment data in it. We can register in your site url <code>&lt;serverURL&gt;/ui/register</code> after we deployed successfully. The first register one is administrator. You can see comment management UI after login. Collection it for the next use!</p>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div><h2 id="comment-management"> Comment Management</h2>
+<p>Waline provides a simple admin control panel for us to manage comment data. You can register in <code>&lt;serverURL&gt;/ui/register</code> after deployed successfully. The first person registered will be administrator.</p>
 ]]></content:encoded>
       <enclosure url="https://i.loli.net/2019/06/21/5d0c995c86fac81746.jpg" type="image/jpeg"/>
     </item>
@@ -2554,33 +2561,33 @@ $vssue-direction
       <link>https://vuepress-theme-hope.github.io/comment/zh/guide/waline/</link>
       <guid>https://vuepress-theme-hope.github.io/comment/zh/guide/waline/</guid>
       <source url="https://vuepress-theme-hope.github.io/comment/rss.xml">Waline</source>
-      <description>&amp;lt;p&amp;gt;如果你想在某个网页或者文章页中使用 Waline，请参照以下步骤配置。&amp;lt;/p&amp;gt;
+      <description>&amp;lt;p&amp;gt;如果你想在某个网页或者文章页中使用 Waline，请参照以下步骤配置:&amp;lt;/p&amp;gt;
 </description>
       <pubDate>Sun, 16 May 2021 15:14:54 GMT</pubDate>
-      <content:encoded><![CDATA[<p>如果你想在某个网页或者文章页中使用 Waline，请参照以下步骤配置。</p>
+      <content:encoded><![CDATA[<p>如果你想在某个网页或者文章页中使用 Waline，请参照以下步骤配置:</p>
 
 <h2 id="获取-app-id-和-app-key"> 获取 APP ID 和 APP Key</h2>
-<p>请先<a href="https://console.leancloud.app/login.html#/signin" target="_blank" rel="noopener noreferrer">登录</a>或<a href="https://console.leancloud.app/login.html#/signup" target="_blank" rel="noopener noreferrer">注册</a> <code>LeanCloud 国际版</code>, 进入<a href="https://console.leancloud.app/applist.html#/apps" target="_blank" rel="noopener noreferrer">控制台</a>后点击左下角<a href="https://console.leancloud.app/applist.html#/newapp" target="_blank" rel="noopener noreferrer">创建应用</a>:</p>
+<p>请先 <a href="https://console.leancloud.app/login.html#/signin" target="_blank" rel="noopener noreferrer">登录</a> 或 <a href="https://console.leancloud.app/login.html#/signup" target="_blank" rel="noopener noreferrer">注册</a> <code>LeanCloud 国际版</code>, 进入 <a href="https://console.leancloud.app/applist.html#/apps" target="_blank" rel="noopener noreferrer">控制台</a> 后点击左下角 <a href="https://console.leancloud.app/applist.html#/newapp" target="_blank" rel="noopener noreferrer">创建应用</a>:</p>
 <p><img src="https://i.loli.net/2019/06/21/5d0c995c86fac81746.jpg" alt="创建应用" /></p>
-<p>应用创建好以后，进入刚刚创建的应用，选择左下角的<code>设置</code>&gt;<code>应用Key</code>，然后就能看到你的<code>APP ID</code>,<code>APP Key</code>和<code>Master Key</code>了:</p>
+<p>创建好应用后，进入刚刚创建的应用，选择左下角的 <code>设置</code> &gt; <code>应用Key</code>，然后就能看到你的 <code>APP ID</code>,<code>APP Key</code> 和 <code>Master Key</code> 了:</p>
 <p><img src="https://i.loli.net/2019/06/21/5d0c995c86fac81746.jpg" alt="ID 和 Key" /></p>
 <div><p>Tips</p>
-<p>这里推荐使用 Leancloud 国际版。如果你确实想用 Leancloud 国内版的话（国际版是 <a href="https://leancloud.app" target="_blank" rel="noopener noreferrer">leancloud.app</a>，非国际版是 <a href="https://leancloud.cn" target="_blank" rel="noopener noreferrer">leancloud.cn</a>），除了 <code>APP_ID</code>, <code>APP_Key</code> 和 <code>Master Key</code> 之外，还需要对应用进行域名绑定。</p>
-<p>进入应用后选择 <code>设置</code> &gt; <code>域名绑定</code> &gt; API 访问域名 <code>绑定新域名</code> &gt; 输入需要绑定的已备案域名点击 <code>确定</code>。之后按照页面上的提示去 DNS 上做正确的 CNAME 解析即可。</p>
+<p>我们推荐大家使用 Leancloud 国际版 (<a href="https://leancloud.app" target="_blank" rel="noopener noreferrer">leancloud.app</a>)。如果你确实想用 Leancloud 国内版(<a href="https://leancloud.cn" target="_blank" rel="noopener noreferrer">leancloud.cn</a>)，除了 <code>APP_ID</code>, <code>APP_Key</code> 和 <code>Master Key</code> 之外，你还需要<strong>为应用绑定域名</strong>。</p>
+<p><strong>绑定域名</strong>: 进入应用后选择 <code>设置</code> &gt; <code>域名绑定</code> &gt; <code>API 访问域名</code> &gt; <code>绑定新域名</code> &gt; 输入需要绑定的已备案域名点击 <code>确定</code>。之后按照页面上的提示去 DNS 上做正确的 CNAME 解析即可。</p>
 <p><img src="https://i.loli.net/2020/11/09/xfsX4JKt9zhuaiB.png" alt="域名设置" /></p>
 </div>
 <h2 id="vercel-部署"> Vercel 部署</h2>
 <p><a href="https://vercel.com/import/project?template=https://github.com/lizheming/waline/tree/master/example" target="_blank" rel="noopener noreferrer"><img src="https://vercel.com/button" alt="Vercel" /></a></p>
-<p>点击上方按钮，跳转至 Vercel 进行快速部署。未登录的话需要登录，这里选 GitHub 登录即可。登录后会让你输入 Vercel 项目名称。</p>
+<p>点击上方按钮，跳转至 Vercel 进行快速部署。未登录的话建议选择 GitHub 登录。之后请按要求输入 Vercel 项目名称。</p>
 <p><img src="https://p2.ssl.qhimg.com/t018cd2a91a8896a555.png" alt="创建项目" /></p>
 <p>输入名称后点击 <code>Continue</code> 进入下一步，输入 GitHub 仓库名称。Vercel 会基于 waline 模板帮助你新建并初始化该仓库。</p>
-<p><img src="https://p4.ssl.qhimg.com/t01bb30e74f85ddf5b3.png" alt="选择从仓库" /></p>
-<p>仓库初始化完毕后开始准备部署到 Vercel。这里需要在 Environment Variables 初配置 <code>LEAN_ID</code>, <code>LEAN_KEY</code> 和 <code>LEAN_MASTER_KEY</code> 三个环境变量。它们的值分别对应上一步在 LeanCloud 中获得的 <code>APP ID</code>, <code>APP KEY</code>, <code>Master Key</code>。如果你是 LeanCloud 国内版用户的话，还需要输入 <code>LEAN_SERVER</code> 环境变量，对应的是你在上一步上绑定的已备案域名。</p>
+<p><img src="https://p4.ssl.qhimg.com/t01bb30e74f85ddf5b3.png" alt="创建仓库" /></p>
+<p>仓库初始化完毕后，需要在 Environment Variables 中配置 <code>LEAN_ID</code>, <code>LEAN_KEY</code> 和 <code>LEAN_MASTER_KEY</code> 三个环境变量。它们的值分别对应上一步在 LeanCloud 中获得的 <code>APP ID</code>, <code>APP KEY</code>, <code>Master Key</code>。如果你是 LeanCloud 国内版用户的话，还需要输入 <code>LEAN_SERVER</code> 环境变量，对应的是你在上一步上绑定的已备案域名。</p>
 <p><img src="https://p5.ssl.qhimg.com/t019aec05e3e5fea5cc.png" alt="设置域名" /></p>
-<p>点击 <code>Deploy</code> 就会开始进行部署了。稍等片刻，就会看到满屏的烟花庆祝你部署成功了。点击 <code>Visit</code> 会跳转到部署好的网站地址上，该地址即为之后需要填入的 <code>serverURL</code> 地址。</p>
+<p>设置好环境变量后，点击 <code>Deploy</code> 部署。稍等片刻，你会看到满屏的烟花庆祝部署成功。点击 <code>Visit</code> ，即可跳转到部署好的网站地址，该地址即为之后需要填入的 <code>serverURL</code> 地址。</p>
 <p><img src="https://p0.ssl.qhimg.com/t0142b58c2e8f886b28.png" alt="部署成功" /></p>
 <h2 id="html-片段"> HTML 片段</h2>
-<p>修改初始化对象中的 <code>serverURL</code> 的值为上面刚刚获取到的二级域名即可(其他可以默认)。</p>
+<p>设置初始化配置中的 <code>serverURL</code> 选项为上面刚刚获取到的二级域名即可(其他可以默认)。</p>
 <div><pre><code><span><span><span>&lt;</span>head</span><span>></span></span>
   ..
   <span><span><span>&lt;</span>script</span> <span>src</span><span><span>=</span><span>"</span>//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js<span>"</span></span><span>></span></span><span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
@@ -2592,25 +2599,24 @@ $vssue-direction
   <span><span><span>&lt;</span>script</span><span>></span></span><span><span>
     <span>new</span> <span>Waline</span><span>(</span><span>{</span>
       el<span>:</span> <span>"#waline"</span><span>,</span>
-      path<span>:</span> location<span>.</span>pathname<span>,</span>
       serverURL<span>:</span> <span>"https://your-domain.vercel.app"</span><span>,</span>
     <span>}</span><span>)</span><span>;</span>
   </span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
 <span><span><span>&lt;/</span>body</span><span>></span></span>
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br></div></div><h2 id="配置"> 配置</h2>
-<p>修改初始化对象中的 <code>serverURL</code> 的值为上面刚刚获取到的二级域名即可(其他可以默认)。</p>
-<div><pre><code><span>new</span> <span>Waline</span><span>(</span><span>{</span>
-  el<span>:</span> <span>"#waline"</span><span>,</span>
-  path<span>:</span> location<span>.</span>pathname<span>,</span>
-<span>}</span><span>)</span><span>;</span>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br></div></div><h2 id="npm"> NPM</h2>
+<p>Waline 已发布到 <a href="https://www.npmjs.com/package/@waline/client" target="_blank" rel="noopener noreferrer">npm</a>，可以直接安装:</p>
+<CodeGroup>
+<CodeGroupItem title="yarn">
+<div><pre><code><span>yarn</span> <span>add</span> -D @waline/client
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><h2 id="npm"> NPM</h2>
-<p>Waline 已发布到<a href="https://www.npmjs.com/package/@waline/client" target="_blank" rel="noopener noreferrer">npm</a>，可以直接用命令安装:</p>
-<div><pre><code><span># Install waline</span>
-<span>npm</span> <span>install</span> @waline/client --save-dev
+<div><span>1</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="npm">
+<div><pre><code><span>npm</span> i -D @waline/client
 </code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><div><pre><code><span>// Use import</span>
+<div><span>1</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+<div><pre><code><span>// Use import</span>
 <span>import</span> Waline <span>from</span> <span>"@waline/client"</span><span>;</span>
 <span>// or Use require</span>
 <span>const</span> Waline <span>=</span> <span>require</span><span>(</span><span>"@waline/client"</span><span>)</span><span>;</span>
@@ -2621,7 +2627,7 @@ $vssue-direction
 <span>}</span><span>)</span><span>;</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><h2 id="评论数据管理"> 评论数据管理</h2>
-<p>Waline 还带有简单的后台，可以实现对评论的管理。部署完成后访问 <code>&lt;serverURL&gt;/ui/register</code> 进行注册，第一个注册的你会被设定成管理员。登录成功后就可以看到评论管理的界面了，大家可以收藏该地址方便后续使用。</p>
+<p>Waline 还带有简单的后台，可以实现对评论的管理。部署完成后，建议立即访问 <code>&lt;serverURL&gt;/ui/register</code> 进行注册，第一个注册的人会被设定成管理员。登陆后，即可看到评论管理界面，建议收藏该地址以便后续使用。</p>
 ]]></content:encoded>
       <enclosure url="https://i.loli.net/2019/06/21/5d0c995c86fac81746.jpg" type="image/jpeg"/>
     </item>
