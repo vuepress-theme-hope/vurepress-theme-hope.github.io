@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/</link>
     <description>A vuepress theme with tons of features✨</description>
     <language>en-US</language>
-    <pubDate>Mon, 17 May 2021 07:09:43 GMT</pubDate>
-    <lastBuildDate>Mon, 17 May 2021 07:09:43 GMT</lastBuildDate>
+    <pubDate>Mon, 17 May 2021 13:45:07 GMT</pubDate>
+    <lastBuildDate>Mon, 17 May 2021 13:45:07 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -51,7 +51,7 @@
 <h2 id="warning-overiding-existing-page-xxx"> <code>warning Overiding existing page xxx</code></h2>
 <p>If you see <code>warning Overiding existing page xxx</code> while the dev process is starting up, please check your file structure.</p>
 <p>You probably created two file with same path.</p>
-<p>E.g.: <code>a/b.md</code> and <code>a/b/readme.md</code> will both be <code>/a/b/</code></p>
+<p>For example: <code>a/b.md</code> and <code>a/b/readme.md</code> will both be <code>/a/b/</code></p>
 <p>This will cause one page content be lost and it will also cause others issue.</p>
 <h2 id="xxx-isn-t-assign-with-a-lang-and-will-return-en-us-instead"> <code>xxx isn’t assign with a lang, and will return 'en-US' instead.</code></h2>
 <p>If you see <code>xxx isn’t assign with a lang, and will return 'en-US' instead.</code> while the dev process is starting up, please check whether you set lang for every language.</p>
@@ -1551,7 +1551,7 @@ console<span>&lt;</span>span <span>class</span><span>=</span><span>"token punctu
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br></div></div><p>You should learn some YAML knowledge, we recommend you to check <a href="https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/" target="_blank" rel="noopener noreferrer">YAML Tutorial</a></p>
 <div><p>YAML limitations</p>
 <p>Using YAML as a configuration file has certain limitations, such cannot use encryption.</p>
-<p>If you want to use all the functions, please do not perform the above replacement operation, and read <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects" target="_blank" rel="noopener noreferrer">JS Quick Start Tutorial</a>.</p>
+<p>To use all the functions, please do not perform the above replacement operation, and read <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects" target="_blank" rel="noopener noreferrer">JS Quick Start Tutorial</a>.</p>
 </div>
 <p>Next, you can read this document <a href="./vuepress/">VuePress Basics</a> to get a general understanding of what VuePress is and how to use it.</p>
 <p>If you feel that you have mastered it, the next step is to read <a href="https://v1.vuepress.vuejs.org/zh/guide/" target="_blank" rel="noopener noreferrer">VuePress official documentation</a> and this theme document, and configure this theme according to your needs.</p>
@@ -2602,7 +2602,7 @@ export default { // Highlighted
 <span>your flowchart...</span>
 <span>```</span></span>
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>can also generate a flowchart besides</p>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>Can also generate a flowchart besides</p>
 <div><pre><code><span><span>```</span><span>flow</span>
 <span>your flowchart...</span>
 <span>```</span></span>
@@ -2635,7 +2635,7 @@ export default { // Highlighted
 <span>your mermaid...</span>
 <span>```</span></span>
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>in your Markdown to generate mermaid diagrams.</p>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>In your Markdown to generate mermaid diagrams.</p>
 <h4 id="task-list-2"> Task List <i>Not supported content</i></h4>
 <p>New <code>tasklist</code> option in plugin <code>md-enhance</code> to support task lists.</p>
 <p>You should use <code>- [ ] text</code> or <code>- [x] text</code> in your Markdown to generatetask lists.</p>
@@ -2657,7 +2657,7 @@ export default { // Highlighted
 <span>your flowchart...</span>
 <span>```</span></span>
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>is changed to</p>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>Is changed to</p>
 <div><pre><code><span><span>```</span><span>flow:preset</span>
 <span>your flowchart...</span>
 <span>```</span></span>
@@ -2682,7 +2682,7 @@ export default { // Highlighted
 your flowchart...
 @flowend
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>to</p>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>To</p>
 <div><pre><code><span><span>```</span><span>flow</span>
 <span>your flowchart...</span>
 <span>```</span></span>
@@ -2805,7 +2805,7 @@ content
 <ul>
 <li>
 <p><strong>pwa</strong>: use official ext for manifest</p>
-<p>Mmanifest file name change from <code>manifest.json</code> to <code>manifest.webmanifest</code>.</p>
+<p>Mmanifest filename change from <code>manifest.json</code> to <code>manifest.webmanifest</code>.</p>
 </li>
 </ul>
 <h2 id="v1-4-1"> v1.4.1</h2>
@@ -4351,7 +4351,7 @@ write something here ~
 </ul>
 <p>Layout Chunk Rename Option. By default, all the layout chunks will be named by their component name.</p>
 <h2 id="cleanurl"> cleanUrl</h2>
-<p>Options for cleaning url suffix, set to <code>false</code> to disable this feature.</p>
+<p>Options for cleaning URL suffix, set to <code>false</code> to disable this feature.</p>
 <h3 id="cleanurl-normalsuffix"> cleanUrl.normalSuffix</h3>
 <ul>
 <li>Type: <code>string</code></li>
@@ -11926,9 +11926,9 @@ export default { // Highlighted
 <p>现在，你可以在图片链接中使用特殊字符。这是一个针对 VuePress 内部 Bug 的修正。</p>
 <p>此功能默认情况下处于启用状态，并由 <code>imageFix</code> 选项控制。</p>
 <h4 id="链接控制"> 链接控制 <i>Not supported content</i></h4>
-<p>themeConfig 新增 <code>cleanUrl</code> 选项以更好地控制链接生成。</p>
+<p>ThemeConfig 新增 <code>cleanUrl</code> 选项以更好地控制链接生成。</p>
 <h3 id="破坏变更"> 破坏变更 <i>Not supported content</i></h3>
-<p>themeConfig 中的 <code>namedChunk</code> 选项更名为 <code>chunkRename</code>。</p>
+<p>ThemeConfig 中的 <code>namedChunk</code> 选项更名为 <code>chunkRename</code>。</p>
 <h2 id="v1-15-2"> v1.15.2</h2>
 <h3 id="新功能-2"> 新功能</h3>
 <ul>
@@ -13310,7 +13310,7 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
 </ul>
 <p>布局块重命名选项。 默认情况下，所有布局块都将通过其组件名称来命名。</p>
 <h2 id="cleanurl"> cleanUrl</h2>
-<p>清除 url 后缀选项，设置 <code>false</code> 以禁用此功能。</p>
+<p>清除 URL 后缀选项，设置 <code>false</code> 以禁用此功能。</p>
 <h3 id="cleanurl-normalsuffix"> cleanUrl.normalSuffix</h3>
 <ul>
 <li>类型: <code>string</code></li>

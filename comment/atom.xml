@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-05-17T07:09:43.554Z</updated>
+  <updated>2021-05-17T13:45:07.604Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/comment/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/comment/"/>
@@ -531,7 +531,7 @@ And if you already have vue-i18n in your project, it will not affect Vssue.</p>
     <title type="html">Waline Config</title>
     <id>https://vuepress-theme-hope.github.io/comment/config/waline/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/config/waline/"/>
-    <updated>2021-05-16T15:14:54.000Z</updated>
+    <updated>2021-05-17T13:43:50.000Z</updated>
     <content type="html"><![CDATA[<h2 id="el"> el</h2>
 <ul>
 <li>Type: <code>string</code></li>
@@ -543,7 +543,7 @@ And if you already have vue-i18n in your project, it will not affect Vssue.</p>
 <li>Type: <code>string</code></li>
 <li>Required: Yes</li>
 </ul>
-<p>Waline server address url</p>
+<p>Waline server address URL</p>
 <h2 id="placeholder"> placeholder</h2>
 <ul>
 <li>Type: <code>string</code></li>
@@ -564,7 +564,7 @@ And if you already have vue-i18n in your project, it will not affect Vssue.</p>
 <li>Default: <code>window.location.pathname</code></li>
 <li>Required: No</li>
 </ul>
-<p>Article path id. Used to distinguish different <em>article pages</em> to ensure loading the correct comment list under the <em>article page</em>.</p>
+<p>Article path ID. Used to distinguish different <em>article pages</em> to ensure loading the correct comment list under the <em>article page</em>.</p>
 <p>Optional value:</p>
 <ul>
 <li><code>window.location.pathname</code> (default, recommended)</li>
@@ -607,7 +607,7 @@ And if you already have vue-i18n in your project, it will not affect Vssue.</p>
 <li>Default: <code>10</code></li>
 <li>Required: No</li>
 </ul>
-<p>number of comments per page.</p>
+<p>Number of comments per page.</p>
 <h2 id="lang"> lang</h2>
 <ul>
 <li>Type: <code>string</code></li>
@@ -625,7 +625,7 @@ And if you already have vue-i18n in your project, it will not affect Vssue.</p>
 <li><code>'jp'</code></li>
 <li><code>'jp-JP'</code></li>
 </ul>
-<p>If you need a custom language, please refer to <a href="./i18n.html">i18n</a>.</p>
+<p>If you need a custom language, please see <a href="./i18n.html">i18n</a>.</p>
 <h2 id="visitor"> visitor</h2>
 <ul>
 <li>Type: <code>boolean</code></li>
@@ -640,7 +640,7 @@ And if you already have vue-i18n in your project, it will not affect Vssue.</p>
 </ul>
 <p>Darkmode support</p>
 <ul>
-<li>Set it to <code>'auto'</code> will display darkmode due to device settings.</li>
+<li>Set it to <code>'auto'</code> will display darkmode by device settings.</li>
 <li>Filling in a CSS selector will enable darkmode only when the selector match waline ancestor nodes.</li>
 </ul>
 <div><p>Examples</p>
@@ -684,14 +684,14 @@ And if you already have vue-i18n in your project, it will not affect Vssue.</p>
 <li>Default: <code>https://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/</code></li>
 <li>Required: No</li>
 </ul>
-<p>Set <strong>Emoji Pack CDN</strong>, refer to <a href="./emoji.html">Custom Emoji</a>.</p>
+<p>Set <strong>Emoji Pack CDN</strong>, see <a href="./emoji.html">Custom Emoji</a>.</p>
 <h2 id="emojimaps"> emojiMaps</h2>
 <ul>
 <li>Type: <code>Object</code></li>
 <li>Default: <code>null</code></li>
 <li>Required: No</li>
 </ul>
-<p>Set `Emoji Packet Mapping’, refer to <a href="./emoji.html">Custom Emoji</a>.</p>
+<p>Set `Emoji Packet Mapping’, see <a href="./emoji.html">Custom Emoji</a>.</p>
 <h2 id="requiredfields"> requiredFields</h2>
 <ul>
 <li>Type: <code>string[]</code></li>
@@ -1324,10 +1324,10 @@ $vssue-direction
     <title type="html">Waline</title>
     <id>https://vuepress-theme-hope.github.io/comment/guide/waline/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/guide/waline/"/>
-    <updated>2021-05-17T07:03:53.000Z</updated>
-    <summary type="html"><![CDATA[<p>If you want to use Waline in your site, please follow this guide.</p>
+    <updated>2021-05-17T13:43:50.000Z</updated>
+    <summary type="html"><![CDATA[<p>To use Waline in your site, please follow this guide.</p>
 ]]></summary>
-    <content type="html"><![CDATA[<p>If you want to use Waline in your site, please follow this guide.</p>
+    <content type="html"><![CDATA[<p>To use Waline in your site, please follow this guide.</p>
 
 <h2 id="get-app-id-and-app-key"> Get APP ID and APP Key</h2>
 <p>First you need <a href="https://console.leancloud.app/login.html#/signin" target="_blank" rel="noopener noreferrer">sign in</a> or <a href="https://console.leancloud.app/login.html#/signup" target="_blank" rel="noopener noreferrer">sign up</a> LeanCloud. Then go to <a href="https://console.leancloud.app/applist.html#/apps" target="_blank" rel="noopener noreferrer">Console</a> and click <a href="https://console.leancloud.app/applist.html#/newapp" target="_blank" rel="noopener noreferrer">Create app</a> button to create a new app:</p>
@@ -1336,16 +1336,16 @@ $vssue-direction
 <p><img src="https://i.loli.net/2019/06/21/5d0c997a60baa24436.jpg" alt="ID and Key" /></p>
 <h2 id="deploy-to-vercel"> Deploy to Vercel</h2>
 <p><a href="https://vercel.com/import/project?template=https://github.com/lizheming/waline/tree/master/example" target="_blank" rel="noopener noreferrer"><img src="https://vercel.com/button" alt="Vercel" /></a></p>
-<p>Click the blue button above, it will redirect you to vercel to deploy with waline template. We recommend you to sign in with GitHub if you don't have a vercel account. Input your Vercel project name after login.</p>
+<p>Click the blue button above, it will redirect you to vercel to deploy with waline template. We recommend you to sign in with GitHub if you don’t have a vercel account. Input your Vercel project name after login.</p>
 <p><img src="https://p2.ssl.qhimg.com/t018cd2a91a8896a555.png" alt="Create project" /></p>
 <p>Click <code>Continue</code> to the next step then input your new GitHub repo name. The repo will be created and initiallized automatically base on waline example template by Vercel.</p>
 <p><img src="https://p4.ssl.qhimg.com/t01bb30e74f85ddf5b3.png" alt="Select repo" /></p>
-<p>Now the repo is initialized. It's ready to deploy to Vercel! Setting <code>LEAN_ID</code>, <code>LEAN_KEY</code> and <code>LEAN_MASTER_KEY</code> environment variables in the &quot;Environment Variables&quot; column is required. The variables' value are what you get on the previous step in LeanCloud. <code>APP ID</code> is the value of <code>LEAN_ID</code>, and <code>APP Key</code> to <code>LEAN_KEY</code>, <code>Master Key</code> to <code>LEAN_MASTER_KEY</code>.</p>
+<p>Now the repo is initialized. It’s ready to deploy to Vercel! Setting <code>LEAN_ID</code>, <code>LEAN_KEY</code> and <code>LEAN_MASTER_KEY</code> environment variables in the &quot;Environment Variables&quot; column is required. The variables’ value are what you get on the previous step in LeanCloud. <code>APP ID</code> is the value of <code>LEAN_ID</code>, and <code>APP Key</code> to <code>LEAN_KEY</code>, <code>Master Key</code> to <code>LEAN_MASTER_KEY</code>.</p>
 <p><img src="https://p5.ssl.qhimg.com/t019aec05e3e5fea5cc.png" alt="Set environment variables" /></p>
-<p>Finally click <code>Deploy</code> button, and vercel will tell you the deployment finishes successfully after one or two minutes. Now you can click <code>Visit</code> button to visit the site. Please memorize the site's url, we will use it in next step.</p>
+<p>Click <code>Deploy</code> button, and vercel will tell you the deployment finishes after one or two minutes. Now you can click <code>Visit</code> button to visit the site. Please memorize the site’s url, we will use it in next step.</p>
 <p><img src="https://p0.ssl.qhimg.com/t0142b58c2e8f886b28.png" alt="Deploy" /></p>
 <h2 id="html-references"> HTML References</h2>
-<p>Set <code>serverURL</code> option with the site url in options.</p>
+<p>Set <code>serverURL</code> option with the site URL in options.</p>
 <div><pre><code><span><span><span>&lt;</span>head</span><span>></span></span>
   ..
   <span><span><span>&lt;</span>script</span> <span>src</span><span><span>=</span><span>"</span>//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js<span>"</span></span><span>></span></span><span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
@@ -1386,7 +1386,7 @@ $vssue-direction
 <span>}</span><span>)</span><span>;</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div><h2 id="comment-management"> Comment Management</h2>
-<p>Waline provides a simple admin control panel for us to manage comment data. You can register in <code>&lt;serverURL&gt;/ui/register</code> after deployed successfully. The first person registered will be administrator.</p>
+<p>Waline provides a simple admin control panel for us to manage comment data. You can register in <code>&lt;serverURL&gt;/ui/register</code> after deployed. The first person registered will be administrator.</p>
 ]]></content>
     <author>
       <name>Mr.Hope</name>

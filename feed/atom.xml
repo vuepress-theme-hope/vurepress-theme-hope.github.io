@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-05-17T07:09:43.668Z</updated>
+  <updated>2021-05-17T13:45:07.655Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/feed/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/feed/"/>
@@ -1207,7 +1207,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">插件配置</title>
     <id>https://vuepress-theme-hope.github.io/feed/zh/config/</id>
     <link href="https://vuepress-theme-hope.github.io/feed/zh/config/"/>
-    <updated>2021-04-07T05:20:59.000Z</updated>
+    <updated>2021-05-17T13:43:50.000Z</updated>
     <content type="html"><![CDATA[<h2 id="hostname"> hostname</h2>
 <ul>
 <li>类型: <code>string</code></li>
@@ -1230,7 +1230,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <p>自定义排序函数，用于对站点中的页面进行排序。</p>
 <p>最终生成的 feed 文件将会按照这个顺序对项目进行显示。</p>
 <div><p>Note</p>
-<p>强烈建议设置这个选项，否则 feed 流中，项目的顺序完全由 vuepress 默认输出的 pages 顺序决定。</p>
+<p>强烈建议设置这个选项，否则 feed 流中，项目的顺序完全由 VuePress 默认输出的 pages 顺序决定。</p>
 <p>你可以按照自己的需求对站点内的页面进行排序。</p>
 </div>
 <h2 id="count"> count</h2>
