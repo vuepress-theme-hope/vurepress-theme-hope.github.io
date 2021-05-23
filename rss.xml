@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/</link>
     <description>A vuepress theme with tons of features✨</description>
     <language>en-US</language>
-    <pubDate>Sun, 23 May 2021 08:01:39 GMT</pubDate>
-    <lastBuildDate>Sun, 23 May 2021 08:01:39 GMT</lastBuildDate>
+    <pubDate>Sun, 23 May 2021 08:14:37 GMT</pubDate>
+    <lastBuildDate>Sun, 23 May 2021 08:14:37 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -5927,6 +5927,28 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
 <p><a href="./markdown.html">Markdown Intro</a></p>
 </li>
 </ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>A11y</title>
+      <link>https://vuepress-theme-hope.github.io/guide/interface/accessibility/</link>
+      <guid>https://vuepress-theme-hope.github.io/guide/interface/accessibility/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">A11y</source>
+      <pubDate>Sun, 23 May 2021 08:12:44 GMT</pubDate>
+      <content:encoded><![CDATA[<p>&quot;A11y&quot; stands for &quot;accessibility&quot;.</p>
+<p>The theme adds full support of accessibility.</p>
+<ul>
+<li>
+<p>All page structures of the theme are processed semantically.</p>
+</li>
+<li>
+<p>All buttons and icons have their corresponding accessibility labels</p>
+</li>
+<li>
+<p>All main interactive elements can be focused and interacted through the keyboard</p>
+</li>
+</ul>
+<p>This is our support for the visually impaired people around the world! ❤️</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -12226,37 +12248,37 @@ export default { // Highlighted
 ]]></content:encoded>
     </item>
     <item>
-      <title>多语言</title>
-      <link>https://vuepress-theme-hope.github.io/zh/config/i18n/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/config/i18n/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">多语言</source>
+      <title>vuepress-plugin-copyright</title>
+      <link>https://vuepress-theme-hope.github.io/zh/config/plugin/copyright/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/config/plugin/copyright/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">vuepress-plugin-copyright</source>
+      <description>&amp;lt;p&amp;gt;处理你的 VuePress 站点中的复制操作&amp;lt;/p&amp;gt;
+</description>
       <category>config</category>
-      <pubDate>Wed, 07 Apr 2021 06:47:37 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="根目录语言配置"> 根目录语言配置</h2>
-<p>你应该在 <code>.vuepress/config.js</code> 中添加 <code>locales</code> 配置，并设置 <code>locales[&quot;/&quot;].lang</code>。这样主题才会知道根目录要使用哪个语言:</p>
-<div><p>Tips</p>
-<div><pre><code><span>// .vuepress/config.js</span>
-<span>const</span> <span>{</span> config <span>}</span> <span>=</span> <span>require</span><span>(</span><span>"vuepress-theme-hope"</span><span>)</span><span>;</span>
+      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
+      <content:encoded><![CDATA[<p>处理你的 VuePress 站点中的复制操作</p>
 
-module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><span>{</span>
-  locales<span>:</span> <span>{</span>
-    <span>"/"</span><span>:</span> <span>{</span>
-      <span>// 设置需要的语言</span>
-      lang<span>:</span> <span>"zh-CN"</span><span>,</span>
-    <span>}</span><span>,</span>
-  <span>}</span><span>,</span>
-<span>}</span><span>)</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div></div>
-<h2 id="多语言"> 多语言</h2>
-<p><code>locales</code> 是一个对象，其键为每个语言的路径前缀，值为该语言的配置，可以包含 <code>title</code>, <code>description</code>, <code>lang</code> 等。</p>
-<div><p>Info</p>
-<p>有关多语言的详细配置，请见 <a href="https://v1.vuepress.vuejs.org/zh/guide/i18n.html" target="_blank" rel="noopener noreferrer">官方文档</a></p>
-</div>
-<p>如果 <code>locales</code> 和 <code>themeConfig.locales</code> 对象只包含 <code>&quot;/&quot;</code> 一个键，则主题不会显示多语言下拉菜单。当你通过 <code>locales</code> 设置多个键，即存在多个语言的时候，我们会在导航栏右上角显示多语言下拉菜单。</p>
-<h2 id="语言适配"> 语言适配</h2>
-<p>目前多语言仅适配了 <strong>简体中文</strong> (zh-CN)、<strong>英文(美国)</strong> (en-US)、 <strong>德语</strong> (de-AT) 与 <strong>越南语</strong> (vi-VN)。</p>
-<p>如果你需要其它语言的多语言支持，欢迎对 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/packages/shared/src/i18n/config.ts" target="_blank" rel="noopener noreferrer">此文件</a> 与仓库内其他名为 <code>i18n.ts</code> 的文件进行修改并提交一个 PR。</p>
+<h2 id="默认配置说明"> 默认配置说明</h2>
+<p>当用户从你的站点复制超过 100 字的消息时，在这段消息的尾部添加声明消息。</p>
+<p>作者名称会从你在主题中配置的作者信息或站点名称自动生成。</p>
+<p>默认配置如下:</p>
+<div><div><br><br><br><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>/** 复制操作处理 */</span>
+    <span>[</span>
+      <span>"copyright"</span><span>,</span>
+      <span>{</span>
+        authorName<span>:</span> options<span>.</span>author<span>,</span>
+        minLength<span>:</span> <span>100</span><span>,</span>
+        clipboardComponent<span>:</span> path<span>.</span><span>resolve</span><span>(</span>__dirname<span>,</span> <span>"components/Clipboard.vue"</span><span>)</span><span>,</span>
+      <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><h2 id="配置项"> 配置项</h2>
+<p>详见 <a href="https://vuepress.github.io/zh/plugins/copyright/#%E9%85%8D%E7%BD%AE%E9%A1%B9" target="_blank" rel="noopener noreferrer">官方文档</a></p>
+<h2 id="演示"> 演示</h2>
+<p>请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -14902,6 +14924,27 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
 <p><a href="./markdown.html">Markdown 介绍</a></p>
 </li>
 </ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>无障碍</title>
+      <link>https://vuepress-theme-hope.github.io/zh/guide/interface/accessibility/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/guide/interface/accessibility/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">无障碍</source>
+      <pubDate>Sun, 23 May 2021 08:12:44 GMT</pubDate>
+      <content:encoded><![CDATA[<p>主题完全支持无障碍功能。</p>
+<ul>
+<li>
+<p>主题全部的页面结构都经过语义化处理。</p>
+</li>
+<li>
+<p>所有的按钮、图标都有其相应的无障碍标签</p>
+</li>
+<li>
+<p>所有主要可交互元素均可通过键盘进行聚焦与交互</p>
+</li>
+</ul>
+<p>这是我们为全球视障人群做出的支持! ❤️</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -17938,40 +17981,6 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
 ]]></content:encoded>
     </item>
     <item>
-      <title>vuepress-plugin-copyright</title>
-      <link>https://vuepress-theme-hope.github.io/zh/config/plugin/copyright/</link>
-      <guid>https://vuepress-theme-hope.github.io/zh/config/plugin/copyright/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">vuepress-plugin-copyright</source>
-      <description>&amp;lt;p&amp;gt;处理你的 VuePress 站点中的复制操作&amp;lt;/p&amp;gt;
-</description>
-      <category>config</category>
-      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
-      <content:encoded><![CDATA[<p>处理你的 VuePress 站点中的复制操作</p>
-
-<h2 id="默认配置说明"> 默认配置说明</h2>
-<p>当用户从你的站点复制超过 100 字的消息时，在这段消息的尾部添加声明消息。</p>
-<p>作者名称会从你在主题中配置的作者信息或站点名称自动生成。</p>
-<p>默认配置如下:</p>
-<div><div><br><br><br><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span>
-    <span>/** 复制操作处理 */</span>
-    <span>[</span>
-      <span>"copyright"</span><span>,</span>
-      <span>{</span>
-        authorName<span>:</span> options<span>.</span>author<span>,</span>
-        minLength<span>:</span> <span>100</span><span>,</span>
-        clipboardComponent<span>:</span> path<span>.</span><span>resolve</span><span>(</span>__dirname<span>,</span> <span>"components/Clipboard.vue"</span><span>)</span><span>,</span>
-      <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-  <span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><h2 id="配置项"> 配置项</h2>
-<p>详见 <a href="https://vuepress.github.io/zh/plugins/copyright/#%E9%85%8D%E7%BD%AE%E9%A1%B9" target="_blank" rel="noopener noreferrer">官方文档</a></p>
-<h2 id="演示"> 演示</h2>
-<p>请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。请复制这段文字粘贴到任意地点查看效果。</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>vuepress-plugin-container</title>
       <link>https://vuepress-theme-hope.github.io/zh/config/plugin/container/</link>
       <guid>https://vuepress-theme-hope.github.io/zh/config/plugin/container/</guid>
@@ -18355,6 +18364,40 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
 <li>类型: <code>string</code></li>
 </ul>
 <p>页面的自定义布局名称</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>多语言</title>
+      <link>https://vuepress-theme-hope.github.io/zh/config/i18n/</link>
+      <guid>https://vuepress-theme-hope.github.io/zh/config/i18n/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">多语言</source>
+      <category>config</category>
+      <pubDate>Wed, 07 Apr 2021 06:47:37 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="根目录语言配置"> 根目录语言配置</h2>
+<p>你应该在 <code>.vuepress/config.js</code> 中添加 <code>locales</code> 配置，并设置 <code>locales[&quot;/&quot;].lang</code>。这样主题才会知道根目录要使用哪个语言:</p>
+<div><p>Tips</p>
+<div><pre><code><span>// .vuepress/config.js</span>
+<span>const</span> <span>{</span> config <span>}</span> <span>=</span> <span>require</span><span>(</span><span>"vuepress-theme-hope"</span><span>)</span><span>;</span>
+
+module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><span>{</span>
+  locales<span>:</span> <span>{</span>
+    <span>"/"</span><span>:</span> <span>{</span>
+      <span>// 设置需要的语言</span>
+      lang<span>:</span> <span>"zh-CN"</span><span>,</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>)</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div></div>
+<h2 id="多语言"> 多语言</h2>
+<p><code>locales</code> 是一个对象，其键为每个语言的路径前缀，值为该语言的配置，可以包含 <code>title</code>, <code>description</code>, <code>lang</code> 等。</p>
+<div><p>Info</p>
+<p>有关多语言的详细配置，请见 <a href="https://v1.vuepress.vuejs.org/zh/guide/i18n.html" target="_blank" rel="noopener noreferrer">官方文档</a></p>
+</div>
+<p>如果 <code>locales</code> 和 <code>themeConfig.locales</code> 对象只包含 <code>&quot;/&quot;</code> 一个键，则主题不会显示多语言下拉菜单。当你通过 <code>locales</code> 设置多个键，即存在多个语言的时候，我们会在导航栏右上角显示多语言下拉菜单。</p>
+<h2 id="语言适配"> 语言适配</h2>
+<p>目前多语言仅适配了 <strong>简体中文</strong> (zh-CN)、<strong>英文(美国)</strong> (en-US)、 <strong>德语</strong> (de-AT) 与 <strong>越南语</strong> (vi-VN)。</p>
+<p>如果你需要其它语言的多语言支持，欢迎对 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/packages/shared/src/i18n/config.ts" target="_blank" rel="noopener noreferrer">此文件</a> 与仓库内其他名为 <code>i18n.ts</code> 的文件进行修改并提交一个 PR。</p>
 ]]></content:encoded>
     </item>
   </channel>
