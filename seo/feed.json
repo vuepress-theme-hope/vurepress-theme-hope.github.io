@@ -42,7 +42,7 @@
       "id": "https://vuepress-theme-hope.github.io/seo/",
       "content_html": "<h2 id=\"how-to-use\"> How to use</h2>\n<h3 id=\"install\"> Install</h3>\n<CodeGroup>\n<CodeGroupItem title=\"yarn\">\n<div><pre><code><span>yarn</span> <span>add</span> -D @mr-hope/vuepress-plugin-seo\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n<CodeGroupItem title=\"npm\">\n<div><pre><code><span>npm</span> i -D @mr-hope/vuepress-plugin-seo\n</code></pre>\n<div><span>1</span><br></div></div></CodeGroupItem>\n</CodeGroup>\n<h3 id=\"usage\"> Usage</h3>\n<div><pre><code><span>// .vuepress/config.js</span>\nmodule<span>.</span>exports <span>=</span> <span>{</span>\n  plugins<span>:</span> <span>[</span>\n    <span>[</span>\n      <span>\"@mr-hope/seo\"</span><span>,</span>\n      <span>{</span>\n        <span>// your options</span>\n      <span>}</span><span>,</span>\n    <span>]</span><span>,</span>\n  <span>]</span><span>,</span>\n<span>}</span><span>;</span>\n</code></pre>\n<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div>",
       "date_published": "2020-10-13T09:17:32.000Z",
-      "date_modified": "2021-03-06T14:49:20.000Z",
+      "date_modified": "2021-05-31T14:14:40.000Z",
       "authors": [
         {
           "name": "Mr.Hope"
