@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-05-31T14:42:08.883Z</updated>
+  <updated>2021-06-01T05:42:41.928Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/"/>
@@ -18053,6 +18053,276 @@ document<span>&lt;</span>span <span>class</span><span>=</span><span>"token punct
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
+    <title type="html">外部引入</title>
+    <id>https://vuepress-theme-hope.github.io/zh/guide/markdown/external/</id>
+    <link href="https://vuepress-theme-hope.github.io/zh/guide/markdown/external/"/>
+    <updated>2021-02-28T17:06:20.000Z</updated>
+    <summary type="html"><![CDATA[<p>除了在 Markdown 内部使用新语法来增强内容外，你也可以使用 <code>&lt;iframe&gt;</code> 或 <code>&lt;img&gt;</code> 从外部引入链接来增强你的 Markdown 内容。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>除了在 Markdown 内部使用新语法来增强内容外，你也可以使用 <code>&lt;iframe&gt;</code> 或 <code>&lt;img&gt;</code> 从外部引入链接来增强你的 Markdown 内容。</p>
+
+<h2 id="shields-io"> shields.io</h2>
+<p>你可以使用 <a href="https://shields.io/" target="_blank" rel="noopener noreferrer">shields.io</a> 生成大量的动态勋章，比如项目的 Stars，NPM 版本号，下载量等。</p>
+<p>输入:</p>
+<div><pre><code><span><span>!</span>[<span>Version</span>](<span>https://img.shields.io/npm/v/vuepress-theme-hope.svg?style=flat-square&amp;logo=npm</span>)</span>
+<span><span>!</span>[<span>Downloads</span>](<span>https://img.shields.io/npm/dm/vuepress-theme-hope.svg?style=flat-square&amp;logo=npm</span>)</span>
+<span><span>!</span>[<span>Size</span>](<span>https://img.shields.io/bundlephobia/min/vuepress-theme-hope?style=flat-square&amp;logo=npm</span>)</span>
+<span><span>!</span>[<span>Dependencies</span>](<span>https://img.shields.io/librariesio/release/npm/vuepress-theme-hope?style=flat-square</span>)</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>输出:</p>
+<p><img src="https://img.shields.io/npm/v/vuepress-theme-hope.svg?style=flat-square&logo=npm" alt="Version" />
+<img src="https://img.shields.io/npm/dm/vuepress-theme-hope.svg?style=flat-square&logo=npm" alt="Downloads" />
+<img src="https://img.shields.io/bundlephobia/min/vuepress-theme-hope?style=flat-square&logo=npm" alt="Size" /></p>
+<p>当然你可以单纯利用它生成静态的徽章。你可以通过修改参数来定制文字、样式、颜色与大小。</p>
+<p>输入:</p>
+<div><pre><code><span><span>!</span>[<span>Theme: vuepress-theme-hope</span>](<span>https://img.shields.io/badge/主题-vuepress--theme--hope-green.svg?style=for-the-badge&amp;logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjEyMDAiIGNsYXNzPSJpY29uIiB2aWV3Qm94PSIwIDAgMzI4MC45NDQgMjgwMCI+CiAgPHBhdGggZD0iTTE2NDUuMzMyIDYwMS4wMDRoMzc1LjY3NUwxMDgxLjgyIDIyMzguNDc4IDE0Mi42MzYgNjAxLjAwNGg3MTguNDc3bDIyMC43MDggMzc5LjcwNCAyMTYuMDEzLTM3OS43MDR6IiBmaWxsPSIjNDFiODgzIiAvPgogIDxwYXRoIGQ9Ik0xNDIuNjM2IDYwMS4wMDRsOTM5LjE4NSAxNjM3LjQ3NCA5MzkuMTg2LTE2MzcuNDc0aC0zNzUuNjc1bC01NjMuNTEgOTgyLjQ4NC01NjguMjA4LTk4Mi40ODR6IiBmaWxsPSIjNDFiODgzIiAvPgogIDxwYXRoIGQ9Ik01MTMuMTg4IDYwMS4wMDRsNTY4LjIwNyA5ODcuMjMgNTYzLjUxMS05ODcuMjNoLTM0Ny40OThsLTIxNi4wMTMgMzc5LjcwNC0yMjAuNzA4LTM3OS43MDR6TTE2MDcuNzkyIDEzMTEuODNsNTk0LjY3OCAyLjI5MyAxODcuMzUzLTMxNi4zMjUtNTk4LjY2MiAyLjI5MnpNMjE5OC41MDYgMTkwOS41N0MyODY3LjQzNiA3MzIuNyAyOTM5LjUwMiA2MDUuNDI2IDI5MzcuODc0IDYwMy43OGMtLjcxNS0uNzIzIDQ1LjMwMy0xLjMxNCAxMDIuMjYyLTEuMzE0czEwMy41NjIuNDI4IDEwMy41NjIuOTUxYzAgLjUyMy0yMDguNTcgMzY3Ljk3OC00NjMuNDkxIDgxNi41NjdMMjIxNi43MTUgMjIzNS42bC0xMDIuMS41OTYtMTAyLjEwMi41OTZ6IiBmaWxsPSIjMzU0OTVlIiAvPgogIDxwYXRoIGQ9Ik0xNjgwLjU2MyAyMjMzLjMyOGMwLTEuMzQgMTY4LjIwOC0yOTguMTQ1IDQ0MC4zNzUtNzc3LjA0OGE0MTM1NjQ1Ljc3NSA0MTM1NjQ1Ljc3NSAwIDAwMzM3LjYxOS01OTQuMTlsMTQ2LjEzLTI1Ny4yNSAxNzAuNzQ2LS4wNCAxNzAuNzQ3LS4wNC01LjUzNiA5Ljc0MWMtMy4wNDQgNS4zNTgtNDMuNzI3IDc3LjMwMi05MC40MDcgMTU5Ljg3NS04NS4zNTYgMTUwLjk5Mi0zMzcuNTYyIDU5NS4xNjMtNjU2LjYwMiAxMTU2LjM3M2wtMTcyIDMwMi41NTktMTcwLjUzNi41ODhjLTkzLjc5NS4zMjItMTcwLjUzNi4wNjktMTcwLjUzNi0uNTY3eiIgZmlsbD0iIzQxYjg4MyIgLz4KICA8cGF0aCBkPSJNMTQyOS43ODMgMTYyNS4zNTFsNTk0LjY3OSAyLjI5MiAxODcuMzUzLTMxNi4zMjQtNTk4LjY2MiAyLjI5MnoiIGZpbGw9IiMzNTQ5NWUiIC8+CiAgPHBhdGggZD0iTTE1MjQuMjA3IDE0NjQuOTAzbDYwOC4yODUgNi44NzcgMTczLjc0Ni0zMjAuOTA5aC02MTkuMDcyeiIgZmlsbD0iIzQxYjg4MyIgLz4KPC9zdmc+</span>)</span>
+<span><span>!</span>[<span>Author: Mr.Hope</span>](<span>https://img.shields.io/badge/作者:Mr.Hope-关注-blue.svg?style=social</span>)</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p>输出:</p>
+<p><img src="https://img.shields.io/badge/主题-vuepress--theme--hope-green.svg?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjEyMDAiIGNsYXNzPSJpY29uIiB2aWV3Qm94PSIwIDAgMzI4MC45NDQgMjgwMCI+CiAgPHBhdGggZD0iTTE2NDUuMzMyIDYwMS4wMDRoMzc1LjY3NUwxMDgxLjgyIDIyMzguNDc4IDE0Mi42MzYgNjAxLjAwNGg3MTguNDc3bDIyMC43MDggMzc5LjcwNCAyMTYuMDEzLTM3OS43MDR6IiBmaWxsPSIjNDFiODgzIiAvPgogIDxwYXRoIGQ9Ik0xNDIuNjM2IDYwMS4wMDRsOTM5LjE4NSAxNjM3LjQ3NCA5MzkuMTg2LTE2MzcuNDc0aC0zNzUuNjc1bC01NjMuNTEgOTgyLjQ4NC01NjguMjA4LTk4Mi40ODR6IiBmaWxsPSIjNDFiODgzIiAvPgogIDxwYXRoIGQ9Ik01MTMuMTg4IDYwMS4wMDRsNTY4LjIwNyA5ODcuMjMgNTYzLjUxMS05ODcuMjNoLTM0Ny40OThsLTIxNi4wMTMgMzc5LjcwNC0yMjAuNzA4LTM3OS43MDR6TTE2MDcuNzkyIDEzMTEuODNsNTk0LjY3OCAyLjI5MyAxODcuMzUzLTMxNi4zMjUtNTk4LjY2MiAyLjI5MnpNMjE5OC41MDYgMTkwOS41N0MyODY3LjQzNiA3MzIuNyAyOTM5LjUwMiA2MDUuNDI2IDI5MzcuODc0IDYwMy43OGMtLjcxNS0uNzIzIDQ1LjMwMy0xLjMxNCAxMDIuMjYyLTEuMzE0czEwMy41NjIuNDI4IDEwMy41NjIuOTUxYzAgLjUyMy0yMDguNTcgMzY3Ljk3OC00NjMuNDkxIDgxNi41NjdMMjIxNi43MTUgMjIzNS42bC0xMDIuMS41OTYtMTAyLjEwMi41OTZ6IiBmaWxsPSIjMzU0OTVlIiAvPgogIDxwYXRoIGQ9Ik0xNjgwLjU2MyAyMjMzLjMyOGMwLTEuMzQgMTY4LjIwOC0yOTguMTQ1IDQ0MC4zNzUtNzc3LjA0OGE0MTM1NjQ1Ljc3NSA0MTM1NjQ1Ljc3NSAwIDAwMzM3LjYxOS01OTQuMTlsMTQ2LjEzLTI1Ny4yNSAxNzAuNzQ2LS4wNCAxNzAuNzQ3LS4wNC01LjUzNiA5Ljc0MWMtMy4wNDQgNS4zNTgtNDMuNzI3IDc3LjMwMi05MC40MDcgMTU5Ljg3NS04NS4zNTYgMTUwLjk5Mi0zMzcuNTYyIDU5NS4xNjMtNjU2LjYwMiAxMTU2LjM3M2wtMTcyIDMwMi41NTktMTcwLjUzNi41ODhjLTkzLjc5NS4zMjItMTcwLjUzNi4wNjktMTcwLjUzNi0uNTY3eiIgZmlsbD0iIzQxYjg4MyIgLz4KICA8cGF0aCBkPSJNMTQyOS43ODMgMTYyNS4zNTFsNTk0LjY3OSAyLjI5MiAxODcuMzUzLTMxNi4zMjQtNTk4LjY2MiAyLjI5MnoiIGZpbGw9IiMzNTQ5NWUiIC8+CiAgPHBhdGggZD0iTTE1MjQuMjA3IDE0NjQuOTAzbDYwOC4yODUgNi44NzcgMTczLjc0Ni0zMjAuOTA5aC02MTkuMDcyeiIgZmlsbD0iIzQxYjg4MyIgLz4KPC9zdmc+" alt="Theme: vuepress-theme-hope" />
+<img src="https://img.shields.io/badge/作者:Mr.Hope-关注-blue.svg?style=social" alt="Author: Mr.Hope" /></p>
+<div><p>Info</p>
+<p>详细的参数与使用请见 <a href="https://shields.io/" target="_blank" rel="noopener noreferrer">首页</a>。</p>
+</div>
+<h2 id="markmap"> Markmap</h2>
+<p>Markmap 是一个将 Markdown 转换为思维导图的工具。它相对于主题内置的 flowchart 支持更多的格式与内容。</p>
+<ol>
+<li>使用 <a href="https://markmap.js.org/" target="_blank" rel="noopener noreferrer">Markmap</a> 生成思维导图 HTML 文件</li>
+<li>将 HTML 文件放在 <code>.vuepress/public/</code> 下</li>
+<li>通过 <code>&lt;iframe&gt;</code> 插入到 Markdown</li>
+</ol>
+<p>输入:</p>
+<div><pre><code><span><span><span>&lt;</span>iframe</span>
+  <span>:src</span><span><span>=</span><span>"</span>$withBase(<span>'</span>/markmap/demo-zh.html<span>'</span>)<span>"</span></span>
+  <span>width</span><span><span>=</span><span>"</span>100%<span>"</span></span>
+  <span>height</span><span><span>=</span><span>"</span>400<span>"</span></span>
+  <span>frameborder</span><span><span>=</span><span>"</span>0<span>"</span></span>
+  <span>scrolling</span><span><span>=</span><span>"</span>No<span>"</span></span>
+  <span>leftmargin</span><span><span>=</span><span>"</span>0<span>"</span></span>
+  <span>topmargin</span><span><span>=</span><span>"</span>0<span>"</span></span>
+<span>/></span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p>输出:</p>
+<iframe :src="$withBase('/markmap/demo-zh.html')" width="100%" height="400" frameborder="0" scrolling="No" leftmargin="0" topmargin="0" />
+<h2 id="codepen"> CodePen</h2>
+<p><a href="https://codepen.io/" target="_blank" rel="noopener noreferrer">CodePen</a> 可以很方便的创建代码演示并嵌入。</p>
+<div><pre><code><span><span><span>&lt;</span>iframe</span>
+  <span>height</span><span><span>=</span><span>"</span>265<span>"</span></span>
+  <span><span>style</span><span><span>=</span><span>"</span><span><span>width</span><span>:</span> 100%<span>;</span></span><span>"</span></span></span>
+  <span>scrolling</span><span><span>=</span><span>"</span>no<span>"</span></span>
+  <span>title</span><span><span>=</span><span>"</span>Solar System animation - Pure CSS<span>"</span></span>
+  <span>src</span><span><span>=</span><span>"</span>https://codepen.io/kowlor/embed/ZYYQoy?height=265&amp;theme-id=light&amp;default-tab=css,result<span>"</span></span>
+  <span>frameborder</span><span><span>=</span><span>"</span>no<span>"</span></span>
+  <span>loading</span><span><span>=</span><span>"</span>lazy<span>"</span></span>
+  <span>allowtransparency</span><span><span>=</span><span>"</span>true<span>"</span></span>
+  <span>allowfullscreen</span><span><span>=</span><span>"</span>true<span>"</span></span>
+<span>></span></span>
+  See the Pen
+  <span><span><span>&lt;</span>a</span> <span>href</span><span><span>=</span><span>"</span>https://codepen.io/kowlor/pen/ZYYQoy<span>"</span></span>
+    <span>></span></span>Solar System animation - Pure CSS<span><span><span>&lt;/</span>a</span>
+  <span>></span></span>
+  by Malik Dellidj (<span><span><span>&lt;</span>a</span> <span>href</span><span><span>=</span><span>"</span>https://codepen.io/kowlor<span>"</span></span><span>></span></span>@kowlor<span><span><span>&lt;/</span>a</span><span>></span></span>) on
+  <span><span><span>&lt;</span>a</span> <span>href</span><span><span>=</span><span>"</span>https://codepen.io<span>"</span></span><span>></span></span>CodePen<span><span><span>&lt;/</span>a</span><span>></span></span>.
+<span><span><span>&lt;/</span>iframe</span><span>></span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br></div></div>
+<iframe height="265" style="width: 100%;" scrolling="no" title="Solar System animation - Pure CSS" src="https://codepen.io/kowlor/embed/ZYYQoy?height=265&theme-id=light&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/kowlor/pen/ZYYQoy'>Solar System animation - Pure CSS</a> by Malik Dellidj
+  (<a href='https://codepen.io/kowlor'>@kowlor</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-02-26T08:10:04.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">流程图</title>
+    <id>https://vuepress-theme-hope.github.io/zh/guide/markdown/flowchart/</id>
+    <link href="https://vuepress-theme-hope.github.io/zh/guide/markdown/flowchart/"/>
+    <updated>2021-04-07T05:44:25.000Z</updated>
+    <summary type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持流程图。</p>
+<p>本插件利用了 <a href="https://github.com/adrai/flowchart.js" target="_blank" rel="noopener noreferrer">flowchart.js</a> 来支持这一功能。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持流程图。</p>
+<p>本插件利用了 <a href="https://github.com/adrai/flowchart.js" target="_blank" rel="noopener noreferrer">flowchart.js</a> 来支持这一功能。</p>
+
+<h2 id="配置"> 配置</h2>
+<div><div><br><br><br><div>&nbsp;</div><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  themeConfig<span>:</span> <span>{</span>
+    mdEnhance<span>:</span> <span>{</span>
+      flowchart<span>:</span> <span>true</span><span>,</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><h2 id="语法"> 语法</h2>
+<div><pre><code><span>&lt;!-- ↓ :preset 是可选的 --></span>
+
+<span><span>```</span><span>flow:preset</span>
+<span>
+&lt;!-- 放置你的流程图代码 -->
+</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>目前可用的预设:</p>
+<ul>
+<li><code>vue</code> (默认)</li>
+<li><code>ant</code></li>
+</ul>
+<h2 id="演示"> 演示</h2>
+<i>Not supported content</i><div><pre><code><span><span>```</span><span>flow</span>
+<span>st=>start: Start|past:>http://www.google.com[blank]
+e=>end: End|future:>http://www.google.com
+op1=>operation: My Operation|past
+op2=>operation: Do something|current
+sub1=>subroutine: My Subroutine|invalid
+cond=>condition: Yes
+or No?|approved:>http://www.google.com
+c2=>condition: Good idea|rejected
+io=>inputoutput: catch something...|future
+
+st->op1(right)->cond
+cond(yes, right)->c2
+cond(no)->sub1(left)->op1
+c2(yes)->io->e
+c2(no)->op2->e</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br></div></div><h2 id="流程图介绍"> 流程图介绍</h2>
+<p>详见 <a href="https://vuepress-theme-hope.github.io/md-enhance/zh/guide/flowchart/#%E6%B5%81%E7%A8%8B%E5%9B%BE%E4%BB%8B%E7%BB%8D" target="_blank" rel="noopener noreferrer">流程图介绍</a>。</p>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <category term="markdown"/>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-02-25T07:37:56.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">脚注</title>
+    <id>https://vuepress-theme-hope.github.io/zh/guide/markdown/footnote/</id>
+    <link href="https://vuepress-theme-hope.github.io/zh/guide/markdown/footnote/"/>
+    <updated>2021-02-27T06:18:09.000Z</updated>
+    <summary type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持脚注。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持脚注。</p>
+
+<h2 id="配置"> 配置</h2>
+<p>默认启用，你也可以在主题配置禁用它:</p>
+<div><div><br><br><br><div>&nbsp;</div><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  themeConfig<span>:</span> <span>{</span>
+    mdEnhance<span>:</span> <span>{</span>
+      footnote<span>:</span> <span>true</span><span>,</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><h2 id="语法"> 语法</h2>
+<ul>
+<li>
+<p>在 Markdown 中使用 <code>[^锚点文字]</code> 来定义脚注。</p>
+</li>
+<li>
+<p>在之后的任何位置使用 <code>[^锚点文字]: ...</code> 来描述脚注内容。</p>
+</li>
+<li>
+<p>如果脚注包含多个段落，其后的段落应当保持双层缩进。</p>
+</li>
+</ul>
+<h2 id="案例"> 案例</h2>
+<p>脚注 1 链接<sup></sup>.</p>
+<p>脚注 2 链接<sup></sup>.</p>
+<p>行内的脚注<sup></sup> 定义.</p>
+<p>重复的页脚引用<sup></sup>.</p>
+<div><pre><code>脚注 1 链接[^first].
+
+脚注 2 链接[^second].
+
+行内的脚注^[Text of inline footnote] 定义.
+
+重复的页脚引用[^second].
+
+<span><span>[</span><span>^first</span><span>]</span><span>:</span> 脚注</span> <span><span>**</span><span>可以包含特殊标记</span><span>**</span></span>
+
+<span>    也可以由多个段落组成</span>
+
+<span><span>[</span><span>^second</span><span>]</span><span>:</span> 脚注文字。</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><hr>
+<section>
+<ol>
+<li id="footnote1"><p>脚注 <strong>可以包含特殊标记</strong></p>
+<p>也可以由多个段落组成 </p>
+</li>
+<li id="footnote2"><p>脚注文字。  </p>
+</li>
+<li id="footnote3"><p>Text of inline footnote </p>
+</li>
+</ol>
+</section>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <category term="markdown"/>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-02-25T07:37:56.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">启用 Markdown 增强</title>
+    <id>https://vuepress-theme-hope.github.io/zh/guide/markdown/intro/</id>
+    <link href="https://vuepress-theme-hope.github.io/zh/guide/markdown/intro/"/>
+    <updated>2021-03-27T08:43:08.000Z</updated>
+    <summary type="html"><![CDATA[<p>除了 VuePress 本身新增了一些 Markdown 语法外，<code>vuepress-theme-hope</code> 通过 <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">vuepress-plugin-md-enhance</a>，在 Markdown 中启用了更多的语法与新功能。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>除了 VuePress 本身新增了一些 Markdown 语法外，<code>vuepress-theme-hope</code> 通过 <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">vuepress-plugin-md-enhance</a>，在 Markdown 中启用了更多的语法与新功能。</p>
+
+<h2 id="内置增强"> 内置增强</h2>
+<p>VuePress 自带的 GitHub 风格的表格，Emoji、TOC、代码行号、特定行高亮等都是开箱即用的。</p>
+<p>详细语法详见 <a href="./../../basic/vuepress/markdown.html">内置 Markdown 扩展</a>。</p>
+<h2 id="启用-markdown-增强"> 启用 Markdown 增强</h2>
+<p><code>.vuepress/config.js</code> 中的 <code>themeconfig.mdEnhance</code> 会直接传递给插件作为插件选项。所以你也可以直接阅读 <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">vuepress-plugin-md-enhance 文档</a> 查看用法。</p>
+<div><p>Tips</p>
+<p>请不用担心你的网站大小，如果你不启用相关功能，最终代码不会包含这些功能相关的代码。</p>
+</div>
+<h3 id="一键启用"> 一键启用</h3>
+<p>你可以设置 <code>themeconfig.mdEnhance.enableAll</code> 启用 <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">md-enhance</a> 插件的所有功能。</p>
+<div><div><br><br><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
+  themeConfig<span>:</span> <span>{</span>
+    mdEnhance<span>:</span> <span>{</span>
+      enableAll<span>:</span> <span>true</span><span>,</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><div><p>Warning</p>
+<p>请仅将此选项用于体验或测试。随着时间的增长，<code>vuepress-plugin-md-enhance</code> 变得越来越强大。它为 Markdown 解析器添加了更多语法，并输出了更多代码。</p>
+<p>启用不需要的功能将增加开发和构建时间。 (<code>markdown-it</code> 必须检查额外的语法)</p>
+<p>同样，幻灯片演示功能将在输出中添加 700KB 大小的代码 (主要是 <code>reveal.js</code>)。</p>
+<p>因此，请仅启用需要的功能。</p>
+</div>
+<h3 id="启用特定的语法"> 启用特定的语法</h3>
+<p>特定语法的配置项可以在对应的说明页或者 <a href="./../../config/theme/plugin.html#mdEnhance">主题插件配置</a> 中找到。</p>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <category term="markdown"/>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-02-26T08:10:04.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
     <title type="html">页面配置</title>
     <id>https://vuepress-theme-hope.github.io/zh/config/page/</id>
     <link href="https://vuepress-theme-hope.github.io/zh/config/page/"/>
@@ -18731,276 +19001,6 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
       <name>Mr.Hope</name>
     </contributor>
     <published>2021-04-27T10:34:42.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">外部引入</title>
-    <id>https://vuepress-theme-hope.github.io/zh/guide/markdown/external/</id>
-    <link href="https://vuepress-theme-hope.github.io/zh/guide/markdown/external/"/>
-    <updated>2021-02-28T17:06:20.000Z</updated>
-    <summary type="html"><![CDATA[<p>除了在 Markdown 内部使用新语法来增强内容外，你也可以使用 <code>&lt;iframe&gt;</code> 或 <code>&lt;img&gt;</code> 从外部引入链接来增强你的 Markdown 内容。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>除了在 Markdown 内部使用新语法来增强内容外，你也可以使用 <code>&lt;iframe&gt;</code> 或 <code>&lt;img&gt;</code> 从外部引入链接来增强你的 Markdown 内容。</p>
-
-<h2 id="shields-io"> shields.io</h2>
-<p>你可以使用 <a href="https://shields.io/" target="_blank" rel="noopener noreferrer">shields.io</a> 生成大量的动态勋章，比如项目的 Stars，NPM 版本号，下载量等。</p>
-<p>输入:</p>
-<div><pre><code><span><span>!</span>[<span>Version</span>](<span>https://img.shields.io/npm/v/vuepress-theme-hope.svg?style=flat-square&amp;logo=npm</span>)</span>
-<span><span>!</span>[<span>Downloads</span>](<span>https://img.shields.io/npm/dm/vuepress-theme-hope.svg?style=flat-square&amp;logo=npm</span>)</span>
-<span><span>!</span>[<span>Size</span>](<span>https://img.shields.io/bundlephobia/min/vuepress-theme-hope?style=flat-square&amp;logo=npm</span>)</span>
-<span><span>!</span>[<span>Dependencies</span>](<span>https://img.shields.io/librariesio/release/npm/vuepress-theme-hope?style=flat-square</span>)</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>输出:</p>
-<p><img src="https://img.shields.io/npm/v/vuepress-theme-hope.svg?style=flat-square&logo=npm" alt="Version" />
-<img src="https://img.shields.io/npm/dm/vuepress-theme-hope.svg?style=flat-square&logo=npm" alt="Downloads" />
-<img src="https://img.shields.io/bundlephobia/min/vuepress-theme-hope?style=flat-square&logo=npm" alt="Size" /></p>
-<p>当然你可以单纯利用它生成静态的徽章。你可以通过修改参数来定制文字、样式、颜色与大小。</p>
-<p>输入:</p>
-<div><pre><code><span><span>!</span>[<span>Theme: vuepress-theme-hope</span>](<span>https://img.shields.io/badge/主题-vuepress--theme--hope-green.svg?style=for-the-badge&amp;logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjEyMDAiIGNsYXNzPSJpY29uIiB2aWV3Qm94PSIwIDAgMzI4MC45NDQgMjgwMCI+CiAgPHBhdGggZD0iTTE2NDUuMzMyIDYwMS4wMDRoMzc1LjY3NUwxMDgxLjgyIDIyMzguNDc4IDE0Mi42MzYgNjAxLjAwNGg3MTguNDc3bDIyMC43MDggMzc5LjcwNCAyMTYuMDEzLTM3OS43MDR6IiBmaWxsPSIjNDFiODgzIiAvPgogIDxwYXRoIGQ9Ik0xNDIuNjM2IDYwMS4wMDRsOTM5LjE4NSAxNjM3LjQ3NCA5MzkuMTg2LTE2MzcuNDc0aC0zNzUuNjc1bC01NjMuNTEgOTgyLjQ4NC01NjguMjA4LTk4Mi40ODR6IiBmaWxsPSIjNDFiODgzIiAvPgogIDxwYXRoIGQ9Ik01MTMuMTg4IDYwMS4wMDRsNTY4LjIwNyA5ODcuMjMgNTYzLjUxMS05ODcuMjNoLTM0Ny40OThsLTIxNi4wMTMgMzc5LjcwNC0yMjAuNzA4LTM3OS43MDR6TTE2MDcuNzkyIDEzMTEuODNsNTk0LjY3OCAyLjI5MyAxODcuMzUzLTMxNi4zMjUtNTk4LjY2MiAyLjI5MnpNMjE5OC41MDYgMTkwOS41N0MyODY3LjQzNiA3MzIuNyAyOTM5LjUwMiA2MDUuNDI2IDI5MzcuODc0IDYwMy43OGMtLjcxNS0uNzIzIDQ1LjMwMy0xLjMxNCAxMDIuMjYyLTEuMzE0czEwMy41NjIuNDI4IDEwMy41NjIuOTUxYzAgLjUyMy0yMDguNTcgMzY3Ljk3OC00NjMuNDkxIDgxNi41NjdMMjIxNi43MTUgMjIzNS42bC0xMDIuMS41OTYtMTAyLjEwMi41OTZ6IiBmaWxsPSIjMzU0OTVlIiAvPgogIDxwYXRoIGQ9Ik0xNjgwLjU2MyAyMjMzLjMyOGMwLTEuMzQgMTY4LjIwOC0yOTguMTQ1IDQ0MC4zNzUtNzc3LjA0OGE0MTM1NjQ1Ljc3NSA0MTM1NjQ1Ljc3NSAwIDAwMzM3LjYxOS01OTQuMTlsMTQ2LjEzLTI1Ny4yNSAxNzAuNzQ2LS4wNCAxNzAuNzQ3LS4wNC01LjUzNiA5Ljc0MWMtMy4wNDQgNS4zNTgtNDMuNzI3IDc3LjMwMi05MC40MDcgMTU5Ljg3NS04NS4zNTYgMTUwLjk5Mi0zMzcuNTYyIDU5NS4xNjMtNjU2LjYwMiAxMTU2LjM3M2wtMTcyIDMwMi41NTktMTcwLjUzNi41ODhjLTkzLjc5NS4zMjItMTcwLjUzNi4wNjktMTcwLjUzNi0uNTY3eiIgZmlsbD0iIzQxYjg4MyIgLz4KICA8cGF0aCBkPSJNMTQyOS43ODMgMTYyNS4zNTFsNTk0LjY3OSAyLjI5MiAxODcuMzUzLTMxNi4zMjQtNTk4LjY2MiAyLjI5MnoiIGZpbGw9IiMzNTQ5NWUiIC8+CiAgPHBhdGggZD0iTTE1MjQuMjA3IDE0NjQuOTAzbDYwOC4yODUgNi44NzcgMTczLjc0Ni0zMjAuOTA5aC02MTkuMDcyeiIgZmlsbD0iIzQxYjg4MyIgLz4KPC9zdmc+</span>)</span>
-<span><span>!</span>[<span>Author: Mr.Hope</span>](<span>https://img.shields.io/badge/作者:Mr.Hope-关注-blue.svg?style=social</span>)</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p>输出:</p>
-<p><img src="https://img.shields.io/badge/主题-vuepress--theme--hope-green.svg?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjEyMDAiIGNsYXNzPSJpY29uIiB2aWV3Qm94PSIwIDAgMzI4MC45NDQgMjgwMCI+CiAgPHBhdGggZD0iTTE2NDUuMzMyIDYwMS4wMDRoMzc1LjY3NUwxMDgxLjgyIDIyMzguNDc4IDE0Mi42MzYgNjAxLjAwNGg3MTguNDc3bDIyMC43MDggMzc5LjcwNCAyMTYuMDEzLTM3OS43MDR6IiBmaWxsPSIjNDFiODgzIiAvPgogIDxwYXRoIGQ9Ik0xNDIuNjM2IDYwMS4wMDRsOTM5LjE4NSAxNjM3LjQ3NCA5MzkuMTg2LTE2MzcuNDc0aC0zNzUuNjc1bC01NjMuNTEgOTgyLjQ4NC01NjguMjA4LTk4Mi40ODR6IiBmaWxsPSIjNDFiODgzIiAvPgogIDxwYXRoIGQ9Ik01MTMuMTg4IDYwMS4wMDRsNTY4LjIwNyA5ODcuMjMgNTYzLjUxMS05ODcuMjNoLTM0Ny40OThsLTIxNi4wMTMgMzc5LjcwNC0yMjAuNzA4LTM3OS43MDR6TTE2MDcuNzkyIDEzMTEuODNsNTk0LjY3OCAyLjI5MyAxODcuMzUzLTMxNi4zMjUtNTk4LjY2MiAyLjI5MnpNMjE5OC41MDYgMTkwOS41N0MyODY3LjQzNiA3MzIuNyAyOTM5LjUwMiA2MDUuNDI2IDI5MzcuODc0IDYwMy43OGMtLjcxNS0uNzIzIDQ1LjMwMy0xLjMxNCAxMDIuMjYyLTEuMzE0czEwMy41NjIuNDI4IDEwMy41NjIuOTUxYzAgLjUyMy0yMDguNTcgMzY3Ljk3OC00NjMuNDkxIDgxNi41NjdMMjIxNi43MTUgMjIzNS42bC0xMDIuMS41OTYtMTAyLjEwMi41OTZ6IiBmaWxsPSIjMzU0OTVlIiAvPgogIDxwYXRoIGQ9Ik0xNjgwLjU2MyAyMjMzLjMyOGMwLTEuMzQgMTY4LjIwOC0yOTguMTQ1IDQ0MC4zNzUtNzc3LjA0OGE0MTM1NjQ1Ljc3NSA0MTM1NjQ1Ljc3NSAwIDAwMzM3LjYxOS01OTQuMTlsMTQ2LjEzLTI1Ny4yNSAxNzAuNzQ2LS4wNCAxNzAuNzQ3LS4wNC01LjUzNiA5Ljc0MWMtMy4wNDQgNS4zNTgtNDMuNzI3IDc3LjMwMi05MC40MDcgMTU5Ljg3NS04NS4zNTYgMTUwLjk5Mi0zMzcuNTYyIDU5NS4xNjMtNjU2LjYwMiAxMTU2LjM3M2wtMTcyIDMwMi41NTktMTcwLjUzNi41ODhjLTkzLjc5NS4zMjItMTcwLjUzNi4wNjktMTcwLjUzNi0uNTY3eiIgZmlsbD0iIzQxYjg4MyIgLz4KICA8cGF0aCBkPSJNMTQyOS43ODMgMTYyNS4zNTFsNTk0LjY3OSAyLjI5MiAxODcuMzUzLTMxNi4zMjQtNTk4LjY2MiAyLjI5MnoiIGZpbGw9IiMzNTQ5NWUiIC8+CiAgPHBhdGggZD0iTTE1MjQuMjA3IDE0NjQuOTAzbDYwOC4yODUgNi44NzcgMTczLjc0Ni0zMjAuOTA5aC02MTkuMDcyeiIgZmlsbD0iIzQxYjg4MyIgLz4KPC9zdmc+" alt="Theme: vuepress-theme-hope" />
-<img src="https://img.shields.io/badge/作者:Mr.Hope-关注-blue.svg?style=social" alt="Author: Mr.Hope" /></p>
-<div><p>Info</p>
-<p>详细的参数与使用请见 <a href="https://shields.io/" target="_blank" rel="noopener noreferrer">首页</a>。</p>
-</div>
-<h2 id="markmap"> Markmap</h2>
-<p>Markmap 是一个将 Markdown 转换为思维导图的工具。它相对于主题内置的 flowchart 支持更多的格式与内容。</p>
-<ol>
-<li>使用 <a href="https://markmap.js.org/" target="_blank" rel="noopener noreferrer">Markmap</a> 生成思维导图 HTML 文件</li>
-<li>将 HTML 文件放在 <code>.vuepress/public/</code> 下</li>
-<li>通过 <code>&lt;iframe&gt;</code> 插入到 Markdown</li>
-</ol>
-<p>输入:</p>
-<div><pre><code><span><span><span>&lt;</span>iframe</span>
-  <span>:src</span><span><span>=</span><span>"</span>$withBase(<span>'</span>/markmap/demo-zh.html<span>'</span>)<span>"</span></span>
-  <span>width</span><span><span>=</span><span>"</span>100%<span>"</span></span>
-  <span>height</span><span><span>=</span><span>"</span>400<span>"</span></span>
-  <span>frameborder</span><span><span>=</span><span>"</span>0<span>"</span></span>
-  <span>scrolling</span><span><span>=</span><span>"</span>No<span>"</span></span>
-  <span>leftmargin</span><span><span>=</span><span>"</span>0<span>"</span></span>
-  <span>topmargin</span><span><span>=</span><span>"</span>0<span>"</span></span>
-<span>/></span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p>输出:</p>
-<iframe :src="$withBase('/markmap/demo-zh.html')" width="100%" height="400" frameborder="0" scrolling="No" leftmargin="0" topmargin="0" />
-<h2 id="codepen"> CodePen</h2>
-<p><a href="https://codepen.io/" target="_blank" rel="noopener noreferrer">CodePen</a> 可以很方便的创建代码演示并嵌入。</p>
-<div><pre><code><span><span><span>&lt;</span>iframe</span>
-  <span>height</span><span><span>=</span><span>"</span>265<span>"</span></span>
-  <span><span>style</span><span><span>=</span><span>"</span><span><span>width</span><span>:</span> 100%<span>;</span></span><span>"</span></span></span>
-  <span>scrolling</span><span><span>=</span><span>"</span>no<span>"</span></span>
-  <span>title</span><span><span>=</span><span>"</span>Solar System animation - Pure CSS<span>"</span></span>
-  <span>src</span><span><span>=</span><span>"</span>https://codepen.io/kowlor/embed/ZYYQoy?height=265&amp;theme-id=light&amp;default-tab=css,result<span>"</span></span>
-  <span>frameborder</span><span><span>=</span><span>"</span>no<span>"</span></span>
-  <span>loading</span><span><span>=</span><span>"</span>lazy<span>"</span></span>
-  <span>allowtransparency</span><span><span>=</span><span>"</span>true<span>"</span></span>
-  <span>allowfullscreen</span><span><span>=</span><span>"</span>true<span>"</span></span>
-<span>></span></span>
-  See the Pen
-  <span><span><span>&lt;</span>a</span> <span>href</span><span><span>=</span><span>"</span>https://codepen.io/kowlor/pen/ZYYQoy<span>"</span></span>
-    <span>></span></span>Solar System animation - Pure CSS<span><span><span>&lt;/</span>a</span>
-  <span>></span></span>
-  by Malik Dellidj (<span><span><span>&lt;</span>a</span> <span>href</span><span><span>=</span><span>"</span>https://codepen.io/kowlor<span>"</span></span><span>></span></span>@kowlor<span><span><span>&lt;/</span>a</span><span>></span></span>) on
-  <span><span><span>&lt;</span>a</span> <span>href</span><span><span>=</span><span>"</span>https://codepen.io<span>"</span></span><span>></span></span>CodePen<span><span><span>&lt;/</span>a</span><span>></span></span>.
-<span><span><span>&lt;/</span>iframe</span><span>></span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br></div></div>
-<iframe height="265" style="width: 100%;" scrolling="no" title="Solar System animation - Pure CSS" src="https://codepen.io/kowlor/embed/ZYYQoy?height=265&theme-id=light&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/kowlor/pen/ZYYQoy'>Solar System animation - Pure CSS</a> by Malik Dellidj
-  (<a href='https://codepen.io/kowlor'>@kowlor</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2021-02-26T08:10:04.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">流程图</title>
-    <id>https://vuepress-theme-hope.github.io/zh/guide/markdown/flowchart/</id>
-    <link href="https://vuepress-theme-hope.github.io/zh/guide/markdown/flowchart/"/>
-    <updated>2021-04-07T05:44:25.000Z</updated>
-    <summary type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持流程图。</p>
-<p>本插件利用了 <a href="https://github.com/adrai/flowchart.js" target="_blank" rel="noopener noreferrer">flowchart.js</a> 来支持这一功能。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持流程图。</p>
-<p>本插件利用了 <a href="https://github.com/adrai/flowchart.js" target="_blank" rel="noopener noreferrer">flowchart.js</a> 来支持这一功能。</p>
-
-<h2 id="配置"> 配置</h2>
-<div><div><br><br><br><div>&nbsp;</div><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  themeConfig<span>:</span> <span>{</span>
-    mdEnhance<span>:</span> <span>{</span>
-      flowchart<span>:</span> <span>true</span><span>,</span>
-    <span>}</span><span>,</span>
-  <span>}</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><h2 id="语法"> 语法</h2>
-<div><pre><code><span>&lt;!-- ↓ :preset 是可选的 --></span>
-
-<span><span>```</span><span>flow:preset</span>
-<span>
-&lt;!-- 放置你的流程图代码 -->
-</span>
-<span>```</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>目前可用的预设:</p>
-<ul>
-<li><code>vue</code> (默认)</li>
-<li><code>ant</code></li>
-</ul>
-<h2 id="演示"> 演示</h2>
-<i>Not supported content</i><div><pre><code><span><span>```</span><span>flow</span>
-<span>st=>start: Start|past:>http://www.google.com[blank]
-e=>end: End|future:>http://www.google.com
-op1=>operation: My Operation|past
-op2=>operation: Do something|current
-sub1=>subroutine: My Subroutine|invalid
-cond=>condition: Yes
-or No?|approved:>http://www.google.com
-c2=>condition: Good idea|rejected
-io=>inputoutput: catch something...|future
-
-st->op1(right)->cond
-cond(yes, right)->c2
-cond(no)->sub1(left)->op1
-c2(yes)->io->e
-c2(no)->op2->e</span>
-<span>```</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br></div></div><h2 id="流程图介绍"> 流程图介绍</h2>
-<p>详见 <a href="https://vuepress-theme-hope.github.io/md-enhance/zh/guide/flowchart/#%E6%B5%81%E7%A8%8B%E5%9B%BE%E4%BB%8B%E7%BB%8D" target="_blank" rel="noopener noreferrer">流程图介绍</a>。</p>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <category term="markdown"/>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2021-02-25T07:37:56.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">脚注</title>
-    <id>https://vuepress-theme-hope.github.io/zh/guide/markdown/footnote/</id>
-    <link href="https://vuepress-theme-hope.github.io/zh/guide/markdown/footnote/"/>
-    <updated>2021-02-27T06:18:09.000Z</updated>
-    <summary type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持脚注。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持脚注。</p>
-
-<h2 id="配置"> 配置</h2>
-<p>默认启用，你也可以在主题配置禁用它:</p>
-<div><div><br><br><br><div>&nbsp;</div><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  themeConfig<span>:</span> <span>{</span>
-    mdEnhance<span>:</span> <span>{</span>
-      footnote<span>:</span> <span>true</span><span>,</span>
-    <span>}</span><span>,</span>
-  <span>}</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><h2 id="语法"> 语法</h2>
-<ul>
-<li>
-<p>在 Markdown 中使用 <code>[^锚点文字]</code> 来定义脚注。</p>
-</li>
-<li>
-<p>在之后的任何位置使用 <code>[^锚点文字]: ...</code> 来描述脚注内容。</p>
-</li>
-<li>
-<p>如果脚注包含多个段落，其后的段落应当保持双层缩进。</p>
-</li>
-</ul>
-<h2 id="案例"> 案例</h2>
-<p>脚注 1 链接<sup></sup>.</p>
-<p>脚注 2 链接<sup></sup>.</p>
-<p>行内的脚注<sup></sup> 定义.</p>
-<p>重复的页脚引用<sup></sup>.</p>
-<div><pre><code>脚注 1 链接[^first].
-
-脚注 2 链接[^second].
-
-行内的脚注^[Text of inline footnote] 定义.
-
-重复的页脚引用[^second].
-
-<span><span>[</span><span>^first</span><span>]</span><span>:</span> 脚注</span> <span><span>**</span><span>可以包含特殊标记</span><span>**</span></span>
-
-<span>    也可以由多个段落组成</span>
-
-<span><span>[</span><span>^second</span><span>]</span><span>:</span> 脚注文字。</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><hr>
-<section>
-<ol>
-<li id="footnote1"><p>脚注 <strong>可以包含特殊标记</strong></p>
-<p>也可以由多个段落组成 </p>
-</li>
-<li id="footnote2"><p>脚注文字。  </p>
-</li>
-<li id="footnote3"><p>Text of inline footnote </p>
-</li>
-</ol>
-</section>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <category term="markdown"/>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2021-02-25T07:37:56.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">启用 Markdown 增强</title>
-    <id>https://vuepress-theme-hope.github.io/zh/guide/markdown/intro/</id>
-    <link href="https://vuepress-theme-hope.github.io/zh/guide/markdown/intro/"/>
-    <updated>2021-03-27T08:43:08.000Z</updated>
-    <summary type="html"><![CDATA[<p>除了 VuePress 本身新增了一些 Markdown 语法外，<code>vuepress-theme-hope</code> 通过 <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">vuepress-plugin-md-enhance</a>，在 Markdown 中启用了更多的语法与新功能。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>除了 VuePress 本身新增了一些 Markdown 语法外，<code>vuepress-theme-hope</code> 通过 <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">vuepress-plugin-md-enhance</a>，在 Markdown 中启用了更多的语法与新功能。</p>
-
-<h2 id="内置增强"> 内置增强</h2>
-<p>VuePress 自带的 GitHub 风格的表格，Emoji、TOC、代码行号、特定行高亮等都是开箱即用的。</p>
-<p>详细语法详见 <a href="./../../basic/vuepress/markdown.html">内置 Markdown 扩展</a>。</p>
-<h2 id="启用-markdown-增强"> 启用 Markdown 增强</h2>
-<p><code>.vuepress/config.js</code> 中的 <code>themeconfig.mdEnhance</code> 会直接传递给插件作为插件选项。所以你也可以直接阅读 <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">vuepress-plugin-md-enhance 文档</a> 查看用法。</p>
-<div><p>Tips</p>
-<p>请不用担心你的网站大小，如果你不启用相关功能，最终代码不会包含这些功能相关的代码。</p>
-</div>
-<h3 id="一键启用"> 一键启用</h3>
-<p>你可以设置 <code>themeconfig.mdEnhance.enableAll</code> 启用 <a href="https://vuepress-theme-hope.github.io/md-enhance" target="_blank" rel="noopener noreferrer">md-enhance</a> 插件的所有功能。</p>
-<div><div><br><br><div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
-  themeConfig<span>:</span> <span>{</span>
-    mdEnhance<span>:</span> <span>{</span>
-      enableAll<span>:</span> <span>true</span><span>,</span>
-    <span>}</span><span>,</span>
-  <span>}</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre><div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><div><p>Warning</p>
-<p>请仅将此选项用于体验或测试。随着时间的增长，<code>vuepress-plugin-md-enhance</code> 变得越来越强大。它为 Markdown 解析器添加了更多语法，并输出了更多代码。</p>
-<p>启用不需要的功能将增加开发和构建时间。 (<code>markdown-it</code> 必须检查额外的语法)</p>
-<p>同样，幻灯片演示功能将在输出中添加 700KB 大小的代码 (主要是 <code>reveal.js</code>)。</p>
-<p>因此，请仅启用需要的功能。</p>
-</div>
-<h3 id="启用特定的语法"> 启用特定的语法</h3>
-<p>特定语法的配置项可以在对应的说明页或者 <a href="./../../config/theme/plugin.html#mdEnhance">主题插件配置</a> 中找到。</p>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <category term="markdown"/>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2021-02-26T08:10:04.000Z</published>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
