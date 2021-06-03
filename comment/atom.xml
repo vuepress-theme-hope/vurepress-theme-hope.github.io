@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-06-03T13:19:12.791Z</updated>
+  <updated>2021-06-03T13:33:43.230Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/comment/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/comment/"/>
@@ -531,7 +531,7 @@ And if you already have vue-i18n in your project, it will not affect Vssue.</p>
     <title type="html">Waline Config</title>
     <id>https://vuepress-theme-hope.github.io/comment/config/waline/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/config/waline/"/>
-    <updated>2021-06-01T08:25:46.000Z</updated>
+    <updated>2021-06-03T13:29:12.000Z</updated>
     <content type="html"><![CDATA[<h2 id="el"> el</h2>
 <ul>
 <li>Type: <code>string | HTMLElement</code></li>
@@ -1386,7 +1386,7 @@ $vssue-direction
     <title type="html">Waline</title>
     <id>https://vuepress-theme-hope.github.io/comment/guide/waline/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/guide/waline/"/>
-    <updated>2021-06-01T08:25:46.000Z</updated>
+    <updated>2021-06-03T13:29:12.000Z</updated>
     <summary type="html"><![CDATA[<p>Welcome to Waline. In just a few steps, you can enable Waline to provide comments and pageviews on your site.</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>Welcome to Waline. In just a few steps, you can enable Waline to provide comments and pageviews on your site.</p>
@@ -1423,7 +1423,7 @@ $vssue-direction
 <p><img src="https://p4.ssl.qhimg.com/t01bb30e74f85ddf5b3.png" alt="Select repo" /></p>
 </li>
 <li>
-<p>After repo is initialized, enter <code>Environment Variables</code> and set <code>LEAN_ID</code>, <code>LEAN_KEY</code> and <code>LEAN_MASTER_KEY</code>. The variables' value should be the ones you got in the previous step. <code>APP ID</code> is the value of <code>LEAN_ID</code>, and <code>APP Key</code> to <code>LEAN_KEY</code>, <code>Master Key</code> to <code>LEAN_MASTER_KEY</code>.</p>
+<p>After repo is initialized, enter <code>Environment Variables</code> and set <code>LEAN_ID</code>, <code>LEAN_KEY</code> and <code>LEAN_MASTER_KEY</code>. The variables’ value should be the ones you got in the previous step. <code>APP ID</code> is the value of <code>LEAN_ID</code>, and <code>APP Key</code> to <code>LEAN_KEY</code>, <code>Master Key</code> to <code>LEAN_MASTER_KEY</code>.</p>
 <p><img src="https://p5.ssl.qhimg.com/t019aec05e3e5fea5cc.png" alt="Set environment variables" /></p>
 </li>
 <li>
@@ -2046,7 +2046,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">Waline 配置</title>
     <id>https://vuepress-theme-hope.github.io/comment/zh/config/waline/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/zh/config/waline/"/>
-    <updated>2021-06-01T08:25:46.000Z</updated>
+    <updated>2021-06-03T13:29:12.000Z</updated>
     <content type="html"><![CDATA[<h2 id="el"> el</h2>
 <ul>
 <li>类型: <code>string | HTMLElement</code></li>
@@ -2842,7 +2842,7 @@ $vssue-direction
     <title type="html">Waline</title>
     <id>https://vuepress-theme-hope.github.io/comment/zh/guide/waline/</id>
     <link href="https://vuepress-theme-hope.github.io/comment/zh/guide/waline/"/>
-    <updated>2021-06-01T08:25:46.000Z</updated>
+    <updated>2021-06-03T13:29:12.000Z</updated>
     <summary type="html"><![CDATA[<p>欢迎使用 Waline，只需几个步骤，你就可以在你的网站中启用 Waline 提供评论与浏览量服务。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>欢迎使用 Waline，只需几个步骤，你就可以在你的网站中启用 Waline 提供评论与浏览量服务。</p>

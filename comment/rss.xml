@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/comment/</link>
     <description>Comment Plugin for VuePress</description>
     <language>en-US</language>
-    <pubDate>Thu, 03 Jun 2021 13:19:12 GMT</pubDate>
-    <lastBuildDate>Thu, 03 Jun 2021 13:19:12 GMT</lastBuildDate>
+    <pubDate>Thu, 03 Jun 2021 13:33:43 GMT</pubDate>
+    <lastBuildDate>Thu, 03 Jun 2021 13:33:43 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -1330,7 +1330,7 @@ $vssue-direction
 <p><img src="https://p4.ssl.qhimg.com/t01bb30e74f85ddf5b3.png" alt="Select repo" /></p>
 </li>
 <li>
-<p>After repo is initialized, enter <code>Environment Variables</code> and set <code>LEAN_ID</code>, <code>LEAN_KEY</code> and <code>LEAN_MASTER_KEY</code>. The variables' value should be the ones you got in the previous step. <code>APP ID</code> is the value of <code>LEAN_ID</code>, and <code>APP Key</code> to <code>LEAN_KEY</code>, <code>Master Key</code> to <code>LEAN_MASTER_KEY</code>.</p>
+<p>After repo is initialized, enter <code>Environment Variables</code> and set <code>LEAN_ID</code>, <code>LEAN_KEY</code> and <code>LEAN_MASTER_KEY</code>. The variables’ value should be the ones you got in the previous step. <code>APP ID</code> is the value of <code>LEAN_ID</code>, and <code>APP Key</code> to <code>LEAN_KEY</code>, <code>Master Key</code> to <code>LEAN_MASTER_KEY</code>.</p>
 <p><img src="https://p5.ssl.qhimg.com/t019aec05e3e5fea5cc.png" alt="Set environment variables" /></p>
 </li>
 <li>
