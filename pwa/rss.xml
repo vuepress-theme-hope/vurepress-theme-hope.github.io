@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/pwa/</link>
     <description>A powerful PWA plugin for vuepress</description>
     <language>en-US</language>
-    <pubDate>Sun, 06 Jun 2021 08:10:19 GMT</pubDate>
-    <lastBuildDate>Sun, 06 Jun 2021 08:10:19 GMT</lastBuildDate>
+    <pubDate>Sun, 06 Jun 2021 08:18:54 GMT</pubDate>
+    <lastBuildDate>Sun, 06 Jun 2021 08:18:54 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -278,7 +278,7 @@
 <p>Besides the plugin does not process anything in the manifest, but outputs them as-is. This means that if you plan to deploy to a subdirectory, you should add <code>base</code> to the corresponding URL in the manifest yourself.</p>
 </div>
 <h2 id="other-options"> Other options</h2>
-<p>The plug-in also provides other PWA-related options, such as Microsoft tile icon and color settings, Apple icon and so on.</p>
+<p>The plugin also provides other PWA-related options, such as Microsoft tile icon and color settings, Apple icon and so on.</p>
 <p>You can set them as needed. For detailed options, please see <a href="./config.html">Configuration Page</a>.</p>
 <h2 id="further-reading"> Further Reading</h2>
 <p>For more details, please see:</p>
