@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/pwa/</link>
     <description>A powerful PWA plugin for vuepress</description>
     <language>en-US</language>
-    <pubDate>Sun, 06 Jun 2021 11:22:24 GMT</pubDate>
-    <lastBuildDate>Sun, 06 Jun 2021 11:22:24 GMT</lastBuildDate>
+    <pubDate>Mon, 07 Jun 2021 04:00:11 GMT</pubDate>
+    <lastBuildDate>Mon, 07 Jun 2021 04:00:11 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -161,6 +161,176 @@
 <p>You can fill in the custom pop-up component path.</p>
 <h2 id="generateswconfig"> generateSwConfig</h2>
 <p>Options passed to <code>workbox-build</code>, for details, see <a href="https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-build#.generateSW" target="_blank" rel="noopener noreferrer">Workbox documentation</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Guide</title>
+      <link>https://vuepress-theme-hope.github.io/pwa/guide/</link>
+      <guid>https://vuepress-theme-hope.github.io/pwa/guide/</guid>
+      <source url="https://vuepress-theme-hope.github.io/pwa/rss.xml">Guide</source>
+      <description>&amp;lt;p&amp;gt;The plugin brings enhanced PWA support to VuePress [^pwa-intro].&amp;lt;/p&amp;gt;
+</description>
+      <pubDate>Thu, 22 Oct 2020 04:23:17 GMT</pubDate>
+      <content:encoded><![CDATA[<p>The plugin brings enhanced PWA support to VuePress <sup></sup>.</p>
+
+<h2 id="content-caching-and-updating"> Content caching and updating</h2>
+<p>Service Worker <sup></sup> (SW for short) is mainly used to cache and proxy site content.</p>
+<p>This plugin will automatically register Service Woker through <code>workbox-build</code>.</p>
+<p>To better control what the Service Worker can pre-cache, the plugin provides the following configurations.</p>
+<p>If you are an advanced user, you can also directly set <code>generateSwConfig</code> to pass options to <code>workbox-build</code>.</p>
+<h3 id="default-cache"> Default cache</h3>
+<p>By default, the plugin will pre-cache all files related to the site: <code>**/*.{html,js,css,svg}</code></p>
+<p>At the same time, the plugin will cache font files: <code>**/*.{woff,woff2,eot,ttf,otf}</code>.</p>
+<h3 id="cache-control"> Cache Control</h3>
+<p>Based on the requirement of installable <sup></sup>, the plugin provides related options for cache control.</p>
+<h4 id="picture-cache"> Picture Cache</h4>
+<p>You can cache site pictures by setting the <code>cachePic</code> option to <code>true</code>.</p>
+<p>If your site is not large and the pictures are mostly critical descriptions, and hope to be displayed in offline mode, please set this option to <code>true</code>.</p>
+<div><p>Image recognition</p>
+<p>We recognize images by file extension. Any files ending with <code>.png</code>, <code>.jpg</code>, <code>.jpeg</code>, <code>.gif</code>, <code>.bmp</code>, <code>.webp</code> will be regarded as images.</p>
+</div>
+<h4 id="html-cache"> HTML cache</h4>
+<p>When your site is too large, you can set <code>cacheHTML</code> to <code>false</code> to cache only the homepage and 404 error pages.</p>
+<div><p>Why can these be removed?</p>
+<p>Though VuePress generates HTML files through SSR<sup></sup> for all pages, these files are mainly used for SEO<sup></sup> and allow you to directly configure the backend without SPA<sup></sup> Visit any link.</p>
+<p>VuePress is essentially a SPA. This means that you can enter from the homepage to access all pages normally only caching the homepage.</p>
+<p>When your site has a large number of pages or content, and the volume is too large after including HTML files, you can consider setting this option to <code>false</code>, which can reduce the volume by about 40%. The disadvantage is that users can only enter through the homepage and then navigate to the corresponding page in an offline environment. Direct access to a link will prompt a web page error.</p>
+</div>
+<h4 id="size-control"> Size control</h4>
+<p>To prevent large files from being included in the pre-cache list, any files larger than 2MB or pictures larger than 1MB will be deleted.</p>
+<p>You can customize the maximum file size of the cache (unit: KB) with the <code>maxSize</code> option, or change the size limit of the picture (unit: KB) with <code>maxPicSize</code>.</p>
+<h3 id="update-popup"> Update popup</h3>
+<p>We provide an update popup when new content is successfully downloaded.</p>
+<div><p>Custom popup</p>
+<p>If you are not satisfied with the default popup component, you can write component and replace it by yourself. To do that, You need to register your popup component globally and pass the name of the component to the <code>popupComponent</code> option.</p>
+</div>
+<h2 id="manifest-file-generation"> Manifest file generation</h2>
+<p>To ensure the installability of PWA, the site needs to generate a manifest file and declare a valid manifest file address <sup></sup> through <code>link</code>.</p>
+<p>The plugin will automatically generate the Manifest file <code>manifest.webmanifest</code> for you in the output directory, and will also add the manifest address statement to each HTML <code>&lt;head&gt;</code>.</p>
+<p>If you already have a <code>manifest.webmanifest</code> or <code>manifest.json</code> in <code>.vuepress/public</code>, the plugin will read and merge it into the final manifest.</p>
+<h3 id="automatic-generation"> Automatic generation</h3>
+<p>The plugin will use the information from the VuePress plugin API and set the fallback for fields in manifest as much as possible. So you don’t need to set most of the manifest fields.</p>
+<p>If the following fields are not set, they will try to fallback to the following preset values ​​in order.</p>
+<table>
+<thead>
+<tr>
+<th>Options</th>
+<th>Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td><code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></td>
+</tr>
+<tr>
+<td>short_name</td>
+<td><code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></td>
+</tr>
+<tr>
+<td>description</td>
+<td><code>siteConfig.description</code> || <code>themeConfig.description</code> || <code>'A site built with vuepress-theme-hope'</code></td>
+</tr>
+<tr>
+<td>lang</td>
+<td><code>siteConfig.locales['/'].lang</code> || <code>themeConfig.locales['/'].lang</code> || <code>&quot;en-US&quot;</code></td>
+</tr>
+<tr>
+<td>start_url</td>
+<td><code>context.base</code></td>
+</tr>
+<tr>
+<td>scope</td>
+<td><code>context.base</code></td>
+</tr>
+<tr>
+<td>display</td>
+<td><code>&quot;standalone&quot;</code></td>
+</tr>
+<tr>
+<td>theme_color</td>
+<td><code>&quot;#46bd87&quot;</code></td>
+</tr>
+<tr>
+<td>background_color</td>
+<td><code>'#ffffff'</code></td>
+</tr>
+<tr>
+<td>orientation</td>
+<td><code>'portrait-primary'</code></td>
+</tr>
+<tr>
+<td>prefer_related_applications</td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<p>For complete configuration items, please see <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/packages/pwa/src/types/manifest.d.ts" target="_blank" rel="noopener noreferrer">Manifest Type Definition File</a></p>
+<h3 id="manual-configuration"> Manual configuration</h3>
+<p>You can manually specify the contents of the manifest in the <code>manifest</code> option.</p>
+<div><p>Priority</p>
+<p><code>manifest</code> option has the highest priority, followed by manifest files that may exist in the <code>public</code> folder.</p>
+</div>
+<p><strong>You should at least set a valid icon through <code>manifest.icons</code> or other icon related options in the PWA plugin.</strong></p>
+<div><p>Note</p>
+<p>The installability <sup></sup> specification requires at least one valid icon to be declared in the manifest.</p>
+<p>So if you do not configure <code>manifest.icons</code>, visitors can only enjoy the offline accessibility brought by the Service Worker cache, while cannot install your site as a PWA.</p>
+<p>Besides the plugin does not process anything in the manifest, but outputs them as-is. This means that if you plan to deploy to a subdirectory, you should add <code>base</code> to the corresponding URL in the manifest yourself.</p>
+</div>
+<h2 id="other-options"> Other options</h2>
+<p>The plugin also provides other PWA-related options, such as Microsoft tile icon and color settings, Apple icon and so on.</p>
+<p>You can set them as needed. For detailed options, please see <a href="./config.html">Configuration Page</a>.</p>
+<h2 id="further-reading"> Further Reading</h2>
+<p>For more details, please see:</p>
+<ul>
+<li><a href="https://web.dev/progressive-web-apps/" target="_blank" rel="noopener noreferrer">Google PWA</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps" target="_blank" rel="noopener noreferrer">MDN PWA</a></li>
+<li><a href="https://w3c.github.io/manifest/" target="_blank" rel="noopener noreferrer">W3C Manifest Specification</a></li>
+</ul>
+<hr>
+<section>
+<ol>
+<li id="footnote1"><p><strong>PWA introduction</strong></p>
+<p>PWA, full name Progressive Web app. PWA standard is stipulated by W3C.</p>
+<p>It allows sites to install the site as an App on supported platform through a browser that supports this feature. </p>
+</li>
+<li id="footnote2"><p><strong>Service Worker Introduction</strong></p>
+<ol>
+<li>
+<p>The Service Worker will get and cache all the files registered in it during the registration process.</p>
+</li>
+<li>
+<p>After the registration complete, the Service Worker is activated, and starts to proxy and control all your requests.</p>
+</li>
+<li>
+<p>Whenever you want to initiate an access request through the browser, the Service Worker will check whether it exists in its own cache list, if it exists, it will directly return the cached result, otherwise it will call its own fetch method to get it. You can use a custom fetch method to fully control the result of the request for resources in the web page, such as providing a fallback web page when offline.</p>
+</li>
+<li>
+<p>Every time the user reopens the site, the Service Worker will request to the link when it was registered. If a new version of Service Woker is detected, it will update itself and start caching the list of resources registered in the new Service Worker . After the content update is successfully obtained, the Service Worker will trigger the <code>update</code> event. The user can be notified through this event, for example, a pop-up window will be displayed in the lower right corner, prompting the user that new content is available and allowing the user to trigger an update.</p>
+</li>
+</ol>
+ </li>
+<li id="footnote3"><p><strong>Installable</strong></p>
+<p>To let the site be registered as a PWA, the site needs to successfully register a valid service worker by itself, and at the same time add a valid manifest file and declare it.</p>
+<p>Each platform or browser has requirements for the size of the Service Worker cache. When the file size of the Service Worker cache is too large, the site will be marked as not installable. For Safari, the threshold is 50 MB, a few browsers will set less or more values ​​(30MB, 70MB, 80MB), and Chrome will mark the threshold at 100 MB.</p>
+<p>The manifest file should contain at least <code>name</code> (or <code>short_name</code>) <code>icons</code> <code>start_url</code></p>
+<p>And starting from Chrome 93, Service Woker must contain effective fetch events to control offline requests.  </p>
+</li>
+<li id="footnote4"><p><strong>SSR</strong>: <strong>S</strong>erver <strong>S</strong>ide <strong>R</strong>endering, </p>
+</li>
+<li id="footnote5"><p><strong>SEO</strong>: <strong>S</strong>earch <strong>E</strong>ngine <strong>O</strong>ptimization. For details, please see <a href="https://mrhope.site/code/site/html/definition/seo/" target="_blank" rel="noopener noreferrer">SEO Introduction</a> </p>
+</li>
+<li id="footnote6"><p><strong>SPA</strong>: <strong>S</strong>ingle <strong>P</strong>age <strong>A</strong>pplication, mMost of them only have the homepage, and use history mode to handle routing instead of actually navigating between pages. </p>
+</li>
+<li id="footnote7"><p><strong>Manifest File</strong></p>
+<p>The manifest file uses the JSON format and is responsible for declaring various information of the PWA, such as name, description, icon, and shortcut actions.</p>
+<p>In order for your site to be registered as a PWA, you need to meet the basic specifications of the manifest to make the browser consider the site as an installable PWA and allow users to install it.</p>
+<div><p>Info</p>
+<p>For Manifest standards and specifications, please see <a href="https://w3c.github.io/manifest/" target="_blank" rel="noopener noreferrer">W3C Manifest</a></p>
+</div>
+ </li>
+</ol>
+</section>
 ]]></content:encoded>
     </item>
     <item>
@@ -353,210 +523,6 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 ]]></content:encoded>
     </item>
     <item>
-      <title>Guide</title>
-      <link>https://vuepress-theme-hope.github.io/pwa/guide/</link>
-      <guid>https://vuepress-theme-hope.github.io/pwa/guide/</guid>
-      <source url="https://vuepress-theme-hope.github.io/pwa/rss.xml">Guide</source>
-      <description>&amp;lt;p&amp;gt;The plugin brings enhanced PWA support to VuePress [^pwa-intro].&amp;lt;/p&amp;gt;
-</description>
-      <pubDate>Thu, 22 Oct 2020 04:23:17 GMT</pubDate>
-      <content:encoded><![CDATA[<p>The plugin brings enhanced PWA support to VuePress <sup></sup>.</p>
-
-<h2 id="content-caching-and-updating"> Content caching and updating</h2>
-<p>Service Worker <sup></sup> (SW for short) is mainly used to cache and proxy site content.</p>
-<p>This plugin will automatically register Service Woker through <code>workbox-build</code>.</p>
-<p>To better control what the Service Worker can pre-cache, the plugin provides the following configurations.</p>
-<p>If you are an advanced user, you can also directly set <code>generateSwConfig</code> to pass options to <code>workbox-build</code>.</p>
-<h3 id="default-cache"> Default cache</h3>
-<p>By default, the plugin will pre-cache all files related to the site: <code>**/*.{html,js,css,svg}</code></p>
-<p>At the same time, the plugin will cache font files: <code>**/*.{woff,woff2,eot,ttf,otf}</code>.</p>
-<h3 id="cache-control"> Cache Control</h3>
-<p>Based on the requirement of installable <sup></sup>, the plugin provides related options for cache control.</p>
-<h4 id="picture-cache"> Picture Cache</h4>
-<p>You can cache site pictures by setting the <code>cachePic</code> option to <code>true</code>.</p>
-<p>If your site is not large and the pictures are mostly critical descriptions, and hope to be displayed in offline mode, please set this option to <code>true</code>.</p>
-<div><p>Image recognition</p>
-<p>We recognize images by file extension. Any files ending with <code>.png</code>, <code>.jpg</code>, <code>.jpeg</code>, <code>.gif</code>, <code>.bmp</code>, <code>.webp</code> will be regarded as images.</p>
-</div>
-<h4 id="html-cache"> HTML cache</h4>
-<p>When your site is too large, you can set <code>cacheHTML</code> to <code>false</code> to cache only the homepage and 404 error pages.</p>
-<div><p>Why can these be removed?</p>
-<p>Though VuePress generates HTML files through SSR<sup></sup> for all pages, these files are mainly used for SEO<sup></sup> and allow you to directly configure the backend without SPA<sup></sup> Visit any link.</p>
-<p>VuePress is essentially a SPA. This means that you can enter from the homepage to access all pages normally only caching the homepage.</p>
-<p>When your site has a large number of pages or content, and the volume is too large after including HTML files, you can consider setting this option to <code>false</code>, which can reduce the volume by about 40%. The disadvantage is that users can only enter through the homepage and then navigate to the corresponding page in an offline environment. Direct access to a link will prompt a web page error.</p>
-</div>
-<h4 id="size-control"> Size control</h4>
-<p>To prevent large files from being included in the pre-cache list, any files larger than 2MB or pictures larger than 1MB will be deleted.</p>
-<p>You can customize the maximum file size of the cache (unit: KB) with the <code>maxSize</code> option, or change the size limit of the picture (unit: KB) with <code>maxPicSize</code>.</p>
-<h3 id="update-popup"> Update popup</h3>
-<p>We provide an update popup when new content is successfully downloaded.</p>
-<div><p>Custom popup</p>
-<p>If you are not satisfied with the default popup component, you can write component and replace it by yourself. To do that, You need to register your popup component globally and pass the name of the component to the <code>popupComponent</code> option.</p>
-</div>
-<h2 id="manifest-file-generation"> Manifest file generation</h2>
-<p>To ensure the installability of PWA, the site needs to generate a manifest file and declare a valid manifest file address <sup></sup> through <code>link</code>.</p>
-<p>The plugin will automatically generate the Manifest file <code>manifest.webmanifest</code> for you in the output directory, and will also add the manifest address statement to each HTML <code>&lt;head&gt;</code>.</p>
-<p>If you already have a <code>manifest.webmanifest</code> or <code>manifest.json</code> in <code>.vuepress/public</code>, the plugin will read and merge it into the final manifest.</p>
-<h3 id="automatic-generation"> Automatic generation</h3>
-<p>The plugin will use the information from the VuePress plugin API and set the fallback for fields in manifest as much as possible. So you don’t need to set most of the manifest fields.</p>
-<p>If the following fields are not set, they will try to fallback to the following preset values ​​in order.</p>
-<table>
-<thead>
-<tr>
-<th>Options</th>
-<th>Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>name</td>
-<td><code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></td>
-</tr>
-<tr>
-<td>short_name</td>
-<td><code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></td>
-</tr>
-<tr>
-<td>description</td>
-<td><code>siteConfig.description</code> || <code>themeConfig.description</code> || <code>'A site built with vuepress-theme-hope'</code></td>
-</tr>
-<tr>
-<td>lang</td>
-<td><code>siteConfig.locales['/'].lang</code> || <code>themeConfig.locales['/'].lang</code> || <code>&quot;en-US&quot;</code></td>
-</tr>
-<tr>
-<td>start_url</td>
-<td><code>context.base</code></td>
-</tr>
-<tr>
-<td>scope</td>
-<td><code>context.base</code></td>
-</tr>
-<tr>
-<td>display</td>
-<td><code>&quot;standalone&quot;</code></td>
-</tr>
-<tr>
-<td>theme_color</td>
-<td><code>&quot;#46bd87&quot;</code></td>
-</tr>
-<tr>
-<td>background_color</td>
-<td><code>'#ffffff'</code></td>
-</tr>
-<tr>
-<td>orientation</td>
-<td><code>'portrait-primary'</code></td>
-</tr>
-<tr>
-<td>prefer_related_applications</td>
-<td><code>false</code></td>
-</tr>
-</tbody>
-</table>
-<p>For complete configuration items, please see <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/v1/packages/pwa/src/types/manifest.d.ts" target="_blank" rel="noopener noreferrer">Manifest Type Definition File</a></p>
-<h3 id="manual-configuration"> Manual configuration</h3>
-<p>You can manually specify the contents of the manifest in the <code>manifest</code> option.</p>
-<div><p>Priority</p>
-<p><code>manifest</code> option has the highest priority, followed by manifest files that may exist in the <code>public</code> folder.</p>
-</div>
-<p><strong>You should at least set a valid icon through <code>manifest.icons</code> or other icon related options in the PWA plugin.</strong></p>
-<div><p>Note</p>
-<p>The installability <sup></sup> specification requires at least one valid icon to be declared in the manifest.</p>
-<p>So if you do not configure <code>manifest.icons</code>, visitors can only enjoy the offline accessibility brought by the Service Worker cache, while cannot install your site as a PWA.</p>
-<p>Besides the plugin does not process anything in the manifest, but outputs them as-is. This means that if you plan to deploy to a subdirectory, you should add <code>base</code> to the corresponding URL in the manifest yourself.</p>
-</div>
-<h2 id="other-options"> Other options</h2>
-<p>The plugin also provides other PWA-related options, such as Microsoft tile icon and color settings, Apple icon and so on.</p>
-<p>You can set them as needed. For detailed options, please see <a href="./config.html">Configuration Page</a>.</p>
-<h2 id="further-reading"> Further Reading</h2>
-<p>For more details, please see:</p>
-<ul>
-<li><a href="https://web.dev/progressive-web-apps/" target="_blank" rel="noopener noreferrer">Google PWA</a></li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps" target="_blank" rel="noopener noreferrer">MDN PWA</a></li>
-<li><a href="https://w3c.github.io/manifest/" target="_blank" rel="noopener noreferrer">W3C Manifest Specification</a></li>
-</ul>
-<hr>
-<section>
-<ol>
-<li id="footnote1"><p><strong>PWA introduction</strong></p>
-<p>PWA, full name Progressive Web app. PWA standard is stipulated by W3C.</p>
-<p>It allows sites to install the site as an App on supported platform through a browser that supports this feature. </p>
-</li>
-<li id="footnote2"><p><strong>Service Worker Introduction</strong></p>
-<ol>
-<li>
-<p>The Service Worker will get and cache all the files registered in it during the registration process.</p>
-</li>
-<li>
-<p>After the registration complete, the Service Worker is activated, and starts to proxy and control all your requests.</p>
-</li>
-<li>
-<p>Whenever you want to initiate an access request through the browser, the Service Worker will check whether it exists in its own cache list, if it exists, it will directly return the cached result, otherwise it will call its own fetch method to get it. You can use a custom fetch method to fully control the result of the request for resources in the web page, such as providing a fallback web page when offline.</p>
-</li>
-<li>
-<p>Every time the user reopens the site, the Service Worker will request to the link when it was registered. If a new version of Service Woker is detected, it will update itself and start caching the list of resources registered in the new Service Worker . After the content update is successfully obtained, the Service Worker will trigger the <code>update</code> event. The user can be notified through this event, for example, a pop-up window will be displayed in the lower right corner, prompting the user that new content is available and allowing the user to trigger an update.</p>
-</li>
-</ol>
- </li>
-<li id="footnote3"><p><strong>Installable</strong></p>
-<p>To let the site be registered as a PWA, the site needs to successfully register a valid service worker by itself, and at the same time add a valid manifest file and declare it.</p>
-<p>Each platform or browser has requirements for the size of the Service Worker cache. When the file size of the Service Worker cache is too large, the site will be marked as not installable. For Safari, the threshold is 50 MB, a few browsers will set less or more values ​​(30MB, 70MB, 80MB), and Chrome will mark the threshold at 100 MB.</p>
-<p>The manifest file should contain at least <code>name</code> (or <code>short_name</code>) <code>icons</code> <code>start_url</code></p>
-<p>And starting from Chrome 93, Service Woker must contain effective fetch events to control offline requests.  </p>
-</li>
-<li id="footnote4"><p><strong>SSR</strong>: <strong>S</strong>erver <strong>S</strong>ide <strong>R</strong>endering, </p>
-</li>
-<li id="footnote5"><p><strong>SEO</strong>: <strong>S</strong>earch <strong>E</strong>ngine <strong>O</strong>ptimization. For details, please see <a href="https://mrhope.site/code/site/html/definition/seo/" target="_blank" rel="noopener noreferrer">SEO Introduction</a> </p>
-</li>
-<li id="footnote6"><p><strong>SPA</strong>: <strong>S</strong>ingle <strong>P</strong>age <strong>A</strong>pplication, mMost of them only have the homepage, and use history mode to handle routing instead of actually navigating between pages. </p>
-</li>
-<li id="footnote7"><p><strong>Manifest File</strong></p>
-<p>The manifest file uses the JSON format and is responsible for declaring various information of the PWA, such as name, description, icon, and shortcut actions.</p>
-<p>In order for your site to be registered as a PWA, you need to meet the basic specifications of the manifest to make the browser consider the site as an installable PWA and allow users to install it.</p>
-<div><p>Info</p>
-<p>For Manifest standards and specifications, please see <a href="https://w3c.github.io/manifest/" target="_blank" rel="noopener noreferrer">W3C Manifest</a></p>
-</div>
- </li>
-</ol>
-</section>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>主页</title>
-      <link>https://vuepress-theme-hope.github.io/pwa/zh/</link>
-      <guid>https://vuepress-theme-hope.github.io/pwa/zh/</guid>
-      <source url="https://vuepress-theme-hope.github.io/pwa/rss.xml">主页</source>
-      <pubDate>Wed, 21 Oct 2020 16:30:08 GMT</pubDate>
-      <content:encoded><![CDATA[<p>渐进式网页应用 (Progressive Web App) 支持。</p>
-<h2 id="使用插件"> 使用插件</h2>
-<h3 id="安装"> 安装</h3>
-<CodeGroup>
-<CodeGroupItem title="yarn">
-<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-pwa
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-<CodeGroupItem title="npm">
-<div><pre><code><span>npm</span> i -D vuepress-plugin-pwa
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-</CodeGroup>
-<h3 id="使用"> 使用</h3>
-<div><pre><code><span>// .vuepress/config.js</span>
-module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span>
-    <span>[</span>
-      <span>"@mr-hope/pwa"</span><span>,</span>
-      <span>{</span>
-        <span>// 你的选项</span>
-      <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-  <span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
       <title>指南</title>
       <link>https://vuepress-theme-hope.github.io/pwa/zh/guide/</link>
       <guid>https://vuepress-theme-hope.github.io/pwa/zh/guide/</guid>
@@ -727,6 +693,40 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 </ol>
 </section>
 ]]></content:encoded>
+    </item>
+    <item>
+      <title>主页</title>
+      <link>https://vuepress-theme-hope.github.io/pwa/zh/</link>
+      <guid>https://vuepress-theme-hope.github.io/pwa/zh/</guid>
+      <source url="https://vuepress-theme-hope.github.io/pwa/rss.xml">主页</source>
+      <pubDate>Wed, 21 Oct 2020 16:30:08 GMT</pubDate>
+      <content:encoded><![CDATA[<p>渐进式网页应用 (Progressive Web App) 支持。</p>
+<h2 id="使用插件"> 使用插件</h2>
+<h3 id="安装"> 安装</h3>
+<CodeGroup>
+<CodeGroupItem title="yarn">
+<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-pwa
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="npm">
+<div><pre><code><span>npm</span> i -D vuepress-plugin-pwa
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+<h3 id="使用"> 使用</h3>
+<div><pre><code><span>// .vuepress/config.js</span>
+module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>[</span>
+      <span>"@mr-hope/pwa"</span><span>,</span>
+      <span>{</span>
+        <span>// 你的选项</span>
+      <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div>]]></content:encoded>
     </item>
   </channel>
 </rss>
