@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/comment/</link>
     <description>Comment Plugin for VuePress</description>
     <language>en-US</language>
-    <pubDate>Fri, 18 Jun 2021 11:45:15 GMT</pubDate>
-    <lastBuildDate>Fri, 18 Jun 2021 11:45:15 GMT</lastBuildDate>
+    <pubDate>Sat, 19 Jun 2021 13:33:38 GMT</pubDate>
+    <lastBuildDate>Sat, 19 Jun 2021 13:33:38 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -1338,39 +1338,16 @@ $vssue-direction
 <p><img src="https://p0.ssl.qhimg.com/t0142b58c2e8f886b28.png" alt="Deploy" /></p>
 </li>
 </ol>
-<h2 id="importing-in-html-client"> Importing in HTML (Client)</h2>
-<p>Make the following settings on your web page:</p>
-<ol>
-<li>
-<p>Use CDN to import Waline: <code>///cdn.jsdelivr.net/npm/@waline/client</code>.</p>
-</li>
-<li>
-<p>Create a <code>&lt;script&gt;</code> tag and initialize with <code>Waline()</code> while passing in the necessary <code>el</code> and <code>serverURL</code> options.</p>
-<ul>
-<li>The <code>el</code> option is the element used for Waline rendering. You can set a CSS selector in the form of a string or an HTMLElement object.</li>
-<li><code>serverURL</code> is the link of the server, which you just got.</li>
-</ul>
-<div><pre><code>&lt;head&gt;
-  ..
-  &lt;script src=&quot;//cdn.jsdelivr.net/npm/@waline/client&quot;&gt;&lt;/script&gt;
-  ...
-&lt;/head&gt;
-&lt;body&gt;
-  ...
-  &lt;div id=&quot;waline&quot;&gt;&lt;/div&gt;
-  &lt;script&gt;
-    Waline({
-      el: &#39;#waline&#39;,
-      serverURL: &#39;https://your-domain.vercel.app&#39;,
-    });
-  &lt;/script&gt;
-&lt;/body&gt;
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br></div></div></li>
-<li>
-<p>The comment service will now run successfully on your site 🎉</p>
-</li>
-</ol>
+<h2 id="client"> Client</h2>
+<h3 id="using-plugin"> Using plugin</h3>
+<p>Set <code>type: 'waline'</code> in the plugin options, and set <code>serverURL</code> as the link obtained in the previous step.</p>
+<p>Then, place the <code>&lt;Comment&gt;</code> component at a suitable location in your website (usually at the bottom of the page), you will be able to see the comment box.</p>
+<h3 id="using-theme"> Using theme</h3>
+<p>In <code>themeConfig.comment</code>, set <code>type: 'waline'</code> and <code>serverURL</code> as the link obtained in the previous step.</p>
+<p>Now Waline will run successfully on your site. 🎉</p>
+<div><p>Tips</p>
+<p>You can also pass in other options supported by Waline (except <code>el</code>).</p>
+</div>
 <h2 id="comment-management-management"> Comment management (Management)</h2>
 <ol>
 <li>After the deployment is complete, please visit <code>&lt;serverURL&gt;/ui/register</code> to register. The first person to register will be set as an administrator.</li>
@@ -2703,39 +2680,16 @@ $vssue-direction
 <p><img src="https://p0.ssl.qhimg.com/t0142b58c2e8f886b28.png" alt="部署成功" /></p>
 </li>
 </ol>
-<h2 id="html-引入-客户端"> HTML 引入 (客户端)</h2>
-<p>在你的网页中进行如下设置:</p>
-<ol>
-<li>
-<p>使用 CDN 引入 Waline: <code>//cdn.jsdelivr.net/npm/@waline/client</code>。</p>
-</li>
-<li>
-<p>创建 <code>&lt;script&gt;</code> 标签使用 <code>Waline()</code> 初始化，并传入必要的 <code>el</code> 与 <code>serverURL</code> 选项。</p>
-<ul>
-<li><code>el</code> 选项是 Waline 渲染使用的元素，你可以设置一个字符串形式的 CSS 选择器或者一个 HTMLElement 对象。</li>
-<li><code>serverURL</code> 是服务端的地址，即上一步获取到的值。</li>
-</ul>
-<div><pre><code>&lt;head&gt;
-  ..
-  &lt;script src=&quot;//cdn.jsdelivr.net/npm/@waline/client&quot;&gt;&lt;/script&gt;
-  ...
-&lt;/head&gt;
-&lt;body&gt;
-  ...
-  &lt;div id=&quot;waline&quot;&gt;&lt;/div&gt;
-  &lt;script&gt;
-    Waline({
-      el: &#39;#waline&#39;,
-      serverURL: &#39;https://your-domain.vercel.app&#39;,
-    });
-  &lt;/script&gt;
-&lt;/body&gt;
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br></div></div></li>
-<li>
-<p>评论服务此时就会在你的网站上成功运行 🎉</p>
-</li>
-</ol>
+<h2 id="客户端"> 客户端</h2>
+<h3 id="使用插件"> 使用插件</h3>
+<p>在插件选项中设置 <code>type: 'waline'</code>，同时设置服务端地址 <code>serverURL</code> 为上一步获取到的值。</p>
+<p>此时，将 <code>&lt;Comment&gt;</code> 组件放置在你网站中合适的位置 (通常是页面的底部)，即可使用 Waline 评论功能。</p>
+<h3 id="使用主题"> 使用主题</h3>
+<p>在 <code>themeConfig.comment</code> 中设置 <code>type: 'waline'</code>，同时设置服务端地址 <code>serverURL</code> 为上一步获取到的值。</p>
+<p>此时 Waline 就会在你的站点上成功运行。 🎉</p>
+<div><p>Tips</p>
+<p>你也可以传入其他 Waline 支持的选项 (除了 <code>el</code>)。</p>
+</div>
 <h2 id="评论管理-管理端"> 评论管理 (管理端)</h2>
 <ol>
 <li>部署完成后，请访问 <code>&lt;serverURL&gt;/ui/register</code> 进行注册。首个注册的人会被设定成管理员。</li>
