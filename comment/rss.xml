@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/comment/</link>
     <description>Comment Plugin for VuePress</description>
     <language>en-US</language>
-    <pubDate>Sat, 19 Jun 2021 13:33:38 GMT</pubDate>
-    <lastBuildDate>Sat, 19 Jun 2021 13:33:38 GMT</lastBuildDate>
+    <pubDate>Sat, 19 Jun 2021 13:42:15 GMT</pubDate>
+    <lastBuildDate>Sat, 19 Jun 2021 13:42:15 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -1347,6 +1347,7 @@ $vssue-direction
 <p>Now Waline will run successfully on your site. 🎉</p>
 <div><p>Tips</p>
 <p>You can also pass in other options supported by Waline (except <code>el</code>).</p>
+<p>For details, see <a href="./../config/waline.html">Waline Config</a></p>
 </div>
 <h2 id="comment-management-management"> Comment management (Management)</h2>
 <ol>
@@ -2689,6 +2690,7 @@ $vssue-direction
 <p>此时 Waline 就会在你的站点上成功运行。 🎉</p>
 <div><p>Tips</p>
 <p>你也可以传入其他 Waline 支持的选项 (除了 <code>el</code>)。</p>
+<p>详情请见 <a href="./../config/waline.html">Waline 配置</a></p>
 </div>
 <h2 id="评论管理-管理端"> 评论管理 (管理端)</h2>
 <ol>
