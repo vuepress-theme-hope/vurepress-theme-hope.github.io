@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-07-09T02:58:08.454Z</updated>
+  <updated>2021-07-09T03:00:33.686Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/md-enhance/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/md-enhance/"/>
@@ -192,9 +192,7 @@
 <li><code>&quot;notes&quot;</code></li>
 <li><code>&quot;zoom&quot;</code></li>
 </ul>
-<!-- - `"anything"`
-- `"audio"`
-- `"chalkboard"` -->
+
 <h3 id="presentation-revealconfig"> presentation.revealConfig</h3>
 <ul>
 <li>Type: <code>Partial&lt;RevealOptions&gt;</code></li>
@@ -1379,9 +1377,7 @@ Add another diagram to demo page    :48h</span>
 <li><code>&quot;notes&quot;</code></li>
 <li><code>&quot;zoom&quot;</code></li>
 </ul>
-<!-- - `"anything"`
-- `"audio"`
-- `"chalkboard"` -->
+
 </div>
 <p>You can also use <code>presentation.revealConfig</code> set configuration options passed to Reveal.js globally.</p>
 <p>Reveal.js also provides <a href="https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware" target="_blank" rel="noopener noreferrer">more plugins</a>. If you need a specific plugin, please submit a <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues/new?assignees=Mister-Hope&amp;labels=enhancement&amp;template=feature_request.md&amp;title=%5BFeature+Request%5D" target="_blank" rel="noopener noreferrer">Feature Request</a> on GitHub.</p>
@@ -2220,9 +2216,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <li><code>&quot;notes&quot;</code></li>
 <li><code>&quot;zoom&quot;</code></li>
 </ul>
-<!-- - `"anything"`
-- `"audio"`
-- `"chalkboard"` -->
+
 <h3 id="presentation-revealconfig"> presentation.revealConfig</h3>
 <ul>
 <li>类型: <code>Partial&lt;RevealOptions&gt;</code></li>
@@ -3407,9 +3401,7 @@ Add another diagram to demo page    :48h</span>
 <li><code>&quot;notes&quot;</code></li>
 <li><code>&quot;zoom&quot;</code></li>
 </ul>
-<!-- - `"anything"`
-- `"audio"`
-- `"chalkboard"` -->
+
 </div>
 <p>你还可以使用 <code>presentation.revealConfig</code> 来配置全局传递给 Reveal.js 的配置选项。</p>
 <p>Reveal.js 还提供了<a href="https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware" target="_blank" rel="noopener noreferrer">更多的插件</a>。如果你需要某个特定的插件，请在 GitHub 上提出 <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues/new?assignees=Mister-Hope&amp;labels=enhancement&amp;template=feature_request.md&amp;title=%5BFeature+Request%5D" target="_blank" rel="noopener noreferrer">Feature Request</a></p>
