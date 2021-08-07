@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-08-07T12:05:34.219Z</updated>
+  <updated>2021-08-07T12:14:44.487Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/comment/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/comment/"/>
@@ -14,198 +14,6 @@
   <contributor>
     <name>Mr.Hope</name>
   </contributor>
-  <entry>
-    <title type="html">API Config</title>
-    <id>https://vuepress-theme-hope.github.io/comment/config/</id>
-    <link href="https://vuepress-theme-hope.github.io/comment/config/"/>
-    <updated>2021-05-16T15:14:54.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="type"> type</h2>
-<ul>
-<li>Type: <code>'valine' | 'vssue' | 'disable'</code></li>
-<li>Required: true</li>
-</ul>
-<p>Comment service provider.</p>
-<p>Setting it to <code>'disable'</code> will disable the comment feature while still enabling PageInfo feature.</p>
-<h2 id="author"> author</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Required: false</li>
-</ul>
-<p>Default author for pages</p>
-<h2 id="pageinfo"> pageInfo</h2>
-<ul>
-<li>Type: <code>string[] | false</code></li>
-<li>Default: <code>['author', 'visitor', 'time', 'category', 'tag', 'reading-time']</code></li>
-</ul>
-<p>The order of the items decides the display order. Fill in <code>false</code> to disable it.</p>
-<p>Available items:</p>
-<ul>
-<li><code>'author'</code>: author</li>
-<li><code>'time'</code>: writing date</li>
-<li><code>'category'</code>: category</li>
-<li><code>'tag'</code>: tags</li>
-<li><code>'reading-time'</code>: expect reading time</li>
-<li><code>'word'</code>: word number for the article</li>
-<li><code>'visitor'</code>: pageviews</li>
-</ul>
-<h2 id="comment"> comment</h2>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>true</code></li>
-</ul>
-<p>Whether to enable comment feature by default.</p>
-<h2 id="wordperminute"> wordPerminute</h2>
-<ul>
-<li>Type: <code>number</code></li>
-<li>Default: <code>300</code></li>
-</ul>
-<p>Reading words per minute.</p>
-<h2 id="waline-config"> Waline config</h2>
-<ul>
-<li><a href="./waline.html">See here</a></li>
-</ul>
-<h2 id="vssue-config"> Vssue config</h2>
-<ul>
-<li><a href="./vssue.html">See here</a></li>
-</ul>
-<h2 id="valine-config"> Valine config</h2>
-<ul>
-<li><a href="./valine.html">See here</a></li>
-</ul>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-05-07T18:16:42.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">Valine Config</title>
-    <id>https://vuepress-theme-hope.github.io/comment/config/valine/</id>
-    <link href="https://vuepress-theme-hope.github.io/comment/config/valine/"/>
-    <updated>2021-05-16T15:14:54.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="appid"> appId</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Required: true</li>
-</ul>
-<p>Fill in the application appId in LeanCloud</p>
-<h2 id="appkey"> appKey</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Required: true</li>
-</ul>
-<p>Fill in the application appKey in LeanCloud</p>
-<h2 id="comment"> comment</h2>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>true</code></li>
-</ul>
-<p>Comment Function</p>
-<h2 id="visitor"> visitor</h2>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>true</code></li>
-</ul>
-<p>Pageviews Function</p>
-<h2 id="pagesize"> pageSize</h2>
-<ul>
-<li>Type: <code>Number</code></li>
-<li>Default: <code>10</code></li>
-</ul>
-<p>Number of comment per page</p>
-<h2 id="recordip"> recordIP</h2>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>false</code></li>
-</ul>
-<p>Whether to record the commenter IP</p>
-<h2 id="more-config-about-valine"> More Config about valine</h2>
-<ul>
-<li>
-<p><strong>placeholder</strong></p>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>'请留言'</code></li>
-</ul>
-<p>Comment placeholder</p>
-</li>
-<li>
-<p><strong>meta</strong></p>
-<ul>
-<li>Type: <code>string[]</code></li>
-<li>Default: <code>['nick','mail']</code></li>
-</ul>
-<p>Commenter’s info</p>
-</li>
-<li>
-<p><strong>requiredFields</strong></p>
-<ul>
-<li>Type: <code>string []</code></li>
-<li>Default value: <code>['nick']</code></li>
-</ul>
-<p>Set required fields</p>
-</li>
-<li>
-<p><strong>enableQQ</strong></p>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Default value: <code>true</code></li>
-</ul>
-<p>Whether automatically get QQ nickname and QQ avatar when detecting QQ number in nickname box</p>
-</li>
-<li>
-<p><strong>avatar</strong></p>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>'retro'</code></li>
-</ul>
-<p>Gravatar avatar display method.</p>
-<div><p>Optional Values</p>
-<ul>
-<li><code>''</code>(Empty String): Gravatar Official Pic</li>
-<li><code>mp</code>: Mystery</li>
-<li><code>identicon</code></li>
-<li><code>monsterid</code></li>
-<li><code>wavatar</code></li>
-<li><code>retro</code></li>
-<li><code>robohash</code></li>
-<li><code>hide</code></li>
-</ul>
-<p>See <a href="https://valine.js.org/avatar.html" target="_blank" rel="noopener noreferrer">Valine Avator Config</a> for details.</p>
-<p>You can tell users to set their <a href="http://cn.gravatar.com/" target="_blank" rel="noopener noreferrer">Gravatar</a>.</p>
-</div>
-</li>
-<li>
-<p><strong>emojiCDN</strong></p>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Required: No</li>
-</ul>
-<p>To set the emoji package CDN, please see <a href="https://valine.js.org/emoji.html" target="_blank" rel="noopener noreferrer">Valine Custom Emoticon Package</a></p>
-</li>
-<li>
-<p><strong>emojiMaps</strong></p>
-<ul>
-<li>Type: <code>sbject</code></li>
-<li>Default value: <code>null</code></li>
-</ul>
-<p>To set the emoticon package mapping, please see <a href="https://valine.js.org/emoji.html" target="_blank" rel="noopener noreferrer">Valine Custom Emoticon Package</a></p>
-</li>
-</ul>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-05-07T18:16:42.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
   <entry>
     <title type="html">Vssue Config</title>
     <id>https://vuepress-theme-hope.github.io/comment/config/vssue/</id>
@@ -525,267 +333,6 @@ And if you already have vue-i18n in your project, it will not affect Vssue.</p>
       <name>Mr.Hope</name>
     </contributor>
     <published>2020-05-07T18:16:42.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">Waline Config</title>
-    <id>https://vuepress-theme-hope.github.io/comment/config/waline/</id>
-    <link href="https://vuepress-theme-hope.github.io/comment/config/waline/"/>
-    <updated>2021-06-03T13:29:12.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="el"> el</h2>
-<ul>
-<li>Type: <code>string | HTMLElement</code></li>
-<li>Default: <code>'#waline'</code></li>
-</ul>
-<p>The DOM element to be mounted on initialization. It must be a valid <strong>CSS selector string</strong> or HTMLElement Object.</p>
-<div><p>Tips</p>
-<p>If you only want to use the pageview statistics feature, DO NOT set it.</p>
-</div>
-<h2 id="serverurl"> serverURL</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Required: Yes</li>
-</ul>
-<p>Waline server address url</p>
-<h2 id="path"> path</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>window.location.pathname</code></li>
-<li>Required: No</li>
-</ul>
-<p>Article path id. Used to distinguish different <em>article pages</em> to ensure loading the correct comment list under the <em>article page</em>.</p>
-<p>Optional value:</p>
-<ul>
-<li><code>window.location.pathname</code> (default, recommended)</li>
-<li><code>window.location.href</code></li>
-<li>customize</li>
-</ul>
-<blockquote>
-<p>I. Please ensure the uniqueness of each <em>article page</em> path, otherwise the same comment list may be loaded under different <em>article pages</em>.</p>
-<p>II. If the value is <code>window.location.href</code>, it may appear that adding <em>different parameters</em> to enter the page, and it will be judged as a new page.</p>
-</blockquote>
-<h2 id="lang"> lang</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>'zh-CN'</code></li>
-<li>Required: No</li>
-</ul>
-<p>Display language.</p>
-<p>Optional value:</p>
-<ul>
-<li><code>'zh'</code></li>
-<li><code>'zh-CN'</code></li>
-<li><code>'zh-TW'</code></li>
-<li><code>'en'</code></li>
-<li><code>'en-US'</code></li>
-<li><code>'jp'</code></li>
-<li><code>'jp-JP'</code></li>
-</ul>
-<p>If you need a custom language, please refer to <a href="./../guide/client/i18n.html">i18n</a>.</p>
-<h2 id="visitor"> visitor</h2>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>false</code></li>
-<li>Required: No</li>
-</ul>
-<p>Article reading statistics.</p>
-<h2 id="emoji"> emoji</h2>
-<ul>
-<li>Type: <code>(string | EmojiInfo)[]</code></li>
-<li>Default: <code>['https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo']</code></li>
-</ul>
-<p>Emoji settings, for details see <a href="./../guide/client/emoji.html">Custom Emoji</a></p>
-<h2 id="dark"> dark</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Required: No</li>
-</ul>
-<p>Darkmode support</p>
-<ul>
-<li>Set it to <code>'auto'</code> will display darkmode due to device settings.</li>
-<li>Filling in a CSS selector will enable darkmode only when the selector match waline ancestor nodes.</li>
-</ul>
-<div><p>Examples</p>
-<ul>
-<li>
-<p><strong>Docusaurus</strong>: It will enable darkmode by setting <code>data-theme=&quot;dark&quot;</code> on the <code>&lt;html&gt;</code> tag itself. So you need to set <code>'html[data-theme=&quot;dark&quot;]'</code> as <code>dark</code> option.</p>
-</li>
-<li>
-<p><strong>hexo-theme-fluid</strong>: It will enable darkmode by setting <code>data-user-color-scheme=&quot;dark&quot;</code> on the <code>&lt;html&gt;</code> tag itself. So you need to set <code>'html[data-user-color-scheme=&quot;dark&quot;]'</code> as <code>dark</code> option.</p>
-</li>
-<li>
-<p><strong>vuepress-theme-hope</strong>: It will enable darkmode by setting <code>theme-dark</code> class on the <code>&lt;body&gt;</code> tag itself. So you need to set <code>'body.theme-dark'</code> as <code>dark</code> option.</p>
-</li>
-</ul>
-</div>
-<p>For details of custom style and darkmode, please see <a href="./../guide/client/style.html">Custom Style</a>.</p>
-<h2 id="meta"> meta</h2>
-<ul>
-<li>Type: <code>string[]</code></li>
-<li>Default: <code>['nick','mail','link']</code></li>
-<li>Required: No</li>
-</ul>
-<p>Reviewer attributes. Optional values: <code>'nick'</code>, <code>'mail'</code>, <code>'link'</code></p>
-<h2 id="requiredmeta"> requiredMeta</h2>
-<ul>
-<li>Type: <code>string[]</code></li>
-<li>Default: <code>[]</code></li>
-<li>Required: No</li>
-</ul>
-<p>Set required fields, default anonymous, optional values:</p>
-<ul>
-<li><code>[]</code></li>
-<li><code>['nick']</code></li>
-<li><code>['nick','mail']</code></li>
-</ul>
-<h2 id="login"> login</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default value: <code>'enable'</code></li>
-<li>Required: No</li>
-</ul>
-<p>Login mode status, optional values:</p>
-<ul>
-<li><code>'enable'</code>: enable login (default)</li>
-<li><code>'disable'</code>: Login is disabled, users should fill in information to comment</li>
-<li><code>'force'</code>: Forced login, users must login to comment</li>
-</ul>
-<h2 id="avatar"> avatar</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>'mp'</code></li>
-<li>Required: No</li>
-</ul>
-<p><a href="http://gravatar.com/" target="_blank" rel="noopener noreferrer">Gravatar</a> type.</p>
-<p>Optional value:</p>
-<ul>
-<li><code>''</code> (Empty string)</li>
-<li><code>'mp'</code></li>
-<li><code>'identicon'</code></li>
-<li><code>'monsterid'</code></li>
-<li><code>'wavatar'</code></li>
-<li><code>'retro'</code></li>
-<li><code>'robohash'</code></li>
-<li><code>'hide'</code></li>
-</ul>
-<p>See the <a href="./../guide/client/avatar.html">Avatar setting</a> for more details.</p>
-<h2 id="wordlimit"> wordLimit</h2>
-<ul>
-<li>Type: <code>number | [number, number]</code></li>
-<li>Default: <code>0</code></li>
-<li>Required: <code>false</code></li>
-</ul>
-<p>Comment word s limit. When a single number is filled in, it 's the maximum number of comment words. No limit when set to <code>0</code>.</p>
-<h2 id="pagesize"> pageSize</h2>
-<ul>
-<li>Type: <code>number</code></li>
-<li>Default: <code>10</code></li>
-<li>Required: No</li>
-</ul>
-<p>number of comments per page.</p>
-<h2 id="avatarcdn"> avatarCDN</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>https://sdn.geekzu.org/avatar/</code></li>
-<li>Required: No</li>
-</ul>
-<p>Gravatar CDN baseURL.</p>
-<h2 id="avatarforce"> avatarForce</h2>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>false</code></li>
-<li>Required: No</li>
-</ul>
-<p>Whether <strong>force</strong> pulling the latest avatar each time.</p>
-<h2 id="uploadimage"> uploadImage</h2>
-<ul>
-<li>Type: <code>Function</code></li>
-<li>Required: No</li>
-</ul>
-<p>Custom image upload callback to manage picture by yourself. We will pass a picture file object when execute it.</p>
-<h2 id="highlight"> highlight</h2>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>true</code></li>
-<li>Required: No</li>
-</ul>
-<p><strong>Code highlighting</strong>, it’s enabled by default, please close it selectively.</p>
-<h3 id="copyright"> copyright</h3>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>true</code></li>
-<li>Required: No</li>
-</ul>
-<p>Whether show copyright and version in footer.</p>
-<div><p>Tips</p>
-<p>We hope you can keep it on to support Waline.</p>
-</div>
-<h2 id="deprecated-api"> Deprecated API</h2>
-<p>The following APIs are still valid, but they will be removed in V2.</p>
-<h3 id="langmode"> langMode</h3>
-<div><p>Obsolete</p>
-<p>Please use <code>locale</code> instead.</p>
-</div>
-<ul>
-<li>Type: <code>Locale</code></li>
-<li>Required: No</li>
-</ul>
-<p>Custom I18N.</p>
-<h3 id="placeholder"> placeholder</h3>
-<div><p>Obsolete</p>
-<p>Please use <code>locale.placeholder</code> instead.</p>
-</div>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>Just go go...</code></li>
-<li>Required: No</li>
-</ul>
-<p>Comment box placeholder</p>
-<h3 id="emojicdn"> emojiCDN</h3>
-<div><p>Obsolete</p>
-<p>Please use <code>emoji</code> instead.</p>
-</div>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>https://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/</code></li>
-<li>Required: No</li>
-</ul>
-<p>Set <strong>Emoji Pack CDN</strong>, refer to <a href="./../guide/client/emoji.html">Custom Emoji</a></p>
-<h3 id="emojimaps"> emojiMaps</h3>
-<div><p>Obsolete</p>
-<p>Please use <code>emoji</code> instead.</p>
-</div>
-<ul>
-<li>Type: <code>Object</code></li>
-<li>Default: <code>null</code></li>
-<li>Required: No</li>
-</ul>
-<p>Set `Emoji Packet Mapping’, refer to <a href="./../guide/client/emoji.html">Custom Emoji</a></p>
-<h3 id="requiredfields"> requiredFields</h3>
-<div><p>Obsolete</p>
-<p>Please use <code>requiredMeta</code> instead.</p>
-</div>
-<h3 id="anonymous"> anonymous</h3>
-<div><p>Obsolete</p>
-<p>Please use <code>login</code> instead.</p>
-</div>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Required: No</li>
-</ul>
-<p>Whether to allow login comments. Both supported by default, set to <code>true</code> means only support anonymous comments, <code>false</code> means only support login comments.</p>
-<h3 id="copyright-2"> copyRight</h3>
-<div><p>Deprecated</p>
-<p>Please use <code>copyright</code> instead.</p>
-</div>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2021-05-16T15:14:54.000Z</published>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
@@ -2942,6 +2489,459 @@ module<span>.</span>exports <span>=</span> <span>{</span>
       <name>Mr.Hope</name>
     </contributor>
     <published>2020-10-13T05:36:44.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">Valine Config</title>
+    <id>https://vuepress-theme-hope.github.io/comment/config/valine/</id>
+    <link href="https://vuepress-theme-hope.github.io/comment/config/valine/"/>
+    <updated>2021-05-16T15:14:54.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="appid"> appId</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Required: true</li>
+</ul>
+<p>Fill in the application appId in LeanCloud</p>
+<h2 id="appkey"> appKey</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Required: true</li>
+</ul>
+<p>Fill in the application appKey in LeanCloud</p>
+<h2 id="comment"> comment</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>true</code></li>
+</ul>
+<p>Comment Function</p>
+<h2 id="visitor"> visitor</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>true</code></li>
+</ul>
+<p>Pageviews Function</p>
+<h2 id="pagesize"> pageSize</h2>
+<ul>
+<li>Type: <code>Number</code></li>
+<li>Default: <code>10</code></li>
+</ul>
+<p>Number of comment per page</p>
+<h2 id="recordip"> recordIP</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>false</code></li>
+</ul>
+<p>Whether to record the commenter IP</p>
+<h2 id="more-config-about-valine"> More Config about valine</h2>
+<ul>
+<li>
+<p><strong>placeholder</strong></p>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>'请留言'</code></li>
+</ul>
+<p>Comment placeholder</p>
+</li>
+<li>
+<p><strong>meta</strong></p>
+<ul>
+<li>Type: <code>string[]</code></li>
+<li>Default: <code>['nick','mail']</code></li>
+</ul>
+<p>Commenter’s info</p>
+</li>
+<li>
+<p><strong>requiredFields</strong></p>
+<ul>
+<li>Type: <code>string []</code></li>
+<li>Default value: <code>['nick']</code></li>
+</ul>
+<p>Set required fields</p>
+</li>
+<li>
+<p><strong>enableQQ</strong></p>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default value: <code>true</code></li>
+</ul>
+<p>Whether automatically get QQ nickname and QQ avatar when detecting QQ number in nickname box</p>
+</li>
+<li>
+<p><strong>avatar</strong></p>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>'retro'</code></li>
+</ul>
+<p>Gravatar avatar display method.</p>
+<div><p>Optional Values</p>
+<ul>
+<li><code>''</code>(Empty String): Gravatar Official Pic</li>
+<li><code>mp</code>: Mystery</li>
+<li><code>identicon</code></li>
+<li><code>monsterid</code></li>
+<li><code>wavatar</code></li>
+<li><code>retro</code></li>
+<li><code>robohash</code></li>
+<li><code>hide</code></li>
+</ul>
+<p>See <a href="https://valine.js.org/avatar.html" target="_blank" rel="noopener noreferrer">Valine Avator Config</a> for details.</p>
+<p>You can tell users to set their <a href="http://cn.gravatar.com/" target="_blank" rel="noopener noreferrer">Gravatar</a>.</p>
+</div>
+</li>
+<li>
+<p><strong>emojiCDN</strong></p>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Required: No</li>
+</ul>
+<p>To set the emoji package CDN, please see <a href="https://valine.js.org/emoji.html" target="_blank" rel="noopener noreferrer">Valine Custom Emoticon Package</a></p>
+</li>
+<li>
+<p><strong>emojiMaps</strong></p>
+<ul>
+<li>Type: <code>sbject</code></li>
+<li>Default value: <code>null</code></li>
+</ul>
+<p>To set the emoticon package mapping, please see <a href="https://valine.js.org/emoji.html" target="_blank" rel="noopener noreferrer">Valine Custom Emoticon Package</a></p>
+</li>
+</ul>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-05-07T18:16:42.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">API Config</title>
+    <id>https://vuepress-theme-hope.github.io/comment/config/</id>
+    <link href="https://vuepress-theme-hope.github.io/comment/config/"/>
+    <updated>2021-05-16T15:14:54.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="type"> type</h2>
+<ul>
+<li>Type: <code>'valine' | 'vssue' | 'disable'</code></li>
+<li>Required: true</li>
+</ul>
+<p>Comment service provider.</p>
+<p>Setting it to <code>'disable'</code> will disable the comment feature while still enabling PageInfo feature.</p>
+<h2 id="author"> author</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Required: false</li>
+</ul>
+<p>Default author for pages</p>
+<h2 id="pageinfo"> pageInfo</h2>
+<ul>
+<li>Type: <code>string[] | false</code></li>
+<li>Default: <code>['author', 'visitor', 'time', 'category', 'tag', 'reading-time']</code></li>
+</ul>
+<p>The order of the items decides the display order. Fill in <code>false</code> to disable it.</p>
+<p>Available items:</p>
+<ul>
+<li><code>'author'</code>: author</li>
+<li><code>'time'</code>: writing date</li>
+<li><code>'category'</code>: category</li>
+<li><code>'tag'</code>: tags</li>
+<li><code>'reading-time'</code>: expect reading time</li>
+<li><code>'word'</code>: word number for the article</li>
+<li><code>'visitor'</code>: pageviews</li>
+</ul>
+<h2 id="comment"> comment</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>true</code></li>
+</ul>
+<p>Whether to enable comment feature by default.</p>
+<h2 id="wordperminute"> wordPerminute</h2>
+<ul>
+<li>Type: <code>number</code></li>
+<li>Default: <code>300</code></li>
+</ul>
+<p>Reading words per minute.</p>
+<h2 id="waline-config"> Waline config</h2>
+<ul>
+<li><a href="./waline.html">See here</a></li>
+</ul>
+<h2 id="vssue-config"> Vssue config</h2>
+<ul>
+<li><a href="./vssue.html">See here</a></li>
+</ul>
+<h2 id="valine-config"> Valine config</h2>
+<ul>
+<li><a href="./valine.html">See here</a></li>
+</ul>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-05-07T18:16:42.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">Waline Config</title>
+    <id>https://vuepress-theme-hope.github.io/comment/config/waline/</id>
+    <link href="https://vuepress-theme-hope.github.io/comment/config/waline/"/>
+    <updated>2021-06-03T13:29:12.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="el"> el</h2>
+<ul>
+<li>Type: <code>string | HTMLElement</code></li>
+<li>Default: <code>'#waline'</code></li>
+</ul>
+<p>The DOM element to be mounted on initialization. It must be a valid <strong>CSS selector string</strong> or HTMLElement Object.</p>
+<div><p>Tips</p>
+<p>If you only want to use the pageview statistics feature, DO NOT set it.</p>
+</div>
+<h2 id="serverurl"> serverURL</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Required: Yes</li>
+</ul>
+<p>Waline server address url</p>
+<h2 id="path"> path</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>window.location.pathname</code></li>
+<li>Required: No</li>
+</ul>
+<p>Article path id. Used to distinguish different <em>article pages</em> to ensure loading the correct comment list under the <em>article page</em>.</p>
+<p>Optional value:</p>
+<ul>
+<li><code>window.location.pathname</code> (default, recommended)</li>
+<li><code>window.location.href</code></li>
+<li>customize</li>
+</ul>
+<blockquote>
+<p>I. Please ensure the uniqueness of each <em>article page</em> path, otherwise the same comment list may be loaded under different <em>article pages</em>.</p>
+<p>II. If the value is <code>window.location.href</code>, it may appear that adding <em>different parameters</em> to enter the page, and it will be judged as a new page.</p>
+</blockquote>
+<h2 id="lang"> lang</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>'zh-CN'</code></li>
+<li>Required: No</li>
+</ul>
+<p>Display language.</p>
+<p>Optional value:</p>
+<ul>
+<li><code>'zh'</code></li>
+<li><code>'zh-CN'</code></li>
+<li><code>'zh-TW'</code></li>
+<li><code>'en'</code></li>
+<li><code>'en-US'</code></li>
+<li><code>'jp'</code></li>
+<li><code>'jp-JP'</code></li>
+</ul>
+<p>If you need a custom language, please refer to <a href="./../guide/client/i18n.html">i18n</a>.</p>
+<h2 id="visitor"> visitor</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>false</code></li>
+<li>Required: No</li>
+</ul>
+<p>Article reading statistics.</p>
+<h2 id="emoji"> emoji</h2>
+<ul>
+<li>Type: <code>(string | EmojiInfo)[]</code></li>
+<li>Default: <code>['https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo']</code></li>
+</ul>
+<p>Emoji settings, for details see <a href="./../guide/client/emoji.html">Custom Emoji</a></p>
+<h2 id="dark"> dark</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Required: No</li>
+</ul>
+<p>Darkmode support</p>
+<ul>
+<li>Set it to <code>'auto'</code> will display darkmode due to device settings.</li>
+<li>Filling in a CSS selector will enable darkmode only when the selector match waline ancestor nodes.</li>
+</ul>
+<div><p>Examples</p>
+<ul>
+<li>
+<p><strong>Docusaurus</strong>: It will enable darkmode by setting <code>data-theme=&quot;dark&quot;</code> on the <code>&lt;html&gt;</code> tag itself. So you need to set <code>'html[data-theme=&quot;dark&quot;]'</code> as <code>dark</code> option.</p>
+</li>
+<li>
+<p><strong>hexo-theme-fluid</strong>: It will enable darkmode by setting <code>data-user-color-scheme=&quot;dark&quot;</code> on the <code>&lt;html&gt;</code> tag itself. So you need to set <code>'html[data-user-color-scheme=&quot;dark&quot;]'</code> as <code>dark</code> option.</p>
+</li>
+<li>
+<p><strong>vuepress-theme-hope</strong>: It will enable darkmode by setting <code>theme-dark</code> class on the <code>&lt;body&gt;</code> tag itself. So you need to set <code>'body.theme-dark'</code> as <code>dark</code> option.</p>
+</li>
+</ul>
+</div>
+<p>For details of custom style and darkmode, please see <a href="./../guide/client/style.html">Custom Style</a>.</p>
+<h2 id="meta"> meta</h2>
+<ul>
+<li>Type: <code>string[]</code></li>
+<li>Default: <code>['nick','mail','link']</code></li>
+<li>Required: No</li>
+</ul>
+<p>Reviewer attributes. Optional values: <code>'nick'</code>, <code>'mail'</code>, <code>'link'</code></p>
+<h2 id="requiredmeta"> requiredMeta</h2>
+<ul>
+<li>Type: <code>string[]</code></li>
+<li>Default: <code>[]</code></li>
+<li>Required: No</li>
+</ul>
+<p>Set required fields, default anonymous, optional values:</p>
+<ul>
+<li><code>[]</code></li>
+<li><code>['nick']</code></li>
+<li><code>['nick','mail']</code></li>
+</ul>
+<h2 id="login"> login</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default value: <code>'enable'</code></li>
+<li>Required: No</li>
+</ul>
+<p>Login mode status, optional values:</p>
+<ul>
+<li><code>'enable'</code>: enable login (default)</li>
+<li><code>'disable'</code>: Login is disabled, users should fill in information to comment</li>
+<li><code>'force'</code>: Forced login, users must login to comment</li>
+</ul>
+<h2 id="avatar"> avatar</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>'mp'</code></li>
+<li>Required: No</li>
+</ul>
+<p><a href="http://gravatar.com/" target="_blank" rel="noopener noreferrer">Gravatar</a> type.</p>
+<p>Optional value:</p>
+<ul>
+<li><code>''</code> (Empty string)</li>
+<li><code>'mp'</code></li>
+<li><code>'identicon'</code></li>
+<li><code>'monsterid'</code></li>
+<li><code>'wavatar'</code></li>
+<li><code>'retro'</code></li>
+<li><code>'robohash'</code></li>
+<li><code>'hide'</code></li>
+</ul>
+<p>See the <a href="./../guide/client/avatar.html">Avatar setting</a> for more details.</p>
+<h2 id="wordlimit"> wordLimit</h2>
+<ul>
+<li>Type: <code>number | [number, number]</code></li>
+<li>Default: <code>0</code></li>
+<li>Required: <code>false</code></li>
+</ul>
+<p>Comment word s limit. When a single number is filled in, it 's the maximum number of comment words. No limit when set to <code>0</code>.</p>
+<h2 id="pagesize"> pageSize</h2>
+<ul>
+<li>Type: <code>number</code></li>
+<li>Default: <code>10</code></li>
+<li>Required: No</li>
+</ul>
+<p>number of comments per page.</p>
+<h2 id="avatarcdn"> avatarCDN</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>https://sdn.geekzu.org/avatar/</code></li>
+<li>Required: No</li>
+</ul>
+<p>Gravatar CDN baseURL.</p>
+<h2 id="avatarforce"> avatarForce</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>false</code></li>
+<li>Required: No</li>
+</ul>
+<p>Whether <strong>force</strong> pulling the latest avatar each time.</p>
+<h2 id="uploadimage"> uploadImage</h2>
+<ul>
+<li>Type: <code>Function</code></li>
+<li>Required: No</li>
+</ul>
+<p>Custom image upload callback to manage picture by yourself. We will pass a picture file object when execute it.</p>
+<h2 id="highlight"> highlight</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>true</code></li>
+<li>Required: No</li>
+</ul>
+<p><strong>Code highlighting</strong>, it’s enabled by default, please close it selectively.</p>
+<h3 id="copyright"> copyright</h3>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>true</code></li>
+<li>Required: No</li>
+</ul>
+<p>Whether show copyright and version in footer.</p>
+<div><p>Tips</p>
+<p>We hope you can keep it on to support Waline.</p>
+</div>
+<h2 id="deprecated-api"> Deprecated API</h2>
+<p>The following APIs are still valid, but they will be removed in V2.</p>
+<h3 id="langmode"> langMode</h3>
+<div><p>Obsolete</p>
+<p>Please use <code>locale</code> instead.</p>
+</div>
+<ul>
+<li>Type: <code>Locale</code></li>
+<li>Required: No</li>
+</ul>
+<p>Custom I18N.</p>
+<h3 id="placeholder"> placeholder</h3>
+<div><p>Obsolete</p>
+<p>Please use <code>locale.placeholder</code> instead.</p>
+</div>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>Just go go...</code></li>
+<li>Required: No</li>
+</ul>
+<p>Comment box placeholder</p>
+<h3 id="emojicdn"> emojiCDN</h3>
+<div><p>Obsolete</p>
+<p>Please use <code>emoji</code> instead.</p>
+</div>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>https://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/</code></li>
+<li>Required: No</li>
+</ul>
+<p>Set <strong>Emoji Pack CDN</strong>, refer to <a href="./../guide/client/emoji.html">Custom Emoji</a></p>
+<h3 id="emojimaps"> emojiMaps</h3>
+<div><p>Obsolete</p>
+<p>Please use <code>emoji</code> instead.</p>
+</div>
+<ul>
+<li>Type: <code>Object</code></li>
+<li>Default: <code>null</code></li>
+<li>Required: No</li>
+</ul>
+<p>Set `Emoji Packet Mapping’, refer to <a href="./../guide/client/emoji.html">Custom Emoji</a></p>
+<h3 id="requiredfields"> requiredFields</h3>
+<div><p>Obsolete</p>
+<p>Please use <code>requiredMeta</code> instead.</p>
+</div>
+<h3 id="anonymous"> anonymous</h3>
+<div><p>Obsolete</p>
+<p>Please use <code>login</code> instead.</p>
+</div>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Required: No</li>
+</ul>
+<p>Whether to allow login comments. Both supported by default, set to <code>true</code> means only support anonymous comments, <code>false</code> means only support login comments.</p>
+<h3 id="copyright-2"> copyRight</h3>
+<div><p>Deprecated</p>
+<p>Please use <code>copyright</code> instead.</p>
+</div>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2021-05-16T15:14:54.000Z</published>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
 </feed>
