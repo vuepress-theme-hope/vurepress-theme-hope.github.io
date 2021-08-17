@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-08-17T14:17:11.362Z</updated>
+  <updated>2021-08-17T14:20:56.935Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/photo-swipe/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/photo-swipe/"/>
@@ -14,36 +14,6 @@
   <contributor>
     <name>Mr.Hope</name>
   </contributor>
-  <entry>
-    <title type="html">Config</title>
-    <id>https://vuepress-theme-hope.github.io/photo-swipe/config/</id>
-    <link href="https://vuepress-theme-hope.github.io/photo-swipe/config/"/>
-    <updated>2020-12-10T04:17:10.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="plugin-options"> Plugin Options</h2>
-<h3 id="container"> container</h3>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>'.theme-default-content'</code></li>
-</ul>
-<p>The range for selection. Only the image inside the container element will support click zoom.</p>
-<h3 id="selector"> selector</h3>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>'.theme-default-content :not(a) &gt; img'</code></li>
-</ul>
-<p>Image selector</p>
-<h3 id="options"> options</h3>
-<p>Options passed to <a href="http://photoswipe.com/" target="_blank" rel="noopener noreferrer"><strong>photo-swipe</strong></a></p>
-]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-10-11T08:23:28.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
   <entry>
     <title type="html">Guide</title>
     <id>https://vuepress-theme-hope.github.io/photo-swipe/guide/</id>
@@ -218,6 +188,36 @@ module<span>.</span>exports <span>=</span> <span>{</span>
       <name>Mr.Hope</name>
     </contributor>
     <published>2020-10-13T05:36:44.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">Config</title>
+    <id>https://vuepress-theme-hope.github.io/photo-swipe/config/</id>
+    <link href="https://vuepress-theme-hope.github.io/photo-swipe/config/"/>
+    <updated>2020-12-10T04:17:10.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="plugin-options"> Plugin Options</h2>
+<h3 id="container"> container</h3>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>'.theme-default-content'</code></li>
+</ul>
+<p>The range for selection. Only the image inside the container element will support click zoom.</p>
+<h3 id="selector"> selector</h3>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>'.theme-default-content :not(a) &gt; img'</code></li>
+</ul>
+<p>Image selector</p>
+<h3 id="options"> options</h3>
+<p>Options passed to <a href="http://photoswipe.com/" target="_blank" rel="noopener noreferrer"><strong>photo-swipe</strong></a></p>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-10-11T08:23:28.000Z</published>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
 </feed>
