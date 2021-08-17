@@ -6,11 +6,94 @@
     <link>https://vuepress-theme-hope.github.io/photo-swipe/</link>
     <description>Photo swipe Plugin for VuePress</description>
     <language>en-US</language>
-    <pubDate>Tue, 17 Aug 2021 14:35:06 GMT</pubDate>
-    <lastBuildDate>Tue, 17 Aug 2021 14:35:06 GMT</lastBuildDate>
+    <pubDate>Tue, 17 Aug 2021 14:37:09 GMT</pubDate>
+    <lastBuildDate>Tue, 17 Aug 2021 14:37:09 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
+    <item>
+      <title>Config</title>
+      <link>https://vuepress-theme-hope.github.io/photo-swipe/config/</link>
+      <guid>https://vuepress-theme-hope.github.io/photo-swipe/config/</guid>
+      <source url="https://vuepress-theme-hope.github.io/photo-swipe/rss.xml">Config</source>
+      <pubDate>Sun, 11 Oct 2020 08:23:28 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="plugin-options"> Plugin Options</h2>
+<h3 id="container"> container</h3>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>'.theme-default-content'</code></li>
+</ul>
+<p>The range for selection. Only the image inside the container element will support click zoom.</p>
+<h3 id="selector"> selector</h3>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>'.theme-default-content :not(a) &gt; img'</code></li>
+</ul>
+<p>Image selector</p>
+<h3 id="options"> options</h3>
+<p>Options passed to <a href="http://photoswipe.com/" target="_blank" rel="noopener noreferrer"><strong>photo-swipe</strong></a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Guide</title>
+      <link>https://vuepress-theme-hope.github.io/photo-swipe/guide/</link>
+      <guid>https://vuepress-theme-hope.github.io/photo-swipe/guide/</guid>
+      <source url="https://vuepress-theme-hope.github.io/photo-swipe/rss.xml">Guide</source>
+      <description>&amp;lt;p&amp;gt;This plugin will make the pictures in the body of the page enter the preview mode when clicked.&amp;lt;/p&amp;gt;
+</description>
+      <pubDate>Fri, 26 Feb 2021 15:56:22 GMT</pubDate>
+      <content:encoded><![CDATA[<p>This plugin will make the pictures in the body of the page enter the preview mode when clicked.</p>
+
+<h2 id="browse-mode"> Browse Mode</h2>
+<p>In preview mode, you can:</p>
+<ul>
+<li>Swipe left and right to preview other pictures on the page in order</li>
+<li>View the description of the picture</li>
+<li>Zoom in and zoom out the picture</li>
+<li>View pictures in full screen</li>
+<li>Download pictures</li>
+<li>Share pictures</li>
+</ul>
+<div><p>Tips</p>
+<ul>
+<li>Besides clicking &quot;×&quot; in the upper right corner to exit the preview mode, scrolling up and down more than a certain distance will also exit preview mode</li>
+<li>On cellphones, or using the PC trackpad, you can use pan and zoom gestures to pan and zoom in the preview mode</li>
+</ul>
+</div>
+<h2 id="demo"> Demo</h2>
+<p><img src="/logo.png" alt="Logo1" />
+<img src="/logo.png" alt="Logo2" />
+<img src="/logo.png" alt="Logo3" /></p>
+]]></content:encoded>
+      <enclosure url="https://vuepress-theme-hope.github.io/photo-swipe/logo.png" type="image/png"/>
+    </item>
+    <item>
+      <title>Home</title>
+      <link>https://vuepress-theme-hope.github.io/photo-swipe/</link>
+      <guid>https://vuepress-theme-hope.github.io/photo-swipe/</guid>
+      <source url="https://vuepress-theme-hope.github.io/photo-swipe/rss.xml">Home</source>
+      <pubDate>Sun, 11 Oct 2020 08:23:28 GMT</pubDate>
+      <content:encoded><![CDATA[<p>Let your images support preview, zoom, share, swipe view and download.</p>
+<h2 id="how-to-use"> How to use</h2>
+<h3 id="install"> Install</h3>
+<CodeGroup>
+<CodeGroupItem title="yarn">
+<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-photo-swipe
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="npm">
+<div><pre><code><span>npm</span> i -D vuepress-plugin-photo-swipe
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+<h3 id="usage"> Usage</h3>
+<div><pre><code><span>// .vuepress/config.js</span>
+module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span><span>"photo-swipe"</span><span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div>]]></content:encoded>
+    </item>
     <item>
       <title>配置</title>
       <link>https://vuepress-theme-hope.github.io/photo-swipe/zh/config/</link>
@@ -93,89 +176,6 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <span>}</span><span>;</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>Home</title>
-      <link>https://vuepress-theme-hope.github.io/photo-swipe/</link>
-      <guid>https://vuepress-theme-hope.github.io/photo-swipe/</guid>
-      <source url="https://vuepress-theme-hope.github.io/photo-swipe/rss.xml">Home</source>
-      <pubDate>Sun, 11 Oct 2020 08:23:28 GMT</pubDate>
-      <content:encoded><![CDATA[<p>Let your images support preview, zoom, share, swipe view and download.</p>
-<h2 id="how-to-use"> How to use</h2>
-<h3 id="install"> Install</h3>
-<CodeGroup>
-<CodeGroupItem title="yarn">
-<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-photo-swipe
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-<CodeGroupItem title="npm">
-<div><pre><code><span>npm</span> i -D vuepress-plugin-photo-swipe
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-</CodeGroup>
-<h3 id="usage"> Usage</h3>
-<div><pre><code><span>// .vuepress/config.js</span>
-module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span><span>"photo-swipe"</span><span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>Guide</title>
-      <link>https://vuepress-theme-hope.github.io/photo-swipe/guide/</link>
-      <guid>https://vuepress-theme-hope.github.io/photo-swipe/guide/</guid>
-      <source url="https://vuepress-theme-hope.github.io/photo-swipe/rss.xml">Guide</source>
-      <description>&amp;lt;p&amp;gt;This plugin will make the pictures in the body of the page enter the preview mode when clicked.&amp;lt;/p&amp;gt;
-</description>
-      <pubDate>Fri, 26 Feb 2021 15:56:22 GMT</pubDate>
-      <content:encoded><![CDATA[<p>This plugin will make the pictures in the body of the page enter the preview mode when clicked.</p>
-
-<h2 id="browse-mode"> Browse Mode</h2>
-<p>In preview mode, you can:</p>
-<ul>
-<li>Swipe left and right to preview other pictures on the page in order</li>
-<li>View the description of the picture</li>
-<li>Zoom in and zoom out the picture</li>
-<li>View pictures in full screen</li>
-<li>Download pictures</li>
-<li>Share pictures</li>
-</ul>
-<div><p>Tips</p>
-<ul>
-<li>Besides clicking &quot;×&quot; in the upper right corner to exit the preview mode, scrolling up and down more than a certain distance will also exit preview mode</li>
-<li>On cellphones, or using the PC trackpad, you can use pan and zoom gestures to pan and zoom in the preview mode</li>
-</ul>
-</div>
-<h2 id="demo"> Demo</h2>
-<p><img src="/logo.png" alt="Logo1" />
-<img src="/logo.png" alt="Logo2" />
-<img src="/logo.png" alt="Logo3" /></p>
-]]></content:encoded>
-      <enclosure url="https://vuepress-theme-hope.github.io/photo-swipe/logo.png" type="image/png"/>
-    </item>
-    <item>
-      <title>Config</title>
-      <link>https://vuepress-theme-hope.github.io/photo-swipe/config/</link>
-      <guid>https://vuepress-theme-hope.github.io/photo-swipe/config/</guid>
-      <source url="https://vuepress-theme-hope.github.io/photo-swipe/rss.xml">Config</source>
-      <pubDate>Sun, 11 Oct 2020 08:23:28 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="plugin-options"> Plugin Options</h2>
-<h3 id="container"> container</h3>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>'.theme-default-content'</code></li>
-</ul>
-<p>The range for selection. Only the image inside the container element will support click zoom.</p>
-<h3 id="selector"> selector</h3>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>'.theme-default-content :not(a) &gt; img'</code></li>
-</ul>
-<p>Image selector</p>
-<h3 id="options"> options</h3>
-<p>Options passed to <a href="http://photoswipe.com/" target="_blank" rel="noopener noreferrer"><strong>photo-swipe</strong></a></p>
-]]></content:encoded>
     </item>
   </channel>
 </rss>
