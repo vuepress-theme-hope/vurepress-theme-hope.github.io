@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-08-24T06:03:30.115Z</updated>
+  <updated>2021-08-24T08:51:52.928Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/md-enhance/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/md-enhance/"/>
@@ -19,7 +19,7 @@
     <title type="html">Config</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/config/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/config/"/>
-    <updated>2021-05-08T04:53:42.000Z</updated>
+    <updated>2021-08-24T08:49:32.000Z</updated>
     <content type="html"><![CDATA[<p>You can pass these options to the plugin:</p>
 <h2 id="enable-all"> Enable all</h2>
 <ul>
@@ -141,30 +141,29 @@
 <li>Type: <code>boolean</code></li>
 <li>Default value: <code>true</code></li>
 </ul>
-<p>Whether to display the JSFiddle button,</p>
+<p>Whether to display the JSFiddle button</p>
 <h3 id="demo-codepen"> demo.codepen</h3>
 <ul>
 <li>Type: <code>boolean</code></li>
 <li>Default value: <code>true</code></li>
 </ul>
-<p>Whether to display the CodePen button,</p>
+<p>Whether to display the CodePen button</p>
 <h3 id="demo-codepenlayout"> demo.codepenLayout</h3>
 <ul>
 <li>Type: <code>&quot;top&quot; | &quot;left&quot; | &quot;correct&quot;</code></li>
 <li>Default value: <code>&quot;left&quot;</code></li>
 </ul>
 <p>CodePen editor layout</p>
-<h3 id="demo-editors"> demo.editors</h3>
+<h3 id="demo-codepeneditors"> demo.codepenEditors</h3>
 <ul>
 <li>Type: <code>string</code></li>
 <li>Default value: <code>&quot;101&quot;</code></li>
 </ul>
+<p>CodePen editor status</p>
 <h3 id="others"> others</h3>
-<p>The following are the library links used by the third-party code demo service. Unless your environment cannot visit jsdelivr or the speed is slow, don’t override the default values.</p>
-<div><p>Note</p>
-<p>Please note that if you use them, you still need to manually include them in your site using <code>head</code>.</p>
-<p>React depends on Babel.</p>
-</div>
+<p>The following are the library links used by the third-party code demo service. Unless your environment cannot visit jsdelivr or the speed is slow, you probably don't need to override the default values.</p>
+<h4 id="demo-babel"> demo.babel</h4>
+<p>Default value: <code>&quot;https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js&quot;</code></p>
 <h4 id="demo-vue"> demo.vue</h4>
 <p>Default value: <code>&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js&quot;</code></p>
 <h4 id="demo-react"> demo.react</h4>
@@ -2042,7 +2041,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">配置</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/zh/config/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/config/"/>
-    <updated>2021-05-08T04:53:42.000Z</updated>
+    <updated>2021-08-24T08:49:32.000Z</updated>
     <content type="html"><![CDATA[<p>你可以传递以下选项来启用或禁用一些功能</p>
 <h2 id="enableall"> enableAll</h2>
 <ul>
@@ -2164,19 +2163,25 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <li>类型: <code>boolean</code></li>
 <li>默认值: <code>true</code></li>
 </ul>
-<p>是否显示 JSFiddle 按钮，</p>
+<p>是否显示 JSFiddle 按钮</p>
 <h3 id="demo-codepen"> demo.codepen</h3>
 <ul>
 <li>类型: <code>boolean</code></li>
 <li>默认值: <code>true</code></li>
 </ul>
-<p>是否显示 CodePen 按钮，</p>
+<p>是否显示 CodePen 按钮</p>
 <h3 id="demo-codepenlayout"> demo.codepenLayout</h3>
 <ul>
 <li>类型: <code>&quot;top&quot; | &quot;left&quot; | &quot;right&quot;</code></li>
 <li>默认值: <code>&quot;left&quot;</code></li>
 </ul>
 <p>CodePen 编辑器布局</p>
+<h3 id="demo-codepeneditors"> demo.codepenEditors</h3>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default value: <code>&quot;101&quot;</code></li>
+</ul>
+<p>CodePen 编辑器状态</p>
 <h3 id="demo-editors"> demo.editors</h3>
 <ul>
 <li>类型: <code>string</code></li>
@@ -2185,10 +2190,8 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <p>CodePen 编辑器显示情况，第一位代表 HTML ，第二位代表 JS，第三位代表演示页面。</p>
 <h3 id="其他"> 其他</h3>
 <p>以下是第三方代码演示使用的库地址，除非你的环境无法访问 jsdelivr 或访问缓慢，否则无需覆盖默认设置。</p>
-<div><p>Note</p>
-<p>请注意，如果你用到了它们，你仍需要利用 <code>head</code> 手动在你的网站中导入它们。</p>
-<p>React 依赖于 Babel。</p>
-</div>
+<h4 id="demo-babel"> demo.babel</h4>
+<p>默认值: <code>&quot;https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js&quot;</code></p>
 <h4 id="demo-vue"> demo.vue</h4>
 <p>默认值: <code>&quot;https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js&quot;</code></p>
 <h4 id="demo-react"> demo.react</h4>
