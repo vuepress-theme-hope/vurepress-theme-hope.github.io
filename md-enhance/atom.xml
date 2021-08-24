@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-08-24T12:10:49.724Z</updated>
+  <updated>2021-08-24T12:23:41.553Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/md-enhance/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/md-enhance/"/>
@@ -356,7 +356,7 @@ A custom details container
     <title type="html">Code Demo</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/guide/demo/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/guide/demo/"/>
-    <updated>2021-05-16T14:54:11.000Z</updated>
+    <updated>2021-08-24T09:57:48.000Z</updated>
     <summary type="html"><![CDATA[<p>Let you insert code demos in your Markdown file.</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>Let you insert code demos in your Markdown file.</p>
@@ -380,7 +380,7 @@ A custom details container
 <span><span>```</span><span>html</span>
 <span><span>&lt;!-- ↑ use available ones --></span>
 <span>&lt;!-- your code here --></span>
-<span>&lt;!-- you can have mutiple code block --></span></span>
+<span>&lt;!-- you can have mutiple code block, but each language must appear only once. --></span></span>
 <span>```</span></span>
 
 <span><span>```</span><span>json</span>
@@ -393,7 +393,7 @@ A custom details container
 :::
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br></div></div><div><p>Tips</p>
-<p>The json block is optional.</p>
+<p>The json block is optional, for config please see <a href="./../config.html#demo">config</a>.</p>
 </div>
 <p>The plugin support three types:</p>
 <ul>
@@ -476,36 +476,9 @@ export default {
 
 :::
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br></div></div><div><p>Note</p>
-<p>This plugin is not bundling any librarys, so you must import them by setting <code>head</code> in your <code>.vuepress/config.js</code> files.</p>
-<div><pre><code><span>// .vuepress/config.js</span>
-module<span>.</span>exports <span>=</span> <span>{</span>
-  head<span>:</span> <span>[</span>
-    <span>// react needs React, ReactDOM and Babel</span>
-    <span>[</span>
-      <span>"script"</span><span>,</span>
-      <span>{</span> src<span>:</span> <span>"https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"</span> <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-    <span>[</span>
-      <span>"script"</span><span>,</span>
-      <span>{</span>
-        src<span>:</span> <span>"https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"</span><span>,</span>
-      <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-    <span>[</span>
-      <span>"script"</span><span>,</span>
-      <span>{</span> src<span>:</span> <span>"https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"</span> <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-    <span>// vue only needs vue</span>
-    <span>[</span><span>"script"</span><span>,</span> <span>{</span> src<span>:</span> <span>"https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"</span> <span>}</span><span>]</span><span>,</span>
-  <span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br></div></div><p>We also make an enhance: If you import Babel, then Vue and Normal script will be parsed to es6 using babel.</p>
-</div>
-<h3 id="available-languages"> Available languages</h3>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br></div></div><h3 id="available-languages"> Available languages</h3>
 <p>You can use different language in your demo block.</p>
-<p>When you set another language, since the plugin is not able to resolve them, demo display will be disabled. The plugin will show the code and provide you a button to open it in CodePen.</p>
+<p>When you set language which can not run on browers, since the plugin is not able to resolve them, so demo display will be disabled. The plugin will only show the code and provide you a button to open it in CodePen.</p>
 <p>Available HTML languages:</p>
 <ul>
 <li><code>&quot;html&quot;</code> (default)</li>
@@ -2385,7 +2358,7 @@ vuepress-theme-hope v2 仍在制作中，API 可能会有
     <title type="html">代码演示</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/demo/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/guide/demo/"/>
-    <updated>2021-05-16T14:54:11.000Z</updated>
+    <updated>2021-08-24T09:57:48.000Z</updated>
     <summary type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持代码案例。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持代码案例。</p>
@@ -2408,12 +2381,12 @@ vuepress-theme-hope v2 仍在制作中，API 可能会有
 
 <span><span>```</span><span>html</span>
 <span><span>&lt;!-- ↑ 使用可用的语言 --></span>
-<span>&lt;!-- 放置你的代码 --></span>
-<span>&lt;!-- 你可以有多个代码块 --></span></span>
+<span>&lt;!-- 在代码块中放置你对应语言的代码，一个语言不能出现多个块 --></span>
+<span>&lt;!-- 你可以有多个代码块，并且 html, js, css 都是视情况可选的 --></span></span>
 <span>```</span></span>
 
 <span><span>```</span><span>json</span>
-<span>// json block 作为插件配置
+<span>// json block 作为插件配置存放处
 {
   // 放置你的配置 (optional)
 }</span>
@@ -2422,7 +2395,7 @@ vuepress-theme-hope v2 仍在制作中，API 可能会有
 :::
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br></div></div><div><p>Tips</p>
-<p>JSON 块是可选的。</p>
+<p>JSON 块是可选的，可用的配置详见 <a href="./../config.html#demo">配置</a>。</p>
 </div>
 <p>该插件支持三种类型：</p>
 <ul>
@@ -2505,36 +2478,9 @@ export default {
 
 :::
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br></div></div><div><p>Note</p>
-<p>该插件未捆绑任何库，因此你必须通过在 <code>.vuepress/config.js</code> 文件中设置 <code>head</code> 来导入它们。</p>
-<div><pre><code><span>// .vuepress/config.js</span>
-module<span>.</span>exports <span>=</span> <span>{</span>
-  head<span>:</span> <span>[</span>
-    <span>// react 需要 React, ReactDOM 和 Babel 库</span>
-    <span>[</span>
-      <span>"script"</span><span>,</span>
-      <span>{</span> src<span>:</span> <span>"https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"</span> <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-    <span>[</span>
-      <span>"script"</span><span>,</span>
-      <span>{</span>
-        src<span>:</span> <span>"https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"</span><span>,</span>
-      <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-    <span>[</span>
-      <span>"script"</span><span>,</span>
-      <span>{</span> src<span>:</span> <span>"https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"</span> <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-    <span>// vue 只需要 vue 库</span>
-    <span>[</span><span>"script"</span><span>,</span> <span>{</span> src<span>:</span> <span>"https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"</span> <span>}</span><span>]</span><span>,</span>
-  <span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br></div></div><p>我们还进行了增强: 如果你导入 Babel，则将使用 babel 将脚本解析为 es6，以确保能在浏览器上正常运行。</p>
-</div>
-<h3 id="可用的语言"> 可用的语言</h3>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br></div></div><h3 id="可用的语言"> 可用的语言</h3>
 <p>你可以在演示块中使用不同语言。</p>
-<p>当你设置其他语言时，由于插件无法解析它们，因此演示将被禁用只显示代码。插件将提供一个 &quot;在 CodePen 中打开&quot; 按钮允许用户直接在 CodePen 打开代码。</p>
+<p>当你设置一些不能在浏览器上直接运行的语言时，由于插件无法解析它们，因此网页演示将被禁用。插件只显示代码。同时提供一个 &quot;在 CodePen 中打开&quot; 按钮允许用户直接在 CodePen 打开并浏览代码。</p>
 <p>可用的 HTML 语言:</p>
 <ul>
 <li><code>&quot;html&quot;</code> (默认)</li>
