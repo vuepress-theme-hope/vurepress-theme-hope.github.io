@@ -6,15 +6,15 @@
     <link>https://vuepress-theme-hope.github.io/</link>
     <description>A vuepress theme with tons of features✨</description>
     <language>en-US</language>
-    <pubDate>Tue, 24 Aug 2021 08:51:53 GMT</pubDate>
-    <lastBuildDate>Tue, 24 Aug 2021 08:51:53 GMT</lastBuildDate>
+    <pubDate>Tue, 24 Aug 2021 10:02:55 GMT</pubDate>
+    <lastBuildDate>Tue, 24 Aug 2021 10:02:55 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
+    <category>FAQ</category>
     <category>basic</category>
     <category>Get Started</category>
     <category>config</category>
-    <category>FAQ</category>
     <category>demo</category>
     <category>blog</category>
     <category>feature</category>
@@ -22,6 +22,418 @@
     <category>layout</category>
     <category>markdown</category>
     <category>guide</category>
+    <item>
+      <title>Common problems</title>
+      <link>https://vuepress-theme-hope.github.io/FAQ/</link>
+      <guid>https://vuepress-theme-hope.github.io/FAQ/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">Common problems</source>
+      <category>FAQ</category>
+      <pubDate>Mon, 27 Jan 2020 06:39:01 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="getting-help"> Getting Help</h2>
+<p>If you ran into some issues, please make sure you are in the lastest version and tried removing <code>node_modules</code> folder then a clean install.</p>
+<p>If the issue exists or there is somthing you don’t know how to solve, welcome to <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/discussions/new" target="_blank" rel="noopener noreferrer">open a dicussion</a>. Questions are always welcome, no matter <strong>they are simple or not</strong>. You only need to make sure two points:</p>
+<ol>
+<li>
+<p>You have tried searching related docs through search box.</p>
+</li>
+<li>
+<p>You are providing a detailed description in the discussion.</p>
+<ul>
+<li>
+<p>If you don’t know how to config something, please describe what you want, and what you search or what section are you expecting to see the guidelines (so that we can improve our docs)</p>
+</li>
+<li>
+<p>If you are running into issues, provide related error log (by running <code>vuepress dev &lt;docs dir&gt; --debug</code>) and screenshots.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="warning-overiding-existing-page-xxx"> <code>warning Overiding existing page xxx</code></h2>
+<p>If you see <code>warning Overiding existing page xxx</code> while the dev process is starting up, please check your file structure.</p>
+<p>You probably created two file with same path.</p>
+<p>For example: <code>a/b.md</code> and <code>a/b/readme.md</code> will both be <code>/a/b/</code></p>
+<p>This will cause one page content be lost and it will also cause others issue.</p>
+<h2 id="xxx-isn-t-assign-with-a-lang-and-will-return-en-us-instead"> <code>xxx isn’t assign with a lang, and will return 'en-US' instead.</code></h2>
+<p>If you see <code>xxx isn’t assign with a lang, and will return 'en-US' instead.</code> while the dev process is starting up, please check whether you set lang for every language.</p>
+<p>If you only have one language, please set root lang like this way:</p>
+<div><pre><code><span>// .vuepress/config.js</span>
+<span>const</span> <span>{</span> config <span>}</span> <span>=</span> <span>require</span><span>(</span><span>"vuepress-theme-hope"</span><span>)</span><span>;</span>
+
+module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><span>{</span>
+  locales<span>:</span> <span>{</span>
+    <span>"/"</span><span>:</span> <span>{</span>
+      <span>// set language you want</span>
+      lang<span>:</span> <span>"en-US"</span><span>,</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>)</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><h2 id="some-page-settings-are-invalid"> Some page settings are invalid</h2>
+<p>You can first review the documentation to see if the setting <strong>does not support partial configuration</strong>.</p>
+<p><strong>Support for partial configuration</strong> means that the theme allows the configuration of the page to override the global configuration of the same name (same function), but not all functions meet this setting. For the sake of project compilation speed, some projects will not be loaded during the compilation phase after the global configuration is disabled, and they cannot be enabled locally.</p>
+<h2 id="code-block-does-not-look-right-in-light-mode"> Code block does not look right in light mode</h2>
+<p>I guess this is your fault. Please delete the <code>$codeBgColor</code> in <code>.vuepress/styles/palette.styl</code>. The default value of <code>vuepress-theme-hope</code> is light blue, while <code>@vuepress/theme-default</code> is dark blue.</p>
+<h2 id="_404-when-visiting-some-links"> 404 when visiting some links</h2>
+<p>If you use non-URL-standard characters in category or tags, such as:</p>
+<div><pre><code><span><span>---</span>
+<span><span>category</span><span>:</span> 软件
+<span>tags</span><span>:</span>
+  <span>-</span> 谷歌浏览器</span>
+<span>---</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>Then when you visit <code>/category/软件</code> and <code>/tag/谷歌浏览器/</code>, you will be navigated to the 404 page.</p>
+<p>This is a potentially breaking change introduced by <code>vue-router</code> in <code>3.4.6</code>. Starting from <code>3.4.6</code>, <code>vue-router</code> requires all non-standard URL paths to be handled by <code>encodeURI</code> and then added as a path to <code>router</code>.</p>
+<p>The theme uses <code>@vuepress/plugin-blog</code> for blog support. This problem should be corrected in this plugin. Mr. Hope has already reported <a href="https://github.com/vuepress/vuepress-plugin-blog/issues/95" target="_blank" rel="noopener noreferrer">This Issue</a>, and submitted a <a href="https://github.com/vuepress/vuepress-plugin-blog/pull/97" target="_blank" rel="noopener noreferrer">PR</a> for a temporary fix, but no one reviewed that PR.</p>
+<div><p>Temporary solution</p>
+<p>If you are using yarn, you can add the <code>resolutions</code> field:</p>
+<div><pre><code><span>{</span>
+  ...
+  <span>"resolutions"</span><span>:</span> <span>{</span>
+    <span>"vue-router"</span><span>:</span> <span>"3.4.5"</span>
+  <span>}</span><span>,</span>
+  ...
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>Go to your package.json to temporarily solve this problem.</p>
+</div>
+<h2 id="typescript-problems"> TypeScript problems</h2>
+<ul>
+<li><a href="./typescript.html">TypeScript problems</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>TypeScript Troubleshoot</title>
+      <link>https://vuepress-theme-hope.github.io/FAQ/typescript/</link>
+      <guid>https://vuepress-theme-hope.github.io/FAQ/typescript/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">TypeScript Troubleshoot</source>
+      <category>FAQ</category>
+      <pubDate>Tue, 16 Mar 2021 15:57:52 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="troubleshoot"> Troubleshoot</h2>
+<ol>
+<li>
+<p>Please make sure your project depends on typescript, if not, please execute:</p>
+<CodeGroup>
+<CodeGroupItem title="yarn">
+<div><pre><code><span>yarn</span> <span>add</span> -D typescript
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="npm">
+<div><pre><code><span>npm</span> i -D typescript
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+</li>
+<li>
+<p>Make sure there is a legal tsconfig.json file in your project root, if not, please execute:</p>
+<CodeGroup>
+<CodeGroupItem title="yarn">
+<div><pre><code><span>yarn</span> tsc --init
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="npm">
+<div><pre><code>npx tsc --init
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+</li>
+<li>
+<p>Make sure that your project has at least one TypeScript file included by it.</p>
+</li>
+</ol>
+<p>Please create <code>.vuepress/enhanceApp.ts</code> in your document directory and add its relative path to the <code>include</code> in tsconfig.json.</p>
+<h2 id="error-list"> Error List</h2>
+<h3 id="error-when-parsing-tsconfig-json"> error when parsing tsconfig.json</h3>
+<p>This problem is caused by ts-loader not finding tsconfig.json. Since the theme adds TypeScript support, you need to create a valid tsconfig.json inside your project.</p>
+<p>You can:</p>
+<ol>
+<li>
+<p>Disable TypeScript support: delete the <code>themeConfig.typescript</code> setting, or explicitly set it to <code>false</code> to disable <code>vuepress-plugin-typescript</code>.</p>
+</li>
+<li>
+<p>Create a legal tsconfig.json in your project.</p>
+<p>A simple tsconfig.json is as follows:</p>
+<div><pre><code><span>{</span>
+  <span>"compilerOptions"</span><span>:</span> <span>{</span>
+    <span>"target"</span><span>:</span> <span>"ES6"</span><span>,</span> <span>/// Any target not less than 'ES5'</span>
+    <span>"allowSyntheticDefaultImports"</span><span>:</span> <span>true</span><span>,</span> <span>// Avoiding some issues related to vuepress-types</span>
+    <span>"experimentalDecorators"</span><span>:</span> <span>true</span><span>,</span> <span>// TypeScript files for '.vue' needs this option</span>
+    <span>"module"</span><span>:</span> <span>"commonjs"</span><span>,</span> <span>// Avoiding some issues related to vuepress-types</span>
+    <span>// type definition files of vuepress and this theme</span>
+    <span>"types"</span><span>:</span> <span>[</span><span>"@mr-hope/vuepress-theme-types"</span><span>]</span>
+  <span>}</span><span>,</span>
+  <span>"include"</span><span>:</span> <span>[</span>
+    <span>"src/.vuepress/enhanceApp.ts"</span> <span>// replace `src` with your doc folder</span>
+  <span>]</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div></li>
+</ol>
+<h3 id="can-t-find-corresponding-types"> Can’t find corresponding types</h3>
+<p>Make sure to add <code>&quot;@mr-hope/vuepress-theme-types&quot;</code> to <code>compilerOptions.types</code>, because the package is not in the <code>@types</code> directory.</p>
+<h3 id="no-inputs-were-found-in-config-file-tsconfig-json"> No inputs were found in config file tsconfig.json</h3>
+<p>This problem is caused by the absence of a TypeScript file in your project (or your tsconfig.json configuration is incorrect).</p>
+<p><code>ts-loader</code> requires that the include and exclude configuration items of tsconfig.json include at least one ts file in the project.</p>
+<p>If your project does not have a ts file, to avoid this problem, you can create an empty ts file anywhere in your project and add it to the include of tsconfig.json.</p>
+<p>A better solution is to solve this problem by creating an empty <code>enhanceApp.ts</code> in the<code>.vuepress</code> directory. If you already have <code>enhanceApp.js</code>, you can directly convert it to TS.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Markdown DEMO</title>
+      <link>https://vuepress-theme-hope.github.io/basic/markdown/demo/</link>
+      <guid>https://vuepress-theme-hope.github.io/basic/markdown/demo/</guid>
+      <source url="https://vuepress-theme-hope.github.io/rss.xml">Markdown DEMO</source>
+      <category>basic</category>
+      <pubDate>Tue, 07 Jan 2020 06:44:41 GMT</pubDate>
+      <content:encoded><![CDATA[
+<h1 id="first-heading"> First Heading</h1>
+
+<div><pre><code><span><span>#</span> First Heading</span>
+</code></pre>
+<div><span>1</span><br></div></div><h2 id="second-heading"> Second Heading</h2>
+<div><pre><code><span><span>##</span> Second Heading</span>
+</code></pre>
+<div><span>1</span><br></div></div><h3 id="third-heading"> Third Heading</h3>
+<div><pre><code><span><span>###</span> Third Heading</span>
+</code></pre>
+<div><span>1</span><br></div></div><h4 id="fourth-heading"> Fourth Heading</h4>
+<div><pre><code><span><span>####</span> Fourth Heading</span>
+</code></pre>
+<div><span>1</span><br></div></div><h5 id="fifth-heading"> Fifth Heading</h5>
+<div><pre><code><span><span>#####</span> Fifth Heading</span>
+</code></pre>
+<div><span>1</span><br></div></div><h6 id="sixth-heading"> Sixth Heading</h6>
+<div><pre><code><span><span>######</span> Sixth Heading</span>
+</code></pre>
+<div><span>1</span><br></div></div><h2 id="text"> Text</h2>
+<p>This sentence has <strong>bold</strong>、<em>italic</em> and <s>delete</s> style text.</p>
+<div><pre><code>This sentence has <span><span>**</span><span>bold</span><span>**</span></span>、<span><span>_</span><span>italic</span><span>_</span></span> and <span><span>~~</span><span>delete</span><span>~~</span></span> style text.
+</code></pre>
+<div><span>1</span><br></div></div><h2 id="paragraph"> Paragraph</h2>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<div><pre><code>This is a paragraph.
+
+This is another paragraph.
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><h2 id="line-break"> Line Break</h2>
+<p>I would like to line break at<br>
+this point</p>
+<div><pre><code>I would like to line break at  
+this point
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><div><p>Tips</p>
+<p>In codes above, two spaces are behind <code>at</code>.</p>
+</div>
+<h2 id="blockquotes"> Blockquotes</h2>
+<blockquote>
+<p>Blockquotes can also be nested...</p>
+<blockquote>
+<p>...by using greater-than signs right next to each other...</p>
+<blockquote>
+<p>...or with spaces between arrows.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<div><pre><code><span>></span> Blockquotes can also be nested...
+<span>></span>
+<span>> ></span> ...by using greater-than signs right next to each other...
+<span>> ></span>
+<span>> > ></span> ...or with spaces between arrows.
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h2 id="list"> List</h2>
+<h3 id="unordered-list"> Unordered List</h3>
+<ul>
+<li>
+<p>Create a list by starting a line with <code>-</code></p>
+</li>
+<li>
+<p>Make sub-lists by indenting 2 spaces:</p>
+<ul>
+<li>
+<p>Marker character change forces new list start:</p>
+<ul>
+<li>
+<p>Ac tristique libero volutpat at</p>
+</li>
+<li>
+<p>Facilisis in pretium nisl aliquet</p>
+</li>
+<li>
+<p>Nulla volutpat aliquam velit<br>
+link break</p>
+<p>New paragraph</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>It’s easy!</p>
+</li>
+</ul>
+<div><pre><code><span>-</span> Create a list by starting a line with <span>`-`</span>
+<span>-</span> Sub-lists are made by indenting 2 spaces:
+
+  <span>-</span> Marker character change forces new list start:
+
+<span>    - Ac tristique libero volutpat at
+    - Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit  
+      link break</span>
+
+<span>      New paragraph</span>
+
+<span>-</span> Very easy!
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><h3 id="ordered-list"> Ordered List</h3>
+<ol>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit<br>
+line break<br>
+line break again</li>
+<li>Integer molestie lorem at massa</li>
+</ol>
+<div><pre><code><span>1.</span> Lorem ipsum dolor sit amet
+<span>1.</span> Consectetur adipiscing elit  
+   line break  
+   line break again
+<span>1.</span> Integer molestie lorem at massa
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h2 id="hr"> HR</h2>
+<hr>
+<div><pre><code><span>---</span>
+</code></pre>
+<div><span>1</span><br></div></div><h2 id="link"> Link</h2>
+<p><a href="/">Home page using absolute path</a></p>
+<p><a href="./../">Home page using relative path</a></p>
+<p><a href="/about">About page using absolute path</a></p>
+<p><a href="./../about.html">About page using relative path</a></p>
+<div><pre><code><span>[<span>Home page using absolute path</span>](<span>/</span>)</span>
+
+<span>[<span>Home page using relative path</span>](<span>../readme.md</span>)</span>
+
+<span>[<span>About page using absolute path</span>](<span>/about</span>)</span>
+
+<span>[<span>About page using relative path</span>](<span>../about.md</span>)</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><div><p>Tips</p>
+<p>You can also use these in VuePress:</p>
+<ul>
+<li>
+<p><a href="./../">Home page-Can route when editing Markdown file</a></p>
+</li>
+<li>
+<p><a href="/">Home page using absolute path 2</a></p>
+</li>
+<li>
+<p><a href="./../index.html">Visit in HTML</a></p>
+</li>
+</ul>
+<p>To be able to jump to each other when editing the Markdown using the editor, you need to use the <strong>relative path</strong>, also you must place <code>readme.md</code> in <strong>every folder</strong>.</p>
+<p>代码:</p>
+<div><pre><code><span>-</span> <span>[<span>Home page-Can route when editing Markdown file</span>](<span>../readme.md</span>)</span>
+
+<span>-</span> <span>[<span>Home page using absolute path 2</span>](<span>/readme.md</span>)</span>
+
+<span>-</span> <span>[<span>Visit in HTML</span>](<span>../index.html</span>)</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div></div>
+<h2 id="image"> Image</h2>
+<p><img src="/logo.png" alt="Logo" /></p>
+<div><pre><code><span><span>!</span>[<span>Logo</span>](<span>/logo.png</span>)</span>
+</code></pre>
+<div><span>1</span><br></div></div><h2 id="emoji"> Emoji</h2>
+<p>Classic:</p>
+<p>😉 😢 😆 😋</p>
+<div><pre><code>:wink: :cry: :laughing: :yum:
+</code></pre>
+<div><span>1</span><br></div></div><p>Shortcuts:</p>
+<p>😎 😃 😗 😦 😃 😦 😉</p>
+<div><pre><code>8-) :) :\* :( :-) :-( ;)
+</code></pre>
+<div><span>1</span><br></div></div><div><p>Tips</p>
+<p>For more see <a href="./emoji.html">emoji list</a></p>
+</div>
+<h2 id="tables"> Tables</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">center</th>
+<th style="text-align:right">right</th>
+<th style="text-align:left">left</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">For center align use <code>:-:</code></td>
+<td style="text-align:right">For right align use <code>-:</code></td>
+<td style="text-align:left">For left align use <code>:-</code></td>
+</tr>
+<tr>
+<td style="text-align:center">b</td>
+<td style="text-align:right">aaaaaaaaa</td>
+<td style="text-align:left">aaaa</td>
+</tr>
+<tr>
+<td style="text-align:center">c</td>
+<td style="text-align:right">aaaa</td>
+<td style="text-align:left">a</td>
+</tr>
+</tbody>
+</table>
+<div><pre><code><span><span><span>|</span><span>           center           </span><span>|</span><span>                    right </span><span>|</span><span> left                    </span><span>|</span>
+</span><span><span>|</span> <span>:------------------------:</span> <span>|</span> <span>-----------------------:</span> <span>|</span> <span>:----------------------</span> <span>|</span>
+</span><span><span>|</span><span> For center align use <span>`:-:`</span> </span><span>|</span><span> For right align use <span>`-:`</span> </span><span>|</span><span> For left align use <span>`:-`</span> </span><span>|</span>
+<span>|</span><span>             b              </span><span>|</span><span>                aaaaaaaaa </span><span>|</span><span> aaaa                    </span><span>|</span>
+<span>|</span><span>             c              </span><span>|</span><span>                     aaaa </span><span>|</span><span> a                       </span><span>|</span>
+</span></span></code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h2 id="codes"> Codes</h2>
+<p>Inline Code: <code>code</code></p>
+<div><pre><code>Inline Code: <span>`code`</span>
+</code></pre>
+<div><span>1</span><br></div></div><p>Indented code:</p>
+<div><pre><code>// Some comments
+line 1 of code
+line 2 of code
+line 3 of code
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><div><pre><code>Indented code:
+
+    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>Block code:</p>
+<div><pre><code>Sample text here...
+</code></pre>
+<div><span>1</span><br></div></div><div><pre><code>Block code:
+
+<span><span>```</span>
+<span>Sample text here...</span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>Syntax highlighting:</p>
+<div><pre><code><span>var</span> <span>foo</span> <span>=</span> <span>function</span> <span>(</span><span>bar</span><span>)</span> <span>{</span>
+  <span>return</span> bar<span>++</span><span>;</span>
+<span>}</span><span>;</span>
+
+console<span>.</span><span>log</span><span>(</span><span>foo</span><span>(</span><span>5</span><span>)</span><span>)</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><div><pre><code>Syntax highlighting:
+
+<span><span>```</span><span>js</span>
+<span><span>var</span> <span>foo</span> <span>=</span> <span>function</span> <span>(</span><span>bar</span><span>)</span> <span>{</span>
+  <span>return</span> bar<span>++</span><span>;</span>
+<span>}</span><span>;</span>
+
+console<span>.</span><span>log</span><span>(</span><span>foo</span><span>(</span><span>5</span><span>)</span><span>)</span><span>;</span></span>
+<span>```</span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div>]]></content:encoded>
+      <enclosure url="https://vuepress-theme-hope.github.io/logo.png" type="image/png"/>
+    </item>
     <item>
       <title>Nature</title>
       <link>https://vuepress-theme-hope.github.io/basic/markdown/emoji/nature/</link>
@@ -3769,7 +4181,7 @@ write something here ~
 <li>Default value: <code>&quot;101&quot;</code></li>
 </ul>
 <h4 id="mdenhance-others"> mdEnhance.others</h4>
-<p>The following are the library links used by the third-party code demo service. Unless your environment cannot visit jsdelivr or the speed is slow, you probably don't need to override the default values.</p>
+<p>The following are the library links used by the third-party code demo service. Unless your environment cannot visit jsdelivr or the speed is slow, you probably don’t need to override the default values.</p>
 <h5 id="mdenhance-demo-babel"> mdEnhance.demo.babel</h5>
 <p>Default value: <code>&quot;https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js&quot;</code></p>
 <h5 id="mdenhance-demo-vue"> mdEnhance.demo.vue</h5>
@@ -18866,418 +19278,6 @@ module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><spa
 <li>
 <p><a href="https://v1.vuepress.vuejs.org/zh/theme/" target="_blank" rel="noopener noreferrer">VuePress 主题</a></p>
 </li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Markdown DEMO</title>
-      <link>https://vuepress-theme-hope.github.io/basic/markdown/demo/</link>
-      <guid>https://vuepress-theme-hope.github.io/basic/markdown/demo/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">Markdown DEMO</source>
-      <category>basic</category>
-      <pubDate>Tue, 07 Jan 2020 06:44:41 GMT</pubDate>
-      <content:encoded><![CDATA[
-<h1 id="first-heading"> First Heading</h1>
-
-<div><pre><code><span><span>#</span> First Heading</span>
-</code></pre>
-<div><span>1</span><br></div></div><h2 id="second-heading"> Second Heading</h2>
-<div><pre><code><span><span>##</span> Second Heading</span>
-</code></pre>
-<div><span>1</span><br></div></div><h3 id="third-heading"> Third Heading</h3>
-<div><pre><code><span><span>###</span> Third Heading</span>
-</code></pre>
-<div><span>1</span><br></div></div><h4 id="fourth-heading"> Fourth Heading</h4>
-<div><pre><code><span><span>####</span> Fourth Heading</span>
-</code></pre>
-<div><span>1</span><br></div></div><h5 id="fifth-heading"> Fifth Heading</h5>
-<div><pre><code><span><span>#####</span> Fifth Heading</span>
-</code></pre>
-<div><span>1</span><br></div></div><h6 id="sixth-heading"> Sixth Heading</h6>
-<div><pre><code><span><span>######</span> Sixth Heading</span>
-</code></pre>
-<div><span>1</span><br></div></div><h2 id="text"> Text</h2>
-<p>This sentence has <strong>bold</strong>、<em>italic</em> and <s>delete</s> style text.</p>
-<div><pre><code>This sentence has <span><span>**</span><span>bold</span><span>**</span></span>、<span><span>_</span><span>italic</span><span>_</span></span> and <span><span>~~</span><span>delete</span><span>~~</span></span> style text.
-</code></pre>
-<div><span>1</span><br></div></div><h2 id="paragraph"> Paragraph</h2>
-<p>This is a paragraph.</p>
-<p>This is another paragraph.</p>
-<div><pre><code>This is a paragraph.
-
-This is another paragraph.
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><h2 id="line-break"> Line Break</h2>
-<p>I would like to line break at<br>
-this point</p>
-<div><pre><code>I would like to line break at  
-this point
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><div><p>Tips</p>
-<p>In codes above, two spaces are behind <code>at</code>.</p>
-</div>
-<h2 id="blockquotes"> Blockquotes</h2>
-<blockquote>
-<p>Blockquotes can also be nested...</p>
-<blockquote>
-<p>...by using greater-than signs right next to each other...</p>
-<blockquote>
-<p>...or with spaces between arrows.</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<div><pre><code><span>></span> Blockquotes can also be nested...
-<span>></span>
-<span>> ></span> ...by using greater-than signs right next to each other...
-<span>> ></span>
-<span>> > ></span> ...or with spaces between arrows.
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h2 id="list"> List</h2>
-<h3 id="unordered-list"> Unordered List</h3>
-<ul>
-<li>
-<p>Create a list by starting a line with <code>-</code></p>
-</li>
-<li>
-<p>Make sub-lists by indenting 2 spaces:</p>
-<ul>
-<li>
-<p>Marker character change forces new list start:</p>
-<ul>
-<li>
-<p>Ac tristique libero volutpat at</p>
-</li>
-<li>
-<p>Facilisis in pretium nisl aliquet</p>
-</li>
-<li>
-<p>Nulla volutpat aliquam velit<br>
-link break</p>
-<p>New paragraph</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>It’s easy!</p>
-</li>
-</ul>
-<div><pre><code><span>-</span> Create a list by starting a line with <span>`-`</span>
-<span>-</span> Sub-lists are made by indenting 2 spaces:
-
-  <span>-</span> Marker character change forces new list start:
-
-<span>    - Ac tristique libero volutpat at
-    - Facilisis in pretium nisl aliquet
-    - Nulla volutpat aliquam velit  
-      link break</span>
-
-<span>      New paragraph</span>
-
-<span>-</span> Very easy!
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><h3 id="ordered-list"> Ordered List</h3>
-<ol>
-<li>Lorem ipsum dolor sit amet</li>
-<li>Consectetur adipiscing elit<br>
-line break<br>
-line break again</li>
-<li>Integer molestie lorem at massa</li>
-</ol>
-<div><pre><code><span>1.</span> Lorem ipsum dolor sit amet
-<span>1.</span> Consectetur adipiscing elit  
-   line break  
-   line break again
-<span>1.</span> Integer molestie lorem at massa
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h2 id="hr"> HR</h2>
-<hr>
-<div><pre><code><span>---</span>
-</code></pre>
-<div><span>1</span><br></div></div><h2 id="link"> Link</h2>
-<p><a href="/">Home page using absolute path</a></p>
-<p><a href="./../">Home page using relative path</a></p>
-<p><a href="/about">About page using absolute path</a></p>
-<p><a href="./../about.html">About page using relative path</a></p>
-<div><pre><code><span>[<span>Home page using absolute path</span>](<span>/</span>)</span>
-
-<span>[<span>Home page using relative path</span>](<span>../readme.md</span>)</span>
-
-<span>[<span>About page using absolute path</span>](<span>/about</span>)</span>
-
-<span>[<span>About page using relative path</span>](<span>../about.md</span>)</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><div><p>Tips</p>
-<p>You can also use these in VuePress:</p>
-<ul>
-<li>
-<p><a href="./../">Home page-Can route when editing Markdown file</a></p>
-</li>
-<li>
-<p><a href="/">Home page using absolute path 2</a></p>
-</li>
-<li>
-<p><a href="./../index.html">Visit in HTML</a></p>
-</li>
-</ul>
-<p>To be able to jump to each other when editing the Markdown using the editor, you need to use the <strong>relative path</strong>, also you must place <code>readme.md</code> in <strong>every folder</strong>.</p>
-<p>代码:</p>
-<div><pre><code><span>-</span> <span>[<span>Home page-Can route when editing Markdown file</span>](<span>../readme.md</span>)</span>
-
-<span>-</span> <span>[<span>Home page using absolute path 2</span>](<span>/readme.md</span>)</span>
-
-<span>-</span> <span>[<span>Visit in HTML</span>](<span>../index.html</span>)</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div></div>
-<h2 id="image"> Image</h2>
-<p><img src="/logo.png" alt="Logo" /></p>
-<div><pre><code><span><span>!</span>[<span>Logo</span>](<span>/logo.png</span>)</span>
-</code></pre>
-<div><span>1</span><br></div></div><h2 id="emoji"> Emoji</h2>
-<p>Classic:</p>
-<p>😉 😢 😆 😋</p>
-<div><pre><code>:wink: :cry: :laughing: :yum:
-</code></pre>
-<div><span>1</span><br></div></div><p>Shortcuts:</p>
-<p>😎 😃 😗 😦 😃 😦 😉</p>
-<div><pre><code>8-) :) :\* :( :-) :-( ;)
-</code></pre>
-<div><span>1</span><br></div></div><div><p>Tips</p>
-<p>For more see <a href="./emoji.html">emoji list</a></p>
-</div>
-<h2 id="tables"> Tables</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">center</th>
-<th style="text-align:right">right</th>
-<th style="text-align:left">left</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">For center align use <code>:-:</code></td>
-<td style="text-align:right">For right align use <code>-:</code></td>
-<td style="text-align:left">For left align use <code>:-</code></td>
-</tr>
-<tr>
-<td style="text-align:center">b</td>
-<td style="text-align:right">aaaaaaaaa</td>
-<td style="text-align:left">aaaa</td>
-</tr>
-<tr>
-<td style="text-align:center">c</td>
-<td style="text-align:right">aaaa</td>
-<td style="text-align:left">a</td>
-</tr>
-</tbody>
-</table>
-<div><pre><code><span><span><span>|</span><span>           center           </span><span>|</span><span>                    right </span><span>|</span><span> left                    </span><span>|</span>
-</span><span><span>|</span> <span>:------------------------:</span> <span>|</span> <span>-----------------------:</span> <span>|</span> <span>:----------------------</span> <span>|</span>
-</span><span><span>|</span><span> For center align use <span>`:-:`</span> </span><span>|</span><span> For right align use <span>`-:`</span> </span><span>|</span><span> For left align use <span>`:-`</span> </span><span>|</span>
-<span>|</span><span>             b              </span><span>|</span><span>                aaaaaaaaa </span><span>|</span><span> aaaa                    </span><span>|</span>
-<span>|</span><span>             c              </span><span>|</span><span>                     aaaa </span><span>|</span><span> a                       </span><span>|</span>
-</span></span></code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h2 id="codes"> Codes</h2>
-<p>Inline Code: <code>code</code></p>
-<div><pre><code>Inline Code: <span>`code`</span>
-</code></pre>
-<div><span>1</span><br></div></div><p>Indented code:</p>
-<div><pre><code>// Some comments
-line 1 of code
-line 2 of code
-line 3 of code
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><div><pre><code>Indented code:
-
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>Block code:</p>
-<div><pre><code>Sample text here...
-</code></pre>
-<div><span>1</span><br></div></div><div><pre><code>Block code:
-
-<span><span>```</span>
-<span>Sample text here...</span>
-<span>```</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>Syntax highlighting:</p>
-<div><pre><code><span>var</span> <span>foo</span> <span>=</span> <span>function</span> <span>(</span><span>bar</span><span>)</span> <span>{</span>
-  <span>return</span> bar<span>++</span><span>;</span>
-<span>}</span><span>;</span>
-
-console<span>.</span><span>log</span><span>(</span><span>foo</span><span>(</span><span>5</span><span>)</span><span>)</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><div><pre><code>Syntax highlighting:
-
-<span><span>```</span><span>js</span>
-<span><span>var</span> <span>foo</span> <span>=</span> <span>function</span> <span>(</span><span>bar</span><span>)</span> <span>{</span>
-  <span>return</span> bar<span>++</span><span>;</span>
-<span>}</span><span>;</span>
-
-console<span>.</span><span>log</span><span>(</span><span>foo</span><span>(</span><span>5</span><span>)</span><span>)</span><span>;</span></span>
-<span>```</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div>]]></content:encoded>
-      <enclosure url="https://vuepress-theme-hope.github.io/logo.png" type="image/png"/>
-    </item>
-    <item>
-      <title>TypeScript Troubleshoot</title>
-      <link>https://vuepress-theme-hope.github.io/FAQ/typescript/</link>
-      <guid>https://vuepress-theme-hope.github.io/FAQ/typescript/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">TypeScript Troubleshoot</source>
-      <category>FAQ</category>
-      <pubDate>Tue, 16 Mar 2021 15:57:52 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="troubleshoot"> Troubleshoot</h2>
-<ol>
-<li>
-<p>Please make sure your project depends on typescript, if not, please execute:</p>
-<CodeGroup>
-<CodeGroupItem title="yarn">
-<div><pre><code><span>yarn</span> <span>add</span> -D typescript
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-<CodeGroupItem title="npm">
-<div><pre><code><span>npm</span> i -D typescript
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-</CodeGroup>
-</li>
-<li>
-<p>Make sure there is a legal tsconfig.json file in your project root, if not, please execute:</p>
-<CodeGroup>
-<CodeGroupItem title="yarn">
-<div><pre><code><span>yarn</span> tsc --init
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-<CodeGroupItem title="npm">
-<div><pre><code>npx tsc --init
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-</CodeGroup>
-</li>
-<li>
-<p>Make sure that your project has at least one TypeScript file included by it.</p>
-</li>
-</ol>
-<p>Please create <code>.vuepress/enhanceApp.ts</code> in your document directory and add its relative path to the <code>include</code> in tsconfig.json.</p>
-<h2 id="error-list"> Error List</h2>
-<h3 id="error-when-parsing-tsconfig-json"> error when parsing tsconfig.json</h3>
-<p>This problem is caused by ts-loader not finding tsconfig.json. Since the theme adds TypeScript support, you need to create a valid tsconfig.json inside your project.</p>
-<p>You can:</p>
-<ol>
-<li>
-<p>Disable TypeScript support: delete the <code>themeConfig.typescript</code> setting, or explicitly set it to <code>false</code> to disable <code>vuepress-plugin-typescript</code>.</p>
-</li>
-<li>
-<p>Create a legal tsconfig.json in your project.</p>
-<p>A simple tsconfig.json is as follows:</p>
-<div><pre><code><span>{</span>
-  <span>"compilerOptions"</span><span>:</span> <span>{</span>
-    <span>"target"</span><span>:</span> <span>"ES6"</span><span>,</span> <span>/// Any target not less than 'ES5'</span>
-    <span>"allowSyntheticDefaultImports"</span><span>:</span> <span>true</span><span>,</span> <span>// Avoiding some issues related to vuepress-types</span>
-    <span>"experimentalDecorators"</span><span>:</span> <span>true</span><span>,</span> <span>// TypeScript files for '.vue' needs this option</span>
-    <span>"module"</span><span>:</span> <span>"commonjs"</span><span>,</span> <span>// Avoiding some issues related to vuepress-types</span>
-    <span>// type definition files of vuepress and this theme</span>
-    <span>"types"</span><span>:</span> <span>[</span><span>"@mr-hope/vuepress-theme-types"</span><span>]</span>
-  <span>}</span><span>,</span>
-  <span>"include"</span><span>:</span> <span>[</span>
-    <span>"src/.vuepress/enhanceApp.ts"</span> <span>// replace `src` with your doc folder</span>
-  <span>]</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div></li>
-</ol>
-<h3 id="can-t-find-corresponding-types"> Can’t find corresponding types</h3>
-<p>Make sure to add <code>&quot;@mr-hope/vuepress-theme-types&quot;</code> to <code>compilerOptions.types</code>, because the package is not in the <code>@types</code> directory.</p>
-<h3 id="no-inputs-were-found-in-config-file-tsconfig-json"> No inputs were found in config file tsconfig.json</h3>
-<p>This problem is caused by the absence of a TypeScript file in your project (or your tsconfig.json configuration is incorrect).</p>
-<p><code>ts-loader</code> requires that the include and exclude configuration items of tsconfig.json include at least one ts file in the project.</p>
-<p>If your project does not have a ts file, to avoid this problem, you can create an empty ts file anywhere in your project and add it to the include of tsconfig.json.</p>
-<p>A better solution is to solve this problem by creating an empty <code>enhanceApp.ts</code> in the<code>.vuepress</code> directory. If you already have <code>enhanceApp.js</code>, you can directly convert it to TS.</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Common problems</title>
-      <link>https://vuepress-theme-hope.github.io/FAQ/</link>
-      <guid>https://vuepress-theme-hope.github.io/FAQ/</guid>
-      <source url="https://vuepress-theme-hope.github.io/rss.xml">Common problems</source>
-      <category>FAQ</category>
-      <pubDate>Mon, 27 Jan 2020 06:39:01 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="getting-help"> Getting Help</h2>
-<p>If you ran into some issues, please make sure you are in the lastest version and tried removing <code>node_modules</code> folder then a clean install.</p>
-<p>If the issue exists or there is somthing you don’t know how to solve, welcome to <a href="https://github.com/vuepress-theme-hope/vuepress-theme-hope/discussions/new" target="_blank" rel="noopener noreferrer">open a dicussion</a>. Questions are always welcome, no matter <strong>they are simple or not</strong>. You only need to make sure two points:</p>
-<ol>
-<li>
-<p>You have tried searching related docs through search box.</p>
-</li>
-<li>
-<p>You are providing a detailed description in the discussion.</p>
-<ul>
-<li>
-<p>If you don’t know how to config something, please describe what you want, and what you search or what section are you expecting to see the guidelines (so that we can improve our docs)</p>
-</li>
-<li>
-<p>If you are running into issues, provide related error log (by running <code>vuepress dev &lt;docs dir&gt; --debug</code>) and screenshots.</p>
-</li>
-</ul>
-</li>
-</ol>
-<h2 id="warning-overiding-existing-page-xxx"> <code>warning Overiding existing page xxx</code></h2>
-<p>If you see <code>warning Overiding existing page xxx</code> while the dev process is starting up, please check your file structure.</p>
-<p>You probably created two file with same path.</p>
-<p>For example: <code>a/b.md</code> and <code>a/b/readme.md</code> will both be <code>/a/b/</code></p>
-<p>This will cause one page content be lost and it will also cause others issue.</p>
-<h2 id="xxx-isn-t-assign-with-a-lang-and-will-return-en-us-instead"> <code>xxx isn’t assign with a lang, and will return 'en-US' instead.</code></h2>
-<p>If you see <code>xxx isn’t assign with a lang, and will return 'en-US' instead.</code> while the dev process is starting up, please check whether you set lang for every language.</p>
-<p>If you only have one language, please set root lang like this way:</p>
-<div><pre><code><span>// .vuepress/config.js</span>
-<span>const</span> <span>{</span> config <span>}</span> <span>=</span> <span>require</span><span>(</span><span>"vuepress-theme-hope"</span><span>)</span><span>;</span>
-
-module<span>.</span>exports <span>=</span> <span>config</span><span>(</span><span>{</span>
-  locales<span>:</span> <span>{</span>
-    <span>"/"</span><span>:</span> <span>{</span>
-      <span>// set language you want</span>
-      lang<span>:</span> <span>"en-US"</span><span>,</span>
-    <span>}</span><span>,</span>
-  <span>}</span><span>,</span>
-<span>}</span><span>)</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><h2 id="some-page-settings-are-invalid"> Some page settings are invalid</h2>
-<p>You can first review the documentation to see if the setting <strong>does not support partial configuration</strong>.</p>
-<p><strong>Support for partial configuration</strong> means that the theme allows the configuration of the page to override the global configuration of the same name (same function), but not all functions meet this setting. For the sake of project compilation speed, some projects will not be loaded during the compilation phase after the global configuration is disabled, and they cannot be enabled locally.</p>
-<h2 id="code-block-does-not-look-right-in-light-mode"> Code block does not look right in light mode</h2>
-<p>I guess this is your fault. Please delete the <code>$codeBgColor</code> in <code>.vuepress/styles/palette.styl</code>. The default value of <code>vuepress-theme-hope</code> is light blue, while <code>@vuepress/theme-default</code> is dark blue.</p>
-<h2 id="_404-when-visiting-some-links"> 404 when visiting some links</h2>
-<p>If you use non-URL-standard characters in category or tags, such as:</p>
-<div><pre><code><span><span>---</span>
-<span><span>category</span><span>:</span> 软件
-<span>tags</span><span>:</span>
-  <span>-</span> 谷歌浏览器</span>
-<span>---</span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>Then when you visit <code>/category/软件</code> and <code>/tag/谷歌浏览器/</code>, you will be navigated to the 404 page.</p>
-<p>This is a potentially breaking change introduced by <code>vue-router</code> in <code>3.4.6</code>. Starting from <code>3.4.6</code>, <code>vue-router</code> requires all non-standard URL paths to be handled by <code>encodeURI</code> and then added as a path to <code>router</code>.</p>
-<p>The theme uses <code>@vuepress/plugin-blog</code> for blog support. This problem should be corrected in this plugin. Mr. Hope has already reported <a href="https://github.com/vuepress/vuepress-plugin-blog/issues/95" target="_blank" rel="noopener noreferrer">This Issue</a>, and submitted a <a href="https://github.com/vuepress/vuepress-plugin-blog/pull/97" target="_blank" rel="noopener noreferrer">PR</a> for a temporary fix, but no one reviewed that PR.</p>
-<div><p>Temporary solution</p>
-<p>If you are using yarn, you can add the <code>resolutions</code> field:</p>
-<div><pre><code><span>{</span>
-  ...
-  <span>"resolutions"</span><span>:</span> <span>{</span>
-    <span>"vue-router"</span><span>:</span> <span>"3.4.5"</span>
-  <span>}</span><span>,</span>
-  ...
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>Go to your package.json to temporarily solve this problem.</p>
-</div>
-<h2 id="typescript-problems"> TypeScript problems</h2>
-<ul>
-<li><a href="./typescript.html">TypeScript problems</a></li>
 </ul>
 ]]></content:encoded>
     </item>

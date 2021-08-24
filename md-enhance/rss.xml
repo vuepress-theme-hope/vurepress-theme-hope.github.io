@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/md-enhance/</link>
     <description>Markdown Enhancement for VuePress</description>
     <language>en-US</language>
-    <pubDate>Tue, 24 Aug 2021 08:51:52 GMT</pubDate>
-    <lastBuildDate>Tue, 24 Aug 2021 08:51:52 GMT</lastBuildDate>
+    <pubDate>Tue, 24 Aug 2021 10:02:56 GMT</pubDate>
+    <lastBuildDate>Tue, 24 Aug 2021 10:02:56 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -159,7 +159,7 @@
 </ul>
 <p>CodePen editor status</p>
 <h3 id="others"> others</h3>
-<p>The following are the library links used by the third-party code demo service. Unless your environment cannot visit jsdelivr or the speed is slow, you probably don't need to override the default values.</p>
+<p>The following are the library links used by the third-party code demo service. Unless your environment cannot visit jsdelivr or the speed is slow, you probably don’t need to override the default values.</p>
 <h4 id="demo-babel"> demo.babel</h4>
 <p>Default value: <code>&quot;https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js&quot;</code></p>
 <h4 id="demo-vue"> demo.vue</h4>

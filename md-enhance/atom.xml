@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-08-24T08:51:52.928Z</updated>
+  <updated>2021-08-24T10:02:56.092Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/md-enhance/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/md-enhance/"/>
@@ -19,7 +19,7 @@
     <title type="html">Config</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/config/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/config/"/>
-    <updated>2021-08-24T08:49:32.000Z</updated>
+    <updated>2021-08-24T09:57:48.000Z</updated>
     <content type="html"><![CDATA[<p>You can pass these options to the plugin:</p>
 <h2 id="enable-all"> Enable all</h2>
 <ul>
@@ -161,7 +161,7 @@
 </ul>
 <p>CodePen editor status</p>
 <h3 id="others"> others</h3>
-<p>The following are the library links used by the third-party code demo service. Unless your environment cannot visit jsdelivr or the speed is slow, you probably don't need to override the default values.</p>
+<p>The following are the library links used by the third-party code demo service. Unless your environment cannot visit jsdelivr or the speed is slow, you probably don’t need to override the default values.</p>
 <h4 id="demo-babel"> demo.babel</h4>
 <p>Default value: <code>&quot;https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js&quot;</code></p>
 <h4 id="demo-vue"> demo.vue</h4>
@@ -2041,7 +2041,7 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <title type="html">配置</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/zh/config/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/config/"/>
-    <updated>2021-08-24T08:49:32.000Z</updated>
+    <updated>2021-08-24T09:57:48.000Z</updated>
     <content type="html"><![CDATA[<p>你可以传递以下选项来启用或禁用一些功能</p>
 <h2 id="enableall"> enableAll</h2>
 <ul>
