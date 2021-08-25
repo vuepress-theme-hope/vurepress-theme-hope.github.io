@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/md-enhance/</link>
     <description>Markdown Enhancement for VuePress</description>
     <language>en-US</language>
-    <pubDate>Wed, 25 Aug 2021 04:20:10 GMT</pubDate>
-    <lastBuildDate>Wed, 25 Aug 2021 04:20:10 GMT</lastBuildDate>
+    <pubDate>Wed, 25 Aug 2021 06:00:10 GMT</pubDate>
+    <lastBuildDate>Wed, 25 Aug 2021 06:00:10 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -2817,8 +2817,8 @@ conditionalVar(no, <span><span><span>&lt;</span>direction</span><span>></span></
 <div><span>1</span><br><span>2</span><br></div></div></li>
 <li>
 <p><strong>parallel</strong></p>
-<p>Required path specification of <code>path1</code>, <code>path2</code>, or <code>path3</code></p>
-<p>Optional direction</p>
+<p>必需指定路径方向 <code>path1</code>, <code>path2</code>, 或 <code>path3</code></p>
+<p>可选方向</p>
 <div><pre><code>parallelVar(path1, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode1
 parallelVar(path2, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode2
 parallelVar(path3, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode3
@@ -3446,7 +3446,7 @@ Add another diagram to demo page    :48h</span>
       <pubDate>Sun, 25 Apr 2021 06:54:27 GMT</pubDate>
       <content:encoded><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持任务列表。</p>
 
-<h2 id="configuration"> Configuration</h2>
+<h2 id="配置"> 配置</h2>
 <div><div><br><br><br><br><br><br><div>&nbsp;</div><br><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
   plugins<span>:</span> <span>[</span>
     <span>[</span>

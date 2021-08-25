@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-08-25T04:20:10.972Z</updated>
+  <updated>2021-08-25T06:00:10.374Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/md-enhance/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/md-enhance/"/>
@@ -2760,7 +2760,7 @@ document<span>.</span><span>querySelector</span><span>(</span><span>"h1"</span><
     <title type="html">流程图</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/flowchart/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/guide/flowchart/"/>
-    <updated>2021-04-07T05:44:25.000Z</updated>
+    <updated>2021-08-25T05:58:44.000Z</updated>
     <summary type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持流程图。</p>
 <p>本插件利用了 <a href="https://github.com/adrai/flowchart.js" target="_blank" rel="noopener noreferrer">flowchart.js</a> 来支持这一功能。</p>
 ]]></summary>
@@ -2944,8 +2944,8 @@ conditionalVar(no, <span><span><span>&lt;</span>direction</span><span>></span></
 <div><span>1</span><br><span>2</span><br></div></div></li>
 <li>
 <p><strong>parallel</strong></p>
-<p>Required path specification of <code>path1</code>, <code>path2</code>, or <code>path3</code></p>
-<p>Optional direction</p>
+<p>必需指定路径方向 <code>path1</code>, <code>path2</code>, 或 <code>path3</code></p>
+<p>可选方向</p>
 <div><pre><code>parallelVar(path1, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode1
 parallelVar(path2, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode2
 parallelVar(path3, <span><span><span>&lt;</span>direction</span><span>></span></span>)->nextNode3
@@ -3630,12 +3630,12 @@ Add another diagram to demo page    :48h</span>
     <title type="html">任务列表</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/tasklist/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/guide/tasklist/"/>
-    <updated>2021-04-25T06:54:27.000Z</updated>
+    <updated>2021-08-25T05:58:44.000Z</updated>
     <summary type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持任务列表。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持任务列表。</p>
 
-<h2 id="configuration"> Configuration</h2>
+<h2 id="配置"> 配置</h2>
 <div><div><br><br><br><br><br><br><div>&nbsp;</div><br><br><br><br><br></div><pre><code>module<span>.</span>exports <span>=</span> <span>{</span>
   plugins<span>:</span> <span>[</span>
     <span>[</span>
