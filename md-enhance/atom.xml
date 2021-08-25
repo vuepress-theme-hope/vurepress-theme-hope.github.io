@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-08-25T06:38:47.111Z</updated>
+  <updated>2021-08-25T07:08:19.733Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/md-enhance/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/md-enhance/"/>
@@ -356,7 +356,7 @@ A custom details container
     <title type="html">Code Demo</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/guide/demo/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/guide/demo/"/>
-    <updated>2021-08-24T09:57:48.000Z</updated>
+    <updated>2021-08-25T06:47:15.000Z</updated>
     <summary type="html"><![CDATA[<p>Let you insert code demos in your Markdown file.</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>Let you insert code demos in your Markdown file.</p>
@@ -542,6 +542,7 @@ export default {
           </div>
           
         </div>
+<details><summary>Code</summary>
 <div><pre><code>::: demo A normal demo
 
 <span><span>```</span><span>html</span>
@@ -563,7 +564,8 @@ export default {
 
 :::
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br></div></div>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br></div></div></details>
+
           <div
             id="code-demo-47932d57"
            
@@ -600,6 +602,7 @@ export default {
           </div>
           
         </div>
+<details><summary>Code</summary>
 <div><pre><code>::: demo [react] A react demo
 
 <span><span>```</span><span>js</span>
@@ -626,7 +629,8 @@ export default {
 
 :::
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br></div></div>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br></div></div></details>
+
           <div
             id="code-demo-449d3c19"
            
@@ -661,6 +665,7 @@ export default {
           </div>
           
         </div>
+<details><summary>Code</summary>
 <div><pre><code>::: demo [vue] A vue demo
 
 <span><span>```</span><span>vue</span>
@@ -683,7 +688,8 @@ export default {
 
 :::
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br></div></div>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br></div></div></details>
+
           <div
             id="code-demo-29c125b4"
            
@@ -718,6 +724,7 @@ document<span>.</span><span>querySelector</span><span>(</span><span>"h1"</span><
           </div>
           
         </div>
+<details><summary>Code</summary>
 <div><pre><code>::: demo A normal demo
 
 <span><span>```</span><span>md</span>
@@ -744,7 +751,8 @@ document<span>.</span><span>querySelector</span><span>(</span><span>"h1"</span><
 
 :::
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br></div></div>]]></content>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br></div></div></details>
+]]></content>
     <author>
       <name>Mr.Hope</name>
     </author>
@@ -2358,7 +2366,7 @@ vuepress-theme-hope v2 仍在制作中，API 可能会有
     <title type="html">代码演示</title>
     <id>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/demo/</id>
     <link href="https://vuepress-theme-hope.github.io/md-enhance/zh/guide/demo/"/>
-    <updated>2021-08-24T09:57:48.000Z</updated>
+    <updated>2021-08-25T06:47:15.000Z</updated>
     <summary type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持代码案例。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持代码案例。</p>
@@ -2544,6 +2552,7 @@ export default {
           </div>
           
         </div>
+<details><summary>代码</summary>
 <div><pre><code>::: demo 一个普通 Demo
 
 <span><span>```</span><span>html</span>
@@ -2565,7 +2574,8 @@ export default {
 
 :::
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br></div></div>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br></div></div></details>
+
           <div
             id="code-demo-3973beae"
            
@@ -2602,6 +2612,7 @@ export default {
           </div>
           
         </div>
+<details><summary>代码</summary>
 <div><pre><code>::: demo [react] 一个 React Demo
 
 <span><span>```</span><span>js</span>
@@ -2628,7 +2639,8 @@ export default {
 
 :::
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br></div></div>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br></div></div></details>
+
           <div
             id="code-demo-08f119be"
            
@@ -2663,6 +2675,7 @@ export default {
           </div>
           
         </div>
+<details><summary>代码</summary>
 <div><pre><code>::: demo [vue] 一个 Vue Demo
 
 <span><span>```</span><span>vue</span>
@@ -2685,7 +2698,8 @@ export default {
 
 :::
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br></div></div>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br></div></div></details>
+
           <div
             id="code-demo-2b9215d0"
            
@@ -2720,6 +2734,7 @@ document<span>.</span><span>querySelector</span><span>(</span><span>"h1"</span><
           </div>
           
         </div>
+<details><summary>代码</summary>
 <div><pre><code>::: demo 一个普通 Demo
 
 <span><span>```</span><span>md</span>
@@ -2746,7 +2761,8 @@ document<span>.</span><span>querySelector</span><span>(</span><span>"h1"</span><
 
 :::
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br></div></div>]]></content>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br></div></div></details>
+]]></content>
     <author>
       <name>Mr.Hope</name>
     </author>
