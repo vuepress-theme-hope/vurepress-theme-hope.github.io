@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/md-enhance/</link>
     <description>Markdown Enhancement for VuePress</description>
     <language>en-US</language>
-    <pubDate>Thu, 26 Aug 2021 06:48:56 GMT</pubDate>
-    <lastBuildDate>Thu, 26 Aug 2021 06:48:56 GMT</lastBuildDate>
+    <pubDate>Thu, 26 Aug 2021 07:46:11 GMT</pubDate>
+    <lastBuildDate>Thu, 26 Aug 2021 07:46:11 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -336,13 +336,284 @@ A custom details container
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br></div></div>]]></content:encoded>
     </item>
     <item>
+      <title>Normal Code Demo</title>
+      <link>https://vuepress-theme-hope.github.io/md-enhance/guide/demo/normal/</link>
+      <guid>https://vuepress-theme-hope.github.io/md-enhance/guide/demo/normal/</guid>
+      <source url="https://vuepress-theme-hope.github.io/md-enhance/rss.xml">Normal Code Demo</source>
+      <pubDate>Thu, 26 Aug 2021 07:29:44 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="syntax"> Syntax</h2>
+<div><pre><code>::: demo Optional title text
+
+<span><span>```</span><span>html</span>
+<span><span>&lt;!-- html code --></span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>js</span>
+<span><span>// js code</span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>css</span>
+<span><span>/* css code */</span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>json</span>
+<span>// config (optional)
+{
+  "jsLib": [
+    ...
+  ],
+  "cssLib":[
+    ...
+  ]
+}</span>
+<span>```</span></span>
+
+::::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br></div></div><div><p>Attention</p>
+<ul>
+<li>We use &quot;ShadowDOM&quot; to make style isolation, and we already replace <code>document</code> with <code>shadowRoot</code>. If you want to access the page document, please visit <code>window.document</code>.</li>
+</ul>
+</div>
+<h2 id="demo"> Demo</h2>
+
+          <div
+            id="code-demo-2e48118e"
+           
+  
+ data-title="Demo"
+
+            data-code="%7B%22html%22%3A%22%3Ch1%3EMr.Hope%3C%2Fh1%3E%5Cn%3Cp%3Eis%20%3Cspan%20id%3D%5C%22very%5C%22%3Every%3C%2Fspan%3E%20handsome%3C%2Fp%3E%5Cn%22%2C%22js%22%3A%22document.querySelector(%5C%22%23very%5C%22).addEventListener(%5C%22click%5C%22%2C%20()%20%3D%3E%20%7B%5Cn%20%20alert(%5C%22Very%20handsome%5C%22)%3B%5Cn%7D)%3B%5Cn%22%2C%22css%22%3A%22span%20%7B%5Cn%20%20color%3A%20red%3B%5Cn%7D%5Cn%22%7D"
+          >
+              
+              <div>
+                <div>
+<div><pre><code><span><span><span>&lt;</span>h1</span><span>></span></span>Mr.Hope<span><span><span>&lt;/</span>h1</span><span>></span></span>
+<span><span><span>&lt;</span>p</span><span>></span></span>is <span><span><span>&lt;</span>span</span> <span>id</span><span><span>=</span><span>"</span>very<span>"</span></span><span>></span></span>very<span><span><span>&lt;/</span>span</span><span>></span></span> handsome<span><span><span>&lt;/</span>p</span><span>></span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><div><pre><code>document<span>.</span><span>querySelector</span><span>(</span><span>"#very"</span><span>)</span><span>.</span><span>addEventListener</span><span>(</span><span>"click"</span><span>,</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
+  <span>alert</span><span>(</span><span>"Very handsome"</span><span>)</span><span>;</span>
+<span>}</span><span>)</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span>span</span> <span>{</span>
+  <span>color</span><span>:</span> red<span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>
+            </div>
+          </div>
+          
+        </div>
+<details><summary>Code</summary>
+<div><pre><code>::: demo Demo
+
+<span><span>```</span><span>html</span>
+<span><span><span><span>&lt;</span>h1</span><span>></span></span>Mr.Hope<span><span><span>&lt;/</span>h1</span><span>></span></span>
+<span><span><span>&lt;</span>p</span><span>></span></span>is <span><span><span>&lt;</span>span</span> <span>id</span><span><span>=</span><span>"</span>very<span>"</span></span><span>></span></span>very<span><span><span>&lt;/</span>span</span><span>></span></span> handsome<span><span><span>&lt;/</span>p</span><span>></span></span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>js</span>
+<span>document<span>.</span><span>querySelector</span><span>(</span><span>"#very"</span><span>)</span><span>.</span><span>addEventListener</span><span>(</span><span>"click"</span><span>,</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
+  <span>alert</span><span>(</span><span>"Very handsome"</span><span>)</span><span>;</span>
+<span>}</span><span>)</span><span>;</span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>css</span>
+<span><span>span</span> <span>{</span>
+  <span>color</span><span>:</span> red<span>;</span>
+<span>}</span></span>
+<span>```</span></span>
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br></div></div></details>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>React Code Demo</title>
+      <link>https://vuepress-theme-hope.github.io/md-enhance/guide/demo/react/</link>
+      <guid>https://vuepress-theme-hope.github.io/md-enhance/guide/demo/react/</guid>
+      <source url="https://vuepress-theme-hope.github.io/md-enhance/rss.xml">React Code Demo</source>
+      <pubDate>Thu, 26 Aug 2021 07:29:44 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="syntax"> Syntax</h2>
+<div><pre><code>::: demo [react] Optional title text
+
+<span><span>```</span><span>js</span>
+<span><span>// your script, exporting your react component through `export default`</span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>css</span>
+<span><span>/* Your css content */</span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>json</span>
+<span>// Config (Optional)</span>
+<span>```</span></span>
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br></div></div><div><p>Attention</p>
+<ul>
+<li>Babel must be loaded when using react to parse JSX, this is done by the plugin automaticaly</li>
+<li>You must export your component through <code>export default</code></li>
+<li>We use &quot;ShadowDOM&quot; to make style isolation, and we already replace <code>document</code> with <code>shadowRoot</code>. If you want to access the page document, please visit <code>window.document</code>.</li>
+</ul>
+</div>
+<h2 id="demo"> Demo</h2>
+
+          <div
+            id="code-demo-6432b9a7"
+           
+  data-type="react"
+ data-title="A%20function-based%20React%20Demo"
+
+            data-code="%7B%22js%22%3A%22export%20default%20()%20%3D%3E%20%7B%5Cn%20%20const%20message%20%3D%20%5C%22very%20handsome%5C%22%3B%5Cn%5Cn%20%20const%20handler%20%3D%20()%20%3D%3E%20%7B%5Cn%20%20%20%20alert(message)%3B%5Cn%20%20%7D%3B%5Cn%5Cn%20%20return%20(%5Cn%20%20%20%20%3Cdiv%20className%3D%5C%22box%5C%22%3E%5Cn%20%20%20%20%20%20Mr.Hope%20is%5Cn%20%20%20%20%20%20%3Cspan%20id%3D%5C%22very%5C%22%20onClick%3D%7Bhandler%7D%3E%5Cn%20%20%20%20%20%20%20%20%7Bmessage%7D%5Cn%20%20%20%20%20%20%3C%2Fspan%3E%5Cn%20%20%20%20%3C%2Fdiv%3E%5Cn%20%20)%3B%5Cn%7D%3B%5Cn%22%2C%22css%22%3A%22.box%20span%20%7B%5Cn%20%20color%3A%20blue%3B%5Cn%7D%5Cn%22%7D"
+          >
+              
+              <div>
+                <div>
+<div><pre><code><span>export</span> <span>default</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
+  <span>const</span> message <span>=</span> <span>"very handsome"</span><span>;</span>
+
+  <span>const</span> <span>handler</span> <span>=</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
+    <span>alert</span><span>(</span>message<span>)</span><span>;</span>
+  <span>}</span><span>;</span>
+
+  <span>return</span> <span>(</span>
+    <span>&lt;</span>div className<span>=</span><span>"box"</span><span>></span>
+      Mr<span>.</span>Hope is
+      <span>&lt;</span>span id<span>=</span><span>"very"</span> onClick<span>=</span><span>{</span>handler<span>}</span><span>></span>
+        <span>{</span>message<span>}</span>
+      <span>&lt;</span><span>/</span>span<span>></span>
+    <span>&lt;</span><span>/</span>div<span>></span>
+  <span>)</span><span>;</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br></div></div><div><pre><code><span>.box span</span> <span>{</span>
+  <span>color</span><span>:</span> blue<span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>
+            </div>
+          </div>
+          
+        </div>
+<details><summary>Code</summary>
+<div><pre><code>::: demo [react] A function-based React Demo
+
+<span><span>```</span><span>js</span>
+<span><span>export</span> <span>default</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
+  <span>const</span> message <span>=</span> <span>"very handsome"</span><span>;</span>
+
+  <span>const</span> <span>handler</span> <span>=</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
+    <span>alert</span><span>(</span>message<span>)</span><span>;</span>
+  <span>}</span><span>;</span>
+
+  <span>return</span> <span>(</span>
+    <span>&lt;</span>div className<span>=</span><span>"box"</span><span>></span>
+      Mr<span>.</span>Hope is
+      <span>&lt;</span>span id<span>=</span><span>"very"</span> onClick<span>=</span><span>{</span>handler<span>}</span><span>></span>
+        <span>{</span>message<span>}</span>
+      <span>&lt;</span><span>/</span>span<span>></span>
+    <span>&lt;</span><span>/</span>div<span>></span>
+  <span>)</span><span>;</span>
+<span>}</span><span>;</span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>css</span>
+<span><span>.box span</span> <span>{</span>
+  <span>color</span><span>:</span> blue<span>;</span>
+<span>}</span></span>
+<span>```</span></span>
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br></div></div></details>
+
+          <div
+            id="code-demo-05eeb169"
+           
+  data-type="react"
+ data-title="A%20class-based%20React%20Demo"
+
+            data-code="%7B%22js%22%3A%22export%20default%20class%20App%20extends%20React.Component%20%7B%5Cn%20%20constructor(props)%20%7B%5Cn%20%20%20%20super(props)%3B%5Cn%20%20%20%20this.state%20%3D%20%7B%20message%3A%20%5C%22very%20handsome%5C%22%20%7D%3B%5Cn%20%20%7D%5Cn%20%20render()%20%7B%5Cn%20%20%20%20return%20(%5Cn%20%20%20%20%20%20%3Cdiv%20className%3D%5C%22box%5C%22%3E%5Cn%20%20%20%20%20%20%20%20Mr.Hope%20is%5Cn%20%20%20%20%20%20%20%20%3Cspan%20id%3D%5C%22very%5C%22%20onClick%3D%7Bthis.handler%7D%3E%5Cn%20%20%20%20%20%20%20%20%20%20%7Bthis.state.message%7D%5Cn%20%20%20%20%20%20%20%20%3C%2Fspan%3E%5Cn%20%20%20%20%20%20%3C%2Fdiv%3E%5Cn%20%20%20%20)%3B%5Cn%20%20%7D%5Cn%20%20handler()%20%7B%5Cn%20%20%20%20alert(this.state.message)%3B%5Cn%20%20%7D%5Cn%7D%5Cn%22%2C%22css%22%3A%22.box%20span%20%7B%5Cn%20%20color%3A%20blue%3B%5Cn%7D%5Cn%22%7D"
+          >
+              
+              <div>
+                <div>
+<div><pre><code><span>export</span> <span>default</span> <span>class</span> <span>App</span> <span>extends</span> <span>React<span>.</span>Component</span> <span>{</span>
+  <span>constructor</span><span>(</span><span>props</span><span>)</span> <span>{</span>
+    <span>super</span><span>(</span>props<span>)</span><span>;</span>
+    <span>this</span><span>.</span>state <span>=</span> <span>{</span> message<span>:</span> <span>"very handsome"</span> <span>}</span><span>;</span>
+  <span>}</span>
+  <span>render</span><span>(</span><span>)</span> <span>{</span>
+    <span>return</span> <span>(</span>
+      <span>&lt;</span>div className<span>=</span><span>"box"</span><span>></span>
+        Mr<span>.</span>Hope is
+        <span>&lt;</span>span id<span>=</span><span>"very"</span> onClick<span>=</span><span>{</span><span>this</span><span>.</span>handler<span>}</span><span>></span>
+          <span>{</span><span>this</span><span>.</span>state<span>.</span>message<span>}</span>
+        <span>&lt;</span><span>/</span>span<span>></span>
+      <span>&lt;</span><span>/</span>div<span>></span>
+    <span>)</span><span>;</span>
+  <span>}</span>
+  <span>handler</span><span>(</span><span>)</span> <span>{</span>
+    <span>alert</span><span>(</span><span>this</span><span>.</span>state<span>.</span>message<span>)</span><span>;</span>
+  <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br></div></div><div><pre><code><span>.box span</span> <span>{</span>
+  <span>color</span><span>:</span> blue<span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>
+            </div>
+          </div>
+          
+        </div>
+<details><summary>Code</summary>
+<div><pre><code>::: demo [react] A class-based React Demo
+
+<span><span>```</span><span>js</span>
+<span><span>export</span> <span>default</span> <span>class</span> <span>App</span> <span>extends</span> <span>React<span>.</span>Component</span> <span>{</span>
+  <span>constructor</span><span>(</span><span>props</span><span>)</span> <span>{</span>
+    <span>super</span><span>(</span>props<span>)</span><span>;</span>
+    <span>this</span><span>.</span>state <span>=</span> <span>{</span> message<span>:</span> <span>"very handsome"</span> <span>}</span><span>;</span>
+  <span>}</span>
+  <span>render</span><span>(</span><span>)</span> <span>{</span>
+    <span>return</span> <span>(</span>
+      <span>&lt;</span>div className<span>=</span><span>"box"</span><span>></span>
+        Mr<span>.</span>Hope is
+        <span>&lt;</span>span id<span>=</span><span>"very"</span> onClick<span>=</span><span>{</span><span>this</span><span>.</span>handler<span>}</span><span>></span>
+          <span>{</span><span>this</span><span>.</span>state<span>.</span>message<span>}</span>
+        <span>&lt;</span><span>/</span>span<span>></span>
+      <span>&lt;</span><span>/</span>div<span>></span>
+    <span>)</span><span>;</span>
+  <span>}</span>
+  <span>handler</span><span>(</span><span>)</span> <span>{</span>
+    <span>alert</span><span>(</span><span>this</span><span>.</span>state<span>.</span>message<span>)</span><span>;</span>
+  <span>}</span>
+<span>}</span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>css</span>
+<span><span>.box span</span> <span>{</span>
+  <span>color</span><span>:</span> blue<span>;</span>
+<span>}</span></span>
+<span>```</span></span>
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br></div></div></details>
+]]></content:encoded>
+    </item>
+    <item>
       <title>Code Demo</title>
       <link>https://vuepress-theme-hope.github.io/md-enhance/guide/demo/</link>
       <guid>https://vuepress-theme-hope.github.io/md-enhance/guide/demo/</guid>
       <source url="https://vuepress-theme-hope.github.io/md-enhance/rss.xml">Code Demo</source>
       <description>&amp;lt;p&amp;gt;Let you insert code demos in your Markdown file.&amp;lt;/p&amp;gt;
 </description>
-      <pubDate>Tue, 17 Nov 2020 09:58:20 GMT</pubDate>
+      <pubDate>Thu, 26 Aug 2021 07:29:44 GMT</pubDate>
       <content:encoded><![CDATA[<p>Let you insert code demos in your Markdown file.</p>
 
 <h2 id="configuration"> Configuration</h2>
@@ -377,7 +648,7 @@ A custom details container
 :::
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br></div></div><div><p>Tips</p>
-<p>The json block is optional, for config please see <a href="./../config.html#demo">config</a>.</p>
+<p>The json block is optional, for config please see <a href="./../../config.html#demo">config</a>.</p>
 </div>
 <p>The plugin support three types:</p>
 <ul>
@@ -385,82 +656,7 @@ A custom details container
 <li>vue</li>
 <li>react</li>
 </ul>
-<h3 id="normal"> Normal</h3>
-<p>Syntax:</p>
-<div><pre><code>::: demo Optional title text
-
-<span><span>```</span><span>html</span>
-<span><span>&lt;!-- html code --></span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>js</span>
-<span><span>// js code</span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>css</span>
-<span><span>/* css code */</span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>json</span>
-<span>// config (optional)
-{
-  "jsLib": [
-    ...
-  ],
-  "cssLib":[
-    ...
-  ]
-}</span>
-<span>```</span></span>
-
-::::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br></div></div><h3 id="vue"> Vue</h3>
-<p>Syntax:</p>
-<div><pre><code>::: demo [vue] Optional title text
-
-<span><span>```</span><span>vue</span>
-<span>&lt;!-- ↑ you can also use html-->
-&lt;template>
-  &lt;!-- vue template -->
-&lt;/template>
-&lt;script>
-export default {
-  // vue component
-};
-&lt;/script>
-&lt;style>
-/* style */
-&lt;/style></span>
-<span>```</span></span>
-
-<span><span>```</span><span>json</span>
-<span>// config (optional)</span>
-<span>```</span></span>
-
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br></div></div><h3 id="react"> React</h3>
-<p>Syntax:</p>
-<div><pre><code>::: demo [react] Optional title text
-
-<span><span>```</span><span>js</span>
-<span><span>export</span> <span>default</span> <span>class</span> <span>App</span> <span>extends</span> <span>React<span>.</span>Component</span> <span>{</span>
-  <span>// your react component</span>
-<span>}</span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>css</span>
-<span><span>/* your css content */</span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>json</span>
-<span>// config (optional)</span>
-<span>```</span></span>
-
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br></div></div><h3 id="available-languages"> Available languages</h3>
+<h2 id="available-languages"> Available languages</h2>
 <p>You can use different language in your demo block.</p>
 <p>When you set language which can not run on browers, since the plugin is not able to resolve them, so demo display will be disabled. The plugin will only show the code and provide you a button to open it in CodePen.</p>
 <p>Available HTML languages:</p>
@@ -495,184 +691,13 @@ export default {
 <blockquote>
 <p>You can also use <code>styl</code> in code block.</p>
 </blockquote>
-<h2 id="demo"> Demo</h2>
-
-          <div
-            id="code-demo-688e9568"
-           
-  
- data-title="A%20normal%20demo"
-
-            data-code="%7B%22html%22%3A%22%3Ch1%3EMr.Hope%3C%2Fh1%3E%5Cn%3Cp%3EIs%20%3Cspan%20id%3D%5C%22very%5C%22%3Every%3C%2Fspan%3E%20handsome%3C%2Fp%3E%5Cn%22%2C%22js%22%3A%22document.querySelector(%5C%22%23very%5C%22).addEventListener(%5C%22click%5C%22%2C%20()%20%3D%3E%20%7B%5Cn%20%20alert(%5C%22Very%20handsome!%5C%22)%3B%5Cn%7D)%3B%5Cn%22%2C%22css%22%3A%22span%20%7B%5Cn%20%20color%3A%20red%3B%5Cn%7D%5Cn%22%7D"
-          >
-              
-              <div>
-                <div>
-<div><pre><code><span><span><span>&lt;</span>h1</span><span>></span></span>Mr.Hope<span><span><span>&lt;/</span>h1</span><span>></span></span>
-<span><span><span>&lt;</span>p</span><span>></span></span>Is <span><span><span>&lt;</span>span</span> <span>id</span><span><span>=</span><span>"</span>very<span>"</span></span><span>></span></span>very<span><span><span>&lt;/</span>span</span><span>></span></span> handsome<span><span><span>&lt;/</span>p</span><span>></span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><div><pre><code>document<span>.</span><span>querySelector</span><span>(</span><span>"#very"</span><span>)</span><span>.</span><span>addEventListener</span><span>(</span><span>"click"</span><span>,</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
-  <span>alert</span><span>(</span><span>"Very handsome!"</span><span>)</span><span>;</span>
-<span>}</span><span>)</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span>span</span> <span>{</span>
-  <span>color</span><span>:</span> red<span>;</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>
-            </div>
-          </div>
-          
-        </div>
-<details><summary>Code</summary>
-<div><pre><code>::: demo A normal demo
-
-<span><span>```</span><span>html</span>
-<span><span><span><span>&lt;</span>h1</span><span>></span></span>Mr.Hope<span><span><span>&lt;/</span>h1</span><span>></span></span>
-<span><span><span>&lt;</span>p</span><span>></span></span>Is <span><span><span>&lt;</span>span</span> <span>id</span><span><span>=</span><span>"</span>very<span>"</span></span><span>></span></span>very<span><span><span>&lt;/</span>span</span><span>></span></span> handsome<span><span><span>&lt;/</span>p</span><span>></span></span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>js</span>
-<span>document<span>.</span><span>querySelector</span><span>(</span><span>"#very"</span><span>)</span><span>.</span><span>addEventListener</span><span>(</span><span>"click"</span><span>,</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
-  <span>alert</span><span>(</span><span>"Very handsome!"</span><span>)</span><span>;</span>
-<span>}</span><span>)</span><span>;</span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>css</span>
-<span><span>span</span> <span>{</span>
-  <span>color</span><span>:</span> red<span>;</span>
-<span>}</span></span>
-<span>```</span></span>
-
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br></div></div></details>
-
-          <div
-            id="code-demo-4ead1181"
-           
-  data-type="react"
- data-title="A%20react%20demo"
-
-            data-code="%7B%22js%22%3A%22export%20default%20class%20App%20extends%20React.Component%20%7B%5Cn%20%20constructor(props)%20%7B%5Cn%20%20%20%20super(props)%3B%5Cn%20%20%20%20this.state%20%3D%20%7B%20message%3A%20%5C%22very%20handsome%5C%22%20%7D%3B%5Cn%20%20%7D%5Cn%20%20render()%20%7B%5Cn%20%20%20%20return%20(%5Cn%20%20%20%20%20%20%3Cdiv%20className%3D%5C%22box-react%5C%22%3E%5Cn%20%20%20%20%20%20%20%20Mr.Hope%20is%20%3Cspan%3E%7Bthis.state.message%7D%3C%2Fspan%3E%5Cn%20%20%20%20%20%20%3C%2Fdiv%3E%5Cn%20%20%20%20)%3B%5Cn%20%20%7D%5Cn%7D%5Cn%22%2C%22css%22%3A%22.box-react%20span%20%7B%5Cn%20%20color%3A%20red%3B%5Cn%7D%5Cn%22%7D"
-          >
-              
-              <div>
-                <div>
-<div><pre><code><span>export</span> <span>default</span> <span>class</span> <span>App</span> <span>extends</span> <span>React<span>.</span>Component</span> <span>{</span>
-  <span>constructor</span><span>(</span><span>props</span><span>)</span> <span>{</span>
-    <span>super</span><span>(</span>props<span>)</span><span>;</span>
-    <span>this</span><span>.</span>state <span>=</span> <span>{</span> message<span>:</span> <span>"very handsome"</span> <span>}</span><span>;</span>
-  <span>}</span>
-  <span>render</span><span>(</span><span>)</span> <span>{</span>
-    <span>return</span> <span>(</span>
-      <span>&lt;</span>div className<span>=</span><span>"box-react"</span><span>></span>
-        Mr<span>.</span>Hope is <span>&lt;</span>span<span>></span><span>{</span><span>this</span><span>.</span>state<span>.</span>message<span>}</span><span>&lt;</span><span>/</span>span<span>></span>
-      <span>&lt;</span><span>/</span>div<span>></span>
-    <span>)</span><span>;</span>
-  <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><div><pre><code><span>.box-react span</span> <span>{</span>
-  <span>color</span><span>:</span> red<span>;</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>
-            </div>
-          </div>
-          
-        </div>
-<details><summary>Code</summary>
-<div><pre><code>::: demo [react] A react demo
-
-<span><span>```</span><span>js</span>
-<span><span>export</span> <span>default</span> <span>class</span> <span>App</span> <span>extends</span> <span>React<span>.</span>Component</span> <span>{</span>
-  <span>constructor</span><span>(</span><span>props</span><span>)</span> <span>{</span>
-    <span>super</span><span>(</span>props<span>)</span><span>;</span>
-    <span>this</span><span>.</span>state <span>=</span> <span>{</span> message<span>:</span> <span>"very handsome"</span> <span>}</span><span>;</span>
-  <span>}</span>
-  <span>render</span><span>(</span><span>)</span> <span>{</span>
-    <span>return</span> <span>(</span>
-      <span>&lt;</span>div className<span>=</span><span>"box-react"</span><span>></span>
-        Mr<span>.</span>Hope is <span>&lt;</span>span<span>></span><span>{</span><span>this</span><span>.</span>state<span>.</span>message<span>}</span><span>&lt;</span><span>/</span>span<span>></span>
-      <span>&lt;</span><span>/</span>div<span>></span>
-    <span>)</span><span>;</span>
-  <span>}</span>
-<span>}</span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>css</span>
-<span><span>.box-react span</span> <span>{</span>
-  <span>color</span><span>:</span> red<span>;</span>
-<span>}</span></span>
-<span>```</span></span>
-
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br></div></div></details>
-
-          <div
-            id="code-demo-83377c80"
-           
-  data-type="vue"
- data-title="A%20vue%20demo"
-
-            data-code="%7B%22vue%22%3A%22%3Ctemplate%3E%5Cn%20%20%3Cdiv%20class%3D%5C%22box-vue%5C%22%3E%5Cn%20%20%20%20Mr.Hope%20is%20%3Cspan%3E%7B%7B%20message%20%7D%7D%3C%2Fspan%3E%5Cn%20%20%3C%2Fdiv%3E%5Cn%3C%2Ftemplate%3E%5Cn%3Cscript%3E%5Cnexport%20default%20%7B%5Cn%20%20data%3A%20()%20%3D%3E%20(%7B%20message%3A%20%5C%22very%20handsome%5C%22%20%7D)%2C%5Cn%7D%3B%5Cn%3C%2Fscript%3E%5Cn%3Cstyle%3E%5Cn.box-vue%20span%20%7B%5Cn%20%20color%3A%20red%3B%5Cn%7D%5Cn%3C%2Fstyle%3E%5Cn%22%7D"
-          >
-              
-              <div>
-                <div>
-<div><pre><code><span><span><span>&lt;</span>template</span><span>></span></span>
-  <span><span><span>&lt;</span>div</span> <span>class</span><span><span>=</span><span>"</span>box-vue<span>"</span></span><span>></span></span>
-    Mr.Hope is <span><span><span>&lt;</span>span</span><span>></span></span>{{ message }}<span><span><span>&lt;/</span>span</span><span>></span></span>
-  <span><span><span>&lt;/</span>div</span><span>></span></span>
-<span><span><span>&lt;/</span>template</span><span>></span></span>
-<span><span><span>&lt;</span>script</span><span>></span></span><span><span>
-<span>export</span> <span>default</span> <span>{</span>
-  <span>data</span><span>:</span> <span>(</span><span>)</span> <span>=></span> <span>(</span><span>{</span> message<span>:</span> <span>"very handsome"</span> <span>}</span><span>)</span><span>,</span>
-<span>}</span><span>;</span>
-</span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
-<span><span><span>&lt;</span>style</span><span>></span></span><span><span>
-<span>.box-vue span</span> <span>{</span>
-  <span>color</span><span>:</span> red<span>;</span>
-<span>}</span>
-</span></span><span><span><span>&lt;/</span>style</span><span>></span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br></div></div>
-            </div>
-          </div>
-          
-        </div>
-<details><summary>Code</summary>
-<div><pre><code>::: demo [vue] A vue demo
-
-<span><span>```</span><span>vue</span>
-<span>&lt;template>
-  &lt;div>
-    Mr.Hope is &lt;span>{{ message }}&lt;/span>
-  &lt;/div>
-&lt;/template>
-&lt;script>
-export default {
-  data: () => ({ message: "very handsome" }),
-};
-&lt;/script>
-&lt;style>
-.box-vue span {
-  color: red;
-}
-&lt;/style></span>
-<span>```</span></span>
-
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br></div></div></details>
+<h3 id="not-supported-language-demo"> Not supported language demo</h3>
 
           <div
             id="code-demo-2b1f2266"
            
   
- data-title="A%20normal%20demo"
+ data-title="A%20demo%20using%20language%20not%20supoprted%20by%20browsers"
 
             data-code="%7B%22md%22%3A%22%23%20Title%5Cn%5Cnis%20very%20handsome.%5Cn%22%2C%22ts%22%3A%22const%20message%3A%20string%20%3D%20%5C%22Mr.Hope%5C%22%3B%5Cn%5Cndocument.querySelector(%5C%22h1%5C%22).innerHTML%20%3D%20message%3B%5Cn%22%2C%22scss%22%3A%22h1%20%7B%5Cn%20%20font-style%3A%20italic%3B%5Cn%5Cn%20%20%2B%20p%20%7B%5Cn%20%20%20%20color%3A%20red%3B%5Cn%20%20%7D%5Cn%7D%5Cn%22%7D"
           >
@@ -728,6 +753,113 @@ document<span>.</span><span>querySelector</span><span>(</span><span>"h1"</span><
 :::
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br></div></div></details>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Vue Code Demo</title>
+      <link>https://vuepress-theme-hope.github.io/md-enhance/guide/demo/vue/</link>
+      <guid>https://vuepress-theme-hope.github.io/md-enhance/guide/demo/vue/</guid>
+      <source url="https://vuepress-theme-hope.github.io/md-enhance/rss.xml">Vue Code Demo</source>
+      <pubDate>Thu, 26 Aug 2021 07:29:44 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="syntax"> Syntax</h2>
+<div><pre><code>::: demo [vue] Optional title text
+
+<span><span>```</span><span>vue</span>
+<span>&lt;!-- ↑ You can also use `html` -->
+&lt;template>
+  &lt;!-- vue template -->
+&lt;/template>
+&lt;script>
+export default {
+  // vue component
+};
+&lt;/script>
+&lt;style>
+/* css code */
+&lt;/style></span>
+<span>```</span></span>
+
+<span><span>```</span><span>json</span>
+<span>// Config (Optional)</span>
+<span>```</span></span>
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br></div></div><div><p>Attention</p>
+<ul>
+<li>We only support Vue2</li>
+<li>You must export your component through <code>export default</code></li>
+<li>We use &quot;ShadowDOM&quot; to make style isolation, and we already replace <code>document</code> with <code>shadowRoot</code>. If you want to access the page document, please visit <code>window.document</code>.</li>
+</ul>
+</div>
+<h2 id="demo"> Demo</h2>
+
+          <div
+            id="code-demo-7fdac139"
+           
+  data-type="vue"
+ data-title="A%20Vue%20Demo"
+
+            data-code="%7B%22vue%22%3A%22%3Ctemplate%3E%5Cn%20%20%3Cdiv%20class%3D%5C%22box%5C%22%3E%5Cn%20%20%20%20Mr.Hope%20is%20%3Cspan%20%40click%3D%5C%22handler%5C%22%3E%7B%7B%20message%20%7D%7D%3C%2Fspan%3E%5Cn%20%20%3C%2Fdiv%3E%5Cn%3C%2Ftemplate%3E%5Cn%3Cscript%3E%5Cnexport%20default%20%7B%5Cn%20%20data%3A%20()%20%3D%3E%20(%7B%20message%3A%20%5C%22very%20handsome%5C%22%20%7D)%2C%5Cn%20%20methods%3A%20%7B%5Cn%20%20%20%20handler()%20%7B%5Cn%20%20%20%20%20%20alert(this.message)%3B%5Cn%20%20%20%20%7D%2C%5Cn%20%20%7D%2C%5Cn%7D%3B%5Cn%3C%2Fscript%3E%5Cn%3Cstyle%3E%5Cn.box%20span%20%7B%5Cn%20%20color%3A%20red%3B%5Cn%7D%5Cn%3C%2Fstyle%3E%5Cn%22%7D"
+          >
+              
+              <div>
+                <div>
+<div><pre><code><span><span><span>&lt;</span>template</span><span>></span></span>
+  <span><span><span>&lt;</span>div</span> <span>class</span><span><span>=</span><span>"</span>box<span>"</span></span><span>></span></span>
+    Mr.Hope is <span><span><span>&lt;</span>span</span> <span>@click</span><span><span>=</span><span>"</span>handler<span>"</span></span><span>></span></span>{{ message }}<span><span><span>&lt;/</span>span</span><span>></span></span>
+  <span><span><span>&lt;/</span>div</span><span>></span></span>
+<span><span><span>&lt;/</span>template</span><span>></span></span>
+<span><span><span>&lt;</span>script</span><span>></span></span><span><span>
+<span>export</span> <span>default</span> <span>{</span>
+  <span>data</span><span>:</span> <span>(</span><span>)</span> <span>=></span> <span>(</span><span>{</span> message<span>:</span> <span>"very handsome"</span> <span>}</span><span>)</span><span>,</span>
+  methods<span>:</span> <span>{</span>
+    <span>handler</span><span>(</span><span>)</span> <span>{</span>
+      <span>alert</span><span>(</span><span>this</span><span>.</span>message<span>)</span><span>;</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
+<span><span><span>&lt;</span>style</span><span>></span></span><span><span>
+<span>.box span</span> <span>{</span>
+  <span>color</span><span>:</span> red<span>;</span>
+<span>}</span>
+</span></span><span><span><span>&lt;/</span>style</span><span>></span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br></div></div>
+            </div>
+          </div>
+          
+        </div>
+<details><summary>Code</summary>
+<div><pre><code>::: demo [vue] A Vue Demo
+
+<span><span>```</span><span>vue</span>
+<span>&lt;template>
+  &lt;div>
+    Mr.Hope is &lt;span @click="handler">{{ message }}&lt;/span>
+  &lt;/div>
+&lt;/template>
+&lt;script>
+export default {
+  data: () => ({ message: "very handsome" }),
+  methods: {
+    handler() {
+      alert(this.message);
+    },
+  },
+};
+&lt;/script>
+&lt;style>
+.box span {
+  color: red;
+}
+&lt;/style></span>
+<span>```</span></span>
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br></div></div></details>
 ]]></content:encoded>
     </item>
     <item>
@@ -1484,7 +1616,7 @@ Add another diagram to demo page    :48h</span>
           
         </div>
 <ul>
-<li><a href="./demo.html">View Detail</a></li>
+<li><a href="./demo/">View Detail</a></li>
 </ul>
 <h3 id="presentation"> Presentation</h3>
 <i>Not supported content</i><ul>
@@ -2232,13 +2364,284 @@ vuepress-theme-hope v2 仍在制作中，API 可能会有
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br></div></div>]]></content:encoded>
     </item>
     <item>
+      <title>普通代码演示</title>
+      <link>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/demo/normal/</link>
+      <guid>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/demo/normal/</guid>
+      <source url="https://vuepress-theme-hope.github.io/md-enhance/rss.xml">普通代码演示</source>
+      <pubDate>Thu, 26 Aug 2021 07:29:44 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="格式"> 格式</h2>
+<div><pre><code>::: demo 可选的标题文字
+
+<span><span>```</span><span>html</span>
+<span><span>&lt;!-- html code --></span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>js</span>
+<span><span>// js code</span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>css</span>
+<span><span>/* css code */</span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>json</span>
+<span>// 配置 (可选)
+{
+  "jsLib": [
+    ...
+  ],
+  "cssLib":[
+    ...
+  ]
+}</span>
+<span>```</span></span>
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br></div></div><div><p>注意事项</p>
+<ul>
+<li>我们使用 &quot;ShadowDOM&quot; 进行样式隔离，并已经将 <code>document</code> 替换为了 <code>shadowRoot</code> 对象。如果需要访问页面的 document，请访问 <code>window.document</code>。</li>
+</ul>
+</div>
+<h2 id="案例"> 案例</h2>
+
+          <div
+            id="code-demo-5ac6bc9f"
+           
+  
+ data-title="Demo%20%E6%BC%94%E7%A4%BA"
+
+            data-code="%7B%22html%22%3A%22%3Ch1%3EMr.Hope%3C%2Fh1%3E%5Cn%3Cp%3E%3Cspan%20id%3D%5C%22very%5C%22%3E%E5%8D%81%E5%88%86%3C%2Fspan%3E%20%E5%B8%85%3C%2Fp%3E%5Cn%22%2C%22js%22%3A%22document.querySelector(%5C%22%23very%5C%22).addEventListener(%5C%22click%5C%22%2C%20()%20%3D%3E%20%7B%5Cn%20%20alert(%5C%22%E5%8D%81%E5%88%86%E5%B8%85%5C%22)%3B%5Cn%7D)%3B%5Cn%22%2C%22css%22%3A%22span%20%7B%5Cn%20%20color%3A%20red%3B%5Cn%7D%5Cn%22%7D"
+          >
+              
+              <div>
+                <div>
+<div><pre><code><span><span><span>&lt;</span>h1</span><span>></span></span>Mr.Hope<span><span><span>&lt;/</span>h1</span><span>></span></span>
+<span><span><span>&lt;</span>p</span><span>></span></span><span><span><span>&lt;</span>span</span> <span>id</span><span><span>=</span><span>"</span>very<span>"</span></span><span>></span></span>十分<span><span><span>&lt;/</span>span</span><span>></span></span> 帅<span><span><span>&lt;/</span>p</span><span>></span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><div><pre><code>document<span>.</span><span>querySelector</span><span>(</span><span>"#very"</span><span>)</span><span>.</span><span>addEventListener</span><span>(</span><span>"click"</span><span>,</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
+  <span>alert</span><span>(</span><span>"十分帅"</span><span>)</span><span>;</span>
+<span>}</span><span>)</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span>span</span> <span>{</span>
+  <span>color</span><span>:</span> red<span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>
+            </div>
+          </div>
+          
+        </div>
+<details><summary>代码</summary>
+<div><pre><code>::: demo Demo 演示
+
+<span><span>```</span><span>html</span>
+<span><span><span><span>&lt;</span>h1</span><span>></span></span>Mr.Hope<span><span><span>&lt;/</span>h1</span><span>></span></span>
+<span><span><span>&lt;</span>p</span><span>></span></span><span><span><span>&lt;</span>span</span> <span>id</span><span><span>=</span><span>"</span>very<span>"</span></span><span>></span></span>十分<span><span><span>&lt;/</span>span</span><span>></span></span> 帅<span><span><span>&lt;/</span>p</span><span>></span></span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>js</span>
+<span>document<span>.</span><span>querySelector</span><span>(</span><span>"#very"</span><span>)</span><span>.</span><span>addEventListener</span><span>(</span><span>"click"</span><span>,</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
+  <span>alert</span><span>(</span><span>"十分帅"</span><span>)</span><span>;</span>
+<span>}</span><span>)</span><span>;</span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>css</span>
+<span><span>span</span> <span>{</span>
+  <span>color</span><span>:</span> red<span>;</span>
+<span>}</span></span>
+<span>```</span></span>
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br></div></div></details>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>React 代码演示</title>
+      <link>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/demo/react/</link>
+      <guid>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/demo/react/</guid>
+      <source url="https://vuepress-theme-hope.github.io/md-enhance/rss.xml">React 代码演示</source>
+      <pubDate>Thu, 26 Aug 2021 07:29:44 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="格式"> 格式</h2>
+<div><pre><code>::: demo [react] 可选的标题文字
+
+<span><span>```</span><span>js</span>
+<span><span>// 放置脚本，并通过 `export default` 导出你的 react 组件</span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>css</span>
+<span><span>/* 你的 css 内容 */</span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>json</span>
+<span>// 配置 (可选)</span>
+<span>```</span></span>
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br></div></div><div><p>注意事项</p>
+<ul>
+<li>使用 React 的时候，为了解析 JSX 必须引入 Babel，此过程由插件自动完成。</li>
+<li>必须将组件通过 <code>export default</code> 默认导出</li>
+<li>我们使用 &quot;ShadowDOM&quot; 进行样式隔离，并已经将 <code>document</code> 替换为了 <code>shadowRoot</code> 对象。如果需要访问页面的 document，请访问 <code>window.document</code>。</li>
+</ul>
+</div>
+<h2 id="演示"> 演示</h2>
+
+          <div
+            id="code-demo-0efcc83d"
+           
+  data-type="react"
+ data-title="%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E5%BC%8F%20React%20Demo"
+
+            data-code="%7B%22js%22%3A%22export%20default%20()%20%3D%3E%20%7B%5Cn%20%20const%20message%20%3D%20%5C%22%E5%8D%81%E5%88%86%E5%B8%85%5C%22%3B%5Cn%5Cn%20%20const%20handler%20%3D%20()%20%3D%3E%20%7B%5Cn%20%20%20%20alert(message)%3B%5Cn%20%20%7D%3B%5Cn%5Cn%20%20return%20(%5Cn%20%20%20%20%3Cdiv%20className%3D%5C%22box%5C%22%3E%5Cn%20%20%20%20%20%20Mr.Hope%5Cn%20%20%20%20%20%20%3Cspan%20id%3D%5C%22very%5C%22%20onClick%3D%7Bhandler%7D%3E%5Cn%20%20%20%20%20%20%20%20%7Bmessage%7D%5Cn%20%20%20%20%20%20%3C%2Fspan%3E%5Cn%20%20%20%20%3C%2Fdiv%3E%5Cn%20%20)%3B%5Cn%7D%3B%5Cn%22%2C%22css%22%3A%22.box%20span%20%7B%5Cn%20%20color%3A%20blue%3B%5Cn%7D%5Cn%22%7D"
+          >
+              
+              <div>
+                <div>
+<div><pre><code><span>export</span> <span>default</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
+  <span>const</span> message <span>=</span> <span>"十分帅"</span><span>;</span>
+
+  <span>const</span> <span>handler</span> <span>=</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
+    <span>alert</span><span>(</span>message<span>)</span><span>;</span>
+  <span>}</span><span>;</span>
+
+  <span>return</span> <span>(</span>
+    <span>&lt;</span>div className<span>=</span><span>"box"</span><span>></span>
+      Mr<span>.</span>Hope
+      <span>&lt;</span>span id<span>=</span><span>"very"</span> onClick<span>=</span><span>{</span>handler<span>}</span><span>></span>
+        <span>{</span>message<span>}</span>
+      <span>&lt;</span><span>/</span>span<span>></span>
+    <span>&lt;</span><span>/</span>div<span>></span>
+  <span>)</span><span>;</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br></div></div><div><pre><code><span>.box span</span> <span>{</span>
+  <span>color</span><span>:</span> blue<span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>
+            </div>
+          </div>
+          
+        </div>
+<details><summary>代码</summary>
+<div><pre><code>::: demo [react] 一个函数式 React Demo
+
+<span><span>```</span><span>js</span>
+<span><span>export</span> <span>default</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
+  <span>const</span> message <span>=</span> <span>"十分帅"</span><span>;</span>
+
+  <span>const</span> <span>handler</span> <span>=</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
+    <span>alert</span><span>(</span>message<span>)</span><span>;</span>
+  <span>}</span><span>;</span>
+
+  <span>return</span> <span>(</span>
+    <span>&lt;</span>div className<span>=</span><span>"box"</span><span>></span>
+      Mr<span>.</span>Hope
+      <span>&lt;</span>span id<span>=</span><span>"very"</span> onClick<span>=</span><span>{</span>handler<span>}</span><span>></span>
+        <span>{</span>message<span>}</span>
+      <span>&lt;</span><span>/</span>span<span>></span>
+    <span>&lt;</span><span>/</span>div<span>></span>
+  <span>)</span><span>;</span>
+<span>}</span><span>;</span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>css</span>
+<span><span>.box span</span> <span>{</span>
+  <span>color</span><span>:</span> blue<span>;</span>
+<span>}</span></span>
+<span>```</span></span>
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br></div></div></details>
+
+          <div
+            id="code-demo-89dfad82"
+           
+  data-type="react"
+ data-title="%E4%B8%80%E4%B8%AA%E7%B1%BB%E5%BC%8F%20React%20Demo"
+
+            data-code="%7B%22js%22%3A%22export%20default%20class%20App%20extends%20React.Component%20%7B%5Cn%20%20constructor(props)%20%7B%5Cn%20%20%20%20super(props)%3B%5Cn%20%20%20%20this.state%20%3D%20%7B%20message%3A%20%5C%22%E5%8D%81%E5%88%86%E5%B8%85%5C%22%20%7D%3B%5Cn%20%20%7D%5Cn%20%20render()%20%7B%5Cn%20%20%20%20return%20(%5Cn%20%20%20%20%20%20%3Cdiv%20className%3D%5C%22box%5C%22%3E%5Cn%20%20%20%20%20%20%20%20Mr.Hope%5Cn%20%20%20%20%20%20%20%20%3Cspan%20id%3D%5C%22very%5C%22%20onClick%3D%7Bthis.handler%7D%3E%5Cn%20%20%20%20%20%20%20%20%20%20%7Bthis.state.message%7D%5Cn%20%20%20%20%20%20%20%20%3C%2Fspan%3E%5Cn%20%20%20%20%20%20%3C%2Fdiv%3E%5Cn%20%20%20%20)%3B%5Cn%20%20%7D%5Cn%20%20handler()%20%7B%5Cn%20%20%20%20alert(this.state.message)%3B%5Cn%20%20%7D%5Cn%7D%5Cn%22%2C%22css%22%3A%22.box%20span%20%7B%5Cn%20%20color%3A%20blue%3B%5Cn%7D%5Cn%22%7D"
+          >
+              
+              <div>
+                <div>
+<div><pre><code><span>export</span> <span>default</span> <span>class</span> <span>App</span> <span>extends</span> <span>React<span>.</span>Component</span> <span>{</span>
+  <span>constructor</span><span>(</span><span>props</span><span>)</span> <span>{</span>
+    <span>super</span><span>(</span>props<span>)</span><span>;</span>
+    <span>this</span><span>.</span>state <span>=</span> <span>{</span> message<span>:</span> <span>"十分帅"</span> <span>}</span><span>;</span>
+  <span>}</span>
+  <span>render</span><span>(</span><span>)</span> <span>{</span>
+    <span>return</span> <span>(</span>
+      <span>&lt;</span>div className<span>=</span><span>"box"</span><span>></span>
+        Mr<span>.</span>Hope
+        <span>&lt;</span>span id<span>=</span><span>"very"</span> onClick<span>=</span><span>{</span><span>this</span><span>.</span>handler<span>}</span><span>></span>
+          <span>{</span><span>this</span><span>.</span>state<span>.</span>message<span>}</span>
+        <span>&lt;</span><span>/</span>span<span>></span>
+      <span>&lt;</span><span>/</span>div<span>></span>
+    <span>)</span><span>;</span>
+  <span>}</span>
+  <span>handler</span><span>(</span><span>)</span> <span>{</span>
+    <span>alert</span><span>(</span><span>this</span><span>.</span>state<span>.</span>message<span>)</span><span>;</span>
+  <span>}</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br></div></div><div><pre><code><span>.box span</span> <span>{</span>
+  <span>color</span><span>:</span> blue<span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>
+            </div>
+          </div>
+          
+        </div>
+<details><summary>代码</summary>
+<div><pre><code>::: demo [react] 一个类式 React Demo
+
+<span><span>```</span><span>js</span>
+<span><span>export</span> <span>default</span> <span>class</span> <span>App</span> <span>extends</span> <span>React<span>.</span>Component</span> <span>{</span>
+  <span>constructor</span><span>(</span><span>props</span><span>)</span> <span>{</span>
+    <span>super</span><span>(</span>props<span>)</span><span>;</span>
+    <span>this</span><span>.</span>state <span>=</span> <span>{</span> message<span>:</span> <span>"十分帅"</span> <span>}</span><span>;</span>
+  <span>}</span>
+  <span>render</span><span>(</span><span>)</span> <span>{</span>
+    <span>return</span> <span>(</span>
+      <span>&lt;</span>div className<span>=</span><span>"box"</span><span>></span>
+        Mr<span>.</span>Hope
+        <span>&lt;</span>span id<span>=</span><span>"very"</span> onClick<span>=</span><span>{</span><span>this</span><span>.</span>handler<span>}</span><span>></span>
+          <span>{</span><span>this</span><span>.</span>state<span>.</span>message<span>}</span>
+        <span>&lt;</span><span>/</span>span<span>></span>
+      <span>&lt;</span><span>/</span>div<span>></span>
+    <span>)</span><span>;</span>
+  <span>}</span>
+  <span>handler</span><span>(</span><span>)</span> <span>{</span>
+    <span>alert</span><span>(</span><span>this</span><span>.</span>state<span>.</span>message<span>)</span><span>;</span>
+  <span>}</span>
+<span>}</span></span>
+<span>```</span></span>
+
+<span><span>```</span><span>css</span>
+<span><span>.box-react span</span> <span>{</span>
+  <span>color</span><span>:</span> red<span>;</span>
+<span>}</span></span>
+<span>```</span></span>
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br></div></div></details>
+]]></content:encoded>
+    </item>
+    <item>
       <title>代码演示</title>
       <link>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/demo/</link>
       <guid>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/demo/</guid>
       <source url="https://vuepress-theme-hope.github.io/md-enhance/rss.xml">代码演示</source>
       <description>&amp;lt;p&amp;gt;让你的 VuePress 站点中的 Markdown 文件支持代码案例。&amp;lt;/p&amp;gt;
 </description>
-      <pubDate>Tue, 17 Nov 2020 09:58:20 GMT</pubDate>
+      <pubDate>Thu, 26 Aug 2021 07:29:44 GMT</pubDate>
       <content:encoded><![CDATA[<p>让你的 VuePress 站点中的 Markdown 文件支持代码案例。</p>
 
 <h2 id="配置"> 配置</h2>
@@ -2273,7 +2676,7 @@ vuepress-theme-hope v2 仍在制作中，API 可能会有
 :::
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br></div></div><div><p>Tips</p>
-<p>JSON 块是可选的，可用的配置详见 <a href="./../config.html#demo">配置</a>。</p>
+<p>JSON 块是可选的，可用的配置详见 <a href="./../../config.html#demo">配置</a>。</p>
 </div>
 <p>该插件支持三种类型：</p>
 <ul>
@@ -2281,82 +2684,7 @@ vuepress-theme-hope v2 仍在制作中，API 可能会有
 <li>vue</li>
 <li>react</li>
 </ul>
-<h3 id="normal"> Normal</h3>
-<p>写法:</p>
-<div><pre><code>::: demo 可选的标题文字
-
-<span><span>```</span><span>html</span>
-<span><span>&lt;!-- html code --></span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>js</span>
-<span><span>// js code</span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>css</span>
-<span><span>/* css code */</span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>json</span>
-<span>// 配置 (可选)
-{
-  "jsLib": [
-    ...
-  ],
-  "cssLib":[
-    ...
-  ]
-}</span>
-<span>```</span></span>
-
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br></div></div><h3 id="vue"> Vue</h3>
-<p>语法:</p>
-<div><pre><code>::: demo [vue] 可选的标题文字
-
-<span><span>```</span><span>vue</span>
-<span>&lt;!-- ↑ 你也可以使用 html -->
-&lt;template>
-  &lt;!-- vue 模板 -->
-&lt;/template>
-&lt;script>
-export default {
-  // vue 组件
-};
-&lt;/script>
-&lt;style>
-/* css 代码 */
-&lt;/style></span>
-<span>```</span></span>
-
-<span><span>```</span><span>json</span>
-<span>// 配置 (可选)</span>
-<span>```</span></span>
-
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br></div></div><h3 id="react"> React</h3>
-<p>语法:</p>
-<div><pre><code>::: demo [react] 可选的标题文字
-
-<span><span>```</span><span>js</span>
-<span><span>export</span> <span>default</span> <span>class</span> <span>App</span> <span>extends</span> <span>React<span>.</span>Component</span> <span>{</span>
-  <span>// react 组件</span>
-<span>}</span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>css</span>
-<span><span>/* 你的 css 内容 */</span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>json</span>
-<span>// 配置 (可选)</span>
-<span>```</span></span>
-
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br></div></div><h3 id="可用的语言"> 可用的语言</h3>
+<h2 id="可用的语言"> 可用的语言</h2>
 <p>你可以在演示块中使用不同语言。</p>
 <p>当你设置一些不能在浏览器上直接运行的语言时，由于插件无法解析它们，因此网页演示将被禁用。插件只显示代码。同时提供一个 &quot;在 CodePen 中打开&quot; 按钮允许用户直接在 CodePen 打开并浏览代码。</p>
 <p>可用的 HTML 语言:</p>
@@ -2391,184 +2719,13 @@ export default {
 <blockquote>
 <p>你也可以在代码块中使用 <code>styl</code>。</p>
 </blockquote>
-<h2 id="演示"> 演示</h2>
-
-          <div
-            id="code-demo-5ac6bc9f"
-           
-  
- data-title="%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%20Demo"
-
-            data-code="%7B%22html%22%3A%22%3Ch1%3EMr.Hope%3C%2Fh1%3E%5Cn%3Cp%3E%3Cspan%20id%3D%5C%22very%5C%22%3E%E5%8D%81%E5%88%86%3C%2Fspan%3E%20%E5%B8%85%3C%2Fp%3E%5Cn%22%2C%22js%22%3A%22document.querySelector(%5C%22%23very%5C%22).addEventListener(%5C%22click%5C%22%2C%20()%20%3D%3E%20%7B%5Cn%20%20alert(%5C%22%E5%8D%81%E5%88%86%E5%B8%85%5C%22)%3B%5Cn%7D)%3B%5Cn%22%2C%22css%22%3A%22span%20%7B%5Cn%20%20color%3A%20red%3B%5Cn%7D%5Cn%22%7D"
-          >
-              
-              <div>
-                <div>
-<div><pre><code><span><span><span>&lt;</span>h1</span><span>></span></span>Mr.Hope<span><span><span>&lt;/</span>h1</span><span>></span></span>
-<span><span><span>&lt;</span>p</span><span>></span></span><span><span><span>&lt;</span>span</span> <span>id</span><span><span>=</span><span>"</span>very<span>"</span></span><span>></span></span>十分<span><span><span>&lt;/</span>span</span><span>></span></span> 帅<span><span><span>&lt;/</span>p</span><span>></span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><div><pre><code>document<span>.</span><span>querySelector</span><span>(</span><span>"#very"</span><span>)</span><span>.</span><span>addEventListener</span><span>(</span><span>"click"</span><span>,</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
-  <span>alert</span><span>(</span><span>"十分帅"</span><span>)</span><span>;</span>
-<span>}</span><span>)</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><div><pre><code><span>span</span> <span>{</span>
-  <span>color</span><span>:</span> red<span>;</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>
-            </div>
-          </div>
-          
-        </div>
-<details><summary>代码</summary>
-<div><pre><code>::: demo 一个普通 Demo
-
-<span><span>```</span><span>html</span>
-<span><span><span><span>&lt;</span>h1</span><span>></span></span>Mr.Hope<span><span><span>&lt;/</span>h1</span><span>></span></span>
-<span><span><span>&lt;</span>p</span><span>></span></span><span><span><span>&lt;</span>span</span> <span>id</span><span><span>=</span><span>"</span>very<span>"</span></span><span>></span></span>十分<span><span><span>&lt;/</span>span</span><span>></span></span> 帅<span><span><span>&lt;/</span>p</span><span>></span></span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>js</span>
-<span>document<span>.</span><span>querySelector</span><span>(</span><span>"#very"</span><span>)</span><span>.</span><span>addEventListener</span><span>(</span><span>"click"</span><span>,</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
-  <span>alert</span><span>(</span><span>"十分帅"</span><span>)</span><span>;</span>
-<span>}</span><span>)</span><span>;</span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>css</span>
-<span><span>span</span> <span>{</span>
-  <span>color</span><span>:</span> red<span>;</span>
-<span>}</span></span>
-<span>```</span></span>
-
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br></div></div></details>
-
-          <div
-            id="code-demo-693e1878"
-           
-  data-type="react"
- data-title="%E4%B8%80%E4%B8%AA%20React%20Demo"
-
-            data-code="%7B%22js%22%3A%22export%20default%20class%20App%20extends%20React.Component%20%7B%5Cn%20%20constructor(props)%20%7B%5Cn%20%20%20%20super(props)%3B%5Cn%20%20%20%20this.state%20%3D%20%7B%20message%3A%20%5C%22%E5%8D%81%E5%88%86%E5%B8%85%5C%22%20%7D%3B%5Cn%20%20%7D%5Cn%20%20render()%20%7B%5Cn%20%20%20%20return%20(%5Cn%20%20%20%20%20%20%3Cdiv%20className%3D%5C%22box-react%5C%22%3E%5Cn%20%20%20%20%20%20%20%20Mr.Hope%20%3Cspan%3E%7Bthis.state.message%7D%3C%2Fspan%3E%5Cn%20%20%20%20%20%20%3C%2Fdiv%3E%5Cn%20%20%20%20)%3B%5Cn%20%20%7D%5Cn%7D%5Cn%22%2C%22css%22%3A%22.box-react%20span%20%7B%5Cn%20%20color%3A%20red%3B%5Cn%7D%5Cn%22%7D"
-          >
-              
-              <div>
-                <div>
-<div><pre><code><span>export</span> <span>default</span> <span>class</span> <span>App</span> <span>extends</span> <span>React<span>.</span>Component</span> <span>{</span>
-  <span>constructor</span><span>(</span><span>props</span><span>)</span> <span>{</span>
-    <span>super</span><span>(</span>props<span>)</span><span>;</span>
-    <span>this</span><span>.</span>state <span>=</span> <span>{</span> message<span>:</span> <span>"十分帅"</span> <span>}</span><span>;</span>
-  <span>}</span>
-  <span>render</span><span>(</span><span>)</span> <span>{</span>
-    <span>return</span> <span>(</span>
-      <span>&lt;</span>div className<span>=</span><span>"box-react"</span><span>></span>
-        Mr<span>.</span>Hope <span>&lt;</span>span<span>></span><span>{</span><span>this</span><span>.</span>state<span>.</span>message<span>}</span><span>&lt;</span><span>/</span>span<span>></span>
-      <span>&lt;</span><span>/</span>div<span>></span>
-    <span>)</span><span>;</span>
-  <span>}</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><div><pre><code><span>.box-react span</span> <span>{</span>
-  <span>color</span><span>:</span> red<span>;</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>
-            </div>
-          </div>
-          
-        </div>
-<details><summary>代码</summary>
-<div><pre><code>::: demo [react] 一个 React Demo
-
-<span><span>```</span><span>js</span>
-<span><span>export</span> <span>default</span> <span>class</span> <span>App</span> <span>extends</span> <span>React<span>.</span>Component</span> <span>{</span>
-  <span>constructor</span><span>(</span><span>props</span><span>)</span> <span>{</span>
-    <span>super</span><span>(</span>props<span>)</span><span>;</span>
-    <span>this</span><span>.</span>state <span>=</span> <span>{</span> message<span>:</span> <span>"十分帅"</span> <span>}</span><span>;</span>
-  <span>}</span>
-  <span>render</span><span>(</span><span>)</span> <span>{</span>
-    <span>return</span> <span>(</span>
-      <span>&lt;</span>div className<span>=</span><span>"box-react"</span><span>></span>
-        Mr<span>.</span>Hope <span>&lt;</span>span<span>></span><span>{</span><span>this</span><span>.</span>state<span>.</span>message<span>}</span><span>&lt;</span><span>/</span>span<span>></span>
-      <span>&lt;</span><span>/</span>div<span>></span>
-    <span>)</span><span>;</span>
-  <span>}</span>
-<span>}</span></span>
-<span>```</span></span>
-
-<span><span>```</span><span>css</span>
-<span><span>.box-react span</span> <span>{</span>
-  <span>color</span><span>:</span> red<span>;</span>
-<span>}</span></span>
-<span>```</span></span>
-
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br></div></div></details>
-
-          <div
-            id="code-demo-6304b41b"
-           
-  data-type="vue"
- data-title="%E4%B8%80%E4%B8%AA%20Vue%20Demo"
-
-            data-code="%7B%22vue%22%3A%22%3Ctemplate%3E%5Cn%20%20%3Cdiv%20class%3D%5C%22box-vue%5C%22%3E%5Cn%20%20%20%20Mr.Hope%20%3Cspan%3E%7B%7B%20message%20%7D%7D%3C%2Fspan%3E%5Cn%20%20%3C%2Fdiv%3E%5Cn%3C%2Ftemplate%3E%5Cn%3Cscript%3E%5Cnexport%20default%20%7B%5Cn%20%20data%3A%20()%20%3D%3E%20(%7B%20message%3A%20%5C%22%E5%8D%81%E5%88%86%E5%B8%85%5C%22%20%7D)%2C%5Cn%7D%3B%5Cn%3C%2Fscript%3E%5Cn%3Cstyle%3E%5Cn.box-vue%20span%20%7B%5Cn%20%20color%3A%20red%3B%5Cn%7D%5Cn%3C%2Fstyle%3E%5Cn%22%7D"
-          >
-              
-              <div>
-                <div>
-<div><pre><code><span><span><span>&lt;</span>template</span><span>></span></span>
-  <span><span><span>&lt;</span>div</span> <span>class</span><span><span>=</span><span>"</span>box-vue<span>"</span></span><span>></span></span>
-    Mr.Hope <span><span><span>&lt;</span>span</span><span>></span></span>{{ message }}<span><span><span>&lt;/</span>span</span><span>></span></span>
-  <span><span><span>&lt;/</span>div</span><span>></span></span>
-<span><span><span>&lt;/</span>template</span><span>></span></span>
-<span><span><span>&lt;</span>script</span><span>></span></span><span><span>
-<span>export</span> <span>default</span> <span>{</span>
-  <span>data</span><span>:</span> <span>(</span><span>)</span> <span>=></span> <span>(</span><span>{</span> message<span>:</span> <span>"十分帅"</span> <span>}</span><span>)</span><span>,</span>
-<span>}</span><span>;</span>
-</span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
-<span><span><span>&lt;</span>style</span><span>></span></span><span><span>
-<span>.box-vue span</span> <span>{</span>
-  <span>color</span><span>:</span> red<span>;</span>
-<span>}</span>
-</span></span><span><span><span>&lt;/</span>style</span><span>></span></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br></div></div>
-            </div>
-          </div>
-          
-        </div>
-<details><summary>代码</summary>
-<div><pre><code>::: demo [vue] 一个 Vue Demo
-
-<span><span>```</span><span>vue</span>
-<span>&lt;template>
-  &lt;div>
-    Mr.Hope &lt;span>{{ message }}&lt;/span>
-  &lt;/div>
-&lt;/template>
-&lt;script>
-export default {
-  data: () => ({ message: "十分帅" }),
-};
-&lt;/script>
-&lt;style>
-.box-vue span {
-  color: red;
-}
-&lt;/style></span>
-<span>```</span></span>
-
-:::
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br></div></div></details>
+<h3 id="不支持的语言演示"> 不支持的语言演示</h3>
 
           <div
             id="code-demo-2869b0e2"
            
   
- data-title="%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%20Demo"
+ data-title="%E4%B8%80%E4%B8%AA%E4%BD%BF%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8D%E6%94%AF%E6%8C%81%E8%A7%A3%E6%9E%90%E8%AF%AD%E8%A8%80%20Demo"
 
             data-code="%7B%22md%22%3A%22%23%20%E6%A0%87%E9%A2%98%5Cn%5Cn%E5%8D%81%E5%88%86%E5%B8%85%5Cn%22%2C%22ts%22%3A%22const%20message%3A%20string%20%3D%20%5C%22Mr.Hope%5C%22%3B%5Cn%5Cndocument.querySelector(%5C%22h1%5C%22).innerHTML%20%3D%20message%3B%5Cn%22%2C%22scss%22%3A%22h1%20%7B%5Cn%20%20font-style%3A%20italic%3B%5Cn%5Cn%20%20%2B%20p%20%7B%5Cn%20%20%20%20color%3A%20red%3B%5Cn%20%20%7D%5Cn%7D%5Cn%22%7D"
           >
@@ -2597,7 +2754,7 @@ document<span>.</span><span>querySelector</span><span>(</span><span>"h1"</span><
           
         </div>
 <details><summary>代码</summary>
-<div><pre><code>::: demo 一个普通 Demo
+<div><pre><code>::: demo 一个使用浏览器不支持解析语言 Demo
 
 <span><span>```</span><span>md</span>
 <span><span><span>#</span> 标题</span>
@@ -2624,6 +2781,113 @@ document<span>.</span><span>querySelector</span><span>(</span><span>"h1"</span><
 :::
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br></div></div></details>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Vue 代码演示</title>
+      <link>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/demo/vue/</link>
+      <guid>https://vuepress-theme-hope.github.io/md-enhance/zh/guide/demo/vue/</guid>
+      <source url="https://vuepress-theme-hope.github.io/md-enhance/rss.xml">Vue 代码演示</source>
+      <pubDate>Thu, 26 Aug 2021 07:29:44 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="格式"> 格式</h2>
+<div><pre><code>::: demo [vue] 可选的标题文字
+
+<span><span>```</span><span>vue</span>
+<span>&lt;!-- ↑ 你也可以使用 html -->
+&lt;template>
+  &lt;!-- vue 模板 -->
+&lt;/template>
+&lt;script>
+export default {
+  // vue 组件
+};
+&lt;/script>
+&lt;style>
+/* css 代码 */
+&lt;/style></span>
+<span>```</span></span>
+
+<span><span>```</span><span>json</span>
+<span>// 配置 (可选)</span>
+<span>```</span></span>
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br></div></div><div><p>注意事项</p>
+<ul>
+<li>由于 API 不同，且插件对应基于 Vue2 的 VuePress@v1，只能使用 Vue2。</li>
+<li>必须将组件通过 <code>export default</code> 默认导出</li>
+<li>我们使用 &quot;ShadowDOM&quot; 进行样式隔离，并已经将 <code>document</code> 替换为了 <code>shadowRoot</code> 对象。如果需要访问页面的 document，请访问 <code>window.document</code>。</li>
+</ul>
+</div>
+<h2 id="演示"> 演示</h2>
+
+          <div
+            id="code-demo-2889df4e"
+           
+  data-type="vue"
+ data-title="%E4%B8%80%E4%B8%AA%20Vue%20Demo"
+
+            data-code="%7B%22vue%22%3A%22%3Ctemplate%3E%5Cn%20%20%3Cdiv%20class%3D%5C%22box%5C%22%3E%5Cn%20%20%20%20Mr.Hope%20%3Cspan%20%40click%3D%5C%22handler%5C%22%3E%7B%7B%20message%20%7D%7D%3C%2Fspan%3E%5Cn%20%20%3C%2Fdiv%3E%5Cn%3C%2Ftemplate%3E%5Cn%3Cscript%3E%5Cnexport%20default%20%7B%5Cn%20%20data%3A%20()%20%3D%3E%20(%7B%20message%3A%20%5C%22%E5%8D%81%E5%88%86%E5%B8%85%5C%22%20%7D)%2C%5Cn%20%20methods%3A%20%7B%5Cn%20%20%20%20handler()%20%7B%5Cn%20%20%20%20%20%20alert(this.message)%3B%5Cn%20%20%20%20%7D%2C%5Cn%20%20%7D%2C%5Cn%7D%3B%5Cn%3C%2Fscript%3E%5Cn%3Cstyle%3E%5Cn.box%20span%20%7B%5Cn%20%20color%3A%20red%3B%5Cn%7D%5Cn%3C%2Fstyle%3E%5Cn%22%7D"
+          >
+              
+              <div>
+                <div>
+<div><pre><code><span><span><span>&lt;</span>template</span><span>></span></span>
+  <span><span><span>&lt;</span>div</span> <span>class</span><span><span>=</span><span>"</span>box<span>"</span></span><span>></span></span>
+    Mr.Hope <span><span><span>&lt;</span>span</span> <span>@click</span><span><span>=</span><span>"</span>handler<span>"</span></span><span>></span></span>{{ message }}<span><span><span>&lt;/</span>span</span><span>></span></span>
+  <span><span><span>&lt;/</span>div</span><span>></span></span>
+<span><span><span>&lt;/</span>template</span><span>></span></span>
+<span><span><span>&lt;</span>script</span><span>></span></span><span><span>
+<span>export</span> <span>default</span> <span>{</span>
+  <span>data</span><span>:</span> <span>(</span><span>)</span> <span>=></span> <span>(</span><span>{</span> message<span>:</span> <span>"十分帅"</span> <span>}</span><span>)</span><span>,</span>
+  methods<span>:</span> <span>{</span>
+    <span>handler</span><span>(</span><span>)</span> <span>{</span>
+      <span>alert</span><span>(</span><span>this</span><span>.</span>message<span>)</span><span>;</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
+<span><span><span>&lt;</span>style</span><span>></span></span><span><span>
+<span>.box span</span> <span>{</span>
+  <span>color</span><span>:</span> red<span>;</span>
+<span>}</span>
+</span></span><span><span><span>&lt;/</span>style</span><span>></span></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br></div></div>
+            </div>
+          </div>
+          
+        </div>
+<details><summary>代码</summary>
+<div><pre><code>::: demo [vue] 一个 Vue Demo
+
+<span><span>```</span><span>vue</span>
+<span>&lt;template>
+  &lt;div>
+    Mr.Hope &lt;span @click="handler">{{ message }}&lt;/span>
+  &lt;/div>
+&lt;/template>
+&lt;script>
+export default {
+  data: () => ({ message: "十分帅" }),
+  methods: {
+    handler() {
+      alert(this.message);
+    },
+  },
+};
+&lt;/script>
+&lt;style>
+.box span {
+  color: red;
+}
+&lt;/style></span>
+<span>```</span></span>
+
+:::
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br></div></div></details>
 ]]></content:encoded>
     </item>
     <item>
@@ -3378,7 +3642,7 @@ Add another diagram to demo page    :48h</span>
           
         </div>
 <ul>
-<li><a href="./demo.html">查看详情</a></li>
+<li><a href="./demo/">查看详情</a></li>
 </ul>
 <h3 id="幻灯片"> 幻灯片</h3>
 <i>Not supported content</i><ul>
