@@ -6,7 +6,7 @@
   <author>
     <name>Mr.Hope</name>
   </author>
-  <updated>2021-09-03T05:38:27.472Z</updated>
+  <updated>2021-09-19T03:27:19.944Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress-theme-hope.github.io/pwa/atom.xml"/>
   <link rel="alternate" href="https://vuepress-theme-hope.github.io/pwa/"/>
@@ -163,6 +163,168 @@
 <p>You can fill in the custom pop-up component path.</p>
 <h2 id="generateswconfig"> generateSwConfig</h2>
 <p>Options passed to <code>workbox-build</code>, for details, see <a href="https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-build#.generateSW" target="_blank" rel="noopener noreferrer">Workbox documentation</a></p>
+]]></content>
+    <author>
+      <name>Mr.Hope</name>
+    </author>
+    <contributor>
+      <name>Mr.Hope</name>
+    </contributor>
+    <published>2020-10-22T04:23:17.000Z</published>
+    <rights>Copyright by Mr.Hope</rights>
+  </entry>
+  <entry>
+    <title type="html">配置</title>
+    <id>https://vuepress-theme-hope.github.io/pwa/zh/config/</id>
+    <link href="https://vuepress-theme-hope.github.io/pwa/zh/config/"/>
+    <updated>2021-04-07T05:20:59.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="showinstall"> showInstall</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否在 Service Worker 首次成功注册时显示 PWA 安装按钮</p>
+<h2 id="manifest"> manifest</h2>
+<ul>
+<li>类型: <code>ManifestOption</code></li>
+<li>必填: 否</li>
+</ul>
+<p>填充一个将被解析为 manifest.webmanifest 的对象。</p>
+<div><p>Tips</p>
+<p>如果未设置某些选项，它们会回退到插件预设值。</p>
+<ul>
+<li>
+<p>name: <code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></p>
+</li>
+<li>
+<p>short_name: <code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></p>
+</li>
+<li>
+<p>description: <code>siteConfig.description</code> || <code>themeConfig.description</code> || <code>'A site built with vuepress-theme-hope'</code></p>
+</li>
+<li>
+<p>lang: <code>siteConfig.locales['/'].lang</code> || <code>themeConfig.locales['/'].lang</code> || <code>&quot;en-US&quot;</code></p>
+</li>
+<li>
+<p>start_url: <code>context.base</code></p>
+</li>
+<li>
+<p>scope: <code>context.base</code></p>
+</li>
+<li>
+<p>display: <code>&quot;standalone&quot;</code></p>
+</li>
+<li>
+<p>theme_color: <code>&quot;#46bd87&quot;</code></p>
+</li>
+<li>
+<p>background_color: <code>'#ffffff'</code></p>
+</li>
+<li>
+<p>orientation: <code>'portrait-primary'</code></p>
+</li>
+<li>
+<p>prefer_related_applications: <code>false</code></p>
+</li>
+</ul>
+</div>
+<div><p>更多</p>
+<p>更多内容，请详见 <a href="https://w3c.github.io/manifest/" target="_blank" rel="noopener noreferrer">W3C Manifest</a></p>
+</div>
+<h2 id="favicon"> favicon</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p><code>favicon.ico</code> 地址，填入绝对路径。</p>
+<div><p>Note</p>
+<p>我们建议你为你的站点生成 favicon</p>
+</div>
+<h2 id="themecolor"> themeColor</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>&quot;#46bd87&quot;</code></li>
+</ul>
+<p>主题色，默认为主题绿</p>
+<h2 id="maxsize"> maxSize</h2>
+<ul>
+<li>类型: <code>number</code></li>
+<li>默认值: <code>2048</code></li>
+</ul>
+<p>允许缓存的最大大小 (以 KB 为单位)</p>
+<div><p>Note</p>
+<p>此选项具有最高优先级，任何超过此值的文件都会被排除。</p>
+<p>所以你如果生成了很大的 HTML 或 JS 文件，请考虑调高此值，否则你的 PWA 可能无法在离线模式下正常运行。</p>
+</div>
+<h2 id="cachehtml"> cacheHTML</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>是否缓存主页和 404 错误页之外的 HTML 文件</p>
+<h2 id="cachepic"> cachePic</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+</ul>
+<p>是否缓存图片。</p>
+<h2 id="maxpicsize"> maxPicSize</h2>
+<ul>
+<li>类型: <code>number</code></li>
+<li>默认值: <code>1024</code></li>
+</ul>
+<p>图片允许缓存的最大大小 (以 KB 为单位)</p>
+<div><p>Tips</p>
+<p>该选项不能大于 <code>maxSize</code>。</p>
+</div>
+<h2 id="apple"> apple</h2>
+<p>针对苹果的特殊设置</p>
+<blockquote>
+<p>如果你不想进行精细的设置，可以忽略它；如果你不想兼容 Apple 上的 Safari，请设置为 <code>false</code>。</p>
+</blockquote>
+<h3 id="apple-icon"> apple.icon</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>填入苹果使用的图标地址，推荐 152×152 大小</p>
+<h3 id="apple-statusbarcolor"> apple.statusBarColor</h3>
+<ul>
+<li>类型: <code>&quot;black&quot; | &quot;white&quot;</code></li>
+<li>默认: <code>&quot;black&quot;</code></li>
+</ul>
+<p>苹果的状态栏颜色</p>
+<h3 id="apple-maskicon"> apple.maskIcon</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>Safari 图标</p>
+<h2 id="mstile"> msTile</h2>
+<p>针对微软磁贴的特殊设置</p>
+<blockquote>
+<p>如果你不想进行精细的设置，可以忽略它；如果你不想兼容 windows，请设置为 <code>false</code>。</p>
+</blockquote>
+<h3 id="mstile-image"> msTile.image</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>磁贴图标</p>
+<h3 id="mstile-color"> msTile.color</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>themeColor</code></li>
+</ul>
+<p>磁贴颜色，缺省会自动回退到主题色。</p>
+<h2 id="popupcomponent"> popupComponent</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>'SWUpdatePopup'</code></li>
+</ul>
+<p>可填入自定义的弹窗组件路径。</p>
+<h2 id="generateswconfig"> generateSwConfig</h2>
+<p>传递给 <code>workbox-build</code> 的选项，具体详情，请见 <a href="https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-build#.generateSW" target="_blank" rel="noopener noreferrer">Workbox 文档</a></p>
 ]]></content>
     <author>
       <name>Mr.Hope</name>
@@ -392,165 +554,44 @@ module<span>.</span>exports <span>=</span> <span>{</span>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
-    <title type="html">配置</title>
-    <id>https://vuepress-theme-hope.github.io/pwa/zh/config/</id>
-    <link href="https://vuepress-theme-hope.github.io/pwa/zh/config/"/>
-    <updated>2021-04-07T05:20:59.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="showinstall"> showInstall</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否在 Service Worker 首次成功注册时显示 PWA 安装按钮</p>
-<h2 id="manifest"> manifest</h2>
-<ul>
-<li>类型: <code>ManifestOption</code></li>
-<li>必填: 否</li>
-</ul>
-<p>填充一个将被解析为 manifest.webmanifest 的对象。</p>
-<div><p>Tips</p>
-<p>如果未设置某些选项，它们会回退到插件预设值。</p>
-<ul>
-<li>
-<p>name: <code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></p>
-</li>
-<li>
-<p>short_name: <code>siteConfig.title</code> || <code>themeConfig.title</code> || <code>'Site'</code></p>
-</li>
-<li>
-<p>description: <code>siteConfig.description</code> || <code>themeConfig.description</code> || <code>'A site built with vuepress-theme-hope'</code></p>
-</li>
-<li>
-<p>lang: <code>siteConfig.locales['/'].lang</code> || <code>themeConfig.locales['/'].lang</code> || <code>&quot;en-US&quot;</code></p>
-</li>
-<li>
-<p>start_url: <code>context.base</code></p>
-</li>
-<li>
-<p>scope: <code>context.base</code></p>
-</li>
-<li>
-<p>display: <code>&quot;standalone&quot;</code></p>
-</li>
-<li>
-<p>theme_color: <code>&quot;#46bd87&quot;</code></p>
-</li>
-<li>
-<p>background_color: <code>'#ffffff'</code></p>
-</li>
-<li>
-<p>orientation: <code>'portrait-primary'</code></p>
-</li>
-<li>
-<p>prefer_related_applications: <code>false</code></p>
-</li>
-</ul>
-</div>
-<div><p>更多</p>
-<p>更多内容，请详见 <a href="https://w3c.github.io/manifest/" target="_blank" rel="noopener noreferrer">W3C Manifest</a></p>
-</div>
-<h2 id="favicon"> favicon</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p><code>favicon.ico</code> 地址，填入绝对路径。</p>
-<div><p>Note</p>
-<p>我们建议你为你的站点生成 favicon</p>
-</div>
-<h2 id="themecolor"> themeColor</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>&quot;#46bd87&quot;</code></li>
-</ul>
-<p>主题色，默认为主题绿</p>
-<h2 id="maxsize"> maxSize</h2>
-<ul>
-<li>类型: <code>number</code></li>
-<li>默认值: <code>2048</code></li>
-</ul>
-<p>允许缓存的最大大小 (以 KB 为单位)</p>
-<div><p>Note</p>
-<p>此选项具有最高优先级，任何超过此值的文件都会被排除。</p>
-<p>所以你如果生成了很大的 HTML 或 JS 文件，请考虑调高此值，否则你的 PWA 可能无法在离线模式下正常运行。</p>
-</div>
-<h2 id="cachehtml"> cacheHTML</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-</ul>
-<p>是否缓存主页和 404 错误页之外的 HTML 文件</p>
-<h2 id="cachepic"> cachePic</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>false</code></li>
-</ul>
-<p>是否缓存图片。</p>
-<h2 id="maxpicsize"> maxPicSize</h2>
-<ul>
-<li>类型: <code>number</code></li>
-<li>默认值: <code>1024</code></li>
-</ul>
-<p>图片允许缓存的最大大小 (以 KB 为单位)</p>
-<div><p>Tips</p>
-<p>该选项不能大于 <code>maxSize</code>。</p>
-</div>
-<h2 id="apple"> apple</h2>
-<p>针对苹果的特殊设置</p>
-<blockquote>
-<p>如果你不想进行精细的设置，可以忽略它；如果你不想兼容 Apple 上的 Safari，请设置为 <code>false</code>。</p>
-</blockquote>
-<h3 id="apple-icon"> apple.icon</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>填入苹果使用的图标地址，推荐 152×152 大小</p>
-<h3 id="apple-statusbarcolor"> apple.statusBarColor</h3>
-<ul>
-<li>类型: <code>&quot;black&quot; | &quot;white&quot;</code></li>
-<li>默认: <code>&quot;black&quot;</code></li>
-</ul>
-<p>苹果的状态栏颜色</p>
-<h3 id="apple-maskicon"> apple.maskIcon</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>Safari 图标</p>
-<h2 id="mstile"> msTile</h2>
-<p>针对微软磁贴的特殊设置</p>
-<blockquote>
-<p>如果你不想进行精细的设置，可以忽略它；如果你不想兼容 windows，请设置为 <code>false</code>。</p>
-</blockquote>
-<h3 id="mstile-image"> msTile.image</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>磁贴图标</p>
-<h3 id="mstile-color"> msTile.color</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>themeColor</code></li>
-</ul>
-<p>磁贴颜色，缺省会自动回退到主题色。</p>
-<h2 id="popupcomponent"> popupComponent</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>'SWUpdatePopup'</code></li>
-</ul>
-<p>可填入自定义的弹窗组件路径。</p>
-<h2 id="generateswconfig"> generateSwConfig</h2>
-<p>传递给 <code>workbox-build</code> 的选项，具体详情，请见 <a href="https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-build#.generateSW" target="_blank" rel="noopener noreferrer">Workbox 文档</a></p>
-]]></content>
+    <title type="html">主页</title>
+    <id>https://vuepress-theme-hope.github.io/pwa/zh/</id>
+    <link href="https://vuepress-theme-hope.github.io/pwa/zh/"/>
+    <updated>2021-02-24T15:41:50.000Z</updated>
+    <content type="html"><![CDATA[<p>渐进式网页应用 (Progressive Web App) 支持。</p>
+<h2 id="使用插件"> 使用插件</h2>
+<h3 id="安装"> 安装</h3>
+<CodeGroup>
+<CodeGroupItem title="yarn">
+<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-pwa
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="npm">
+<div><pre><code><span>npm</span> i -D vuepress-plugin-pwa
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+<h3 id="使用"> 使用</h3>
+<div><pre><code><span>// .vuepress/config.js</span>
+module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>[</span>
+      <span>"@mr-hope/pwa"</span><span>,</span>
+      <span>{</span>
+        <span>// 你的选项</span>
+      <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div>]]></content>
     <author>
       <name>Mr.Hope</name>
     </author>
     <contributor>
       <name>Mr.Hope</name>
     </contributor>
-    <published>2020-10-22T04:23:17.000Z</published>
+    <published>2020-10-21T16:30:08.000Z</published>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
   <entry>
@@ -730,47 +771,6 @@ module<span>.</span>exports <span>=</span> <span>{</span>
       <name>Mr.Hope</name>
     </contributor>
     <published>2020-10-22T04:23:17.000Z</published>
-    <rights>Copyright by Mr.Hope</rights>
-  </entry>
-  <entry>
-    <title type="html">主页</title>
-    <id>https://vuepress-theme-hope.github.io/pwa/zh/</id>
-    <link href="https://vuepress-theme-hope.github.io/pwa/zh/"/>
-    <updated>2021-02-24T15:41:50.000Z</updated>
-    <content type="html"><![CDATA[<p>渐进式网页应用 (Progressive Web App) 支持。</p>
-<h2 id="使用插件"> 使用插件</h2>
-<h3 id="安装"> 安装</h3>
-<CodeGroup>
-<CodeGroupItem title="yarn">
-<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-plugin-pwa
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-<CodeGroupItem title="npm">
-<div><pre><code><span>npm</span> i -D vuepress-plugin-pwa
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-</CodeGroup>
-<h3 id="使用"> 使用</h3>
-<div><pre><code><span>// .vuepress/config.js</span>
-module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span>
-    <span>[</span>
-      <span>"@mr-hope/pwa"</span><span>,</span>
-      <span>{</span>
-        <span>// 你的选项</span>
-      <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-  <span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div>]]></content>
-    <author>
-      <name>Mr.Hope</name>
-    </author>
-    <contributor>
-      <name>Mr.Hope</name>
-    </contributor>
-    <published>2020-10-21T16:30:08.000Z</published>
     <rights>Copyright by Mr.Hope</rights>
   </entry>
 </feed>

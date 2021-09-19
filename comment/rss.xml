@@ -6,189 +6,11 @@
     <link>https://vuepress-theme-hope.github.io/comment/</link>
     <description>Comment Plugin for VuePress</description>
     <language>en-US</language>
-    <pubDate>Fri, 03 Sep 2021 05:38:27 GMT</pubDate>
-    <lastBuildDate>Fri, 03 Sep 2021 05:38:27 GMT</lastBuildDate>
+    <pubDate>Sun, 19 Sep 2021 03:27:20 GMT</pubDate>
+    <lastBuildDate>Sun, 19 Sep 2021 03:27:20 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
-    <item>
-      <title>API Config</title>
-      <link>https://vuepress-theme-hope.github.io/comment/config/</link>
-      <guid>https://vuepress-theme-hope.github.io/comment/config/</guid>
-      <source url="https://vuepress-theme-hope.github.io/comment/rss.xml">API Config</source>
-      <pubDate>Thu, 07 May 2020 18:16:42 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="type"> type</h2>
-<ul>
-<li>Type: <code>'valine' | 'vssue' | 'disable'</code></li>
-<li>Required: true</li>
-</ul>
-<p>Comment service provider.</p>
-<p>Setting it to <code>'disable'</code> will disable the comment feature while still enabling PageInfo feature.</p>
-<h2 id="author"> author</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Required: false</li>
-</ul>
-<p>Default author for pages</p>
-<h2 id="pageinfo"> pageInfo</h2>
-<ul>
-<li>Type: <code>string[] | false</code></li>
-<li>Default: <code>['author', 'visitor', 'time', 'category', 'tag', 'reading-time']</code></li>
-</ul>
-<p>The order of the items decides the display order. Fill in <code>false</code> to disable it.</p>
-<p>Available items:</p>
-<ul>
-<li><code>'author'</code>: author</li>
-<li><code>'time'</code>: writing date</li>
-<li><code>'category'</code>: category</li>
-<li><code>'tag'</code>: tags</li>
-<li><code>'reading-time'</code>: expect reading time</li>
-<li><code>'word'</code>: word number for the article</li>
-<li><code>'visitor'</code>: pageviews</li>
-</ul>
-<h2 id="comment"> comment</h2>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>true</code></li>
-</ul>
-<p>Whether to enable comment feature by default.</p>
-<h2 id="wordperminute"> wordPerminute</h2>
-<ul>
-<li>Type: <code>number</code></li>
-<li>Default: <code>300</code></li>
-</ul>
-<p>Reading words per minute.</p>
-<h2 id="waline-config"> Waline config</h2>
-<ul>
-<li><a href="./waline.html">See here</a></li>
-</ul>
-<h2 id="vssue-config"> Vssue config</h2>
-<ul>
-<li><a href="./vssue.html">See here</a></li>
-</ul>
-<h2 id="valine-config"> Valine config</h2>
-<ul>
-<li><a href="./valine.html">See here</a></li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Valine Config</title>
-      <link>https://vuepress-theme-hope.github.io/comment/config/valine/</link>
-      <guid>https://vuepress-theme-hope.github.io/comment/config/valine/</guid>
-      <source url="https://vuepress-theme-hope.github.io/comment/rss.xml">Valine Config</source>
-      <pubDate>Thu, 07 May 2020 18:16:42 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="appid"> appId</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Required: true</li>
-</ul>
-<p>Fill in the application appId in LeanCloud</p>
-<h2 id="appkey"> appKey</h2>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Required: true</li>
-</ul>
-<p>Fill in the application appKey in LeanCloud</p>
-<h2 id="comment"> comment</h2>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>true</code></li>
-</ul>
-<p>Comment Function</p>
-<h2 id="visitor"> visitor</h2>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>true</code></li>
-</ul>
-<p>Pageviews Function</p>
-<h2 id="pagesize"> pageSize</h2>
-<ul>
-<li>Type: <code>Number</code></li>
-<li>Default: <code>10</code></li>
-</ul>
-<p>Number of comment per page</p>
-<h2 id="recordip"> recordIP</h2>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>false</code></li>
-</ul>
-<p>Whether to record the commenter IP</p>
-<h2 id="more-config-about-valine"> More Config about valine</h2>
-<ul>
-<li>
-<p><strong>placeholder</strong></p>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>'请留言'</code></li>
-</ul>
-<p>Comment placeholder</p>
-</li>
-<li>
-<p><strong>meta</strong></p>
-<ul>
-<li>Type: <code>string[]</code></li>
-<li>Default: <code>['nick','mail']</code></li>
-</ul>
-<p>Commenter’s info</p>
-</li>
-<li>
-<p><strong>requiredFields</strong></p>
-<ul>
-<li>Type: <code>string []</code></li>
-<li>Default value: <code>['nick']</code></li>
-</ul>
-<p>Set required fields</p>
-</li>
-<li>
-<p><strong>enableQQ</strong></p>
-<ul>
-<li>Type: <code>boolean</code></li>
-<li>Default value: <code>true</code></li>
-</ul>
-<p>Whether automatically get QQ nickname and QQ avatar when detecting QQ number in nickname box</p>
-</li>
-<li>
-<p><strong>avatar</strong></p>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>'retro'</code></li>
-</ul>
-<p>Gravatar avatar display method.</p>
-<div><p>Optional Values</p>
-<ul>
-<li><code>''</code>(Empty String): Gravatar Official Pic</li>
-<li><code>mp</code>: Mystery</li>
-<li><code>identicon</code></li>
-<li><code>monsterid</code></li>
-<li><code>wavatar</code></li>
-<li><code>retro</code></li>
-<li><code>robohash</code></li>
-<li><code>hide</code></li>
-</ul>
-<p>See <a href="https://valine.js.org/avatar.html" target="_blank" rel="noopener noreferrer">Valine Avator Config</a> for details.</p>
-<p>You can tell users to set their <a href="http://cn.gravatar.com/" target="_blank" rel="noopener noreferrer">Gravatar</a>.</p>
-</div>
-</li>
-<li>
-<p><strong>emojiCDN</strong></p>
-<ul>
-<li>Type: <code>string</code></li>
-<li>Required: No</li>
-</ul>
-<p>To set the emoji package CDN, please see <a href="https://valine.js.org/emoji.html" target="_blank" rel="noopener noreferrer">Valine Custom Emoticon Package</a></p>
-</li>
-<li>
-<p><strong>emojiMaps</strong></p>
-<ul>
-<li>Type: <code>sbject</code></li>
-<li>Default value: <code>null</code></li>
-</ul>
-<p>To set the emoticon package mapping, please see <a href="https://valine.js.org/emoji.html" target="_blank" rel="noopener noreferrer">Valine Custom Emoticon Package</a></p>
-</li>
-</ul>
-]]></content:encoded>
-    </item>
     <item>
       <title>Vssue Config</title>
       <link>https://vuepress-theme-hope.github.io/comment/config/vssue/</link>
@@ -504,6 +326,123 @@ And if you already have vue-i18n in your project, it will not affect Vssue.</p>
 ]]></content:encoded>
     </item>
     <item>
+      <title>Valine Config</title>
+      <link>https://vuepress-theme-hope.github.io/comment/config/valine/</link>
+      <guid>https://vuepress-theme-hope.github.io/comment/config/valine/</guid>
+      <source url="https://vuepress-theme-hope.github.io/comment/rss.xml">Valine Config</source>
+      <pubDate>Thu, 07 May 2020 18:16:42 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="appid"> appId</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Required: true</li>
+</ul>
+<p>Fill in the application appId in LeanCloud</p>
+<h2 id="appkey"> appKey</h2>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Required: true</li>
+</ul>
+<p>Fill in the application appKey in LeanCloud</p>
+<h2 id="comment"> comment</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>true</code></li>
+</ul>
+<p>Comment Function</p>
+<h2 id="visitor"> visitor</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>true</code></li>
+</ul>
+<p>Pageviews Function</p>
+<h2 id="pagesize"> pageSize</h2>
+<ul>
+<li>Type: <code>Number</code></li>
+<li>Default: <code>10</code></li>
+</ul>
+<p>Number of comment per page</p>
+<h2 id="recordip"> recordIP</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>false</code></li>
+</ul>
+<p>Whether to record the commenter IP</p>
+<h2 id="more-config-about-valine"> More Config about valine</h2>
+<ul>
+<li>
+<p><strong>placeholder</strong></p>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>'请留言'</code></li>
+</ul>
+<p>Comment placeholder</p>
+</li>
+<li>
+<p><strong>meta</strong></p>
+<ul>
+<li>Type: <code>string[]</code></li>
+<li>Default: <code>['nick','mail']</code></li>
+</ul>
+<p>Commenter’s info</p>
+</li>
+<li>
+<p><strong>requiredFields</strong></p>
+<ul>
+<li>Type: <code>string []</code></li>
+<li>Default value: <code>['nick']</code></li>
+</ul>
+<p>Set required fields</p>
+</li>
+<li>
+<p><strong>enableQQ</strong></p>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default value: <code>true</code></li>
+</ul>
+<p>Whether automatically get QQ nickname and QQ avatar when detecting QQ number in nickname box</p>
+</li>
+<li>
+<p><strong>avatar</strong></p>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>'retro'</code></li>
+</ul>
+<p>Gravatar avatar display method.</p>
+<div><p>Optional Values</p>
+<ul>
+<li><code>''</code>(Empty String): Gravatar Official Pic</li>
+<li><code>mp</code>: Mystery</li>
+<li><code>identicon</code></li>
+<li><code>monsterid</code></li>
+<li><code>wavatar</code></li>
+<li><code>retro</code></li>
+<li><code>robohash</code></li>
+<li><code>hide</code></li>
+</ul>
+<p>See <a href="https://valine.js.org/avatar.html" target="_blank" rel="noopener noreferrer">Valine Avator Config</a> for details.</p>
+<p>You can tell users to set their <a href="http://cn.gravatar.com/" target="_blank" rel="noopener noreferrer">Gravatar</a>.</p>
+</div>
+</li>
+<li>
+<p><strong>emojiCDN</strong></p>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Required: No</li>
+</ul>
+<p>To set the emoji package CDN, please see <a href="https://valine.js.org/emoji.html" target="_blank" rel="noopener noreferrer">Valine Custom Emoticon Package</a></p>
+</li>
+<li>
+<p><strong>emojiMaps</strong></p>
+<ul>
+<li>Type: <code>sbject</code></li>
+<li>Default value: <code>null</code></li>
+</ul>
+<p>To set the emoticon package mapping, please see <a href="https://valine.js.org/emoji.html" target="_blank" rel="noopener noreferrer">Valine Custom Emoticon Package</a></p>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
       <title>Waline Config</title>
       <link>https://vuepress-theme-hope.github.io/comment/config/waline/</link>
       <guid>https://vuepress-theme-hope.github.io/comment/config/waline/</guid>
@@ -758,52 +697,64 @@ And if you already have vue-i18n in your project, it will not affect Vssue.</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>BitBucket OAuth Consumer</title>
-      <link>https://vuepress-theme-hope.github.io/comment/guide/bitbucket/</link>
-      <guid>https://vuepress-theme-hope.github.io/comment/guide/bitbucket/</guid>
-      <source url="https://vuepress-theme-hope.github.io/comment/rss.xml">BitBucket OAuth Consumer</source>
-      <pubDate>Tue, 07 Jan 2020 06:44:41 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="bitbucket-oauth-consumer"> BitBucket OAuth Consumer</h1>
-<h2 id="create-a-new-oauth-consumer"> Create a new OAuth Consumer</h2>
+      <title>API Config</title>
+      <link>https://vuepress-theme-hope.github.io/comment/config/</link>
+      <guid>https://vuepress-theme-hope.github.io/comment/config/</guid>
+      <source url="https://vuepress-theme-hope.github.io/comment/rss.xml">API Config</source>
+      <pubDate>Thu, 07 May 2020 18:16:42 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="type"> type</h2>
 <ul>
-<li>Go to <strong>Bitbucket settings - OAuth</strong></li>
-<li>Click <strong>Add consumer</strong></li>
+<li>Type: <code>'valine' | 'vssue' | 'disable'</code></li>
+<li>Required: true</li>
 </ul>
-<p><img src="./assets/oauth-app-bitbucket-01.png" alt="Set up OAuth App - Bitbucket 01" />
-<img src="./assets/oauth-app-bitbucket-02.png" alt="Set up OAuth App - Bitbucket 02" />
-<img src="./assets/oauth-app-bitbucket-03.png" alt="Set up OAuth App - Bitbucket 03" /></p>
+<p>Comment service provider.</p>
+<p>Setting it to <code>'disable'</code> will disable the comment feature while still enabling PageInfo feature.</p>
+<h2 id="author"> author</h2>
 <ul>
-<li>Set the <code>Callback URL</code> to your site URL (Here we take <code>localhost:8080</code> for example)</li>
-<li>Unselect <code>This is a private consumer</code></li>
-<li>Select <code>Account - Read</code> and <code>Issues - Write</code> permissions</li>
+<li>Type: <code>string</code></li>
+<li>Required: false</li>
 </ul>
-<p><img src="./assets/oauth-app-bitbucket-04.png" alt="Set up OAuth App - Bitbucket 04" />
-<img src="./assets/oauth-app-bitbucket-05.png" alt="Set up OAuth App - Bitbucket 05" /></p>
-<h2 id="get-the-client-id"> Get the Client ID</h2>
-<p>Then you’ve created a new OAuth Consumer, and here is your <strong>Key</strong> (<code>Client ID</code>).</p>
-<p><img src="./assets/oauth-app-bitbucket-06.png" alt="Set up OAuth App - Bitbucket 06" /></p>
-<h2 id="config-and-start-your-vssue"> Config and start your Vssue</h2>
-<p>Copy the <code>Client ID</code>, and set <code>owner</code> and <code>repo</code>.</p>
-<blockquote>
-<p>The URL pattern of bitbucket repo is <code>https://bitbucket.org/${owner}/${repo}</code></p>
-</blockquote>
-<p>Here we take <code>https://bitbucket.org/meteorlxy/vssue-demo</code> for example, and set the <code>title</code> of issue to <code>Vssue Demo</code>.</p>
-<p>Then run <code>anywhere -h localhost 8080</code> to serve the <code>index.html</code> on <code>localhost:8080</code>.</p>
-<p><img src="./assets/oauth-app-bitbucket-07.png" alt="Set up OAuth App - Bitbucket 07" /></p>
-<h2 id="try-out-vssue-locally"> Try out Vssue locally</h2>
-<p>Vssue has already run here. Click <code>Login</code> to login with Bitbucket account.</p>
-<p><img src="./assets/oauth-app-bitbucket-08.png" alt="Set up OAuth App - Bitbucket 08" /></p>
-<p>Redirect to Bitbucket Authorization page. Click <code>Grant access</code> to login.</p>
-<p><img src="./assets/oauth-app-bitbucket-09.png" alt="Set up OAuth App - Bitbucket 09" />
-<img src="./assets/oauth-app-bitbucket-10.png" alt="Set up OAuth App - Bitbucket 10" /></p>
-<p>Oops, failed to load comments. Your repository should enable the <strong>Issue Tracker</strong> to make Vssue works.</p>
-<p><img src="./assets/oauth-app-bitbucket-11.png" alt="Set up OAuth App - Bitbucket 11" /></p>
-<p>Leave a comment on this page ~</p>
-<p><img src="./assets/oauth-app-bitbucket-12.png" alt="Set up OAuth App - Bitbucket 12" />
-<img src="./assets/oauth-app-bitbucket-13.png" alt="Set up OAuth App - Bitbucket 13" /></p>
-<div><p>Tips</p>
-<p>You can go to the repository <a href="https://bitbucket.org/meteorlxy/vssue-demo" target="_blank" rel="noopener noreferrer">meteorlxy/vssue-demo</a> to get the demo code. Check the <a href="https://bitbucket.org/meteorlxy/vssue-demo/issues/1" target="_blank" rel="noopener noreferrer">#1 issue</a> of that repository to see what happened.</p>
-</div>
+<p>Default author for pages</p>
+<h2 id="pageinfo"> pageInfo</h2>
+<ul>
+<li>Type: <code>string[] | false</code></li>
+<li>Default: <code>['author', 'visitor', 'time', 'category', 'tag', 'reading-time']</code></li>
+</ul>
+<p>The order of the items decides the display order. Fill in <code>false</code> to disable it.</p>
+<p>Available items:</p>
+<ul>
+<li><code>'author'</code>: author</li>
+<li><code>'time'</code>: writing date</li>
+<li><code>'category'</code>: category</li>
+<li><code>'tag'</code>: tags</li>
+<li><code>'reading-time'</code>: expect reading time</li>
+<li><code>'word'</code>: word number for the article</li>
+<li><code>'visitor'</code>: pageviews</li>
+</ul>
+<h2 id="comment"> comment</h2>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>true</code></li>
+</ul>
+<p>Whether to enable comment feature by default.</p>
+<h2 id="wordperminute"> wordPerminute</h2>
+<ul>
+<li>Type: <code>number</code></li>
+<li>Default: <code>300</code></li>
+</ul>
+<p>Reading words per minute.</p>
+<h2 id="waline-config"> Waline config</h2>
+<ul>
+<li><a href="./waline.html">See here</a></li>
+</ul>
+<h2 id="vssue-config"> Vssue config</h2>
+<ul>
+<li><a href="./vssue.html">See here</a></li>
+</ul>
+<h2 id="valine-config"> Valine config</h2>
+<ul>
+<li><a href="./valine.html">See here</a></li>
+</ul>
 ]]></content:encoded>
     </item>
     <item>
@@ -850,6 +801,55 @@ And if you already have vue-i18n in your project, it will not affect Vssue.</p>
 <p><img src="./assets/oauth-app-gitee-09.png" alt="Set up OAuth App - Gitee 09" /></p>
 <div><p>Tips</p>
 <p>You can go to the repository <a href="https://gitee.com/meteor_lxy/vssue-demo" target="_blank" rel="noopener noreferrer">meteor_lxy/vssue-demo</a> to get the demo code. Check the <a href="https://gitee.com/meteor_lxy/vssue-demo/issues/IWWTA" target="_blank" rel="noopener noreferrer">first issue</a> of that repository to see what happened.</p>
+</div>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>BitBucket OAuth Consumer</title>
+      <link>https://vuepress-theme-hope.github.io/comment/guide/bitbucket/</link>
+      <guid>https://vuepress-theme-hope.github.io/comment/guide/bitbucket/</guid>
+      <source url="https://vuepress-theme-hope.github.io/comment/rss.xml">BitBucket OAuth Consumer</source>
+      <pubDate>Tue, 07 Jan 2020 06:44:41 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="bitbucket-oauth-consumer"> BitBucket OAuth Consumer</h1>
+<h2 id="create-a-new-oauth-consumer"> Create a new OAuth Consumer</h2>
+<ul>
+<li>Go to <strong>Bitbucket settings - OAuth</strong></li>
+<li>Click <strong>Add consumer</strong></li>
+</ul>
+<p><img src="./assets/oauth-app-bitbucket-01.png" alt="Set up OAuth App - Bitbucket 01" />
+<img src="./assets/oauth-app-bitbucket-02.png" alt="Set up OAuth App - Bitbucket 02" />
+<img src="./assets/oauth-app-bitbucket-03.png" alt="Set up OAuth App - Bitbucket 03" /></p>
+<ul>
+<li>Set the <code>Callback URL</code> to your site URL (Here we take <code>localhost:8080</code> for example)</li>
+<li>Unselect <code>This is a private consumer</code></li>
+<li>Select <code>Account - Read</code> and <code>Issues - Write</code> permissions</li>
+</ul>
+<p><img src="./assets/oauth-app-bitbucket-04.png" alt="Set up OAuth App - Bitbucket 04" />
+<img src="./assets/oauth-app-bitbucket-05.png" alt="Set up OAuth App - Bitbucket 05" /></p>
+<h2 id="get-the-client-id"> Get the Client ID</h2>
+<p>Then you’ve created a new OAuth Consumer, and here is your <strong>Key</strong> (<code>Client ID</code>).</p>
+<p><img src="./assets/oauth-app-bitbucket-06.png" alt="Set up OAuth App - Bitbucket 06" /></p>
+<h2 id="config-and-start-your-vssue"> Config and start your Vssue</h2>
+<p>Copy the <code>Client ID</code>, and set <code>owner</code> and <code>repo</code>.</p>
+<blockquote>
+<p>The URL pattern of bitbucket repo is <code>https://bitbucket.org/${owner}/${repo}</code></p>
+</blockquote>
+<p>Here we take <code>https://bitbucket.org/meteorlxy/vssue-demo</code> for example, and set the <code>title</code> of issue to <code>Vssue Demo</code>.</p>
+<p>Then run <code>anywhere -h localhost 8080</code> to serve the <code>index.html</code> on <code>localhost:8080</code>.</p>
+<p><img src="./assets/oauth-app-bitbucket-07.png" alt="Set up OAuth App - Bitbucket 07" /></p>
+<h2 id="try-out-vssue-locally"> Try out Vssue locally</h2>
+<p>Vssue has already run here. Click <code>Login</code> to login with Bitbucket account.</p>
+<p><img src="./assets/oauth-app-bitbucket-08.png" alt="Set up OAuth App - Bitbucket 08" /></p>
+<p>Redirect to Bitbucket Authorization page. Click <code>Grant access</code> to login.</p>
+<p><img src="./assets/oauth-app-bitbucket-09.png" alt="Set up OAuth App - Bitbucket 09" />
+<img src="./assets/oauth-app-bitbucket-10.png" alt="Set up OAuth App - Bitbucket 10" /></p>
+<p>Oops, failed to load comments. Your repository should enable the <strong>Issue Tracker</strong> to make Vssue works.</p>
+<p><img src="./assets/oauth-app-bitbucket-11.png" alt="Set up OAuth App - Bitbucket 11" /></p>
+<p>Leave a comment on this page ~</p>
+<p><img src="./assets/oauth-app-bitbucket-12.png" alt="Set up OAuth App - Bitbucket 12" />
+<img src="./assets/oauth-app-bitbucket-13.png" alt="Set up OAuth App - Bitbucket 13" /></p>
+<div><p>Tips</p>
+<p>You can go to the repository <a href="https://bitbucket.org/meteorlxy/vssue-demo" target="_blank" rel="noopener noreferrer">meteorlxy/vssue-demo</a> to get the demo code. Check the <a href="https://bitbucket.org/meteorlxy/vssue-demo/issues/1" target="_blank" rel="noopener noreferrer">#1 issue</a> of that repository to see what happened.</p>
 </div>
 ]]></content:encoded>
     </item>
@@ -1024,44 +1024,6 @@ Vssue can also work with self-hosted GitLab. Set the <code>baseURL</code> option
 ]]></content:encoded>
     </item>
     <item>
-      <title>Guide</title>
-      <link>https://vuepress-theme-hope.github.io/comment/guide/</link>
-      <guid>https://vuepress-theme-hope.github.io/comment/guide/</guid>
-      <source url="https://vuepress-theme-hope.github.io/comment/rss.xml">Guide</source>
-      <pubDate>Tue, 07 Jan 2020 06:44:41 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="guide"> Guide</h1>
-<p>This plugin exposes two components at <code>@mr-hope/vuepress-plugin-comment/lib/client/&lt;component name&gt;.vue</code>. Please include it manually in your theme.</p>
-<ul>
-<li><code>&lt;Comment /&gt;</code>: Comment component</li>
-<li><code>&lt;PageInfo /&gt;</code>: Page information component</li>
-</ul>
-<h2 id="pageinfo"> <code>&lt;PageInfo /&gt;</code></h2>
-<p>You need to insert the page information component (<code>&lt;PageInfo /&gt;</code>) before the <code>&lt;Content /&gt;</code> component.</p>
-<ul>
-<li><a href="./page-info.html">View Details</a></li>
-</ul>
-<h2 id="comment"> <code>&lt;Comment /&gt;</code></h2>
-<p>It is recommended to insert the comment component (<code>&lt;Comment /&gt;</code>) after the <code>&lt;PageNav /&gt;</code> component.</p>
-<p><code>&lt;Comment /&gt;</code> components are enabled globally by default. You can disable it by setting <code>comment: false</code> in frontmatter on a specific page.</p>
-<p>To keep it globally disabled, please set <code>comment</code> to <code>false</code> in the plugin options. This way you can set <code>comment: true</code> in the frontmatter of a particular page to enable it locally.</p>
-<p>You can choose from 3 comment service provider: Waline, Vssue and Valine.</p>
-<div><p>Comparison between services</p>
-<ul>
-<li>Waline uses a backend server to support comment and pageview statistics, and you can comment without logging in to any account. It needs extra configuration on backend, and you can deploy on vercel for free.</li>
-<li>Vssue uses the issue panel of the code platform repo and requires the user to login or register the corresponding platform account.</li>
-<li>Valine uses leancloud to support pageview statistics, and you can comment without logging in to any account</li>
-</ul>
-<p>If your site is for the general public rather than programmers, Waline is recommended.</p>
-</div>
-<h3 id="waline"> Waline</h3>
-<p>See <a href="./waline.html">Waline Config Guide</a></p>
-<h3 id="vssue"> Vssue</h3>
-<p>See <a href="./vssue.html">Vssue Config Guide</a></p>
-<h3 id="valine"> Valine</h3>
-<p>See <a href="./valine.html">Valine Config Guide</a></p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Supported Platforms</title>
       <link>https://vuepress-theme-hope.github.io/comment/guide/supported-platforms/</link>
       <guid>https://vuepress-theme-hope.github.io/comment/guide/supported-platforms/</guid>
@@ -1146,6 +1108,44 @@ Vssue can also work with self-hosted GitLab. Set the <code>baseURL</code> option
 </li>
 <li>Developer Reference: <a href="https://gitee.com/api/v5/swagger" target="_blank" rel="noopener noreferrer">Official Docs</a></li>
 </ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Guide</title>
+      <link>https://vuepress-theme-hope.github.io/comment/guide/</link>
+      <guid>https://vuepress-theme-hope.github.io/comment/guide/</guid>
+      <source url="https://vuepress-theme-hope.github.io/comment/rss.xml">Guide</source>
+      <pubDate>Tue, 07 Jan 2020 06:44:41 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="guide"> Guide</h1>
+<p>This plugin exposes two components at <code>@mr-hope/vuepress-plugin-comment/lib/client/&lt;component name&gt;.vue</code>. Please include it manually in your theme.</p>
+<ul>
+<li><code>&lt;Comment /&gt;</code>: Comment component</li>
+<li><code>&lt;PageInfo /&gt;</code>: Page information component</li>
+</ul>
+<h2 id="pageinfo"> <code>&lt;PageInfo /&gt;</code></h2>
+<p>You need to insert the page information component (<code>&lt;PageInfo /&gt;</code>) before the <code>&lt;Content /&gt;</code> component.</p>
+<ul>
+<li><a href="./page-info.html">View Details</a></li>
+</ul>
+<h2 id="comment"> <code>&lt;Comment /&gt;</code></h2>
+<p>It is recommended to insert the comment component (<code>&lt;Comment /&gt;</code>) after the <code>&lt;PageNav /&gt;</code> component.</p>
+<p><code>&lt;Comment /&gt;</code> components are enabled globally by default. You can disable it by setting <code>comment: false</code> in frontmatter on a specific page.</p>
+<p>To keep it globally disabled, please set <code>comment</code> to <code>false</code> in the plugin options. This way you can set <code>comment: true</code> in the frontmatter of a particular page to enable it locally.</p>
+<p>You can choose from 3 comment service provider: Waline, Vssue and Valine.</p>
+<div><p>Comparison between services</p>
+<ul>
+<li>Waline uses a backend server to support comment and pageview statistics, and you can comment without logging in to any account. It needs extra configuration on backend, and you can deploy on vercel for free.</li>
+<li>Vssue uses the issue panel of the code platform repo and requires the user to login or register the corresponding platform account.</li>
+<li>Valine uses leancloud to support pageview statistics, and you can comment without logging in to any account</li>
+</ul>
+<p>If your site is for the general public rather than programmers, Waline is recommended.</p>
+</div>
+<h3 id="waline"> Waline</h3>
+<p>See <a href="./waline.html">Waline Config Guide</a></p>
+<h3 id="vssue"> Vssue</h3>
+<p>See <a href="./vssue.html">Vssue Config Guide</a></p>
+<h3 id="valine"> Valine</h3>
+<p>See <a href="./valine.html">Valine Config Guide</a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -1391,70 +1391,6 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div>]]></content:encoded>
     </item>
     <item>
-      <title>配置</title>
-      <link>https://vuepress-theme-hope.github.io/comment/zh/config/</link>
-      <guid>https://vuepress-theme-hope.github.io/comment/zh/config/</guid>
-      <source url="https://vuepress-theme-hope.github.io/comment/rss.xml">配置</source>
-      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="type"> type</h2>
-<ul>
-<li>类型: <code>'valine' | 'vssue' | 'disable'</code></li>
-<li>必填: 是</li>
-</ul>
-<p>使用 Valine 还是 Vssue。设置为 <code>'disabled'</code> 会禁用评论功能，仅提供页面信息功能。</p>
-<h2 id="author"> author</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>文章的默认作者</p>
-<h2 id="pageinfo"> pageInfo</h2>
-<ul>
-<li>类型: <code>string[] | false</code></li>
-<li>默认值: <code>['author', 'visitor', 'time', 'category', 'tag', 'reading-time']</code></li>
-</ul>
-<p>文章信息，可以填入数组，数组的顺序是各条目显示的顺序。填入 <code>false</code> 使其被禁用。</p>
-<p>可以填入的条目如下:</p>
-<ul>
-<li><code>'author'</code>: 作者</li>
-<li><code>'time'</code>: 写作日期</li>
-<li><code>'category'</code>: 分类</li>
-<li><code>'tag'</code>: 标签</li>
-<li><code>'reading-time'</code>: 预计阅读时间</li>
-<li><code>'word'</code>: 字数</li>
-<li><code>'visitor'</code>: 访问量</li>
-</ul>
-<h2 id="comment"> comment</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认: <code>true</code></li>
-</ul>
-<p>是否默认启用评论功能。</p>
-<h2 id="wordperminute"> wordPerminute</h2>
-<ul>
-<li>类型: <code>number</code></li>
-<li>默认: <code>300</code></li>
-</ul>
-<p>每分钟阅读的字数。</p>
-<h2 id="waline-配置"> Waline 配置</h2>
-<ul>
-<li><a href="./waline.html">点击查看</a></li>
-</ul>
-<h2 id="vssue-配置"> Vssue 配置</h2>
-<ul>
-<li><a href="./vssue.html">点击查看</a></li>
-</ul>
-<h2 id="valine-配置"> Valine 配置</h2>
-<ul>
-<li><a href="./valine.html">点击查看</a></li>
-</ul>
-<h2 id="页面配置"> 页面配置</h2>
-<ul>
-<li><a href="./frontmatter.html">点击查看</a></li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Valine 配置</title>
       <link>https://vuepress-theme-hope.github.io/comment/zh/config/valine/</link>
       <guid>https://vuepress-theme-hope.github.io/comment/zh/config/valine/</guid>
@@ -1575,6 +1511,266 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <p>设置表情包映射，请参考 <a href="https://valine.js.org/emoji.html" target="_blank" rel="noopener noreferrer">Valine 自定义表情包</a></p>
 </li>
 </ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>配置</title>
+      <link>https://vuepress-theme-hope.github.io/comment/zh/config/</link>
+      <guid>https://vuepress-theme-hope.github.io/comment/zh/config/</guid>
+      <source url="https://vuepress-theme-hope.github.io/comment/rss.xml">配置</source>
+      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="type"> type</h2>
+<ul>
+<li>类型: <code>'valine' | 'vssue' | 'disable'</code></li>
+<li>必填: 是</li>
+</ul>
+<p>使用 Valine 还是 Vssue。设置为 <code>'disabled'</code> 会禁用评论功能，仅提供页面信息功能。</p>
+<h2 id="author"> author</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>文章的默认作者</p>
+<h2 id="pageinfo"> pageInfo</h2>
+<ul>
+<li>类型: <code>string[] | false</code></li>
+<li>默认值: <code>['author', 'visitor', 'time', 'category', 'tag', 'reading-time']</code></li>
+</ul>
+<p>文章信息，可以填入数组，数组的顺序是各条目显示的顺序。填入 <code>false</code> 使其被禁用。</p>
+<p>可以填入的条目如下:</p>
+<ul>
+<li><code>'author'</code>: 作者</li>
+<li><code>'time'</code>: 写作日期</li>
+<li><code>'category'</code>: 分类</li>
+<li><code>'tag'</code>: 标签</li>
+<li><code>'reading-time'</code>: 预计阅读时间</li>
+<li><code>'word'</code>: 字数</li>
+<li><code>'visitor'</code>: 访问量</li>
+</ul>
+<h2 id="comment"> comment</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认: <code>true</code></li>
+</ul>
+<p>是否默认启用评论功能。</p>
+<h2 id="wordperminute"> wordPerminute</h2>
+<ul>
+<li>类型: <code>number</code></li>
+<li>默认: <code>300</code></li>
+</ul>
+<p>每分钟阅读的字数。</p>
+<h2 id="waline-配置"> Waline 配置</h2>
+<ul>
+<li><a href="./waline.html">点击查看</a></li>
+</ul>
+<h2 id="vssue-配置"> Vssue 配置</h2>
+<ul>
+<li><a href="./vssue.html">点击查看</a></li>
+</ul>
+<h2 id="valine-配置"> Valine 配置</h2>
+<ul>
+<li><a href="./valine.html">点击查看</a></li>
+</ul>
+<h2 id="页面配置"> 页面配置</h2>
+<ul>
+<li><a href="./frontmatter.html">点击查看</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Waline 配置</title>
+      <link>https://vuepress-theme-hope.github.io/comment/zh/config/waline/</link>
+      <guid>https://vuepress-theme-hope.github.io/comment/zh/config/waline/</guid>
+      <source url="https://vuepress-theme-hope.github.io/comment/rss.xml">Waline 配置</source>
+      <pubDate>Sun, 16 May 2021 15:14:54 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="el"> el</h2>
+<ul>
+<li>类型: <code>string | HTMLElement</code></li>
+<li>必填: 否</li>
+</ul>
+<p>Waline 的初始化挂载器。必须是一个有效的 <strong>CSS 选择器</strong> 或 HTMLELement 对象。</p>
+<div><p>Tips</p>
+<p>如果你只想使用浏览量统计功能，请不要设置该项。</p>
+</div>
+<h2 id="serverurl"> serverURL</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 是</li>
+</ul>
+<p>Waline 的服务端地址。</p>
+<h2 id="path"> path</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>window.location.pathname</code></li>
+<li>必填: 否</li>
+</ul>
+<p>当前 <em>文章页</em> 路径，用于区分不同的 <em>文章页</em>，以保证正确读取该 <em>文章页</em> 下的评论列表。</p>
+<p>可选值:</p>
+<ul>
+<li><code>window.location.pathname</code> (默认值，推荐)</li>
+<li><code>window.location.href</code></li>
+<li>自定义</li>
+</ul>
+<blockquote>
+<p>I. 请保证每个 <em>文章页</em> 路径的唯一性，否则可能会出现不同 <em>文章页</em> 下加载相同评论列表的情况。</p>
+<p>II. 如果值为 <code>window.location.href</code>，可能会出现随便加 <em>不同参数</em> 进入该页面，而被判断成新页面的情况。</p>
+</blockquote>
+<h2 id="lang"> lang</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>'zh-CN'</code></li>
+<li>必填: 否</li>
+</ul>
+<p>多语言支持。</p>
+<p>可选值:</p>
+<ul>
+<li><code>'zh'</code></li>
+<li><code>'zh-CN'</code></li>
+<li><code>'zh-TW'</code></li>
+<li><code>'en'</code></li>
+<li><code>'en-US'</code></li>
+<li><code>'jp'</code></li>
+<li><code>'jp-JP'</code></li>
+</ul>
+<p>如需 <em>自定义语言</em>，请参考 <a href="./../guide/client/i18n.html">i18n</a>。</p>
+<h2 id="visitor"> visitor</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+<li>必填: 否</li>
+</ul>
+<p>文章访问量统计。</p>
+<h2 id="emoji"> emoji</h2>
+<ul>
+<li>类型: <code>(string | EmojiInfo)[]</code></li>
+<li>默认值: <code>['https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo']</code></li>
+</ul>
+<p>表情设置，详见 <a href="./../guide/client/emoji.html">自定义表情</a></p>
+<h2 id="dark"> dark</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>暗黑模式适配。</p>
+<ul>
+<li>设置 <code>'auto'</code> 会根据设备暗黑模式自适应。</li>
+<li>填入 CSS 选择器会在对应选择器生效时启用夜间模式。</li>
+</ul>
+<div><p>针对不同主题的例子</p>
+<ul>
+<li>
+<p><strong>Docusaurus</strong>: 它会在 <code>&lt;html&gt;</code> 上通过设置 <code>data-theme=&quot;dark&quot;</code> 开启暗黑模式，那么你需要将 <code>dark</code> 选项设置为 <code>'html[data-theme=&quot;dark&quot;]'</code>。</p>
+</li>
+<li>
+<p><strong>hexo-theme-fluid</strong>: 它会在 <code>&lt;html&gt;</code> 上通过设置 <code>data-user-color-scheme=&quot;dark&quot;</code> 开启暗黑模式。那么你需要将 <code>dark</code> 选项设置为 <code>'html[data-user-color-scheme=&quot;dark&quot;]'</code>。</p>
+</li>
+<li>
+<p><strong>vuepress-theme-hope</strong>: 它会在 <code>&lt;body&gt;</code> 上添加<code>theme-dark</code> class 来开启暗黑模式。那么你需要将 <code>dark</code> 选项设置为 <code>body.theme-dark</code>。</p>
+</li>
+</ul>
+</div>
+<p>自定义样式与暗黑模式详见 <a href="./../guide/client/style.html">自定义样式</a>。</p>
+<h2 id="meta"> meta</h2>
+<ul>
+<li>类型: <code>string[]</code></li>
+<li>默认值: <code>['nick', 'mail', 'link']</code></li>
+<li>必填: 否</li>
+</ul>
+<p>评论者相关属性。可选值: <code>'nick'</code>, <code>'mail'</code>, <code>'link'</code></p>
+<h2 id="requiredmeta"> requiredMeta</h2>
+<ul>
+<li>类型: <code>string[]</code></li>
+<li>默认值: <code>[]</code></li>
+<li>必填: 否</li>
+</ul>
+<p>设置<strong>必填项</strong>，默认匿名，可选值:</p>
+<ul>
+<li><code>[]</code></li>
+<li><code>['nick']</code></li>
+<li><code>['nick', 'mail']</code></li>
+</ul>
+<h2 id="login"> login</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>'enable'</code></li>
+<li>必填: 否</li>
+</ul>
+<p>登录模式状态，可选值:</p>
+<ul>
+<li><code>'enable'</code>: 启用登录 (默认)</li>
+<li><code>'disable'</code>: 禁用登录，用户只能填写信息评论</li>
+<li><code>'force'</code>: 强制登录，用户必须注册并登录才可发布评论</li>
+</ul>
+<h2 id="avatar"> avatar</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>mp</code></li>
+<li>必填: 否</li>
+</ul>
+<p><a href="http://cn.gravatar.com/" target="_blank" rel="noopener noreferrer">Gravatar</a> 头像展示方式。</p>
+<p>可选值:</p>
+<ul>
+<li><code>''</code></li>
+<li><code>'mp'</code></li>
+<li><code>'identicon'</code></li>
+<li><code>'monsterid'</code></li>
+<li><code>'wavatar'</code></li>
+<li><code>'retro'</code></li>
+<li><code>'robohash'</code></li>
+<li><code>'hide'</code></li>
+</ul>
+<p>更多信息，请查看 <a href="./../guide/client/avatar.html">头像配置</a>。</p>
+<h2 id="wordlimit"> wordLimit</h2>
+<ul>
+<li>类型: <code>number | [number, number]</code></li>
+<li>默认值: <code>0</code></li>
+<li>必要性: <code>false</code></li>
+</ul>
+<p>评论字数限制。填入单个数字时为最大字数限制。设置为 <code>0</code> 时无限制。</p>
+<h2 id="pagesize"> pageSize</h2>
+<ul>
+<li>类型: <code>number</code></li>
+<li>默认值: <code>10</code></li>
+<li>必填: 否</li>
+</ul>
+<p>评论列表分页，每页条数。</p>
+<h2 id="avatarcdn"> avatarCDN</h2>
+<ul>
+<li>类型: <code>string</code></li>
+<li>默认值: <code>https://sdn.geekzu.org/avatar/</code></li>
+<li>必填: 否</li>
+</ul>
+<p>设置 Gravatar 头像 CDN 地址。</p>
+<h2 id="avatarforce"> avatarForce</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>false</code></li>
+<li>必填: 否</li>
+</ul>
+<p>每次访问是否<strong>强制</strong>拉取最新的<em>评论列表头像</em></p>
+<blockquote>
+<p>不推荐设置为 <code>true</code>，目前的<em>评论列表头像</em>会自动带上 <code>Waline</code> 的版本号</p>
+</blockquote>
+<h2 id="uploadimage"> uploadImage</h2>
+<ul>
+<li>类型: <code>Function</code></li>
+<li>必填: 否</li>
+</ul>
+<p>自定义图片上传方法，方便更好的存储图片。方法执行时会将图片对象传入。</p>
+<h2 id="highlight"> highlight</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+<li>必填: 否</li>
+</ul>
+<p><strong>代码高亮</strong>，默认开启，若不需要，请手动关闭</p>
+<h2 id="copyright"> copyright</h2>
+<ul>
+<li>类型: <code>boolean</code></li>
+<li>默认值: <code>true</code></li>
+<li>必填: 否</li>
+</ul>
+<p>是否显示页脚版权信息。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -1893,202 +2089,6 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 ]]></content:encoded>
     </item>
     <item>
-      <title>Waline 配置</title>
-      <link>https://vuepress-theme-hope.github.io/comment/zh/config/waline/</link>
-      <guid>https://vuepress-theme-hope.github.io/comment/zh/config/waline/</guid>
-      <source url="https://vuepress-theme-hope.github.io/comment/rss.xml">Waline 配置</source>
-      <pubDate>Sun, 16 May 2021 15:14:54 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="el"> el</h2>
-<ul>
-<li>类型: <code>string | HTMLElement</code></li>
-<li>必填: 否</li>
-</ul>
-<p>Waline 的初始化挂载器。必须是一个有效的 <strong>CSS 选择器</strong> 或 HTMLELement 对象。</p>
-<div><p>Tips</p>
-<p>如果你只想使用浏览量统计功能，请不要设置该项。</p>
-</div>
-<h2 id="serverurl"> serverURL</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 是</li>
-</ul>
-<p>Waline 的服务端地址。</p>
-<h2 id="path"> path</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>window.location.pathname</code></li>
-<li>必填: 否</li>
-</ul>
-<p>当前 <em>文章页</em> 路径，用于区分不同的 <em>文章页</em>，以保证正确读取该 <em>文章页</em> 下的评论列表。</p>
-<p>可选值:</p>
-<ul>
-<li><code>window.location.pathname</code> (默认值，推荐)</li>
-<li><code>window.location.href</code></li>
-<li>自定义</li>
-</ul>
-<blockquote>
-<p>I. 请保证每个 <em>文章页</em> 路径的唯一性，否则可能会出现不同 <em>文章页</em> 下加载相同评论列表的情况。</p>
-<p>II. 如果值为 <code>window.location.href</code>，可能会出现随便加 <em>不同参数</em> 进入该页面，而被判断成新页面的情况。</p>
-</blockquote>
-<h2 id="lang"> lang</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>'zh-CN'</code></li>
-<li>必填: 否</li>
-</ul>
-<p>多语言支持。</p>
-<p>可选值:</p>
-<ul>
-<li><code>'zh'</code></li>
-<li><code>'zh-CN'</code></li>
-<li><code>'zh-TW'</code></li>
-<li><code>'en'</code></li>
-<li><code>'en-US'</code></li>
-<li><code>'jp'</code></li>
-<li><code>'jp-JP'</code></li>
-</ul>
-<p>如需 <em>自定义语言</em>，请参考 <a href="./../guide/client/i18n.html">i18n</a>。</p>
-<h2 id="visitor"> visitor</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>false</code></li>
-<li>必填: 否</li>
-</ul>
-<p>文章访问量统计。</p>
-<h2 id="emoji"> emoji</h2>
-<ul>
-<li>类型: <code>(string | EmojiInfo)[]</code></li>
-<li>默认值: <code>['https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo']</code></li>
-</ul>
-<p>表情设置，详见 <a href="./../guide/client/emoji.html">自定义表情</a></p>
-<h2 id="dark"> dark</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>暗黑模式适配。</p>
-<ul>
-<li>设置 <code>'auto'</code> 会根据设备暗黑模式自适应。</li>
-<li>填入 CSS 选择器会在对应选择器生效时启用夜间模式。</li>
-</ul>
-<div><p>针对不同主题的例子</p>
-<ul>
-<li>
-<p><strong>Docusaurus</strong>: 它会在 <code>&lt;html&gt;</code> 上通过设置 <code>data-theme=&quot;dark&quot;</code> 开启暗黑模式，那么你需要将 <code>dark</code> 选项设置为 <code>'html[data-theme=&quot;dark&quot;]'</code>。</p>
-</li>
-<li>
-<p><strong>hexo-theme-fluid</strong>: 它会在 <code>&lt;html&gt;</code> 上通过设置 <code>data-user-color-scheme=&quot;dark&quot;</code> 开启暗黑模式。那么你需要将 <code>dark</code> 选项设置为 <code>'html[data-user-color-scheme=&quot;dark&quot;]'</code>。</p>
-</li>
-<li>
-<p><strong>vuepress-theme-hope</strong>: 它会在 <code>&lt;body&gt;</code> 上添加<code>theme-dark</code> class 来开启暗黑模式。那么你需要将 <code>dark</code> 选项设置为 <code>body.theme-dark</code>。</p>
-</li>
-</ul>
-</div>
-<p>自定义样式与暗黑模式详见 <a href="./../guide/client/style.html">自定义样式</a>。</p>
-<h2 id="meta"> meta</h2>
-<ul>
-<li>类型: <code>string[]</code></li>
-<li>默认值: <code>['nick', 'mail', 'link']</code></li>
-<li>必填: 否</li>
-</ul>
-<p>评论者相关属性。可选值: <code>'nick'</code>, <code>'mail'</code>, <code>'link'</code></p>
-<h2 id="requiredmeta"> requiredMeta</h2>
-<ul>
-<li>类型: <code>string[]</code></li>
-<li>默认值: <code>[]</code></li>
-<li>必填: 否</li>
-</ul>
-<p>设置<strong>必填项</strong>，默认匿名，可选值:</p>
-<ul>
-<li><code>[]</code></li>
-<li><code>['nick']</code></li>
-<li><code>['nick', 'mail']</code></li>
-</ul>
-<h2 id="login"> login</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>'enable'</code></li>
-<li>必填: 否</li>
-</ul>
-<p>登录模式状态，可选值:</p>
-<ul>
-<li><code>'enable'</code>: 启用登录 (默认)</li>
-<li><code>'disable'</code>: 禁用登录，用户只能填写信息评论</li>
-<li><code>'force'</code>: 强制登录，用户必须注册并登录才可发布评论</li>
-</ul>
-<h2 id="avatar"> avatar</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>mp</code></li>
-<li>必填: 否</li>
-</ul>
-<p><a href="http://cn.gravatar.com/" target="_blank" rel="noopener noreferrer">Gravatar</a> 头像展示方式。</p>
-<p>可选值:</p>
-<ul>
-<li><code>''</code></li>
-<li><code>'mp'</code></li>
-<li><code>'identicon'</code></li>
-<li><code>'monsterid'</code></li>
-<li><code>'wavatar'</code></li>
-<li><code>'retro'</code></li>
-<li><code>'robohash'</code></li>
-<li><code>'hide'</code></li>
-</ul>
-<p>更多信息，请查看 <a href="./../guide/client/avatar.html">头像配置</a>。</p>
-<h2 id="wordlimit"> wordLimit</h2>
-<ul>
-<li>类型: <code>number | [number, number]</code></li>
-<li>默认值: <code>0</code></li>
-<li>必要性: <code>false</code></li>
-</ul>
-<p>评论字数限制。填入单个数字时为最大字数限制。设置为 <code>0</code> 时无限制。</p>
-<h2 id="pagesize"> pageSize</h2>
-<ul>
-<li>类型: <code>number</code></li>
-<li>默认值: <code>10</code></li>
-<li>必填: 否</li>
-</ul>
-<p>评论列表分页，每页条数。</p>
-<h2 id="avatarcdn"> avatarCDN</h2>
-<ul>
-<li>类型: <code>string</code></li>
-<li>默认值: <code>https://sdn.geekzu.org/avatar/</code></li>
-<li>必填: 否</li>
-</ul>
-<p>设置 Gravatar 头像 CDN 地址。</p>
-<h2 id="avatarforce"> avatarForce</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>false</code></li>
-<li>必填: 否</li>
-</ul>
-<p>每次访问是否<strong>强制</strong>拉取最新的<em>评论列表头像</em></p>
-<blockquote>
-<p>不推荐设置为 <code>true</code>，目前的<em>评论列表头像</em>会自动带上 <code>Waline</code> 的版本号</p>
-</blockquote>
-<h2 id="uploadimage"> uploadImage</h2>
-<ul>
-<li>类型: <code>Function</code></li>
-<li>必填: 否</li>
-</ul>
-<p>自定义图片上传方法，方便更好的存储图片。方法执行时会将图片对象传入。</p>
-<h2 id="highlight"> highlight</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-<li>必填: 否</li>
-</ul>
-<p><strong>代码高亮</strong>，默认开启，若不需要，请手动关闭</p>
-<h2 id="copyright"> copyright</h2>
-<ul>
-<li>类型: <code>boolean</code></li>
-<li>默认值: <code>true</code></li>
-<li>必填: 否</li>
-</ul>
-<p>是否显示页脚版权信息。</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>BitBucket OAuth Consumer</title>
       <link>https://vuepress-theme-hope.github.io/comment/zh/guide/bitbucket/</link>
       <guid>https://vuepress-theme-hope.github.io/comment/zh/guide/bitbucket/</guid>
@@ -2279,6 +2279,43 @@ Vssue 同样可以配合自己搭建的 GitLab 使用。只需要将 <code>baseU
 ]]></content:encoded>
     </item>
     <item>
+      <title>指南</title>
+      <link>https://vuepress-theme-hope.github.io/comment/zh/guide/</link>
+      <guid>https://vuepress-theme-hope.github.io/comment/zh/guide/</guid>
+      <source url="https://vuepress-theme-hope.github.io/comment/rss.xml">指南</source>
+      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
+      <content:encoded><![CDATA[<p>此插件暴露两个组件，路径为 <code>@mr-hope/vuepress-plugin-comment/lib/client/&lt;组件名&gt;.vue</code>。请在你的主题中手动引入。</p>
+<ul>
+<li><code>&lt;Comment /&gt;</code>: 评论组件</li>
+<li><code>&lt;PageInfo /&gt;</code>: 页面信息组件</li>
+</ul>
+<h2 id="pageinfo"> <code>&lt;PageInfo /&gt;</code></h2>
+<p>你需要将页面信息组件 (<code>&lt;PageInfo /&gt;</code>) 插入在 <code>&lt;Content /&gt;</code> 组件前。</p>
+<ul>
+<li><a href="./page-info.html">查看详情</a></li>
+</ul>
+<h2 id="comment"> <code>&lt;Comment /&gt;</code></h2>
+<p>推荐将评论组件 (<code>&lt;Comment /&gt;</code>) 插入在 <code>&lt;PageNav /&gt;</code> 组件后。</p>
+<p><code>&lt;Comment /&gt;</code> 组件默认全局启用。你可以在特定页面的 frontmatter 中设置 <code>comment: false</code> 来局部禁用它。</p>
+<p>如果你需要保持全局禁用，请在插件选项中设置 <code>comment</code> 为 <code>false</code>。这样你可以在特定页面的 frontmatter 中设置 <code>comment: true</code> 来局部启用它。</p>
+<p>有三个评论插件可以选择: Waline、Vssue 和 Valine。</p>
+<div><p>评论服务的比较</p>
+<ul>
+<li>Waline 需要后端服务器以及额外的配置，支持页面访问量统计，无需登录账号即可评论。可以使用 Vercel。</li>
+<li>Vssue 使用代码平台仓库的 issue 面板，需要用户登录或注册相应平台账号。</li>
+<li>Valine 使用 leancloud，支持页面访问量统计，无需登录账号即可评论</li>
+</ul>
+<p>如果你的站点面向大众而非程序员，推荐使用 Waline。</p>
+</div>
+<h3 id="waline"> Waline</h3>
+<p><a href="./waline.html">详见 Waline 指南</a></p>
+<h3 id="vssue"> Vssue</h3>
+<p><a href="./vssue.html">详见 Vssue 指南</a></p>
+<h3 id="valine"> Valine</h3>
+<p><a href="./valine.html">详见 Valine 指南</a></p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>页面信息</title>
       <link>https://vuepress-theme-hope.github.io/comment/zh/guide/page-info/</link>
       <guid>https://vuepress-theme-hope.github.io/comment/zh/guide/page-info/</guid>
@@ -2352,43 +2389,6 @@ Vssue 同样可以配合自己搭建的 GitLab 使用。只需要将 <code>baseU
 </div>
 <h2 id="原创标识"> 原创标识</h2>
 <p>你可以在特定页面的 frontmatter 中设置 <code>original</code> 为 <code>true</code> 来为你的文章添加原创标签。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>指南</title>
-      <link>https://vuepress-theme-hope.github.io/comment/zh/guide/</link>
-      <guid>https://vuepress-theme-hope.github.io/comment/zh/guide/</guid>
-      <source url="https://vuepress-theme-hope.github.io/comment/rss.xml">指南</source>
-      <pubDate>Tue, 13 Oct 2020 05:36:44 GMT</pubDate>
-      <content:encoded><![CDATA[<p>此插件暴露两个组件，路径为 <code>@mr-hope/vuepress-plugin-comment/lib/client/&lt;组件名&gt;.vue</code>。请在你的主题中手动引入。</p>
-<ul>
-<li><code>&lt;Comment /&gt;</code>: 评论组件</li>
-<li><code>&lt;PageInfo /&gt;</code>: 页面信息组件</li>
-</ul>
-<h2 id="pageinfo"> <code>&lt;PageInfo /&gt;</code></h2>
-<p>你需要将页面信息组件 (<code>&lt;PageInfo /&gt;</code>) 插入在 <code>&lt;Content /&gt;</code> 组件前。</p>
-<ul>
-<li><a href="./page-info.html">查看详情</a></li>
-</ul>
-<h2 id="comment"> <code>&lt;Comment /&gt;</code></h2>
-<p>推荐将评论组件 (<code>&lt;Comment /&gt;</code>) 插入在 <code>&lt;PageNav /&gt;</code> 组件后。</p>
-<p><code>&lt;Comment /&gt;</code> 组件默认全局启用。你可以在特定页面的 frontmatter 中设置 <code>comment: false</code> 来局部禁用它。</p>
-<p>如果你需要保持全局禁用，请在插件选项中设置 <code>comment</code> 为 <code>false</code>。这样你可以在特定页面的 frontmatter 中设置 <code>comment: true</code> 来局部启用它。</p>
-<p>有三个评论插件可以选择: Waline、Vssue 和 Valine。</p>
-<div><p>评论服务的比较</p>
-<ul>
-<li>Waline 需要后端服务器以及额外的配置，支持页面访问量统计，无需登录账号即可评论。可以使用 Vercel。</li>
-<li>Vssue 使用代码平台仓库的 issue 面板，需要用户登录或注册相应平台账号。</li>
-<li>Valine 使用 leancloud，支持页面访问量统计，无需登录账号即可评论</li>
-</ul>
-<p>如果你的站点面向大众而非程序员，推荐使用 Waline。</p>
-</div>
-<h3 id="waline"> Waline</h3>
-<p><a href="./waline.html">详见 Waline 指南</a></p>
-<h3 id="vssue"> Vssue</h3>
-<p><a href="./vssue.html">详见 Vssue 指南</a></p>
-<h3 id="valine"> Valine</h3>
-<p><a href="./valine.html">详见 Valine 指南</a></p>
 ]]></content:encoded>
     </item>
     <item>

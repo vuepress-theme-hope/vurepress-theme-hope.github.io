@@ -6,8 +6,8 @@
     <link>https://vuepress-theme-hope.github.io/seo/</link>
     <description>Using &lt;meta&gt; tags to Enhance Your site SEO</description>
     <language>en-US</language>
-    <pubDate>Fri, 03 Sep 2021 05:38:27 GMT</pubDate>
-    <lastBuildDate>Fri, 03 Sep 2021 05:38:27 GMT</lastBuildDate>
+    <pubDate>Sun, 19 Sep 2021 03:27:19 GMT</pubDate>
+    <lastBuildDate>Sun, 19 Sep 2021 03:27:19 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed | Copyright © 2019-present Mr.Hope</copyright>
@@ -68,6 +68,100 @@
 <p>The interface of <code>Meta</code> is <code>Record&lt;&quot;content&quot; | &quot;name&quot; | &quot;charset&quot; | &quot;http-equiv&quot;, string&gt;</code></p>
 <p>The key of the <code>Meta</code> object will be rendered as the attribute of the meta tag, and the value will be rendered as the value of the corresponding attribute.</p>
 <p>For details, please see <a href="https://v1.vuepress.vuejs.org/guide/frontmatter.html#meta" target="_blank" rel="noopener noreferrer">Frontmatter → Meta</a></p>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Home</title>
+      <link>https://vuepress-theme-hope.github.io/seo/</link>
+      <guid>https://vuepress-theme-hope.github.io/seo/</guid>
+      <source url="https://vuepress-theme-hope.github.io/seo/rss.xml">Home</source>
+      <pubDate>Tue, 13 Oct 2020 09:17:32 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="how-to-use"> How to use</h2>
+<h3 id="install"> Install</h3>
+<CodeGroup>
+<CodeGroupItem title="yarn">
+<div><pre><code><span>yarn</span> <span>add</span> -D @mr-hope/vuepress-plugin-seo
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+<CodeGroupItem title="npm">
+<div><pre><code><span>npm</span> i -D @mr-hope/vuepress-plugin-seo
+</code></pre>
+<div><span>1</span><br></div></div></CodeGroupItem>
+</CodeGroup>
+<h3 id="usage"> Usage</h3>
+<div><pre><code><span>// .vuepress/config.js</span>
+module<span>.</span>exports <span>=</span> <span>{</span>
+  plugins<span>:</span> <span>[</span>
+    <span>[</span>
+      <span>"@mr-hope/seo"</span><span>,</span>
+      <span>{</span>
+        <span>// your options</span>
+      <span>}</span><span>,</span>
+    <span>]</span><span>,</span>
+  <span>]</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>选项</title>
+      <link>https://vuepress-theme-hope.github.io/seo/zh/config/</link>
+      <guid>https://vuepress-theme-hope.github.io/seo/zh/config/</guid>
+      <source url="https://vuepress-theme-hope.github.io/seo/rss.xml">选项</source>
+      <pubDate>Sun, 28 Feb 2021 15:14:42 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="插件选项"> 插件选项</h2>
+<h3 id="author"> author</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>默认作者</p>
+<h3 id="twitterid"> twitterID</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>填入你的 twitter 用户名</p>
+<h3 id="restrictions"> restrictions</h3>
+<ul>
+<li>类型: <code>string</code></li>
+<li>必填: 否</li>
+</ul>
+<p>内容的年龄分级，格式为 <code>[int]+</code>，如 <code>'13+'</code></p>
+<h3 id="seo"> seo</h3>
+<ul>
+<li>类型: <code>(info: PageSeoInfo) =&gt; Record&lt;string, string&gt;</code></li>
+</ul>
+<p>你可以使用此选项来注入新的或覆盖掉默认生成的 SEO，你需要按照 <code>&lt;property&gt;: &lt;content&gt;</code> 的格式来返回一个对象。</p>
+<h3 id="custommeta"> customMeta</h3>
+<ul>
+<li>类型: <code>(meta: Meta[], info: PageSeoInfo) =&gt; void</code></li>
+</ul>
+<p>你可以使用此选项来直接注入任意格式的 <code>&lt;meta&gt;</code> 标签到 <code>&lt;head&gt;</code>。</p>
+<h2 id="相关接口"> 相关接口</h2>
+<ul>
+<li>
+<p><code>PageSeoInfo</code> 的接口类型如下:</p>
+<div><pre><code><span>interface</span> <span>PageSeoInfo</span> <span>{</span>
+  <span>/** 页面对象 */</span>
+  page<span>:</span> Page<span>;</span>
+  <span>/** 站点对象 */</span>
+  site<span>:</span> SiteConfig<span>;</span>
+  <span>/** 主题配置 */</span>
+  themeConfig<span>:</span> ThemeConfig<span>;</span>
+  <span>/** 支持的多语言 */</span>
+  locales<span>:</span> <span>string</span><span>[</span><span>]</span><span>;</span>
+  <span>/** 当前页面地址 */</span>
+  path<span>:</span> <span>string</span><span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br></div></div></li>
+<li>
+<p><code>Meta</code> 的接口类型为 <code>Record&lt;&quot;content&quot; | &quot;name&quot; | &quot;charset&quot; | &quot;http-equiv&quot;, string&gt;</code></p>
+<p><code>Meta</code> 对象的键会渲染为 meta 标签的属性，值会渲染为对应属性的值。</p>
+<p>详情请见 <a href="https://v1.vuepress.vuejs.org/zh/guide/frontmatter.html#meta" target="_blank" rel="noopener noreferrer">Frontmatter → Meta</a></p>
 </li>
 </ul>
 ]]></content:encoded>
@@ -223,100 +317,6 @@
 </ul>
 <h2 id="related-tools"> Related tools</h2>
 <p>You can use <a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener noreferrer">Google Rich Media Structure Test Tool</a> to test this site.</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Home</title>
-      <link>https://vuepress-theme-hope.github.io/seo/</link>
-      <guid>https://vuepress-theme-hope.github.io/seo/</guid>
-      <source url="https://vuepress-theme-hope.github.io/seo/rss.xml">Home</source>
-      <pubDate>Tue, 13 Oct 2020 09:17:32 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="how-to-use"> How to use</h2>
-<h3 id="install"> Install</h3>
-<CodeGroup>
-<CodeGroupItem title="yarn">
-<div><pre><code><span>yarn</span> <span>add</span> -D @mr-hope/vuepress-plugin-seo
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-<CodeGroupItem title="npm">
-<div><pre><code><span>npm</span> i -D @mr-hope/vuepress-plugin-seo
-</code></pre>
-<div><span>1</span><br></div></div></CodeGroupItem>
-</CodeGroup>
-<h3 id="usage"> Usage</h3>
-<div><pre><code><span>// .vuepress/config.js</span>
-module<span>.</span>exports <span>=</span> <span>{</span>
-  plugins<span>:</span> <span>[</span>
-    <span>[</span>
-      <span>"@mr-hope/seo"</span><span>,</span>
-      <span>{</span>
-        <span>// your options</span>
-      <span>}</span><span>,</span>
-    <span>]</span><span>,</span>
-  <span>]</span><span>,</span>
-<span>}</span><span>;</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>选项</title>
-      <link>https://vuepress-theme-hope.github.io/seo/zh/config/</link>
-      <guid>https://vuepress-theme-hope.github.io/seo/zh/config/</guid>
-      <source url="https://vuepress-theme-hope.github.io/seo/rss.xml">选项</source>
-      <pubDate>Sun, 28 Feb 2021 15:14:42 GMT</pubDate>
-      <content:encoded><![CDATA[<h2 id="插件选项"> 插件选项</h2>
-<h3 id="author"> author</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>默认作者</p>
-<h3 id="twitterid"> twitterID</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>填入你的 twitter 用户名</p>
-<h3 id="restrictions"> restrictions</h3>
-<ul>
-<li>类型: <code>string</code></li>
-<li>必填: 否</li>
-</ul>
-<p>内容的年龄分级，格式为 <code>[int]+</code>，如 <code>'13+'</code></p>
-<h3 id="seo"> seo</h3>
-<ul>
-<li>类型: <code>(info: PageSeoInfo) =&gt; Record&lt;string, string&gt;</code></li>
-</ul>
-<p>你可以使用此选项来注入新的或覆盖掉默认生成的 SEO，你需要按照 <code>&lt;property&gt;: &lt;content&gt;</code> 的格式来返回一个对象。</p>
-<h3 id="custommeta"> customMeta</h3>
-<ul>
-<li>类型: <code>(meta: Meta[], info: PageSeoInfo) =&gt; void</code></li>
-</ul>
-<p>你可以使用此选项来直接注入任意格式的 <code>&lt;meta&gt;</code> 标签到 <code>&lt;head&gt;</code>。</p>
-<h2 id="相关接口"> 相关接口</h2>
-<ul>
-<li>
-<p><code>PageSeoInfo</code> 的接口类型如下:</p>
-<div><pre><code><span>interface</span> <span>PageSeoInfo</span> <span>{</span>
-  <span>/** 页面对象 */</span>
-  page<span>:</span> Page<span>;</span>
-  <span>/** 站点对象 */</span>
-  site<span>:</span> SiteConfig<span>;</span>
-  <span>/** 主题配置 */</span>
-  themeConfig<span>:</span> ThemeConfig<span>;</span>
-  <span>/** 支持的多语言 */</span>
-  locales<span>:</span> <span>string</span><span>[</span><span>]</span><span>;</span>
-  <span>/** 当前页面地址 */</span>
-  path<span>:</span> <span>string</span><span>;</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br></div></div></li>
-<li>
-<p><code>Meta</code> 的接口类型为 <code>Record&lt;&quot;content&quot; | &quot;name&quot; | &quot;charset&quot; | &quot;http-equiv&quot;, string&gt;</code></p>
-<p><code>Meta</code> 对象的键会渲染为 meta 标签的属性，值会渲染为对应属性的值。</p>
-<p>详情请见 <a href="https://v1.vuepress.vuejs.org/zh/guide/frontmatter.html#meta" target="_blank" rel="noopener noreferrer">Frontmatter → Meta</a></p>
-</li>
-</ul>
 ]]></content:encoded>
     </item>
     <item>
